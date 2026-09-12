@@ -1,0 +1,5707 @@
+[
+  {
+    "id": "v001",
+    "sourceIndex": 1,
+    "hanzi": "爱",
+    "pinyin": "ài",
+    "meaning": "lieben",
+    "accepted": [
+      "lieb haben"
+    ],
+    "example": {
+      "id": "ex-v001",
+      "zh": "我爱我的家人。",
+      "pinyin": "Wǒ ài wǒ de jiārén.",
+      "de": "Ich liebe meine Familie."
+    },
+    "note": "Für Vorlieben im Alltag ist 喜欢 oft neutraler als das stärkere 爱.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v002",
+    "sourceIndex": 2,
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "acht",
+    "accepted": [
+      "8"
+    ],
+    "example": {
+      "id": "ex-v002",
+      "zh": "现在八点。",
+      "pinyin": "Xiànzài bā diǎn.",
+      "de": "Es ist jetzt acht Uhr."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v003",
+    "sourceIndex": 3,
+    "hanzi": "爸爸",
+    "pinyin": "bàba",
+    "meaning": "Papa; Vater",
+    "accepted": [
+      "Papa",
+      "Vater"
+    ],
+    "example": {
+      "id": "ex-v003",
+      "zh": "我爸爸是医生。",
+      "pinyin": "Wǒ bàba shì yīshēng.",
+      "de": "Mein Vater ist Arzt."
+    },
+    "note": "Die zweite Silbe ist unbetont: bàba.",
+    "lessonId": "l06"
+  },
+  {
+    "id": "v004",
+    "sourceIndex": 4,
+    "hanzi": "吧",
+    "pinyin": "ba",
+    "meaning": "Partikel für Vorschläge oder Vermutungen",
+    "accepted": [
+      "Vorschlagspartikel",
+      "Satzpartikel"
+    ],
+    "example": {
+      "id": "ex-v004",
+      "zh": "我们去吧。",
+      "pinyin": "Wǒmen qù ba.",
+      "de": "Gehen wir!"
+    },
+    "note": "Am Satzende macht 吧 einen Vorschlag oder eine Aufforderung weicher.",
+    "lessonId": "l43"
+  },
+  {
+    "id": "v005",
+    "sourceIndex": 5,
+    "hanzi": "白天",
+    "pinyin": "báitiān",
+    "meaning": "tagsüber; am Tag",
+    "accepted": [
+      "tagsüber",
+      "am Tag",
+      "Tag"
+    ],
+    "example": {
+      "id": "ex-v005",
+      "zh": "我白天上班。",
+      "pinyin": "Wǒ báitiān shàngbān.",
+      "de": "Ich arbeite tagsüber."
+    },
+    "note": "Bezeichnet die helle Tageszeit, im Gegensatz zur Nacht.",
+    "lessonId": "l22"
+  },
+  {
+    "id": "v006",
+    "sourceIndex": 6,
+    "hanzi": "百",
+    "pinyin": "bǎi",
+    "meaning": "hundert",
+    "accepted": [
+      "100",
+      "hundert"
+    ],
+    "example": {
+      "id": "ex-v006",
+      "zh": "这本书一百元。",
+      "pinyin": "Zhè běn shū yì bǎi yuán.",
+      "de": "Dieses Buch kostet hundert Yuan."
+    },
+    "note": "Vor 百 steht bei 100 一: 一百.",
+    "lessonId": "l36"
+  },
+  {
+    "id": "v007",
+    "sourceIndex": 7,
+    "hanzi": "半",
+    "pinyin": "bàn",
+    "meaning": "halb; eine Hälfte",
+    "accepted": [
+      "halb",
+      "Hälfte"
+    ],
+    "example": {
+      "id": "ex-v007",
+      "zh": "现在三点半。",
+      "pinyin": "Xiànzài sān diǎn bàn.",
+      "de": "Es ist jetzt halb vier."
+    },
+    "note": "三点半 heißt 3:30 Uhr, wörtlich „drei Uhr und eine Hälfte“.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v008",
+    "sourceIndex": 8,
+    "hanzi": "包子",
+    "pinyin": "bāozi",
+    "meaning": "gefülltes Dampfbrötchen",
+    "accepted": [
+      "Baozi",
+      "Dampfbrötchen",
+      "gefülltes Dampfbrötchen"
+    ],
+    "example": {
+      "id": "ex-v008",
+      "zh": "我早上吃包子。",
+      "pinyin": "Wǒ zǎoshang chī bāozi.",
+      "de": "Ich esse morgens gefüllte Dampfbrötchen."
+    },
+    "note": "Gedämpfte Brötchen mit Füllung; nicht mit 饺子 verwechseln.",
+    "lessonId": "l28"
+  },
+  {
+    "id": "v009",
+    "sourceIndex": 9,
+    "hanzi": "杯子",
+    "pinyin": "bēizi",
+    "meaning": "Tasse; Becher; Trinkglas",
+    "accepted": [
+      "Tasse",
+      "Becher",
+      "Glas",
+      "Trinkglas"
+    ],
+    "example": {
+      "id": "ex-v009",
+      "zh": "杯子里有水。",
+      "pinyin": "Bēizi lǐ yǒu shuǐ.",
+      "de": "Im Glas ist Wasser."
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "v010",
+    "sourceIndex": 10,
+    "hanzi": "本",
+    "pinyin": "běn",
+    "meaning": "Zählwort für Bücher",
+    "accepted": [
+      "Buchzählwort",
+      "Zählwort für Bücher"
+    ],
+    "example": {
+      "id": "ex-v010",
+      "zh": "我买了两本书。",
+      "pinyin": "Wǒ mǎi le liǎng běn shū.",
+      "de": "Ich habe zwei Bücher gekauft."
+    },
+    "note": "Steht zwischen Zahl und Buch: 两本书. Hier wird die offizielle Zählwortbedeutung gelernt.",
+    "lessonId": "l18"
+  },
+  {
+    "id": "v011",
+    "sourceIndex": 11,
+    "hanzi": "边",
+    "pinyin": "biān",
+    "meaning": "Seite; Ortsnachsilbe",
+    "accepted": [
+      "Seite",
+      "Rand",
+      "Ortsnachsilbe"
+    ],
+    "example": {
+      "id": "ex-v011",
+      "zh": "我在你后边。",
+      "pinyin": "Wǒ zài nǐ hòubian.",
+      "de": "Ich bin hinter dir."
+    },
+    "note": "Bildet Ortsangaben wie 这边, 前边 und 后边; in manchen Verbindungen unbetont.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v012",
+    "sourceIndex": 12,
+    "hanzi": "病",
+    "pinyin": "bìng",
+    "meaning": "Krankheit; krank sein",
+    "accepted": [
+      "Krankheit",
+      "krank sein"
+    ],
+    "example": {
+      "id": "ex-v012",
+      "zh": "他的病好了。",
+      "pinyin": "Tā de bìng hǎo le.",
+      "de": "Er ist von seiner Krankheit genesen."
+    },
+    "note": "病 kann ein Nomen oder ein Verb sein. 生病 bedeutet „krank werden/sein“.",
+    "lessonId": "l47"
+  },
+  {
+    "id": "v013",
+    "sourceIndex": 13,
+    "hanzi": "不",
+    "pinyin": "bù",
+    "meaning": "nicht",
+    "accepted": [
+      "nicht",
+      "kein"
+    ],
+    "example": {
+      "id": "ex-v013",
+      "zh": "我不是老师。",
+      "pinyin": "Wǒ bú shì lǎoshī.",
+      "de": "Ich bin kein Lehrer."
+    },
+    "note": "Vor einem vierten Ton wird bù als bú gesprochen, z. B. 不是 bú shì.",
+    "lessonId": "l05"
+  },
+  {
+    "id": "v014",
+    "sourceIndex": 14,
+    "hanzi": "不客气",
+    "pinyin": "bú kèqi",
+    "meaning": "gern geschehen",
+    "accepted": [
+      "bitte",
+      "keine Ursache",
+      "gern geschehen"
+    ],
+    "example": {
+      "id": "ex-v014",
+      "zh": "谢谢！不客气！",
+      "pinyin": "Xièxie! Bú kèqi!",
+      "de": "Danke! Gern geschehen!"
+    },
+    "note": "Übliche Antwort auf 谢谢. 不 wird hier mit zweitem Ton gesprochen.",
+    "lessonId": "l04"
+  },
+  {
+    "id": "v015",
+    "sourceIndex": 15,
+    "hanzi": "不要",
+    "pinyin": "búyào",
+    "meaning": "nicht tun; nicht wollen",
+    "accepted": [
+      "nicht tun",
+      "nicht wollen",
+      "tu nicht"
+    ],
+    "example": {
+      "id": "ex-v015",
+      "zh": "不要在这里说话。",
+      "pinyin": "Búyào zài zhèlǐ shuōhuà.",
+      "de": "Sprich hier bitte nicht."
+    },
+    "note": "不要 + Verb bildet eine Aufforderung, etwas nicht zu tun.",
+    "lessonId": "l47"
+  },
+  {
+    "id": "v016",
+    "sourceIndex": 16,
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "Gericht; Gemüse",
+    "accepted": [
+      "Gericht",
+      "Gemüse",
+      "Speise"
+    ],
+    "example": {
+      "id": "ex-v016",
+      "zh": "这个菜很好吃。",
+      "pinyin": "Zhège cài hěn hǎochī.",
+      "de": "Dieses Gericht schmeckt sehr gut."
+    },
+    "lessonId": "l29"
+  },
+  {
+    "id": "v017",
+    "sourceIndex": 17,
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning": "Tee",
+    "accepted": [
+      "Tee"
+    ],
+    "example": {
+      "id": "ex-v017",
+      "zh": "我喜欢喝茶。",
+      "pinyin": "Wǒ xǐhuan hē chá.",
+      "de": "Ich trinke gern Tee."
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "v018",
+    "sourceIndex": 18,
+    "hanzi": "唱",
+    "pinyin": "chàng",
+    "meaning": "singen",
+    "accepted": [
+      "singen"
+    ],
+    "example": {
+      "id": "ex-v018",
+      "zh": "他喜欢唱歌。",
+      "pinyin": "Tā xǐhuan chàng gē.",
+      "de": "Er singt gern."
+    },
+    "lessonId": "l45"
+  },
+  {
+    "id": "v019",
+    "sourceIndex": 19,
+    "hanzi": "超市",
+    "pinyin": "chāoshì",
+    "meaning": "Supermarkt",
+    "accepted": [
+      "Supermarkt"
+    ],
+    "example": {
+      "id": "ex-v019",
+      "zh": "超市在学校后边。",
+      "pinyin": "Chāoshì zài xuéxiào hòubian.",
+      "de": "Der Supermarkt ist hinter der Schule."
+    },
+    "lessonId": "l35"
+  },
+  {
+    "id": "v020",
+    "sourceIndex": 20,
+    "hanzi": "车",
+    "pinyin": "chē",
+    "meaning": "Fahrzeug; Auto",
+    "accepted": [
+      "Auto",
+      "Wagen",
+      "Fahrzeug"
+    ],
+    "example": {
+      "id": "ex-v020",
+      "zh": "这是我的车。",
+      "pinyin": "Zhè shì wǒ de chē.",
+      "de": "Das ist mein Auto."
+    },
+    "note": "Allgemeines Wort für Fahrzeuge; im Kontext oft „Auto“.",
+    "lessonId": "l41"
+  },
+  {
+    "id": "v021",
+    "sourceIndex": 21,
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "essen",
+    "accepted": [
+      "essen"
+    ],
+    "example": {
+      "id": "ex-v021",
+      "zh": "你想吃什么？",
+      "pinyin": "Nǐ xiǎng chī shénme?",
+      "de": "Was möchtest du essen?"
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "v022",
+    "sourceIndex": 22,
+    "hanzi": "出租车",
+    "pinyin": "chūzūchē",
+    "meaning": "Taxi",
+    "accepted": [
+      "Taxi"
+    ],
+    "example": {
+      "id": "ex-v022",
+      "zh": "我们坐出租车去医院。",
+      "pinyin": "Wǒmen zuò chūzūchē qù yīyuàn.",
+      "de": "Wir fahren mit dem Taxi zum Krankenhaus."
+    },
+    "lessonId": "l41"
+  },
+  {
+    "id": "v023",
+    "sourceIndex": 23,
+    "hanzi": "穿",
+    "pinyin": "chuān",
+    "meaning": "anziehen; tragen",
+    "accepted": [
+      "anziehen",
+      "tragen",
+      "anhaben"
+    ],
+    "example": {
+      "id": "ex-v023",
+      "zh": "她今天穿新衣服。",
+      "pinyin": "Tā jīntiān chuān xīn yīfu.",
+      "de": "Sie trägt heute neue Kleidung."
+    },
+    "note": "Für Kleidung, die man am Körper trägt, etwa Hemd, Hose oder Schuhe.",
+    "lessonId": "l37"
+  },
+  {
+    "id": "v024",
+    "sourceIndex": 24,
+    "hanzi": "打电话",
+    "pinyin": "dǎ diànhuà",
+    "meaning": "telefonieren; anrufen",
+    "accepted": [
+      "anrufen",
+      "telefonieren"
+    ],
+    "example": {
+      "id": "ex-v024",
+      "zh": "我晚上给妈妈打电话。",
+      "pinyin": "Wǒ wǎnshang gěi māma dǎ diànhuà.",
+      "de": "Ich rufe abends meine Mutter an."
+    },
+    "note": "给 + Person + 打电话 bedeutet „jemanden anrufen“.",
+    "lessonId": "l42"
+  },
+  {
+    "id": "v025",
+    "sourceIndex": 25,
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "groß",
+    "accepted": [
+      "groß"
+    ],
+    "example": {
+      "id": "ex-v025",
+      "zh": "这个房间很大。",
+      "pinyin": "Zhège fángjiān hěn dà.",
+      "de": "Dieses Zimmer ist groß."
+    },
+    "lessonId": "l37"
+  },
+  {
+    "id": "v026",
+    "sourceIndex": 26,
+    "hanzi": "大家",
+    "pinyin": "dàjiā",
+    "meaning": "alle; ihr alle",
+    "accepted": [
+      "alle",
+      "alle zusammen",
+      "ihr alle"
+    ],
+    "example": {
+      "id": "ex-v026",
+      "zh": "大家好！",
+      "pinyin": "Dàjiā hǎo!",
+      "de": "Hallo zusammen!"
+    },
+    "note": "Bezieht sich auf eine Gruppe von Menschen.",
+    "lessonId": "l08"
+  },
+  {
+    "id": "v027",
+    "sourceIndex": 27,
+    "hanzi": "大学",
+    "pinyin": "dàxué",
+    "meaning": "Universität",
+    "accepted": [
+      "Universität",
+      "Hochschule",
+      "Uni"
+    ],
+    "example": {
+      "id": "ex-v027",
+      "zh": "我姐姐在大学学习。",
+      "pinyin": "Wǒ jiějie zài dàxué xuéxí.",
+      "de": "Meine ältere Schwester studiert an der Universität."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v028",
+    "sourceIndex": 28,
+    "hanzi": "大学生",
+    "pinyin": "dàxuéshēng",
+    "meaning": "Student; Studentin",
+    "accepted": [
+      "Student",
+      "Studentin",
+      "Studierende",
+      "Studierender"
+    ],
+    "example": {
+      "id": "ex-v028",
+      "zh": "我哥哥是大学生。",
+      "pinyin": "Wǒ gēge shì dàxuéshēng.",
+      "de": "Mein älterer Bruder ist Student."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v029",
+    "sourceIndex": 29,
+    "hanzi": "到",
+    "pinyin": "dào",
+    "meaning": "ankommen; erreichen",
+    "accepted": [
+      "ankommen",
+      "erreichen"
+    ],
+    "example": {
+      "id": "ex-v029",
+      "zh": "我八点到学校。",
+      "pinyin": "Wǒ bā diǎn dào xuéxiào.",
+      "de": "Ich komme um acht Uhr in der Schule an."
+    },
+    "note": "到 + Ort nennt hier das Ziel des Ankommens.",
+    "lessonId": "l34"
+  },
+  {
+    "id": "v030",
+    "sourceIndex": 30,
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "Partikel für Besitz und Zuordnung",
+    "accepted": [
+      "Besitzpartikel",
+      "Attributpartikel",
+      "Zuordnungspartikel"
+    ],
+    "example": {
+      "id": "ex-v030",
+      "zh": "这是我的书。",
+      "pinyin": "Zhè shì wǒ de shū.",
+      "de": "Das ist mein Buch."
+    },
+    "note": "Person + 的 + Nomen: 我的书 „mein Buch“. Keine direkte deutsche Einzelübersetzung.",
+    "lessonId": "l06"
+  },
+  {
+    "id": "v031",
+    "sourceIndex": 31,
+    "hanzi": "第",
+    "pinyin": "dì",
+    "meaning": "Präfix für Ordnungszahlen",
+    "accepted": [
+      "Ordnungszahlpräfix",
+      "Ordnungszahlen"
+    ],
+    "example": {
+      "id": "ex-v031",
+      "zh": "这是我的第一本中文书。",
+      "pinyin": "Zhè shì wǒ de dì yī běn Zhōngwén shū.",
+      "de": "Das ist mein erstes chinesisches Buch."
+    },
+    "note": "第 steht vor einer Zahl: 第一 „der/die/das erste“. 一 behält nach 第 den ersten Ton.",
+    "lessonId": "l25"
+  },
+  {
+    "id": "v032",
+    "sourceIndex": 32,
+    "hanzi": "弟弟",
+    "pinyin": "dìdi",
+    "meaning": "jüngerer Bruder",
+    "accepted": [
+      "jüngerer Bruder",
+      "kleiner Bruder"
+    ],
+    "example": {
+      "id": "ex-v032",
+      "zh": "我弟弟六岁。",
+      "pinyin": "Wǒ dìdi liù suì.",
+      "de": "Mein jüngerer Bruder ist sechs Jahre alt."
+    },
+    "lessonId": "l07"
+  },
+  {
+    "id": "v033",
+    "sourceIndex": 33,
+    "hanzi": "点",
+    "pinyin": "diǎn",
+    "meaning": "Uhr; Zähleinheit für die Uhrzeit",
+    "accepted": [
+      "Uhr",
+      "Uhrzeit"
+    ],
+    "example": {
+      "id": "ex-v033",
+      "zh": "我们九点上课。",
+      "pinyin": "Wǒmen jiǔ diǎn shàngkè.",
+      "de": "Wir haben um neun Uhr Unterricht."
+    },
+    "note": "点 nach einer Zahl bezeichnet volle Stunden: 九点 „neun Uhr“.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v034",
+    "sourceIndex": 34,
+    "hanzi": "店",
+    "pinyin": "diàn",
+    "meaning": "Laden; Geschäft",
+    "accepted": [
+      "Laden",
+      "Geschäft"
+    ],
+    "example": {
+      "id": "ex-v034",
+      "zh": "这个店很小。",
+      "pinyin": "Zhège diàn hěn xiǎo.",
+      "de": "Dieser Laden ist klein."
+    },
+    "note": "Steht auch in Zusammensetzungen wie 书店 und 饭店.",
+    "lessonId": "l35"
+  },
+  {
+    "id": "v035",
+    "sourceIndex": 35,
+    "hanzi": "电话",
+    "pinyin": "diànhuà",
+    "meaning": "Telefon; Telefonanruf",
+    "accepted": [
+      "Telefon",
+      "Telefonanruf",
+      "Telefonnummer"
+    ],
+    "example": {
+      "id": "ex-v035",
+      "zh": "这是学校的电话。",
+      "pinyin": "Zhè shì xuéxiào de diànhuà.",
+      "de": "Das ist die Telefonnummer der Schule."
+    },
+    "note": "Je nach Kontext bezeichnet 电话 auch die Telefonnummer.",
+    "lessonId": "l42"
+  },
+  {
+    "id": "v036",
+    "sourceIndex": 36,
+    "hanzi": "电脑",
+    "pinyin": "diànnǎo",
+    "meaning": "Computer",
+    "accepted": [
+      "Computer",
+      "Rechner"
+    ],
+    "example": {
+      "id": "ex-v036",
+      "zh": "我的电脑在桌子上。",
+      "pinyin": "Wǒ de diànnǎo zài zhuōzi shàng.",
+      "de": "Mein Computer steht auf dem Tisch."
+    },
+    "lessonId": "l42"
+  },
+  {
+    "id": "v037",
+    "sourceIndex": 37,
+    "hanzi": "电视",
+    "pinyin": "diànshì",
+    "meaning": "Fernsehen; Fernseher",
+    "accepted": [
+      "Fernsehen",
+      "Fernseher",
+      "TV"
+    ],
+    "example": {
+      "id": "ex-v037",
+      "zh": "爸爸在看电视。",
+      "pinyin": "Bàba zài kàn diànshì.",
+      "de": "Papa sieht gerade fern."
+    },
+    "lessonId": "l43"
+  },
+  {
+    "id": "v038",
+    "sourceIndex": 38,
+    "hanzi": "电影",
+    "pinyin": "diànyǐng",
+    "meaning": "Film",
+    "accepted": [
+      "Film",
+      "Kinofilm"
+    ],
+    "example": {
+      "id": "ex-v038",
+      "zh": "我想看这个电影。",
+      "pinyin": "Wǒ xiǎng kàn zhège diànyǐng.",
+      "de": "Ich möchte diesen Film sehen."
+    },
+    "lessonId": "l43"
+  },
+  {
+    "id": "v039",
+    "sourceIndex": 39,
+    "hanzi": "电影院",
+    "pinyin": "diànyǐngyuàn",
+    "meaning": "Kino",
+    "accepted": [
+      "Kino"
+    ],
+    "example": {
+      "id": "ex-v039",
+      "zh": "电影院在那边。",
+      "pinyin": "Diànyǐngyuàn zài nàbiān.",
+      "de": "Das Kino ist dort drüben."
+    },
+    "lessonId": "l43"
+  },
+  {
+    "id": "v040",
+    "sourceIndex": 40,
+    "hanzi": "东西",
+    "pinyin": "dōngxi",
+    "meaning": "Ding; Sachen",
+    "accepted": [
+      "Ding",
+      "Dinge",
+      "Sache",
+      "Sachen"
+    ],
+    "example": {
+      "id": "ex-v040",
+      "zh": "这些东西是你的。",
+      "pinyin": "Zhèxiē dōngxi shì nǐ de.",
+      "de": "Diese Sachen gehören dir."
+    },
+    "note": "东西 dōngxi mit unbetontem xi bedeutet „Sachen“. 东西 dōngxī bezeichnet „Ost und West“.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v041",
+    "sourceIndex": 41,
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "meaning": "alle; beide",
+    "accepted": [
+      "alle",
+      "beide"
+    ],
+    "example": {
+      "id": "ex-v041",
+      "zh": "我们都是学生。",
+      "pinyin": "Wǒmen dōu shì xuéshēng.",
+      "de": "Wir sind alle Schüler."
+    },
+    "note": "都 steht gewöhnlich vor dem Verb und bezieht sich auf eine vorher genannte Gruppe.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v042",
+    "sourceIndex": 42,
+    "hanzi": "读",
+    "pinyin": "dú",
+    "meaning": "lesen; laut lesen",
+    "accepted": [
+      "lesen",
+      "vorlesen",
+      "laut lesen"
+    ],
+    "example": {
+      "id": "ex-v042",
+      "zh": "请读这个字。",
+      "pinyin": "Qǐng dú zhège zì.",
+      "de": "Lies bitte dieses Zeichen vor."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "v043",
+    "sourceIndex": 43,
+    "hanzi": "读书",
+    "pinyin": "dúshū",
+    "meaning": "lesen; zur Schule gehen",
+    "accepted": [
+      "lesen",
+      "Bücher lesen",
+      "zur Schule gehen"
+    ],
+    "example": {
+      "id": "ex-v043",
+      "zh": "我喜欢在家读书。",
+      "pinyin": "Wǒ xǐhuan zài jiā dúshū.",
+      "de": "Ich lese gern zu Hause."
+    },
+    "note": "Kann Bücherlesen oder den Besuch einer Bildungseinrichtung bezeichnen.",
+    "lessonId": "l18"
+  },
+  {
+    "id": "v044",
+    "sourceIndex": 44,
+    "hanzi": "对",
+    "pinyin": "duì",
+    "meaning": "richtig; gegenüber",
+    "accepted": [
+      "richtig",
+      "korrekt",
+      "gegenüber"
+    ],
+    "example": {
+      "id": "ex-v044",
+      "zh": "你说得对。",
+      "pinyin": "Nǐ shuō de duì.",
+      "de": "Du hast recht."
+    },
+    "note": "Als Adjektiv „richtig“, als Präposition „gegenüber/zu“. 得 de verbindet hier das Verb mit einer Bewertung.",
+    "lessonId": "l05"
+  },
+  {
+    "id": "v045",
+    "sourceIndex": 45,
+    "hanzi": "对不起",
+    "pinyin": "duìbuqǐ",
+    "meaning": "Entschuldigung; es tut mir leid",
+    "accepted": [
+      "Entschuldigung",
+      "es tut mir leid",
+      "entschuldigen Sie"
+    ],
+    "example": {
+      "id": "ex-v045",
+      "zh": "对不起，我来晚了。",
+      "pinyin": "Duìbuqǐ, wǒ lái wǎn le.",
+      "de": "Entschuldigung, ich bin zu spät gekommen."
+    },
+    "lessonId": "l05"
+  },
+  {
+    "id": "v046",
+    "sourceIndex": 46,
+    "hanzi": "多",
+    "pinyin": "duō",
+    "meaning": "viel; viele; wie …?",
+    "accepted": [
+      "viel",
+      "viele",
+      "mehr"
+    ],
+    "example": {
+      "id": "ex-v046",
+      "zh": "这里人很多。",
+      "pinyin": "Zhèlǐ rén hěn duō.",
+      "de": "Hier sind viele Menschen."
+    },
+    "note": "Vor Adjektiven fragt 多 nach einem Grad: 多大 „wie alt/groß“.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v047",
+    "sourceIndex": 47,
+    "hanzi": "多少",
+    "pinyin": "duōshao",
+    "meaning": "wie viel; wie viele",
+    "accepted": [
+      "wie viel",
+      "wie viele"
+    ],
+    "example": {
+      "id": "ex-v047",
+      "zh": "这个杯子多少钱？",
+      "pinyin": "Zhège bēizi duōshao qián?",
+      "de": "Wie viel kostet diese Tasse?"
+    },
+    "note": "Fragt nach Mengen und Preisen; 少 ist hier unbetont.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v048",
+    "sourceIndex": 48,
+    "hanzi": "儿子",
+    "pinyin": "érzi",
+    "meaning": "Sohn",
+    "accepted": [
+      "Sohn"
+    ],
+    "example": {
+      "id": "ex-v048",
+      "zh": "她儿子在小学上学。",
+      "pinyin": "Tā érzi zài xiǎoxué shàngxué.",
+      "de": "Ihr Sohn geht in die Grundschule."
+    },
+    "lessonId": "l07"
+  },
+  {
+    "id": "v049",
+    "sourceIndex": 49,
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "zwei",
+    "accepted": [
+      "zwei",
+      "2"
+    ],
+    "example": {
+      "id": "ex-v049",
+      "zh": "今天是星期二。",
+      "pinyin": "Jīntiān shì xīngqī'èr.",
+      "de": "Heute ist Dienstag."
+    },
+    "note": "二 beim Zählen und in Ordnungsangaben; vor Zählwörtern meist 两.",
+    "lessonId": "l09"
+  },
+  {
+    "id": "v050",
+    "sourceIndex": 50,
+    "hanzi": "饭",
+    "pinyin": "fàn",
+    "meaning": "Essen; Mahlzeit; gekochter Reis",
+    "accepted": [
+      "Essen",
+      "Mahlzeit",
+      "gekochter Reis"
+    ],
+    "example": {
+      "id": "ex-v050",
+      "zh": "我们一起吃饭吧。",
+      "pinyin": "Wǒmen yìqǐ chī fàn ba.",
+      "de": "Essen wir zusammen."
+    },
+    "note": "吃饭 heißt allgemein „essen/eine Mahlzeit zu sich nehmen“. 一起 yìqǐ bedeutet „zusammen“.",
+    "lessonId": "l23"
+  },
+  {
+    "id": "v051",
+    "sourceIndex": 51,
+    "hanzi": "饭店",
+    "pinyin": "fàndiàn",
+    "meaning": "Restaurant; Hotel",
+    "accepted": [
+      "Restaurant",
+      "Gasthaus",
+      "Hotel"
+    ],
+    "example": {
+      "id": "ex-v051",
+      "zh": "这家饭店的菜很好吃。",
+      "pinyin": "Zhè jiā fàndiàn de cài hěn hǎochī.",
+      "de": "Die Gerichte in diesem Restaurant schmecken gut."
+    },
+    "note": "Meist Restaurant; in manchen Namen auch Hotel. 家 ist hier ein Zählwort für Betriebe.",
+    "lessonId": "l29"
+  },
+  {
+    "id": "v052",
+    "sourceIndex": 52,
+    "hanzi": "房间",
+    "pinyin": "fángjiān",
+    "meaning": "Zimmer",
+    "accepted": [
+      "Zimmer",
+      "Raum"
+    ],
+    "example": {
+      "id": "ex-v052",
+      "zh": "你的房间在哪里？",
+      "pinyin": "Nǐ de fángjiān zài nǎlǐ?",
+      "de": "Wo ist dein Zimmer?"
+    },
+    "lessonId": "l30"
+  },
+  {
+    "id": "v053",
+    "sourceIndex": 53,
+    "hanzi": "非常",
+    "pinyin": "fēicháng",
+    "meaning": "sehr; äußerst",
+    "accepted": [
+      "sehr",
+      "äußerst",
+      "besonders"
+    ],
+    "example": {
+      "id": "ex-v053",
+      "zh": "我非常喜欢中文。",
+      "pinyin": "Wǒ fēicháng xǐhuan Zhōngwén.",
+      "de": "Ich mag Chinesisch sehr."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "v054",
+    "sourceIndex": 54,
+    "hanzi": "飞机",
+    "pinyin": "fēijī",
+    "meaning": "Flugzeug",
+    "accepted": [
+      "Flugzeug"
+    ],
+    "example": {
+      "id": "ex-v054",
+      "zh": "我坐飞机去中国。",
+      "pinyin": "Wǒ zuò fēijī qù Zhōngguó.",
+      "de": "Ich fliege mit dem Flugzeug nach China."
+    },
+    "lessonId": "l41"
+  },
+  {
+    "id": "v055",
+    "sourceIndex": 55,
+    "hanzi": "分",
+    "pinyin": "fēn",
+    "meaning": "Minute; Fen",
+    "accepted": [
+      "Minute",
+      "Minuten",
+      "Fen"
+    ],
+    "example": {
+      "id": "ex-v055",
+      "zh": "现在八点五分。",
+      "pinyin": "Xiànzài bā diǎn wǔ fēn.",
+      "de": "Es ist jetzt fünf nach acht."
+    },
+    "note": "分 gibt Minuten bei Uhrzeiten an; als Geldeinheit ist ein 分 ein Hundertstel Yuan.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v056",
+    "sourceIndex": 56,
+    "hanzi": "分钟",
+    "pinyin": "fēnzhōng",
+    "meaning": "Minute; Minuten",
+    "accepted": [
+      "Minute",
+      "Minuten"
+    ],
+    "example": {
+      "id": "ex-v056",
+      "zh": "请休息十分钟。",
+      "pinyin": "Qǐng xiūxi shí fēnzhōng.",
+      "de": "Bitte mach zehn Minuten Pause."
+    },
+    "note": "Für eine Zeitdauer: 十分钟 „zehn Minuten“.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v057",
+    "sourceIndex": 57,
+    "hanzi": "高兴",
+    "pinyin": "gāoxìng",
+    "meaning": "froh; erfreut",
+    "accepted": [
+      "froh",
+      "glücklich",
+      "erfreut",
+      "fröhlich"
+    ],
+    "example": {
+      "id": "ex-v057",
+      "zh": "认识你，我很高兴。",
+      "pinyin": "Rènshi nǐ, wǒ hěn gāoxìng.",
+      "de": "Ich freue mich, dich kennenzulernen."
+    },
+    "lessonId": "l45"
+  },
+  {
+    "id": "v058",
+    "sourceIndex": 58,
+    "hanzi": "歌",
+    "pinyin": "gē",
+    "meaning": "Lied",
+    "accepted": [
+      "Lied",
+      "Song"
+    ],
+    "example": {
+      "id": "ex-v058",
+      "zh": "她唱的歌很好听。",
+      "pinyin": "Tā chàng de gē hěn hǎotīng.",
+      "de": "Die Lieder, die sie singt, klingen schön."
+    },
+    "note": "的 verbindet hier „die sie singt“ mit dem Nomen „Lieder“.",
+    "lessonId": "l45"
+  },
+  {
+    "id": "v059",
+    "sourceIndex": 59,
+    "hanzi": "哥哥",
+    "pinyin": "gēge",
+    "meaning": "älterer Bruder",
+    "accepted": [
+      "älterer Bruder",
+      "großer Bruder"
+    ],
+    "example": {
+      "id": "ex-v059",
+      "zh": "我哥哥会开车。",
+      "pinyin": "Wǒ gēge huì kāichē.",
+      "de": "Mein älterer Bruder kann Auto fahren."
+    },
+    "lessonId": "l06"
+  },
+  {
+    "id": "v060",
+    "sourceIndex": 60,
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "allgemeines Zählwort",
+    "accepted": [
+      "Zählwort",
+      "allgemeines Zählwort"
+    ],
+    "example": {
+      "id": "ex-v060",
+      "zh": "我有三个朋友。",
+      "pinyin": "Wǒ yǒu sān ge péngyou.",
+      "de": "Ich habe drei Freunde."
+    },
+    "note": "Zwischen Zahl und vielen Nomen; im Satz oft unbetont: sān ge péngyou.",
+    "lessonId": "l09"
+  },
+  {
+    "id": "v061",
+    "sourceIndex": 61,
+    "hanzi": "给",
+    "pinyin": "gěi",
+    "meaning": "geben; für; an",
+    "accepted": [
+      "geben",
+      "für",
+      "an"
+    ],
+    "example": {
+      "id": "ex-v061",
+      "zh": "请给我一杯水。",
+      "pinyin": "Qǐng gěi wǒ yì bēi shuǐ.",
+      "de": "Gib mir bitte ein Glas Wasser."
+    },
+    "note": "Als Verb „geben“; vor einer Person auch Empfänger einer Handlung: 给妈妈打电话.",
+    "lessonId": "l42"
+  },
+  {
+    "id": "v062",
+    "sourceIndex": 62,
+    "hanzi": "公司",
+    "pinyin": "gōngsī",
+    "meaning": "Firma; Unternehmen",
+    "accepted": [
+      "Firma",
+      "Unternehmen"
+    ],
+    "example": {
+      "id": "ex-v062",
+      "zh": "他在公司工作。",
+      "pinyin": "Tā zài gōngsī gōngzuò.",
+      "de": "Er arbeitet in einer Firma."
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v063",
+    "sourceIndex": 63,
+    "hanzi": "工作",
+    "pinyin": "gōngzuò",
+    "meaning": "arbeiten; Arbeit",
+    "accepted": [
+      "arbeiten",
+      "Arbeit",
+      "Job"
+    ],
+    "example": {
+      "id": "ex-v063",
+      "zh": "你在哪里工作？",
+      "pinyin": "Nǐ zài nǎlǐ gōngzuò?",
+      "de": "Wo arbeitest du?"
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v064",
+    "sourceIndex": 64,
+    "hanzi": "狗",
+    "pinyin": "gǒu",
+    "meaning": "Hund",
+    "accepted": [
+      "Hund"
+    ],
+    "example": {
+      "id": "ex-v064",
+      "zh": "这只狗很小。",
+      "pinyin": "Zhè zhī gǒu hěn xiǎo.",
+      "de": "Dieser Hund ist klein."
+    },
+    "lessonId": "l46"
+  },
+  {
+    "id": "v065",
+    "sourceIndex": 65,
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "meaning": "teuer",
+    "accepted": [
+      "teuer"
+    ],
+    "example": {
+      "id": "ex-v065",
+      "zh": "这件衣服太贵了。",
+      "pinyin": "Zhè jiàn yīfu tài guì le.",
+      "de": "Dieses Kleidungsstück ist zu teuer."
+    },
+    "lessonId": "l36"
+  },
+  {
+    "id": "v066",
+    "sourceIndex": 66,
+    "hanzi": "国",
+    "pinyin": "guó",
+    "meaning": "Land; Staat",
+    "accepted": [
+      "Land",
+      "Staat"
+    ],
+    "example": {
+      "id": "ex-v066",
+      "zh": "你是哪国人？",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "de": "Aus welchem Land kommst du?"
+    },
+    "note": "Kommt oft in Ländernamen wie 中国 vor. 哪国人 fragt nach der Herkunft.",
+    "lessonId": "l02"
+  },
+  {
+    "id": "v067",
+    "sourceIndex": 67,
+    "hanzi": "还",
+    "pinyin": "hái",
+    "meaning": "noch; auch noch",
+    "accepted": [
+      "noch",
+      "auch noch",
+      "außerdem"
+    ],
+    "example": {
+      "id": "ex-v067",
+      "zh": "我还想喝一点儿茶。",
+      "pinyin": "Wǒ hái xiǎng hē yìdiǎnr chá.",
+      "de": "Ich möchte noch etwas Tee trinken."
+    },
+    "note": "Hier hái. Die andere Lesung huán „zurückgeben“ gehört nicht zu diesem Worteintrag.",
+    "lessonId": "l49"
+  },
+  {
+    "id": "v068",
+    "sourceIndex": 68,
+    "hanzi": "孩子",
+    "pinyin": "háizi",
+    "meaning": "Kind",
+    "accepted": [
+      "Kind",
+      "Kinder"
+    ],
+    "example": {
+      "id": "ex-v068",
+      "zh": "孩子在学校。",
+      "pinyin": "Háizi zài xuéxiào.",
+      "de": "Das Kind ist in der Schule."
+    },
+    "lessonId": "l07"
+  },
+  {
+    "id": "v069",
+    "sourceIndex": 69,
+    "hanzi": "汉语",
+    "pinyin": "Hànyǔ",
+    "meaning": "Chinesisch; chinesische Sprache",
+    "accepted": [
+      "Chinesisch",
+      "chinesische Sprache"
+    ],
+    "example": {
+      "id": "ex-v069",
+      "zh": "我在学习汉语。",
+      "pinyin": "Wǒ zài xuéxí Hànyǔ.",
+      "de": "Ich lerne gerade Chinesisch."
+    },
+    "note": "汉语 bezeichnet die chinesische Sprache; 中文 wird im Alltag oft ähnlich verwendet.",
+    "lessonId": "l15"
+  },
+  {
+    "id": "v070",
+    "sourceIndex": 70,
+    "hanzi": "汉字",
+    "pinyin": "Hànzì",
+    "meaning": "chinesisches Schriftzeichen",
+    "accepted": [
+      "chinesisches Schriftzeichen",
+      "chinesische Schriftzeichen",
+      "Hanzi"
+    ],
+    "example": {
+      "id": "ex-v070",
+      "zh": "这个汉字怎么读？",
+      "pinyin": "Zhège Hànzì zěnme dú?",
+      "de": "Wie liest man dieses chinesische Zeichen?"
+    },
+    "lessonId": "l15"
+  },
+  {
+    "id": "v071",
+    "sourceIndex": 71,
+    "hanzi": "好",
+    "pinyin": "hǎo",
+    "meaning": "gut",
+    "accepted": [
+      "gut",
+      "in Ordnung"
+    ],
+    "example": {
+      "id": "ex-v071",
+      "zh": "今天天气很好。",
+      "pinyin": "Jīntiān tiānqì hěn hǎo.",
+      "de": "Das Wetter ist heute gut."
+    },
+    "note": "In 你好 bedeutet die Verbindung „hallo“; 好 allein unter anderem „gut/in Ordnung“.",
+    "lessonId": "l01"
+  },
+  {
+    "id": "v072",
+    "sourceIndex": 72,
+    "hanzi": "好吃",
+    "pinyin": "hǎochī",
+    "meaning": "lecker; gut schmeckend",
+    "accepted": [
+      "lecker",
+      "köstlich",
+      "schmackhaft",
+      "gut schmeckend"
+    ],
+    "example": {
+      "id": "ex-v072",
+      "zh": "这些饺子很好吃。",
+      "pinyin": "Zhèxiē jiǎozi hěn hǎochī.",
+      "de": "Diese Teigtaschen sind lecker."
+    },
+    "lessonId": "l29"
+  },
+  {
+    "id": "v073",
+    "sourceIndex": 73,
+    "hanzi": "好看",
+    "pinyin": "hǎokàn",
+    "meaning": "schön anzusehen; sehenswert",
+    "accepted": [
+      "schön anzusehen",
+      "sehenswert",
+      "schön"
+    ],
+    "example": {
+      "id": "ex-v073",
+      "zh": "这个电影很好看。",
+      "pinyin": "Zhège diànyǐng hěn hǎokàn.",
+      "de": "Dieser Film ist sehenswert."
+    },
+    "note": "Für Dinge, deren Anblick oder Anschauen gefällt, auch Filme und Bücher.",
+    "lessonId": "l38"
+  },
+  {
+    "id": "v074",
+    "sourceIndex": 74,
+    "hanzi": "好听",
+    "pinyin": "hǎotīng",
+    "meaning": "schön klingend",
+    "accepted": [
+      "schön klingend",
+      "angenehm zu hören",
+      "klangvoll"
+    ],
+    "example": {
+      "id": "ex-v074",
+      "zh": "你的名字很好听。",
+      "pinyin": "Nǐ de míngzi hěn hǎotīng.",
+      "de": "Dein Name klingt schön."
+    },
+    "lessonId": "l45"
+  },
+  {
+    "id": "v075",
+    "sourceIndex": 75,
+    "hanzi": "好玩儿",
+    "pinyin": "hǎowánr",
+    "meaning": "Spaß machen; unterhaltsam",
+    "accepted": [
+      "Spaß machen",
+      "unterhaltsam",
+      "lustig",
+      "vergnüglich"
+    ],
+    "example": {
+      "id": "ex-v075",
+      "zh": "和你一起玩很好玩儿。",
+      "pinyin": "Hé nǐ yìqǐ wán hěn hǎowánr.",
+      "de": "Es macht Spaß, mit dir zu spielen."
+    },
+    "note": "儿 ist hier ein r-Auslaut (Erhua), keine eigene Silbe. 一起 yìqǐ bedeutet „zusammen“.",
+    "lessonId": "l43"
+  },
+  {
+    "id": "v076",
+    "sourceIndex": 76,
+    "hanzi": "号",
+    "pinyin": "hào",
+    "meaning": "Nummer; Tag eines Datums",
+    "accepted": [
+      "Nummer",
+      "Datumstag",
+      "Tag"
+    ],
+    "example": {
+      "id": "ex-v076",
+      "zh": "今天九月十二号。",
+      "pinyin": "Jīntiān jiǔ yuè shí'èr hào.",
+      "de": "Heute ist der 12. September."
+    },
+    "note": "号 steht in der gesprochenen Sprache nach dem Kalendertag. 日 ist formeller.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v077",
+    "sourceIndex": 77,
+    "hanzi": "喝",
+    "pinyin": "hē",
+    "meaning": "trinken",
+    "accepted": [
+      "trinken"
+    ],
+    "example": {
+      "id": "ex-v077",
+      "zh": "你喝水吗？",
+      "pinyin": "Nǐ hē shuǐ ma?",
+      "de": "Trinkst du Wasser?"
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "v078",
+    "sourceIndex": 78,
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "und; mit",
+    "accepted": [
+      "und",
+      "mit"
+    ],
+    "example": {
+      "id": "ex-v078",
+      "zh": "我和你一起去。",
+      "pinyin": "Wǒ hé nǐ yìqǐ qù.",
+      "de": "Ich gehe mit dir zusammen."
+    },
+    "note": "Verbindet vor allem Nomen/Pronomen. 一起 yìqǐ heißt „zusammen“.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v079",
+    "sourceIndex": 79,
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "sehr",
+    "accepted": [
+      "sehr"
+    ],
+    "example": {
+      "id": "ex-v079",
+      "zh": "我很好。",
+      "pinyin": "Wǒ hěn hǎo.",
+      "de": "Mir geht es gut."
+    },
+    "note": "Vor einem Adjektiv ist 很 oft unbetont und bedeutet dann nicht ausdrücklich „sehr“.",
+    "lessonId": "l01"
+  },
+  {
+    "id": "v080",
+    "sourceIndex": 80,
+    "hanzi": "后",
+    "pinyin": "hòu",
+    "meaning": "hinter; nach; später",
+    "accepted": [
+      "hinter",
+      "nach",
+      "später",
+      "hinten"
+    ],
+    "example": {
+      "id": "ex-v080",
+      "zh": "学校在商店后。",
+      "pinyin": "Xuéxiào zài shāngdiàn hòu.",
+      "de": "Die Schule ist hinter dem Geschäft."
+    },
+    "note": "后 kann eine räumliche oder zeitliche Beziehung ausdrücken; häufig auch 后边.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v081",
+    "sourceIndex": 81,
+    "hanzi": "回",
+    "pinyin": "huí",
+    "meaning": "zurückkehren; zurück",
+    "accepted": [
+      "zurückkehren",
+      "zurückgehen",
+      "zurückkommen",
+      "zurück"
+    ],
+    "example": {
+      "id": "ex-v081",
+      "zh": "我下午回家。",
+      "pinyin": "Wǒ xiàwǔ huí jiā.",
+      "de": "Ich gehe am Nachmittag nach Hause zurück."
+    },
+    "lessonId": "l34"
+  },
+  {
+    "id": "v082",
+    "sourceIndex": 82,
+    "hanzi": "会",
+    "pinyin": "huì",
+    "meaning": "können; beherrschen",
+    "accepted": [
+      "können",
+      "beherrschen"
+    ],
+    "example": {
+      "id": "ex-v082",
+      "zh": "我会说汉语。",
+      "pinyin": "Wǒ huì shuō Hànyǔ.",
+      "de": "Ich kann Chinesisch sprechen."
+    },
+    "note": "会 bezeichnet oft eine erlernte Fähigkeit; 能 eher Möglichkeit oder Fähigkeit unter bestimmten Umständen.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v083",
+    "sourceIndex": 83,
+    "hanzi": "火车",
+    "pinyin": "huǒchē",
+    "meaning": "Zug; Eisenbahn",
+    "accepted": [
+      "Zug",
+      "Eisenbahn"
+    ],
+    "example": {
+      "id": "ex-v083",
+      "zh": "我们坐火车去。",
+      "pinyin": "Wǒmen zuò huǒchē qù.",
+      "de": "Wir fahren mit dem Zug hin."
+    },
+    "lessonId": "l41"
+  },
+  {
+    "id": "v084",
+    "sourceIndex": 84,
+    "hanzi": "鸡蛋",
+    "pinyin": "jīdàn",
+    "meaning": "Hühnerei; Ei",
+    "accepted": [
+      "Ei",
+      "Hühnerei"
+    ],
+    "example": {
+      "id": "ex-v084",
+      "zh": "我早饭吃两个鸡蛋。",
+      "pinyin": "Wǒ zǎofàn chī liǎng ge jīdàn.",
+      "de": "Zum Frühstück esse ich zwei Eier."
+    },
+    "lessonId": "l28"
+  },
+  {
+    "id": "v085",
+    "sourceIndex": 85,
+    "hanzi": "几",
+    "pinyin": "jǐ",
+    "meaning": "wie viele; einige",
+    "accepted": [
+      "wie viele",
+      "einige"
+    ],
+    "example": {
+      "id": "ex-v085",
+      "zh": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "de": "Wie viele Personen gibt es in deiner Familie?"
+    },
+    "note": "Bei kleinen erwarteten Zahlen meist 几 + Zählwort. 口 zählt hier Familienmitglieder.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v086",
+    "sourceIndex": 86,
+    "hanzi": "家",
+    "pinyin": "jiā",
+    "meaning": "Zuhause; Familie",
+    "accepted": [
+      "Zuhause",
+      "Familie",
+      "Heim"
+    ],
+    "example": {
+      "id": "ex-v086",
+      "zh": "我家在学校前边。",
+      "pinyin": "Wǒ jiā zài xuéxiào qiánbian.",
+      "de": "Mein Zuhause liegt vor der Schule."
+    },
+    "note": "Bei nahen Beziehungen fällt 的 oft weg: 我家 „mein Zuhause/meine Familie“.",
+    "lessonId": "l06"
+  },
+  {
+    "id": "v087",
+    "sourceIndex": 87,
+    "hanzi": "家人",
+    "pinyin": "jiārén",
+    "meaning": "Familienangehörige; Familie",
+    "accepted": [
+      "Familie",
+      "Familienmitglieder",
+      "Familienangehörige"
+    ],
+    "example": {
+      "id": "ex-v087",
+      "zh": "我的家人都在中国。",
+      "pinyin": "Wǒ de jiārén dōu zài Zhōngguó.",
+      "de": "Meine Familienangehörigen sind alle in China."
+    },
+    "lessonId": "l07"
+  },
+  {
+    "id": "v088",
+    "sourceIndex": 88,
+    "hanzi": "见",
+    "pinyin": "jiàn",
+    "meaning": "sehen; treffen",
+    "accepted": [
+      "sehen",
+      "treffen"
+    ],
+    "example": {
+      "id": "ex-v088",
+      "zh": "明天见！",
+      "pinyin": "Míngtiān jiàn!",
+      "de": "Bis morgen!"
+    },
+    "lessonId": "l34"
+  },
+  {
+    "id": "v089",
+    "sourceIndex": 89,
+    "hanzi": "件",
+    "pinyin": "jiàn",
+    "meaning": "Zählwort für Kleidung und Angelegenheiten",
+    "accepted": [
+      "Zählwort für Kleidung",
+      "Kleidungszählwort",
+      "Zählwort"
+    ],
+    "example": {
+      "id": "ex-v089",
+      "zh": "我买了一件衣服。",
+      "pinyin": "Wǒ mǎi le yí jiàn yīfu.",
+      "de": "Ich habe ein Kleidungsstück gekauft."
+    },
+    "note": "Auch für einzelne Angelegenheiten: 一件事 „eine Sache“.",
+    "lessonId": "l37"
+  },
+  {
+    "id": "v090",
+    "sourceIndex": 90,
+    "hanzi": "饺子",
+    "pinyin": "jiǎozi",
+    "meaning": "gefüllte Teigtasche",
+    "accepted": [
+      "Teigtasche",
+      "Teigtaschen",
+      "Jiaozi",
+      "gefüllte Teigtasche"
+    ],
+    "example": {
+      "id": "ex-v090",
+      "zh": "我们今天吃饺子。",
+      "pinyin": "Wǒmen jīntiān chī jiǎozi.",
+      "de": "Wir essen heute gefüllte Teigtaschen."
+    },
+    "note": "饺子 werden meist gekocht oder gebraten; 包子 sind gedämpfte gefüllte Brötchen.",
+    "lessonId": "l28"
+  },
+  {
+    "id": "v091",
+    "sourceIndex": 91,
+    "hanzi": "叫",
+    "pinyin": "jiào",
+    "meaning": "heißen; rufen",
+    "accepted": [
+      "heißen",
+      "rufen"
+    ],
+    "example": {
+      "id": "ex-v091",
+      "zh": "我叫小明。",
+      "pinyin": "Wǒ jiào Xiǎomíng.",
+      "de": "Ich heiße Xiaoming."
+    },
+    "note": "小明 Xiǎomíng ist hier ein Personenname.",
+    "lessonId": "l02"
+  },
+  {
+    "id": "v092",
+    "sourceIndex": 92,
+    "hanzi": "姐姐",
+    "pinyin": "jiějie",
+    "meaning": "ältere Schwester",
+    "accepted": [
+      "ältere Schwester",
+      "große Schwester"
+    ],
+    "example": {
+      "id": "ex-v092",
+      "zh": "我姐姐在医院工作。",
+      "pinyin": "Wǒ jiějie zài yīyuàn gōngzuò.",
+      "de": "Meine ältere Schwester arbeitet im Krankenhaus."
+    },
+    "lessonId": "l06"
+  },
+  {
+    "id": "v093",
+    "sourceIndex": 93,
+    "hanzi": "今年",
+    "pinyin": "jīnnián",
+    "meaning": "dieses Jahr",
+    "accepted": [
+      "dieses Jahr",
+      "heuer"
+    ],
+    "example": {
+      "id": "ex-v093",
+      "zh": "我今年二十岁。",
+      "pinyin": "Wǒ jīnnián èrshí suì.",
+      "de": "Ich bin dieses Jahr zwanzig Jahre alt."
+    },
+    "lessonId": "l25"
+  },
+  {
+    "id": "v094",
+    "sourceIndex": 94,
+    "hanzi": "今天",
+    "pinyin": "jīntiān",
+    "meaning": "heute",
+    "accepted": [
+      "heute"
+    ],
+    "example": {
+      "id": "ex-v094",
+      "zh": "今天我不去学校。",
+      "pinyin": "Jīntiān wǒ bú qù xuéxiào.",
+      "de": "Heute gehe ich nicht zur Schule."
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "v095",
+    "sourceIndex": 95,
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "neun",
+    "accepted": [
+      "neun",
+      "9"
+    ],
+    "example": {
+      "id": "ex-v095",
+      "zh": "我有九本书。",
+      "pinyin": "Wǒ yǒu jiǔ běn shū.",
+      "de": "Ich habe neun Bücher."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v096",
+    "sourceIndex": 96,
+    "hanzi": "觉得",
+    "pinyin": "juéde",
+    "meaning": "finden; meinen; empfinden",
+    "accepted": [
+      "finden",
+      "meinen",
+      "denken",
+      "empfinden"
+    ],
+    "example": {
+      "id": "ex-v096",
+      "zh": "我觉得这个菜很好吃。",
+      "pinyin": "Wǒ juéde zhège cài hěn hǎochī.",
+      "de": "Ich finde, dass dieses Gericht gut schmeckt."
+    },
+    "note": "Leitet eine persönliche Einschätzung ein, nicht das Finden eines verlorenen Gegenstands.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v097",
+    "sourceIndex": 97,
+    "hanzi": "开",
+    "pinyin": "kāi",
+    "meaning": "öffnen; fahren; einschalten",
+    "accepted": [
+      "öffnen",
+      "fahren",
+      "einschalten"
+    ],
+    "example": {
+      "id": "ex-v097",
+      "zh": "请开电视。",
+      "pinyin": "Qǐng kāi diànshì.",
+      "de": "Schalte bitte den Fernseher ein."
+    },
+    "note": "Je nach Objekt: 开电视 „Fernseher einschalten“, 开车 „Auto fahren“.",
+    "lessonId": "l41"
+  },
+  {
+    "id": "v098",
+    "sourceIndex": 98,
+    "hanzi": "开车",
+    "pinyin": "kāichē",
+    "meaning": "Auto fahren",
+    "accepted": [
+      "Auto fahren",
+      "autofahren",
+      "fahren"
+    ],
+    "example": {
+      "id": "ex-v098",
+      "zh": "我爸爸开车上班。",
+      "pinyin": "Wǒ bàba kāichē shàngbān.",
+      "de": "Mein Vater fährt mit dem Auto zur Arbeit."
+    },
+    "lessonId": "l41"
+  },
+  {
+    "id": "v099",
+    "sourceIndex": 99,
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "sehen; anschauen; lesen",
+    "accepted": [
+      "sehen",
+      "anschauen",
+      "ansehen",
+      "lesen"
+    ],
+    "example": {
+      "id": "ex-v099",
+      "zh": "我在看书。",
+      "pinyin": "Wǒ zài kàn shū.",
+      "de": "Ich lese gerade ein Buch."
+    },
+    "note": "看书 heißt „ein Buch lesen“, 看电视 „fernsehen“.",
+    "lessonId": "l19"
+  },
+  {
+    "id": "v100",
+    "sourceIndex": 100,
+    "hanzi": "看病",
+    "pinyin": "kànbìng",
+    "meaning": "zum Arzt gehen; behandeln",
+    "accepted": [
+      "zum Arzt gehen",
+      "sich untersuchen lassen",
+      "behandeln"
+    ],
+    "example": {
+      "id": "ex-v100",
+      "zh": "我明天去医院看病。",
+      "pinyin": "Wǒ míngtiān qù yīyuàn kànbìng.",
+      "de": "Ich gehe morgen zur Untersuchung ins Krankenhaus."
+    },
+    "note": "Aus Sicht des Patienten ärztliche Hilfe suchen, aus Sicht des Arztes einen Patienten behandeln.",
+    "lessonId": "l47"
+  },
+  {
+    "id": "v101",
+    "sourceIndex": 101,
+    "hanzi": "看见",
+    "pinyin": "kànjiàn",
+    "meaning": "sehen; erblicken",
+    "accepted": [
+      "sehen",
+      "erblicken",
+      "gesehen haben"
+    ],
+    "example": {
+      "id": "ex-v101",
+      "zh": "我看见老师了。",
+      "pinyin": "Wǒ kànjiàn lǎoshī le.",
+      "de": "Ich habe den Lehrer gesehen."
+    },
+    "note": "看见 betont das erfolgreiche Wahrnehmen; 看 bezeichnet das Anschauen.",
+    "lessonId": "l19"
+  },
+  {
+    "id": "v102",
+    "sourceIndex": 102,
+    "hanzi": "可以",
+    "pinyin": "kěyǐ",
+    "meaning": "dürfen; können",
+    "accepted": [
+      "dürfen",
+      "können",
+      "erlaubt sein"
+    ],
+    "example": {
+      "id": "ex-v102",
+      "zh": "我可以坐这里吗？",
+      "pinyin": "Wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Darf ich hier sitzen?"
+    },
+    "note": "Oft für Erlaubnis oder eine zulässige Möglichkeit.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v103",
+    "sourceIndex": 103,
+    "hanzi": "课",
+    "pinyin": "kè",
+    "meaning": "Unterricht; Unterrichtsstunde",
+    "accepted": [
+      "Unterricht",
+      "Unterrichtsstunde",
+      "Stunde",
+      "Lektion"
+    ],
+    "example": {
+      "id": "ex-v103",
+      "zh": "我今天有汉语课。",
+      "pinyin": "Wǒ jīntiān yǒu Hànyǔ kè.",
+      "de": "Ich habe heute Chinesischunterricht."
+    },
+    "lessonId": "l16"
+  },
+  {
+    "id": "v104",
+    "sourceIndex": 104,
+    "hanzi": "口",
+    "pinyin": "kǒu",
+    "meaning": "Mund; Zählwort für Familienmitglieder",
+    "accepted": [
+      "Mund",
+      "Zählwort für Familienmitglieder"
+    ],
+    "example": {
+      "id": "ex-v104",
+      "zh": "我们家有四口人。",
+      "pinyin": "Wǒmen jiā yǒu sì kǒu rén.",
+      "de": "Unsere Familie hat vier Mitglieder."
+    },
+    "note": "口 zählt in dieser Verwendung die Personen eines Haushalts.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v105",
+    "sourceIndex": 105,
+    "hanzi": "块",
+    "pinyin": "kuài",
+    "meaning": "Yuan; Stück; Zählwort",
+    "accepted": [
+      "Yuan",
+      "Stück",
+      "Kuai",
+      "Geldeinheit"
+    ],
+    "example": {
+      "id": "ex-v105",
+      "zh": "这个苹果三块钱。",
+      "pinyin": "Zhège píngguǒ sān kuài qián.",
+      "de": "Dieser Apfel kostet drei Yuan."
+    },
+    "note": "块 ist die alltägliche Bezeichnung für die Geldeinheit 元.",
+    "lessonId": "l36"
+  },
+  {
+    "id": "v106",
+    "sourceIndex": 106,
+    "hanzi": "来",
+    "pinyin": "lái",
+    "meaning": "kommen",
+    "accepted": [
+      "kommen"
+    ],
+    "example": {
+      "id": "ex-v106",
+      "zh": "你什么时候来？",
+      "pinyin": "Nǐ shénme shíhou lái?",
+      "de": "Wann kommst du?"
+    },
+    "lessonId": "l34"
+  },
+  {
+    "id": "v107",
+    "sourceIndex": 107,
+    "hanzi": "老师",
+    "pinyin": "lǎoshī",
+    "meaning": "Lehrer; Lehrerin",
+    "accepted": [
+      "Lehrer",
+      "Lehrerin",
+      "Lehrkraft"
+    ],
+    "example": {
+      "id": "ex-v107",
+      "zh": "我们的老师是中国人。",
+      "pinyin": "Wǒmen de lǎoshī shì Zhōngguó rén.",
+      "de": "Unser Lehrer ist Chinese."
+    },
+    "lessonId": "l16"
+  },
+  {
+    "id": "v108",
+    "sourceIndex": 108,
+    "hanzi": "了",
+    "pinyin": "le",
+    "meaning": "Partikel für Abschluss oder Veränderung",
+    "accepted": [
+      "Aspektpartikel",
+      "Abschlusspartikel",
+      "Veränderungspartikel",
+      "Satzpartikel"
+    ],
+    "example": {
+      "id": "ex-v108",
+      "zh": "我买了一个苹果。",
+      "pinyin": "Wǒ mǎi le yí ge píngguǒ.",
+      "de": "Ich habe einen Apfel gekauft."
+    },
+    "note": "了 ist kein allgemeines Vergangenheitszeichen. Nach dem Verb markiert es hier eine abgeschlossene Handlung.",
+    "lessonId": "l40"
+  },
+  {
+    "id": "v109",
+    "sourceIndex": 109,
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "meaning": "kalt",
+    "accepted": [
+      "kalt"
+    ],
+    "example": {
+      "id": "ex-v109",
+      "zh": "今天很冷。",
+      "pinyin": "Jīntiān hěn lěng.",
+      "de": "Heute ist es kalt."
+    },
+    "lessonId": "l48"
+  },
+  {
+    "id": "v110",
+    "sourceIndex": 110,
+    "hanzi": "里",
+    "pinyin": "lǐ",
+    "meaning": "in; innen",
+    "accepted": [
+      "in",
+      "innen",
+      "drinnen"
+    ],
+    "example": {
+      "id": "ex-v110",
+      "zh": "书在我的包里。",
+      "pinyin": "Shū zài wǒ de bāo lǐ.",
+      "de": "Das Buch ist in meiner Tasche."
+    },
+    "note": "Ortswort nach einem Nomen: 包里 „in der Tasche“. 包 bāo heißt „Tasche“.",
+    "lessonId": "l30"
+  },
+  {
+    "id": "v111",
+    "sourceIndex": 111,
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "meaning": "zwei vor Zählwörtern",
+    "accepted": [
+      "zwei",
+      "2"
+    ],
+    "example": {
+      "id": "ex-v111",
+      "zh": "我有两个姐姐。",
+      "pinyin": "Wǒ yǒu liǎng ge jiějie.",
+      "de": "Ich habe zwei ältere Schwestern."
+    },
+    "note": "Vor Zählwörtern meist 两: 两个人. Beim Zählen und in 星期二 verwendet man 二.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v112",
+    "sourceIndex": 112,
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "null",
+    "accepted": [
+      "null",
+      "0"
+    ],
+    "example": {
+      "id": "ex-v112",
+      "zh": "这个电话号里有三个零。",
+      "pinyin": "Zhège diànhuà hào lǐ yǒu sān ge líng.",
+      "de": "In dieser Telefonnummer kommen drei Nullen vor."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v113",
+    "sourceIndex": 113,
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "sechs",
+    "accepted": [
+      "sechs",
+      "6"
+    ],
+    "example": {
+      "id": "ex-v113",
+      "zh": "我们六点吃晚饭。",
+      "pinyin": "Wǒmen liù diǎn chī wǎnfàn.",
+      "de": "Wir essen um sechs Uhr zu Abend."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v114",
+    "sourceIndex": 114,
+    "hanzi": "妈妈",
+    "pinyin": "māma",
+    "meaning": "Mama; Mutter",
+    "accepted": [
+      "Mama",
+      "Mutter"
+    ],
+    "example": {
+      "id": "ex-v114",
+      "zh": "我妈妈喜欢喝茶。",
+      "pinyin": "Wǒ māma xǐhuan hē chá.",
+      "de": "Meine Mutter trinkt gern Tee."
+    },
+    "note": "Die zweite Silbe ist unbetont: māma.",
+    "lessonId": "l06"
+  },
+  {
+    "id": "v115",
+    "sourceIndex": 115,
+    "hanzi": "吗",
+    "pinyin": "ma",
+    "meaning": "Partikel für Ja-Nein-Fragen",
+    "accepted": [
+      "Fragepartikel",
+      "Ja-Nein-Fragepartikel"
+    ],
+    "example": {
+      "id": "ex-v115",
+      "zh": "你是学生吗？",
+      "pinyin": "Nǐ shì xuéshēng ma?",
+      "de": "Bist du Schüler?"
+    },
+    "note": "吗 steht am Ende einer Ja-Nein-Frage. Bei Fragen mit 什么 oder 谁 entfällt es normalerweise.",
+    "lessonId": "l01"
+  },
+  {
+    "id": "v116",
+    "sourceIndex": 116,
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "kaufen",
+    "accepted": [
+      "kaufen"
+    ],
+    "example": {
+      "id": "ex-v116",
+      "zh": "我想买一本书。",
+      "pinyin": "Wǒ xiǎng mǎi yì běn shū.",
+      "de": "Ich möchte ein Buch kaufen."
+    },
+    "note": "买 mǎi „kaufen“ hat den dritten Ton; 卖 mài „verkaufen“ den vierten.",
+    "lessonId": "l35"
+  },
+  {
+    "id": "v117",
+    "sourceIndex": 117,
+    "hanzi": "卖",
+    "pinyin": "mài",
+    "meaning": "verkaufen",
+    "accepted": [
+      "verkaufen"
+    ],
+    "example": {
+      "id": "ex-v117",
+      "zh": "这家店卖水果。",
+      "pinyin": "Zhè jiā diàn mài shuǐguǒ.",
+      "de": "Dieser Laden verkauft Obst."
+    },
+    "note": "Nicht mit 买 mǎi „kaufen“ verwechseln.",
+    "lessonId": "l35"
+  },
+  {
+    "id": "v118",
+    "sourceIndex": 118,
+    "hanzi": "忙",
+    "pinyin": "máng",
+    "meaning": "beschäftigt; viel zu tun haben",
+    "accepted": [
+      "beschäftigt",
+      "viel zu tun haben",
+      "geschäftig"
+    ],
+    "example": {
+      "id": "ex-v118",
+      "zh": "你今天忙吗？",
+      "pinyin": "Nǐ jīntiān máng ma?",
+      "de": "Hast du heute viel zu tun?"
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v119",
+    "sourceIndex": 119,
+    "hanzi": "猫",
+    "pinyin": "māo",
+    "meaning": "Katze",
+    "accepted": [
+      "Katze"
+    ],
+    "example": {
+      "id": "ex-v119",
+      "zh": "猫在椅子上睡觉。",
+      "pinyin": "Māo zài yǐzi shàng shuìjiào.",
+      "de": "Die Katze schläft auf dem Stuhl."
+    },
+    "lessonId": "l46"
+  },
+  {
+    "id": "v120",
+    "sourceIndex": 120,
+    "hanzi": "没关系",
+    "pinyin": "méi guānxi",
+    "meaning": "macht nichts; kein Problem",
+    "accepted": [
+      "macht nichts",
+      "kein Problem",
+      "nicht schlimm"
+    ],
+    "example": {
+      "id": "ex-v120",
+      "zh": "对不起！没关系。",
+      "pinyin": "Duìbuqǐ! Méi guānxi.",
+      "de": "Entschuldigung! Macht nichts."
+    },
+    "note": "Beruhigende Antwort auf eine Entschuldigung.",
+    "lessonId": "l05"
+  },
+  {
+    "id": "v121",
+    "sourceIndex": 121,
+    "hanzi": "没事",
+    "pinyin": "méishì",
+    "meaning": "nichts los; alles in Ordnung",
+    "accepted": [
+      "alles in Ordnung",
+      "nichts los",
+      "macht nichts",
+      "kein Problem"
+    ],
+    "example": {
+      "id": "ex-v121",
+      "zh": "我没事，你呢？",
+      "pinyin": "Wǒ méishì, nǐ ne?",
+      "de": "Bei mir ist alles in Ordnung, und bei dir?"
+    },
+    "note": "Kann „mir fehlt nichts“, „es ist nichts passiert“ oder „ich habe nichts vor“ ausdrücken.",
+    "lessonId": "l05"
+  },
+  {
+    "id": "v122",
+    "sourceIndex": 122,
+    "hanzi": "没有",
+    "pinyin": "méiyǒu",
+    "meaning": "nicht haben; es gibt nicht",
+    "accepted": [
+      "nicht haben",
+      "es gibt nicht",
+      "kein",
+      "keine"
+    ],
+    "example": {
+      "id": "ex-v122",
+      "zh": "我没有电脑。",
+      "pinyin": "Wǒ méiyǒu diànnǎo.",
+      "de": "Ich habe keinen Computer."
+    },
+    "note": "Verneint 有. Vor Verben verneint 没有 außerdem das Eintreten einer Handlung.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v123",
+    "sourceIndex": 123,
+    "hanzi": "妹妹",
+    "pinyin": "mèimei",
+    "meaning": "jüngere Schwester",
+    "accepted": [
+      "jüngere Schwester",
+      "kleine Schwester"
+    ],
+    "example": {
+      "id": "ex-v123",
+      "zh": "我妹妹喜欢唱歌。",
+      "pinyin": "Wǒ mèimei xǐhuan chàng gē.",
+      "de": "Meine jüngere Schwester singt gern."
+    },
+    "lessonId": "l07"
+  },
+  {
+    "id": "v124",
+    "sourceIndex": 124,
+    "hanzi": "们",
+    "pinyin": "men",
+    "meaning": "Mehrzahlendung für Personen",
+    "accepted": [
+      "Mehrzahlendung",
+      "Pluralendung",
+      "Pluralmarker"
+    ],
+    "example": {
+      "id": "ex-v124",
+      "zh": "学生们都在学校里。",
+      "pinyin": "Xuéshēngmen dōu zài xuéxiào lǐ.",
+      "de": "Die Schüler sind alle in der Schule."
+    },
+    "note": "Vor allem bei Pronomen: 我们. Nach Zahlen normalerweise kein 们.",
+    "lessonId": "l08"
+  },
+  {
+    "id": "v125",
+    "sourceIndex": 125,
+    "hanzi": "米饭",
+    "pinyin": "mǐfàn",
+    "meaning": "gekochter Reis",
+    "accepted": [
+      "Reis",
+      "gekochter Reis"
+    ],
+    "example": {
+      "id": "ex-v125",
+      "zh": "我喜欢吃米饭。",
+      "pinyin": "Wǒ xǐhuan chī mǐfàn.",
+      "de": "Ich esse gern Reis."
+    },
+    "lessonId": "l28"
+  },
+  {
+    "id": "v126",
+    "sourceIndex": 126,
+    "hanzi": "面包",
+    "pinyin": "miànbāo",
+    "meaning": "Brot",
+    "accepted": [
+      "Brot"
+    ],
+    "example": {
+      "id": "ex-v126",
+      "zh": "桌子上有面包。",
+      "pinyin": "Zhuōzi shàng yǒu miànbāo.",
+      "de": "Auf dem Tisch liegt Brot."
+    },
+    "lessonId": "l28"
+  },
+  {
+    "id": "v127",
+    "sourceIndex": 127,
+    "hanzi": "面条儿",
+    "pinyin": "miàntiáor",
+    "meaning": "Nudeln",
+    "accepted": [
+      "Nudeln",
+      "Nudel"
+    ],
+    "example": {
+      "id": "ex-v127",
+      "zh": "我中午吃面条儿。",
+      "pinyin": "Wǒ zhōngwǔ chī miàntiáor.",
+      "de": "Ich esse mittags Nudeln."
+    },
+    "note": "Der offizielle Eintrag enthält Erhua: miàntiáor. Auch 面条 ohne 儿 ist gebräuchlich.",
+    "lessonId": "l28"
+  },
+  {
+    "id": "v128",
+    "sourceIndex": 128,
+    "hanzi": "明年",
+    "pinyin": "míngnián",
+    "meaning": "nächstes Jahr",
+    "accepted": [
+      "nächstes Jahr",
+      "im nächsten Jahr"
+    ],
+    "example": {
+      "id": "ex-v128",
+      "zh": "我明年去中国。",
+      "pinyin": "Wǒ míngnián qù Zhōngguó.",
+      "de": "Ich fahre nächstes Jahr nach China."
+    },
+    "lessonId": "l25"
+  },
+  {
+    "id": "v129",
+    "sourceIndex": 129,
+    "hanzi": "明天",
+    "pinyin": "míngtiān",
+    "meaning": "morgen",
+    "accepted": [
+      "morgen"
+    ],
+    "example": {
+      "id": "ex-v129",
+      "zh": "明天我们有课。",
+      "pinyin": "Míngtiān wǒmen yǒu kè.",
+      "de": "Morgen haben wir Unterricht."
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "v130",
+    "sourceIndex": 130,
+    "hanzi": "名字",
+    "pinyin": "míngzi",
+    "meaning": "Name",
+    "accepted": [
+      "Name"
+    ],
+    "example": {
+      "id": "ex-v130",
+      "zh": "你的名字很好听。",
+      "pinyin": "Nǐ de míngzi hěn hǎotīng.",
+      "de": "Dein Name klingt schön."
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "v131",
+    "sourceIndex": 131,
+    "hanzi": "哪",
+    "pinyin": "nǎ",
+    "meaning": "welcher; welche; welches",
+    "accepted": [
+      "welcher",
+      "welche",
+      "welches"
+    ],
+    "example": {
+      "id": "ex-v131",
+      "zh": "你想去哪家店？",
+      "pinyin": "Nǐ xiǎng qù nǎ jiā diàn?",
+      "de": "In welchen Laden möchtest du gehen?"
+    },
+    "note": "哪 fragt nach einer Auswahl; nicht mit 那 nà „jener/dort“ verwechseln.",
+    "lessonId": "l13"
+  },
+  {
+    "id": "v132",
+    "sourceIndex": 132,
+    "hanzi": "哪个",
+    "pinyin": "nǎge",
+    "meaning": "welcher; welches davon",
+    "accepted": [
+      "welcher",
+      "welches",
+      "welche",
+      "welches davon"
+    ],
+    "example": {
+      "id": "ex-v132",
+      "zh": "哪个是你的杯子？",
+      "pinyin": "Nǎge shì nǐ de bēizi?",
+      "de": "Welches ist deine Tasse?"
+    },
+    "note": "哪 + allgemeines Zählwort 个; in der Alltagssprache hört man auch něige.",
+    "lessonId": "l13"
+  },
+  {
+    "id": "v133",
+    "sourceIndex": 133,
+    "hanzi": "哪里",
+    "pinyin": "nǎlǐ",
+    "meaning": "wo",
+    "accepted": [
+      "wo",
+      "wohin"
+    ],
+    "example": {
+      "id": "ex-v133",
+      "zh": "你在哪里工作？",
+      "pinyin": "Nǐ zài nǎlǐ gōngzuò?",
+      "de": "Wo arbeitest du?"
+    },
+    "note": "哪里 und 哪儿 fragen beide nach einem Ort.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v134",
+    "sourceIndex": 134,
+    "hanzi": "哪儿",
+    "pinyin": "nǎr",
+    "meaning": "wo",
+    "accepted": [
+      "wo",
+      "wohin"
+    ],
+    "example": {
+      "id": "ex-v134",
+      "zh": "你家在哪儿？",
+      "pinyin": "Nǐ jiā zài nǎr?",
+      "de": "Wo ist dein Zuhause?"
+    },
+    "note": "哪儿 nǎr wird mit r-Auslaut gesprochen; weitgehend bedeutungsgleich mit 哪里.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v135",
+    "sourceIndex": 135,
+    "hanzi": "哪些",
+    "pinyin": "nǎxiē",
+    "meaning": "welche; welche mehreren",
+    "accepted": [
+      "welche",
+      "welche mehreren"
+    ],
+    "example": {
+      "id": "ex-v135",
+      "zh": "哪些书是你的？",
+      "pinyin": "Nǎxiē shū shì nǐ de?",
+      "de": "Welche Bücher gehören dir?"
+    },
+    "note": "哪些 fragt nach mehreren Dingen; 哪个 nach einem einzelnen.",
+    "lessonId": "l14"
+  },
+  {
+    "id": "v136",
+    "sourceIndex": 136,
+    "hanzi": "那",
+    "pinyin": "nà",
+    "meaning": "jener; jene; jenes; das dort",
+    "accepted": [
+      "jener",
+      "jene",
+      "jenes",
+      "das dort"
+    ],
+    "example": {
+      "id": "ex-v136",
+      "zh": "那是我的学校。",
+      "pinyin": "Nà shì wǒ de xuéxiào.",
+      "de": "Das dort ist meine Schule."
+    },
+    "lessonId": "l13"
+  },
+  {
+    "id": "v137",
+    "sourceIndex": 137,
+    "hanzi": "那边",
+    "pinyin": "nàbiān",
+    "meaning": "dort drüben; jene Seite",
+    "accepted": [
+      "dort drüben",
+      "da drüben",
+      "jene Seite"
+    ],
+    "example": {
+      "id": "ex-v137",
+      "zh": "书店在那边。",
+      "pinyin": "Shūdiàn zài nàbiān.",
+      "de": "Die Buchhandlung ist dort drüben."
+    },
+    "lessonId": "l32"
+  },
+  {
+    "id": "v138",
+    "sourceIndex": 138,
+    "hanzi": "那个",
+    "pinyin": "nàge",
+    "meaning": "jener; das dort",
+    "accepted": [
+      "jener",
+      "jene",
+      "jenes",
+      "das dort"
+    ],
+    "example": {
+      "id": "ex-v138",
+      "zh": "那个杯子很漂亮。",
+      "pinyin": "Nàge bēizi hěn piàoliang.",
+      "de": "Die Tasse dort ist schön."
+    },
+    "note": "那 + 个. In der Alltagssprache hört man auch nèige; offizielles Lernpinyin ist nàge.",
+    "lessonId": "l13"
+  },
+  {
+    "id": "v139",
+    "sourceIndex": 139,
+    "hanzi": "那里",
+    "pinyin": "nàlǐ",
+    "meaning": "dort",
+    "accepted": [
+      "dort",
+      "da"
+    ],
+    "example": {
+      "id": "ex-v139",
+      "zh": "我朋友住在那里。",
+      "pinyin": "Wǒ péngyou zhù zài nàlǐ.",
+      "de": "Mein Freund wohnt dort."
+    },
+    "lessonId": "l32"
+  },
+  {
+    "id": "v140",
+    "sourceIndex": 140,
+    "hanzi": "那儿",
+    "pinyin": "nàr",
+    "meaning": "dort",
+    "accepted": [
+      "dort",
+      "da",
+      "dorthin"
+    ],
+    "example": {
+      "id": "ex-v140",
+      "zh": "我们去那儿吧。",
+      "pinyin": "Wǒmen qù nàr ba.",
+      "de": "Gehen wir dorthin."
+    },
+    "note": "那儿 und 那里 haben dieselbe grundlegende Ortsbedeutung.",
+    "lessonId": "l32"
+  },
+  {
+    "id": "v141",
+    "sourceIndex": 141,
+    "hanzi": "那些",
+    "pinyin": "nàxiē",
+    "meaning": "jene; die dort",
+    "accepted": [
+      "jene",
+      "die dort",
+      "diese dort"
+    ],
+    "example": {
+      "id": "ex-v141",
+      "zh": "那些人是我的同学。",
+      "pinyin": "Nàxiē rén shì wǒ de tóngxué.",
+      "de": "Die Leute dort sind meine Mitschüler."
+    },
+    "note": "Bezeichnet mehrere entferntere Personen oder Dinge.",
+    "lessonId": "l14"
+  },
+  {
+    "id": "v142",
+    "sourceIndex": 142,
+    "hanzi": "男",
+    "pinyin": "nán",
+    "meaning": "männlich; Mann",
+    "accepted": [
+      "männlich",
+      "Mann"
+    ],
+    "example": {
+      "id": "ex-v142",
+      "zh": "我们班有十个男学生。",
+      "pinyin": "Wǒmen bān yǒu shí ge nán xuéshēng.",
+      "de": "In unserer Klasse sind zehn männliche Schüler."
+    },
+    "note": "男 steht häufig vor einem Nomen: 男学生. 班 bān bedeutet „Klasse“.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v143",
+    "sourceIndex": 143,
+    "hanzi": "男朋友",
+    "pinyin": "nánpéngyou",
+    "meaning": "Freund; fester Freund",
+    "accepted": [
+      "fester Freund",
+      "Partner",
+      "Freund"
+    ],
+    "example": {
+      "id": "ex-v143",
+      "zh": "她男朋友是大学生。",
+      "pinyin": "Tā nánpéngyou shì dàxuéshēng.",
+      "de": "Ihr fester Freund ist Student."
+    },
+    "note": "Meist ein romantischer Partner, nicht einfach ein männlicher Bekannter.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v144",
+    "sourceIndex": 144,
+    "hanzi": "呢",
+    "pinyin": "ne",
+    "meaning": "Partikel für Rückfragen oder Fortdauer",
+    "accepted": [
+      "Rückfragepartikel",
+      "Satzpartikel"
+    ],
+    "example": {
+      "id": "ex-v144",
+      "zh": "我很好，你呢？",
+      "pinyin": "Wǒ hěn hǎo, nǐ ne?",
+      "de": "Mir geht es gut, und dir?"
+    },
+    "note": "Nach einem Thema bildet 呢 eine Rückfrage: 你呢？ „Und du?“",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v145",
+    "sourceIndex": 145,
+    "hanzi": "能",
+    "pinyin": "néng",
+    "meaning": "können; imstande sein",
+    "accepted": [
+      "können",
+      "imstande sein"
+    ],
+    "example": {
+      "id": "ex-v145",
+      "zh": "我今天不能去。",
+      "pinyin": "Wǒ jīntiān bù néng qù.",
+      "de": "Ich kann heute nicht hingehen."
+    },
+    "note": "Bezieht sich auf Fähigkeit oder Umstände; 会 oft auf etwas Erlerntes, 可以 oft auf Erlaubnis.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v146",
+    "sourceIndex": 146,
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "meaning": "du",
+    "accepted": [
+      "du",
+      "dich",
+      "dir"
+    ],
+    "example": {
+      "id": "ex-v146",
+      "zh": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "de": "Hallo!"
+    },
+    "lessonId": "l01"
+  },
+  {
+    "id": "v147",
+    "sourceIndex": 147,
+    "hanzi": "你好",
+    "pinyin": "nǐ hǎo",
+    "meaning": "hallo; guten Tag",
+    "accepted": [
+      "hallo",
+      "guten Tag"
+    ],
+    "example": {
+      "id": "ex-v147",
+      "zh": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "de": "Hallo!"
+    },
+    "note": "Die geschriebenen Töne sind nǐ hǎo. Im Sprechen wird der erste dritte Ton zu einem steigenden Ton.",
+    "lessonId": "l01"
+  },
+  {
+    "id": "v148",
+    "sourceIndex": 148,
+    "hanzi": "你们",
+    "pinyin": "nǐmen",
+    "meaning": "ihr",
+    "accepted": [
+      "ihr",
+      "euch"
+    ],
+    "example": {
+      "id": "ex-v148",
+      "zh": "你们是老师吗？",
+      "pinyin": "Nǐmen shì lǎoshī ma?",
+      "de": "Seid ihr Lehrer?"
+    },
+    "lessonId": "l08"
+  },
+  {
+    "id": "v149",
+    "sourceIndex": 149,
+    "hanzi": "年",
+    "pinyin": "nián",
+    "meaning": "Jahr",
+    "accepted": [
+      "Jahr",
+      "Jahre"
+    ],
+    "example": {
+      "id": "ex-v149",
+      "zh": "我在这里住了三年。",
+      "pinyin": "Wǒ zài zhèlǐ zhù le sān nián.",
+      "de": "Ich habe drei Jahre hier gewohnt."
+    },
+    "note": "Zeitdauer direkt nach einer Zahl: 三年; kein 个 nötig.",
+    "lessonId": "l25"
+  },
+  {
+    "id": "v150",
+    "sourceIndex": 150,
+    "hanzi": "您",
+    "pinyin": "nín",
+    "meaning": "Sie; höfliches Du",
+    "accepted": [
+      "Sie",
+      "Ihnen",
+      "höfliches Du"
+    ],
+    "example": {
+      "id": "ex-v150",
+      "zh": "您叫什么名字？",
+      "pinyin": "Nín jiào shénme míngzi?",
+      "de": "Wie heißen Sie?"
+    },
+    "note": "Höfliche Anrede für eine Person; besonders bei Respekt oder formellem Kontakt.",
+    "lessonId": "l04"
+  },
+  {
+    "id": "v151",
+    "sourceIndex": 151,
+    "hanzi": "牛奶",
+    "pinyin": "niúnǎi",
+    "meaning": "Milch; Kuhmilch",
+    "accepted": [
+      "Milch",
+      "Kuhmilch"
+    ],
+    "example": {
+      "id": "ex-v151",
+      "zh": "孩子早上喝牛奶。",
+      "pinyin": "Háizi zǎoshang hē niúnǎi.",
+      "de": "Das Kind trinkt morgens Milch."
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "v152",
+    "sourceIndex": 152,
+    "hanzi": "女",
+    "pinyin": "nǚ",
+    "meaning": "weiblich; Frau",
+    "accepted": [
+      "weiblich",
+      "Frau"
+    ],
+    "example": {
+      "id": "ex-v152",
+      "zh": "她是我们学校的女老师。",
+      "pinyin": "Tā shì wǒmen xuéxiào de nǚ lǎoshī.",
+      "de": "Sie ist eine Lehrerin an unserer Schule."
+    },
+    "note": "Das ü in nǚ muss erhalten bleiben; nu wäre eine andere Silbe.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v153",
+    "sourceIndex": 153,
+    "hanzi": "女儿",
+    "pinyin": "nǚ’ér",
+    "meaning": "Tochter",
+    "accepted": [
+      "Tochter"
+    ],
+    "example": {
+      "id": "ex-v153",
+      "zh": "我女儿今年五岁。",
+      "pinyin": "Wǒ nǚ'ér jīnnián wǔ suì.",
+      "de": "Meine Tochter ist dieses Jahr fünf Jahre alt."
+    },
+    "note": "女儿 hat zwei Silben: nǚ'ér. Hier ist 儿 kein r-Auslaut.",
+    "lessonId": "l07"
+  },
+  {
+    "id": "v154",
+    "sourceIndex": 154,
+    "hanzi": "女朋友",
+    "pinyin": "nǚpéngyou",
+    "meaning": "Freundin; feste Freundin",
+    "accepted": [
+      "feste Freundin",
+      "Partnerin",
+      "Freundin"
+    ],
+    "example": {
+      "id": "ex-v154",
+      "zh": "我女朋友喜欢看电影。",
+      "pinyin": "Wǒ nǚpéngyou xǐhuan kàn diànyǐng.",
+      "de": "Meine feste Freundin sieht gern Filme."
+    },
+    "note": "Meist eine romantische Partnerin, nicht einfach eine weibliche Bekannte.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v155",
+    "sourceIndex": 155,
+    "hanzi": "女士",
+    "pinyin": "nǚshì",
+    "meaning": "Frau; Dame",
+    "accepted": [
+      "Frau",
+      "Dame"
+    ],
+    "example": {
+      "id": "ex-v155",
+      "zh": "王女士，您好！",
+      "pinyin": "Wáng nǚshì, nín hǎo!",
+      "de": "Guten Tag, Frau Wang!"
+    },
+    "note": "Höfliche Anrede nach dem Familiennamen: 王女士 „Frau Wang“.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v156",
+    "sourceIndex": 156,
+    "hanzi": "朋友",
+    "pinyin": "péngyou",
+    "meaning": "Freund; Freundin",
+    "accepted": [
+      "Freund",
+      "Freundin",
+      "Freunde"
+    ],
+    "example": {
+      "id": "ex-v156",
+      "zh": "他是我的朋友。",
+      "pinyin": "Tā shì wǒ de péngyou.",
+      "de": "Er ist mein Freund."
+    },
+    "note": "Bezeichnet eine Freundschaft ohne notwendige romantische Bedeutung.",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v157",
+    "sourceIndex": 157,
+    "hanzi": "便宜",
+    "pinyin": "piányi",
+    "meaning": "billig; preiswert",
+    "accepted": [
+      "billig",
+      "preiswert",
+      "günstig"
+    ],
+    "example": {
+      "id": "ex-v157",
+      "zh": "这些苹果很便宜。",
+      "pinyin": "Zhèxiē píngguǒ hěn piányi.",
+      "de": "Diese Äpfel sind günstig."
+    },
+    "note": "Hier piányi mit pián und unbetontem yi; nicht biàn lesen.",
+    "lessonId": "l36"
+  },
+  {
+    "id": "v158",
+    "sourceIndex": 158,
+    "hanzi": "漂亮",
+    "pinyin": "piàoliang",
+    "meaning": "schön; hübsch",
+    "accepted": [
+      "schön",
+      "hübsch"
+    ],
+    "example": {
+      "id": "ex-v158",
+      "zh": "这件衣服很漂亮。",
+      "pinyin": "Zhè jiàn yīfu hěn piàoliang.",
+      "de": "Dieses Kleidungsstück ist schön."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "v159",
+    "sourceIndex": 159,
+    "hanzi": "苹果",
+    "pinyin": "píngguǒ",
+    "meaning": "Apfel",
+    "accepted": [
+      "Apfel"
+    ],
+    "example": {
+      "id": "ex-v159",
+      "zh": "我想吃一个苹果。",
+      "pinyin": "Wǒ xiǎng chī yí ge píngguǒ.",
+      "de": "Ich möchte einen Apfel essen."
+    },
+    "lessonId": "l29"
+  },
+  {
+    "id": "v160",
+    "sourceIndex": 160,
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "sieben",
+    "accepted": [
+      "sieben",
+      "7"
+    ],
+    "example": {
+      "id": "ex-v160",
+      "zh": "他七点起床。",
+      "pinyin": "Tā qī diǎn qǐchuáng.",
+      "de": "Er steht um sieben Uhr auf."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v161",
+    "sourceIndex": 161,
+    "hanzi": "起床",
+    "pinyin": "qǐchuáng",
+    "meaning": "aufstehen",
+    "accepted": [
+      "aufstehen",
+      "aus dem Bett aufstehen"
+    ],
+    "example": {
+      "id": "ex-v161",
+      "zh": "我早上六点起床。",
+      "pinyin": "Wǒ zǎoshang liù diǎn qǐchuáng.",
+      "de": "Ich stehe morgens um sechs Uhr auf."
+    },
+    "note": "Gemeint ist das Aufstehen aus dem Bett.",
+    "lessonId": "l40"
+  },
+  {
+    "id": "v162",
+    "sourceIndex": 162,
+    "hanzi": "千",
+    "pinyin": "qiān",
+    "meaning": "tausend",
+    "accepted": [
+      "tausend",
+      "1000"
+    ],
+    "example": {
+      "id": "ex-v162",
+      "zh": "这个手机一千元。",
+      "pinyin": "Zhège shǒujī yì qiān yuán.",
+      "de": "Dieses Handy kostet tausend Yuan."
+    },
+    "lessonId": "l36"
+  },
+  {
+    "id": "v163",
+    "sourceIndex": 163,
+    "hanzi": "前",
+    "pinyin": "qián",
+    "meaning": "vor; vorne; früher",
+    "accepted": [
+      "vor",
+      "vorne",
+      "früher"
+    ],
+    "example": {
+      "id": "ex-v163",
+      "zh": "我在学校前。",
+      "pinyin": "Wǒ zài xuéxiào qián.",
+      "de": "Ich bin vor der Schule."
+    },
+    "note": "Räumlich „vor/vorne“, zeitlich „vor/früher“; häufig auch 前边.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v164",
+    "sourceIndex": 164,
+    "hanzi": "钱",
+    "pinyin": "qián",
+    "meaning": "Geld",
+    "accepted": [
+      "Geld"
+    ],
+    "example": {
+      "id": "ex-v164",
+      "zh": "我没有钱买电脑。",
+      "pinyin": "Wǒ méiyǒu qián mǎi diànnǎo.",
+      "de": "Ich habe kein Geld, um einen Computer zu kaufen."
+    },
+    "lessonId": "l35"
+  },
+  {
+    "id": "v165",
+    "sourceIndex": 165,
+    "hanzi": "请",
+    "pinyin": "qǐng",
+    "meaning": "bitte; bitten; einladen",
+    "accepted": [
+      "bitte",
+      "bitten",
+      "einladen"
+    ],
+    "example": {
+      "id": "ex-v165",
+      "zh": "请坐。",
+      "pinyin": "Qǐng zuò.",
+      "de": "Bitte setzen Sie sich."
+    },
+    "note": "请 vor dem Verb macht eine Aufforderung höflich.",
+    "lessonId": "l04"
+  },
+  {
+    "id": "v166",
+    "sourceIndex": 166,
+    "hanzi": "请问",
+    "pinyin": "qǐngwèn",
+    "meaning": "entschuldigen Sie; darf ich fragen",
+    "accepted": [
+      "entschuldigen Sie",
+      "darf ich fragen",
+      "Entschuldigung"
+    ],
+    "example": {
+      "id": "ex-v166",
+      "zh": "请问，医院在哪儿？",
+      "pinyin": "Qǐngwèn, yīyuàn zài nǎr?",
+      "de": "Entschuldigen Sie, wo ist das Krankenhaus?"
+    },
+    "note": "Höfliche Einleitung einer Frage an eine andere Person.",
+    "lessonId": "l05"
+  },
+  {
+    "id": "v167",
+    "sourceIndex": 167,
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "gehen; hinfahren",
+    "accepted": [
+      "gehen",
+      "hingehen",
+      "fahren",
+      "hinfahren"
+    ],
+    "example": {
+      "id": "ex-v167",
+      "zh": "我去超市买东西。",
+      "pinyin": "Wǒ qù chāoshì mǎi dōngxi.",
+      "de": "Ich gehe zum Supermarkt, um einzukaufen."
+    },
+    "note": "Bewegung vom jeweiligen Bezugspunkt weg; 来 bedeutet „kommen“.",
+    "lessonId": "l34"
+  },
+  {
+    "id": "v168",
+    "sourceIndex": 168,
+    "hanzi": "去年",
+    "pinyin": "qùnián",
+    "meaning": "letztes Jahr",
+    "accepted": [
+      "letztes Jahr",
+      "im letzten Jahr",
+      "voriges Jahr"
+    ],
+    "example": {
+      "id": "ex-v168",
+      "zh": "我去年在中国学习。",
+      "pinyin": "Wǒ qùnián zài Zhōngguó xuéxí.",
+      "de": "Ich habe letztes Jahr in China gelernt."
+    },
+    "lessonId": "l25"
+  },
+  {
+    "id": "v169",
+    "sourceIndex": 169,
+    "hanzi": "热",
+    "pinyin": "rè",
+    "meaning": "heiß; warm",
+    "accepted": [
+      "heiß",
+      "warm"
+    ],
+    "example": {
+      "id": "ex-v169",
+      "zh": "今天太热了。",
+      "pinyin": "Jīntiān tài rè le.",
+      "de": "Heute ist es sehr heiß."
+    },
+    "lessonId": "l48"
+  },
+  {
+    "id": "v170",
+    "sourceIndex": 170,
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "Mensch; Person",
+    "accepted": [
+      "Mensch",
+      "Person",
+      "Leute"
+    ],
+    "example": {
+      "id": "ex-v170",
+      "zh": "那个人是谁？",
+      "pinyin": "Nàge rén shì shéi?",
+      "de": "Wer ist die Person dort?"
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "v171",
+    "sourceIndex": 171,
+    "hanzi": "认识",
+    "pinyin": "rènshi",
+    "meaning": "kennen; kennenlernen",
+    "accepted": [
+      "kennen",
+      "kennenlernen"
+    ],
+    "example": {
+      "id": "ex-v171",
+      "zh": "你认识我的老师吗？",
+      "pinyin": "Nǐ rènshi wǒ de lǎoshī ma?",
+      "de": "Kennst du meinen Lehrer?"
+    },
+    "note": "认识 für Personen oder Wiedererkennen; 知道 für Wissen über einen Sachverhalt.",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v172",
+    "sourceIndex": 172,
+    "hanzi": "日",
+    "pinyin": "rì",
+    "meaning": "Tag; Datumstag",
+    "accepted": [
+      "Tag",
+      "Datumstag"
+    ],
+    "example": {
+      "id": "ex-v172",
+      "zh": "今天是九月十二日。",
+      "pinyin": "Jīntiān shì jiǔ yuè shí'èr rì.",
+      "de": "Heute ist der 12. September."
+    },
+    "note": "Formeller als 号 bei Datumsangaben; auch in 星期日 „Sonntag“.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v173",
+    "sourceIndex": 173,
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "drei",
+    "accepted": [
+      "drei",
+      "3"
+    ],
+    "example": {
+      "id": "ex-v173",
+      "zh": "桌子上有三个杯子。",
+      "pinyin": "Zhuōzi shàng yǒu sān ge bēizi.",
+      "de": "Auf dem Tisch stehen drei Tassen."
+    },
+    "lessonId": "l09"
+  },
+  {
+    "id": "v174",
+    "sourceIndex": 174,
+    "hanzi": "商店",
+    "pinyin": "shāngdiàn",
+    "meaning": "Geschäft; Laden",
+    "accepted": [
+      "Geschäft",
+      "Laden"
+    ],
+    "example": {
+      "id": "ex-v174",
+      "zh": "那家商店卖衣服。",
+      "pinyin": "Nà jiā shāngdiàn mài yīfu.",
+      "de": "Das Geschäft dort verkauft Kleidung."
+    },
+    "lessonId": "l35"
+  },
+  {
+    "id": "v175",
+    "sourceIndex": 175,
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "meaning": "oben; auf; hinauf",
+    "accepted": [
+      "auf",
+      "oben",
+      "hinauf"
+    ],
+    "example": {
+      "id": "ex-v175",
+      "zh": "书在桌子上。",
+      "pinyin": "Shū zài zhuōzi shàng.",
+      "de": "Das Buch liegt auf dem Tisch."
+    },
+    "note": "Nach einem Nomen ist 上 ein Ortswort. In 上班/上课 gehört es zu einer festen Verbindung.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v176",
+    "sourceIndex": 176,
+    "hanzi": "上班",
+    "pinyin": "shàngbān",
+    "meaning": "zur Arbeit gehen; arbeiten",
+    "accepted": [
+      "zur Arbeit gehen",
+      "arbeiten",
+      "die Arbeit beginnen"
+    ],
+    "example": {
+      "id": "ex-v176",
+      "zh": "我妈妈九点上班。",
+      "pinyin": "Wǒ māma jiǔ diǎn shàngbān.",
+      "de": "Meine Mutter beginnt um neun Uhr zu arbeiten."
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v177",
+    "sourceIndex": 177,
+    "hanzi": "上课",
+    "pinyin": "shàngkè",
+    "meaning": "Unterricht haben; Unterricht geben",
+    "accepted": [
+      "Unterricht haben",
+      "Unterricht geben",
+      "am Unterricht teilnehmen"
+    ],
+    "example": {
+      "id": "ex-v177",
+      "zh": "我们现在上课。",
+      "pinyin": "Wǒmen xiànzài shàngkè.",
+      "de": "Wir haben jetzt Unterricht."
+    },
+    "note": "Je nach Subjekt am Unterricht teilnehmen oder ihn erteilen.",
+    "lessonId": "l16"
+  },
+  {
+    "id": "v178",
+    "sourceIndex": 178,
+    "hanzi": "上午",
+    "pinyin": "shàngwǔ",
+    "meaning": "Vormittag",
+    "accepted": [
+      "Vormittag",
+      "vormittags"
+    ],
+    "example": {
+      "id": "ex-v178",
+      "zh": "我上午上课。",
+      "pinyin": "Wǒ shàngwǔ shàngkè.",
+      "de": "Ich habe am Vormittag Unterricht."
+    },
+    "lessonId": "l22"
+  },
+  {
+    "id": "v179",
+    "sourceIndex": 179,
+    "hanzi": "上学",
+    "pinyin": "shàngxué",
+    "meaning": "zur Schule gehen",
+    "accepted": [
+      "zur Schule gehen",
+      "die Schule besuchen"
+    ],
+    "example": {
+      "id": "ex-v179",
+      "zh": "孩子们早上去上学。",
+      "pinyin": "Háizimen zǎoshang qù shàngxué.",
+      "de": "Die Kinder gehen morgens zur Schule."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v180",
+    "sourceIndex": 180,
+    "hanzi": "少",
+    "pinyin": "shǎo",
+    "meaning": "wenig; wenige",
+    "accepted": [
+      "wenig",
+      "wenige"
+    ],
+    "example": {
+      "id": "ex-v180",
+      "zh": "这个班的学生很少。",
+      "pinyin": "Zhège bān de xuéshēng hěn shǎo.",
+      "de": "In dieser Klasse sind wenige Schüler."
+    },
+    "note": "班 bān heißt hier „Schulklasse“.",
+    "lessonId": "l11"
+  },
+  {
+    "id": "v181",
+    "sourceIndex": 181,
+    "hanzi": "谁",
+    "pinyin": "shéi/shuí",
+    "meaning": "wer; wen; wem",
+    "accepted": [
+      "wer",
+      "wen",
+      "wem"
+    ],
+    "example": {
+      "id": "ex-v181",
+      "zh": "她是谁？",
+      "pinyin": "Tā shì shéi?",
+      "de": "Wer ist sie?"
+    },
+    "note": "Beide offiziellen Lesungen sind korrekt: shéi und shuí. In diesem Beispiel steht shéi.",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v182",
+    "sourceIndex": 182,
+    "hanzi": "什么",
+    "pinyin": "shénme",
+    "meaning": "was; welcher Art",
+    "accepted": [
+      "was",
+      "welcher Art"
+    ],
+    "example": {
+      "id": "ex-v182",
+      "zh": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "de": "Was möchtest du trinken?"
+    },
+    "note": "Fragewörter bleiben an der Stelle der gesuchten Information; kein zusätzliches 吗.",
+    "lessonId": "l02"
+  },
+  {
+    "id": "v183",
+    "sourceIndex": 183,
+    "hanzi": "生病",
+    "pinyin": "shēngbìng",
+    "meaning": "krank werden; krank sein",
+    "accepted": [
+      "krank werden",
+      "krank sein",
+      "erkranken"
+    ],
+    "example": {
+      "id": "ex-v183",
+      "zh": "他生病了，今天不来。",
+      "pinyin": "Tā shēngbìng le, jīntiān bù lái.",
+      "de": "Er ist krank geworden und kommt heute nicht."
+    },
+    "lessonId": "l47"
+  },
+  {
+    "id": "v184",
+    "sourceIndex": 184,
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "zehn",
+    "accepted": [
+      "zehn",
+      "10"
+    ],
+    "example": {
+      "id": "ex-v184",
+      "zh": "我有十个苹果。",
+      "pinyin": "Wǒ yǒu shí ge píngguǒ.",
+      "de": "Ich habe zehn Äpfel."
+    },
+    "lessonId": "l10"
+  },
+  {
+    "id": "v185",
+    "sourceIndex": 185,
+    "hanzi": "时候",
+    "pinyin": "shíhou",
+    "meaning": "Zeit; Zeitpunkt",
+    "accepted": [
+      "Zeit",
+      "Zeitpunkt"
+    ],
+    "example": {
+      "id": "ex-v185",
+      "zh": "你什么时候回家？",
+      "pinyin": "Nǐ shénme shíhou huí jiā?",
+      "de": "Wann kommst du nach Hause?"
+    },
+    "note": "什么时候 ist eine gebräuchliche Wendung für „wann“.",
+    "lessonId": "l21"
+  },
+  {
+    "id": "v186",
+    "sourceIndex": 186,
+    "hanzi": "时间",
+    "pinyin": "shíjiān",
+    "meaning": "Zeit; Zeitdauer",
+    "accepted": [
+      "Zeit",
+      "Zeitdauer"
+    ],
+    "example": {
+      "id": "ex-v186",
+      "zh": "你现在有时间吗？",
+      "pinyin": "Nǐ xiànzài yǒu shíjiān ma?",
+      "de": "Hast du jetzt Zeit?"
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "v187",
+    "sourceIndex": 187,
+    "hanzi": "事",
+    "pinyin": "shì",
+    "meaning": "Sache; Angelegenheit",
+    "accepted": [
+      "Sache",
+      "Angelegenheit",
+      "Ereignis"
+    ],
+    "example": {
+      "id": "ex-v187",
+      "zh": "我今天有事。",
+      "pinyin": "Wǒ jīntiān yǒu shì.",
+      "de": "Ich habe heute etwas zu erledigen."
+    },
+    "note": "有事 bedeutet oft „etwas vorhaben/zu erledigen haben“.",
+    "lessonId": "l49"
+  },
+  {
+    "id": "v188",
+    "sourceIndex": 188,
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "sein",
+    "accepted": [
+      "sein",
+      "ist",
+      "bin"
+    ],
+    "example": {
+      "id": "ex-v188",
+      "zh": "我是学生。",
+      "pinyin": "Wǒ shì xuéshēng.",
+      "de": "Ich bin Schüler."
+    },
+    "note": "Verbindet meist zwei nominale Ausdrücke. Vor einfachen Adjektiven normalerweise kein 是.",
+    "lessonId": "l02"
+  },
+  {
+    "id": "v189",
+    "sourceIndex": 189,
+    "hanzi": "手机",
+    "pinyin": "shǒujī",
+    "meaning": "Handy; Mobiltelefon",
+    "accepted": [
+      "Handy",
+      "Mobiltelefon",
+      "Smartphone"
+    ],
+    "example": {
+      "id": "ex-v189",
+      "zh": "我的手机在哪里？",
+      "pinyin": "Wǒ de shǒujī zài nǎlǐ?",
+      "de": "Wo ist mein Handy?"
+    },
+    "lessonId": "l42"
+  },
+  {
+    "id": "v190",
+    "sourceIndex": 190,
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning": "Buch",
+    "accepted": [
+      "Buch"
+    ],
+    "example": {
+      "id": "ex-v190",
+      "zh": "这本书是我的。",
+      "pinyin": "Zhè běn shū shì wǒ de.",
+      "de": "Dieses Buch gehört mir."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "v191",
+    "sourceIndex": 191,
+    "hanzi": "书店",
+    "pinyin": "shūdiàn",
+    "meaning": "Buchhandlung",
+    "accepted": [
+      "Buchhandlung",
+      "Buchladen"
+    ],
+    "example": {
+      "id": "ex-v191",
+      "zh": "我去书店买书。",
+      "pinyin": "Wǒ qù shūdiàn mǎi shū.",
+      "de": "Ich gehe in die Buchhandlung, um Bücher zu kaufen."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "v192",
+    "sourceIndex": 192,
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning": "Wasser",
+    "accepted": [
+      "Wasser"
+    ],
+    "example": {
+      "id": "ex-v192",
+      "zh": "请给我一点儿水。",
+      "pinyin": "Qǐng gěi wǒ yìdiǎnr shuǐ.",
+      "de": "Gib mir bitte etwas Wasser."
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "v193",
+    "sourceIndex": 193,
+    "hanzi": "水果",
+    "pinyin": "shuǐguǒ",
+    "meaning": "Obst; Früchte",
+    "accepted": [
+      "Obst",
+      "Früchte",
+      "Frucht"
+    ],
+    "example": {
+      "id": "ex-v193",
+      "zh": "我喜欢吃水果。",
+      "pinyin": "Wǒ xǐhuan chī shuǐguǒ.",
+      "de": "Ich esse gern Obst."
+    },
+    "lessonId": "l29"
+  },
+  {
+    "id": "v194",
+    "sourceIndex": 194,
+    "hanzi": "睡",
+    "pinyin": "shuì",
+    "meaning": "schlafen",
+    "accepted": [
+      "schlafen"
+    ],
+    "example": {
+      "id": "ex-v194",
+      "zh": "我想再睡一小时。",
+      "pinyin": "Wǒ xiǎng zài shuì yì xiǎoshí.",
+      "de": "Ich möchte noch eine Stunde schlafen."
+    },
+    "note": "睡 ist das Verb; 睡觉 ist eine häufige vollständige Verb-Objekt-Verbindung.",
+    "lessonId": "l40"
+  },
+  {
+    "id": "v195",
+    "sourceIndex": 195,
+    "hanzi": "睡觉",
+    "pinyin": "shuìjiào",
+    "meaning": "schlafen; schlafen gehen",
+    "accepted": [
+      "schlafen",
+      "schlafen gehen"
+    ],
+    "example": {
+      "id": "ex-v195",
+      "zh": "孩子晚上九点睡觉。",
+      "pinyin": "Háizi wǎnshang jiǔ diǎn shuìjiào.",
+      "de": "Das Kind geht abends um neun Uhr schlafen."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "v196",
+    "sourceIndex": 196,
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "meaning": "sagen; sprechen",
+    "accepted": [
+      "sagen",
+      "sprechen"
+    ],
+    "example": {
+      "id": "ex-v196",
+      "zh": "请说汉语。",
+      "pinyin": "Qǐng shuō Hànyǔ.",
+      "de": "Sprich bitte Chinesisch."
+    },
+    "lessonId": "l19"
+  },
+  {
+    "id": "v197",
+    "sourceIndex": 197,
+    "hanzi": "说话",
+    "pinyin": "shuōhuà",
+    "meaning": "sprechen; reden",
+    "accepted": [
+      "sprechen",
+      "reden"
+    ],
+    "example": {
+      "id": "ex-v197",
+      "zh": "老师正在说话。",
+      "pinyin": "Lǎoshī zhèngzài shuōhuà.",
+      "de": "Die Lehrerin spricht gerade."
+    },
+    "lessonId": "l19"
+  },
+  {
+    "id": "v198",
+    "sourceIndex": 198,
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "vier",
+    "accepted": [
+      "vier",
+      "4"
+    ],
+    "example": {
+      "id": "ex-v198",
+      "zh": "我们家有四个人。",
+      "pinyin": "Wǒmen jiā yǒu sì ge rén.",
+      "de": "Wir sind vier Personen in der Familie."
+    },
+    "lessonId": "l09"
+  },
+  {
+    "id": "v199",
+    "sourceIndex": 199,
+    "hanzi": "岁",
+    "pinyin": "suì",
+    "meaning": "Jahre alt",
+    "accepted": [
+      "Jahre alt",
+      "Jahr alt",
+      "Lebensjahr"
+    ],
+    "example": {
+      "id": "ex-v199",
+      "zh": "你几岁？",
+      "pinyin": "Nǐ jǐ suì?",
+      "de": "Wie alt bist du?"
+    },
+    "note": "Alter: Zahl + 岁, ohne 是. 几岁 fragt meist nach dem Alter eines Kindes.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v200",
+    "sourceIndex": 200,
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "er",
+    "accepted": [
+      "er",
+      "ihn",
+      "ihm"
+    ],
+    "example": {
+      "id": "ex-v200",
+      "zh": "他是我的哥哥。",
+      "pinyin": "Tā shì wǒ de gēge.",
+      "de": "Er ist mein älterer Bruder."
+    },
+    "note": "他, 她 und 它 werden alle tā ausgesprochen, aber unterschiedlich geschrieben.",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v201",
+    "sourceIndex": 201,
+    "hanzi": "它",
+    "pinyin": "tā",
+    "meaning": "es; für Dinge und Tiere",
+    "accepted": [
+      "es",
+      "es für Dinge und Tiere"
+    ],
+    "example": {
+      "id": "ex-v201",
+      "zh": "我有一只猫，它很小。",
+      "pinyin": "Wǒ yǒu yì zhī māo, tā hěn xiǎo.",
+      "de": "Ich habe eine Katze; sie ist klein."
+    },
+    "note": "Für Tiere und Gegenstände; grammatisches Geschlecht der deutschen Übersetzung kann abweichen.",
+    "lessonId": "l46"
+  },
+  {
+    "id": "v202",
+    "sourceIndex": 202,
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "sie; weibliche Person",
+    "accepted": [
+      "sie"
+    ],
+    "example": {
+      "id": "ex-v202",
+      "zh": "她是我的姐姐。",
+      "pinyin": "Tā shì wǒ de jiějie.",
+      "de": "Sie ist meine ältere Schwester."
+    },
+    "note": "她 bezeichnet eine weibliche Person; Aussprache wie 他 und 它: tā.",
+    "lessonId": "l03"
+  },
+  {
+    "id": "v203",
+    "sourceIndex": 203,
+    "hanzi": "他们",
+    "pinyin": "tāmen",
+    "meaning": "sie; mehrere Personen",
+    "accepted": [
+      "sie",
+      "die anderen",
+      "ihnen"
+    ],
+    "example": {
+      "id": "ex-v203",
+      "zh": "他们都是我的朋友。",
+      "pinyin": "Tāmen dōu shì wǒ de péngyou.",
+      "de": "Sie sind alle meine Freunde."
+    },
+    "note": "Für männliche oder gemischte Personengruppen.",
+    "lessonId": "l08"
+  },
+  {
+    "id": "v204",
+    "sourceIndex": 204,
+    "hanzi": "它们",
+    "pinyin": "tāmen",
+    "meaning": "sie; Dinge oder Tiere",
+    "accepted": [
+      "sie",
+      "die Tiere",
+      "die Dinge"
+    ],
+    "example": {
+      "id": "ex-v204",
+      "zh": "这些猫很小，它们在睡觉。",
+      "pinyin": "Zhèxiē māo hěn xiǎo, tāmen zài shuìjiào.",
+      "de": "Diese Katzen sind klein; sie schlafen gerade."
+    },
+    "note": "Geschriebene Mehrzahl für Dinge oder Tiere; gleiche Aussprache wie 他们 und 她们.",
+    "lessonId": "l46"
+  },
+  {
+    "id": "v205",
+    "sourceIndex": 205,
+    "hanzi": "她们",
+    "pinyin": "tāmen",
+    "meaning": "sie; mehrere Frauen",
+    "accepted": [
+      "sie",
+      "die Frauen",
+      "ihnen"
+    ],
+    "example": {
+      "id": "ex-v205",
+      "zh": "她们是我的同学。",
+      "pinyin": "Tāmen shì wǒ de tóngxué.",
+      "de": "Sie sind meine Mitschülerinnen."
+    },
+    "note": "Für eine ausschließlich weibliche Personengruppe.",
+    "lessonId": "l08"
+  },
+  {
+    "id": "v206",
+    "sourceIndex": 206,
+    "hanzi": "太",
+    "pinyin": "tài",
+    "meaning": "zu; äußerst; sehr",
+    "accepted": [
+      "zu",
+      "sehr",
+      "äußerst"
+    ],
+    "example": {
+      "id": "ex-v206",
+      "zh": "这个房间太小了。",
+      "pinyin": "Zhège fángjiān tài xiǎo le.",
+      "de": "Dieses Zimmer ist zu klein."
+    },
+    "note": "太 + Adjektiv + 了 kann Übermaß oder eine starke gefühlsbetonte Bewertung ausdrücken.",
+    "lessonId": "l38"
+  },
+  {
+    "id": "v207",
+    "sourceIndex": 207,
+    "hanzi": "天",
+    "pinyin": "tiān",
+    "meaning": "Tag; Himmel",
+    "accepted": [
+      "Tag",
+      "Himmel"
+    ],
+    "example": {
+      "id": "ex-v207",
+      "zh": "我在这里住了三天。",
+      "pinyin": "Wǒ zài zhèlǐ zhù le sān tiān.",
+      "de": "Ich habe drei Tage hier gewohnt."
+    },
+    "note": "Nach einer Zahl „Tag“ als Dauer, ohne zusätzliches Zählwort.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v208",
+    "sourceIndex": 208,
+    "hanzi": "天气",
+    "pinyin": "tiānqì",
+    "meaning": "Wetter",
+    "accepted": [
+      "Wetter"
+    ],
+    "example": {
+      "id": "ex-v208",
+      "zh": "明天天气怎么样？",
+      "pinyin": "Míngtiān tiānqì zěnmeyàng?",
+      "de": "Wie wird das Wetter morgen?"
+    },
+    "lessonId": "l48"
+  },
+  {
+    "id": "v209",
+    "sourceIndex": 209,
+    "hanzi": "听",
+    "pinyin": "tīng",
+    "meaning": "hören; zuhören",
+    "accepted": [
+      "hören",
+      "zuhören",
+      "anhören"
+    ],
+    "example": {
+      "id": "ex-v209",
+      "zh": "我喜欢听歌。",
+      "pinyin": "Wǒ xǐhuan tīng gē.",
+      "de": "Ich höre gern Lieder."
+    },
+    "note": "听 beschreibt das Zuhören; 听见 das tatsächliche Wahrnehmen eines Geräuschs.",
+    "lessonId": "l19"
+  },
+  {
+    "id": "v210",
+    "sourceIndex": 210,
+    "hanzi": "听见",
+    "pinyin": "tīngjiàn",
+    "meaning": "hören; wahrnehmen",
+    "accepted": [
+      "hören",
+      "wahrnehmen",
+      "gehört haben"
+    ],
+    "example": {
+      "id": "ex-v210",
+      "zh": "你听见了吗？",
+      "pinyin": "Nǐ tīngjiàn le ma?",
+      "de": "Hast du es gehört?"
+    },
+    "note": "见 ergänzt hier das Ergebnis: Das Gehörte wurde wahrgenommen.",
+    "lessonId": "l19"
+  },
+  {
+    "id": "v211",
+    "sourceIndex": 211,
+    "hanzi": "同学",
+    "pinyin": "tóngxué",
+    "meaning": "Mitschüler; Kommilitone",
+    "accepted": [
+      "Mitschüler",
+      "Mitschülerin",
+      "Klassenkamerad",
+      "Klassenkameradin",
+      "Kommilitone",
+      "Kommilitonin"
+    ],
+    "example": {
+      "id": "ex-v211",
+      "zh": "他是我的同学。",
+      "pinyin": "Tā shì wǒ de tóngxué.",
+      "de": "Er ist mein Mitschüler."
+    },
+    "lessonId": "l16"
+  },
+  {
+    "id": "v212",
+    "sourceIndex": 212,
+    "hanzi": "外",
+    "pinyin": "wài",
+    "meaning": "außen; außerhalb",
+    "accepted": [
+      "außen",
+      "außerhalb",
+      "draußen"
+    ],
+    "example": {
+      "id": "ex-v212",
+      "zh": "我在学校外。",
+      "pinyin": "Wǒ zài xuéxiào wài.",
+      "de": "Ich bin außerhalb der Schule."
+    },
+    "note": "Steht nach dem Bezugsort: 学校外. 外边 ist eine längere Form.",
+    "lessonId": "l30"
+  },
+  {
+    "id": "v213",
+    "sourceIndex": 213,
+    "hanzi": "外边",
+    "pinyin": "wàibian",
+    "meaning": "draußen; außerhalb",
+    "accepted": [
+      "draußen",
+      "außerhalb",
+      "außen"
+    ],
+    "example": {
+      "id": "ex-v213",
+      "zh": "外边很冷。",
+      "pinyin": "Wàibian hěn lěng.",
+      "de": "Draußen ist es kalt."
+    },
+    "note": "Im offiziellen Pinyin ist die zweite Silbe unbetont: wàibian.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v214",
+    "sourceIndex": 214,
+    "hanzi": "玩",
+    "pinyin": "wán",
+    "meaning": "spielen; sich vergnügen",
+    "accepted": [
+      "spielen",
+      "sich vergnügen",
+      "Spaß haben"
+    ],
+    "example": {
+      "id": "ex-v214",
+      "zh": "孩子们在外边玩。",
+      "pinyin": "Háizimen zài wàibian wán.",
+      "de": "Die Kinder spielen draußen."
+    },
+    "lessonId": "l43"
+  },
+  {
+    "id": "v215",
+    "sourceIndex": 215,
+    "hanzi": "晚",
+    "pinyin": "wǎn",
+    "meaning": "spät; Abend",
+    "accepted": [
+      "spät",
+      "Abend"
+    ],
+    "example": {
+      "id": "ex-v215",
+      "zh": "现在太晚了。",
+      "pinyin": "Xiànzài tài wǎn le.",
+      "de": "Es ist jetzt zu spät."
+    },
+    "note": "Als Adjektiv „spät“; in Zusammensetzungen wie 晚饭 bezieht sich 晚 auf den Abend.",
+    "lessonId": "l22"
+  },
+  {
+    "id": "v216",
+    "sourceIndex": 216,
+    "hanzi": "晚饭",
+    "pinyin": "wǎnfàn",
+    "meaning": "Abendessen",
+    "accepted": [
+      "Abendessen",
+      "Abendbrot"
+    ],
+    "example": {
+      "id": "ex-v216",
+      "zh": "我们七点吃晚饭。",
+      "pinyin": "Wǒmen qī diǎn chī wǎnfàn.",
+      "de": "Wir essen um sieben Uhr zu Abend."
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "v217",
+    "sourceIndex": 217,
+    "hanzi": "晚上",
+    "pinyin": "wǎnshang",
+    "meaning": "Abend; abends",
+    "accepted": [
+      "Abend",
+      "abends",
+      "am Abend"
+    ],
+    "example": {
+      "id": "ex-v217",
+      "zh": "晚上我在家看书。",
+      "pinyin": "Wǎnshang wǒ zài jiā kàn shū.",
+      "de": "Abends lese ich zu Hause."
+    },
+    "lessonId": "l22"
+  },
+  {
+    "id": "v218",
+    "sourceIndex": 218,
+    "hanzi": "喂",
+    "pinyin": "wèi",
+    "meaning": "hallo; Anrufbegrüßung",
+    "accepted": [
+      "hallo",
+      "hallo am Telefon"
+    ],
+    "example": {
+      "id": "ex-v218",
+      "zh": "喂，您好！",
+      "pinyin": "Wèi, nín hǎo!",
+      "de": "Hallo, guten Tag!"
+    },
+    "note": "Häufig am Telefon. Hier als Ausruf wèi, nicht das Verb „füttern“.",
+    "lessonId": "l04"
+  },
+  {
+    "id": "v219",
+    "sourceIndex": 219,
+    "hanzi": "问",
+    "pinyin": "wèn",
+    "meaning": "fragen",
+    "accepted": [
+      "fragen"
+    ],
+    "example": {
+      "id": "ex-v219",
+      "zh": "我想问你一个问题。",
+      "pinyin": "Wǒ xiǎng wèn nǐ yí ge wèntí.",
+      "de": "Ich möchte dir eine Frage stellen."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "v220",
+    "sourceIndex": 220,
+    "hanzi": "问题",
+    "pinyin": "wèntí",
+    "meaning": "Frage; Problem",
+    "accepted": [
+      "Frage",
+      "Problem"
+    ],
+    "example": {
+      "id": "ex-v220",
+      "zh": "这个问题很大。",
+      "pinyin": "Zhège wèntí hěn dà.",
+      "de": "Dieses Problem ist groß."
+    },
+    "note": "Kann eine Frage oder ein zu lösendes Problem bezeichnen.",
+    "lessonId": "l18"
+  },
+  {
+    "id": "v221",
+    "sourceIndex": 221,
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "meaning": "ich",
+    "accepted": [
+      "ich",
+      "mich",
+      "mir"
+    ],
+    "example": {
+      "id": "ex-v221",
+      "zh": "我很好。",
+      "pinyin": "Wǒ hěn hǎo.",
+      "de": "Mir geht es gut."
+    },
+    "note": "小明 Xiǎomíng ist hier ein Personenname.",
+    "lessonId": "l01"
+  },
+  {
+    "id": "v222",
+    "sourceIndex": 222,
+    "hanzi": "我们",
+    "pinyin": "wǒmen",
+    "meaning": "wir",
+    "accepted": [
+      "wir",
+      "uns"
+    ],
+    "example": {
+      "id": "ex-v222",
+      "zh": "我们都是学生。",
+      "pinyin": "Wǒmen dōu shì xuéshēng.",
+      "de": "Wir sind alle Schüler."
+    },
+    "lessonId": "l08"
+  },
+  {
+    "id": "v223",
+    "sourceIndex": 223,
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "fünf",
+    "accepted": [
+      "fünf",
+      "5"
+    ],
+    "example": {
+      "id": "ex-v223",
+      "zh": "我要五个包子。",
+      "pinyin": "Wǒ yào wǔ ge bāozi.",
+      "de": "Ich möchte fünf Dampfbrötchen."
+    },
+    "lessonId": "l09"
+  },
+  {
+    "id": "v224",
+    "sourceIndex": 224,
+    "hanzi": "午饭",
+    "pinyin": "wǔfàn",
+    "meaning": "Mittagessen",
+    "accepted": [
+      "Mittagessen"
+    ],
+    "example": {
+      "id": "ex-v224",
+      "zh": "我在学校吃午饭。",
+      "pinyin": "Wǒ zài xuéxiào chī wǔfàn.",
+      "de": "Ich esse in der Schule zu Mittag."
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "v225",
+    "sourceIndex": 225,
+    "hanzi": "喜欢",
+    "pinyin": "xǐhuan",
+    "meaning": "mögen; gernhaben",
+    "accepted": [
+      "mögen",
+      "gernhaben",
+      "gern haben",
+      "gefallen"
+    ],
+    "example": {
+      "id": "ex-v225",
+      "zh": "我喜欢学汉语。",
+      "pinyin": "Wǒ xǐhuan xué Hànyǔ.",
+      "de": "Ich lerne gern Chinesisch."
+    },
+    "note": "喜欢 + Verb lässt sich oft mit „gern“ übersetzen.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v226",
+    "sourceIndex": 226,
+    "hanzi": "下",
+    "pinyin": "xià",
+    "meaning": "unten; unter; hinunter",
+    "accepted": [
+      "unten",
+      "unter",
+      "hinunter"
+    ],
+    "example": {
+      "id": "ex-v226",
+      "zh": "猫在桌子下。",
+      "pinyin": "Māo zài zhuōzi xià.",
+      "de": "Die Katze ist unter dem Tisch."
+    },
+    "note": "Als Ortswort steht 下 nach dem Bezugsnomen. In 下课/下班 bezeichnet es das Ende einer Tätigkeit.",
+    "lessonId": "l31"
+  },
+  {
+    "id": "v227",
+    "sourceIndex": 227,
+    "hanzi": "下雨",
+    "pinyin": "xià yǔ",
+    "meaning": "regnen",
+    "accepted": [
+      "regnen",
+      "es regnet"
+    ],
+    "example": {
+      "id": "ex-v227",
+      "zh": "今天下雨了。",
+      "pinyin": "Jīntiān xià yǔ le.",
+      "de": "Heute hat es angefangen zu regnen."
+    },
+    "note": "Die Verbindung wird im offiziellen Pinyin getrennt geschrieben: xià yǔ.",
+    "lessonId": "l48"
+  },
+  {
+    "id": "v228",
+    "sourceIndex": 228,
+    "hanzi": "下班",
+    "pinyin": "xiàbān",
+    "meaning": "Feierabend machen",
+    "accepted": [
+      "Feierabend machen",
+      "Feierabend haben",
+      "die Arbeit beenden"
+    ],
+    "example": {
+      "id": "ex-v228",
+      "zh": "你几点下班？",
+      "pinyin": "Nǐ jǐ diǎn xiàbān?",
+      "de": "Wann hast du Feierabend?"
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v229",
+    "sourceIndex": 229,
+    "hanzi": "下课",
+    "pinyin": "xiàkè",
+    "meaning": "Unterricht beenden; Unterrichtsende haben",
+    "accepted": [
+      "Unterricht beenden",
+      "Unterrichtsende",
+      "Unterricht ist aus",
+      "Unterrichtsende haben"
+    ],
+    "example": {
+      "id": "ex-v229",
+      "zh": "我们十点下课。",
+      "pinyin": "Wǒmen shí diǎn xiàkè.",
+      "de": "Unser Unterricht endet um zehn Uhr."
+    },
+    "lessonId": "l16"
+  },
+  {
+    "id": "v230",
+    "sourceIndex": 230,
+    "hanzi": "下午",
+    "pinyin": "xiàwǔ",
+    "meaning": "Nachmittag",
+    "accepted": [
+      "Nachmittag",
+      "nachmittags",
+      "am Nachmittag"
+    ],
+    "example": {
+      "id": "ex-v230",
+      "zh": "我下午去书店。",
+      "pinyin": "Wǒ xiàwǔ qù shūdiàn.",
+      "de": "Ich gehe am Nachmittag in die Buchhandlung."
+    },
+    "lessonId": "l22"
+  },
+  {
+    "id": "v231",
+    "sourceIndex": 231,
+    "hanzi": "先生",
+    "pinyin": "xiānsheng",
+    "meaning": "Herr; Mann",
+    "accepted": [
+      "Herr",
+      "Mann",
+      "Ehemann"
+    ],
+    "example": {
+      "id": "ex-v231",
+      "zh": "王先生是我的老师。",
+      "pinyin": "Wáng xiānsheng shì wǒ de lǎoshī.",
+      "de": "Herr Wang ist mein Lehrer."
+    },
+    "note": "Höfliche Anrede nach dem Familiennamen; kann auch „Ehemann“ bedeuten.",
+    "lessonId": "l44"
+  },
+  {
+    "id": "v232",
+    "sourceIndex": 232,
+    "hanzi": "现在",
+    "pinyin": "xiànzài",
+    "meaning": "jetzt; gerade",
+    "accepted": [
+      "jetzt",
+      "gerade",
+      "zurzeit"
+    ],
+    "example": {
+      "id": "ex-v232",
+      "zh": "你现在在哪儿？",
+      "pinyin": "Nǐ xiànzài zài nǎr?",
+      "de": "Wo bist du jetzt?"
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "v233",
+    "sourceIndex": 233,
+    "hanzi": "想",
+    "pinyin": "xiǎng",
+    "meaning": "möchten; denken; vermissen",
+    "accepted": [
+      "möchten",
+      "wollen",
+      "denken",
+      "vermissen"
+    ],
+    "example": {
+      "id": "ex-v233",
+      "zh": "我想去中国。",
+      "pinyin": "Wǒ xiǎng qù Zhōngguó.",
+      "de": "Ich möchte nach China fahren."
+    },
+    "note": "想 + Verb drückt einen Wunsch aus; 想 + Person kann „vermissen/an jemanden denken“ heißen.",
+    "lessonId": "l20"
+  },
+  {
+    "id": "v234",
+    "sourceIndex": 234,
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "meaning": "klein",
+    "accepted": [
+      "klein"
+    ],
+    "example": {
+      "id": "ex-v234",
+      "zh": "这个杯子很小。",
+      "pinyin": "Zhège bēizi hěn xiǎo.",
+      "de": "Diese Tasse ist klein."
+    },
+    "lessonId": "l37"
+  },
+  {
+    "id": "v235",
+    "sourceIndex": 235,
+    "hanzi": "小朋友",
+    "pinyin": "xiǎopéngyǒu",
+    "meaning": "Kind; kleiner Freund",
+    "accepted": [
+      "Kind",
+      "kleiner Freund",
+      "Kinder"
+    ],
+    "example": {
+      "id": "ex-v235",
+      "zh": "小朋友，你叫什么名字？",
+      "pinyin": "Xiǎopéngyǒu, nǐ jiào shénme míngzi?",
+      "de": "Wie heißt du, mein Kleiner?"
+    },
+    "note": "Freundliche Bezeichnung oder Anrede für Kinder. Das offizielle Pinyin lautet xiǎopéngyǒu.",
+    "lessonId": "l45"
+  },
+  {
+    "id": "v236",
+    "sourceIndex": 236,
+    "hanzi": "小时",
+    "pinyin": "xiǎoshí",
+    "meaning": "Stunde; Zeitdauer",
+    "accepted": [
+      "Stunde",
+      "Stunden"
+    ],
+    "example": {
+      "id": "ex-v236",
+      "zh": "我晚上学习两小时。",
+      "pinyin": "Wǒ wǎnshang xuéxí liǎng xiǎoshí.",
+      "de": "Ich lerne abends zwei Stunden."
+    },
+    "note": "Für eine Dauer; 点 verwendet man für die Uhrzeit.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v237",
+    "sourceIndex": 237,
+    "hanzi": "小学",
+    "pinyin": "xiǎoxué",
+    "meaning": "Grundschule",
+    "accepted": [
+      "Grundschule",
+      "Volksschule"
+    ],
+    "example": {
+      "id": "ex-v237",
+      "zh": "我的小学很大。",
+      "pinyin": "Wǒ de xiǎoxué hěn dà.",
+      "de": "Meine Grundschule ist groß."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v238",
+    "sourceIndex": 238,
+    "hanzi": "小学生",
+    "pinyin": "xiǎoxuéshēng",
+    "meaning": "Grundschüler; Grundschülerin",
+    "accepted": [
+      "Grundschüler",
+      "Grundschülerin",
+      "Volksschüler",
+      "Volksschülerin"
+    ],
+    "example": {
+      "id": "ex-v238",
+      "zh": "我妹妹是小学生。",
+      "pinyin": "Wǒ mèimei shì xiǎoxuéshēng.",
+      "de": "Meine jüngere Schwester ist Grundschülerin."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v239",
+    "sourceIndex": 239,
+    "hanzi": "些",
+    "pinyin": "xiē",
+    "meaning": "einige; etwas; Mehrzahl-Zählwort",
+    "accepted": [
+      "einige",
+      "etwas",
+      "mehrere"
+    ],
+    "example": {
+      "id": "ex-v239",
+      "zh": "这些书很好看。",
+      "pinyin": "Zhèxiē shū hěn hǎokàn.",
+      "de": "Diese Bücher sind lesenswert."
+    },
+    "note": "In Verbindungen wie 这些, 那些, 一些; bezeichnet eine unbestimmte Mehrzahl oder Menge.",
+    "lessonId": "l14"
+  },
+  {
+    "id": "v240",
+    "sourceIndex": 240,
+    "hanzi": "写",
+    "pinyin": "xiě",
+    "meaning": "schreiben",
+    "accepted": [
+      "schreiben"
+    ],
+    "example": {
+      "id": "ex-v240",
+      "zh": "我会写这个汉字。",
+      "pinyin": "Wǒ huì xiě zhège Hànzì.",
+      "de": "Ich kann dieses chinesische Zeichen schreiben."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "v241",
+    "sourceIndex": 241,
+    "hanzi": "谢谢",
+    "pinyin": "xièxie",
+    "meaning": "danke; danken",
+    "accepted": [
+      "danke",
+      "danken",
+      "vielen Dank"
+    ],
+    "example": {
+      "id": "ex-v241",
+      "zh": "谢谢你的茶。",
+      "pinyin": "Xièxie nǐ de chá.",
+      "de": "Danke für deinen Tee."
+    },
+    "lessonId": "l04"
+  },
+  {
+    "id": "v242",
+    "sourceIndex": 242,
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "meaning": "neu",
+    "accepted": [
+      "neu"
+    ],
+    "example": {
+      "id": "ex-v242",
+      "zh": "这是我的新手机。",
+      "pinyin": "Zhè shì wǒ de xīn shǒujī.",
+      "de": "Das ist mein neues Handy."
+    },
+    "lessonId": "l37"
+  },
+  {
+    "id": "v243",
+    "sourceIndex": 243,
+    "hanzi": "星期",
+    "pinyin": "xīngqī",
+    "meaning": "Woche; Wochentag",
+    "accepted": [
+      "Woche",
+      "Wochentag"
+    ],
+    "example": {
+      "id": "ex-v243",
+      "zh": "今天星期几？",
+      "pinyin": "Jīntiān xīngqī jǐ?",
+      "de": "Welcher Wochentag ist heute?"
+    },
+    "note": "星期一 bis 星期六: Montag bis Samstag. Sonntag heißt 星期日 oder 星期天.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v244",
+    "sourceIndex": 244,
+    "hanzi": "星期日",
+    "pinyin": "xīngqīrì",
+    "meaning": "Sonntag",
+    "accepted": [
+      "Sonntag"
+    ],
+    "example": {
+      "id": "ex-v244",
+      "zh": "星期日我不上班。",
+      "pinyin": "Xīngqīrì wǒ bú shàngbān.",
+      "de": "Am Sonntag arbeite ich nicht."
+    },
+    "note": "Bedeutungsgleich mit 星期天; 日 ist etwas formeller.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v245",
+    "sourceIndex": 245,
+    "hanzi": "星期天",
+    "pinyin": "xīngqītiān",
+    "meaning": "Sonntag",
+    "accepted": [
+      "Sonntag"
+    ],
+    "example": {
+      "id": "ex-v245",
+      "zh": "我们星期天去看电影。",
+      "pinyin": "Wǒmen xīngqītiān qù kàn diànyǐng.",
+      "de": "Wir gehen am Sonntag einen Film ansehen."
+    },
+    "note": "Alltägliche Bezeichnung für Sonntag; auch 星期日 ist korrekt.",
+    "lessonId": "l24"
+  },
+  {
+    "id": "v246",
+    "sourceIndex": 246,
+    "hanzi": "休息",
+    "pinyin": "xiūxi",
+    "meaning": "sich ausruhen; Pause machen",
+    "accepted": [
+      "sich ausruhen",
+      "Pause machen",
+      "ruhen"
+    ],
+    "example": {
+      "id": "ex-v246",
+      "zh": "我们休息一下吧。",
+      "pinyin": "Wǒmen xiūxi yíxià ba.",
+      "de": "Machen wir kurz Pause."
+    },
+    "lessonId": "l39"
+  },
+  {
+    "id": "v247",
+    "sourceIndex": 247,
+    "hanzi": "学",
+    "pinyin": "xué",
+    "meaning": "lernen; studieren",
+    "accepted": [
+      "lernen",
+      "studieren"
+    ],
+    "example": {
+      "id": "ex-v247",
+      "zh": "我想学中文。",
+      "pinyin": "Wǒ xiǎng xué Zhōngwén.",
+      "de": "Ich möchte Chinesisch lernen."
+    },
+    "note": "Kurzes Verb für Lernen; 学习 ist eine häufige zweisilbige Form.",
+    "lessonId": "l15"
+  },
+  {
+    "id": "v248",
+    "sourceIndex": 248,
+    "hanzi": "学生",
+    "pinyin": "xuéshēng",
+    "meaning": "Schüler; Student",
+    "accepted": [
+      "Schüler",
+      "Schülerin",
+      "Student",
+      "Studentin",
+      "Lernender"
+    ],
+    "example": {
+      "id": "ex-v248",
+      "zh": "这些学生在学习中文。",
+      "pinyin": "Zhèxiē xuéshēng zài xuéxí Zhōngwén.",
+      "de": "Diese Schüler lernen gerade Chinesisch."
+    },
+    "note": "学生 umfasst Lernende an Schulen und Hochschulen.",
+    "lessonId": "l16"
+  },
+  {
+    "id": "v249",
+    "sourceIndex": 249,
+    "hanzi": "学习",
+    "pinyin": "xuéxí",
+    "meaning": "lernen; studieren",
+    "accepted": [
+      "lernen",
+      "studieren"
+    ],
+    "example": {
+      "id": "ex-v249",
+      "zh": "我们一起学习汉语。",
+      "pinyin": "Wǒmen yìqǐ xuéxí Hànyǔ.",
+      "de": "Wir lernen zusammen Chinesisch."
+    },
+    "note": "一起 yìqǐ heißt „zusammen“; zusätzliche Beispielhilfe.",
+    "lessonId": "l15"
+  },
+  {
+    "id": "v250",
+    "sourceIndex": 250,
+    "hanzi": "学校",
+    "pinyin": "xuéxiào",
+    "meaning": "Schule",
+    "accepted": [
+      "Schule"
+    ],
+    "example": {
+      "id": "ex-v250",
+      "zh": "我的学校在这里。",
+      "pinyin": "Wǒ de xuéxiào zài zhèlǐ.",
+      "de": "Meine Schule ist hier."
+    },
+    "lessonId": "l16"
+  },
+  {
+    "id": "v251",
+    "sourceIndex": 251,
+    "hanzi": "雪",
+    "pinyin": "xuě",
+    "meaning": "Schnee",
+    "accepted": [
+      "Schnee"
+    ],
+    "example": {
+      "id": "ex-v251",
+      "zh": "外边下雪了。",
+      "pinyin": "Wàibian xià xuě le.",
+      "de": "Draußen hat es angefangen zu schneien."
+    },
+    "note": "下雪 bedeutet „schneien“; 下雨 „regnen“.",
+    "lessonId": "l48"
+  },
+  {
+    "id": "v252",
+    "sourceIndex": 252,
+    "hanzi": "要",
+    "pinyin": "yào",
+    "meaning": "wollen; brauchen; werden",
+    "accepted": [
+      "wollen",
+      "brauchen",
+      "werden",
+      "möchten"
+    ],
+    "example": {
+      "id": "ex-v252",
+      "zh": "我要一杯茶。",
+      "pinyin": "Wǒ yào yì bēi chá.",
+      "de": "Ich möchte eine Tasse Tee."
+    },
+    "note": "要 kann einen Wunsch, Bedarf oder etwas Bevorstehendes ausdrücken; Kontext beachten.",
+    "lessonId": "l29"
+  },
+  {
+    "id": "v253",
+    "sourceIndex": 253,
+    "hanzi": "也",
+    "pinyin": "yě",
+    "meaning": "auch",
+    "accepted": [
+      "auch"
+    ],
+    "example": {
+      "id": "ex-v253",
+      "zh": "我也喜欢看书。",
+      "pinyin": "Wǒ yě xǐhuan kàn shū.",
+      "de": "Ich lese auch gern Bücher."
+    },
+    "note": "也 steht normalerweise vor dem Verb oder Adjektiv, nicht am Satzende.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v254",
+    "sourceIndex": 254,
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "eins; ein",
+    "accepted": [
+      "eins",
+      "ein",
+      "eine",
+      "1"
+    ],
+    "example": {
+      "id": "ex-v254",
+      "zh": "我有一个女儿。",
+      "pinyin": "Wǒ yǒu yí ge nǚ'ér.",
+      "de": "Ich habe eine Tochter."
+    },
+    "note": "Grundton yī; vor viertem Ton meist yí, vor erstem/zweitem/drittem Ton meist yì. Nach 第 bleibt yī.",
+    "lessonId": "l09"
+  },
+  {
+    "id": "v255",
+    "sourceIndex": 255,
+    "hanzi": "衣服",
+    "pinyin": "yīfu",
+    "meaning": "Kleidung; Kleidungsstück",
+    "accepted": [
+      "Kleidung",
+      "Kleidungsstück",
+      "Kleider"
+    ],
+    "example": {
+      "id": "ex-v255",
+      "zh": "这些衣服是新的。",
+      "pinyin": "Zhèxiē yīfu shì xīn de.",
+      "de": "Diese Kleidungsstücke sind neu."
+    },
+    "lessonId": "l37"
+  },
+  {
+    "id": "v256",
+    "sourceIndex": 256,
+    "hanzi": "医生",
+    "pinyin": "yīshēng",
+    "meaning": "Arzt; Ärztin",
+    "accepted": [
+      "Arzt",
+      "Ärztin",
+      "Doktor"
+    ],
+    "example": {
+      "id": "ex-v256",
+      "zh": "我想见医生。",
+      "pinyin": "Wǒ xiǎng jiàn yīshēng.",
+      "de": "Ich möchte einen Arzt sehen."
+    },
+    "lessonId": "l47"
+  },
+  {
+    "id": "v257",
+    "sourceIndex": 257,
+    "hanzi": "医院",
+    "pinyin": "yīyuàn",
+    "meaning": "Krankenhaus",
+    "accepted": [
+      "Krankenhaus",
+      "Klinik"
+    ],
+    "example": {
+      "id": "ex-v257",
+      "zh": "医院在学校前边。",
+      "pinyin": "Yīyuàn zài xuéxiào qiánbian.",
+      "de": "Das Krankenhaus ist vor der Schule."
+    },
+    "lessonId": "l47"
+  },
+  {
+    "id": "v258",
+    "sourceIndex": 258,
+    "hanzi": "一半",
+    "pinyin": "yíbàn",
+    "meaning": "eine Hälfte; die Hälfte",
+    "accepted": [
+      "eine Hälfte",
+      "die Hälfte",
+      "halb",
+      "Hälfte"
+    ],
+    "example": {
+      "id": "ex-v258",
+      "zh": "这个苹果一半给你。",
+      "pinyin": "Zhège píngguǒ yíbàn gěi nǐ.",
+      "de": "Die Hälfte dieses Apfels gebe ich dir."
+    },
+    "note": "Das offizielle Pinyin zeigt den Tonwechsel: yíbàn.",
+    "lessonId": "l26"
+  },
+  {
+    "id": "v259",
+    "sourceIndex": 259,
+    "hanzi": "一下",
+    "pinyin": "yíxià",
+    "meaning": "kurz; einmal",
+    "accepted": [
+      "kurz",
+      "einmal",
+      "mal"
+    ],
+    "example": {
+      "id": "ex-v259",
+      "zh": "请看一下这本书。",
+      "pinyin": "Qǐng kàn yíxià zhè běn shū.",
+      "de": "Schau dir dieses Buch bitte kurz an."
+    },
+    "note": "Nach einem Verb begrenzt 一下 die Handlung und macht Bitten oft weicher.",
+    "lessonId": "l49"
+  },
+  {
+    "id": "v260",
+    "sourceIndex": 260,
+    "hanzi": "椅子",
+    "pinyin": "yǐzi",
+    "meaning": "Stuhl",
+    "accepted": [
+      "Stuhl"
+    ],
+    "example": {
+      "id": "ex-v260",
+      "zh": "我的椅子在这里。",
+      "pinyin": "Wǒ de yǐzi zài zhèlǐ.",
+      "de": "Mein Stuhl steht hier."
+    },
+    "lessonId": "l30"
+  },
+  {
+    "id": "v261",
+    "sourceIndex": 261,
+    "hanzi": "一点儿",
+    "pinyin": "yìdiǎnr",
+    "meaning": "ein wenig; etwas",
+    "accepted": [
+      "ein wenig",
+      "etwas",
+      "ein bisschen"
+    ],
+    "example": {
+      "id": "ex-v261",
+      "zh": "我想喝一点儿水。",
+      "pinyin": "Wǒ xiǎng hē yìdiǎnr shuǐ.",
+      "de": "Ich möchte ein wenig Wasser trinken."
+    },
+    "note": "Bezeichnet eine kleine Menge. Anders als 有点儿 steht es häufig vor einem Nomen oder nach einem Adjektiv.",
+    "lessonId": "l27"
+  },
+  {
+    "id": "v262",
+    "sourceIndex": 262,
+    "hanzi": "一些",
+    "pinyin": "yìxiē",
+    "meaning": "einige; etwas",
+    "accepted": [
+      "einige",
+      "etwas",
+      "ein paar"
+    ],
+    "example": {
+      "id": "ex-v262",
+      "zh": "我买了一些水果。",
+      "pinyin": "Wǒ mǎi le yìxiē shuǐguǒ.",
+      "de": "Ich habe etwas Obst gekauft."
+    },
+    "lessonId": "l14"
+  },
+  {
+    "id": "v263",
+    "sourceIndex": 263,
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "meaning": "haben; es gibt",
+    "accepted": [
+      "haben",
+      "es gibt"
+    ],
+    "example": {
+      "id": "ex-v263",
+      "zh": "我有一个弟弟。",
+      "pinyin": "Wǒ yǒu yí ge dìdi.",
+      "de": "Ich habe einen jüngeren Bruder."
+    },
+    "note": "Verneinung mit 没有, nicht mit 不有.",
+    "lessonId": "l12"
+  },
+  {
+    "id": "v264",
+    "sourceIndex": 264,
+    "hanzi": "有的",
+    "pinyin": "yǒude",
+    "meaning": "manche; einige von",
+    "accepted": [
+      "manche",
+      "einige",
+      "einige von"
+    ],
+    "example": {
+      "id": "ex-v264",
+      "zh": "这些书，有的很好看。",
+      "pinyin": "Zhèxiē shū, yǒude hěn hǎokàn.",
+      "de": "Manche dieser Bücher sind sehr lesenswert."
+    },
+    "note": "Bezieht sich auf einen Teil einer bekannten Gruppe. 有的…有的… heißt „manche…andere…“.",
+    "lessonId": "l49"
+  },
+  {
+    "id": "v265",
+    "sourceIndex": 265,
+    "hanzi": "有点儿",
+    "pinyin": "yǒudiǎnr",
+    "meaning": "ein bisschen; etwas",
+    "accepted": [
+      "ein bisschen",
+      "etwas",
+      "ein wenig"
+    ],
+    "example": {
+      "id": "ex-v265",
+      "zh": "今天有点儿冷。",
+      "pinyin": "Jīntiān yǒudiǎnr lěng.",
+      "de": "Heute ist es ein bisschen kalt."
+    },
+    "note": "Vor Adjektiven; häufig für eine leicht unerwünschte Eigenschaft. Nicht mit einer Mengenangabe 一点儿 verwechseln.",
+    "lessonId": "l38"
+  },
+  {
+    "id": "v266",
+    "sourceIndex": 266,
+    "hanzi": "有些",
+    "pinyin": "yǒuxiē",
+    "meaning": "manche; einige; etwas",
+    "accepted": [
+      "manche",
+      "einige",
+      "etwas"
+    ],
+    "example": {
+      "id": "ex-v266",
+      "zh": "有些学生喜欢喝茶。",
+      "pinyin": "Yǒuxiē xuéshēng xǐhuan hē chá.",
+      "de": "Manche Schüler trinken gern Tee."
+    },
+    "note": "Vor Nomen „manche/einige“; vor Adjektiven kann 有些 „etwas“ bedeuten.",
+    "lessonId": "l14"
+  },
+  {
+    "id": "v267",
+    "sourceIndex": 267,
+    "hanzi": "雨",
+    "pinyin": "yǔ",
+    "meaning": "Regen",
+    "accepted": [
+      "Regen"
+    ],
+    "example": {
+      "id": "ex-v267",
+      "zh": "今天的雨很大。",
+      "pinyin": "Jīntiān de yǔ hěn dà.",
+      "de": "Heute regnet es stark."
+    },
+    "note": "雨很大 beschreibt starken Regen, wörtlich „der Regen ist groß“.",
+    "lessonId": "l48"
+  },
+  {
+    "id": "v268",
+    "sourceIndex": 268,
+    "hanzi": "元",
+    "pinyin": "yuán",
+    "meaning": "Yuan; chinesische Geldeinheit",
+    "accepted": [
+      "Yuan",
+      "Renminbi"
+    ],
+    "example": {
+      "id": "ex-v268",
+      "zh": "这本书二十元。",
+      "pinyin": "Zhè běn shū èrshí yuán.",
+      "de": "Dieses Buch kostet zwanzig Yuan."
+    },
+    "note": "元 ist die Standardbezeichnung der Geldeinheit; im Gespräch häufig 块.",
+    "lessonId": "l36"
+  },
+  {
+    "id": "v269",
+    "sourceIndex": 269,
+    "hanzi": "月",
+    "pinyin": "yuè",
+    "meaning": "Monat; Mond",
+    "accepted": [
+      "Monat",
+      "Mond"
+    ],
+    "example": {
+      "id": "ex-v269",
+      "zh": "九月我去中国。",
+      "pinyin": "Jiǔ yuè wǒ qù Zhōngguó.",
+      "de": "Im September fahre ich nach China."
+    },
+    "note": "Monatsnamen entstehen aus Zahl + 月: 九月 „September“.",
+    "lessonId": "l25"
+  },
+  {
+    "id": "v270",
+    "sourceIndex": 270,
+    "hanzi": "再",
+    "pinyin": "zài",
+    "meaning": "wieder; noch einmal; dann",
+    "accepted": [
+      "wieder",
+      "noch einmal",
+      "dann"
+    ],
+    "example": {
+      "id": "ex-v270",
+      "zh": "请再说一下。",
+      "pinyin": "Qǐng zài shuō yíxià.",
+      "de": "Sag es bitte noch einmal."
+    },
+    "note": "再 bezeichnet eine erneute oder anschließende Handlung, meist noch bevor sie stattfindet.",
+    "lessonId": "l34"
+  },
+  {
+    "id": "v271",
+    "sourceIndex": 271,
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "sich befinden; in; gerade",
+    "accepted": [
+      "sich befinden",
+      "in",
+      "an",
+      "gerade"
+    ],
+    "example": {
+      "id": "ex-v271",
+      "zh": "我在家。",
+      "pinyin": "Wǒ zài jiā.",
+      "de": "Ich bin zu Hause."
+    },
+    "note": "Als Verb „sich befinden“, vor einem Ort „in/an“, vor einem Verb Marker einer laufenden Handlung.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v272",
+    "sourceIndex": 272,
+    "hanzi": "再见",
+    "pinyin": "zàijiàn",
+    "meaning": "auf Wiedersehen; tschüss",
+    "accepted": [
+      "auf Wiedersehen",
+      "tschüss",
+      "bis bald"
+    ],
+    "example": {
+      "id": "ex-v272",
+      "zh": "老师，再见！",
+      "pinyin": "Lǎoshī, zàijiàn!",
+      "de": "Auf Wiedersehen, Frau Lehrerin!"
+    },
+    "lessonId": "l04"
+  },
+  {
+    "id": "v273",
+    "sourceIndex": 273,
+    "hanzi": "早",
+    "pinyin": "zǎo",
+    "meaning": "früh; guten Morgen",
+    "accepted": [
+      "früh",
+      "guten Morgen",
+      "morgen"
+    ],
+    "example": {
+      "id": "ex-v273",
+      "zh": "早！你去上班吗？",
+      "pinyin": "Zǎo! Nǐ qù shàngbān ma?",
+      "de": "Morgen! Gehst du zur Arbeit?"
+    },
+    "note": "早 allein kann eine kurze morgendliche Begrüßung sein.",
+    "lessonId": "l22"
+  },
+  {
+    "id": "v274",
+    "sourceIndex": 274,
+    "hanzi": "早饭",
+    "pinyin": "zǎofàn",
+    "meaning": "Frühstück",
+    "accepted": [
+      "Frühstück"
+    ],
+    "example": {
+      "id": "ex-v274",
+      "zh": "你吃早饭了吗？",
+      "pinyin": "Nǐ chī zǎofàn le ma?",
+      "de": "Hast du gefrühstückt?"
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "v275",
+    "sourceIndex": 275,
+    "hanzi": "早上",
+    "pinyin": "zǎoshang",
+    "meaning": "Morgen; morgens",
+    "accepted": [
+      "Morgen",
+      "morgens",
+      "am Morgen"
+    ],
+    "example": {
+      "id": "ex-v275",
+      "zh": "我早上七点起床。",
+      "pinyin": "Wǒ zǎoshang qī diǎn qǐchuáng.",
+      "de": "Ich stehe morgens um sieben Uhr auf."
+    },
+    "note": "Die Tageszeit „Morgen“; „morgen“ als nächster Tag heißt 明天.",
+    "lessonId": "l22"
+  },
+  {
+    "id": "v276",
+    "sourceIndex": 276,
+    "hanzi": "怎么",
+    "pinyin": "zěnme",
+    "meaning": "wie; auf welche Weise",
+    "accepted": [
+      "wie",
+      "auf welche Weise"
+    ],
+    "example": {
+      "id": "ex-v276",
+      "zh": "这个字怎么写？",
+      "pinyin": "Zhège zì zěnme xiě?",
+      "de": "Wie schreibt man dieses Zeichen?"
+    },
+    "note": "Fragt nach der Art und Weise einer Handlung; in bestimmten Kontexten auch nach dem Grund.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v277",
+    "sourceIndex": 277,
+    "hanzi": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "meaning": "wie; wie ist es",
+    "accepted": [
+      "wie",
+      "wie ist es",
+      "wie geht es"
+    ],
+    "example": {
+      "id": "ex-v277",
+      "zh": "你觉得这个电影怎么样？",
+      "pinyin": "Nǐ juéde zhège diànyǐng zěnmeyàng?",
+      "de": "Wie findest du diesen Film?"
+    },
+    "note": "Fragt nach Zustand oder Bewertung; 怎么 fragt oft nach der Durchführung.",
+    "lessonId": "l45"
+  },
+  {
+    "id": "v278",
+    "sourceIndex": 278,
+    "hanzi": "找",
+    "pinyin": "zhǎo",
+    "meaning": "suchen",
+    "accepted": [
+      "suchen"
+    ],
+    "example": {
+      "id": "ex-v278",
+      "zh": "我在找我的手机。",
+      "pinyin": "Wǒ zài zhǎo wǒ de shǒujī.",
+      "de": "Ich suche gerade mein Handy."
+    },
+    "note": "找 heißt zunächst „suchen“; 找到 bedeutet „finden“, also erfolgreich suchen.",
+    "lessonId": "l33"
+  },
+  {
+    "id": "v279",
+    "sourceIndex": 279,
+    "hanzi": "这",
+    "pinyin": "zhè",
+    "meaning": "dieser; diese; dieses; das hier",
+    "accepted": [
+      "dieser",
+      "diese",
+      "dieses",
+      "das hier"
+    ],
+    "example": {
+      "id": "ex-v279",
+      "zh": "这是我的朋友。",
+      "pinyin": "Zhè shì wǒ de péngyou.",
+      "de": "Das ist mein Freund."
+    },
+    "lessonId": "l13"
+  },
+  {
+    "id": "v280",
+    "sourceIndex": 280,
+    "hanzi": "这边",
+    "pinyin": "zhèbiān",
+    "meaning": "hier drüben; diese Seite",
+    "accepted": [
+      "hier drüben",
+      "hierher",
+      "diese Seite",
+      "hier"
+    ],
+    "example": {
+      "id": "ex-v280",
+      "zh": "请来这边。",
+      "pinyin": "Qǐng lái zhèbiān.",
+      "de": "Komm bitte hierher."
+    },
+    "lessonId": "l32"
+  },
+  {
+    "id": "v281",
+    "sourceIndex": 281,
+    "hanzi": "这个",
+    "pinyin": "zhège",
+    "meaning": "dieser; dieses hier",
+    "accepted": [
+      "dieser",
+      "diese",
+      "dieses",
+      "dieses hier"
+    ],
+    "example": {
+      "id": "ex-v281",
+      "zh": "这个苹果很好吃。",
+      "pinyin": "Zhège píngguǒ hěn hǎochī.",
+      "de": "Dieser Apfel schmeckt gut."
+    },
+    "note": "这 + 个; zeigt eine einzelne Person oder Sache in der Nähe.",
+    "lessonId": "l13"
+  },
+  {
+    "id": "v282",
+    "sourceIndex": 282,
+    "hanzi": "这里",
+    "pinyin": "zhèlǐ",
+    "meaning": "hier",
+    "accepted": [
+      "hier"
+    ],
+    "example": {
+      "id": "ex-v282",
+      "zh": "这里有一家书店。",
+      "pinyin": "Zhèlǐ yǒu yì jiā shūdiàn.",
+      "de": "Hier gibt es eine Buchhandlung."
+    },
+    "lessonId": "l32"
+  },
+  {
+    "id": "v283",
+    "sourceIndex": 283,
+    "hanzi": "这儿",
+    "pinyin": "zhèr",
+    "meaning": "hier",
+    "accepted": [
+      "hier"
+    ],
+    "example": {
+      "id": "ex-v283",
+      "zh": "我住在这儿。",
+      "pinyin": "Wǒ zhù zài zhèr.",
+      "de": "Ich wohne hier."
+    },
+    "note": "这儿 zhèr und 这里 zhèlǐ sind weitgehend gleichbedeutend.",
+    "lessonId": "l32"
+  },
+  {
+    "id": "v284",
+    "sourceIndex": 284,
+    "hanzi": "这些",
+    "pinyin": "zhèxiē",
+    "meaning": "diese; diese mehreren",
+    "accepted": [
+      "diese",
+      "diese hier",
+      "diese mehreren"
+    ],
+    "example": {
+      "id": "ex-v284",
+      "zh": "这些书是我的。",
+      "pinyin": "Zhèxiē shū shì wǒ de.",
+      "de": "Diese Bücher gehören mir."
+    },
+    "note": "Für mehrere Personen oder Dinge in der Nähe; im Gegensatz zu 这个.",
+    "lessonId": "l14"
+  },
+  {
+    "id": "v285",
+    "sourceIndex": 285,
+    "hanzi": "真",
+    "pinyin": "zhēn",
+    "meaning": "wirklich; echt",
+    "accepted": [
+      "wirklich",
+      "echt",
+      "wahr"
+    ],
+    "example": {
+      "id": "ex-v285",
+      "zh": "这个菜真好吃！",
+      "pinyin": "Zhège cài zhēn hǎochī!",
+      "de": "Dieses Gericht ist wirklich lecker!"
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "v286",
+    "sourceIndex": 286,
+    "hanzi": "正在",
+    "pinyin": "zhèngzài",
+    "meaning": "gerade; dabei sein",
+    "accepted": [
+      "gerade",
+      "dabei sein"
+    ],
+    "example": {
+      "id": "ex-v286",
+      "zh": "我正在做饭。",
+      "pinyin": "Wǒ zhèngzài zuò fàn.",
+      "de": "Ich koche gerade."
+    },
+    "note": "正在 steht vor dem Verb und betont, dass die Handlung im Moment abläuft.",
+    "lessonId": "l40"
+  },
+  {
+    "id": "v287",
+    "sourceIndex": 287,
+    "hanzi": "只",
+    "pinyin": "zhī",
+    "meaning": "Zählwort für bestimmte Tiere und Gegenstände",
+    "accepted": [
+      "Zählwort für Tiere",
+      "Tierzählwort",
+      "Zählwort"
+    ],
+    "example": {
+      "id": "ex-v287",
+      "zh": "我家有两只猫。",
+      "pinyin": "Wǒ jiā yǒu liǎng zhī māo.",
+      "de": "Bei uns zu Hause gibt es zwei Katzen."
+    },
+    "note": "Hier zhī als Zählwort, z. B. 一只狗. Die Lesung zhǐ „nur“ ist ein anderer Worteintrag.",
+    "lessonId": "l46"
+  },
+  {
+    "id": "v288",
+    "sourceIndex": 288,
+    "hanzi": "知道",
+    "pinyin": "zhīdào",
+    "meaning": "wissen",
+    "accepted": [
+      "wissen",
+      "Bescheid wissen"
+    ],
+    "example": {
+      "id": "ex-v288",
+      "zh": "我知道你的名字。",
+      "pinyin": "Wǒ zhīdào nǐ de míngzi.",
+      "de": "Ich kenne deinen Namen."
+    },
+    "note": "Wissen über einen Sachverhalt; Personen kennen heißt meist 认识.",
+    "lessonId": "l42"
+  },
+  {
+    "id": "v289",
+    "sourceIndex": 289,
+    "hanzi": "中国",
+    "pinyin": "Zhōngguó",
+    "meaning": "China",
+    "accepted": [
+      "China"
+    ],
+    "example": {
+      "id": "ex-v289",
+      "zh": "我想去中国学习。",
+      "pinyin": "Wǒ xiǎng qù Zhōngguó xuéxí.",
+      "de": "Ich möchte zum Lernen nach China gehen."
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "v290",
+    "sourceIndex": 290,
+    "hanzi": "中文",
+    "pinyin": "Zhōngwén",
+    "meaning": "Chinesisch; chinesische Sprache",
+    "accepted": [
+      "Chinesisch",
+      "chinesische Sprache"
+    ],
+    "example": {
+      "id": "ex-v290",
+      "zh": "这本书是中文的。",
+      "pinyin": "Zhè běn shū shì Zhōngwén de.",
+      "de": "Dieses Buch ist auf Chinesisch."
+    },
+    "note": "Kann Sprache und Schrift bezeichnen; im Alltag oft ähnlich wie 汉语 verwendet.",
+    "lessonId": "l15"
+  },
+  {
+    "id": "v291",
+    "sourceIndex": 291,
+    "hanzi": "中午",
+    "pinyin": "zhōngwǔ",
+    "meaning": "Mittag; mittags",
+    "accepted": [
+      "Mittag",
+      "mittags",
+      "am Mittag"
+    ],
+    "example": {
+      "id": "ex-v291",
+      "zh": "我们中午十二点吃饭。",
+      "pinyin": "Wǒmen zhōngwǔ shí'èr diǎn chī fàn.",
+      "de": "Wir essen mittags um zwölf Uhr."
+    },
+    "lessonId": "l22"
+  },
+  {
+    "id": "v292",
+    "sourceIndex": 292,
+    "hanzi": "中学",
+    "pinyin": "zhōngxué",
+    "meaning": "weiterführende Schule; Sekundarschule",
+    "accepted": [
+      "weiterführende Schule",
+      "Sekundarschule",
+      "Mittelschule"
+    ],
+    "example": {
+      "id": "ex-v292",
+      "zh": "我哥哥在中学上学。",
+      "pinyin": "Wǒ gēge zài zhōngxué shàngxué.",
+      "de": "Mein älterer Bruder besucht eine weiterführende Schule."
+    },
+    "note": "Bezeichnet die Schule nach der Grundschule; keine genaue Gleichsetzung mit einem einzelnen deutschen Schultyp.",
+    "lessonId": "l17"
+  },
+  {
+    "id": "v293",
+    "sourceIndex": 293,
+    "hanzi": "中学生",
+    "pinyin": "zhōngxuéshēng",
+    "meaning": "Schüler einer weiterführenden Schule",
+    "accepted": [
+      "Sekundarschüler",
+      "Sekundarschülerin",
+      "Mittelschüler",
+      "Mittelschülerin",
+      "Schüler einer weiterführenden Schule"
+    ],
+    "example": {
+      "id": "ex-v293",
+      "zh": "她是中学生。",
+      "pinyin": "Tā shì zhōngxuéshēng.",
+      "de": "Sie besucht eine weiterführende Schule."
+    },
+    "lessonId": "l17"
+  },
+  {
+    "id": "v294",
+    "sourceIndex": 294,
+    "hanzi": "住",
+    "pinyin": "zhù",
+    "meaning": "wohnen; bleiben",
+    "accepted": [
+      "wohnen",
+      "bleiben",
+      "übernachten"
+    ],
+    "example": {
+      "id": "ex-v294",
+      "zh": "我住在学校后边。",
+      "pinyin": "Wǒ zhù zài xuéxiào hòubian.",
+      "de": "Ich wohne hinter der Schule."
+    },
+    "lessonId": "l30"
+  },
+  {
+    "id": "v295",
+    "sourceIndex": 295,
+    "hanzi": "桌子",
+    "pinyin": "zhuōzi",
+    "meaning": "Tisch",
+    "accepted": [
+      "Tisch"
+    ],
+    "example": {
+      "id": "ex-v295",
+      "zh": "桌子上有三个苹果。",
+      "pinyin": "Zhuōzi shàng yǒu sān ge píngguǒ.",
+      "de": "Auf dem Tisch liegen drei Äpfel."
+    },
+    "lessonId": "l30"
+  },
+  {
+    "id": "v296",
+    "sourceIndex": 296,
+    "hanzi": "字",
+    "pinyin": "zì",
+    "meaning": "Schriftzeichen; geschriebene Zeichen",
+    "accepted": [
+      "Schriftzeichen",
+      "Zeichen",
+      "Buchstabe"
+    ],
+    "example": {
+      "id": "ex-v296",
+      "zh": "我认识这个字。",
+      "pinyin": "Wǒ rènshi zhège zì.",
+      "de": "Ich kenne dieses Schriftzeichen."
+    },
+    "note": "字 ist allgemeiner als 汉字 „chinesisches Schriftzeichen“.",
+    "lessonId": "l15"
+  },
+  {
+    "id": "v297",
+    "sourceIndex": 297,
+    "hanzi": "昨天",
+    "pinyin": "zuótiān",
+    "meaning": "gestern",
+    "accepted": [
+      "gestern"
+    ],
+    "example": {
+      "id": "ex-v297",
+      "zh": "昨天我去看电影了。",
+      "pinyin": "Zuótiān wǒ qù kàn diànyǐng le.",
+      "de": "Gestern habe ich mir einen Film angesehen."
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "v298",
+    "sourceIndex": 298,
+    "hanzi": "坐",
+    "pinyin": "zuò",
+    "meaning": "sitzen; mit einem Verkehrsmittel fahren",
+    "accepted": [
+      "sitzen",
+      "sich setzen",
+      "mitfahren",
+      "fahren"
+    ],
+    "example": {
+      "id": "ex-v298",
+      "zh": "请坐在这里。",
+      "pinyin": "Qǐng zuò zài zhèlǐ.",
+      "de": "Setz dich bitte hierhin."
+    },
+    "note": "坐车 heißt „mit einem Fahrzeug fahren“. Nicht mit 做 „machen“ verwechseln, trotz gleicher Aussprache.",
+    "lessonId": "l41"
+  },
+  {
+    "id": "v299",
+    "sourceIndex": 299,
+    "hanzi": "做",
+    "pinyin": "zuò",
+    "meaning": "machen; tun",
+    "accepted": [
+      "machen",
+      "tun"
+    ],
+    "example": {
+      "id": "ex-v299",
+      "zh": "你在做什么？",
+      "pinyin": "Nǐ zài zuò shénme?",
+      "de": "Was machst du gerade?"
+    },
+    "note": "做 beschreibt eine Tätigkeit; 坐 zuò bedeutet „sitzen/mitfahren“.",
+    "lessonId": "l40"
+  },
+  {
+    "id": "v300",
+    "sourceIndex": 300,
+    "hanzi": "做饭",
+    "pinyin": "zuò fàn",
+    "meaning": "kochen; Essen zubereiten",
+    "accepted": [
+      "kochen",
+      "Essen zubereiten"
+    ],
+    "example": {
+      "id": "ex-v300",
+      "zh": "我爸爸会做饭。",
+      "pinyin": "Wǒ bàba huì zuò fàn.",
+      "de": "Mein Vater kann kochen."
+    },
+    "note": "Das offizielle Pinyin wird getrennt geschrieben: zuò fàn.",
+    "lessonId": "l23"
+  }
+]

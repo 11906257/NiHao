@@ -1,0 +1,1025 @@
+[
+  {
+    "id": "l01",
+    "title": "Begrüßen und antworten",
+    "description": "Begrüße jemanden, frage nach dem Befinden und antworte mit deinem ersten chinesischen Satz.",
+    "wordIds": [
+      "v146",
+      "v071",
+      "v147",
+      "v221",
+      "v115",
+      "v079"
+    ],
+    "grammarIds": [
+      "g047"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l02",
+    "title": "Sich vorstellen",
+    "description": "Nenne deinen Namen, frage nach dem Namen einer Person und sage, woher jemand kommt.",
+    "wordIds": [
+      "v091",
+      "v130",
+      "v188",
+      "v182",
+      "v170",
+      "v066",
+      "v289"
+    ],
+    "grammarIds": [
+      "g035",
+      "g046",
+      "g052"
+    ],
+    "topicIds": [
+      "tp001"
+    ],
+    "taskIds": [
+      "tk001",
+      "tk002",
+      "tk003",
+      "tk004"
+    ]
+  },
+  {
+    "id": "l03",
+    "title": "Neue Bekanntschaften",
+    "description": "Stelle Freunde vor und frage, wer jemand ist oder ob ihr euch kennt.",
+    "wordIds": [
+      "v181",
+      "v200",
+      "v202",
+      "v171",
+      "v156",
+      "v144"
+    ],
+    "grammarIds": [
+      "g008",
+      "g048"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l04",
+    "title": "Höflich im Gespräch",
+    "description": "Bitte höflich um etwas, bedanke dich und verabschiede dich im passenden Ton.",
+    "wordIds": [
+      "v165",
+      "v150",
+      "v241",
+      "v014",
+      "v272",
+      "v218"
+    ],
+    "grammarIds": [
+      "g027",
+      "g045",
+      "g050"
+    ],
+    "topicIds": [
+      "tp008"
+    ],
+    "taskIds": [
+      "tk021",
+      "tk022",
+      "tk023",
+      "tk024"
+    ]
+  },
+  {
+    "id": "l05",
+    "title": "Missverständnisse klären",
+    "description": "Entschuldige dich, bestätige eine Aussage und reagiere gelassen auf kleine Missverständnisse.",
+    "wordIds": [
+      "v013",
+      "v044",
+      "v045",
+      "v120",
+      "v121",
+      "v166"
+    ],
+    "grammarIds": [
+      "g020"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l06",
+    "title": "Meine Familie",
+    "description": "Stelle deine Eltern und älteren Geschwister vor und drücke Zugehörigkeit mit 的 aus.",
+    "wordIds": [
+      "v086",
+      "v003",
+      "v114",
+      "v059",
+      "v092",
+      "v030"
+    ],
+    "grammarIds": [
+      "g024"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l07",
+    "title": "Kinder und Geschwister",
+    "description": "Sprich über jüngere Geschwister, Kinder und die Mitglieder deiner Familie.",
+    "wordIds": [
+      "v032",
+      "v123",
+      "v048",
+      "v153",
+      "v068",
+      "v087"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp002"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l08",
+    "title": "Wir und die anderen",
+    "description": "Sprich über Gruppen und unterscheide wir, ihr und verschiedene Formen von sie.",
+    "wordIds": [
+      "v222",
+      "v148",
+      "v203",
+      "v205",
+      "v124",
+      "v026"
+    ],
+    "grammarIds": [
+      "g002",
+      "g009",
+      "g028"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l09",
+    "title": "Zählen von eins bis fünf",
+    "description": "Zähle die ersten fünf Dinge und verbinde Zahlen mit dem allgemeinen Zählwort 个.",
+    "wordIds": [
+      "v254",
+      "v049",
+      "v173",
+      "v198",
+      "v223",
+      "v060"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l10",
+    "title": "Zählen bis zehn",
+    "description": "Zähle bis zehn und erkenne einzelne Ziffern in Uhrzeiten und Telefonnummern.",
+    "wordIds": [
+      "v113",
+      "v160",
+      "v002",
+      "v095",
+      "v184",
+      "v112"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l11",
+    "title": "Mengen erfragen",
+    "description": "Erfrage kleine und große Mengen und zähle die Personen in einer Familie.",
+    "wordIds": [
+      "v085",
+      "v111",
+      "v046",
+      "v180",
+      "v047",
+      "v104"
+    ],
+    "grammarIds": [
+      "g011",
+      "g032"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l12",
+    "title": "Besitz und Alter",
+    "description": "Sage, was du hast, verbinde Personen miteinander und nenne das Alter.",
+    "wordIds": [
+      "v263",
+      "v122",
+      "v078",
+      "v253",
+      "v041",
+      "v199"
+    ],
+    "grammarIds": [
+      "g016",
+      "g019",
+      "g022",
+      "g023",
+      "g036",
+      "g053",
+      "g060"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l13",
+    "title": "Das hier und das dort",
+    "description": "Zeige auf ein einzelnes Ding und frage, welches gemeint ist.",
+    "wordIds": [
+      "v279",
+      "v281",
+      "v136",
+      "v138",
+      "v131",
+      "v132"
+    ],
+    "grammarIds": [
+      "g010",
+      "g039"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l14",
+    "title": "Mehrere Dinge zeigen",
+    "description": "Sprich über mehrere Dinge und unterscheide diese, jene und welche.",
+    "wordIds": [
+      "v239",
+      "v284",
+      "v141",
+      "v135",
+      "v262",
+      "v266"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l15",
+    "title": "Chinesisch lernen",
+    "description": "Benenne Sprache und Schrift und sage, dass du Chinesisch lernst.",
+    "wordIds": [
+      "v069",
+      "v290",
+      "v070",
+      "v296",
+      "v247",
+      "v249"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp022"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l16",
+    "title": "Im Unterricht",
+    "description": "Sprich über Lehrkräfte, Mitschüler und den Beginn oder das Ende einer Unterrichtsstunde.",
+    "wordIds": [
+      "v107",
+      "v248",
+      "v211",
+      "v250",
+      "v103",
+      "v177",
+      "v229"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp021",
+      "tp024"
+    ],
+    "taskIds": [
+      "tk045",
+      "tk046",
+      "tk047",
+      "tk048"
+    ]
+  },
+  {
+    "id": "l17",
+    "title": "Von der Schule zur Universität",
+    "description": "Unterscheide Grundschule, weiterführende Schule und Universität samt ihren Lernenden.",
+    "wordIds": [
+      "v237",
+      "v238",
+      "v292",
+      "v293",
+      "v027",
+      "v028",
+      "v179"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp023"
+    ],
+    "taskIds": [
+      "tk049",
+      "tk050",
+      "tk051",
+      "tk052"
+    ]
+  },
+  {
+    "id": "l18",
+    "title": "Lesen und schreiben",
+    "description": "Sprich über Bücher, lies Zeichen vor und bitte bei einer Frage um Hilfe.",
+    "wordIds": [
+      "v190",
+      "v010",
+      "v042",
+      "v043",
+      "v240",
+      "v219",
+      "v220",
+      "v191"
+    ],
+    "grammarIds": [
+      "g012"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l19",
+    "title": "Sprechen und verstehen",
+    "description": "Unterscheide aktives Schauen und Zuhören vom tatsächlichen Sehen und Hören.",
+    "wordIds": [
+      "v196",
+      "v197",
+      "v209",
+      "v210",
+      "v099",
+      "v101"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp025"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l20",
+    "title": "Wünsche und Fähigkeiten",
+    "description": "Sage, was du magst und möchtest, und unterscheide Können, Möglichkeit und Erlaubnis.",
+    "wordIds": [
+      "v001",
+      "v225",
+      "v233",
+      "v096",
+      "v082",
+      "v145",
+      "v102"
+    ],
+    "grammarIds": [
+      "g004",
+      "g005",
+      "g006",
+      "g038",
+      "g049"
+    ],
+    "topicIds": [
+      "tp010"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l21",
+    "title": "Heute und morgen",
+    "description": "Ordne Erlebnisse und Pläne gestern, heute und morgen zu und frage nach dem Zeitpunkt.",
+    "wordIds": [
+      "v129",
+      "v297",
+      "v094",
+      "v232",
+      "v185",
+      "v186"
+    ],
+    "grammarIds": [
+      "g040",
+      "g059"
+    ],
+    "topicIds": [
+      "tp003"
+    ],
+    "taskIds": [
+      "tk005",
+      "tk006",
+      "tk007",
+      "tk008"
+    ]
+  },
+  {
+    "id": "l22",
+    "title": "Der Tag von früh bis spät",
+    "description": "Orientiere dich im Tageslauf und unterscheide frühe, späte und helle Tageszeiten.",
+    "wordIds": [
+      "v273",
+      "v275",
+      "v178",
+      "v291",
+      "v230",
+      "v217",
+      "v215",
+      "v005"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l23",
+    "title": "Mahlzeiten im Alltag",
+    "description": "Sprich über Frühstück, Mittagessen und Abendessen und darüber, wer das Essen zubereitet.",
+    "wordIds": [
+      "v274",
+      "v224",
+      "v216",
+      "v050",
+      "v021",
+      "v300"
+    ],
+    "grammarIds": [
+      "g030",
+      "g042"
+    ],
+    "topicIds": [
+      "tp012"
+    ],
+    "taskIds": [
+      "tk025",
+      "tk026",
+      "tk027",
+      "tk028"
+    ]
+  },
+  {
+    "id": "l24",
+    "title": "Wochentage und Datum",
+    "description": "Frage nach dem Wochentag und nenne ein Datum mit 号 oder 日.",
+    "wordIds": [
+      "v207",
+      "v243",
+      "v244",
+      "v245",
+      "v076",
+      "v172"
+    ],
+    "grammarIds": [
+      "g044",
+      "g069"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l25",
+    "title": "Monate und Jahre",
+    "description": "Benenne Monate und Jahre und bilde einfache Ordnungszahlen mit 第.",
+    "wordIds": [
+      "v149",
+      "v269",
+      "v093",
+      "v128",
+      "v168",
+      "v031"
+    ],
+    "grammarIds": [
+      "g001",
+      "g068"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l26",
+    "title": "Uhrzeit und Dauer",
+    "description": "Lies Uhrzeiten, nenne eine Dauer und verstehe die chinesische Angabe der halben Stunde.",
+    "wordIds": [
+      "v033",
+      "v055",
+      "v056",
+      "v236",
+      "v007",
+      "v258"
+    ],
+    "grammarIds": [
+      "g014",
+      "g070"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l27",
+    "title": "Etwas trinken",
+    "description": "Bestelle ein Getränk und bitte um eine Tasse oder eine kleine Menge Wasser.",
+    "wordIds": [
+      "v077",
+      "v192",
+      "v017",
+      "v151",
+      "v009",
+      "v261"
+    ],
+    "grammarIds": [
+      "g013"
+    ],
+    "topicIds": [
+      "tp030"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l28",
+    "title": "Einfach gut essen",
+    "description": "Erkenne häufige Speisen und sage, was du zum Essen möchtest.",
+    "wordIds": [
+      "v125",
+      "v127",
+      "v008",
+      "v090",
+      "v126",
+      "v084"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp011",
+      "tp029"
+    ],
+    "taskIds": [
+      "tk057",
+      "tk058",
+      "tk059"
+    ]
+  },
+  {
+    "id": "l29",
+    "title": "Im Restaurant",
+    "description": "Sprich über Gerichte und Obst, bewerte Geschmack und bestelle im Restaurant.",
+    "wordIds": [
+      "v016",
+      "v193",
+      "v159",
+      "v072",
+      "v051",
+      "v252"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l30",
+    "title": "Zu Hause",
+    "description": "Beschreibe dein Zimmer, seine Möbel und Dinge innerhalb oder außerhalb eines Ortes.",
+    "wordIds": [
+      "v294",
+      "v052",
+      "v295",
+      "v260",
+      "v110",
+      "v212"
+    ],
+    "grammarIds": [
+      "g055"
+    ],
+    "topicIds": [
+      "tp004"
+    ],
+    "taskIds": [
+      "tk009",
+      "tk010",
+      "tk011",
+      "tk012"
+    ]
+  },
+  {
+    "id": "l31",
+    "title": "Wo die Dinge sind",
+    "description": "Finde Gegenstände mit oben, unten, davor und dahinter.",
+    "wordIds": [
+      "v175",
+      "v226",
+      "v163",
+      "v080",
+      "v011",
+      "v213"
+    ],
+    "grammarIds": [
+      "g003",
+      "g034"
+    ],
+    "topicIds": [
+      "tp007"
+    ],
+    "taskIds": [
+      "tk017",
+      "tk018",
+      "tk019",
+      "tk020"
+    ]
+  },
+  {
+    "id": "l32",
+    "title": "Hier und dort",
+    "description": "Unterscheide Ortsangaben für hier, dort und die jeweilige Seite.",
+    "wordIds": [
+      "v282",
+      "v283",
+      "v280",
+      "v139",
+      "v140",
+      "v137"
+    ],
+    "grammarIds": [
+      "g054"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l33",
+    "title": "Etwas suchen",
+    "description": "Frage, wo etwas ist, und sage, dass du einen Gegenstand suchst.",
+    "wordIds": [
+      "v271",
+      "v133",
+      "v134",
+      "v276",
+      "v278",
+      "v040"
+    ],
+    "grammarIds": [
+      "g021",
+      "g033"
+    ],
+    "topicIds": [
+      "tp013"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l34",
+    "title": "Kommen und gehen",
+    "description": "Beschreibe Wege, Ankunft und Rückkehr und verabrede ein Wiedersehen.",
+    "wordIds": [
+      "v167",
+      "v106",
+      "v081",
+      "v029",
+      "v088",
+      "v270"
+    ],
+    "grammarIds": [
+      "g018"
+    ],
+    "topicIds": [
+      "tp015"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l35",
+    "title": "Einkaufen",
+    "description": "Finde passende Geschäfte und sage, was du kaufen oder verkaufen möchtest.",
+    "wordIds": [
+      "v174",
+      "v019",
+      "v034",
+      "v116",
+      "v117",
+      "v164"
+    ],
+    "grammarIds": [
+      "g056"
+    ],
+    "topicIds": [
+      "tp016"
+    ],
+    "taskIds": [
+      "tk034",
+      "tk035",
+      "tk036",
+      "tk037"
+    ]
+  },
+  {
+    "id": "l36",
+    "title": "Preise verstehen",
+    "description": "Verstehe Preise bis zu Tausenderbeträgen und bewerte günstig oder teuer.",
+    "wordIds": [
+      "v105",
+      "v268",
+      "v006",
+      "v162",
+      "v065",
+      "v157"
+    ],
+    "grammarIds": [
+      "g067"
+    ],
+    "topicIds": [
+      "tp017"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l37",
+    "title": "Kleidung auswählen",
+    "description": "Beschreibe Kleidung mit Größe und Zustand und verwende ihr Zählwort 件.",
+    "wordIds": [
+      "v255",
+      "v023",
+      "v089",
+      "v025",
+      "v234",
+      "v242"
+    ],
+    "grammarIds": [
+      "g029"
+    ],
+    "topicIds": [
+      "tp005",
+      "tp018"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l38",
+    "title": "Dinge beschreiben",
+    "description": "Bewerte das Aussehen von Dingen und drücke die Stärke deiner Einschätzung aus.",
+    "wordIds": [
+      "v158",
+      "v073",
+      "v053",
+      "v206",
+      "v285",
+      "v265"
+    ],
+    "grammarIds": [
+      "g015",
+      "g031",
+      "g037",
+      "g043"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l39",
+    "title": "Arbeit und Pause",
+    "description": "Sprich über Arbeitsort, Arbeitsbeginn, Feierabend und eine verdiente Pause.",
+    "wordIds": [
+      "v062",
+      "v063",
+      "v176",
+      "v228",
+      "v118",
+      "v246"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp026",
+      "tp027"
+    ],
+    "taskIds": [
+      "tk053",
+      "tk054",
+      "tk055",
+      "tk056"
+    ]
+  },
+  {
+    "id": "l40",
+    "title": "Mein Tagesablauf",
+    "description": "Erzähle vom Aufstehen bis zum Schlafengehen und benenne laufende oder abgeschlossene Handlungen.",
+    "wordIds": [
+      "v161",
+      "v194",
+      "v195",
+      "v299",
+      "v286",
+      "v108"
+    ],
+    "grammarIds": [
+      "g007",
+      "g017",
+      "g025",
+      "g062",
+      "g063",
+      "g064",
+      "g065",
+      "g066"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l41",
+    "title": "Unterwegs",
+    "description": "Wähle ein Verkehrsmittel und unterscheide selbst fahren, mitfahren und sitzen.",
+    "wordIds": [
+      "v020",
+      "v097",
+      "v098",
+      "v298",
+      "v022",
+      "v083",
+      "v054"
+    ],
+    "grammarIds": [
+      "g057"
+    ],
+    "topicIds": [
+      "tp014"
+    ],
+    "taskIds": [
+      "tk029",
+      "tk030",
+      "tk031",
+      "tk032",
+      "tk033"
+    ]
+  },
+  {
+    "id": "l42",
+    "title": "In Verbindung bleiben",
+    "description": "Telefoniere, benenne digitale Geräte und sage, wem du etwas gibst oder was du weißt.",
+    "wordIds": [
+      "v035",
+      "v024",
+      "v189",
+      "v036",
+      "v061",
+      "v288"
+    ],
+    "grammarIds": [
+      "g058"
+    ],
+    "topicIds": [
+      "tp009"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l43",
+    "title": "Freizeit planen",
+    "description": "Plane einen Kinoabend oder andere Freizeitaktivitäten und mache einen Vorschlag mit 吧.",
+    "wordIds": [
+      "v037",
+      "v038",
+      "v039",
+      "v214",
+      "v075",
+      "v004"
+    ],
+    "grammarIds": [
+      "g026"
+    ],
+    "topicIds": [
+      "tp020"
+    ],
+    "taskIds": [
+      "tk041",
+      "tk042",
+      "tk043",
+      "tk044"
+    ]
+  },
+  {
+    "id": "l44",
+    "title": "Menschen und Beziehungen",
+    "description": "Verwende höfliche Anreden und unterscheide Freundschaft von einer festen Partnerschaft.",
+    "wordIds": [
+      "v142",
+      "v152",
+      "v143",
+      "v154",
+      "v231",
+      "v155"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp028"
+    ],
+    "taskIds": []
+  },
+  {
+    "id": "l45",
+    "title": "Zusammen Spaß haben",
+    "description": "Sprich über Lieder, Spaß und Freude und frage nach dem Eindruck deines Gegenübers.",
+    "wordIds": [
+      "v057",
+      "v074",
+      "v058",
+      "v018",
+      "v277",
+      "v235"
+    ],
+    "grammarIds": [
+      "g051"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l46",
+    "title": "Tiere um uns",
+    "description": "Benenne Haustiere, zähle sie mit 只 und verwende die passenden schriftlichen Pronomen.",
+    "wordIds": [
+      "v064",
+      "v119",
+      "v201",
+      "v204",
+      "v287"
+    ],
+    "grammarIds": [],
+    "topicIds": [],
+    "taskIds": []
+  },
+  {
+    "id": "l47",
+    "title": "Gesundheit",
+    "description": "Sprich über Krankheit und medizinische Hilfe und formuliere eine klare Bitte, etwas zu lassen.",
+    "wordIds": [
+      "v256",
+      "v257",
+      "v100",
+      "v012",
+      "v183",
+      "v015"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp019"
+    ],
+    "taskIds": [
+      "tk038",
+      "tk039",
+      "tk040"
+    ]
+  },
+  {
+    "id": "l48",
+    "title": "Wie wird das Wetter?",
+    "description": "Beschreibe Temperatur, Regen und Schnee und frage nach dem Wetter.",
+    "wordIds": [
+      "v208",
+      "v169",
+      "v109",
+      "v227",
+      "v267",
+      "v251"
+    ],
+    "grammarIds": [],
+    "topicIds": [
+      "tp006"
+    ],
+    "taskIds": [
+      "tk013",
+      "tk014",
+      "tk015",
+      "tk016"
+    ]
+  },
+  {
+    "id": "l49",
+    "title": "Gespräche weiterführen",
+    "description": "Halte ein Gespräch mit kurzen Bitten, weiteren Wünschen und Aussagen über einzelne Gruppenmitglieder in Gang.",
+    "wordIds": [
+      "v259",
+      "v187",
+      "v264",
+      "v067"
+    ],
+    "grammarIds": [
+      "g041",
+      "g061"
+    ],
+    "topicIds": [],
+    "taskIds": []
+  }
+]

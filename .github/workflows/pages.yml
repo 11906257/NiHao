@@ -1,0 +1,51 @@
+name: Prüfen und GitHub Pages veröffentlichen
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Build und Curriculum prüfen
+        run: npm run build
+        env:
+          BASE_PATH: /chinese/
+      - run: npx playwright install --with-deps chromium webkit
+      - run: npm run test:e2e
+      - name: GitHub Pages konfigurieren
+        id: pages
+        uses: actions/configure-pages@v6
+      - name: Mit tatsächlichem Pages-Pfad bauen
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Veröffentlichen
+        id: deployment
+        uses: actions/deploy-pages@v5

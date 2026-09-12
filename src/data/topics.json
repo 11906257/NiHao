@@ -1,0 +1,182 @@
+[
+  {
+    "id": "tp001",
+    "sourceLabel": "基本信息 > 个人信息 > 姓名、国籍、年龄、性别、喜好、习惯等",
+    "title": "Persönliche Angaben",
+    "description": "Name, Nationalität, Alter und Geschlecht erfragen sowie Vorlieben und Gewohnheiten ausdrücken."
+  },
+  {
+    "id": "tp002",
+    "sourceLabel": "基本信息 > 个人信息 > 身份、家庭成员、朋友、技能等",
+    "title": "Familie und Fähigkeiten",
+    "description": "Die eigene Rolle, Angehörige und Freunde vorstellen und einfache Fähigkeiten nennen."
+  },
+  {
+    "id": "tp003",
+    "sourceLabel": "基本信息 > 事件信息 > 日期、时间、地点、方位、参加者、号码等",
+    "title": "Ereignisdaten",
+    "description": "Datum, Uhrzeit, Ort, Richtung, Beteiligte und Nummern verstehen und nennen."
+  },
+  {
+    "id": "tp004",
+    "sourceLabel": "基本信息 > 物品信息 > 物品名称",
+    "title": "Gegenstände benennen",
+    "description": "Häufige Gegenstände zu Hause, im Unterricht und im Geschäft erkennen und benennen."
+  },
+  {
+    "id": "tp005",
+    "sourceLabel": "基本信息 > 物品信息 > 物品特征",
+    "title": "Eigenschaften von Gegenständen",
+    "description": "Größe, Menge, Zustand, Neuheit und Zugehörigkeit eines Gegenstands einfach beschreiben."
+  },
+  {
+    "id": "tp006",
+    "sourceLabel": "基本信息 > 环境信息 > 天气",
+    "title": "Wetter",
+    "description": "Wärme, Kälte, Regen, Schnee und eine einfache Bewertung des Wetters ausdrücken."
+  },
+  {
+    "id": "tp007",
+    "sourceLabel": "基本信息 > 环境信息 > 环境特点",
+    "title": "Orte beschreiben",
+    "description": "Größe, Lage und einfache Eigenschaften eines vertrauten Ortes nennen."
+  },
+  {
+    "id": "tp008",
+    "sourceLabel": "日常生活 > 交往 > 基本礼貌行为",
+    "title": "Höflichkeit",
+    "description": "Begrüßen, danken, sich entschuldigen und verabschieden."
+  },
+  {
+    "id": "tp009",
+    "sourceLabel": "日常生活 > 交往 > 简单互动行为",
+    "title": "Einfache Gespräche",
+    "description": "Vorstellen, um Hilfe bitten, auswählen und am Telefon Kontakt aufnehmen."
+  },
+  {
+    "id": "tp010",
+    "sourceLabel": "日常生活 > 交往 > 意愿感受",
+    "title": "Wünsche und Gefühle",
+    "description": "Eigene Bedürfnisse, Wünsche, Freude und einfache Gefühle ausdrücken."
+  },
+  {
+    "id": "tp011",
+    "sourceLabel": "日常生活 > 饮食 > 食物饮品",
+    "title": "Essen und Getränke",
+    "description": "Alltägliche Speisen, Obst und Getränke erkennen und auswählen."
+  },
+  {
+    "id": "tp012",
+    "sourceLabel": "日常生活 > 饮食 > 就餐",
+    "title": "Mahlzeiten",
+    "description": "Über Frühstück, Mittag- und Abendessen, Uhrzeit, Begleitung und Ort sprechen."
+  },
+  {
+    "id": "tp013",
+    "sourceLabel": "日常生活 > 交通出行 > 问路",
+    "title": "Nach dem Weg fragen",
+    "description": "Nach einem Ort fragen und seine Lage bestätigen."
+  },
+  {
+    "id": "tp014",
+    "sourceLabel": "日常生活 > 交通出行 > 出行方式",
+    "title": "Verkehrsmittel",
+    "description": "Einfache Wege mit Auto, Taxi, Zug oder Flugzeug beschreiben."
+  },
+  {
+    "id": "tp015",
+    "sourceLabel": "日常生活 > 交通出行 > 出行安排",
+    "title": "Unterwegs planen",
+    "description": "Ziel, Abfahrt und einfache Reise- oder Alltagspläne nennen."
+  },
+  {
+    "id": "tp016",
+    "sourceLabel": "日常生活 > 购物 > 商品名称",
+    "title": "Waren benennen",
+    "description": "Alltägliche Produkte im Geschäft oder Supermarkt erkennen."
+  },
+  {
+    "id": "tp017",
+    "sourceLabel": "日常生活 > 购物 > 商品价格",
+    "title": "Preise",
+    "description": "Geldbeträge erfragen, verstehen und Preise bewerten."
+  },
+  {
+    "id": "tp018",
+    "sourceLabel": "日常生活 > 购物 > 商品选购",
+    "title": "Etwas auswählen",
+    "description": "Nach Verfügbarkeit fragen und einen Kaufwunsch ausdrücken."
+  },
+  {
+    "id": "tp019",
+    "sourceLabel": "日常生活 > 医疗健康 > 生病、看病、探病等",
+    "title": "Krankheit und Arztbesuch",
+    "description": "Kranksein mitteilen, einen Arztbesuch wünschen und einen Krankenbesuch ansprechen."
+  },
+  {
+    "id": "tp020",
+    "sourceLabel": "日常生活 > 休闲 > 休闲活动",
+    "title": "Freizeit",
+    "description": "Über Lesen, Singen, Fernsehen und einfache Freizeitpläne sprechen."
+  },
+  {
+    "id": "tp021",
+    "sourceLabel": "教育情况 > 学习情况 > 课程信息",
+    "title": "Kursangaben",
+    "description": "Fach, Kurs und Unterrichtszeit verstehen oder nennen."
+  },
+  {
+    "id": "tp022",
+    "sourceLabel": "教育情况 > 学习情况 > 学习内容",
+    "title": "Lerninhalte",
+    "description": "Einfach erklären, was man lernt oder im Unterricht macht."
+  },
+  {
+    "id": "tp023",
+    "sourceLabel": "教育情况 > 学习情况 > 教育层次",
+    "title": "Bildungsstufen",
+    "description": "Grundschule, Mittelschule und Universität unterscheiden."
+  },
+  {
+    "id": "tp024",
+    "sourceLabel": "教育情况 > 校园生活 > 学校情况",
+    "title": "Schule und Menschen",
+    "description": "Schule, Lehrkräfte und Mitschüler einfach vorstellen."
+  },
+  {
+    "id": "tp025",
+    "sourceLabel": "教育情况 > 校园生活 > 课后活动",
+    "title": "Nach dem Unterricht",
+    "description": "Einfache Aktivitäten nach dem Unterricht beschreiben und absprechen."
+  },
+  {
+    "id": "tp026",
+    "sourceLabel": "职场生活 > 工作情况 > 工作信息",
+    "title": "Angaben zur Arbeit",
+    "description": "Arbeitsort, Arbeitszeit und einfache Tätigkeiten nennen."
+  },
+  {
+    "id": "tp027",
+    "sourceLabel": "职场生活 > 工作情况 > 工作评价",
+    "title": "Arbeit bewerten",
+    "description": "Einfach sagen, ob eine Arbeit gefällt und ob man beschäftigt ist."
+  },
+  {
+    "id": "tp028",
+    "sourceLabel": "职场生活 > 职业 > 职业种类",
+    "title": "Berufe",
+    "description": "Häufige Berufsbezeichnungen verstehen und nennen."
+  },
+  {
+    "id": "tp029",
+    "sourceLabel": "文化与传统 > 饮食文化 > 中餐",
+    "title": "Chinesische Speisen",
+    "description": "Baozi, Jiaozi, Nudeln und andere einfache chinesische Speisen erkennen."
+  },
+  {
+    "id": "tp030",
+    "sourceLabel": "文化与传统 > 饮食文化 > 传统饮品",
+    "title": "Traditionelle Getränke",
+    "description": "Tee als alltägliches chinesisches Getränk kennen und Vorlieben ausdrücken."
+  }
+]
