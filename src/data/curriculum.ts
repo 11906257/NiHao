@@ -1,0 +1,23 @@
+import {toneExercises} from './tones';
+import vocabularyData from './vocabulary.json';
+import lessonsData from './lessons.json';
+import grammarData from './grammar.json';
+import hanziData from './hanzi.json';
+import topicsData from './topics.json';
+import tasksData from './tasks.json';
+import officialData from './official.json';
+import type { Vocabulary, Lesson, Grammar, Hanzi, Topic, Task } from './types';
+export const vocabulary = vocabularyData as Vocabulary[];
+export const grammar = grammarData as Grammar[];
+export const hanzi = hanziData as Hanzi[];
+export const topics = topicsData as Topic[];
+export const tasks = tasksData as Task[];
+export const lessons: Lesson[] = (lessonsData as Lesson[]).map(lesson => ({...lesson,grammarIds:grammar.filter(g=>g.lessonId===lesson.id).map(g=>g.id)}));
+export const official = officialData;
+export const wordById = Object.fromEntries(vocabulary.map(w=>[w.id,w]));
+export const grammarById = Object.fromEntries(grammar.map(g=>[g.id,g]));
+export const orderedWordIds = lessons.flatMap(l=>l.wordIds);
+export const validIds = vocabulary.map(w=>w.id);
+export const validLessonIds = lessons.map(l=>l.id);
+
+export const validPracticeIds=[...grammar.map(g=>g.id),...hanzi.map(h=>h.id),...tasks.map(t=>t.id),...toneExercises.map(t=>t.practiceId!)];

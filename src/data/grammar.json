@@ -1,0 +1,1752 @@
+[
+  {
+    "id": "g001",
+    "sourceLabel": "前缀：小—、第—",
+    "title": "Vorsilben 小 und 第",
+    "explanation": "小 vor einer Personenbezeichnung wirkt vertraut oder bezeichnet etwas Kleines. 第 vor einer Zahl bildet eine Ordnungszahl.",
+    "pattern": "小 + Bezeichnung / 第 + Zahl",
+    "example": {
+      "id": "ex-g001",
+      "zh": "这是我的第一个老师。",
+      "pinyin": "Zhè shì wǒ de dì-yī ge lǎoshī.",
+      "de": "Das ist mein erster Lehrer."
+    },
+    "exercise": {
+      "id": "eg001",
+      "prompt": "Wie heißt „der dritte Tag“?",
+      "answer": "第三天",
+      "options": [
+        "第三天",
+        "三第天",
+        "三天第"
+      ],
+      "explanation": "第 steht vor der Zahl: 第三天 bezeichnet den dritten Tag."
+    },
+    "lessonId": "l25"
+  },
+  {
+    "id": "g002",
+    "sourceLabel": "后缀：—们、—边",
+    "title": "Nachsilben 们 und 边",
+    "explanation": "们 bildet bei Personalpronomen und Personenbezeichnungen einen Plural. 边 ergänzt Ortsangaben. Bei konkreten Zahlen verwendet man normalerweise kein 们.",
+    "pattern": "Person + 们 / Ort + 边",
+    "example": {
+      "id": "ex-g002",
+      "zh": "同学们在外边。",
+      "pinyin": "Tóngxuémen zài wàibian.",
+      "de": "Die Mitschüler sind draußen."
+    },
+    "exercise": {
+      "id": "eg002",
+      "prompt": "Ergänze „wir“: 我___",
+      "answer": "们",
+      "options": [
+        "们",
+        "边",
+        "的"
+      ],
+      "explanation": "我们 besteht aus 我 und der Pluralnachsilbe 们."
+    },
+    "lessonId": "l08"
+  },
+  {
+    "id": "g003",
+    "sourceLabel": "方位名词：上、下、里、外、前、后",
+    "title": "Ortswörter",
+    "explanation": "Ortswörter folgen dem Bezugsort. Mit 的 ist die Beziehung oft ebenfalls ausdrückbar. Vorne und hinten beziehen sich auf einen räumlichen Bezugspunkt.",
+    "pattern": "Nomen + Ortswort",
+    "example": {
+      "id": "ex-g003",
+      "zh": "猫在桌子下。",
+      "pinyin": "Māo zài zhuōzi xià.",
+      "de": "Die Katze ist unter dem Tisch."
+    },
+    "exercise": {
+      "id": "eg003",
+      "prompt": "Ergänze „unter dem Stuhl“: 椅子___",
+      "answer": "下",
+      "options": [
+        "下",
+        "上",
+        "里"
+      ],
+      "explanation": "下 bedeutet unterhalb. 上 bedeutet oben, 里 im Inneren."
+    },
+    "lessonId": "l31"
+  },
+  {
+    "id": "g004",
+    "sourceLabel": "能愿动词：会、能",
+    "title": "Können: gelernt oder möglich",
+    "explanation": "会 beschreibt eine erlernte Fähigkeit. 能 beschreibt die Möglichkeit oder Fähigkeit unter gegebenen Umständen. Danach folgt direkt das Verb.",
+    "pattern": "Subjekt + 会/能 + Verb",
+    "example": {
+      "id": "ex-g004",
+      "zh": "她会说汉语。",
+      "pinyin": "Tā huì shuō Hànyǔ.",
+      "de": "Sie kann Chinesisch sprechen."
+    },
+    "exercise": {
+      "id": "eg004",
+      "prompt": "Welches Wort betont eine erlernte Fähigkeit: 他___开车。",
+      "answer": "会",
+      "options": [
+        "会",
+        "在",
+        "的"
+      ],
+      "explanation": "会 vor 开车 bedeutet, dass er Autofahren gelernt hat."
+    },
+    "lessonId": "l20"
+  },
+  {
+    "id": "g005",
+    "sourceLabel": "能愿动词：想、要",
+    "title": "Wollen und Absicht",
+    "explanation": "想 drückt einen Wunsch oder eine Überlegung aus. 要 kann eine feste Absicht oder einen Bedarf ausdrücken. Beide stehen vor dem Vollverb.",
+    "pattern": "Subjekt + 想/要 + Verb",
+    "example": {
+      "id": "ex-g005",
+      "zh": "我想喝茶。",
+      "pinyin": "Wǒ xiǎng hē chá.",
+      "de": "Ich möchte Tee trinken."
+    },
+    "exercise": {
+      "id": "eg005",
+      "prompt": "Welcher Satz bedeutet „Ich möchte nach Hause gehen“?",
+      "answer": "我想回家。",
+      "options": [
+        "我想回家。",
+        "我家想回。",
+        "我回想家。"
+      ],
+      "explanation": "想 steht vor 回家 und markiert den Wunsch."
+    },
+    "lessonId": "l20"
+  },
+  {
+    "id": "g006",
+    "sourceLabel": "能愿动词：可以",
+    "title": "Erlaubnis und Möglichkeit",
+    "explanation": "可以 vor einem Verb sagt, dass etwas erlaubt oder möglich ist. Eine Frage mit 可以…吗 bittet höflich um Erlaubnis.",
+    "pattern": "可以 + Verb + 吗？",
+    "example": {
+      "id": "ex-g006",
+      "zh": "我可以坐这里吗？",
+      "pinyin": "Wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Darf ich hier sitzen?"
+    },
+    "exercise": {
+      "id": "eg006",
+      "prompt": "Ergänze die Bitte um Erlaubnis: 我___在这里看书吗？",
+      "answer": "可以",
+      "options": [
+        "可以",
+        "的",
+        "这些"
+      ],
+      "explanation": "可以 fragt hier nach Erlaubnis, an diesem Ort zu lesen."
+    },
+    "lessonId": "l20"
+  },
+  {
+    "id": "g007",
+    "sourceLabel": "离合词：看病、睡觉、说话、上课、下课、上班、下班、生病",
+    "title": "Trennbare Verb-Objekt-Verbindungen",
+    "explanation": "Diese Ausdrücke enthalten ein Verb und einen nominalen Teil. Zwischen beide können je nach Konstruktion andere Elemente treten. Lerne zunächst die vollständigen Alltagsausdrücke.",
+    "pattern": "Verb + nominaler Teil",
+    "example": {
+      "id": "ex-g007",
+      "zh": "爸爸去医院看病。",
+      "pinyin": "Bàba qù yīyuàn kànbìng.",
+      "de": "Papa geht zur ärztlichen Untersuchung ins Krankenhaus."
+    },
+    "exercise": {
+      "id": "eg007",
+      "prompt": "Welche Verbindung bedeutet „schlafen“?",
+      "answer": "睡觉",
+      "options": [
+        "睡觉",
+        "睡书",
+        "看觉"
+      ],
+      "explanation": "睡觉 ist die feste Verb-Objekt-Verbindung für schlafen."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g008",
+    "sourceLabel": "疑问代词：多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+    "title": "Fragewörter",
+    "explanation": "Fragewörter stehen an der Stelle der erfragten Information. Wer, was und wo stehen deshalb nicht automatisch am Satzanfang. In solchen Fragen ist 吗 normalerweise überflüssig.",
+    "pattern": "Subjekt + Verb + Fragewort",
+    "example": {
+      "id": "ex-g008",
+      "zh": "你想买什么？",
+      "pinyin": "Nǐ xiǎng mǎi shénme?",
+      "de": "Was möchtest du kaufen?"
+    },
+    "exercise": {
+      "id": "eg008",
+      "prompt": "Ergänze „Wo wohnst du?“: 你住___？",
+      "answer": "哪里",
+      "options": [
+        "哪里",
+        "什么",
+        "谁"
+      ],
+      "explanation": "哪里 fragt nach dem Ort und bleibt hinter 住."
+    },
+    "lessonId": "l03"
+  },
+  {
+    "id": "g009",
+    "sourceLabel": "人称代词：我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
+    "title": "Personalpronomen",
+    "explanation": "我, 你 und 他/她/它 bedeuten ich, du und er/sie/es. 您 ist höflich. 他, 她 und 它 klingen alle tā, werden aber unterschiedlich geschrieben.",
+    "pattern": "Pronomen + Prädikat",
+    "example": {
+      "id": "ex-g009",
+      "zh": "我们都是学生。",
+      "pinyin": "Wǒmen dōu shì xuéshēng.",
+      "de": "Wir sind alle Schüler."
+    },
+    "exercise": {
+      "id": "eg009",
+      "prompt": "Welches Pronomen ist die höfliche Anrede?",
+      "answer": "您",
+      "options": [
+        "您",
+        "它",
+        "我"
+      ],
+      "explanation": "您 spricht eine Person höflich an; die Aussprache ist nín."
+    },
+    "lessonId": "l08"
+  },
+  {
+    "id": "g010",
+    "sourceLabel": "指示代词：这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些",
+    "title": "Zeigen und auswählen",
+    "explanation": "这 und 那 verweisen auf nahe oder weiter entfernte Dinge. Vor einem zählbaren Nomen steht meist ein Zählwort. 这里 bezeichnet hier, 有的 einige aus einer Gruppe.",
+    "pattern": "这/那 + Zählwort + Nomen",
+    "example": {
+      "id": "ex-g010",
+      "zh": "这本书很好看。",
+      "pinyin": "Zhè běn shū hěn hǎokàn.",
+      "de": "Dieses Buch ist sehr gut zu lesen."
+    },
+    "exercise": {
+      "id": "eg010",
+      "prompt": "Welcher Ausdruck bedeutet „jene Bücher“?",
+      "answer": "那些书",
+      "options": [
+        "那些书",
+        "那里书",
+        "那谁书"
+      ],
+      "explanation": "那些 bezeichnet mehrere weiter entfernte oder zuvor erwähnte Dinge."
+    },
+    "lessonId": "l13"
+  },
+  {
+    "id": "g011",
+    "sourceLabel": "数词：一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
+    "title": "Zahlen und 二 / 两",
+    "explanation": "Zahlen werden systematisch zusammengesetzt: 十二 ist zwölf, 二十 ist zwanzig. Vor einem Zählwort steht für zwei meist 两; in Zahlenfolgen und Ordnungszahlen steht 二.",
+    "pattern": "Zahl + Zählwort + Nomen",
+    "example": {
+      "id": "ex-g011",
+      "zh": "我买了两本书。",
+      "pinyin": "Wǒ mǎi le liǎng běn shū.",
+      "de": "Ich habe zwei Bücher gekauft."
+    },
+    "exercise": {
+      "id": "eg011",
+      "prompt": "Wähle „zwei Personen“ im üblichen Ausdruck.",
+      "answer": "两个人",
+      "options": [
+        "两个人",
+        "二第人",
+        "两个们"
+      ],
+      "explanation": "Vor dem Zählwort 个 ist 两 die übliche Form für zwei."
+    },
+    "lessonId": "l11"
+  },
+  {
+    "id": "g012",
+    "sourceLabel": "名量词（1）：本、个、家、口、块、件、只、元",
+    "title": "Zählwörter für Dinge",
+    "explanation": "Zwischen Zahl und Nomen steht ein passendes Zählwort. 本 zählt Bücher, 件 etwa Kleidung, 只 Tiere, 口 Familienmitglieder. 个 ist häufig, passt aber nicht automatisch überall.",
+    "pattern": "Zahl + Zählwort + Nomen",
+    "example": {
+      "id": "ex-g012",
+      "zh": "他有三本汉语书。",
+      "pinyin": "Tā yǒu sān běn Hànyǔ shū.",
+      "de": "Er hat drei Chinesischbücher."
+    },
+    "exercise": {
+      "id": "eg012",
+      "prompt": "Ergänze: 两___衣服",
+      "answer": "件",
+      "options": [
+        "件",
+        "本",
+        "只"
+      ],
+      "explanation": "件 ist ein übliches Zählwort für Kleidungsstücke."
+    },
+    "lessonId": "l18"
+  },
+  {
+    "id": "g013",
+    "sourceLabel": "名量词（2）：借用名量词 杯",
+    "title": "Gefäße als Mengenangaben",
+    "explanation": "Ein Gefäßwort kann eine Portion zählen. 杯 bedeutet als Mengenwort einen Becher oder eine Tasse voll; das Gefäß selbst heißt häufig 杯子.",
+    "pattern": "Zahl + 杯 + Getränk",
+    "example": {
+      "id": "ex-g013",
+      "zh": "我要一杯水。",
+      "pinyin": "Wǒ yào yì bēi shuǐ.",
+      "de": "Ich möchte ein Glas Wasser."
+    },
+    "exercise": {
+      "id": "eg013",
+      "prompt": "Welcher Ausdruck bedeutet „zwei Tassen Tee“?",
+      "answer": "两杯茶",
+      "options": [
+        "两杯茶",
+        "两本茶",
+        "两只茶"
+      ],
+      "explanation": "杯 zählt hier die Getränkemenge in Tassen."
+    },
+    "lessonId": "l27"
+  },
+  {
+    "id": "g014",
+    "sourceLabel": "时量词：日、号、岁、点、分、年、天",
+    "title": "Zeit- und Altersangaben",
+    "explanation": "Zeitwörter verbinden sich direkt mit Zahlen: 三天, 两年, 十岁. 日 und 号 bezeichnen ein Kalenderdatum; 点 und 分 dienen zur Uhrzeit.",
+    "pattern": "Zahl + Zeitwort",
+    "example": {
+      "id": "ex-g014",
+      "zh": "我妹妹今年八岁。",
+      "pinyin": "Wǒ mèimei jīnnián bā suì.",
+      "de": "Meine jüngere Schwester ist dieses Jahr acht Jahre alt."
+    },
+    "exercise": {
+      "id": "eg014",
+      "prompt": "Ergänze „zehn Jahre alt“: 十___",
+      "answer": "岁",
+      "options": [
+        "岁",
+        "点",
+        "号"
+      ],
+      "explanation": "岁 gibt das Lebensalter an, 点 eine Uhrzeit und 号 ein Datum."
+    },
+    "lessonId": "l26"
+  },
+  {
+    "id": "g015",
+    "sourceLabel": "程度副词：非常、很、太、真、有（一）点儿",
+    "title": "Wie stark ist eine Eigenschaft?",
+    "explanation": "Gradadverbien stehen vor dem Adjektiv. 很 verbindet in neutralen Aussagen oft Subjekt und Adjektiv ohne starke Betonung. 有点儿 bewertet häufig eine unerwünschte Eigenschaft.",
+    "pattern": "Subjekt + Gradadverb + Adjektiv",
+    "example": {
+      "id": "ex-g015",
+      "zh": "今天有点儿冷。",
+      "pinyin": "Jīntiān yǒudiǎnr lěng.",
+      "de": "Heute ist es ein bisschen kalt."
+    },
+    "exercise": {
+      "id": "eg015",
+      "prompt": "Welcher Satz bedeutet „Das ist zu teuer“?",
+      "answer": "这个太贵了。",
+      "options": [
+        "这个太贵了。",
+        "这个贵太了。",
+        "这个了太贵。"
+      ],
+      "explanation": "太 steht vor 贵; 太…了 betont hier ein zu hohes Maß."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "g016",
+    "sourceLabel": "范围副词：都1",
+    "title": "Alle mit 都",
+    "explanation": "都 bezieht sich auf zuvor genannte Personen oder Dinge und steht gewöhnlich vor dem Verb oder Adjektiv. Der Geltungsbereich steht davor.",
+    "pattern": "Mehrzahl-Subjekt + 都 + Prädikat",
+    "example": {
+      "id": "ex-g016",
+      "zh": "他们都喜欢喝茶。",
+      "pinyin": "Tāmen dōu xǐhuan hē chá.",
+      "de": "Sie trinken alle gern Tee."
+    },
+    "exercise": {
+      "id": "eg016",
+      "prompt": "Wo steht 都 richtig?",
+      "answer": "我们都是老师。",
+      "options": [
+        "我们都是老师。",
+        "都我们是老师。",
+        "我们是老师都。"
+      ],
+      "explanation": "都 folgt auf die Gruppe 我们 und steht vor 是."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g017",
+    "sourceLabel": "时间副词：在、正在",
+    "title": "Eine Handlung läuft gerade",
+    "explanation": "在 und 正在 vor dem Verb markieren eine gerade ablaufende Handlung. 正在 hebt „gerade jetzt“ besonders hervor. Es geht um den Verlauf, nicht bloß um die Gegenwart.",
+    "pattern": "Subjekt + 在/正在 + Verb",
+    "example": {
+      "id": "ex-g017",
+      "zh": "妈妈正在做饭。",
+      "pinyin": "Māma zhèngzài zuò fàn.",
+      "de": "Mama kocht gerade."
+    },
+    "exercise": {
+      "id": "eg017",
+      "prompt": "Ergänze „gerade“: 他___打电话。",
+      "answer": "正在",
+      "options": [
+        "正在",
+        "再见",
+        "了"
+      ],
+      "explanation": "正在 steht vor der laufenden Handlung 打电话."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g018",
+    "sourceLabel": "频率副词：再1",
+    "title": "Etwas noch einmal tun",
+    "explanation": "再 steht vor einer Handlung, die noch einmal oder später erfolgen soll. Im Anfängergebrauch ist es häufig eine Wiederholung in der Zukunft.",
+    "pattern": "再 + Verb",
+    "example": {
+      "id": "ex-g018",
+      "zh": "请再说一下。",
+      "pinyin": "Qǐng zài shuō yíxià.",
+      "de": "Bitte sagen Sie es noch einmal."
+    },
+    "exercise": {
+      "id": "eg018",
+      "prompt": "Ergänze „Morgen komme ich wieder“: 我明天___来。",
+      "answer": "再",
+      "options": [
+        "再",
+        "的",
+        "吗"
+      ],
+      "explanation": "再 vor 来 drückt die erneute spätere Handlung aus."
+    },
+    "lessonId": "l34"
+  },
+  {
+    "id": "g019",
+    "sourceLabel": "关联副词：还1、也",
+    "title": "Auch und zusätzlich",
+    "explanation": "也 und 还 stehen vor dem Prädikat. 也 stellt eine Gemeinsamkeit her, 还 fügt häufig einen weiteren Punkt hinzu. Beide können in einfachen Aussagen vorkommen.",
+    "pattern": "Subjekt + 也/还 + Prädikat",
+    "example": {
+      "id": "ex-g019",
+      "zh": "我喜欢茶，也喜欢牛奶。",
+      "pinyin": "Wǒ xǐhuan chá, yě xǐhuan niúnǎi.",
+      "de": "Ich mag Tee und auch Milch."
+    },
+    "exercise": {
+      "id": "eg019",
+      "prompt": "Welcher Satz heißt „Sie ist auch Lehrerin“?",
+      "answer": "她也是老师。",
+      "options": [
+        "她也是老师。",
+        "她是也老师。",
+        "也她是老师。"
+      ],
+      "explanation": "也 steht vor 是 und nach dem Subjekt 她."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g020",
+    "sourceLabel": "否定副词：不、没（有）、不要",
+    "title": "Verneinen",
+    "explanation": "不 verneint Gewohnheiten, Eigenschaften und Absichten. 没（有）verneint Besitz oder ein nicht eingetretenes Ereignis. 不要 kann eine Aufforderung „nicht tun“ ausdrücken.",
+    "pattern": "不/没（有） + Prädikat",
+    "example": {
+      "id": "ex-g020",
+      "zh": "我昨天没去学校。",
+      "pinyin": "Wǒ zuótiān méi qù xuéxiào.",
+      "de": "Ich bin gestern nicht zur Schule gegangen."
+    },
+    "exercise": {
+      "id": "eg020",
+      "prompt": "Ergänze „Ich habe kein Auto“: 我___车。",
+      "answer": "没有",
+      "options": [
+        "没有",
+        "不是",
+        "不在"
+      ],
+      "explanation": "Besitz mit 有 wird durch 没有 verneint."
+    },
+    "lessonId": "l05"
+  },
+  {
+    "id": "g021",
+    "sourceLabel": "介词：在（引出时间、处所）",
+    "title": "Wo eine Handlung stattfindet",
+    "explanation": "在 leitet vor einem Vollverb eine Ortsangabe ein. So unterscheidet man den Ort der Handlung von einer einfachen Ortsaussage mit 在 als Verb.",
+    "pattern": "Subjekt + 在 + Ort + Verb",
+    "example": {
+      "id": "ex-g021",
+      "zh": "我在家学习。",
+      "pinyin": "Wǒ zài jiā xuéxí.",
+      "de": "Ich lerne zu Hause."
+    },
+    "exercise": {
+      "id": "eg021",
+      "prompt": "Welche Reihenfolge ist neutral für „Sie liest in der Schule“?",
+      "answer": "她在学校看书。",
+      "options": [
+        "她在学校看书。",
+        "她看在学校书。",
+        "她学校在看书。"
+      ],
+      "explanation": "在学校 steht als Ortsangabe vor der Handlung 看书."
+    },
+    "lessonId": "l33"
+  },
+  {
+    "id": "g022",
+    "sourceLabel": "介词：和1、对（引出对象）",
+    "title": "Mit jemandem und zu jemandem",
+    "explanation": "和 vor einer Person kann „mit“ bedeuten. 对 leitet ein Gegenüber oder Bezugsobjekt ein. Die Präpositionalgruppe steht gewöhnlich vor dem Prädikat.",
+    "pattern": "和/对 + Person + Prädikat",
+    "example": {
+      "id": "ex-g022",
+      "zh": "我和朋友去书店。",
+      "pinyin": "Wǒ hé péngyou qù shūdiàn.",
+      "de": "Ich gehe mit einem Freund in die Buchhandlung."
+    },
+    "exercise": {
+      "id": "eg022",
+      "prompt": "Ergänze „mit meiner Familie“: 我___家人吃饭。",
+      "answer": "和",
+      "options": [
+        "和",
+        "吗",
+        "本"
+      ],
+      "explanation": "和 leitet die Personengruppe ein, mit der man etwas tut."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g023",
+    "sourceLabel": "连词：和2（连接词语或短语）",
+    "title": "Nomen mit 和 verbinden",
+    "explanation": "和 verbindet gleichrangige Wörter oder Wortgruppen, besonders Nomen. Es ist kein allgemeiner Ersatz für jedes deutsche „und“ zwischen ganzen Sätzen.",
+    "pattern": "Nomen + 和 + Nomen",
+    "example": {
+      "id": "ex-g023",
+      "zh": "我买苹果和面包。",
+      "pinyin": "Wǒ mǎi píngguǒ hé miànbāo.",
+      "de": "Ich kaufe Äpfel und Brot."
+    },
+    "exercise": {
+      "id": "eg023",
+      "prompt": "Verbinde zwei Nomen: 茶___牛奶",
+      "answer": "和",
+      "options": [
+        "和",
+        "正在",
+        "吗"
+      ],
+      "explanation": "和 verbindet hier die beiden Getränkenamen."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g024",
+    "sourceLabel": "结构助词：的1",
+    "title": "Besitz und nähere Beschreibung",
+    "explanation": "的 verbindet eine nähere Bestimmung mit einem Nomen. Es kann Besitz anzeigen. Bei engen Beziehungen, etwa 我妈妈, wird es häufig weggelassen.",
+    "pattern": "Bestimmung + 的 + Nomen",
+    "example": {
+      "id": "ex-g024",
+      "zh": "这是老师的电脑。",
+      "pinyin": "Zhè shì lǎoshī de diànnǎo.",
+      "de": "Das ist der Computer des Lehrers."
+    },
+    "exercise": {
+      "id": "eg024",
+      "prompt": "Ergänze „mein Buch“: 我___书",
+      "answer": "的",
+      "options": [
+        "的",
+        "了",
+        "吗"
+      ],
+      "explanation": "的 stellt die Besitzbeziehung zwischen 我 und 书 her."
+    },
+    "lessonId": "l06"
+  },
+  {
+    "id": "g025",
+    "sourceLabel": "动态助词：了1",
+    "title": "Abgeschlossene Handlung mit 了",
+    "explanation": "了 direkt nach dem Verb kennzeichnet eine Handlung als vollzogen. Es ist keine allgemeine Vergangenheitsendung. Die Zeit ergibt sich aus dem Kontext.",
+    "pattern": "Verb + 了 + Objekt",
+    "example": {
+      "id": "ex-g025",
+      "zh": "他买了三个苹果。",
+      "pinyin": "Tā mǎi le sān ge píngguǒ.",
+      "de": "Er hat drei Äpfel gekauft."
+    },
+    "exercise": {
+      "id": "eg025",
+      "prompt": "Wähle den Satz, der einen vollzogenen Kauf ausdrückt.",
+      "answer": "我买了两杯茶。",
+      "options": [
+        "我买了两杯茶。",
+        "我了买两杯茶。",
+        "我买两了杯茶。"
+      ],
+      "explanation": "Das dynamische 了 steht nach 买, vor der Mengenangabe."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g026",
+    "sourceLabel": "语气助词：吧1、了2、吗、呢1、呢2、呢3",
+    "title": "Satzendpartikeln",
+    "explanation": "吗 macht aus einer Aussage eine Ja-Nein-Frage. 吧 mildert Vorschläge. Satzfinales 了 markiert eine neue Situation. 呢 kann eine Gegenfrage, die Suche nach etwas oder einen andauernden Zustand ausdrücken.",
+    "pattern": "Aussage + 吗 / Vorschlag + 吧 / Thema + 呢",
+    "example": {
+      "id": "ex-g026",
+      "zh": "你喝茶，我呢？",
+      "pinyin": "Nǐ hē chá, wǒ ne?",
+      "de": "Du trinkst Tee – und ich?"
+    },
+    "exercise": {
+      "id": "eg026",
+      "prompt": "Welche Partikel macht 我们去 in einem einfachen Vorschlag weicher?",
+      "answer": "吧",
+      "options": [
+        "吧",
+        "的",
+        "们"
+      ],
+      "explanation": "Satzfinales 吧 markiert einen Vorschlag oder eine gemilderte Aufforderung."
+    },
+    "lessonId": "l43"
+  },
+  {
+    "id": "g027",
+    "sourceLabel": "叹词：喂",
+    "title": "Am Telefon beginnen",
+    "explanation": "喂 wird häufig verwendet, um am Telefon Kontakt aufzunehmen oder Aufmerksamkeit zu gewinnen. Tonfall und Situation bestimmen die Höflichkeit.",
+    "pattern": "喂，+ Anrede/Frage",
+    "example": {
+      "id": "ex-g027",
+      "zh": "喂，您好！",
+      "pinyin": "Wèi, nín hǎo!",
+      "de": "Hallo, guten Tag!"
+    },
+    "exercise": {
+      "id": "eg027",
+      "prompt": "Welcher Ausdruck passt typischerweise ans Telefon?",
+      "answer": "喂，您好！",
+      "options": [
+        "喂，您好！",
+        "本，您好！",
+        "第，您好！"
+      ],
+      "explanation": "喂 ist eine Interjektion zur Kontaktaufnahme, hier am Telefon."
+    },
+    "lessonId": "l04"
+  },
+  {
+    "id": "g028",
+    "sourceLabel": "联合短语",
+    "title": "Gleichrangige Wortgruppen",
+    "explanation": "In einer koordinierenden Wortgruppe stehen die Teile gleichrangig nebeneinander. 和 kann zwei Personen oder Gegenstände verbinden, ohne ein Teil dem anderen unterzuordnen.",
+    "pattern": "A + 和 + B",
+    "example": {
+      "id": "ex-g028",
+      "zh": "爸爸和妈妈都在家。",
+      "pinyin": "Bàba hé māma dōu zài jiā.",
+      "de": "Papa und Mama sind beide zu Hause."
+    },
+    "exercise": {
+      "id": "eg028",
+      "prompt": "Welche Wortgruppe ist gleichrangig verbunden?",
+      "answer": "老师和学生",
+      "options": [
+        "老师和学生",
+        "老师的书",
+        "三本书"
+      ],
+      "explanation": "老师和学生 verbindet zwei gleichrangige Personenbezeichnungen."
+    },
+    "lessonId": "l08"
+  },
+  {
+    "id": "g029",
+    "sourceLabel": "偏正短语",
+    "title": "Bestimmung vor dem Kern",
+    "explanation": "Eine nähere Bestimmung steht im Chinesischen gewöhnlich vor dem Kernwort. Sie kann eine Eigenschaft oder Besitzbeziehung ausdrücken. Häufig verbindet 的 beide Teile.",
+    "pattern": "Bestimmung +（的）+ Kern",
+    "example": {
+      "id": "ex-g029",
+      "zh": "我喜欢新的衣服。",
+      "pinyin": "Wǒ xǐhuan xīn de yīfu.",
+      "de": "Ich mag neue Kleidung."
+    },
+    "exercise": {
+      "id": "eg029",
+      "prompt": "Welcher Ausdruck heißt „ein neues Handy“?",
+      "answer": "一个新手机",
+      "options": [
+        "一个新手机",
+        "一个手机新",
+        "新一个机手"
+      ],
+      "explanation": "Die Eigenschaft 新 steht vor dem Kern 手机."
+    },
+    "lessonId": "l37"
+  },
+  {
+    "id": "g030",
+    "sourceLabel": "动宾短语",
+    "title": "Verb und Objekt",
+    "explanation": "Das Objekt folgt im einfachen Verb-Objekt-Ausdruck auf das Verb. Diese Reihenfolge ist eine Grundlage vieler chinesischer Alltagssätze.",
+    "pattern": "Verb + Objekt",
+    "example": {
+      "id": "ex-g030",
+      "zh": "我们喝牛奶。",
+      "pinyin": "Wǒmen hē niúnǎi.",
+      "de": "Wir trinken Milch."
+    },
+    "exercise": {
+      "id": "eg030",
+      "prompt": "Welche Wortgruppe bedeutet „Bücher lesen“?",
+      "answer": "看书",
+      "options": [
+        "看书",
+        "书看",
+        "书的"
+      ],
+      "explanation": "看 ist das Verb, 书 sein folgendes Objekt."
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "g031",
+    "sourceLabel": "主谓短语",
+    "title": "Thema und Aussage als Wortgruppe",
+    "explanation": "Eine Subjekt-Prädikat-Gruppe sagt etwas über eine Person oder Sache aus. Solche Gruppen können allein stehen oder Bestandteil größerer Sätze sein.",
+    "pattern": "Subjekt + Prädikat",
+    "example": {
+      "id": "ex-g031",
+      "zh": "天气很好。",
+      "pinyin": "Tiānqì hěn hǎo.",
+      "de": "Das Wetter ist gut."
+    },
+    "exercise": {
+      "id": "eg031",
+      "prompt": "Welche Gruppe enthält Subjekt und Prädikat?",
+      "answer": "他很忙",
+      "options": [
+        "他很忙",
+        "他的书",
+        "三个人"
+      ],
+      "explanation": "In 他很忙 ist 他 das Subjekt und 很忙 das Prädikat."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "g032",
+    "sourceLabel": "数量短语",
+    "title": "Zahl und Zählwort",
+    "explanation": "Eine Zahl und ein Zählwort bilden eine Mengenwortgruppe. Ein Nomen kann folgen oder aus dem Kontext ergänzt werden. Ohne bekanntes Bezugswort muss klar sein, was gezählt wird.",
+    "pattern": "Zahl + Zählwort（+ Nomen）",
+    "example": {
+      "id": "ex-g032",
+      "zh": "我要两个。",
+      "pinyin": "Wǒ yào liǎng ge.",
+      "de": "Ich möchte zwei davon."
+    },
+    "exercise": {
+      "id": "eg032",
+      "prompt": "Welche Wortgruppe ist eine Zahl-Zählwort-Gruppe?",
+      "answer": "三本",
+      "options": [
+        "三本",
+        "很好",
+        "学校"
+      ],
+      "explanation": "三本 besteht aus der Zahl 三 und dem Zählwort 本."
+    },
+    "lessonId": "l11"
+  },
+  {
+    "id": "g033",
+    "sourceLabel": "介宾短语",
+    "title": "Präposition und Ergänzung",
+    "explanation": "Eine Präposition bildet mit ihrer Ergänzung eine Gruppe, die etwa Ort oder Begleitung angibt. Im einfachen Satz steht diese Gruppe meist vor dem Vollverb.",
+    "pattern": "Präposition + Ergänzung",
+    "example": {
+      "id": "ex-g033",
+      "zh": "她在学校上课。",
+      "pinyin": "Tā zài xuéxiào shàngkè.",
+      "de": "Sie hat Unterricht in der Schule."
+    },
+    "exercise": {
+      "id": "eg033",
+      "prompt": "Welche Gruppe nennt den Handlungsort?",
+      "answer": "在学校",
+      "options": [
+        "在学校",
+        "学校的",
+        "学校们"
+      ],
+      "explanation": "在学校 ist eine Präpositionalgruppe mit einer Ortsangabe."
+    },
+    "lessonId": "l33"
+  },
+  {
+    "id": "g034",
+    "sourceLabel": "方位短语",
+    "title": "Ein Ort mit Bezugspunkt",
+    "explanation": "Eine Ortsgruppe verbindet einen Bezugspunkt mit einem Ortswort. Der Bezugspunkt steht zuerst. So bedeutet 学校前 vor der Schule.",
+    "pattern": "Bezugsort + Ortswort",
+    "example": {
+      "id": "ex-g034",
+      "zh": "商店在学校前。",
+      "pinyin": "Shāngdiàn zài xuéxiào qián.",
+      "de": "Das Geschäft ist vor der Schule."
+    },
+    "exercise": {
+      "id": "eg034",
+      "prompt": "Welcher Ausdruck heißt „im Zimmer“?",
+      "answer": "房间里",
+      "options": [
+        "房间里",
+        "里房间",
+        "房里间"
+      ],
+      "explanation": "Das Ortswort 里 folgt auf 房间."
+    },
+    "lessonId": "l31"
+  },
+  {
+    "id": "g035",
+    "sourceLabel": "主语：名词、代词或名词性短语作主语",
+    "title": "Wer oder was ist das Thema?",
+    "explanation": "Ein Nomen, Pronomen oder eine nominale Wortgruppe kann das Subjekt bilden. In einfachen Aussagen steht es gewöhnlich vor dem Prädikat.",
+    "pattern": "Subjekt + Prädikat",
+    "example": {
+      "id": "ex-g035",
+      "zh": "我的朋友喜欢唱歌。",
+      "pinyin": "Wǒ de péngyou xǐhuan chàng gē.",
+      "de": "Mein Freund singt gern."
+    },
+    "exercise": {
+      "id": "eg035",
+      "prompt": "Was ist das Subjekt in 我的老师很忙？",
+      "answer": "我的老师",
+      "options": [
+        "我的老师",
+        "很忙",
+        "很"
+      ],
+      "explanation": "我的老师 bezeichnet die Person, über die 很忙 eine Aussage macht."
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "g036",
+    "sourceLabel": "谓语：名词、代词、数词或数量短语作谓语",
+    "title": "Nominales Prädikat",
+    "explanation": "Bei Alter, Datum, Uhrzeit und ähnlichen Angaben kann eine nominale Gruppe direkt als Prädikat dienen. Ein deutsches „sein“ verlangt daher nicht immer 是.",
+    "pattern": "Subjekt + nominale Angabe",
+    "example": {
+      "id": "ex-g036",
+      "zh": "今天星期六。",
+      "pinyin": "Jīntiān xīngqīliù.",
+      "de": "Heute ist Samstag."
+    },
+    "exercise": {
+      "id": "eg036",
+      "prompt": "Welcher Satz ist eine übliche Altersangabe?",
+      "answer": "我今年二十岁。",
+      "options": [
+        "我今年二十岁。",
+        "我今年是很二十岁。",
+        "我今年岁二十。"
+      ],
+      "explanation": "Die Altersangabe 二十岁 kann ohne 是 direkt das Prädikat bilden."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g037",
+    "sourceLabel": "谓语：动词或动词性短语、形容词或形容词性短语作谓语",
+    "title": "Verbales und adjektivisches Prädikat",
+    "explanation": "Ein Prädikat kann eine Handlung oder eine Eigenschaft ausdrücken. Vor einem einfachen Adjektiv steht normalerweise kein 是; häufig verbindet 很 es mit dem Subjekt.",
+    "pattern": "Subjekt + Verb / Subjekt + 很 + Adjektiv",
+    "example": {
+      "id": "ex-g037",
+      "zh": "弟弟很高兴。",
+      "pinyin": "Dìdi hěn gāoxìng.",
+      "de": "Mein jüngerer Bruder ist froh."
+    },
+    "exercise": {
+      "id": "eg037",
+      "prompt": "Welcher Satz ist als neutrale Eigenschaftsaussage richtig?",
+      "answer": "房间很大。",
+      "options": [
+        "房间很大。",
+        "房间是大很。",
+        "房间大是。"
+      ],
+      "explanation": "很大 bildet direkt das Prädikat; 是 ist hier nicht nötig."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "g038",
+    "sourceLabel": "宾语：名词、代词或名词性短语作宾语",
+    "title": "Das Objekt folgt dem Verb",
+    "explanation": "Nomen, Pronomen und nominale Wortgruppen können Objekt sein. Im Grundmuster steht das Objekt nach dem Verb und bezeichnet dessen Ziel oder Gegenstand.",
+    "pattern": "Subjekt + Verb + Objekt",
+    "example": {
+      "id": "ex-g038",
+      "zh": "老师认识我们。",
+      "pinyin": "Lǎoshī rènshi wǒmen.",
+      "de": "Der Lehrer kennt uns."
+    },
+    "exercise": {
+      "id": "eg038",
+      "prompt": "Was ist das Objekt in 我喜欢中国菜？",
+      "answer": "中国菜",
+      "options": [
+        "中国菜",
+        "我",
+        "喜欢"
+      ],
+      "explanation": "中国菜 folgt auf 喜欢 und bezeichnet das, was die Person mag."
+    },
+    "lessonId": "l20"
+  },
+  {
+    "id": "g039",
+    "sourceLabel": "定语：名词性词语、形容词性短语、数量短语作定语",
+    "title": "Ein Nomen genauer bestimmen",
+    "explanation": "Vor einem Nomen können Angaben zu Besitzer, Eigenschaft oder Anzahl stehen. 的 verbindet viele beschreibende und besitzanzeigende Attribute mit dem Nomen; Zahl-Zählwort-Gruppen stehen direkt davor.",
+    "pattern": "Attribut + Nomen",
+    "example": {
+      "id": "ex-g039",
+      "zh": "那三个学生是我的朋友。",
+      "pinyin": "Nà sān ge xuéshēng shì wǒ de péngyou.",
+      "de": "Jene drei Schüler sind meine Freunde."
+    },
+    "exercise": {
+      "id": "eg039",
+      "prompt": "Welcher Ausdruck bestimmt die Anzahl korrekt?",
+      "answer": "两本书",
+      "options": [
+        "两本书",
+        "书两本的",
+        "本两书"
+      ],
+      "explanation": "Die Mengenangabe 两本 steht vor dem Nomen 书."
+    },
+    "lessonId": "l13"
+  },
+  {
+    "id": "g040",
+    "sourceLabel": "状语：副词、形容词；表示时间、处所的词语",
+    "title": "Angaben vor dem Prädikat",
+    "explanation": "Adverbien und Angaben zu Zeit oder Ort stehen meist vor dem Prädikat. Eine Zeitangabe kann auch am Satzanfang stehen. Ort steht bei einer Handlung gewöhnlich vor dem Vollverb.",
+    "pattern": "Subjekt + Zeit + Ort + Verb",
+    "example": {
+      "id": "ex-g040",
+      "zh": "我今天在家看书。",
+      "pinyin": "Wǒ jīntiān zài jiā kàn shū.",
+      "de": "Ich lese heute zu Hause."
+    },
+    "exercise": {
+      "id": "eg040",
+      "prompt": "Welche Reihenfolge ist neutral?",
+      "answer": "我明天去学校。",
+      "options": [
+        "我明天去学校。",
+        "我去明天学校。",
+        "我去学校明。"
+      ],
+      "explanation": "明天 steht als Zeitangabe vor 去."
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "g041",
+    "sourceLabel": "数量补语1：动词+动量补语",
+    "title": "Eine kurze oder gezählte Handlung",
+    "explanation": "Ein Mengenkomplement folgt auf das Verb und gibt an, wie oft oder kurz etwas geschieht. 一下 kann eine Handlung als kurz oder beiläufig darstellen und Bitten mildern.",
+    "pattern": "Verb + 一下",
+    "example": {
+      "id": "ex-g041",
+      "zh": "请看一下。",
+      "pinyin": "Qǐng kàn yíxià.",
+      "de": "Schauen Sie bitte kurz."
+    },
+    "exercise": {
+      "id": "eg041",
+      "prompt": "Ergänze „kurz warten/ruhen“ mit bekanntem Verb: 休息___",
+      "answer": "一下",
+      "options": [
+        "一下",
+        "一吗",
+        "一的"
+      ],
+      "explanation": "一下 folgt auf 休息 und gibt eine kurze Dauer an."
+    },
+    "lessonId": "l49"
+  },
+  {
+    "id": "g042",
+    "sourceLabel": "主谓句1：动词谓语句",
+    "title": "Sätze mit einem Handlungsverb",
+    "explanation": "Ein einfacher Verbalsatz beginnt meist mit dem Subjekt. Danach folgt das Verb und gegebenenfalls sein Objekt. Chinesische Verben werden nicht nach Person gebeugt.",
+    "pattern": "Subjekt + Verb + Objekt",
+    "example": {
+      "id": "ex-g042",
+      "zh": "妹妹买水果。",
+      "pinyin": "Mèimei mǎi shuǐguǒ.",
+      "de": "Die jüngere Schwester kauft Obst."
+    },
+    "exercise": {
+      "id": "eg042",
+      "prompt": "Bilde einen einfachen Satz aus 他 / 茶 / 喝.",
+      "answer": "他喝茶。",
+      "options": [
+        "他喝茶。",
+        "他茶喝。",
+        "茶他喝的。"
+      ],
+      "explanation": "Das Grundmuster lautet Subjekt 他, Verb 喝, Objekt 茶."
+    },
+    "lessonId": "l23"
+  },
+  {
+    "id": "g043",
+    "sourceLabel": "主谓句2：形容词谓语句",
+    "title": "Sätze mit einer Eigenschaft",
+    "explanation": "Ein Adjektiv kann im Chinesischen direkt Prädikat sein. 很 dient in neutralen Aussagen häufig als Verbindung; es muss dabei nicht stark „sehr“ betonen.",
+    "pattern": "Subjekt + 很 + Adjektiv",
+    "example": {
+      "id": "ex-g043",
+      "zh": "这个苹果很好吃。",
+      "pinyin": "Zhège píngguǒ hěn hǎochī.",
+      "de": "Dieser Apfel schmeckt gut."
+    },
+    "exercise": {
+      "id": "eg043",
+      "prompt": "Welche Aussage ist neutral korrekt?",
+      "answer": "她很漂亮。",
+      "options": [
+        "她很漂亮。",
+        "她是很漂亮的谁。",
+        "她漂亮是。"
+      ],
+      "explanation": "很漂亮 ist ein adjektivisches Prädikat ohne notwendiges 是."
+    },
+    "lessonId": "l38"
+  },
+  {
+    "id": "g044",
+    "sourceLabel": "主谓句3：名词谓语句",
+    "title": "Datum und Alter ohne 是",
+    "explanation": "Nominale Prädikate sind in begrenzten Mustern üblich, besonders für Alter, Datum und Uhrzeit. Bei Berufszugehörigkeit verwendet man dagegen gewöhnlich 是.",
+    "pattern": "Subjekt + Datum/Alter/Uhrzeit",
+    "example": {
+      "id": "ex-g044",
+      "zh": "现在三点。",
+      "pinyin": "Xiànzài sān diǎn.",
+      "de": "Jetzt ist es drei Uhr."
+    },
+    "exercise": {
+      "id": "eg044",
+      "prompt": "Welcher Satz verwendet ein nominales Prädikat korrekt?",
+      "answer": "今天九月三号。",
+      "options": [
+        "今天九月三号。",
+        "他老师很。",
+        "书三是。"
+      ],
+      "explanation": "九月三号 kann als Datumsangabe direkt auf 今天 folgen."
+    },
+    "lessonId": "l24"
+  },
+  {
+    "id": "g045",
+    "sourceLabel": "非主谓句",
+    "title": "Äußerungen ohne ausgesprochenes Subjekt",
+    "explanation": "Kurze Antworten, Begrüßungen und Aufforderungen können ohne ausdrückliches Subjekt vollständig sein. Die Situation ergänzt die fehlende Person oder Information.",
+    "pattern": "Kurze selbstständige Äußerung",
+    "example": {
+      "id": "ex-g045",
+      "zh": "谢谢！",
+      "pinyin": "Xièxie!",
+      "de": "Danke!"
+    },
+    "exercise": {
+      "id": "eg045",
+      "prompt": "Welche Äußerung ist ohne Subjekt als Aufforderung vollständig?",
+      "answer": "请坐！",
+      "options": [
+        "请坐！",
+        "的坐！",
+        "坐的们！"
+      ],
+      "explanation": "请坐 ist eine vollständige höfliche Aufforderung; die angesprochene Person ist klar."
+    },
+    "lessonId": "l04"
+  },
+  {
+    "id": "g046",
+    "sourceLabel": "陈述句",
+    "title": "Eine Information mitteilen",
+    "explanation": "Ein Aussagesatz vermittelt eine Information. Er benötigt keine Fragepartikel. Die normale Wortstellung bleibt Subjekt vor Prädikat.",
+    "pattern": "Subjekt + Prädikat。",
+    "example": {
+      "id": "ex-g046",
+      "zh": "他在医院工作。",
+      "pinyin": "Tā zài yīyuàn gōngzuò.",
+      "de": "Er arbeitet im Krankenhaus."
+    },
+    "exercise": {
+      "id": "eg046",
+      "prompt": "Welche Äußerung ist eine Aussage?",
+      "answer": "我喜欢这本书。",
+      "options": [
+        "我喜欢这本书。",
+        "你喜欢吗？",
+        "你喜欢什么？"
+      ],
+      "explanation": "我喜欢这本书 teilt eine Information mit und stellt keine Frage."
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "g047",
+    "sourceLabel": "是非问句",
+    "title": "Ja-Nein-Fragen mit 吗",
+    "explanation": "Eine Aussage wird durch 吗 am Satzende zur Ja-Nein-Frage. Die Wortstellung bleibt gleich. Antworten wiederholen häufig das Verb oder seine Verneinung.",
+    "pattern": "Aussage + 吗？",
+    "example": {
+      "id": "ex-g047",
+      "zh": "你是老师吗？",
+      "pinyin": "Nǐ shì lǎoshī ma?",
+      "de": "Bist du Lehrer?"
+    },
+    "exercise": {
+      "id": "eg047",
+      "prompt": "Ergänze eine Ja-Nein-Frage: 你喝茶___？",
+      "answer": "吗",
+      "options": [
+        "吗",
+        "的",
+        "们"
+      ],
+      "explanation": "吗 steht am Satzende und macht die Aussage zur Frage."
+    },
+    "lessonId": "l01"
+  },
+  {
+    "id": "g048",
+    "sourceLabel": "特指问句",
+    "title": "Nach einer bestimmten Information fragen",
+    "explanation": "Fragewörter ersetzen die unbekannte Information an ihrer normalen Satzposition. Man fügt in dieser Frage normalerweise kein 吗 hinzu.",
+    "pattern": "Satz mit Fragewort + ？",
+    "example": {
+      "id": "ex-g048",
+      "zh": "你什么时候回家？",
+      "pinyin": "Nǐ shénme shíhou huí jiā?",
+      "de": "Wann gehst du nach Hause?"
+    },
+    "exercise": {
+      "id": "eg048",
+      "prompt": "Welche Frage fragt nach einer Person?",
+      "answer": "他是谁？",
+      "options": [
+        "他是谁？",
+        "他在哪里？",
+        "他什么时候来？"
+      ],
+      "explanation": "谁 bedeutet wer und fragt nach der Identität einer Person."
+    },
+    "lessonId": "l03"
+  },
+  {
+    "id": "g049",
+    "sourceLabel": "正反问句",
+    "title": "Fragen mit positiver und negativer Form",
+    "explanation": "Eine A-nicht-A-Frage stellt Verb oder Adjektiv und dessen Verneinung nebeneinander. Sie braucht gewöhnlich kein zusätzliches 吗. Bei 有 lautet das Muster 有没有.",
+    "pattern": "Verb + 不 + Verb / 有没有",
+    "example": {
+      "id": "ex-g049",
+      "zh": "你去不去学校？",
+      "pinyin": "Nǐ qù bu qù xuéxiào?",
+      "de": "Gehst du zur Schule?"
+    },
+    "exercise": {
+      "id": "eg049",
+      "prompt": "Welche Frage nach Besitz ist richtig?",
+      "answer": "你有没有电脑？",
+      "options": [
+        "你有没有电脑？",
+        "你有不有电脑吗？",
+        "你没有有的电脑？"
+      ],
+      "explanation": "Bei 有 verwendet die A-nicht-A-Frage 有没有."
+    },
+    "lessonId": "l20"
+  },
+  {
+    "id": "g050",
+    "sourceLabel": "祈使句",
+    "title": "Bitten und auffordern",
+    "explanation": "Eine Aufforderung richtet sich an ein meist ausgelassenes Du oder Sie. 请 macht sie höflicher, 不要 verneint eine Aufforderung. Der Tonfall bleibt wichtig.",
+    "pattern": "请 + Verb / 不要 + Verb",
+    "example": {
+      "id": "ex-g050",
+      "zh": "请喝水。",
+      "pinyin": "Qǐng hē shuǐ.",
+      "de": "Trinken Sie bitte Wasser."
+    },
+    "exercise": {
+      "id": "eg050",
+      "prompt": "Welche Äußerung ist eine höfliche Bitte?",
+      "answer": "请坐这里。",
+      "options": [
+        "请坐这里。",
+        "你谁坐。",
+        "坐吗请。"
+      ],
+      "explanation": "请 steht vor dem Verb und kennzeichnet die höfliche Aufforderung."
+    },
+    "lessonId": "l04"
+  },
+  {
+    "id": "g051",
+    "sourceLabel": "感叹句",
+    "title": "Einen starken Eindruck ausdrücken",
+    "explanation": "Ausrufe betonen einen Eindruck. 真 vor einem Adjektiv oder 太…了 kann Erstaunen oder starke Bewertung ausdrücken. Die genaue Bedeutung hängt vom Kontext ab.",
+    "pattern": "真 + Adjektiv！ / 太 + Adjektiv + 了！",
+    "example": {
+      "id": "ex-g051",
+      "zh": "这只猫真好看！",
+      "pinyin": "Zhè zhī māo zhēn hǎokàn!",
+      "de": "Diese Katze ist wirklich hübsch!"
+    },
+    "exercise": {
+      "id": "eg051",
+      "prompt": "Wähle den korrekten Ausruf.",
+      "answer": "太好了！",
+      "options": [
+        "太好了！",
+        "好太了！",
+        "了太好！"
+      ],
+      "explanation": "太…了 rahmt hier das Adjektiv 好 ein."
+    },
+    "lessonId": "l45"
+  },
+  {
+    "id": "g052",
+    "sourceLabel": "“是”字句1：表示等同或类属",
+    "title": "Identität und Zugehörigkeit mit 是",
+    "explanation": "是 verbindet eine Person oder Sache mit einer Identität oder Kategorie. Die Verneinung ist 不是. Für einfache Adjektive benutzt man dieses Muster normalerweise nicht.",
+    "pattern": "A + 是 + B",
+    "example": {
+      "id": "ex-g052",
+      "zh": "我是中国人。",
+      "pinyin": "Wǒ shì Zhōngguó rén.",
+      "de": "Ich bin Chinese."
+    },
+    "exercise": {
+      "id": "eg052",
+      "prompt": "Ergänze die Berufsangabe: 她___医生。",
+      "answer": "是",
+      "options": [
+        "是",
+        "很",
+        "在"
+      ],
+      "explanation": "是 ordnet 她 der Berufsgruppe 医生 zu."
+    },
+    "lessonId": "l02"
+  },
+  {
+    "id": "g053",
+    "sourceLabel": "“有”字句1：表示领有",
+    "title": "Besitz ausdrücken",
+    "explanation": "有 zeigt, dass jemand etwas hat. Das Objekt folgt auf 有. Die Verneinung lautet 没有, nicht 不有.",
+    "pattern": "Besitzer + 有 + Gegenstand",
+    "example": {
+      "id": "ex-g053",
+      "zh": "我有一个女儿。",
+      "pinyin": "Wǒ yǒu yí ge nǚ’ér.",
+      "de": "Ich habe eine Tochter."
+    },
+    "exercise": {
+      "id": "eg053",
+      "prompt": "Welcher Satz bedeutet „Er hat ein Handy“?",
+      "answer": "他有一个手机。",
+      "options": [
+        "他有一个手机。",
+        "他是一个手机。",
+        "他在一个手机。"
+      ],
+      "explanation": "有 beschreibt Besitz, 是 Identität und 在 gewöhnlich einen Ort oder Verlauf."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g054",
+    "sourceLabel": "存现句1（1）：所处+是+名词",
+    "title": "Was sich an einem Ort befindet",
+    "explanation": "Ein Ort kann am Satzanfang stehen. Mit 是 nennt man, was an diesem Ort ist. Die Konstruktion identifiziert den dort vorhandenen Gegenstand oder Bereich.",
+    "pattern": "Ort + 是 + Nomen",
+    "example": {
+      "id": "ex-g054",
+      "zh": "学校前是商店。",
+      "pinyin": "Xuéxiào qián shì shāngdiàn.",
+      "de": "Vor der Schule ist ein Geschäft."
+    },
+    "exercise": {
+      "id": "eg054",
+      "prompt": "Ergänze eine Ortsidentifikation: 这里___学校。",
+      "answer": "是",
+      "options": [
+        "是",
+        "很",
+        "吗"
+      ],
+      "explanation": "是 sagt hier, was dieser Ort ist: eine Schule."
+    },
+    "lessonId": "l32"
+  },
+  {
+    "id": "g055",
+    "sourceLabel": "存现句1（2）：处所+有+数量短语+名词",
+    "title": "An einem Ort gibt es etwas",
+    "explanation": "Mit Ort + 有 führt man das Vorhandensein einer Person oder Sache ein. Meist folgt eine Mengenangabe mit Zählwort.",
+    "pattern": "Ort + 有 + Zahl + Zählwort + Nomen",
+    "example": {
+      "id": "ex-g055",
+      "zh": "桌子上有一本书。",
+      "pinyin": "Zhuōzi shàng yǒu yì běn shū.",
+      "de": "Auf dem Tisch liegt ein Buch."
+    },
+    "exercise": {
+      "id": "eg055",
+      "prompt": "Welcher Satz sagt „Im Zimmer gibt es zwei Personen“?",
+      "answer": "房间里有两个人。",
+      "options": [
+        "房间里有两个人。",
+        "房间里是两有个人。",
+        "人有房间里两。"
+      ],
+      "explanation": "有 führt etwas am genannten Ort ein. 两个人 bedeutet zwei Personen."
+    },
+    "lessonId": "l30"
+  },
+  {
+    "id": "g056",
+    "sourceLabel": "连动句1（1）：先后发生；后一动作是前一动作的目的",
+    "title": "Handlungen nacheinander und ihr Zweck",
+    "explanation": "Zwei Verben können mit demselben Subjekt nacheinander stehen. Häufig nennt das erste eine Bewegung und das zweite deren Zweck. Ein Wort für „um zu“ ist dann nicht nötig.",
+    "pattern": "Subjekt + Bewegungsverb + Ort + Zweckhandlung",
+    "example": {
+      "id": "ex-g056",
+      "zh": "我去商店买牛奶。",
+      "pinyin": "Wǒ qù shāngdiàn mǎi niúnǎi.",
+      "de": "Ich gehe ins Geschäft, um Milch zu kaufen."
+    },
+    "exercise": {
+      "id": "eg056",
+      "prompt": "Welcher Satz nennt den Zweck des Weggehens?",
+      "answer": "我去学校学习。",
+      "options": [
+        "我去学校学习。",
+        "我学校去的学习。",
+        "我学习的去学校吗。"
+      ],
+      "explanation": "去学校 nennt den Weg, 学习 die beabsichtigte Handlung dort."
+    },
+    "lessonId": "l35"
+  },
+  {
+    "id": "g057",
+    "sourceLabel": "连动句1（2）：前一动作是后一动作的方式",
+    "title": "Eine Handlung beschreibt die Art der anderen",
+    "explanation": "Bei gemeinsamem Subjekt kann das erste Verb beschreiben, wie die zweite Handlung erfolgt. 坐车去 bedeutet etwa mit einem Fahrzeug hinfahren.",
+    "pattern": "Subjekt + Art/Verkehrsmittel-Handlung + Bewegung",
+    "example": {
+      "id": "ex-g057",
+      "zh": "我们坐火车去。",
+      "pinyin": "Wǒmen zuò huǒchē qù.",
+      "de": "Wir fahren mit dem Zug hin."
+    },
+    "exercise": {
+      "id": "eg057",
+      "prompt": "Welcher Satz bedeutet „Sie fährt mit dem Taxi zur Arbeit“?",
+      "answer": "她坐出租车去上班。",
+      "options": [
+        "她坐出租车去上班。",
+        "她去坐上班出租车。",
+        "她出租车班上坐。"
+      ],
+      "explanation": "坐出租车 beschreibt, wie sie zur Arbeit fährt."
+    },
+    "lessonId": "l41"
+  },
+  {
+    "id": "g058",
+    "sourceLabel": "双宾语句1：主语+动词+宾语1+宾语2",
+    "title": "Jemandem etwas geben",
+    "explanation": "Einige Verben erlauben zwei Objekte. Die empfangende Person steht zuerst, danach die Sache. 给 kann selbst als Verb „geben“ dienen.",
+    "pattern": "Subjekt + 给 + Person + Sache",
+    "example": {
+      "id": "ex-g058",
+      "zh": "老师给我一本书。",
+      "pinyin": "Lǎoshī gěi wǒ yì běn shū.",
+      "de": "Der Lehrer gibt mir ein Buch."
+    },
+    "exercise": {
+      "id": "eg058",
+      "prompt": "Wähle die richtige Reihenfolge für „Ich gebe dir drei Äpfel“.",
+      "answer": "我给你三个苹果。",
+      "options": [
+        "我给你三个苹果。",
+        "我给三个苹果你。",
+        "我你给苹果三个。"
+      ],
+      "explanation": "Nach 给 steht erst der Empfänger 你, dann 三个苹果."
+    },
+    "lessonId": "l42"
+  },
+  {
+    "id": "g059",
+    "sourceLabel": "不用关联词语的复句",
+    "title": "Teilsätze ohne Bindewort",
+    "explanation": "Zwei einfache Teilsätze können durch Pause oder Komma verbunden werden. Die zeitliche oder inhaltliche Beziehung ergibt sich aus dem Kontext. Ein deutsches Bindewort wird nicht immer übersetzt.",
+    "pattern": "Teilsatz，Teilsatz",
+    "example": {
+      "id": "ex-g059",
+      "zh": "我去学校，妈妈去公司。",
+      "pinyin": "Wǒ qù xuéxiào, māma qù gōngsī.",
+      "de": "Ich gehe zur Schule, Mama geht zur Firma."
+    },
+    "exercise": {
+      "id": "eg059",
+      "prompt": "Welche Verbindung besteht aus zwei vollständigen Teilsätzen?",
+      "answer": "我喝茶，他喝水。",
+      "options": [
+        "我喝茶，他喝水。",
+        "我茶，他水喝的。",
+        "我喝，他水的。"
+      ],
+      "explanation": "Beide Teile enthalten eine klare Person und eine vollständige Handlung."
+    },
+    "lessonId": "l21"
+  },
+  {
+    "id": "g060",
+    "sourceLabel": "并列复句：……，也……",
+    "title": "Parallele Aussagen mit 也",
+    "explanation": "也 ergänzt eine vergleichbare Aussage. Es steht im zweiten Teilsatz nach einem vorhandenen Subjekt und vor dem Prädikat.",
+    "pattern": "Teilsatz，Subjekt + 也 + Prädikat",
+    "example": {
+      "id": "ex-g060",
+      "zh": "我喜欢电影，她也喜欢电影。",
+      "pinyin": "Wǒ xǐhuan diànyǐng, tā yě xǐhuan diànyǐng.",
+      "de": "Ich mag Filme, sie mag Filme auch."
+    },
+    "exercise": {
+      "id": "eg060",
+      "prompt": "Ergänze: 我是学生，他___是学生。",
+      "answer": "也",
+      "options": [
+        "也",
+        "的",
+        "谁"
+      ],
+      "explanation": "也 zeigt, dass dieselbe Aussage auch für 他 gilt."
+    },
+    "lessonId": "l12"
+  },
+  {
+    "id": "g061",
+    "sourceLabel": "并列复句：……，还……",
+    "title": "Einen weiteren Punkt mit 还 ergänzen",
+    "explanation": "还 fügt eine weitere Handlung oder Eigenschaft hinzu. Es steht vor dem zugehörigen Prädikat. Das Subjekt kann entfallen, wenn es unverändert klar bleibt.",
+    "pattern": "Teilsatz，还 + Prädikat",
+    "example": {
+      "id": "ex-g061",
+      "zh": "我买了面包，还买了牛奶。",
+      "pinyin": "Wǒ mǎi le miànbāo, hái mǎi le niúnǎi.",
+      "de": "Ich habe Brot und außerdem Milch gekauft."
+    },
+    "exercise": {
+      "id": "eg061",
+      "prompt": "Ergänze eine zusätzliche Tätigkeit: 他会唱歌，___会开车。",
+      "answer": "还",
+      "options": [
+        "还",
+        "吗",
+        "谁"
+      ],
+      "explanation": "还 fügt hier eine weitere Fähigkeit hinzu."
+    },
+    "lessonId": "l49"
+  },
+  {
+    "id": "g062",
+    "sourceLabel": "完成态：用动态助词“了1”表示",
+    "title": "Vollzogene Handlungen einordnen",
+    "explanation": "Der abgeschlossene Aspekt betrachtet eine Handlung als vollzogen. 了 nach dem Verb sagt allein noch nicht, ob die Handlung gestern, gerade eben oder in einem zukünftigen Zusammenhang abgeschlossen ist.",
+    "pattern": "Verb + 了",
+    "example": {
+      "id": "ex-g062",
+      "zh": "我昨天看了一本书。",
+      "pinyin": "Wǒ zuótiān kàn le yì běn shū.",
+      "de": "Ich habe gestern ein Buch gelesen."
+    },
+    "exercise": {
+      "id": "eg062",
+      "prompt": "Was zeigt 了 in 我买了两本书 an?",
+      "answer": "Der Kauf wird als vollzogen betrachtet.",
+      "options": [
+        "Der Kauf wird als vollzogen betrachtet.",
+        "Jedes chinesische Verb steht in der Vergangenheit.",
+        "Die Handlung läuft gerade."
+      ],
+      "explanation": "Das dynamische 了 markiert den vollzogenen Aspekt; eine Zeitangabe entsteht daraus allein nicht."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g063",
+    "sourceLabel": "变化态：用动态助词“了2”表示",
+    "title": "Eine neue Situation mit 了",
+    "explanation": "Satzfinales 了 weist darauf hin, dass eine neue Situation gilt oder sich etwas geändert hat. Es kann auch bei einer Eigenschaft oder beim Alter stehen.",
+    "pattern": "Neue Situation + 了",
+    "example": {
+      "id": "ex-g063",
+      "zh": "现在下雨了。",
+      "pinyin": "Xiànzài xià yǔ le.",
+      "de": "Jetzt regnet es."
+    },
+    "exercise": {
+      "id": "eg063",
+      "prompt": "Was betont 了 in 她现在是老师了？",
+      "answer": "Eine neue Situation: Sie ist nun Lehrerin.",
+      "options": [
+        "Eine neue Situation: Sie ist nun Lehrerin.",
+        "Die Zahl der Lehrerinnen.",
+        "Eine Frage nach ihrem Beruf."
+      ],
+      "explanation": "Das satzfinale 了 markiert, dass diese Situation jetzt neu gilt."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g064",
+    "sourceLabel": "进行态（1）：……在/正在+动词",
+    "title": "Im Verlauf: 在 oder 正在",
+    "explanation": "Eine laufende Handlung wird mit 在 oder 正在 direkt vor dem Verb markiert. In diesem Gebrauch nennt 在 keinen Ort.",
+    "pattern": "Subjekt + 在/正在 + Verb",
+    "example": {
+      "id": "ex-g064",
+      "zh": "他在看电视。",
+      "pinyin": "Tā zài kàn diànshì.",
+      "de": "Er sieht gerade fern."
+    },
+    "exercise": {
+      "id": "eg064",
+      "prompt": "Welcher Satz beschreibt eine gerade ablaufende Handlung?",
+      "answer": "她正在学习。",
+      "options": [
+        "她正在学习。",
+        "她明年学习。",
+        "她学了三年。"
+      ],
+      "explanation": "正在 vor 学习 markiert ausdrücklich den aktuellen Verlauf."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g065",
+    "sourceLabel": "进行态（2）：……在/正在+动词……+呢",
+    "title": "Verlauf zusätzlich mit 呢 markieren",
+    "explanation": "呢 am Satzende kann eine mit 在 oder 正在 markierte laufende Handlung ergänzen. Diese Kombination betont, dass die Tätigkeit noch im Gang ist.",
+    "pattern": "在/正在 + Verb（+ Objekt）+ 呢",
+    "example": {
+      "id": "ex-g065",
+      "zh": "妈妈正在打电话呢。",
+      "pinyin": "Māma zhèngzài dǎ diànhuà ne.",
+      "de": "Mama telefoniert gerade."
+    },
+    "exercise": {
+      "id": "eg065",
+      "prompt": "Ergänze die laufende Handlung: 我正在做饭___。",
+      "answer": "呢",
+      "options": [
+        "呢",
+        "吗",
+        "们"
+      ],
+      "explanation": "呢 kann den laufenden Zustand am Satzende unterstreichen."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g066",
+    "sourceLabel": "进行态（3）：……呢",
+    "title": "Fortdauernder Zustand mit 呢",
+    "explanation": "Bei eindeutigem Kontext kann 呢 allein einen fortdauernden Zustand oder eine laufende Handlung anzeigen. Ein vorausgehendes 在 ist dann nicht zwingend nötig.",
+    "pattern": "Subjekt + Verb（+ Objekt）+ 呢",
+    "example": {
+      "id": "ex-g066",
+      "zh": "他睡觉呢。",
+      "pinyin": "Tā shuìjiào ne.",
+      "de": "Er schläft gerade."
+    },
+    "exercise": {
+      "id": "eg066",
+      "prompt": "Was drückt 呢 in 他看书呢 bei einer Antwort auf „Was tut er?“ aus?",
+      "answer": "Er ist gerade mit Lesen beschäftigt.",
+      "options": [
+        "Er ist gerade mit Lesen beschäftigt.",
+        "Er wird sicher nächstes Jahr lesen.",
+        "Er fragt nach einem Buch."
+      ],
+      "explanation": "In diesem Kontext markiert 呢 die laufende Tätigkeit 看书."
+    },
+    "lessonId": "l40"
+  },
+  {
+    "id": "g067",
+    "sourceLabel": "钱数表示法",
+    "title": "Preise und Geldbeträge",
+    "explanation": "元 ist die formelle Einheit, 块 die häufige gesprochene Entsprechung. Zahlen stehen vor der Einheit. In einfachen Preisen folgt 钱 bei 块 oft als Ergänzung.",
+    "pattern": "Zahl + 元/块（钱）",
+    "example": {
+      "id": "ex-g067",
+      "zh": "这个杯子十块钱。",
+      "pinyin": "Zhège bēizi shí kuài qián.",
+      "de": "Dieser Becher kostet zehn Yuan."
+    },
+    "exercise": {
+      "id": "eg067",
+      "prompt": "Wie sagt man „zwanzig Yuan“?",
+      "answer": "二十元",
+      "options": [
+        "二十元",
+        "十二元",
+        "二元十"
+      ],
+      "explanation": "二十 ist zwanzig; 十二 ist zwölf."
+    },
+    "lessonId": "l36"
+  },
+  {
+    "id": "g068",
+    "sourceLabel": "序数表达法1：第+数词",
+    "title": "Ordnungszahlen",
+    "explanation": "第 vor einer Zahl bildet „erste, zweite, dritte…“. Wenn ein zählbares Nomen folgt, braucht es normalerweise zusätzlich sein Zählwort.",
+    "pattern": "第 + Zahl + Zählwort + Nomen",
+    "example": {
+      "id": "ex-g068",
+      "zh": "这是第二个问题。",
+      "pinyin": "Zhè shì dì-èr ge wèntí.",
+      "de": "Das ist die zweite Frage."
+    },
+    "exercise": {
+      "id": "eg068",
+      "prompt": "Ergänze „das erste Buch“: ___一本书",
+      "answer": "第",
+      "options": [
+        "第",
+        "个",
+        "们"
+      ],
+      "explanation": "第 vor 一 bildet die Ordnungszahl; 本 bleibt das Zählwort für 书."
+    },
+    "lessonId": "l25"
+  },
+  {
+    "id": "g069",
+    "sourceLabel": "时间表示法（1）：年、月、日、星期",
+    "title": "Datum und Wochentag",
+    "explanation": "Ein Datum wird von der größeren zur kleineren Einheit genannt: Jahr, Monat, Tag. Wochentage zählen ab Montag mit 星期一; Sonntag heißt 星期日 oder 星期天.",
+    "pattern": "Jahr + 年 + Monat + 月 + Tag + 日/号",
+    "example": {
+      "id": "ex-g069",
+      "zh": "今天是九月十二号，星期六。",
+      "pinyin": "Jīntiān shì jiǔ yuè shí’èr hào, xīngqīliù.",
+      "de": "Heute ist der 12. September, Samstag."
+    },
+    "exercise": {
+      "id": "eg069",
+      "prompt": "Welcher Ausdruck heißt „Montag“?",
+      "answer": "星期一",
+      "options": [
+        "星期一",
+        "一星期",
+        "星期日"
+      ],
+      "explanation": "星期一 ist Montag; 一星期 bezeichnet eine Woche."
+    },
+    "lessonId": "l24"
+  },
+  {
+    "id": "g070",
+    "sourceLabel": "时间表示法（2）：钟点表示法",
+    "title": "Uhrzeiten",
+    "explanation": "Bei Uhrzeiten steht erst die Stunde mit 点, danach die Minute mit 分. 半 bedeutet eine halbe Stunde nach der genannten Stunde, nicht davor.",
+    "pattern": "Stunde + 点 + Minute + 分 / Stunde + 点半",
+    "example": {
+      "id": "ex-g070",
+      "zh": "我们三点半见。",
+      "pinyin": "Wǒmen sān diǎn bàn jiàn.",
+      "de": "Wir treffen uns um halb vier."
+    },
+    "exercise": {
+      "id": "eg070",
+      "prompt": "Welche Zeit ist 九点半？",
+      "answer": "09:30",
+      "options": [
+        "09:30",
+        "08:30",
+        "09:05"
+      ],
+      "explanation": "半 folgt auf 九点 und ergänzt eine halbe Stunde: 9 Uhr 30. Im Deutschen sagt man halb zehn."
+    },
+    "lessonId": "l26"
+  }
+]

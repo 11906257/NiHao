@@ -1,0 +1,710 @@
+[
+  {
+    "id": "tk001",
+    "sourceLabel": "一、问答个人基本信息 / Kompetenz 1",
+    "title": "Persönliche Angaben · Verstehen",
+    "description": "Verstehe Namen, Nationalität, Alter, Geschlecht, Vorlieben, Gewohnheiten, Rolle, Familie, Freunde und Fähigkeiten in einer kurzen Vorstellung.",
+    "example": {
+      "id": "ex-tk001",
+      "zh": "我叫小明，我今年十八岁。",
+      "pinyin": "Wǒ jiào Xiǎomíng, wǒ jīnnián shíbā suì.",
+      "de": "Ich heiße Xiaoming und bin dieses Jahr achtzehn Jahre alt."
+    }
+  },
+  {
+    "id": "tk002",
+    "sourceLabel": "一、问答个人基本信息 / Kompetenz 2",
+    "title": "Persönliche Angaben · Fragen und antworten",
+    "description": "Frage andere nach persönlichen Angaben und beantworte entsprechende einfache Fragen.",
+    "example": {
+      "id": "ex-tk002",
+      "zh": "我叫小明，我今年十八岁。",
+      "pinyin": "Wǒ jiào Xiǎomíng, wǒ jīnnián shíbā suì.",
+      "de": "Ich heiße Xiaoming und bin dieses Jahr achtzehn Jahre alt."
+    }
+  },
+  {
+    "id": "tk003",
+    "sourceLabel": "一、问答个人基本信息 / Kompetenz 3",
+    "title": "Persönliche Angaben · Ausdrücken",
+    "description": "Stelle dich mit einfachen Angaben zu Person, Familie, Vorlieben oder Fähigkeiten vor.",
+    "example": {
+      "id": "ex-tk003",
+      "zh": "我叫小明，我今年十八岁。",
+      "pinyin": "Wǒ jiào Xiǎomíng, wǒ jīnnián shíbā suì.",
+      "de": "Ich heiße Xiaoming und bin dieses Jahr achtzehn Jahre alt."
+    }
+  },
+  {
+    "id": "tk004",
+    "sourceLabel": "一、问答个人基本信息 / Kompetenz 4",
+    "title": "Persönliche Angaben · Lesen",
+    "description": "Erkenne einfache persönliche Angaben auf Visitenkarten, Ausweisen, Schülerkarten oder in kurzen Texten.",
+    "example": {
+      "id": "ex-tk004",
+      "zh": "我叫小明，我今年十八岁。",
+      "pinyin": "Wǒ jiào Xiǎomíng, wǒ jīnnián shíbā suì.",
+      "de": "Ich heiße Xiaoming und bin dieses Jahr achtzehn Jahre alt."
+    }
+  },
+  {
+    "id": "tk005",
+    "sourceLabel": "二、问答事件信息 / Kompetenz 1",
+    "title": "Ereignisinformationen · Verstehen",
+    "description": "Verstehe einfache Angaben zu Datum, Uhrzeit, Ort, Richtung, Beteiligten und Telefonnummern.",
+    "example": {
+      "id": "ex-tk005",
+      "zh": "我们星期天下午三点见。",
+      "pinyin": "Wǒmen xīngqītiān xiàwǔ sān diǎn jiàn.",
+      "de": "Wir treffen uns am Sonntag um drei Uhr nachmittags."
+    }
+  },
+  {
+    "id": "tk006",
+    "sourceLabel": "二、问答事件信息 / Kompetenz 2",
+    "title": "Ereignisinformationen · Fragen und antworten",
+    "description": "Frage Familie, Freunde oder Mitschüler nach einfachen Ereignisdaten und gib Auskunft.",
+    "example": {
+      "id": "ex-tk006",
+      "zh": "我们星期天下午三点见。",
+      "pinyin": "Wǒmen xīngqītiān xiàwǔ sān diǎn jiàn.",
+      "de": "Wir treffen uns am Sonntag um drei Uhr nachmittags."
+    }
+  },
+  {
+    "id": "tk007",
+    "sourceLabel": "二、问答事件信息 / Kompetenz 3",
+    "title": "Ereignisinformationen · Ausdrücken",
+    "description": "Erkläre anderen kurz, wann, wo und mit wem eine Aktivität stattfindet.",
+    "example": {
+      "id": "ex-tk007",
+      "zh": "我们星期天下午三点见。",
+      "pinyin": "Wǒmen xīngqītiān xiàwǔ sān diǎn jiàn.",
+      "de": "Wir treffen uns am Sonntag um drei Uhr nachmittags."
+    }
+  },
+  {
+    "id": "tk008",
+    "sourceLabel": "二、问答事件信息 / Kompetenz 4",
+    "title": "Ereignisinformationen · Lesen",
+    "description": "Lies einfache Veranstaltungsangaben an öffentlichen Orten wie Krankenhaus, Kino oder Bibliothek.",
+    "example": {
+      "id": "ex-tk008",
+      "zh": "我们星期天下午三点见。",
+      "pinyin": "Wǒmen xīngqītiān xiàwǔ sān diǎn jiàn.",
+      "de": "Wir treffen uns am Sonntag um drei Uhr nachmittags."
+    }
+  },
+  {
+    "id": "tk009",
+    "sourceLabel": "三、问答物品信息 / Kompetenz 1",
+    "title": "Gegenstände · Verstehen",
+    "description": "Verstehe Gegenstandsnamen und Angaben zu Größe, Anzahl, Zustand oder Neuheit.",
+    "example": {
+      "id": "ex-tk009",
+      "zh": "这是我的电脑，很新。",
+      "pinyin": "Zhè shì wǒ de diànnǎo, hěn xīn.",
+      "de": "Das ist mein Computer, er ist sehr neu."
+    }
+  },
+  {
+    "id": "tk010",
+    "sourceLabel": "三、问答物品信息 / Kompetenz 2",
+    "title": "Gegenstände · Fragen und antworten",
+    "description": "Frage nach Alltagsgegenständen und beantworte einfache Fragen dazu.",
+    "example": {
+      "id": "ex-tk010",
+      "zh": "这是我的电脑，很新。",
+      "pinyin": "Zhè shì wǒ de diànnǎo, hěn xīn.",
+      "de": "Das ist mein Computer, er ist sehr neu."
+    }
+  },
+  {
+    "id": "tk011",
+    "sourceLabel": "三、问答物品信息 / Kompetenz 3",
+    "title": "Gegenstände · Ausdrücken",
+    "description": "Benenne einen Gegenstand und beschreibe ihn mit einfachen Eigenschaften.",
+    "example": {
+      "id": "ex-tk011",
+      "zh": "这是我的电脑，很新。",
+      "pinyin": "Zhè shì wǒ de diànnǎo, hěn xīn.",
+      "de": "Das ist mein Computer, er ist sehr neu."
+    }
+  },
+  {
+    "id": "tk012",
+    "sourceLabel": "三、问答物品信息 / Kompetenz 4",
+    "title": "Gegenstände · Lesen",
+    "description": "Lies einfache Gegenstandsnamen und Angaben zu Größe, Menge oder Besitz im Alltag.",
+    "example": {
+      "id": "ex-tk012",
+      "zh": "这是我的电脑，很新。",
+      "pinyin": "Zhè shì wǒ de diànnǎo, hěn xīn.",
+      "de": "Das ist mein Computer, er ist sehr neu."
+    }
+  },
+  {
+    "id": "tk013",
+    "sourceLabel": "四、问答天气 / Kompetenz 1",
+    "title": "Wetter · Verstehen",
+    "description": "Verstehe einfache Fragen und Aussagen zu gutem oder schlechtem, warmem oder kaltem Wetter.",
+    "example": {
+      "id": "ex-tk013",
+      "zh": "今天下雨了，有点儿冷。",
+      "pinyin": "Jīntiān xià yǔ le, yǒudiǎnr lěng.",
+      "de": "Heute regnet es, und es ist etwas kalt."
+    }
+  },
+  {
+    "id": "tk014",
+    "sourceLabel": "四、问答天气 / Kompetenz 2",
+    "title": "Wetter · Fragen und antworten",
+    "description": "Frage nach dem Wetter an einem Ort und beantworte einfache Wetterfragen.",
+    "example": {
+      "id": "ex-tk014",
+      "zh": "今天下雨了，有点儿冷。",
+      "pinyin": "Jīntiān xià yǔ le, yǒudiǎnr lěng.",
+      "de": "Heute regnet es, und es ist etwas kalt."
+    }
+  },
+  {
+    "id": "tk015",
+    "sourceLabel": "四、问答天气 / Kompetenz 3",
+    "title": "Wetter · Ausdrücken",
+    "description": "Beschreibe Kälte, Wärme, Regen oder Schnee und sage, welches Wetter dir gefällt.",
+    "example": {
+      "id": "ex-tk015",
+      "zh": "今天下雨了，有点儿冷。",
+      "pinyin": "Jīntiān xià yǔ le, yǒudiǎnr lěng.",
+      "de": "Heute regnet es, und es ist etwas kalt."
+    }
+  },
+  {
+    "id": "tk016",
+    "sourceLabel": "四、问答天气 / Kompetenz 4",
+    "title": "Wetter · Lesen",
+    "description": "Lies eine kurze Wetterbeschreibung mit Kälte, Wärme, Regen oder Schnee.",
+    "example": {
+      "id": "ex-tk016",
+      "zh": "今天下雨了，有点儿冷。",
+      "pinyin": "Jīntiān xià yǔ le, yǒudiǎnr lěng.",
+      "de": "Heute regnet es, und es ist etwas kalt."
+    }
+  },
+  {
+    "id": "tk017",
+    "sourceLabel": "五、问答环境信息 / Kompetenz 1",
+    "title": "Orte und Umgebung · Verstehen",
+    "description": "Verstehe eine kurze Beschreibung vertrauter Orte wie Schule, Kino oder Supermarkt.",
+    "example": {
+      "id": "ex-tk017",
+      "zh": "学校后有一个超市。",
+      "pinyin": "Xuéxiào hòu yǒu yí ge chāoshì.",
+      "de": "Hinter der Schule gibt es einen Supermarkt."
+    }
+  },
+  {
+    "id": "tk018",
+    "sourceLabel": "五、问答环境信息 / Kompetenz 2",
+    "title": "Orte und Umgebung · Fragen und antworten",
+    "description": "Frage nach Größe, Qualität und Lage eines Ortes und äußere Vorlieben dazu.",
+    "example": {
+      "id": "ex-tk018",
+      "zh": "学校后有一个超市。",
+      "pinyin": "Xuéxiào hòu yǒu yí ge chāoshì.",
+      "de": "Hinter der Schule gibt es einen Supermarkt."
+    }
+  },
+  {
+    "id": "tk019",
+    "sourceLabel": "五、问答环境信息 / Kompetenz 3",
+    "title": "Orte und Umgebung · Ausdrücken",
+    "description": "Beschreibe die Lage oder Größe eines vertrauten Ortes und sage, ob er dir gefällt.",
+    "example": {
+      "id": "ex-tk019",
+      "zh": "学校后有一个超市。",
+      "pinyin": "Xuéxiào hòu yǒu yí ge chāoshì.",
+      "de": "Hinter der Schule gibt es einen Supermarkt."
+    }
+  },
+  {
+    "id": "tk020",
+    "sourceLabel": "五、问答环境信息 / Kompetenz 4",
+    "title": "Orte und Umgebung · Lesen",
+    "description": "Erkenne Ortsnamen und einfache Richtungsangaben auf Alltagsschildern.",
+    "example": {
+      "id": "ex-tk020",
+      "zh": "学校后有一个超市。",
+      "pinyin": "Xuéxiào hòu yǒu yí ge chāoshì.",
+      "de": "Hinter der Schule gibt es einen Supermarkt."
+    }
+  },
+  {
+    "id": "tk021",
+    "sourceLabel": "六、日常言语交往 / Kompetenz 1",
+    "title": "Höfliche Alltagsgespräche · Verstehen",
+    "description": "Verstehe und erwidere einfache Begrüßungen, Dank, Entschuldigung und Verabschiedung.",
+    "example": {
+      "id": "ex-tk021",
+      "zh": "请问，我可以坐这里吗？",
+      "pinyin": "Qǐngwèn, wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Entschuldigen Sie, darf ich hier sitzen?"
+    }
+  },
+  {
+    "id": "tk022",
+    "sourceLabel": "六、日常言语交往 / Kompetenz 2",
+    "title": "Höfliche Alltagsgespräche · Verstehen",
+    "description": "Verstehe oder äußere einfache Fragen und Bitten, stelle Personen vor, bitte um Hilfe, wähle aus und telefoniere.",
+    "example": {
+      "id": "ex-tk022",
+      "zh": "请问，我可以坐这里吗？",
+      "pinyin": "Qǐngwèn, wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Entschuldigen Sie, darf ich hier sitzen?"
+    }
+  },
+  {
+    "id": "tk023",
+    "sourceLabel": "六、日常言语交往 / Kompetenz 3",
+    "title": "Höfliche Alltagsgespräche · Verstehen",
+    "description": "Verstehe und äußere einfache Bedürfnisse, Wünsche und Gefühle.",
+    "example": {
+      "id": "ex-tk023",
+      "zh": "请问，我可以坐这里吗？",
+      "pinyin": "Qǐngwèn, wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Entschuldigen Sie, darf ich hier sitzen?"
+    }
+  },
+  {
+    "id": "tk024",
+    "sourceLabel": "六、日常言语交往 / Kompetenz 4",
+    "title": "Höfliche Alltagsgespräche · Lesen",
+    "description": "Lies einfache höfliche Wendungen und Absichten in Nachrichten, E-Mails oder sozialen Medien.",
+    "example": {
+      "id": "ex-tk024",
+      "zh": "请问，我可以坐这里吗？",
+      "pinyin": "Qǐngwèn, wǒ kěyǐ zuò zhèlǐ ma?",
+      "de": "Entschuldigen Sie, darf ich hier sitzen?"
+    }
+  },
+  {
+    "id": "tk025",
+    "sourceLabel": "七、问答饮食喜好 / Kompetenz 1",
+    "title": "Essen und Vorlieben · Verstehen",
+    "description": "Verstehe Wünsche rund ums Essen, Begleitung, Speisen, Mahlzeiten, Bewertungen, Zeit und Ort.",
+    "example": {
+      "id": "ex-tk025",
+      "zh": "我早饭喜欢吃鸡蛋、喝牛奶。",
+      "pinyin": "Wǒ zǎofàn xǐhuan chī jīdàn, hē niúnǎi.",
+      "de": "Zum Frühstück esse ich gern Eier und trinke Milch."
+    }
+  },
+  {
+    "id": "tk026",
+    "sourceLabel": "七、问答饮食喜好 / Kompetenz 2",
+    "title": "Essen und Vorlieben · Fragen und antworten",
+    "description": "Frage nach Essen, Mahlzeiten oder Kochen und beantworte solche Fragen.",
+    "example": {
+      "id": "ex-tk026",
+      "zh": "我早饭喜欢吃鸡蛋、喝牛奶。",
+      "pinyin": "Wǒ zǎofàn xǐhuan chī jīdàn, hē niúnǎi.",
+      "de": "Zum Frühstück esse ich gern Eier und trinke Milch."
+    }
+  },
+  {
+    "id": "tk027",
+    "sourceLabel": "七、问答饮食喜好 / Kompetenz 3",
+    "title": "Essen und Vorlieben · Ausdrücken",
+    "description": "Beschreibe deine Essensvorlieben, Mahlzeiten oder was du kochst.",
+    "example": {
+      "id": "ex-tk027",
+      "zh": "我早饭喜欢吃鸡蛋、喝牛奶。",
+      "pinyin": "Wǒ zǎofàn xǐhuan chī jīdàn, hē niúnǎi.",
+      "de": "Zum Frühstück esse ich gern Eier und trinke Milch."
+    }
+  },
+  {
+    "id": "tk028",
+    "sourceLabel": "七、问答饮食喜好 / Kompetenz 4",
+    "title": "Essen und Vorlieben · Lesen",
+    "description": "Erkenne häufige Lebensmittel wie Wasser, Milch, Äpfel, Baozi und Jiaozi auf Schildern oder Speisekarten.",
+    "example": {
+      "id": "ex-tk028",
+      "zh": "我早饭喜欢吃鸡蛋、喝牛奶。",
+      "pinyin": "Wǒ zǎofàn xǐhuan chī jīdàn, hē niúnǎi.",
+      "de": "Zum Frühstück esse ich gern Eier und trinke Milch."
+    }
+  },
+  {
+    "id": "tk029",
+    "sourceLabel": "八、问答出行信息 / Kompetenz 1",
+    "title": "Unterwegs · Verstehen",
+    "description": "Verstehe einfache Angaben zu Verkehrsmitteln, Zeiten und Zielen für Arbeit, Schule oder Ausflüge.",
+    "example": {
+      "id": "ex-tk029",
+      "zh": "你怎么去学校？我坐车去。",
+      "pinyin": "Nǐ zěnme qù xuéxiào? Wǒ zuò chē qù.",
+      "de": "Wie kommst du zur Schule? Ich fahre mit einem Fahrzeug hin."
+    }
+  },
+  {
+    "id": "tk030",
+    "sourceLabel": "八、问答出行信息 / Kompetenz 2",
+    "title": "Unterwegs · Fragen und antworten",
+    "description": "Frage nach alltäglichen Wegen und Reiseplänen und beantworte entsprechende einfache Fragen.",
+    "example": {
+      "id": "ex-tk030",
+      "zh": "你怎么去学校？我坐车去。",
+      "pinyin": "Nǐ zěnme qù xuéxiào? Wǒ zuò chē qù.",
+      "de": "Wie kommst du zur Schule? Ich fahre mit einem Fahrzeug hin."
+    }
+  },
+  {
+    "id": "tk031",
+    "sourceLabel": "八、问答出行信息 / Kompetenz 3",
+    "title": "Unterwegs · Ausdrücken",
+    "description": "Beschreibe deinen Weg oder die Wege von Familienmitgliedern und Freunden.",
+    "example": {
+      "id": "ex-tk031",
+      "zh": "你怎么去学校？我坐车去。",
+      "pinyin": "Nǐ zěnme qù xuéxiào? Wǒ zuò chē qù.",
+      "de": "Wie kommst du zur Schule? Ich fahre mit einem Fahrzeug hin."
+    }
+  },
+  {
+    "id": "tk032",
+    "sourceLabel": "八、问答出行信息 / Kompetenz 4",
+    "title": "Unterwegs · Fragen und antworten",
+    "description": "Frage nach einem Ort und bestätige seine Lage in einem einfachen Gespräch.",
+    "example": {
+      "id": "ex-tk032",
+      "zh": "你怎么去学校？我坐车去。",
+      "pinyin": "Nǐ zěnme qù xuéxiào? Wǒ zuò chē qù.",
+      "de": "Wie kommst du zur Schule? Ich fahre mit einem Fahrzeug hin."
+    }
+  },
+  {
+    "id": "tk033",
+    "sourceLabel": "八、问答出行信息 / Kompetenz 5",
+    "title": "Unterwegs · Lesen",
+    "description": "Erkenne Grundangaben zu einer Fahrt oder einem Flug.",
+    "example": {
+      "id": "ex-tk033",
+      "zh": "你怎么去学校？我坐车去。",
+      "pinyin": "Nǐ zěnme qù xuéxiào? Wǒ zuò chē qù.",
+      "de": "Wie kommst du zur Schule? Ich fahre mit einem Fahrzeug hin."
+    }
+  },
+  {
+    "id": "tk034",
+    "sourceLabel": "九、问答商品信息 / Kompetenz 1",
+    "title": "Einkaufen · Verstehen",
+    "description": "Verstehe Warennamen, einfache Preise und Fragen zu einem Kaufwunsch.",
+    "example": {
+      "id": "ex-tk034",
+      "zh": "我想买这个杯子，多少钱？",
+      "pinyin": "Wǒ xiǎng mǎi zhège bēizi, duōshao qián?",
+      "de": "Ich möchte diesen Becher kaufen. Wie viel kostet er?"
+    }
+  },
+  {
+    "id": "tk035",
+    "sourceLabel": "九、问答商品信息 / Kompetenz 2",
+    "title": "Einkaufen · Fragen und antworten",
+    "description": "Frage nach dem Preis und der Verfügbarkeit einer Ware und gib einfache Auskunft.",
+    "example": {
+      "id": "ex-tk035",
+      "zh": "我想买这个杯子，多少钱？",
+      "pinyin": "Wǒ xiǎng mǎi zhège bēizi, duōshao qián?",
+      "de": "Ich möchte diesen Becher kaufen. Wie viel kostet er?"
+    }
+  },
+  {
+    "id": "tk036",
+    "sourceLabel": "九、问答商品信息 / Kompetenz 3",
+    "title": "Einkaufen · Ausdrücken",
+    "description": "Äußere einen Kaufwunsch und beschreibe Namen oder Preis einer gekauften Ware.",
+    "example": {
+      "id": "ex-tk036",
+      "zh": "我想买这个杯子，多少钱？",
+      "pinyin": "Wǒ xiǎng mǎi zhège bēizi, duōshao qián?",
+      "de": "Ich möchte diesen Becher kaufen. Wie viel kostet er?"
+    }
+  },
+  {
+    "id": "tk037",
+    "sourceLabel": "九、问答商品信息 / Kompetenz 4",
+    "title": "Einkaufen · Lesen",
+    "description": "Lies einfache Produktetiketten mit Namen, Preis und Datum.",
+    "example": {
+      "id": "ex-tk037",
+      "zh": "我想买这个杯子，多少钱？",
+      "pinyin": "Wǒ xiǎng mǎi zhège bēizi, duōshao qián?",
+      "de": "Ich möchte diesen Becher kaufen. Wie viel kostet er?"
+    }
+  },
+  {
+    "id": "tk038",
+    "sourceLabel": "十、告知生病、探病 / Kompetenz 1",
+    "title": "Krankheit und Besuch · Verstehen",
+    "description": "Verstehe, dass jemand krank ist, ärztliche Hilfe möchte oder sich ausruhen soll; verstehe einfache Hinweise zu Essen und Schlaf.",
+    "example": {
+      "id": "ex-tk038",
+      "zh": "我生病了，今天想去医院。",
+      "pinyin": "Wǒ shēngbìng le, jīntiān xiǎng qù yīyuàn.",
+      "de": "Ich bin krank geworden und möchte heute ins Krankenhaus gehen."
+    }
+  },
+  {
+    "id": "tk039",
+    "sourceLabel": "十、告知生病、探病 / Kompetenz 2",
+    "title": "Krankheit und Besuch · Ausdrücken",
+    "description": "Sage, dass du krank bist, und drücke den Wunsch nach einem Arztbesuch aus.",
+    "example": {
+      "id": "ex-tk039",
+      "zh": "我生病了，今天想去医院。",
+      "pinyin": "Wǒ shēngbìng le, jīntiān xiǎng qù yīyuàn.",
+      "de": "Ich bin krank geworden und möchte heute ins Krankenhaus gehen."
+    }
+  },
+  {
+    "id": "tk040",
+    "sourceLabel": "十、告知生病、探病 / Kompetenz 3",
+    "title": "Krankheit und Besuch · Ausdrücken",
+    "description": "Sage, dass du jemanden besuchen möchtest, und tröste eine kranke Person mit einfachen Worten.",
+    "example": {
+      "id": "ex-tk040",
+      "zh": "我生病了，今天想去医院。",
+      "pinyin": "Wǒ shēngbìng le, jīntiān xiǎng qù yīyuàn.",
+      "de": "Ich bin krank geworden und möchte heute ins Krankenhaus gehen."
+    }
+  },
+  {
+    "id": "tk041",
+    "sourceLabel": "十一、交流休闲活动 / Kompetenz 1",
+    "title": "Freizeitaktivitäten · Verstehen",
+    "description": "Verstehe Fragen und kurze Angaben zu Vorlieben wie Lesen, Singen und Fernsehen.",
+    "example": {
+      "id": "ex-tk041",
+      "zh": "我星期天想和朋友看电影。",
+      "pinyin": "Wǒ xīngqītiān xiǎng hé péngyou kàn diànyǐng.",
+      "de": "Ich möchte am Sonntag mit einem Freund einen Film ansehen."
+    }
+  },
+  {
+    "id": "tk042",
+    "sourceLabel": "十一、交流休闲活动 / Kompetenz 2",
+    "title": "Freizeitaktivitäten · Fragen und antworten",
+    "description": "Frage nach Freizeitvorlieben und einfachen Plänen und beantworte entsprechende Fragen.",
+    "example": {
+      "id": "ex-tk042",
+      "zh": "我星期天想和朋友看电影。",
+      "pinyin": "Wǒ xīngqītiān xiǎng hé péngyou kàn diànyǐng.",
+      "de": "Ich möchte am Sonntag mit einem Freund einen Film ansehen."
+    }
+  },
+  {
+    "id": "tk043",
+    "sourceLabel": "十一、交流休闲活动 / Kompetenz 3",
+    "title": "Freizeitaktivitäten · Ausdrücken",
+    "description": "Beschreibe deine eigenen Freizeitvorlieben und Pläne.",
+    "example": {
+      "id": "ex-tk043",
+      "zh": "我星期天想和朋友看电影。",
+      "pinyin": "Wǒ xīngqītiān xiǎng hé péngyou kàn diànyǐng.",
+      "de": "Ich möchte am Sonntag mit einem Freund einen Film ansehen."
+    }
+  },
+  {
+    "id": "tk044",
+    "sourceLabel": "十一、交流休闲活动 / Kompetenz 4",
+    "title": "Freizeitaktivitäten · Lesen",
+    "description": "Lies einfache Angaben zu Zeit und Ort einer Freizeitaktivität.",
+    "example": {
+      "id": "ex-tk044",
+      "zh": "我星期天想和朋友看电影。",
+      "pinyin": "Wǒ xīngqītiān xiǎng hé péngyou kàn diànyǐng.",
+      "de": "Ich möchte am Sonntag mit einem Freund einen Film ansehen."
+    }
+  },
+  {
+    "id": "tk045",
+    "sourceLabel": "十二、介绍学习情况 / Kompetenz 1",
+    "title": "Lernen und Unterricht · Verstehen",
+    "description": "Verstehe einfache Fragen und Angaben zu Schule, Lernfächern und Unterrichtszeiten.",
+    "example": {
+      "id": "ex-tk045",
+      "zh": "我们上午九点上汉语课。",
+      "pinyin": "Wǒmen shàngwǔ jiǔ diǎn shàng Hànyǔ kè.",
+      "de": "Wir haben vormittags um neun Uhr Chinesischunterricht."
+    }
+  },
+  {
+    "id": "tk046",
+    "sourceLabel": "十二、介绍学习情况 / Kompetenz 2",
+    "title": "Lernen und Unterricht · Fragen und antworten",
+    "description": "Frage nach dem Lernen anderer und beantworte einfache Fragen zu deiner Lernsituation.",
+    "example": {
+      "id": "ex-tk046",
+      "zh": "我们上午九点上汉语课。",
+      "pinyin": "Wǒmen shàngwǔ jiǔ diǎn shàng Hànyǔ kè.",
+      "de": "Wir haben vormittags um neun Uhr Chinesischunterricht."
+    }
+  },
+  {
+    "id": "tk047",
+    "sourceLabel": "十二、介绍学习情况 / Kompetenz 3",
+    "title": "Lernen und Unterricht · Ausdrücken",
+    "description": "Erzähle Lehrkräften, Mitschülern oder Familie kurz von deinem Lernen.",
+    "example": {
+      "id": "ex-tk047",
+      "zh": "我们上午九点上汉语课。",
+      "pinyin": "Wǒmen shàngwǔ jiǔ diǎn shàng Hànyǔ kè.",
+      "de": "Wir haben vormittags um neun Uhr Chinesischunterricht."
+    }
+  },
+  {
+    "id": "tk048",
+    "sourceLabel": "十二、介绍学习情况 / Kompetenz 4",
+    "title": "Lernen und Unterricht · Lesen",
+    "description": "Lies Fach und Uhrzeit in einem einfachen Stundenplan.",
+    "example": {
+      "id": "ex-tk048",
+      "zh": "我们上午九点上汉语课。",
+      "pinyin": "Wǒmen shàngwǔ jiǔ diǎn shàng Hànyǔ kè.",
+      "de": "Wir haben vormittags um neun Uhr Chinesischunterricht."
+    }
+  },
+  {
+    "id": "tk049",
+    "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 1",
+    "title": "Schule und Freizeit danach · Verstehen",
+    "description": "Verstehe kurze Angaben zu Schule, Lehrkräften, Mitschülern und Aktivitäten nach dem Unterricht.",
+    "example": {
+      "id": "ex-tk049",
+      "zh": "下课后，我和同学去书店。",
+      "pinyin": "Xiàkè hòu, wǒ hé tóngxué qù shūdiàn.",
+      "de": "Nach dem Unterricht gehe ich mit einem Mitschüler in die Buchhandlung."
+    }
+  },
+  {
+    "id": "tk050",
+    "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 2",
+    "title": "Schule und Freizeit danach · Fragen und antworten",
+    "description": "Frage nach Schule und Aktivitäten danach und beantworte entsprechende Fragen.",
+    "example": {
+      "id": "ex-tk050",
+      "zh": "下课后，我和同学去书店。",
+      "pinyin": "Xiàkè hòu, wǒ hé tóngxué qù shūdiàn.",
+      "de": "Nach dem Unterricht gehe ich mit einem Mitschüler in die Buchhandlung."
+    }
+  },
+  {
+    "id": "tk051",
+    "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 3",
+    "title": "Schule und Freizeit danach · Ausdrücken",
+    "description": "Stelle deine Schule, Lehrkräfte, Mitschüler oder Pläne nach dem Unterricht einfach vor.",
+    "example": {
+      "id": "ex-tk051",
+      "zh": "下课后，我和同学去书店。",
+      "pinyin": "Xiàkè hòu, wǒ hé tóngxué qù shūdiàn.",
+      "de": "Nach dem Unterricht gehe ich mit einem Mitschüler in die Buchhandlung."
+    }
+  },
+  {
+    "id": "tk052",
+    "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 4",
+    "title": "Schule und Freizeit danach · Lesen",
+    "description": "Lies einfache Informationen in einem Stundenplan oder einer Schülerübersicht.",
+    "example": {
+      "id": "ex-tk052",
+      "zh": "下课后，我和同学去书店。",
+      "pinyin": "Xiàkè hòu, wǒ hé tóngxué qù shūdiàn.",
+      "de": "Nach dem Unterricht gehe ich mit einem Mitschüler in die Buchhandlung."
+    }
+  },
+  {
+    "id": "tk053",
+    "sourceLabel": "十四、交流工作信息 / Kompetenz 1",
+    "title": "Arbeit · Verstehen",
+    "description": "Verstehe einfache Fragen und Angaben zu Tätigkeit, Arbeitszeit, Arbeitsort und Vorlieben.",
+    "example": {
+      "id": "ex-tk053",
+      "zh": "我妈妈是医生，她在医院工作。",
+      "pinyin": "Wǒ māma shì yīshēng, tā zài yīyuàn gōngzuò.",
+      "de": "Meine Mutter ist Ärztin, sie arbeitet im Krankenhaus."
+    }
+  },
+  {
+    "id": "tk054",
+    "sourceLabel": "十四、交流工作信息 / Kompetenz 2",
+    "title": "Arbeit · Fragen und antworten",
+    "description": "Frage nach Arbeit oder Beruf und gib einfache Auskunft darüber.",
+    "example": {
+      "id": "ex-tk054",
+      "zh": "我妈妈是医生，她在医院工作。",
+      "pinyin": "Wǒ māma shì yīshēng, tā zài yīyuàn gōngzuò.",
+      "de": "Meine Mutter ist Ärztin, sie arbeitet im Krankenhaus."
+    }
+  },
+  {
+    "id": "tk055",
+    "sourceLabel": "十四、交流工作信息 / Kompetenz 3",
+    "title": "Arbeit · Ausdrücken",
+    "description": "Stelle die Arbeit oder den Beruf von dir, deiner Familie oder Freunden vor.",
+    "example": {
+      "id": "ex-tk055",
+      "zh": "我妈妈是医生，她在医院工作。",
+      "pinyin": "Wǒ māma shì yīshēng, tā zài yīyuàn gōngzuò.",
+      "de": "Meine Mutter ist Ärztin, sie arbeitet im Krankenhaus."
+    }
+  },
+  {
+    "id": "tk056",
+    "sourceLabel": "十四、交流工作信息 / Kompetenz 4",
+    "title": "Arbeit · Lesen",
+    "description": "Lies eine kurze Berufsbezeichnung sowie einfache Angaben zu Arbeitszeit und Arbeitsort.",
+    "example": {
+      "id": "ex-tk056",
+      "zh": "我妈妈是医生，她在医院工作。",
+      "pinyin": "Wǒ māma shì yīshēng, tā zài yīyuàn gōngzuò.",
+      "de": "Meine Mutter ist Ärztin, sie arbeitet im Krankenhaus."
+    }
+  },
+  {
+    "id": "tk057",
+    "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 1",
+    "title": "Chinesische Esskultur · Verstehen",
+    "description": "Verstehe einfache Fragen und Aussagen zu traditionellen chinesischen Speisen und Getränken.",
+    "example": {
+      "id": "ex-tk057",
+      "zh": "我喜欢吃饺子，也喜欢喝茶。",
+      "pinyin": "Wǒ xǐhuan chī jiǎozi, yě xǐhuan hē chá.",
+      "de": "Ich esse gern Jiaozi und trinke auch gern Tee."
+    }
+  },
+  {
+    "id": "tk058",
+    "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 2",
+    "title": "Chinesische Esskultur · Fragen und antworten",
+    "description": "Frage nach chinesischen Essgewohnheiten, beschreibe sie einfach und äußere deine oder familiäre Vorlieben.",
+    "example": {
+      "id": "ex-tk058",
+      "zh": "我喜欢吃饺子，也喜欢喝茶。",
+      "pinyin": "Wǒ xǐhuan chī jiǎozi, yě xǐhuan hē chá.",
+      "de": "Ich esse gern Jiaozi und trinke auch gern Tee."
+    }
+  },
+  {
+    "id": "tk059",
+    "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 3",
+    "title": "Chinesische Esskultur · Lesen",
+    "description": "Erkenne Baozi, Jiaozi, Nudeln und Tee auf einer Speisekarte.",
+    "example": {
+      "id": "ex-tk059",
+      "zh": "我喜欢吃饺子，也喜欢喝茶。",
+      "pinyin": "Wǒ xǐhuan chī jiǎozi, yě xǐhuan hē chá.",
+      "de": "Ich esse gern Jiaozi und trinke auch gern Tee."
+    }
+  }
+]

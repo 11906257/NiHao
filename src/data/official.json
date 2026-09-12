@@ -1,0 +1,6841 @@
+{
+  "schemaVersion": 1,
+  "version": "HSK3.0-Exam-Syllabus-2025-11",
+  "verifiedAt": "2026-09-12",
+  "language": "zh-Hans",
+  "level": 1,
+  "scope": "Exam-Syllabus 2025, Level 1; Lernbeschreibungen und Übungen sind eigene Bearbeitung.",
+  "counts": {
+    "vocabulary": 300,
+    "recognitionHanzi": 246,
+    "grammarRows": 70,
+    "topicTopLevel": 5,
+    "topicSecondLevel": 15,
+    "topicLeaves": 30,
+    "taskAreas": 15,
+    "taskCompetences": 59
+  },
+  "countMethod": {
+    "vocabulary": "Offizielle laufende Eintragsnummern 1–300; mehrstufige Wortartenannotation bleibt erhalten.",
+    "recognitionHanzi": "Offizielle Erkennungszeichen 1–246.",
+    "grammarRows": "Eigene Zählung der sichtbar getrennten Tabellenzeilen: 27 + 31 + 12. Keine im PDF behauptete offizielle Gesamtzahl und nicht 70 getrennte Einzelwörter.",
+    "taskCompetences": "Eigene Zählung der 59 Aufzählungspunkte innerhalb 15 offizieller Aufgabenbereiche."
+  },
+  "sources": [
+    {
+      "id": "syllabus",
+      "title": "HSK 考试大纲 / Syllabus for the Chinese Proficiency Test",
+      "publisher": "中外语言交流合作中心 / Center for Language Education and Cooperation",
+      "url": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "verifiedVia": "https://www.chinesetest.cn/syllabus",
+      "published": "2025-11",
+      "printedEffective": "2026-07",
+      "accessed": "2026-09-12",
+      "sha256": "ec74ce0439e837bbb15154be13e747ae798903b2fd3a331629df6c3b45504941",
+      "scope": "Aufgaben, Themen, Wortschatz, Erkennungszeichen und Grammatik"
+    },
+    {
+      "id": "sample",
+      "title": "HSK 3.0 offizielle Musterprüfungen; HSK（一级）样卷",
+      "publisher": "CTI / CLEC",
+      "url": "https://hsk-sample-1409982902.cos.ap-beijing.myqcloud.com/HSK3.0.zip",
+      "verifiedVia": "https://www.chinesetest.cn/syllabus",
+      "accessed": "2026-09-12",
+      "scope": "Neue Level-1-Musterprüfung, 40 Aufgaben und Zeitvorgaben, Pinyin"
+    },
+    {
+      "id": "launch",
+      "title": "HSK 3.0 will be officially launched worldwide on December 13, 2026!",
+      "publisher": "Chinese Testing International",
+      "url": "https://admin.chinesetest.cn/gonewcontent.do?id=51336883",
+      "accessed": "2026-09-12",
+      "scope": "Weltweiter offizieller Prüfungsstart 13. Dezember 2026"
+    },
+    {
+      "id": "trial",
+      "title": "HSK3.0第二轮全球试行考试通知",
+      "publisher": "Chinese Testing International",
+      "url": "https://admin.chinesetest.cn/gonewcontent.do?id=51236758",
+      "accessed": "2026-09-12",
+      "scope": "Zweite globale Erprobung am 20. September 2026; ca. 40 Minuten für HSK1"
+    },
+    {
+      "id": "ability",
+      "title": "HSK3.0 考试能力描述",
+      "publisher": "Chinese Testing International",
+      "url": "https://hsk.cn-bj.ufileos.com/3.0/HSK3.0%E8%80%83%E8%AF%95%E8%83%BD%E5%8A%9B%E6%8F%8F%E8%BF%B0.pdf",
+      "accessed": "2026-09-12",
+      "scope": "Level 1: einfache Kommunikation in Alltagssituationen"
+    },
+    {
+      "id": "framework2021",
+      "title": "国际中文教育中文水平等级标准 (GF0025—2021)",
+      "publisher": "教育部 / 国家语言文字工作委员会",
+      "url": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/202111/W020211118507389477190.pdf",
+      "verifiedVia": "https://hudong.moe.gov.cn/jyb_sjzl/ziliao/A19/202111/t20211118_580755.html",
+      "published": "2021-03-31",
+      "printedEffective": "2021-07-01",
+      "accessed": "2026-09-12",
+      "scope": "Übergeordneter Referenzrahmen; andere Level-1-Abgrenzung als Exam-Syllabus 2025"
+    },
+    {
+      "id": "framework-explanation",
+      "title": "CLEC: Erläuterungen zum Standard und zur HSK-Reform",
+      "publisher": "Center for Language Education and Cooperation",
+      "url": "https://www.chinese.cn/zhuanti/202107/",
+      "accessed": "2026-09-12",
+      "scope": "Rahmenstandard dient als Referenz; Prüfungsanpassungen werden separat vorgenommen"
+    },
+    {
+      "id": "legacy-hsk1",
+      "title": "HSK (Level 1) – bestehende allgemeine Prüfungsseite",
+      "publisher": "Chinese Testing International",
+      "url": "https://www.chinesetest.cn/HSK/1",
+      "accessed": "2026-09-12",
+      "scope": "Legacy-Format 15 Minuten Hören/17 Lesen und 120/200; kein Nachweis der neuen 3.0-Bewertung"
+    }
+  ],
+  "vocabulary": [
+    {
+      "id": 1,
+      "hanzi": "爱",
+      "officialEntry": "爱",
+      "pinyin": "ài",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 2,
+      "hanzi": "八",
+      "officialEntry": "八",
+      "pinyin": "bā",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 3,
+      "hanzi": "爸爸",
+      "officialEntry": "爸爸",
+      "pinyin": "bàba",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 4,
+      "hanzi": "吧",
+      "officialEntry": "吧",
+      "pinyin": "ba",
+      "partOfSpeech": "助",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 5,
+      "hanzi": "白天",
+      "officialEntry": "白天",
+      "pinyin": "báitiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 6,
+      "hanzi": "百",
+      "officialEntry": "百",
+      "pinyin": "bǎi",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 7,
+      "hanzi": "半",
+      "officialEntry": "半",
+      "pinyin": "bàn",
+      "partOfSpeech": "数、（副）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 8,
+      "hanzi": "包子",
+      "officialEntry": "包子",
+      "pinyin": "bāozi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 9,
+      "hanzi": "杯子",
+      "officialEntry": "杯子",
+      "pinyin": "bēizi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 10,
+      "hanzi": "本",
+      "officialEntry": "本1",
+      "pinyin": "běn",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 11,
+      "hanzi": "边",
+      "officialEntry": "边",
+      "pinyin": "biān",
+      "partOfSpeech": "名、后缀",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 12,
+      "hanzi": "病",
+      "officialEntry": "病",
+      "pinyin": "bìng",
+      "partOfSpeech": "名、动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 13,
+      "hanzi": "不",
+      "officialEntry": "不",
+      "pinyin": "bù",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 14,
+      "hanzi": "不客气",
+      "officialEntry": "不客气",
+      "pinyin": "bú kèqi",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 15,
+      "hanzi": "不要",
+      "officialEntry": "不要",
+      "pinyin": "búyào",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 16,
+      "hanzi": "菜",
+      "officialEntry": "菜",
+      "pinyin": "cài",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 17,
+      "hanzi": "茶",
+      "officialEntry": "茶",
+      "pinyin": "chá",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 18,
+      "hanzi": "唱",
+      "officialEntry": "唱",
+      "pinyin": "chàng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 19,
+      "hanzi": "超市",
+      "officialEntry": "超市",
+      "pinyin": "chāoshì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 20,
+      "hanzi": "车",
+      "officialEntry": "车",
+      "pinyin": "chē",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 21,
+      "hanzi": "吃",
+      "officialEntry": "吃",
+      "pinyin": "chī",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 22,
+      "hanzi": "出租车",
+      "officialEntry": "出租车",
+      "pinyin": "chūzūchē",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 23,
+      "hanzi": "穿",
+      "officialEntry": "穿",
+      "pinyin": "chuān",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 24,
+      "hanzi": "打电话",
+      "officialEntry": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 25,
+      "hanzi": "大",
+      "officialEntry": "大",
+      "pinyin": "dà",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 26,
+      "hanzi": "大家",
+      "officialEntry": "大家",
+      "pinyin": "dàjiā",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 27,
+      "hanzi": "大学",
+      "officialEntry": "大学",
+      "pinyin": "dàxué",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 28,
+      "hanzi": "大学生",
+      "officialEntry": "大学生",
+      "pinyin": "dàxuéshēng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 29,
+      "hanzi": "到",
+      "officialEntry": "到",
+      "pinyin": "dào",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 30,
+      "hanzi": "的",
+      "officialEntry": "的",
+      "pinyin": "de",
+      "partOfSpeech": "助",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 31,
+      "hanzi": "第",
+      "officialEntry": "第",
+      "pinyin": "dì",
+      "partOfSpeech": "前缀",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 32,
+      "hanzi": "弟弟",
+      "officialEntry": "弟弟",
+      "pinyin": "dìdi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 33,
+      "hanzi": "点",
+      "officialEntry": "点1",
+      "pinyin": "diǎn",
+      "partOfSpeech": "量、（名）",
+      "levelAnnotation": "1（3）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 34,
+      "hanzi": "店",
+      "officialEntry": "店",
+      "pinyin": "diàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 35,
+      "hanzi": "电话",
+      "officialEntry": "电话",
+      "pinyin": "diànhuà",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 36,
+      "hanzi": "电脑",
+      "officialEntry": "电脑",
+      "pinyin": "diànnǎo",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 37,
+      "hanzi": "电视",
+      "officialEntry": "电视",
+      "pinyin": "diànshì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 38,
+      "hanzi": "电影",
+      "officialEntry": "电影",
+      "pinyin": "diànyǐng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 39,
+      "hanzi": "电影院",
+      "officialEntry": "电影院",
+      "pinyin": "diànyǐngyuàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 40,
+      "hanzi": "东西",
+      "officialEntry": "东西",
+      "pinyin": "dōngxi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 80,
+      "printedPage": 77
+    },
+    {
+      "id": 41,
+      "hanzi": "都",
+      "officialEntry": "都",
+      "pinyin": "dōu",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 42,
+      "hanzi": "读",
+      "officialEntry": "读",
+      "pinyin": "dú",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 43,
+      "hanzi": "读书",
+      "officialEntry": "读书",
+      "pinyin": "dúshū",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 44,
+      "hanzi": "对",
+      "officialEntry": "对",
+      "pinyin": "duì",
+      "partOfSpeech": "形、介、（动、量）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 45,
+      "hanzi": "对不起",
+      "officialEntry": "对不起",
+      "pinyin": "duìbuqǐ",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 46,
+      "hanzi": "多",
+      "officialEntry": "多",
+      "pinyin": "duō",
+      "partOfSpeech": "形、动、代、（数、副）",
+      "levelAnnotation": "1（2）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 47,
+      "hanzi": "多少",
+      "officialEntry": "多少",
+      "pinyin": "duōshao",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 48,
+      "hanzi": "儿子",
+      "officialEntry": "儿子",
+      "pinyin": "érzi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 49,
+      "hanzi": "二",
+      "officialEntry": "二",
+      "pinyin": "èr",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 50,
+      "hanzi": "饭",
+      "officialEntry": "饭",
+      "pinyin": "fàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 51,
+      "hanzi": "饭店",
+      "officialEntry": "饭店",
+      "pinyin": "fàndiàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 52,
+      "hanzi": "房间",
+      "officialEntry": "房间",
+      "pinyin": "fángjiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 53,
+      "hanzi": "非常",
+      "officialEntry": "非常",
+      "pinyin": "fēicháng",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 54,
+      "hanzi": "飞机",
+      "officialEntry": "飞机",
+      "pinyin": "fēijī",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 55,
+      "hanzi": "分",
+      "officialEntry": "分",
+      "pinyin": "fēn",
+      "partOfSpeech": "量、（动、名）",
+      "levelAnnotation": "1（3）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 56,
+      "hanzi": "分钟",
+      "officialEntry": "分钟",
+      "pinyin": "fēnzhōng",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 57,
+      "hanzi": "高兴",
+      "officialEntry": "高兴",
+      "pinyin": "gāoxìng",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 58,
+      "hanzi": "歌",
+      "officialEntry": "歌",
+      "pinyin": "gē",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 59,
+      "hanzi": "哥哥",
+      "officialEntry": "哥哥",
+      "pinyin": "gēge",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 60,
+      "hanzi": "个",
+      "officialEntry": "个",
+      "pinyin": "gè",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 61,
+      "hanzi": "给",
+      "officialEntry": "给",
+      "pinyin": "gěi",
+      "partOfSpeech": "动、（介）",
+      "levelAnnotation": "1（2）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 62,
+      "hanzi": "公司",
+      "officialEntry": "公司",
+      "pinyin": "gōngsī",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 63,
+      "hanzi": "工作",
+      "officialEntry": "工作",
+      "pinyin": "gōngzuò",
+      "partOfSpeech": "动、名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 64,
+      "hanzi": "狗",
+      "officialEntry": "狗",
+      "pinyin": "gǒu",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 65,
+      "hanzi": "贵",
+      "officialEntry": "贵",
+      "pinyin": "guì",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 66,
+      "hanzi": "国",
+      "officialEntry": "国",
+      "pinyin": "guó",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 67,
+      "hanzi": "还",
+      "officialEntry": "还",
+      "pinyin": "hái",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 68,
+      "hanzi": "孩子",
+      "officialEntry": "孩子",
+      "pinyin": "háizi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 69,
+      "hanzi": "汉语",
+      "officialEntry": "汉语",
+      "pinyin": "Hànyǔ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 70,
+      "hanzi": "汉字",
+      "officialEntry": "汉字",
+      "pinyin": "Hànzì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 71,
+      "hanzi": "好",
+      "officialEntry": "好",
+      "pinyin": "hǎo",
+      "partOfSpeech": "形、（副）、（动）",
+      "levelAnnotation": "1（2）（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 72,
+      "hanzi": "好吃",
+      "officialEntry": "好吃",
+      "pinyin": "hǎochī",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 73,
+      "hanzi": "好看",
+      "officialEntry": "好看",
+      "pinyin": "hǎokàn",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 74,
+      "hanzi": "好听",
+      "officialEntry": "好听",
+      "pinyin": "hǎotīng",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 75,
+      "hanzi": "好玩儿",
+      "officialEntry": "好玩儿",
+      "pinyin": "hǎowánr",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 76,
+      "hanzi": "号",
+      "officialEntry": "号",
+      "pinyin": "hào",
+      "partOfSpeech": "名、量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 77,
+      "hanzi": "喝",
+      "officialEntry": "喝",
+      "pinyin": "hē",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 78,
+      "hanzi": "和",
+      "officialEntry": "和1",
+      "pinyin": "hé",
+      "partOfSpeech": "介、连",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 79,
+      "hanzi": "很",
+      "officialEntry": "很",
+      "pinyin": "hěn",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 80,
+      "hanzi": "后",
+      "officialEntry": "后",
+      "pinyin": "hòu",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 81,
+      "printedPage": 78
+    },
+    {
+      "id": 81,
+      "hanzi": "回",
+      "officialEntry": "回",
+      "pinyin": "huí",
+      "partOfSpeech": "动、（量）",
+      "levelAnnotation": "1（3）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 82,
+      "hanzi": "会",
+      "officialEntry": "会1",
+      "pinyin": "huì",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 83,
+      "hanzi": "火车",
+      "officialEntry": "火车",
+      "pinyin": "huǒchē",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 84,
+      "hanzi": "鸡蛋",
+      "officialEntry": "鸡蛋",
+      "pinyin": "jīdàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 85,
+      "hanzi": "几",
+      "officialEntry": "几",
+      "pinyin": "jǐ",
+      "partOfSpeech": "代、数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 86,
+      "hanzi": "家",
+      "officialEntry": "家",
+      "pinyin": "jiā",
+      "partOfSpeech": "名、量、（后缀）",
+      "levelAnnotation": "1（3）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 87,
+      "hanzi": "家人",
+      "officialEntry": "家人",
+      "pinyin": "jiārén",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 88,
+      "hanzi": "见",
+      "officialEntry": "见",
+      "pinyin": "jiàn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 89,
+      "hanzi": "件",
+      "officialEntry": "件",
+      "pinyin": "jiàn",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 90,
+      "hanzi": "饺子",
+      "officialEntry": "饺子",
+      "pinyin": "jiǎozi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 91,
+      "hanzi": "叫",
+      "officialEntry": "叫",
+      "pinyin": "jiào",
+      "partOfSpeech": "动、（介）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 92,
+      "hanzi": "姐姐",
+      "officialEntry": "姐姐",
+      "pinyin": "jiějie",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 93,
+      "hanzi": "今年",
+      "officialEntry": "今年",
+      "pinyin": "jīnnián",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 94,
+      "hanzi": "今天",
+      "officialEntry": "今天",
+      "pinyin": "jīntiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 95,
+      "hanzi": "九",
+      "officialEntry": "九",
+      "pinyin": "jiǔ",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 96,
+      "hanzi": "觉得",
+      "officialEntry": "觉得",
+      "pinyin": "juéde",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 97,
+      "hanzi": "开",
+      "officialEntry": "开",
+      "pinyin": "kāi",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 98,
+      "hanzi": "开车",
+      "officialEntry": "开车",
+      "pinyin": "kāichē",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 99,
+      "hanzi": "看",
+      "officialEntry": "看",
+      "pinyin": "kàn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 100,
+      "hanzi": "看病",
+      "officialEntry": "看病",
+      "pinyin": "kànbìng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 101,
+      "hanzi": "看见",
+      "officialEntry": "看见",
+      "pinyin": "kànjiàn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 102,
+      "hanzi": "可以",
+      "officialEntry": "可以",
+      "pinyin": "kěyǐ",
+      "partOfSpeech": "动、形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 103,
+      "hanzi": "课",
+      "officialEntry": "课",
+      "pinyin": "kè",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 104,
+      "hanzi": "口",
+      "officialEntry": "口",
+      "pinyin": "kǒu",
+      "partOfSpeech": "名、量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 105,
+      "hanzi": "块",
+      "officialEntry": "块",
+      "pinyin": "kuài",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 106,
+      "hanzi": "来",
+      "officialEntry": "来",
+      "pinyin": "lái",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 107,
+      "hanzi": "老师",
+      "officialEntry": "老师",
+      "pinyin": "lǎoshī",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 108,
+      "hanzi": "了",
+      "officialEntry": "了",
+      "pinyin": "le",
+      "partOfSpeech": "助",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 109,
+      "hanzi": "冷",
+      "officialEntry": "冷",
+      "pinyin": "lěng",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 110,
+      "hanzi": "里",
+      "officialEntry": "里",
+      "pinyin": "lǐ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 111,
+      "hanzi": "两",
+      "officialEntry": "两1",
+      "pinyin": "liǎng",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 112,
+      "hanzi": "零",
+      "officialEntry": "零",
+      "pinyin": "líng",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 113,
+      "hanzi": "六",
+      "officialEntry": "六",
+      "pinyin": "liù",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 114,
+      "hanzi": "妈妈",
+      "officialEntry": "妈妈",
+      "pinyin": "māma",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 115,
+      "hanzi": "吗",
+      "officialEntry": "吗",
+      "pinyin": "ma",
+      "partOfSpeech": "助",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 116,
+      "hanzi": "买",
+      "officialEntry": "买",
+      "pinyin": "mǎi",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 117,
+      "hanzi": "卖",
+      "officialEntry": "卖",
+      "pinyin": "mài",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 118,
+      "hanzi": "忙",
+      "officialEntry": "忙",
+      "pinyin": "máng",
+      "partOfSpeech": "形、动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 119,
+      "hanzi": "猫",
+      "officialEntry": "猫",
+      "pinyin": "māo",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 120,
+      "hanzi": "没关系",
+      "officialEntry": "没关系",
+      "pinyin": "méi guānxi",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 82,
+      "printedPage": 79
+    },
+    {
+      "id": 121,
+      "hanzi": "没事",
+      "officialEntry": "没事",
+      "pinyin": "méishì",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 122,
+      "hanzi": "没有",
+      "officialEntry": "没有",
+      "pinyin": "méiyǒu",
+      "partOfSpeech": "动、副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 123,
+      "hanzi": "妹妹",
+      "officialEntry": "妹妹",
+      "pinyin": "mèimei",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 124,
+      "hanzi": "们",
+      "officialEntry": "们",
+      "pinyin": "men",
+      "partOfSpeech": "后缀",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 125,
+      "hanzi": "米饭",
+      "officialEntry": "米饭",
+      "pinyin": "mǐfàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 126,
+      "hanzi": "面包",
+      "officialEntry": "面包",
+      "pinyin": "miànbāo",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 127,
+      "hanzi": "面条儿",
+      "officialEntry": "面条儿",
+      "pinyin": "miàntiáor",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 128,
+      "hanzi": "明年",
+      "officialEntry": "明年",
+      "pinyin": "míngnián",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 129,
+      "hanzi": "明天",
+      "officialEntry": "明天",
+      "pinyin": "míngtiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 130,
+      "hanzi": "名字",
+      "officialEntry": "名字",
+      "pinyin": "míngzi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 131,
+      "hanzi": "哪",
+      "officialEntry": "哪",
+      "pinyin": "nǎ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 132,
+      "hanzi": "哪个",
+      "officialEntry": "哪个",
+      "pinyin": "nǎge",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 133,
+      "hanzi": "哪里",
+      "officialEntry": "哪里",
+      "pinyin": "nǎlǐ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 134,
+      "hanzi": "哪儿",
+      "officialEntry": "哪儿",
+      "pinyin": "nǎr",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 135,
+      "hanzi": "哪些",
+      "officialEntry": "哪些",
+      "pinyin": "nǎxiē",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 136,
+      "hanzi": "那",
+      "officialEntry": "那",
+      "pinyin": "nà",
+      "partOfSpeech": "代、（连）",
+      "levelAnnotation": "1（2）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 137,
+      "hanzi": "那边",
+      "officialEntry": "那边",
+      "pinyin": "nàbiān",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 138,
+      "hanzi": "那个",
+      "officialEntry": "那个",
+      "pinyin": "nàge",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 139,
+      "hanzi": "那里",
+      "officialEntry": "那里",
+      "pinyin": "nàlǐ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 140,
+      "hanzi": "那儿",
+      "officialEntry": "那儿",
+      "pinyin": "nàr",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 141,
+      "hanzi": "那些",
+      "officialEntry": "那些",
+      "pinyin": "nàxiē",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 142,
+      "hanzi": "男",
+      "officialEntry": "男",
+      "pinyin": "nán",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 143,
+      "hanzi": "男朋友",
+      "officialEntry": "男朋友",
+      "pinyin": "nánpéngyou",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 144,
+      "hanzi": "呢",
+      "officialEntry": "呢",
+      "pinyin": "ne",
+      "partOfSpeech": "助",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 145,
+      "hanzi": "能",
+      "officialEntry": "能",
+      "pinyin": "néng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 146,
+      "hanzi": "你",
+      "officialEntry": "你",
+      "pinyin": "nǐ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 147,
+      "hanzi": "你好",
+      "officialEntry": "你好",
+      "pinyin": "nǐ hǎo",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 148,
+      "hanzi": "你们",
+      "officialEntry": "你们",
+      "pinyin": "nǐmen",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 149,
+      "hanzi": "年",
+      "officialEntry": "年",
+      "pinyin": "nián",
+      "partOfSpeech": "名、量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 150,
+      "hanzi": "您",
+      "officialEntry": "您",
+      "pinyin": "nín",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 151,
+      "hanzi": "牛奶",
+      "officialEntry": "牛奶",
+      "pinyin": "niúnǎi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 152,
+      "hanzi": "女",
+      "officialEntry": "女",
+      "pinyin": "nǚ",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 153,
+      "hanzi": "女儿",
+      "officialEntry": "女儿",
+      "pinyin": "nǚ’ér",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 154,
+      "hanzi": "女朋友",
+      "officialEntry": "女朋友",
+      "pinyin": "nǚpéngyou",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 155,
+      "hanzi": "女士",
+      "officialEntry": "女士",
+      "pinyin": "nǚshì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 156,
+      "hanzi": "朋友",
+      "officialEntry": "朋友",
+      "pinyin": "péngyou",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 157,
+      "hanzi": "便宜",
+      "officialEntry": "便宜",
+      "pinyin": "piányi",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 158,
+      "hanzi": "漂亮",
+      "officialEntry": "漂亮",
+      "pinyin": "piàoliang",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 159,
+      "hanzi": "苹果",
+      "officialEntry": "苹果",
+      "pinyin": "píngguǒ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 160,
+      "hanzi": "七",
+      "officialEntry": "七",
+      "pinyin": "qī",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 83,
+      "printedPage": 80
+    },
+    {
+      "id": 161,
+      "hanzi": "起床",
+      "officialEntry": "起床",
+      "pinyin": "qǐchuáng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 162,
+      "hanzi": "千",
+      "officialEntry": "千",
+      "pinyin": "qiān",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 163,
+      "hanzi": "前",
+      "officialEntry": "前",
+      "pinyin": "qián",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 164,
+      "hanzi": "钱",
+      "officialEntry": "钱",
+      "pinyin": "qián",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 165,
+      "hanzi": "请",
+      "officialEntry": "请",
+      "pinyin": "qǐng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 166,
+      "hanzi": "请问",
+      "officialEntry": "请问",
+      "pinyin": "qǐngwèn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 167,
+      "hanzi": "去",
+      "officialEntry": "去",
+      "pinyin": "qù",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 168,
+      "hanzi": "去年",
+      "officialEntry": "去年",
+      "pinyin": "qùnián",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 169,
+      "hanzi": "热",
+      "officialEntry": "热",
+      "pinyin": "rè",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 170,
+      "hanzi": "人",
+      "officialEntry": "人",
+      "pinyin": "rén",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 171,
+      "hanzi": "认识",
+      "officialEntry": "认识",
+      "pinyin": "rènshi",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 172,
+      "hanzi": "日",
+      "officialEntry": "日",
+      "pinyin": "rì",
+      "partOfSpeech": "量、（名）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 173,
+      "hanzi": "三",
+      "officialEntry": "三",
+      "pinyin": "sān",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 174,
+      "hanzi": "商店",
+      "officialEntry": "商店",
+      "pinyin": "shāngdiàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 175,
+      "hanzi": "上",
+      "officialEntry": "上",
+      "pinyin": "shàng",
+      "partOfSpeech": "名、动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 176,
+      "hanzi": "上班",
+      "officialEntry": "上班",
+      "pinyin": "shàngbān",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 177,
+      "hanzi": "上课",
+      "officialEntry": "上课",
+      "pinyin": "shàngkè",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 178,
+      "hanzi": "上午",
+      "officialEntry": "上午",
+      "pinyin": "shàngwǔ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 179,
+      "hanzi": "上学",
+      "officialEntry": "上学",
+      "pinyin": "shàngxué",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 180,
+      "hanzi": "少",
+      "officialEntry": "少",
+      "pinyin": "shǎo",
+      "partOfSpeech": "形、动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 181,
+      "hanzi": "谁",
+      "officialEntry": "谁",
+      "pinyin": "shéi/shuí",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 182,
+      "hanzi": "什么",
+      "officialEntry": "什么",
+      "pinyin": "shénme",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 183,
+      "hanzi": "生病",
+      "officialEntry": "生病",
+      "pinyin": "shēngbìng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 184,
+      "hanzi": "十",
+      "officialEntry": "十",
+      "pinyin": "shí",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 185,
+      "hanzi": "时候",
+      "officialEntry": "时候",
+      "pinyin": "shíhou",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 186,
+      "hanzi": "时间",
+      "officialEntry": "时间",
+      "pinyin": "shíjiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 187,
+      "hanzi": "事",
+      "officialEntry": "事",
+      "pinyin": "shì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 188,
+      "hanzi": "是",
+      "officialEntry": "是",
+      "pinyin": "shì",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 189,
+      "hanzi": "手机",
+      "officialEntry": "手机",
+      "pinyin": "shǒujī",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 190,
+      "hanzi": "书",
+      "officialEntry": "书",
+      "pinyin": "shū",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 191,
+      "hanzi": "书店",
+      "officialEntry": "书店",
+      "pinyin": "shūdiàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 192,
+      "hanzi": "水",
+      "officialEntry": "水",
+      "pinyin": "shuǐ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 193,
+      "hanzi": "水果",
+      "officialEntry": "水果",
+      "pinyin": "shuǐguǒ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 194,
+      "hanzi": "睡",
+      "officialEntry": "睡",
+      "pinyin": "shuì",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 195,
+      "hanzi": "睡觉",
+      "officialEntry": "睡觉",
+      "pinyin": "shuìjiào",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 196,
+      "hanzi": "说",
+      "officialEntry": "说",
+      "pinyin": "shuō",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 197,
+      "hanzi": "说话",
+      "officialEntry": "说话",
+      "pinyin": "shuōhuà",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 198,
+      "hanzi": "四",
+      "officialEntry": "四",
+      "pinyin": "sì",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 199,
+      "hanzi": "岁",
+      "officialEntry": "岁",
+      "pinyin": "suì",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 200,
+      "hanzi": "他",
+      "officialEntry": "他",
+      "pinyin": "tā",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 84,
+      "printedPage": 81
+    },
+    {
+      "id": 201,
+      "hanzi": "它",
+      "officialEntry": "它",
+      "pinyin": "tā",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 202,
+      "hanzi": "她",
+      "officialEntry": "她",
+      "pinyin": "tā",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 203,
+      "hanzi": "他们",
+      "officialEntry": "他们",
+      "pinyin": "tāmen",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 204,
+      "hanzi": "它们",
+      "officialEntry": "它们",
+      "pinyin": "tāmen",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 205,
+      "hanzi": "她们",
+      "officialEntry": "她们",
+      "pinyin": "tāmen",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 206,
+      "hanzi": "太",
+      "officialEntry": "太",
+      "pinyin": "tài",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 207,
+      "hanzi": "天",
+      "officialEntry": "天",
+      "pinyin": "tiān",
+      "partOfSpeech": "名、量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 208,
+      "hanzi": "天气",
+      "officialEntry": "天气",
+      "pinyin": "tiānqì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 209,
+      "hanzi": "听",
+      "officialEntry": "听",
+      "pinyin": "tīng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 210,
+      "hanzi": "听见",
+      "officialEntry": "听见",
+      "pinyin": "tīngjiàn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 211,
+      "hanzi": "同学",
+      "officialEntry": "同学",
+      "pinyin": "tóngxué",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 212,
+      "hanzi": "外",
+      "officialEntry": "外",
+      "pinyin": "wài",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 213,
+      "hanzi": "外边",
+      "officialEntry": "外边",
+      "pinyin": "wàibian",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 214,
+      "hanzi": "玩",
+      "officialEntry": "玩",
+      "pinyin": "wán",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 215,
+      "hanzi": "晚",
+      "officialEntry": "晚",
+      "pinyin": "wǎn",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 216,
+      "hanzi": "晚饭",
+      "officialEntry": "晚饭",
+      "pinyin": "wǎnfàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 217,
+      "hanzi": "晚上",
+      "officialEntry": "晚上",
+      "pinyin": "wǎnshang",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 218,
+      "hanzi": "喂",
+      "officialEntry": "喂1",
+      "pinyin": "wèi",
+      "partOfSpeech": "叹",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 219,
+      "hanzi": "问",
+      "officialEntry": "问",
+      "pinyin": "wèn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 220,
+      "hanzi": "问题",
+      "officialEntry": "问题",
+      "pinyin": "wèntí",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 221,
+      "hanzi": "我",
+      "officialEntry": "我",
+      "pinyin": "wǒ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 222,
+      "hanzi": "我们",
+      "officialEntry": "我们",
+      "pinyin": "wǒmen",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 223,
+      "hanzi": "五",
+      "officialEntry": "五",
+      "pinyin": "wǔ",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 224,
+      "hanzi": "午饭",
+      "officialEntry": "午饭",
+      "pinyin": "wǔfàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 225,
+      "hanzi": "喜欢",
+      "officialEntry": "喜欢",
+      "pinyin": "xǐhuan",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 226,
+      "hanzi": "下",
+      "officialEntry": "下",
+      "pinyin": "xià",
+      "partOfSpeech": "名、动、量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 227,
+      "hanzi": "下雨",
+      "officialEntry": "下雨",
+      "pinyin": "xià yǔ",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 228,
+      "hanzi": "下班",
+      "officialEntry": "下班",
+      "pinyin": "xiàbān",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 229,
+      "hanzi": "下课",
+      "officialEntry": "下课",
+      "pinyin": "xiàkè",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 230,
+      "hanzi": "下午",
+      "officialEntry": "下午",
+      "pinyin": "xiàwǔ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 231,
+      "hanzi": "先生",
+      "officialEntry": "先生",
+      "pinyin": "xiānsheng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 232,
+      "hanzi": "现在",
+      "officialEntry": "现在",
+      "pinyin": "xiànzài",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 233,
+      "hanzi": "想",
+      "officialEntry": "想",
+      "pinyin": "xiǎng",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 234,
+      "hanzi": "小",
+      "officialEntry": "小",
+      "pinyin": "xiǎo",
+      "partOfSpeech": "形、前缀",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 235,
+      "hanzi": "小朋友",
+      "officialEntry": "小朋友",
+      "pinyin": "xiǎopéngyǒu",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 236,
+      "hanzi": "小时",
+      "officialEntry": "小时",
+      "pinyin": "xiǎoshí",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 237,
+      "hanzi": "小学",
+      "officialEntry": "小学",
+      "pinyin": "xiǎoxué",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 238,
+      "hanzi": "小学生",
+      "officialEntry": "小学生",
+      "pinyin": "xiǎoxuéshēng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 239,
+      "hanzi": "些",
+      "officialEntry": "些",
+      "pinyin": "xiē",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 240,
+      "hanzi": "写",
+      "officialEntry": "写",
+      "pinyin": "xiě",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 85,
+      "printedPage": 82
+    },
+    {
+      "id": 241,
+      "hanzi": "谢谢",
+      "officialEntry": "谢谢",
+      "pinyin": "xièxie",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 242,
+      "hanzi": "新",
+      "officialEntry": "新",
+      "pinyin": "xīn",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 243,
+      "hanzi": "星期",
+      "officialEntry": "星期",
+      "pinyin": "xīngqī",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 244,
+      "hanzi": "星期日",
+      "officialEntry": "星期日",
+      "pinyin": "xīngqīrì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 245,
+      "hanzi": "星期天",
+      "officialEntry": "星期天",
+      "pinyin": "xīngqītiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 246,
+      "hanzi": "休息",
+      "officialEntry": "休息",
+      "pinyin": "xiūxi",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 247,
+      "hanzi": "学",
+      "officialEntry": "学",
+      "pinyin": "xué",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 248,
+      "hanzi": "学生",
+      "officialEntry": "学生",
+      "pinyin": "xuéshēng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 249,
+      "hanzi": "学习",
+      "officialEntry": "学习",
+      "pinyin": "xuéxí",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 250,
+      "hanzi": "学校",
+      "officialEntry": "学校",
+      "pinyin": "xuéxiào",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 251,
+      "hanzi": "雪",
+      "officialEntry": "雪",
+      "pinyin": "xuě",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 252,
+      "hanzi": "要",
+      "officialEntry": "要",
+      "pinyin": "yào",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 253,
+      "hanzi": "也",
+      "officialEntry": "也",
+      "pinyin": "yě",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 254,
+      "hanzi": "一",
+      "officialEntry": "一",
+      "pinyin": "yī",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 255,
+      "hanzi": "衣服",
+      "officialEntry": "衣服",
+      "pinyin": "yīfu",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 256,
+      "hanzi": "医生",
+      "officialEntry": "医生",
+      "pinyin": "yīshēng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 257,
+      "hanzi": "医院",
+      "officialEntry": "医院",
+      "pinyin": "yīyuàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 258,
+      "hanzi": "一半",
+      "officialEntry": "一半",
+      "pinyin": "yíbàn",
+      "partOfSpeech": "数",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 259,
+      "hanzi": "一下",
+      "officialEntry": "一下",
+      "pinyin": "yíxià",
+      "partOfSpeech": "数量、（副）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 260,
+      "hanzi": "椅子",
+      "officialEntry": "椅子",
+      "pinyin": "yǐzi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 261,
+      "hanzi": "一点儿",
+      "officialEntry": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "partOfSpeech": "数量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 262,
+      "hanzi": "一些",
+      "officialEntry": "一些",
+      "pinyin": "yìxiē",
+      "partOfSpeech": "数量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 263,
+      "hanzi": "有",
+      "officialEntry": "有",
+      "pinyin": "yǒu",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 264,
+      "hanzi": "有的",
+      "officialEntry": "有的",
+      "pinyin": "yǒude",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 265,
+      "hanzi": "有点儿",
+      "officialEntry": "有点儿",
+      "pinyin": "yǒudiǎnr",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 266,
+      "hanzi": "有些",
+      "officialEntry": "有些",
+      "pinyin": "yǒuxiē",
+      "partOfSpeech": "代、（副）",
+      "levelAnnotation": "1（3）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 267,
+      "hanzi": "雨",
+      "officialEntry": "雨",
+      "pinyin": "yǔ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 268,
+      "hanzi": "元",
+      "officialEntry": "元",
+      "pinyin": "yuán",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 269,
+      "hanzi": "月",
+      "officialEntry": "月",
+      "pinyin": "yuè",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 270,
+      "hanzi": "再",
+      "officialEntry": "再",
+      "pinyin": "zài",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 271,
+      "hanzi": "在",
+      "officialEntry": "在",
+      "pinyin": "zài",
+      "partOfSpeech": "动、介、副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 272,
+      "hanzi": "再见",
+      "officialEntry": "再见",
+      "pinyin": "zàijiàn",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 273,
+      "hanzi": "早",
+      "officialEntry": "早",
+      "pinyin": "zǎo",
+      "partOfSpeech": "形",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 274,
+      "hanzi": "早饭",
+      "officialEntry": "早饭",
+      "pinyin": "zǎofàn",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 275,
+      "hanzi": "早上",
+      "officialEntry": "早上",
+      "pinyin": "zǎoshang",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 276,
+      "hanzi": "怎么",
+      "officialEntry": "怎么",
+      "pinyin": "zěnme",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 277,
+      "hanzi": "怎么样",
+      "officialEntry": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 278,
+      "hanzi": "找",
+      "officialEntry": "找",
+      "pinyin": "zhǎo",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 279,
+      "hanzi": "这",
+      "officialEntry": "这",
+      "pinyin": "zhè",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 280,
+      "hanzi": "这边",
+      "officialEntry": "这边",
+      "pinyin": "zhèbiān",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 86,
+      "printedPage": 83
+    },
+    {
+      "id": 281,
+      "hanzi": "这个",
+      "officialEntry": "这个",
+      "pinyin": "zhège",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 282,
+      "hanzi": "这里",
+      "officialEntry": "这里",
+      "pinyin": "zhèlǐ",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 283,
+      "hanzi": "这儿",
+      "officialEntry": "这儿",
+      "pinyin": "zhèr",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 284,
+      "hanzi": "这些",
+      "officialEntry": "这些",
+      "pinyin": "zhèxiē",
+      "partOfSpeech": "代",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 285,
+      "hanzi": "真",
+      "officialEntry": "真",
+      "pinyin": "zhēn",
+      "partOfSpeech": "副、（形）",
+      "levelAnnotation": "1（4）",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 286,
+      "hanzi": "正在",
+      "officialEntry": "正在",
+      "pinyin": "zhèngzài",
+      "partOfSpeech": "副",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 287,
+      "hanzi": "只",
+      "officialEntry": "只",
+      "pinyin": "zhī",
+      "partOfSpeech": "量",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 288,
+      "hanzi": "知道",
+      "officialEntry": "知道",
+      "pinyin": "zhīdào",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 289,
+      "hanzi": "中国",
+      "officialEntry": "中国",
+      "pinyin": "Zhōngguó",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 290,
+      "hanzi": "中文",
+      "officialEntry": "中文",
+      "pinyin": "Zhōngwén",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 291,
+      "hanzi": "中午",
+      "officialEntry": "中午",
+      "pinyin": "zhōngwǔ",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 292,
+      "hanzi": "中学",
+      "officialEntry": "中学",
+      "pinyin": "zhōngxué",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 293,
+      "hanzi": "中学生",
+      "officialEntry": "中学生",
+      "pinyin": "zhōngxuéshēng",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 294,
+      "hanzi": "住",
+      "officialEntry": "住",
+      "pinyin": "zhù",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 295,
+      "hanzi": "桌子",
+      "officialEntry": "桌子",
+      "pinyin": "zhuōzi",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 296,
+      "hanzi": "字",
+      "officialEntry": "字",
+      "pinyin": "zì",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 297,
+      "hanzi": "昨天",
+      "officialEntry": "昨天",
+      "pinyin": "zuótiān",
+      "partOfSpeech": "名",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 298,
+      "hanzi": "坐",
+      "officialEntry": "坐",
+      "pinyin": "zuò",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 299,
+      "hanzi": "做",
+      "officialEntry": "做",
+      "pinyin": "zuò",
+      "partOfSpeech": "动",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    },
+    {
+      "id": 300,
+      "hanzi": "做饭",
+      "officialEntry": "做饭",
+      "pinyin": "zuò fàn",
+      "partOfSpeech": "",
+      "levelAnnotation": "1",
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf",
+      "pdfPage": 87,
+      "printedPage": 84
+    }
+  ],
+  "hanzi": [
+    {
+      "id": 1,
+      "hanzi": "爱",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 2,
+      "hanzi": "八",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 3,
+      "hanzi": "爸",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 4,
+      "hanzi": "吧",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 5,
+      "hanzi": "白",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 6,
+      "hanzi": "百",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 7,
+      "hanzi": "班",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 8,
+      "hanzi": "半",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 9,
+      "hanzi": "包",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 10,
+      "hanzi": "杯",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 11,
+      "hanzi": "本",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 12,
+      "hanzi": "边",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 13,
+      "hanzi": "便",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 14,
+      "hanzi": "病",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 15,
+      "hanzi": "不",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 16,
+      "hanzi": "菜",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 17,
+      "hanzi": "茶",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 18,
+      "hanzi": "常",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 19,
+      "hanzi": "唱",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 20,
+      "hanzi": "超",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 21,
+      "hanzi": "车",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 22,
+      "hanzi": "吃",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 23,
+      "hanzi": "出",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 24,
+      "hanzi": "穿",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 25,
+      "hanzi": "床",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 26,
+      "hanzi": "打",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 27,
+      "hanzi": "大",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 28,
+      "hanzi": "蛋",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 29,
+      "hanzi": "到",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 30,
+      "hanzi": "道",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 31,
+      "hanzi": "得",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 32,
+      "hanzi": "的",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 33,
+      "hanzi": "弟",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 34,
+      "hanzi": "第",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 35,
+      "hanzi": "点",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 36,
+      "hanzi": "电",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 37,
+      "hanzi": "东",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 38,
+      "hanzi": "都",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 39,
+      "hanzi": "读",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 40,
+      "hanzi": "对",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 41,
+      "hanzi": "多",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 42,
+      "hanzi": "儿",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 43,
+      "hanzi": "二",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 44,
+      "hanzi": "饭",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 45,
+      "hanzi": "房",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 46,
+      "hanzi": "飞",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 47,
+      "hanzi": "非",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 48,
+      "hanzi": "分",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 49,
+      "hanzi": "服",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 50,
+      "hanzi": "高",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 51,
+      "hanzi": "哥",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 52,
+      "hanzi": "歌",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 53,
+      "hanzi": "个",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 54,
+      "hanzi": "给",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 55,
+      "hanzi": "工",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 56,
+      "hanzi": "公",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 57,
+      "hanzi": "狗",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 58,
+      "hanzi": "关",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 59,
+      "hanzi": "贵",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 60,
+      "hanzi": "国",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 61,
+      "hanzi": "果",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 62,
+      "hanzi": "还",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 63,
+      "hanzi": "孩",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 64,
+      "hanzi": "汉",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 65,
+      "hanzi": "好",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 66,
+      "hanzi": "号",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 67,
+      "hanzi": "喝",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 68,
+      "hanzi": "和",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 69,
+      "hanzi": "很",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 70,
+      "hanzi": "后",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 71,
+      "hanzi": "候",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 72,
+      "hanzi": "话",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 73,
+      "hanzi": "欢",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 74,
+      "hanzi": "回",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 75,
+      "hanzi": "会",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 76,
+      "hanzi": "火",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 77,
+      "hanzi": "机",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 78,
+      "hanzi": "鸡",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 79,
+      "hanzi": "几",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 80,
+      "hanzi": "家",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 81,
+      "hanzi": "间",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 82,
+      "hanzi": "见",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 83,
+      "hanzi": "件",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 84,
+      "hanzi": "叫",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 85,
+      "hanzi": "姐",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 86,
+      "hanzi": "今",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 87,
+      "hanzi": "九",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 88,
+      "hanzi": "觉",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 89,
+      "hanzi": "开",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 90,
+      "hanzi": "看",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 91,
+      "hanzi": "可",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 92,
+      "hanzi": "客",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 93,
+      "hanzi": "课",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 94,
+      "hanzi": "口",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 95,
+      "hanzi": "块",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 96,
+      "hanzi": "来",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 97,
+      "hanzi": "老",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 98,
+      "hanzi": "了",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 99,
+      "hanzi": "冷",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 100,
+      "hanzi": "里",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 101,
+      "hanzi": "两",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 102,
+      "hanzi": "亮",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 103,
+      "hanzi": "零",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 104,
+      "hanzi": "六",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 105,
+      "hanzi": "妈",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 106,
+      "hanzi": "吗",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 107,
+      "hanzi": "买",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 108,
+      "hanzi": "卖",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 109,
+      "hanzi": "忙",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 110,
+      "hanzi": "猫",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 111,
+      "hanzi": "么",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 112,
+      "hanzi": "没",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 113,
+      "hanzi": "妹",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 114,
+      "hanzi": "们",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 115,
+      "hanzi": "米",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 116,
+      "hanzi": "面",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 117,
+      "hanzi": "名",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 118,
+      "hanzi": "明",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 119,
+      "hanzi": "哪",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 120,
+      "hanzi": "那",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 121,
+      "hanzi": "奶",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 122,
+      "hanzi": "男",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 123,
+      "hanzi": "脑",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 124,
+      "hanzi": "呢",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 125,
+      "hanzi": "能",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 126,
+      "hanzi": "你",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 127,
+      "hanzi": "年",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 128,
+      "hanzi": "您",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 129,
+      "hanzi": "牛",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 130,
+      "hanzi": "女",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 131,
+      "hanzi": "朋",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 132,
+      "hanzi": "漂",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 133,
+      "hanzi": "苹",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 134,
+      "hanzi": "七",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 135,
+      "hanzi": "期",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 136,
+      "hanzi": "起",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 137,
+      "hanzi": "气",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 138,
+      "hanzi": "千",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 139,
+      "hanzi": "前",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 140,
+      "hanzi": "钱",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 141,
+      "hanzi": "请",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 142,
+      "hanzi": "去",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 143,
+      "hanzi": "热",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 144,
+      "hanzi": "人",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 145,
+      "hanzi": "认",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 146,
+      "hanzi": "日",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 147,
+      "hanzi": "三",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 148,
+      "hanzi": "商",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 149,
+      "hanzi": "上",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 150,
+      "hanzi": "少",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 151,
+      "hanzi": "谁",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 152,
+      "hanzi": "什",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 153,
+      "hanzi": "生",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 154,
+      "hanzi": "师",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 155,
+      "hanzi": "十",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 156,
+      "hanzi": "时",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 157,
+      "hanzi": "识",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 158,
+      "hanzi": "士",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 159,
+      "hanzi": "市",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 160,
+      "hanzi": "事",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 161,
+      "hanzi": "视",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 162,
+      "hanzi": "是",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 163,
+      "hanzi": "手",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 164,
+      "hanzi": "书",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 165,
+      "hanzi": "水",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 166,
+      "hanzi": "睡",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 167,
+      "hanzi": "说",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 168,
+      "hanzi": "司",
+      "pdfPage": 356,
+      "printedPage": 353,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 169,
+      "hanzi": "四",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 170,
+      "hanzi": "岁",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 171,
+      "hanzi": "他",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 172,
+      "hanzi": "它",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 173,
+      "hanzi": "她",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 174,
+      "hanzi": "太",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 175,
+      "hanzi": "题",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 176,
+      "hanzi": "天",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 177,
+      "hanzi": "条",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 178,
+      "hanzi": "听",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 179,
+      "hanzi": "同",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 180,
+      "hanzi": "外",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 181,
+      "hanzi": "玩",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 182,
+      "hanzi": "晚",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 183,
+      "hanzi": "喂",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 184,
+      "hanzi": "文",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 185,
+      "hanzi": "问",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 186,
+      "hanzi": "我",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 187,
+      "hanzi": "五",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 188,
+      "hanzi": "午",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 189,
+      "hanzi": "西",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 190,
+      "hanzi": "息",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 191,
+      "hanzi": "习",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 192,
+      "hanzi": "喜",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 193,
+      "hanzi": "系",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 194,
+      "hanzi": "下",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 195,
+      "hanzi": "先",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 196,
+      "hanzi": "现",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 197,
+      "hanzi": "想",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 198,
+      "hanzi": "小",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 199,
+      "hanzi": "校",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 200,
+      "hanzi": "些",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 201,
+      "hanzi": "写",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 202,
+      "hanzi": "谢",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 203,
+      "hanzi": "新",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 204,
+      "hanzi": "星",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 205,
+      "hanzi": "兴",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 206,
+      "hanzi": "休",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 207,
+      "hanzi": "学",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 208,
+      "hanzi": "雪",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 209,
+      "hanzi": "样",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 210,
+      "hanzi": "要",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 211,
+      "hanzi": "也",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 212,
+      "hanzi": "一",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 213,
+      "hanzi": "衣",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 214,
+      "hanzi": "医",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 215,
+      "hanzi": "宜",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 216,
+      "hanzi": "以",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 217,
+      "hanzi": "椅",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 218,
+      "hanzi": "影",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 219,
+      "hanzi": "友",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 220,
+      "hanzi": "有",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 221,
+      "hanzi": "雨",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 222,
+      "hanzi": "语",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 223,
+      "hanzi": "元",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 224,
+      "hanzi": "院",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 225,
+      "hanzi": "月",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 226,
+      "hanzi": "再",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 227,
+      "hanzi": "在",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 228,
+      "hanzi": "早",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 229,
+      "hanzi": "怎",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 230,
+      "hanzi": "找",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 231,
+      "hanzi": "这",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 232,
+      "hanzi": "真",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 233,
+      "hanzi": "正",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 234,
+      "hanzi": "知",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 235,
+      "hanzi": "只",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 236,
+      "hanzi": "中",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 237,
+      "hanzi": "钟",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 238,
+      "hanzi": "住",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 239,
+      "hanzi": "桌",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 240,
+      "hanzi": "子",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 241,
+      "hanzi": "字",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 242,
+      "hanzi": "租",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 243,
+      "hanzi": "昨",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 244,
+      "hanzi": "作",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 245,
+      "hanzi": "坐",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    },
+    {
+      "id": 246,
+      "hanzi": "做",
+      "pdfPage": 357,
+      "printedPage": 354,
+      "source": "https://hsk.cn-bj.ufileos.com/3.0/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B21219.pdf"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "g001",
+      "sourceIndex": 1,
+      "sourceLabel": "前缀：小—、第—",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 1,
+      "sourceCells": [
+        "语素",
+        "前缀",
+        "",
+        "小—、第—"
+      ]
+    },
+    {
+      "id": "g002",
+      "sourceIndex": 2,
+      "sourceLabel": "后缀：—们、—边",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 2,
+      "sourceCells": [
+        null,
+        "后缀",
+        "",
+        "—们、—边"
+      ]
+    },
+    {
+      "id": "g003",
+      "sourceIndex": 3,
+      "sourceLabel": "方位名词：上、下、里、外、前、后",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 3,
+      "sourceCells": [
+        "词类",
+        "名词",
+        "方位名词",
+        "上、下、里、外、前、后"
+      ]
+    },
+    {
+      "id": "g004",
+      "sourceIndex": 4,
+      "sourceLabel": "能愿动词：会、能",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 4,
+      "sourceCells": [
+        null,
+        "动词",
+        "能愿动词",
+        "会、能"
+      ]
+    },
+    {
+      "id": "g005",
+      "sourceIndex": 5,
+      "sourceLabel": "能愿动词：想、要",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 5,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "想、要"
+      ]
+    },
+    {
+      "id": "g006",
+      "sourceIndex": 6,
+      "sourceLabel": "能愿动词：可以",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 6,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "可以"
+      ]
+    },
+    {
+      "id": "g007",
+      "sourceIndex": 7,
+      "sourceLabel": "离合词：看病、睡觉、说话、上课、下课、上班、下班、生病",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 7,
+      "sourceCells": [
+        null,
+        null,
+        "离合词",
+        "看病、睡觉、说话、上课、下课、上班、下班、生病"
+      ]
+    },
+    {
+      "id": "g008",
+      "sourceIndex": 8,
+      "sourceLabel": "疑问代词：多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 8,
+      "sourceCells": [
+        null,
+        "代词",
+        "疑问代词",
+        "多、多少、几、哪、哪儿、哪里、哪些、什么、谁、怎么、怎么样"
+      ]
+    },
+    {
+      "id": "g009",
+      "sourceIndex": 9,
+      "sourceLabel": "人称代词：我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 9,
+      "sourceCells": [
+        null,
+        null,
+        "人称代词",
+        "我、你、您、他、她、我们、你们、他们、她们、它、它们、大家"
+      ]
+    },
+    {
+      "id": "g010",
+      "sourceIndex": 10,
+      "sourceLabel": "指示代词：这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 10,
+      "sourceCells": [
+        null,
+        null,
+        "指示代词",
+        "这、那、这儿、那儿、这里、那里、这些、那些、有的、这个、那个、有些"
+      ]
+    },
+    {
+      "id": "g011",
+      "sourceIndex": 11,
+      "sourceLabel": "数词：一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 11,
+      "sourceCells": [
+        null,
+        "数词",
+        "",
+        "一、二/两、三、四、五、六、七、八、九、零、十、百、半、千"
+      ]
+    },
+    {
+      "id": "g012",
+      "sourceIndex": 12,
+      "sourceLabel": "名量词（1）：本、个、家、口、块、件、只、元",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 12,
+      "sourceCells": [
+        null,
+        "量词",
+        "名量词",
+        "（1）专用名量词：本、个、家、口、块、件、只、元"
+      ]
+    },
+    {
+      "id": "g013",
+      "sourceIndex": 13,
+      "sourceLabel": "名量词（2）：借用名量词 杯",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 13,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）借用名量词：杯"
+      ]
+    },
+    {
+      "id": "g014",
+      "sourceIndex": 14,
+      "sourceLabel": "时量词：日、号、岁、点、分、年、天",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 14,
+      "sourceCells": [
+        null,
+        null,
+        "时量词",
+        "日、号、岁、点、分、年、天"
+      ]
+    },
+    {
+      "id": "g015",
+      "sourceIndex": 15,
+      "sourceLabel": "程度副词：非常、很、太、真、有（一）点儿",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 15,
+      "sourceCells": [
+        null,
+        "副词",
+        "程度副词",
+        "非常、很、太、真、有（一）点儿"
+      ]
+    },
+    {
+      "id": "g016",
+      "sourceIndex": 16,
+      "sourceLabel": "范围副词：都1",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 16,
+      "sourceCells": [
+        null,
+        null,
+        "范围副词",
+        "都1"
+      ]
+    },
+    {
+      "id": "g017",
+      "sourceIndex": 17,
+      "sourceLabel": "时间副词：在、正在",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 17,
+      "sourceCells": [
+        null,
+        null,
+        "时间副词",
+        "在、正在"
+      ]
+    },
+    {
+      "id": "g018",
+      "sourceIndex": 18,
+      "sourceLabel": "频率副词：再1",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 18,
+      "sourceCells": [
+        null,
+        null,
+        "频率副词",
+        "再1"
+      ]
+    },
+    {
+      "id": "g019",
+      "sourceIndex": 19,
+      "sourceLabel": "关联副词：还1、也",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 19,
+      "sourceCells": [
+        null,
+        null,
+        "关联副词",
+        "还1、也"
+      ]
+    },
+    {
+      "id": "g020",
+      "sourceIndex": 20,
+      "sourceLabel": "否定副词：不、没（有）、不要",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 20,
+      "sourceCells": [
+        null,
+        null,
+        "否定副词",
+        "不、没（有）、不要"
+      ]
+    },
+    {
+      "id": "g021",
+      "sourceIndex": 21,
+      "sourceLabel": "介词：在（引出时间、处所）",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 21,
+      "sourceCells": [
+        null,
+        "介词",
+        "引出时间、处所",
+        "在"
+      ]
+    },
+    {
+      "id": "g022",
+      "sourceIndex": 22,
+      "sourceLabel": "介词：和1、对（引出对象）",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 22,
+      "sourceCells": [
+        null,
+        null,
+        "引出对象",
+        "和1、对"
+      ]
+    },
+    {
+      "id": "g023",
+      "sourceIndex": 23,
+      "sourceLabel": "连词：和2（连接词语或短语）",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 23,
+      "sourceCells": [
+        null,
+        "连词",
+        "连接词语或短语",
+        "和2"
+      ]
+    },
+    {
+      "id": "g024",
+      "sourceIndex": 24,
+      "sourceLabel": "结构助词：的1",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 24,
+      "sourceCells": [
+        null,
+        "助词",
+        "结构助词",
+        "的1"
+      ]
+    },
+    {
+      "id": "g025",
+      "sourceIndex": 25,
+      "sourceLabel": "动态助词：了1",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 25,
+      "sourceCells": [
+        null,
+        null,
+        "动态助词",
+        "了1"
+      ]
+    },
+    {
+      "id": "g026",
+      "sourceIndex": 26,
+      "sourceLabel": "语气助词：吧1、了2、吗、呢1、呢2、呢3",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 26,
+      "sourceCells": [
+        null,
+        null,
+        "语气助词",
+        "吧1、了2 、吗、呢1、呢2、呢3"
+      ]
+    },
+    {
+      "id": "g027",
+      "sourceIndex": 27,
+      "sourceLabel": "叹词：喂",
+      "pdfPage": 386,
+      "printedPage": 383,
+      "tableRow": 27,
+      "sourceCells": [
+        null,
+        "叹词",
+        "",
+        "喂"
+      ]
+    },
+    {
+      "id": "g028",
+      "sourceIndex": 28,
+      "sourceLabel": "联合短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 1,
+      "sourceCells": [
+        "短语",
+        "结构类型",
+        "基本结构类型",
+        "（1）联合短语"
+      ]
+    },
+    {
+      "id": "g029",
+      "sourceIndex": 29,
+      "sourceLabel": "偏正短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 2,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）偏正短语"
+      ]
+    },
+    {
+      "id": "g030",
+      "sourceIndex": 30,
+      "sourceLabel": "动宾短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 3,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（3）动宾短语"
+      ]
+    },
+    {
+      "id": "g031",
+      "sourceIndex": 31,
+      "sourceLabel": "主谓短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 4,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（4）主谓短语"
+      ]
+    },
+    {
+      "id": "g032",
+      "sourceIndex": 32,
+      "sourceLabel": "数量短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 5,
+      "sourceCells": [
+        null,
+        null,
+        "其他结构类型",
+        "（1）数量短语"
+      ]
+    },
+    {
+      "id": "g033",
+      "sourceIndex": 33,
+      "sourceLabel": "介宾短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 6,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）介宾短语"
+      ]
+    },
+    {
+      "id": "g034",
+      "sourceIndex": 34,
+      "sourceLabel": "方位短语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 7,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（3）方位短语"
+      ]
+    },
+    {
+      "id": "g035",
+      "sourceIndex": 35,
+      "sourceLabel": "主语：名词、代词或名词性短语作主语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 8,
+      "sourceCells": [
+        "句子成分",
+        "主语",
+        "",
+        "名词、代词或名词性短语作主语"
+      ]
+    },
+    {
+      "id": "g036",
+      "sourceIndex": 36,
+      "sourceLabel": "谓语：名词、代词、数词或数量短语作谓语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 9,
+      "sourceCells": [
+        null,
+        "谓语",
+        "",
+        "名词、代词、数词或数量短语作谓语"
+      ]
+    },
+    {
+      "id": "g037",
+      "sourceIndex": 37,
+      "sourceLabel": "谓语：动词或动词性短语、形容词或形容词性短语作谓语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 10,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "动词或动词性短语、形容词或形容词性短语作谓语"
+      ]
+    },
+    {
+      "id": "g038",
+      "sourceIndex": 38,
+      "sourceLabel": "宾语：名词、代词或名词性短语作宾语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 11,
+      "sourceCells": [
+        null,
+        "宾语",
+        "",
+        "名词、代词或名词性短语作宾语"
+      ]
+    },
+    {
+      "id": "g039",
+      "sourceIndex": 39,
+      "sourceLabel": "定语：名词性词语、形容词性短语、数量短语作定语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 12,
+      "sourceCells": [
+        null,
+        "定语",
+        "",
+        "名词性词语、形容词性短语、数量短语作定语"
+      ]
+    },
+    {
+      "id": "g040",
+      "sourceIndex": 40,
+      "sourceLabel": "状语：副词、形容词；表示时间、处所的词语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 13,
+      "sourceCells": [
+        null,
+        "状语",
+        "",
+        "副词、形容词作状语表示时间、处所的词语作状语"
+      ]
+    },
+    {
+      "id": "g041",
+      "sourceIndex": 41,
+      "sourceLabel": "数量补语1：动词+动量补语",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 14,
+      "sourceCells": [
+        null,
+        "补语",
+        "数量补语1",
+        "动词+动量补语"
+      ]
+    },
+    {
+      "id": "g042",
+      "sourceIndex": 42,
+      "sourceLabel": "主谓句1：动词谓语句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 15,
+      "sourceCells": [
+        null,
+        "句型",
+        "单句",
+        "主谓句1：动词谓语句"
+      ]
+    },
+    {
+      "id": "g043",
+      "sourceIndex": 43,
+      "sourceLabel": "主谓句2：形容词谓语句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 16,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "主谓句2：形容词谓语句"
+      ]
+    },
+    {
+      "id": "g044",
+      "sourceIndex": 44,
+      "sourceLabel": "主谓句3：名词谓语句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 17,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "主谓句3：名词谓语句"
+      ]
+    },
+    {
+      "id": "g045",
+      "sourceIndex": 45,
+      "sourceLabel": "非主谓句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 18,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "非主谓句"
+      ]
+    },
+    {
+      "id": "g046",
+      "sourceIndex": 46,
+      "sourceLabel": "陈述句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 19,
+      "sourceCells": [
+        null,
+        "句类",
+        "陈述句",
+        ""
+      ]
+    },
+    {
+      "id": "g047",
+      "sourceIndex": 47,
+      "sourceLabel": "是非问句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 20,
+      "sourceCells": [
+        null,
+        null,
+        "疑问句",
+        "（1）是非问句"
+      ]
+    },
+    {
+      "id": "g048",
+      "sourceIndex": 48,
+      "sourceLabel": "特指问句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 21,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）特指问句"
+      ]
+    },
+    {
+      "id": "g049",
+      "sourceIndex": 49,
+      "sourceLabel": "正反问句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 22,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（3）正反问句"
+      ]
+    },
+    {
+      "id": "g050",
+      "sourceIndex": 50,
+      "sourceLabel": "祈使句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 23,
+      "sourceCells": [
+        null,
+        null,
+        "祈使句",
+        ""
+      ]
+    },
+    {
+      "id": "g051",
+      "sourceIndex": 51,
+      "sourceLabel": "感叹句",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 24,
+      "sourceCells": [
+        null,
+        null,
+        "感叹句",
+        ""
+      ]
+    },
+    {
+      "id": "g052",
+      "sourceIndex": 52,
+      "sourceLabel": "“是”字句1：表示等同或类属",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 25,
+      "sourceCells": [
+        null,
+        "特殊句型",
+        "“是”字句1",
+        "表示等同或类属"
+      ]
+    },
+    {
+      "id": "g053",
+      "sourceIndex": 53,
+      "sourceLabel": "“有”字句1：表示领有",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 26,
+      "sourceCells": [
+        null,
+        null,
+        "“有”字句1",
+        "表示领有"
+      ]
+    },
+    {
+      "id": "g054",
+      "sourceIndex": 54,
+      "sourceLabel": "存现句1（1）：所处+是+名词",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 27,
+      "sourceCells": [
+        null,
+        null,
+        "存现句1",
+        "（1）所处+是+名词"
+      ]
+    },
+    {
+      "id": "g055",
+      "sourceIndex": 55,
+      "sourceLabel": "存现句1（2）：处所+有+数量短语+名词",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 28,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）处所+有+数量短语+名词"
+      ]
+    },
+    {
+      "id": "g056",
+      "sourceIndex": 56,
+      "sourceLabel": "连动句1（1）：先后发生；后一动作是前一动作的目的",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 29,
+      "sourceCells": [
+        null,
+        null,
+        "连动句1",
+        "（1）前后动作先后发生，后一动作是前一动作的目的"
+      ]
+    },
+    {
+      "id": "g057",
+      "sourceIndex": 57,
+      "sourceLabel": "连动句1（2）：前一动作是后一动作的方式",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 30,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）前一动作是后一动作的方式"
+      ]
+    },
+    {
+      "id": "g058",
+      "sourceIndex": 58,
+      "sourceLabel": "双宾语句1：主语+动词+宾语1+宾语2",
+      "pdfPage": 387,
+      "printedPage": 384,
+      "tableRow": 31,
+      "sourceCells": [
+        null,
+        null,
+        "双宾语句1",
+        "主语+动词+宾语1+宾语2"
+      ]
+    },
+    {
+      "id": "g059",
+      "sourceIndex": 59,
+      "sourceLabel": "不用关联词语的复句",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 1,
+      "sourceCells": [
+        "",
+        "复句",
+        "不用关联词语的复句",
+        ""
+      ]
+    },
+    {
+      "id": "g060",
+      "sourceIndex": 60,
+      "sourceLabel": "并列复句：……，也……",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 2,
+      "sourceCells": [
+        null,
+        null,
+        "并列复句",
+        "……，也……"
+      ]
+    },
+    {
+      "id": "g061",
+      "sourceIndex": 61,
+      "sourceLabel": "并列复句：……，还……",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 3,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "……，还……"
+      ]
+    },
+    {
+      "id": "g062",
+      "sourceIndex": 62,
+      "sourceLabel": "完成态：用动态助词“了1”表示",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 4,
+      "sourceCells": [
+        "动作的态",
+        "",
+        "完成态",
+        "用动态助词“了1”表示"
+      ]
+    },
+    {
+      "id": "g063",
+      "sourceIndex": 63,
+      "sourceLabel": "变化态：用动态助词“了2”表示",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 5,
+      "sourceCells": [
+        null,
+        null,
+        "变化态",
+        "用动态助词“了2”表示"
+      ]
+    },
+    {
+      "id": "g064",
+      "sourceIndex": 64,
+      "sourceLabel": "进行态（1）：……在/正在+动词",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 6,
+      "sourceCells": [
+        null,
+        null,
+        "进行态",
+        "（1）……在/正在+动词"
+      ]
+    },
+    {
+      "id": "g065",
+      "sourceIndex": 65,
+      "sourceLabel": "进行态（2）：……在/正在+动词……+呢",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 7,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）……在/正在+动词……+呢"
+      ]
+    },
+    {
+      "id": "g066",
+      "sourceIndex": 66,
+      "sourceLabel": "进行态（3）：……呢",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 8,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（3）……呢"
+      ]
+    },
+    {
+      "id": "g067",
+      "sourceIndex": 67,
+      "sourceLabel": "钱数表示法",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 9,
+      "sourceCells": [
+        "特殊表达法",
+        "数的表达法",
+        "",
+        "钱数表示法"
+      ]
+    },
+    {
+      "id": "g068",
+      "sourceIndex": 68,
+      "sourceLabel": "序数表达法1：第+数词",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 10,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "序数表达法1：第+数词"
+      ]
+    },
+    {
+      "id": "g069",
+      "sourceIndex": 69,
+      "sourceLabel": "时间表示法（1）：年、月、日、星期",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 11,
+      "sourceCells": [
+        null,
+        "时间表示法",
+        "",
+        "（1）年、月、日、星期表示法"
+      ]
+    },
+    {
+      "id": "g070",
+      "sourceIndex": 70,
+      "sourceLabel": "时间表示法（2）：钟点表示法",
+      "pdfPage": 388,
+      "printedPage": 385,
+      "tableRow": 12,
+      "sourceCells": [
+        null,
+        null,
+        null,
+        "（2）钟点表示法"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "tp001",
+      "sourceLabel": "基本信息 > 个人信息 > 姓名、国籍、年龄、性别、喜好、习惯等",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp002",
+      "sourceLabel": "基本信息 > 个人信息 > 身份、家庭成员、朋友、技能等",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp003",
+      "sourceLabel": "基本信息 > 事件信息 > 日期、时间、地点、方位、参加者、号码等",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp004",
+      "sourceLabel": "基本信息 > 物品信息 > 物品名称",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp005",
+      "sourceLabel": "基本信息 > 物品信息 > 物品特征",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp006",
+      "sourceLabel": "基本信息 > 环境信息 > 天气",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp007",
+      "sourceLabel": "基本信息 > 环境信息 > 环境特点",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp008",
+      "sourceLabel": "日常生活 > 交往 > 基本礼貌行为",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp009",
+      "sourceLabel": "日常生活 > 交往 > 简单互动行为",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp010",
+      "sourceLabel": "日常生活 > 交往 > 意愿感受",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp011",
+      "sourceLabel": "日常生活 > 饮食 > 食物饮品",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp012",
+      "sourceLabel": "日常生活 > 饮食 > 就餐",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp013",
+      "sourceLabel": "日常生活 > 交通出行 > 问路",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp014",
+      "sourceLabel": "日常生活 > 交通出行 > 出行方式",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp015",
+      "sourceLabel": "日常生活 > 交通出行 > 出行安排",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp016",
+      "sourceLabel": "日常生活 > 购物 > 商品名称",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp017",
+      "sourceLabel": "日常生活 > 购物 > 商品价格",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp018",
+      "sourceLabel": "日常生活 > 购物 > 商品选购",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp019",
+      "sourceLabel": "日常生活 > 医疗健康 > 生病、看病、探病等",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp020",
+      "sourceLabel": "日常生活 > 休闲 > 休闲活动",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp021",
+      "sourceLabel": "教育情况 > 学习情况 > 课程信息",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp022",
+      "sourceLabel": "教育情况 > 学习情况 > 学习内容",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp023",
+      "sourceLabel": "教育情况 > 学习情况 > 教育层次",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp024",
+      "sourceLabel": "教育情况 > 校园生活 > 学校情况",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp025",
+      "sourceLabel": "教育情况 > 校园生活 > 课后活动",
+      "printedPage": 56,
+      "pdfPage": 59
+    },
+    {
+      "id": "tp026",
+      "sourceLabel": "职场生活 > 工作情况 > 工作信息",
+      "printedPage": 57,
+      "pdfPage": 60
+    },
+    {
+      "id": "tp027",
+      "sourceLabel": "职场生活 > 工作情况 > 工作评价",
+      "printedPage": 57,
+      "pdfPage": 60
+    },
+    {
+      "id": "tp028",
+      "sourceLabel": "职场生活 > 职业 > 职业种类",
+      "printedPage": 57,
+      "pdfPage": 60
+    },
+    {
+      "id": "tp029",
+      "sourceLabel": "文化与传统 > 饮食文化 > 中餐",
+      "printedPage": 57,
+      "pdfPage": 60
+    },
+    {
+      "id": "tp030",
+      "sourceLabel": "文化与传统 > 饮食文化 > 传统饮品",
+      "printedPage": 57,
+      "pdfPage": 60
+    }
+  ],
+  "taskAreas": [
+    {
+      "id": "ta01",
+      "sourceLabel": "一、问答个人基本信息",
+      "title": "Persönliche Angaben",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk001",
+        "tk002",
+        "tk003",
+        "tk004"
+      ]
+    },
+    {
+      "id": "ta02",
+      "sourceLabel": "二、问答事件信息",
+      "title": "Ereignisinformationen",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk005",
+        "tk006",
+        "tk007",
+        "tk008"
+      ]
+    },
+    {
+      "id": "ta03",
+      "sourceLabel": "三、问答物品信息",
+      "title": "Gegenstände",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk009",
+        "tk010",
+        "tk011",
+        "tk012"
+      ]
+    },
+    {
+      "id": "ta04",
+      "sourceLabel": "四、问答天气",
+      "title": "Wetter",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk013",
+        "tk014",
+        "tk015",
+        "tk016"
+      ]
+    },
+    {
+      "id": "ta05",
+      "sourceLabel": "五、问答环境信息",
+      "title": "Orte und Umgebung",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk017",
+        "tk018",
+        "tk019",
+        "tk020"
+      ]
+    },
+    {
+      "id": "ta06",
+      "sourceLabel": "六、日常言语交往",
+      "title": "Höfliche Alltagsgespräche",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk021",
+        "tk022",
+        "tk023",
+        "tk024"
+      ]
+    },
+    {
+      "id": "ta07",
+      "sourceLabel": "七、问答饮食喜好",
+      "title": "Essen und Vorlieben",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk025",
+        "tk026",
+        "tk027",
+        "tk028"
+      ]
+    },
+    {
+      "id": "ta08",
+      "sourceLabel": "八、问答出行信息",
+      "title": "Unterwegs",
+      "competenceCount": 5,
+      "taskIds": [
+        "tk029",
+        "tk030",
+        "tk031",
+        "tk032",
+        "tk033"
+      ]
+    },
+    {
+      "id": "ta09",
+      "sourceLabel": "九、问答商品信息",
+      "title": "Einkaufen",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk034",
+        "tk035",
+        "tk036",
+        "tk037"
+      ]
+    },
+    {
+      "id": "ta10",
+      "sourceLabel": "十、告知生病、探病",
+      "title": "Krankheit und Besuch",
+      "competenceCount": 3,
+      "taskIds": [
+        "tk038",
+        "tk039",
+        "tk040"
+      ]
+    },
+    {
+      "id": "ta11",
+      "sourceLabel": "十一、交流休闲活动",
+      "title": "Freizeitaktivitäten",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk041",
+        "tk042",
+        "tk043",
+        "tk044"
+      ]
+    },
+    {
+      "id": "ta12",
+      "sourceLabel": "十二、介绍学习情况",
+      "title": "Lernen und Unterricht",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk045",
+        "tk046",
+        "tk047",
+        "tk048"
+      ]
+    },
+    {
+      "id": "ta13",
+      "sourceLabel": "十三、交流学校情况、课后活动",
+      "title": "Schule und Freizeit danach",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk049",
+        "tk050",
+        "tk051",
+        "tk052"
+      ]
+    },
+    {
+      "id": "ta14",
+      "sourceLabel": "十四、交流工作信息",
+      "title": "Arbeit",
+      "competenceCount": 4,
+      "taskIds": [
+        "tk053",
+        "tk054",
+        "tk055",
+        "tk056"
+      ]
+    },
+    {
+      "id": "ta15",
+      "sourceLabel": "十五、问答中国传统饮食",
+      "title": "Chinesische Esskultur",
+      "competenceCount": 3,
+      "taskIds": [
+        "tk057",
+        "tk058",
+        "tk059"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "tk001",
+      "sourceLabel": "一、问答个人基本信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk002",
+      "sourceLabel": "一、问答个人基本信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk003",
+      "sourceLabel": "一、问答个人基本信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk004",
+      "sourceLabel": "一、问答个人基本信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk005",
+      "sourceLabel": "二、问答事件信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk006",
+      "sourceLabel": "二、问答事件信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk007",
+      "sourceLabel": "二、问答事件信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk008",
+      "sourceLabel": "二、问答事件信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk009",
+      "sourceLabel": "三、问答物品信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk010",
+      "sourceLabel": "三、问答物品信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk011",
+      "sourceLabel": "三、问答物品信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk012",
+      "sourceLabel": "三、问答物品信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk013",
+      "sourceLabel": "四、问答天气 / Kompetenz 1"
+    },
+    {
+      "id": "tk014",
+      "sourceLabel": "四、问答天气 / Kompetenz 2"
+    },
+    {
+      "id": "tk015",
+      "sourceLabel": "四、问答天气 / Kompetenz 3"
+    },
+    {
+      "id": "tk016",
+      "sourceLabel": "四、问答天气 / Kompetenz 4"
+    },
+    {
+      "id": "tk017",
+      "sourceLabel": "五、问答环境信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk018",
+      "sourceLabel": "五、问答环境信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk019",
+      "sourceLabel": "五、问答环境信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk020",
+      "sourceLabel": "五、问答环境信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk021",
+      "sourceLabel": "六、日常言语交往 / Kompetenz 1"
+    },
+    {
+      "id": "tk022",
+      "sourceLabel": "六、日常言语交往 / Kompetenz 2"
+    },
+    {
+      "id": "tk023",
+      "sourceLabel": "六、日常言语交往 / Kompetenz 3"
+    },
+    {
+      "id": "tk024",
+      "sourceLabel": "六、日常言语交往 / Kompetenz 4"
+    },
+    {
+      "id": "tk025",
+      "sourceLabel": "七、问答饮食喜好 / Kompetenz 1"
+    },
+    {
+      "id": "tk026",
+      "sourceLabel": "七、问答饮食喜好 / Kompetenz 2"
+    },
+    {
+      "id": "tk027",
+      "sourceLabel": "七、问答饮食喜好 / Kompetenz 3"
+    },
+    {
+      "id": "tk028",
+      "sourceLabel": "七、问答饮食喜好 / Kompetenz 4"
+    },
+    {
+      "id": "tk029",
+      "sourceLabel": "八、问答出行信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk030",
+      "sourceLabel": "八、问答出行信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk031",
+      "sourceLabel": "八、问答出行信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk032",
+      "sourceLabel": "八、问答出行信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk033",
+      "sourceLabel": "八、问答出行信息 / Kompetenz 5"
+    },
+    {
+      "id": "tk034",
+      "sourceLabel": "九、问答商品信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk035",
+      "sourceLabel": "九、问答商品信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk036",
+      "sourceLabel": "九、问答商品信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk037",
+      "sourceLabel": "九、问答商品信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk038",
+      "sourceLabel": "十、告知生病、探病 / Kompetenz 1"
+    },
+    {
+      "id": "tk039",
+      "sourceLabel": "十、告知生病、探病 / Kompetenz 2"
+    },
+    {
+      "id": "tk040",
+      "sourceLabel": "十、告知生病、探病 / Kompetenz 3"
+    },
+    {
+      "id": "tk041",
+      "sourceLabel": "十一、交流休闲活动 / Kompetenz 1"
+    },
+    {
+      "id": "tk042",
+      "sourceLabel": "十一、交流休闲活动 / Kompetenz 2"
+    },
+    {
+      "id": "tk043",
+      "sourceLabel": "十一、交流休闲活动 / Kompetenz 3"
+    },
+    {
+      "id": "tk044",
+      "sourceLabel": "十一、交流休闲活动 / Kompetenz 4"
+    },
+    {
+      "id": "tk045",
+      "sourceLabel": "十二、介绍学习情况 / Kompetenz 1"
+    },
+    {
+      "id": "tk046",
+      "sourceLabel": "十二、介绍学习情况 / Kompetenz 2"
+    },
+    {
+      "id": "tk047",
+      "sourceLabel": "十二、介绍学习情况 / Kompetenz 3"
+    },
+    {
+      "id": "tk048",
+      "sourceLabel": "十二、介绍学习情况 / Kompetenz 4"
+    },
+    {
+      "id": "tk049",
+      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 1"
+    },
+    {
+      "id": "tk050",
+      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 2"
+    },
+    {
+      "id": "tk051",
+      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 3"
+    },
+    {
+      "id": "tk052",
+      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 4"
+    },
+    {
+      "id": "tk053",
+      "sourceLabel": "十四、交流工作信息 / Kompetenz 1"
+    },
+    {
+      "id": "tk054",
+      "sourceLabel": "十四、交流工作信息 / Kompetenz 2"
+    },
+    {
+      "id": "tk055",
+      "sourceLabel": "十四、交流工作信息 / Kompetenz 3"
+    },
+    {
+      "id": "tk056",
+      "sourceLabel": "十四、交流工作信息 / Kompetenz 4"
+    },
+    {
+      "id": "tk057",
+      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 1"
+    },
+    {
+      "id": "tk058",
+      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 2"
+    },
+    {
+      "id": "tk059",
+      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 3"
+    }
+  ],
+  "writing": {
+    "scope": "Gemeinsame Schreibzeichenliste für HSK1–2, nicht separat nur Level1 und kein Schreibprüfungsteil im Level1-Sample.",
+    "count": 100,
+    "printedPage": 374,
+    "pdfPage": 377,
+    "characters": [
+      "爱",
+      "八",
+      "爸",
+      "百",
+      "半",
+      "比",
+      "边",
+      "不",
+      "茶",
+      "打",
+      "大",
+      "地",
+      "的",
+      "点",
+      "对",
+      "多",
+      "儿",
+      "二",
+      "分",
+      "哥",
+      "个",
+      "工",
+      "口",
+      "国",
+      "过",
+      "还",
+      "汉",
+      "好",
+      "和",
+      "很",
+      "后",
+      "会",
+      "几",
+      "家",
+      "间",
+      "叫",
+      "姐",
+      "今",
+      "男",
+      "九",
+      "可",
+      "来",
+      "了",
+      "两",
+      "六",
+      "妈",
+      "吗",
+      "么",
+      "没",
+      "们",
+      "名",
+      "那",
+      "你",
+      "年",
+      "七",
+      "去",
+      "人",
+      "日",
+      "三",
+      "少",
+      "上",
+      "什",
+      "生",
+      "十",
+      "时",
+      "是",
+      "书",
+      "说",
+      "四",
+      "岁",
+      "他",
+      "她",
+      "天",
+      "同",
+      "为",
+      "文",
+      "我",
+      "五",
+      "午",
+      "习",
+      "下",
+      "小",
+      "现",
+      "写",
+      "学",
+      "要",
+      "也",
+      "一",
+      "以",
+      "有",
+      "语",
+      "月",
+      "在",
+      "长",
+      "这",
+      "中",
+      "子",
+      "女",
+      "字",
+      "作"
+    ]
+  },
+  "ambiguities": [
+    {
+      "issue": "500 vs. 300 Wörter",
+      "resolution": "500 gehört zur Level-1-Abgrenzung des allgemeinen GF0025—2021-Rahmens. Die konkrete Prüfungsliste 2025 hat 300 Einträge und wird hier verwendet."
+    },
+    {
+      "issue": "Juli vs. Dezember 2026",
+      "resolution": "Auf dem Syllabus steht Umsetzung 2026-07. Die aktuelle CTI-Ankündigung nennt den weltweiten offiziellen Prüfungsstart 2026-12-13. Die Daten müssen diese unterschiedlichen Sachverhalte trennen."
+    },
+    {
+      "issue": "300 vs. 246 Hanzi",
+      "resolution": "GF0025—2021 hat eine andere Level-Grenze. Die neue separate Erkennungszeichenliste Level1 im Exam-Syllabus hat 246 Zeichen."
+    },
+    {
+      "issue": "Schreiben im Level1",
+      "resolution": "Die gemeinsame HSK1–2-Liste enthält 100 Schreibzeichen. Das neue Level1-Sample prüft aber nur Hören und Lesen; Handschrifttraining ist unterstützende Vertiefung."
+    },
+    {
+      "issue": "Generische CTI-Seiten",
+      "resolution": "Ein HSK3.0-Menü im Seitenkopf macht eine generische HSK1-Seite nicht zur 3.0-Spezifikation. Die bestehende Seite enthält weiterhin 150 Wörter und alte Abschnittszeiten."
+    },
+    {
+      "issue": "Grammatikzählung",
+      "resolution": "70 Tabellenzeilen sind nachvollziehbar aus den drei Quellseiten gezählt. Einzelne Zeilen bündeln mehrere Formen. Sie werden in der App als zusammenhängende Grammatikpunkte behandelt."
+    }
+  ]
+}
