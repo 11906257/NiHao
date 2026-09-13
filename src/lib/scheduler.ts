@@ -36,7 +36,6 @@ export interface Profile {
   schemaVersion: 1
   cards: Record<string, LearningCard>
   settings: {
-    dailyNew: number
     theme: 'light' | 'dark' | 'system'
     audioRate: number
   }
@@ -89,7 +88,7 @@ export function createProfile(now = new Date()): Profile {
   return {
     schemaVersion: 1,
     cards: {},
-    settings: { dailyNew: 20, theme: 'system', audioRate: AUDIO_RATES.normal },
+    settings: { theme: 'system', audioRate: AUDIO_RATES.normal },
     history: [],
     practice: {},
     completedLessons: [],
@@ -183,18 +182,9 @@ function localDay(date: Date): string {
   return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
 }
 
-export function getTodayPlan(profile: Profile, orderedIds: readonly string[], now = new Date()) {
+export function getReviewPlan(profile: Profile, now = new Date()) {
   const dueIds = getDueCards(profile, now).map(card => card.vocabularyId)
   const today = localDay(now)
-  const introducedToday = Object.values(profile.cards)
-    .filter(card => localDay(new Date(card.introducedAt)) === today).length
-  // A transparent workload guard, not a claim about an empirically optimal limit.
-  const dailyTarget = dueIds.length >= 30 ? 0
-    : dueIds.length >= 15 ? Math.floor(profile.settings.dailyNew / 2)
-    : profile.settings.dailyNew
-  const newAllowance = Math.max(0, dailyTarget - introducedToday)
-  const newIds = [...new Set(orderedIds)]
-    .filter(id => !Object.hasOwn(profile.cards, id)).slice(0, newAllowance)
   const dueSet = new Set(dueIds)
   const weakIds = Object.values(profile.cards)
     .filter(card => !dueSet.has(card.vocabularyId)
@@ -202,7 +192,7 @@ export function getTodayPlan(profile: Profile, orderedIds: readonly string[], no
       && SKILLS.some(skill => card.skills[skill].attempts > card.skills[skill].correct))
     .sort((a, b) => skillPriority(a.skills[chooseSkill(a)]) - skillPriority(b.skills[chooseSkill(b)]))
     .slice(0, 5).map(card => card.vocabularyId)
-  return { dueIds, newIds, weakIds, newAllowance }
+  return { dueIds, weakIds }
 }
 
 export function getSkillSummary(profile: Profile): Record<Skill, SkillStats> {

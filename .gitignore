@@ -1,9 +1,26 @@
+# Dependencies
 node_modules/
+
+# Builds
 dist/
+
+# Lokale Arbeits-/Testdaten
 work/
 test-results/
 playwright-report/
+coverage/
+
+# Vite / TypeScript temporär
+.vite/
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# macOS
 .DS_Store
+
+# Lokale Konfiguration / Secrets
 *.local
 .env
 .env.*

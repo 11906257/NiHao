@@ -71,3 +71,5 @@ Ein globales Sprechtempo (Langsam, Normal, Schnell) steuert sämtliche TTS-Ausga
 Die drei Tagesübersichten sind auf kleinen Geräten untereinander angeordnet. Das 你好-Icon, warme Rot-/Gold-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
 
 Alte lokale Profile und Sicherungen bleiben lesbar. Die entfernte Prüfungshistorie wird bei der Validierung ausgelassen; Lernkarten, FSRS-Zustände, Übungen und Lektionen bleiben erhalten. Neue Sicherungen enthalten kein Prüfungsfeld. Der letzte Exportklick wird lokal gespeichert; nach einem Monat erinnert die Übersicht an eine Sicherung.
+
+Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Satzmustern und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.

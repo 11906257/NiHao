@@ -3,7 +3,7 @@
     "id": "h001",
     "char": "爱",
     "pinyin": "ài",
-    "meaning": "lieben; Liebe",
+    "meaning": "lieben | Liebe",
     "wordIds": [
       "v001"
     ]
@@ -39,7 +39,7 @@
     "id": "h005",
     "char": "白",
     "pinyin": "bái",
-    "meaning": "weiß; hell, in 白天 „tagsüber“",
+    "meaning": "weiß | hell, in 白天 „tagsüber“",
     "wordIds": [
       "v005"
     ]
@@ -57,7 +57,7 @@
     "id": "h007",
     "char": "班",
     "pinyin": "bān",
-    "meaning": "Gruppe; Klasse; Arbeitsschicht",
+    "meaning": "Gruppe | Klasse | Arbeitsschicht",
     "wordIds": [
       "v176",
       "v228"
@@ -67,7 +67,7 @@
     "id": "h008",
     "char": "半",
     "pinyin": "bàn",
-    "meaning": "halb; Hälfte",
+    "meaning": "halb | Hälfte",
     "wordIds": [
       "v007",
       "v258"
@@ -77,7 +77,7 @@
     "id": "h009",
     "char": "包",
     "pinyin": "bāo",
-    "meaning": "einwickeln; Tasche; Bestandteil von 包子 und 面包",
+    "meaning": "einwickeln | Tasche | Bestandteil von 包子 und 面包",
     "wordIds": [
       "v008",
       "v126"
@@ -87,7 +87,7 @@
     "id": "h010",
     "char": "杯",
     "pinyin": "bēi",
-    "meaning": "Tasse; Becher; Zähleinheit für Getränke",
+    "meaning": "Tasse | Becher | Zähleinheit für Getränke",
     "wordIds": [
       "v009"
     ]
@@ -96,7 +96,7 @@
     "id": "h011",
     "char": "本",
     "pinyin": "běn",
-    "meaning": "Zählwort für Bücher; Grundlage",
+    "meaning": "Zählwort für Bücher | Grundlage",
     "wordIds": [
       "v010"
     ]
@@ -105,7 +105,7 @@
     "id": "h012",
     "char": "边",
     "pinyin": "biān; bian",
-    "meaning": "Seite; Rand; Ortsnachsilbe, teils unbetont",
+    "meaning": "Seite | Rand | Ortsnachsilbe, teils unbetont",
     "wordIds": [
       "v011",
       "v137",
@@ -117,7 +117,7 @@
     "id": "h013",
     "char": "便",
     "pinyin": "pián",
-    "meaning": "Bestandteil von 便宜 „preiswert“; hier pián, nicht biàn",
+    "meaning": "Bestandteil von 便宜 „preiswert“ | hier pián, nicht biàn",
     "wordIds": [
       "v157"
     ]
@@ -126,7 +126,7 @@
     "id": "h014",
     "char": "病",
     "pinyin": "bìng",
-    "meaning": "Krankheit; krank sein",
+    "meaning": "Krankheit | krank sein",
     "wordIds": [
       "v012",
       "v100",
@@ -137,7 +137,7 @@
     "id": "h015",
     "char": "不",
     "pinyin": "bù; bú",
-    "meaning": "nicht; vor einem vierten Ton bú gesprochen",
+    "meaning": "nicht | vor einem vierten Ton bú gesprochen",
     "wordIds": [
       "v013",
       "v014",
@@ -149,7 +149,7 @@
     "id": "h016",
     "char": "菜",
     "pinyin": "cài",
-    "meaning": "Gericht; Gemüse",
+    "meaning": "Gericht | Gemüse",
     "wordIds": [
       "v016"
     ]
@@ -167,7 +167,7 @@
     "id": "h018",
     "char": "常",
     "pinyin": "cháng",
-    "meaning": "häufig; gewöhnlich; Bestandteil von 非常 „sehr“",
+    "meaning": "häufig | gewöhnlich | Bestandteil von 非常 „sehr“",
     "wordIds": [
       "v053"
     ]
@@ -185,7 +185,7 @@
     "id": "h020",
     "char": "超",
     "pinyin": "chāo",
-    "meaning": "übertreffen; in 超市 „Supermarkt“",
+    "meaning": "übertreffen | in 超市 „Supermarkt“",
     "wordIds": [
       "v019"
     ]
@@ -194,7 +194,7 @@
     "id": "h021",
     "char": "车",
     "pinyin": "chē",
-    "meaning": "Fahrzeug; Auto",
+    "meaning": "Fahrzeug | Auto",
     "wordIds": [
       "v020",
       "v022",
@@ -216,7 +216,7 @@
     "id": "h023",
     "char": "出",
     "pinyin": "chū",
-    "meaning": "hinausgehen; heraus; in 出租车 „Taxi“",
+    "meaning": "hinausgehen | heraus | in 出租车 „Taxi“",
     "wordIds": [
       "v022"
     ]
@@ -225,7 +225,7 @@
     "id": "h024",
     "char": "穿",
     "pinyin": "chuān",
-    "meaning": "anziehen; tragen; durchqueren",
+    "meaning": "anziehen | tragen | durchqueren",
     "wordIds": [
       "v023"
     ]
@@ -243,7 +243,7 @@
     "id": "h026",
     "char": "打",
     "pinyin": "dǎ",
-    "meaning": "schlagen; tätigen, in 打电话 „telefonieren“",
+    "meaning": "schlagen | tätigen, in 打电话 „telefonieren“",
     "wordIds": [
       "v024"
     ]
@@ -273,7 +273,7 @@
     "id": "h029",
     "char": "到",
     "pinyin": "dào",
-    "meaning": "ankommen; erreichen",
+    "meaning": "ankommen | erreichen",
     "wordIds": [
       "v029"
     ]
@@ -282,7 +282,7 @@
     "id": "h030",
     "char": "道",
     "pinyin": "dào",
-    "meaning": "Weg; in 知道 „wissen“",
+    "meaning": "Weg | in 知道 „wissen“",
     "wordIds": [
       "v288"
     ]
@@ -291,7 +291,7 @@
     "id": "h031",
     "char": "得",
     "pinyin": "de",
-    "meaning": "unbetont in 觉得 „finden/empfinden“; auch Partikel in ergänzenden Beispielen",
+    "meaning": "unbetont in 觉得 „finden/empfinden“ | auch Partikel in ergänzenden Beispielen",
     "wordIds": [
       "v096"
     ]
@@ -328,7 +328,7 @@
     "id": "h035",
     "char": "点",
     "pinyin": "diǎn",
-    "meaning": "Uhrzeit-Einheit; Punkt; kleine Menge",
+    "meaning": "Uhrzeit-Einheit | Punkt | kleine Menge",
     "wordIds": [
       "v033",
       "v261",
@@ -339,7 +339,7 @@
     "id": "h036",
     "char": "电",
     "pinyin": "diàn",
-    "meaning": "Elektrizität; Bestandteil von 电脑 und 电话",
+    "meaning": "Elektrizität | Bestandteil von 电脑 und 电话",
     "wordIds": [
       "v024",
       "v035",
@@ -353,7 +353,7 @@
     "id": "h037",
     "char": "东",
     "pinyin": "dōng",
-    "meaning": "Osten; in 东西 dōngxi „Dinge“",
+    "meaning": "Osten | in 东西 dōngxi „Dinge“",
     "wordIds": [
       "v040"
     ]
@@ -362,7 +362,7 @@
     "id": "h038",
     "char": "都",
     "pinyin": "dōu",
-    "meaning": "alle; beide; Kurslesung dōu",
+    "meaning": "alle | beide | Kurslesung dōu",
     "wordIds": [
       "v041"
     ]
@@ -371,7 +371,7 @@
     "id": "h039",
     "char": "读",
     "pinyin": "dú",
-    "meaning": "lesen; vorlesen",
+    "meaning": "lesen | vorlesen",
     "wordIds": [
       "v042",
       "v043"
@@ -381,7 +381,7 @@
     "id": "h040",
     "char": "对",
     "pinyin": "duì",
-    "meaning": "richtig; gegenüber; aufeinander bezogen",
+    "meaning": "richtig | gegenüber | aufeinander bezogen",
     "wordIds": [
       "v044",
       "v045"
@@ -391,7 +391,7 @@
     "id": "h041",
     "char": "多",
     "pinyin": "duō",
-    "meaning": "viel; viele; wie sehr",
+    "meaning": "viel | viele | wie sehr",
     "wordIds": [
       "v046",
       "v047"
@@ -401,7 +401,7 @@
     "id": "h042",
     "char": "儿",
     "pinyin": "ér; r",
-    "meaning": "Kind; Sohn; als Erhua-Nachsilbe r-Auslaut",
+    "meaning": "Kind | Sohn | als Erhua-Nachsilbe r-Auslaut",
     "wordIds": [
       "v048",
       "v075",
@@ -427,7 +427,7 @@
     "id": "h044",
     "char": "饭",
     "pinyin": "fàn",
-    "meaning": "Mahlzeit; Essen; gekochter Reis",
+    "meaning": "Mahlzeit | Essen | gekochter Reis",
     "wordIds": [
       "v050",
       "v051",
@@ -442,7 +442,7 @@
     "id": "h045",
     "char": "房",
     "pinyin": "fáng",
-    "meaning": "Haus; Zimmer",
+    "meaning": "Haus | Zimmer",
     "wordIds": [
       "v052"
     ]
@@ -460,7 +460,7 @@
     "id": "h047",
     "char": "非",
     "pinyin": "fēi",
-    "meaning": "nicht; un-; Bestandteil von 非常 „sehr“",
+    "meaning": "nicht | un- | Bestandteil von 非常 „sehr“",
     "wordIds": [
       "v053"
     ]
@@ -469,7 +469,7 @@
     "id": "h048",
     "char": "分",
     "pinyin": "fēn",
-    "meaning": "Minute; Fen; teilen",
+    "meaning": "Minute | Fen | teilen",
     "wordIds": [
       "v055",
       "v056"
@@ -479,7 +479,7 @@
     "id": "h049",
     "char": "服",
     "pinyin": "fú; fu",
-    "meaning": "Kleidung; in 衣服 unbetontes fu",
+    "meaning": "Kleidung | in 衣服 unbetontes fu",
     "wordIds": [
       "v255"
     ]
@@ -488,7 +488,7 @@
     "id": "h050",
     "char": "高",
     "pinyin": "gāo",
-    "meaning": "hoch; groß; Bestandteil von 高兴 „froh“",
+    "meaning": "hoch | groß | Bestandteil von 高兴 „froh“",
     "wordIds": [
       "v057"
     ]
@@ -515,7 +515,7 @@
     "id": "h053",
     "char": "个",
     "pinyin": "gè; ge",
-    "meaning": "allgemeines Zählwort; im Satz oft unbetont",
+    "meaning": "allgemeines Zählwort | im Satz oft unbetont",
     "wordIds": [
       "v060",
       "v132",
@@ -527,7 +527,7 @@
     "id": "h054",
     "char": "给",
     "pinyin": "gěi",
-    "meaning": "geben; für; an",
+    "meaning": "geben | für | an",
     "wordIds": [
       "v061"
     ]
@@ -536,7 +536,7 @@
     "id": "h055",
     "char": "工",
     "pinyin": "gōng",
-    "meaning": "Arbeit; Handwerk",
+    "meaning": "Arbeit | Handwerk",
     "wordIds": [
       "v063"
     ]
@@ -545,7 +545,7 @@
     "id": "h056",
     "char": "公",
     "pinyin": "gōng",
-    "meaning": "öffentlich; Bestandteil von 公司 „Firma“",
+    "meaning": "öffentlich | Bestandteil von 公司 „Firma“",
     "wordIds": [
       "v062"
     ]
@@ -563,7 +563,7 @@
     "id": "h058",
     "char": "关",
     "pinyin": "guān",
-    "meaning": "schließen; betreffen; Bestandteil von 关系 „Beziehung“",
+    "meaning": "schließen | betreffen | Bestandteil von 关系 „Beziehung“",
     "wordIds": [
       "v120"
     ]
@@ -572,7 +572,7 @@
     "id": "h059",
     "char": "贵",
     "pinyin": "guì",
-    "meaning": "teuer; wertvoll",
+    "meaning": "teuer | wertvoll",
     "wordIds": [
       "v065"
     ]
@@ -581,7 +581,7 @@
     "id": "h060",
     "char": "国",
     "pinyin": "guó",
-    "meaning": "Land; Staat",
+    "meaning": "Land | Staat",
     "wordIds": [
       "v066",
       "v289"
@@ -591,7 +591,7 @@
     "id": "h061",
     "char": "果",
     "pinyin": "guǒ",
-    "meaning": "Frucht; Ergebnis",
+    "meaning": "Frucht | Ergebnis",
     "wordIds": [
       "v159",
       "v193"
@@ -601,7 +601,7 @@
     "id": "h062",
     "char": "还",
     "pinyin": "hái",
-    "meaning": "noch; auch noch; Kurslesung hái",
+    "meaning": "noch | auch noch | Kurslesung hái",
     "wordIds": [
       "v067"
     ]
@@ -619,7 +619,7 @@
     "id": "h064",
     "char": "汉",
     "pinyin": "hàn",
-    "meaning": "Han; chinesisch, in 汉语 und 汉字",
+    "meaning": "Han | chinesisch, in 汉语 und 汉字",
     "wordIds": [
       "v069",
       "v070"
@@ -629,7 +629,7 @@
     "id": "h065",
     "char": "好",
     "pinyin": "hǎo",
-    "meaning": "gut; angenehm",
+    "meaning": "gut | angenehm",
     "wordIds": [
       "v071",
       "v072",
@@ -643,7 +643,7 @@
     "id": "h066",
     "char": "号",
     "pinyin": "hào",
-    "meaning": "Nummer; Tag eines Datums",
+    "meaning": "Nummer | Tag eines Datums",
     "wordIds": [
       "v076"
     ]
@@ -661,7 +661,7 @@
     "id": "h068",
     "char": "和",
     "pinyin": "hé",
-    "meaning": "und; mit; harmonisch",
+    "meaning": "und | mit | harmonisch",
     "wordIds": [
       "v078"
     ]
@@ -670,7 +670,7 @@
     "id": "h069",
     "char": "很",
     "pinyin": "hěn",
-    "meaning": "sehr; oft schwach betonter Adjektivbegleiter",
+    "meaning": "sehr | oft schwach betonter Adjektivbegleiter",
     "wordIds": [
       "v079"
     ]
@@ -679,7 +679,7 @@
     "id": "h070",
     "char": "后",
     "pinyin": "hòu",
-    "meaning": "hinter; nach; später",
+    "meaning": "hinter | nach | später",
     "wordIds": [
       "v080"
     ]
@@ -688,7 +688,7 @@
     "id": "h071",
     "char": "候",
     "pinyin": "hòu; hou",
-    "meaning": "warten; Zeitpunkt; in 时候 unbetontes hou",
+    "meaning": "warten | Zeitpunkt | in 时候 unbetontes hou",
     "wordIds": [
       "v185"
     ]
@@ -697,7 +697,7 @@
     "id": "h072",
     "char": "话",
     "pinyin": "huà",
-    "meaning": "Worte; Rede; Sprache",
+    "meaning": "Worte | Rede | Sprache",
     "wordIds": [
       "v024",
       "v035",
@@ -708,7 +708,7 @@
     "id": "h073",
     "char": "欢",
     "pinyin": "huān; huan",
-    "meaning": "Freude; in 喜欢 unbetontes huan",
+    "meaning": "Freude | in 喜欢 unbetontes huan",
     "wordIds": [
       "v225"
     ]
@@ -717,7 +717,7 @@
     "id": "h074",
     "char": "回",
     "pinyin": "huí",
-    "meaning": "zurückkehren; zurück",
+    "meaning": "zurückkehren | zurück",
     "wordIds": [
       "v081"
     ]
@@ -726,7 +726,7 @@
     "id": "h075",
     "char": "会",
     "pinyin": "huì",
-    "meaning": "können; beherrschen; Zusammenkunft",
+    "meaning": "können | beherrschen | Zusammenkunft",
     "wordIds": [
       "v082"
     ]
@@ -744,7 +744,7 @@
     "id": "h077",
     "char": "机",
     "pinyin": "jī",
-    "meaning": "Maschine; Gerät; Bestandteil von 手机 und 飞机",
+    "meaning": "Maschine | Gerät | Bestandteil von 手机 und 飞机",
     "wordIds": [
       "v054",
       "v189"
@@ -763,7 +763,7 @@
     "id": "h079",
     "char": "几",
     "pinyin": "jǐ",
-    "meaning": "wie viele; einige",
+    "meaning": "wie viele | einige",
     "wordIds": [
       "v085"
     ]
@@ -772,7 +772,7 @@
     "id": "h080",
     "char": "家",
     "pinyin": "jiā",
-    "meaning": "Zuhause; Familie; Zählwort für Betriebe",
+    "meaning": "Zuhause | Familie | Zählwort für Betriebe",
     "wordIds": [
       "v026",
       "v086",
@@ -783,7 +783,7 @@
     "id": "h081",
     "char": "间",
     "pinyin": "jiān",
-    "meaning": "Zwischenraum; Zimmer, in 房间 und 时间",
+    "meaning": "Zwischenraum | Zimmer, in 房间 und 时间",
     "wordIds": [
       "v052",
       "v186"
@@ -793,7 +793,7 @@
     "id": "h082",
     "char": "见",
     "pinyin": "jiàn",
-    "meaning": "sehen; treffen",
+    "meaning": "sehen | treffen",
     "wordIds": [
       "v088",
       "v101",
@@ -814,7 +814,7 @@
     "id": "h084",
     "char": "叫",
     "pinyin": "jiào",
-    "meaning": "heißen; rufen",
+    "meaning": "heißen | rufen",
     "wordIds": [
       "v091"
     ]
@@ -832,7 +832,7 @@
     "id": "h086",
     "char": "今",
     "pinyin": "jīn",
-    "meaning": "jetzt; gegenwärtig, in 今天 und 今年",
+    "meaning": "jetzt | gegenwärtig, in 今天 und 今年",
     "wordIds": [
       "v093",
       "v094"
@@ -851,7 +851,7 @@
     "id": "h088",
     "char": "觉",
     "pinyin": "jué; jiào",
-    "meaning": "jué in 觉得 „finden/empfinden“; jiào in 睡觉 „schlafen“",
+    "meaning": "jué in 觉得 „finden/empfinden“ | jiào in 睡觉 „schlafen“",
     "wordIds": [
       "v096",
       "v195"
@@ -861,7 +861,7 @@
     "id": "h089",
     "char": "开",
     "pinyin": "kāi",
-    "meaning": "öffnen; einschalten; fahren",
+    "meaning": "öffnen | einschalten | fahren",
     "wordIds": [
       "v097",
       "v098"
@@ -871,7 +871,7 @@
     "id": "h090",
     "char": "看",
     "pinyin": "kàn",
-    "meaning": "sehen; anschauen; lesen",
+    "meaning": "sehen | anschauen | lesen",
     "wordIds": [
       "v073",
       "v099",
@@ -883,7 +883,7 @@
     "id": "h091",
     "char": "可",
     "pinyin": "kě",
-    "meaning": "können; möglich, in 可以",
+    "meaning": "können | möglich, in 可以",
     "wordIds": [
       "v102"
     ]
@@ -892,7 +892,7 @@
     "id": "h092",
     "char": "客",
     "pinyin": "kè",
-    "meaning": "Gast; Kunde; Bestandteil von 不客气",
+    "meaning": "Gast | Kunde | Bestandteil von 不客气",
     "wordIds": [
       "v014"
     ]
@@ -901,7 +901,7 @@
     "id": "h093",
     "char": "课",
     "pinyin": "kè",
-    "meaning": "Unterricht; Lektion; Unterrichtsstunde",
+    "meaning": "Unterricht | Lektion | Unterrichtsstunde",
     "wordIds": [
       "v103",
       "v177",
@@ -912,7 +912,7 @@
     "id": "h094",
     "char": "口",
     "pinyin": "kǒu",
-    "meaning": "Mund; Zählwort für Familienmitglieder",
+    "meaning": "Mund | Zählwort für Familienmitglieder",
     "wordIds": [
       "v104"
     ]
@@ -921,7 +921,7 @@
     "id": "h095",
     "char": "块",
     "pinyin": "kuài",
-    "meaning": "Stück; Block; umgangssprachlich Yuan",
+    "meaning": "Stück | Block | umgangssprachlich Yuan",
     "wordIds": [
       "v105"
     ]
@@ -939,7 +939,7 @@
     "id": "h097",
     "char": "老",
     "pinyin": "lǎo",
-    "meaning": "alt; erfahren; Bestandteil von 老师 „Lehrer“",
+    "meaning": "alt | erfahren | Bestandteil von 老师 „Lehrer“",
     "wordIds": [
       "v107"
     ]
@@ -966,7 +966,7 @@
     "id": "h100",
     "char": "里",
     "pinyin": "lǐ",
-    "meaning": "innen; in; chinesische Entfernungseinheit",
+    "meaning": "innen | in | chinesische Entfernungseinheit",
     "wordIds": [
       "v110",
       "v133",
@@ -987,7 +987,7 @@
     "id": "h102",
     "char": "亮",
     "pinyin": "liàng; liang",
-    "meaning": "hell; leuchten; in 漂亮 unbetontes liang",
+    "meaning": "hell | leuchten | in 漂亮 unbetontes liang",
     "wordIds": [
       "v158"
     ]
@@ -1050,7 +1050,7 @@
     "id": "h109",
     "char": "忙",
     "pinyin": "máng",
-    "meaning": "beschäftigt; viel zu tun haben",
+    "meaning": "beschäftigt | viel zu tun haben",
     "wordIds": [
       "v118"
     ]
@@ -1068,7 +1068,7 @@
     "id": "h111",
     "char": "么",
     "pinyin": "me",
-    "meaning": "unbetonte Silbe in 什么 und 怎么; keine eigene Übersetzung",
+    "meaning": "unbetonte Silbe in 什么 und 怎么 | keine eigene Übersetzung",
     "wordIds": [
       "v182",
       "v276",
@@ -1079,7 +1079,7 @@
     "id": "h112",
     "char": "没",
     "pinyin": "méi",
-    "meaning": "nicht; nicht haben",
+    "meaning": "nicht | nicht haben",
     "wordIds": [
       "v120",
       "v121",
@@ -1113,7 +1113,7 @@
     "id": "h115",
     "char": "米",
     "pinyin": "mǐ",
-    "meaning": "Reis; Meter",
+    "meaning": "Reis | Meter",
     "wordIds": [
       "v125"
     ]
@@ -1122,7 +1122,7 @@
     "id": "h116",
     "char": "面",
     "pinyin": "miàn",
-    "meaning": "Seite; Gesicht; Mehl, in 面包 und 面条儿",
+    "meaning": "Seite | Gesicht | Mehl, in 面包 und 面条儿",
     "wordIds": [
       "v126",
       "v127"
@@ -1132,7 +1132,7 @@
     "id": "h117",
     "char": "名",
     "pinyin": "míng",
-    "meaning": "Name; bekannt",
+    "meaning": "Name | bekannt",
     "wordIds": [
       "v130"
     ]
@@ -1141,7 +1141,7 @@
     "id": "h118",
     "char": "明",
     "pinyin": "míng",
-    "meaning": "hell; klar; nächster, in 明天 und 明年",
+    "meaning": "hell | klar | nächster, in 明天 und 明年",
     "wordIds": [
       "v128",
       "v129"
@@ -1151,7 +1151,7 @@
     "id": "h119",
     "char": "哪",
     "pinyin": "nǎ",
-    "meaning": "welcher; Bestandteil von 哪里 und 哪儿 „wo“",
+    "meaning": "welcher | Bestandteil von 哪里 und 哪儿 „wo“",
     "wordIds": [
       "v131",
       "v132",
@@ -1164,7 +1164,7 @@
     "id": "h120",
     "char": "那",
     "pinyin": "nà",
-    "meaning": "jener; das dort",
+    "meaning": "jener | das dort",
     "wordIds": [
       "v136",
       "v137",
@@ -1178,7 +1178,7 @@
     "id": "h121",
     "char": "奶",
     "pinyin": "nǎi",
-    "meaning": "Milch; Brust; in 牛奶 „Kuhmilch“",
+    "meaning": "Milch | Brust | in 牛奶 „Kuhmilch“",
     "wordIds": [
       "v151"
     ]
@@ -1187,7 +1187,7 @@
     "id": "h122",
     "char": "男",
     "pinyin": "nán",
-    "meaning": "männlich; Mann",
+    "meaning": "männlich | Mann",
     "wordIds": [
       "v142",
       "v143"
@@ -1197,7 +1197,7 @@
     "id": "h123",
     "char": "脑",
     "pinyin": "nǎo",
-    "meaning": "Gehirn; Bestandteil von 电脑 „Computer“",
+    "meaning": "Gehirn | Bestandteil von 电脑 „Computer“",
     "wordIds": [
       "v036"
     ]
@@ -1215,7 +1215,7 @@
     "id": "h125",
     "char": "能",
     "pinyin": "néng",
-    "meaning": "können; imstande sein",
+    "meaning": "können | imstande sein",
     "wordIds": [
       "v145"
     ]
@@ -1256,7 +1256,7 @@
     "id": "h129",
     "char": "牛",
     "pinyin": "niú",
-    "meaning": "Rind; Kuh",
+    "meaning": "Rind | Kuh",
     "wordIds": [
       "v151"
     ]
@@ -1265,7 +1265,7 @@
     "id": "h130",
     "char": "女",
     "pinyin": "nǚ",
-    "meaning": "weiblich; Frau; Tochter",
+    "meaning": "weiblich | Frau | Tochter",
     "wordIds": [
       "v152",
       "v153",
@@ -1277,7 +1277,7 @@
     "id": "h131",
     "char": "朋",
     "pinyin": "péng",
-    "meaning": "Freund; Bestandteil von 朋友",
+    "meaning": "Freund | Bestandteil von 朋友",
     "wordIds": [
       "v143",
       "v154",
@@ -1289,7 +1289,7 @@
     "id": "h132",
     "char": "漂",
     "pinyin": "piào",
-    "meaning": "Bestandteil von 漂亮 „schön“; hier piào",
+    "meaning": "Bestandteil von 漂亮 „schön“ | hier piào",
     "wordIds": [
       "v158"
     ]
@@ -1316,7 +1316,7 @@
     "id": "h135",
     "char": "期",
     "pinyin": "qī",
-    "meaning": "Zeitraum; Termin; Bestandteil von 星期 „Woche“",
+    "meaning": "Zeitraum | Termin | Bestandteil von 星期 „Woche“",
     "wordIds": [
       "v243",
       "v244",
@@ -1327,7 +1327,7 @@
     "id": "h136",
     "char": "起",
     "pinyin": "qǐ",
-    "meaning": "aufstehen; sich erheben; beginnen",
+    "meaning": "aufstehen | sich erheben | beginnen",
     "wordIds": [
       "v045",
       "v161"
@@ -1337,7 +1337,7 @@
     "id": "h137",
     "char": "气",
     "pinyin": "qì; qi",
-    "meaning": "Luft; Atem; in 天气 „Wetter“ und 不客气",
+    "meaning": "Luft | Atem | in 天气 „Wetter“ und 不客气",
     "wordIds": [
       "v014",
       "v208"
@@ -1356,7 +1356,7 @@
     "id": "h139",
     "char": "前",
     "pinyin": "qián",
-    "meaning": "vor; vorne; früher",
+    "meaning": "vor | vorne | früher",
     "wordIds": [
       "v163"
     ]
@@ -1374,7 +1374,7 @@
     "id": "h141",
     "char": "请",
     "pinyin": "qǐng",
-    "meaning": "bitte; bitten; einladen",
+    "meaning": "bitte | bitten | einladen",
     "wordIds": [
       "v165",
       "v166"
@@ -1384,7 +1384,7 @@
     "id": "h142",
     "char": "去",
     "pinyin": "qù",
-    "meaning": "gehen; sich entfernen",
+    "meaning": "gehen | sich entfernen",
     "wordIds": [
       "v167",
       "v168"
@@ -1394,7 +1394,7 @@
     "id": "h143",
     "char": "热",
     "pinyin": "rè",
-    "meaning": "heiß; warm",
+    "meaning": "heiß | warm",
     "wordIds": [
       "v169"
     ]
@@ -1403,7 +1403,7 @@
     "id": "h144",
     "char": "人",
     "pinyin": "rén",
-    "meaning": "Mensch; Person",
+    "meaning": "Mensch | Person",
     "wordIds": [
       "v087",
       "v170"
@@ -1413,7 +1413,7 @@
     "id": "h145",
     "char": "认",
     "pinyin": "rèn",
-    "meaning": "erkennen; anerkennen; in 认识 „kennen“",
+    "meaning": "erkennen | anerkennen | in 认识 „kennen“",
     "wordIds": [
       "v171"
     ]
@@ -1422,7 +1422,7 @@
     "id": "h146",
     "char": "日",
     "pinyin": "rì",
-    "meaning": "Tag; Sonne; Datumstag",
+    "meaning": "Tag | Sonne | Datumstag",
     "wordIds": [
       "v172",
       "v244"
@@ -1441,7 +1441,7 @@
     "id": "h148",
     "char": "商",
     "pinyin": "shāng",
-    "meaning": "Handel; Geschäft, in 商店",
+    "meaning": "Handel | Geschäft, in 商店",
     "wordIds": [
       "v174"
     ]
@@ -1450,7 +1450,7 @@
     "id": "h149",
     "char": "上",
     "pinyin": "shàng",
-    "meaning": "auf; oben; hinauf; beginnen, in 上课",
+    "meaning": "auf | oben | hinauf | beginnen, in 上课",
     "wordIds": [
       "v175",
       "v176",
@@ -1465,7 +1465,7 @@
     "id": "h150",
     "char": "少",
     "pinyin": "shǎo; shao",
-    "meaning": "wenig; in 多少 unbetontes shao",
+    "meaning": "wenig | in 多少 unbetontes shao",
     "wordIds": [
       "v047",
       "v180"
@@ -1475,7 +1475,7 @@
     "id": "h151",
     "char": "谁",
     "pinyin": "shéi; shuí",
-    "meaning": "wer; beide Lesungen sind gebräuchlich",
+    "meaning": "wer | beide Lesungen sind gebräuchlich",
     "wordIds": [
       "v181"
     ]
@@ -1493,7 +1493,7 @@
     "id": "h153",
     "char": "生",
     "pinyin": "shēng",
-    "meaning": "geboren werden; leben; Person in Ausbildung, in 学生",
+    "meaning": "geboren werden | leben | Person in Ausbildung, in 学生",
     "wordIds": [
       "v028",
       "v183",
@@ -1508,7 +1508,7 @@
     "id": "h154",
     "char": "师",
     "pinyin": "shī",
-    "meaning": "Lehrer; Meister",
+    "meaning": "Lehrer | Meister",
     "wordIds": [
       "v107"
     ]
@@ -1526,7 +1526,7 @@
     "id": "h156",
     "char": "时",
     "pinyin": "shí",
-    "meaning": "Zeit; Stunde; Zeitpunkt",
+    "meaning": "Zeit | Stunde | Zeitpunkt",
     "wordIds": [
       "v185",
       "v186",
@@ -1537,7 +1537,7 @@
     "id": "h157",
     "char": "识",
     "pinyin": "shí; shi",
-    "meaning": "erkennen; in 认识 unbetontes shi",
+    "meaning": "erkennen | in 认识 unbetontes shi",
     "wordIds": [
       "v171"
     ]
@@ -1546,7 +1546,7 @@
     "id": "h158",
     "char": "士",
     "pinyin": "shì",
-    "meaning": "gebildete Person; Person bestimmter Stellung, in 女士",
+    "meaning": "gebildete Person | Person bestimmter Stellung, in 女士",
     "wordIds": [
       "v155"
     ]
@@ -1555,7 +1555,7 @@
     "id": "h159",
     "char": "市",
     "pinyin": "shì",
-    "meaning": "Stadt; Markt, in 超市",
+    "meaning": "Stadt | Markt, in 超市",
     "wordIds": [
       "v019"
     ]
@@ -1564,7 +1564,7 @@
     "id": "h160",
     "char": "事",
     "pinyin": "shì",
-    "meaning": "Sache; Angelegenheit; Ereignis",
+    "meaning": "Sache | Angelegenheit | Ereignis",
     "wordIds": [
       "v121",
       "v187"
@@ -1574,7 +1574,7 @@
     "id": "h161",
     "char": "视",
     "pinyin": "shì",
-    "meaning": "sehen; betrachten; in 电视 „Fernsehen“",
+    "meaning": "sehen | betrachten | in 电视 „Fernsehen“",
     "wordIds": [
       "v037"
     ]
@@ -1583,7 +1583,7 @@
     "id": "h162",
     "char": "是",
     "pinyin": "shì",
-    "meaning": "sein; zutreffen",
+    "meaning": "sein | zutreffen",
     "wordIds": [
       "v188"
     ]
@@ -1601,7 +1601,7 @@
     "id": "h164",
     "char": "书",
     "pinyin": "shū",
-    "meaning": "Buch; Schrift",
+    "meaning": "Buch | Schrift",
     "wordIds": [
       "v043",
       "v190",
@@ -1632,7 +1632,7 @@
     "id": "h167",
     "char": "说",
     "pinyin": "shuō",
-    "meaning": "sagen; sprechen",
+    "meaning": "sagen | sprechen",
     "wordIds": [
       "v196",
       "v197"
@@ -1642,7 +1642,7 @@
     "id": "h168",
     "char": "司",
     "pinyin": "sī",
-    "meaning": "verwalten; Bestandteil von 公司 „Firma“",
+    "meaning": "verwalten | Bestandteil von 公司 „Firma“",
     "wordIds": [
       "v062"
     ]
@@ -1660,7 +1660,7 @@
     "id": "h170",
     "char": "岁",
     "pinyin": "suì",
-    "meaning": "Lebensjahr; Jahre alt",
+    "meaning": "Lebensjahr | Jahre alt",
     "wordIds": [
       "v199"
     ]
@@ -1669,7 +1669,7 @@
     "id": "h171",
     "char": "他",
     "pinyin": "tā",
-    "meaning": "er; männliche Person",
+    "meaning": "er | männliche Person",
     "wordIds": [
       "v200",
       "v203"
@@ -1679,7 +1679,7 @@
     "id": "h172",
     "char": "它",
     "pinyin": "tā",
-    "meaning": "es; Dinge oder Tiere",
+    "meaning": "es | Dinge oder Tiere",
     "wordIds": [
       "v201",
       "v204"
@@ -1689,7 +1689,7 @@
     "id": "h173",
     "char": "她",
     "pinyin": "tā",
-    "meaning": "sie; weibliche Person",
+    "meaning": "sie | weibliche Person",
     "wordIds": [
       "v202",
       "v205"
@@ -1699,7 +1699,7 @@
     "id": "h174",
     "char": "太",
     "pinyin": "tài",
-    "meaning": "zu; äußerst; sehr",
+    "meaning": "zu | äußerst | sehr",
     "wordIds": [
       "v206"
     ]
@@ -1708,7 +1708,7 @@
     "id": "h175",
     "char": "题",
     "pinyin": "tí",
-    "meaning": "Frage; Aufgabe; Thema",
+    "meaning": "Frage | Aufgabe | Thema",
     "wordIds": [
       "v220"
     ]
@@ -1717,7 +1717,7 @@
     "id": "h176",
     "char": "天",
     "pinyin": "tiān",
-    "meaning": "Tag; Himmel",
+    "meaning": "Tag | Himmel",
     "wordIds": [
       "v005",
       "v094",
@@ -1732,7 +1732,7 @@
     "id": "h177",
     "char": "条",
     "pinyin": "tiáo",
-    "meaning": "Streifen; Zählwort für Langes; in 面条儿 „Nudeln“",
+    "meaning": "Streifen | Zählwort für Langes | in 面条儿 „Nudeln“",
     "wordIds": [
       "v127"
     ]
@@ -1741,7 +1741,7 @@
     "id": "h178",
     "char": "听",
     "pinyin": "tīng",
-    "meaning": "hören; zuhören",
+    "meaning": "hören | zuhören",
     "wordIds": [
       "v074",
       "v209",
@@ -1752,7 +1752,7 @@
     "id": "h179",
     "char": "同",
     "pinyin": "tóng",
-    "meaning": "gleich; gemeinsam; in 同学 „Mitschüler“",
+    "meaning": "gleich | gemeinsam | in 同学 „Mitschüler“",
     "wordIds": [
       "v211"
     ]
@@ -1761,7 +1761,7 @@
     "id": "h180",
     "char": "外",
     "pinyin": "wài",
-    "meaning": "außen; außerhalb",
+    "meaning": "außen | außerhalb",
     "wordIds": [
       "v212",
       "v213"
@@ -1771,7 +1771,7 @@
     "id": "h181",
     "char": "玩",
     "pinyin": "wán",
-    "meaning": "spielen; sich vergnügen",
+    "meaning": "spielen | sich vergnügen",
     "wordIds": [
       "v075",
       "v214"
@@ -1781,7 +1781,7 @@
     "id": "h182",
     "char": "晚",
     "pinyin": "wǎn",
-    "meaning": "spät; Abend",
+    "meaning": "spät | Abend",
     "wordIds": [
       "v215",
       "v216",
@@ -1792,7 +1792,7 @@
     "id": "h183",
     "char": "喂",
     "pinyin": "wèi",
-    "meaning": "hallo am Telefon; auch „füttern“ als Verb",
+    "meaning": "hallo am Telefon | auch „füttern“ als Verb",
     "wordIds": [
       "v218"
     ]
@@ -1801,7 +1801,7 @@
     "id": "h184",
     "char": "文",
     "pinyin": "wén",
-    "meaning": "Schrift; Sprache; Kultur",
+    "meaning": "Schrift | Sprache | Kultur",
     "wordIds": [
       "v290"
     ]
@@ -1852,7 +1852,7 @@
     "id": "h189",
     "char": "西",
     "pinyin": "xī; xi",
-    "meaning": "Westen; in 东西 „Sachen“ unbetontes xi",
+    "meaning": "Westen | in 东西 „Sachen“ unbetontes xi",
     "wordIds": [
       "v040"
     ]
@@ -1861,7 +1861,7 @@
     "id": "h190",
     "char": "息",
     "pinyin": "xī; xi",
-    "meaning": "Atem; ruhen; in 休息 unbetontes xi",
+    "meaning": "Atem | ruhen | in 休息 unbetontes xi",
     "wordIds": [
       "v246"
     ]
@@ -1870,7 +1870,7 @@
     "id": "h191",
     "char": "习",
     "pinyin": "xí",
-    "meaning": "üben; sich gewöhnen",
+    "meaning": "üben | sich gewöhnen",
     "wordIds": [
       "v249"
     ]
@@ -1879,7 +1879,7 @@
     "id": "h192",
     "char": "喜",
     "pinyin": "xǐ",
-    "meaning": "Freude; gernhaben, in 喜欢",
+    "meaning": "Freude | gernhaben, in 喜欢",
     "wordIds": [
       "v225"
     ]
@@ -1888,7 +1888,7 @@
     "id": "h193",
     "char": "系",
     "pinyin": "xì; xi",
-    "meaning": "Verbindung; Beziehung; in 没关系 unbetontes xi",
+    "meaning": "Verbindung | Beziehung | in 没关系 unbetontes xi",
     "wordIds": [
       "v120"
     ]
@@ -1897,7 +1897,7 @@
     "id": "h194",
     "char": "下",
     "pinyin": "xià",
-    "meaning": "unten; unter; hinunter; beenden, in 下课",
+    "meaning": "unten | unter | hinunter | beenden, in 下课",
     "wordIds": [
       "v226",
       "v227",
@@ -1911,7 +1911,7 @@
     "id": "h195",
     "char": "先",
     "pinyin": "xiān",
-    "meaning": "zuerst; früher; Bestandteil von 先生 „Herr“",
+    "meaning": "zuerst | früher | Bestandteil von 先生 „Herr“",
     "wordIds": [
       "v231"
     ]
@@ -1920,7 +1920,7 @@
     "id": "h196",
     "char": "现",
     "pinyin": "xiàn",
-    "meaning": "erscheinen; gegenwärtig, in 现在",
+    "meaning": "erscheinen | gegenwärtig, in 现在",
     "wordIds": [
       "v232"
     ]
@@ -1929,7 +1929,7 @@
     "id": "h197",
     "char": "想",
     "pinyin": "xiǎng",
-    "meaning": "denken; möchten; vermissen",
+    "meaning": "denken | möchten | vermissen",
     "wordIds": [
       "v233"
     ]
@@ -1951,7 +1951,7 @@
     "id": "h199",
     "char": "校",
     "pinyin": "xiào",
-    "meaning": "Schule; Bestandteil von 学校",
+    "meaning": "Schule | Bestandteil von 学校",
     "wordIds": [
       "v250"
     ]
@@ -1960,7 +1960,7 @@
     "id": "h200",
     "char": "些",
     "pinyin": "xiē",
-    "meaning": "einige; etwas; unbestimmte Menge",
+    "meaning": "einige | etwas | unbestimmte Menge",
     "wordIds": [
       "v135",
       "v141",
@@ -1983,7 +1983,7 @@
     "id": "h202",
     "char": "谢",
     "pinyin": "xiè; xie",
-    "meaning": "danken; in 谢谢 zweite Silbe unbetont",
+    "meaning": "danken | in 谢谢 zweite Silbe unbetont",
     "wordIds": [
       "v241"
     ]
@@ -2001,7 +2001,7 @@
     "id": "h204",
     "char": "星",
     "pinyin": "xīng",
-    "meaning": "Stern; Bestandteil von 星期",
+    "meaning": "Stern | Bestandteil von 星期",
     "wordIds": [
       "v243",
       "v244",
@@ -2012,7 +2012,7 @@
     "id": "h205",
     "char": "兴",
     "pinyin": "xìng",
-    "meaning": "Freude; in 高兴 „froh“",
+    "meaning": "Freude | in 高兴 „froh“",
     "wordIds": [
       "v057"
     ]
@@ -2021,7 +2021,7 @@
     "id": "h206",
     "char": "休",
     "pinyin": "xiū",
-    "meaning": "ruhen; pausieren",
+    "meaning": "ruhen | pausieren",
     "wordIds": [
       "v246"
     ]
@@ -2030,7 +2030,7 @@
     "id": "h207",
     "char": "学",
     "pinyin": "xué",
-    "meaning": "lernen; studieren",
+    "meaning": "lernen | studieren",
     "wordIds": [
       "v027",
       "v028",
@@ -2059,7 +2059,7 @@
     "id": "h209",
     "char": "样",
     "pinyin": "yàng",
-    "meaning": "Art; Aussehen; in 怎么样 „wie“",
+    "meaning": "Art | Aussehen | in 怎么样 „wie“",
     "wordIds": [
       "v277"
     ]
@@ -2068,7 +2068,7 @@
     "id": "h210",
     "char": "要",
     "pinyin": "yào",
-    "meaning": "wollen; brauchen; etwas Bevorstehendes",
+    "meaning": "wollen | brauchen | etwas Bevorstehendes",
     "wordIds": [
       "v015",
       "v252"
@@ -2087,7 +2087,7 @@
     "id": "h212",
     "char": "一",
     "pinyin": "yī; yí; yì",
-    "meaning": "eins; Tonwechsel im Wort/Satz zu yí oder yì",
+    "meaning": "eins | Tonwechsel im Wort/Satz zu yí oder yì",
     "wordIds": [
       "v254",
       "v258",
@@ -2109,7 +2109,7 @@
     "id": "h214",
     "char": "医",
     "pinyin": "yī",
-    "meaning": "Medizin; behandeln; in 医生 und 医院",
+    "meaning": "Medizin | behandeln | in 医生 und 医院",
     "wordIds": [
       "v256",
       "v257"
@@ -2119,7 +2119,7 @@
     "id": "h215",
     "char": "宜",
     "pinyin": "yí; yi",
-    "meaning": "angemessen; passend; in 便宜 unbetontes yi",
+    "meaning": "angemessen | passend | in 便宜 unbetontes yi",
     "wordIds": [
       "v157"
     ]
@@ -2128,7 +2128,7 @@
     "id": "h216",
     "char": "以",
     "pinyin": "yǐ",
-    "meaning": "mit; mittels; Bestandteil von 可以 „dürfen/können“",
+    "meaning": "mit | mittels | Bestandteil von 可以 „dürfen/können“",
     "wordIds": [
       "v102"
     ]
@@ -2146,7 +2146,7 @@
     "id": "h218",
     "char": "影",
     "pinyin": "yǐng",
-    "meaning": "Schatten; Bild; in 电影 „Film“",
+    "meaning": "Schatten | Bild | in 电影 „Film“",
     "wordIds": [
       "v038",
       "v039"
@@ -2156,7 +2156,7 @@
     "id": "h219",
     "char": "友",
     "pinyin": "yǒu; you",
-    "meaning": "Freund; in 朋友 oft unbetontes you",
+    "meaning": "Freund | in 朋友 oft unbetontes you",
     "wordIds": [
       "v143",
       "v154",
@@ -2168,7 +2168,7 @@
     "id": "h220",
     "char": "有",
     "pinyin": "yǒu",
-    "meaning": "haben; es gibt",
+    "meaning": "haben | es gibt",
     "wordIds": [
       "v122",
       "v263",
@@ -2191,7 +2191,7 @@
     "id": "h222",
     "char": "语",
     "pinyin": "yǔ",
-    "meaning": "Sprache; Worte",
+    "meaning": "Sprache | Worte",
     "wordIds": [
       "v069"
     ]
@@ -2200,7 +2200,7 @@
     "id": "h223",
     "char": "元",
     "pinyin": "yuán",
-    "meaning": "Yuan; Ursprung; Haupteinheit",
+    "meaning": "Yuan | Ursprung | Haupteinheit",
     "wordIds": [
       "v268"
     ]
@@ -2209,7 +2209,7 @@
     "id": "h224",
     "char": "院",
     "pinyin": "yuàn",
-    "meaning": "Hof; Einrichtung, in 医院 und 电影院",
+    "meaning": "Hof | Einrichtung, in 医院 und 电影院",
     "wordIds": [
       "v039",
       "v257"
@@ -2219,7 +2219,7 @@
     "id": "h225",
     "char": "月",
     "pinyin": "yuè",
-    "meaning": "Monat; Mond",
+    "meaning": "Monat | Mond",
     "wordIds": [
       "v269"
     ]
@@ -2228,7 +2228,7 @@
     "id": "h226",
     "char": "再",
     "pinyin": "zài",
-    "meaning": "wieder; noch einmal; anschließend",
+    "meaning": "wieder | noch einmal | anschließend",
     "wordIds": [
       "v270",
       "v272"
@@ -2238,7 +2238,7 @@
     "id": "h227",
     "char": "在",
     "pinyin": "zài",
-    "meaning": "sich befinden; in; gerade",
+    "meaning": "sich befinden | in | gerade",
     "wordIds": [
       "v232",
       "v271",
@@ -2249,7 +2249,7 @@
     "id": "h228",
     "char": "早",
     "pinyin": "zǎo",
-    "meaning": "früh; Morgen",
+    "meaning": "früh | Morgen",
     "wordIds": [
       "v273",
       "v274",
@@ -2279,7 +2279,7 @@
     "id": "h231",
     "char": "这",
     "pinyin": "zhè",
-    "meaning": "dieser; das hier",
+    "meaning": "dieser | das hier",
     "wordIds": [
       "v279",
       "v280",
@@ -2293,7 +2293,7 @@
     "id": "h232",
     "char": "真",
     "pinyin": "zhēn",
-    "meaning": "wahr; wirklich; echt",
+    "meaning": "wahr | wirklich | echt",
     "wordIds": [
       "v285"
     ]
@@ -2302,7 +2302,7 @@
     "id": "h233",
     "char": "正",
     "pinyin": "zhèng",
-    "meaning": "gerade; richtig; Bestandteil von 正在",
+    "meaning": "gerade | richtig | Bestandteil von 正在",
     "wordIds": [
       "v286"
     ]
@@ -2311,7 +2311,7 @@
     "id": "h234",
     "char": "知",
     "pinyin": "zhī",
-    "meaning": "wissen; kennen",
+    "meaning": "wissen | kennen",
     "wordIds": [
       "v288"
     ]
@@ -2320,7 +2320,7 @@
     "id": "h235",
     "char": "只",
     "pinyin": "zhī",
-    "meaning": "Zählwort für Tiere und bestimmte Gegenstände; hier zhī, nicht zhǐ",
+    "meaning": "Zählwort für Tiere und bestimmte Gegenstände | hier zhī, nicht zhǐ",
     "wordIds": [
       "v287"
     ]
@@ -2329,7 +2329,7 @@
     "id": "h236",
     "char": "中",
     "pinyin": "zhōng",
-    "meaning": "Mitte; chinesisch, in 中国 und 中文",
+    "meaning": "Mitte | chinesisch, in 中国 und 中文",
     "wordIds": [
       "v289",
       "v290",
@@ -2342,7 +2342,7 @@
     "id": "h237",
     "char": "钟",
     "pinyin": "zhōng",
-    "meaning": "Glocke; Uhr; Bestandteil von 分钟",
+    "meaning": "Glocke | Uhr | Bestandteil von 分钟",
     "wordIds": [
       "v056"
     ]
@@ -2351,7 +2351,7 @@
     "id": "h238",
     "char": "住",
     "pinyin": "zhù",
-    "meaning": "wohnen; bleiben",
+    "meaning": "wohnen | bleiben",
     "wordIds": [
       "v294"
     ]
@@ -2369,7 +2369,7 @@
     "id": "h240",
     "char": "子",
     "pinyin": "zǐ; zi",
-    "meaning": "Kind; Sohn; häufig unbetonte Nomennachsilbe zi",
+    "meaning": "Kind | Sohn | häufig unbetonte Nomennachsilbe zi",
     "wordIds": [
       "v008",
       "v009",
@@ -2395,7 +2395,7 @@
     "id": "h242",
     "char": "租",
     "pinyin": "zū",
-    "meaning": "mieten; vermieten; in 出租车 „Taxi“",
+    "meaning": "mieten | vermieten | in 出租车 „Taxi“",
     "wordIds": [
       "v022"
     ]
@@ -2404,7 +2404,7 @@
     "id": "h243",
     "char": "昨",
     "pinyin": "zuó",
-    "meaning": "vergangen; gestern, in 昨天",
+    "meaning": "vergangen | gestern, in 昨天",
     "wordIds": [
       "v297"
     ]
@@ -2413,7 +2413,7 @@
     "id": "h244",
     "char": "作",
     "pinyin": "zuò",
-    "meaning": "Arbeit; tätig sein; in 工作",
+    "meaning": "Arbeit | tätig sein | in 工作",
     "wordIds": [
       "v063"
     ]
@@ -2422,7 +2422,7 @@
     "id": "h245",
     "char": "坐",
     "pinyin": "zuò",
-    "meaning": "sitzen; mit einem Verkehrsmittel fahren",
+    "meaning": "sitzen | mit einem Verkehrsmittel fahren",
     "wordIds": [
       "v298"
     ]
@@ -2431,7 +2431,7 @@
     "id": "h246",
     "char": "做",
     "pinyin": "zuò",
-    "meaning": "machen; tun; herstellen",
+    "meaning": "machen | tun | herstellen",
     "wordIds": [
       "v299",
       "v300"
