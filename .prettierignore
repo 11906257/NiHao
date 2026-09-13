@@ -1,0 +1,9 @@
+node_modules
+dist
+work
+test-results
+playwright-report
+coverage
+package-lock.json
+src/data/*.json
+public

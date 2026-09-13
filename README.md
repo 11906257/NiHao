@@ -23,17 +23,17 @@ npm run preview -- --base /NiHao/ --port 4173
 
 ## Auf GitHub Pages veröffentlichen
 
-1. Ein GitHub-Repository anlegen und den Inhalt dieses Ordners auf den Branch **main** pushen. Noch ist kein GitHub-Remote eingerichtet.
+1. Das Repository ist `11906257/NiHao`. Änderungen auf **main** lösen den Workflow aus.
 2. Im Repository **Settings → Pages → Build and deployment → Source: GitHub Actions** auswählen.
 3. Der Workflow **Prüfen und GitHub Pages veröffentlichen** läuft bei Push auf `main` und manuell über **Actions → Run workflow**.
 4. Er installiert per `npm ci`, prüft Lernlogik und Curriculum, baut für den Test-Unterpfad, führt mobile Chromium-/WebKit-Tests aus und baut anschließend mit dem tatsächlichen Pages-Pfad. `configure-pages`, `upload-pages-artifact` und `deploy-pages` veröffentlichen das statische `dist/`.
-5. Die veröffentlichte URL erscheint im Deployment. Typisch: `https://USERNAME.github.io/REPOSITORY/`. Root-Repositories und eigene Domains erhalten über `configure-pages` den passenden Basispfad.
+5. Die veröffentlichte URL erscheint im Deployment. Aktuell: `https://11906257.github.io/NiHao/`. Root-Repositories und eigene Domains erhalten über `configure-pages` den passenden Basispfad.
 
-Es gibt keinen Server, Login, API-Schlüssel oder Laufzeit-KI-Dienst. Der Workflow wurde lokal hinsichtlich Build und Tests geprüft; ein echtes GitHub-Deployment setzt dein Repository und aktivierte Pages voraus.
+Es gibt keinen Server, Login, API-Schlüssel oder Laufzeit-KI-Dienst. Die lokale Prüfung veröffentlicht keine Änderungen; das Deployment erfolgt über den GitHub-Workflow.
 
 ## Auf dem iPhone
 
-Die HTTPS-Adresse in Safari öffnen, **Teilen → Zum Home-Bildschirm** wählen und anschließend über das neue Symbol starten. Beim ersten Laden die App vollständig online laden . Curriculum, Übungen und Lernstand funktionieren dann ohne Netzwerk.
+Die HTTPS-Adresse in Safari öffnen, **Teilen → Zum Home-Bildschirm** wählen und anschließend über das neue Symbol starten. Beim ersten Laden die App vollständig online laden. Curriculum, Übungen und Lernstand funktionieren dann ohne Netzwerk.
 
 Für Hörübungen muss eine **lokale Mandarin-Systemstimme** verfügbar sein. Unter iOS lässt sie sich in **Einstellungen → Bedienungshilfen → Gesprochene Inhalte / Lesen & Sprechen → Stimmen → Chinesisch** laden; die Bezeichnung kann je nach iOS-Version abweichen. In der App unter Einstellungen testen. Fehlt die Stimme, bleiben die übrigen Lernbereiche nutzbar; ein echter Hörtest wird nicht durch sichtbaren Text vorgetäuscht.
 
@@ -68,8 +68,18 @@ Beim WebKit-Offlinetest wird ein eigener HTTP-Server mit `Cache-Control: no-stor
 
 Ein globales Sprechtempo (Langsam, Normal, Schnell) steuert sämtliche TTS-Ausgaben. `src/lib/audio.ts` ist die einzige Quelle der Tempostufen; Einstellungen, Reload und Backup-Import aktualisieren denselben Wert.
 
-Die drei Tagesübersichten sind auf kleinen Geräten untereinander angeordnet. Das 你好-Icon, warme Rot-/Gold-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
+Die anklickbaren Karten Wiederholen und Lernpfad stehen auf kleinen Geräten untereinander. Das 你好-Icon, warme Rot-/Gold-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
 
 Alte lokale Profile und Sicherungen bleiben lesbar. Die entfernte Prüfungshistorie wird bei der Validierung ausgelassen; Lernkarten, FSRS-Zustände, Übungen und Lektionen bleiben erhalten. Neue Sicherungen enthalten kein Prüfungsfeld. Der letzte Exportklick wird lokal gespeichert; nach einem Monat erinnert die Übersicht an eine Sicherung.
 
-Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Satzmustern und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.
+Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Grammatik und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.
+
+
+Wortschatz, Hanzi und Grammatik sind Nachschlagebereiche mit Beispielen, Audio und Lektionenbezug. Grammatik folgt der Lektionenreihenfolge. Aktive Grammatikaufgaben bleiben Teil der Lektionen; das separate Tontraining und die isolierten Zeichenübungen sind entfernt. Deren alte Statistiken werden beim Laden/Import verworfen. Bei Hanzi zeigt das CircleCheck-Icon, dass bereits ein zugehöriges Wort begonnen wurde.
+
+Automatisch prüfbare Wortantworten verwenden gepflegte Bedeutungsalternativen und begrenzte Schreibvarianten (Groß-/Kleinschreibung, Satzzeichen, optionale Artikel, ae/oe/ue/ss). Falsche Bedeutungen werden nicht durch unscharfe Ähnlichkeit akzeptiert. Nur freie kommunikative Formulierungen werden weiterhin anhand eines Beispiels selbst eingeschätzt. Pinyin unterstützt Tonzeichen, Tonziffern 1–4 und neutral ohne Ziffer bzw. mit 5. Die Vokaltasten bieten die Unicode-Zeichen ā–ù und ǖ/ǘ/ǚ/ǜ sowie unmarkierte Vokale an; die Tasten erzeugen keine zusätzlichen Silben oder Lerninhalte.
+
+Beim Verlassen einer Einheit bleiben beantwortete Aufgaben gespeichert. Es gibt dafür keinen Bestätigungsdialog. Nur noch ausstehende/fehlgeschlagene Speicherung schützt ein `beforeunload`-Hinweis; ein Backup-Import bestätigt weiterhin das tatsächliche Überschreiben.
+
+
+Der Production-Build setzt explizit Safari 15.4 / Chromium 100 als Syntax-Ziel und liefert Source Maps für nachvollziehbare Fehlerpositionen. Das ist keine Aussage über Tests auf jedem älteren Gerät: automatisiert getestet wird die installierte Playwright-WebKit-Version. Der gemeldete Safari-Syntaxfehler war beim direkten Aufruf der veröffentlichten Seite und im aktuellen Build nicht reproduzierbar. Die weitere Fehlersuche wurde auf Wunsch eingestellt.

@@ -5,15 +5,15 @@ export function normalizeAudioRate(rate: number): number {
 }
 
 export interface AudioCapability {
-  supported: boolean
   available: boolean
-  voiceName: string | null
   message: string
 }
 
 let currentRate: number = AUDIO_RATES.normal
 export function setAudioRate(rate: number): void {
-  currentRate = normalizeAudioRate(rate)
+  const nextRate = normalizeAudioRate(rate)
+  if (nextRate === currentRate) return
+  currentRate = nextRate
   stopAudio()
 }
 
@@ -28,14 +28,11 @@ function chineseVoice(): SpeechSynthesisVoice | undefined {
 }
 
 export function getAudioCapability(): AudioCapability {
-  const engine = synthesis()
   const voice = chineseVoice()
   return {
-    supported: !!engine,
     available: !!voice,
-    voiceName: voice?.name ?? null,
     message: voice
-      ? `Lokale Mandarin-Stimme: ${voice.name}`
+      ? ''
       : 'Keine lokale Mandarin-Stimme verfügbar. Auf dem iPhone unter Einstellungen → Bedienungshilfen → Gesprochene Inhalte → Stimmen eine chinesische Stimme laden. Lesen und Lernen bleiben verfügbar.',
   }
 }
@@ -81,19 +78,25 @@ export async function speakChinese(text: string): Promise<void> {
     utterance.lang = 'zh-CN'
     utterance.rate = rate
     utterance.pitch = 1
+    let settled = false
+    const settle = (error?: Error) => {
+      if (settled) return
+      settled = true
+      clearTimeout(timeout)
+      if (finishCurrent === finish) finishCurrent = undefined
+      if (error) reject(error)
+      else resolve()
+    }
+    const finish = () => settle()
     const timeout = setTimeout(() => {
-      finishCurrent = undefined
+      settle(new Error('Die Systemstimme antwortet nicht. Bitte die Audiotaste erneut antippen.'))
       engine.cancel()
-      reject(new Error('Die Systemstimme antwortet nicht. Bitte die Audiotaste erneut antippen.'))
-    }, Math.max(15000, text.length * 1800 * Math.max(1, 0.9 / rate)))
-    const finish = () => { clearTimeout(timeout); finishCurrent = undefined; resolve() }
+    }, Math.max(15000, text.length * 1800 * Math.max(1, AUDIO_RATES.normal / rate)))
     finishCurrent = finish
     utterance.onend = finish
     utterance.onerror = event => {
-      clearTimeout(timeout)
-      finishCurrent = undefined
-      if (event.error === 'canceled' || event.error === 'interrupted') resolve()
-      else reject(new Error(`Audio konnte nicht abgespielt werden (${event.error}).`))
+      if (event.error === 'canceled' || event.error === 'interrupted') settle()
+      else settle(new Error(`Audio konnte nicht abgespielt werden (${event.error}).`))
     }
     engine.resume()
     engine.speak(utterance)

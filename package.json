@@ -1,7 +1,7 @@
 {
-  "name": "chinese",
+  "name": "nihao",
   "version": "1.0.0",
-  "description": "Private, lokale PWA für den neuen HSK-3.0-Level-1-Prüfungslehrplan",
+  "description": "Private Offline-Lernapp für HSK 3.0 Level 1",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "typecheck": "tsc --noEmit",
@@ -10,7 +10,9 @@
     "build": "npm run typecheck && npm run validate && vite build && node scripts/verify-build.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "test:e2e": "playwright test",
-    "check": "npm run build && npm test"
+    "check": "npm run build && npm test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "keywords": [],
   "author": "",
@@ -30,6 +32,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
     "fake-indexeddb": "^6.2.5",
+    "prettier": "^3.9.6",
     "sharp": "^0.35.4",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2",

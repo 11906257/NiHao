@@ -50,7 +50,7 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung',async({page
  }finally{if(server.listening){server.closeAllConnections();await new Promise<void>(resolve=>server.close(()=>resolve()));}}
 });
 test('Navigation, kleine Breite, Dark Mode und fehlerhafter Import',async({page})=>{
- await appReady(page);await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:'Grammatik',exact:true}).click();await expect(page.getByRole('heading',{name:'Grammatik'})).toBeVisible();await page.locator('.grammar-card').first().click();await page.getByRole('button',{name:'Jetzt anwenden'}).click();await noOverflow(page);page.on('dialog',d=>d.accept());await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:'Einstellungen',exact:true}).click();await page.getByRole('group',{name:'Darstellung',exact:true}).getByRole('button',{name:'Dunkel',exact:true}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await page.getByLabel('Sicherung importieren',{exact:true}).setInputFiles({name:'kaputt.json',mimeType:'application/json',buffer:Buffer.from('{"broken":true}')});await expect(page.getByText(/Die Sicherung ist ungültig/)).toBeVisible();await page.setViewportSize({width:320,height:740});await noOverflow(page);await route(page,'today');await noOverflow(page);await page.getByRole('button',{name:'Meldung schließen'}).click();await page.screenshot({path:`work/screens/mobile-dark-${test.info().project.name}.png`,fullPage:true});
+ await appReady(page);await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:'Grammatik',exact:true}).click();await expect(page.getByRole('heading',{name:'Grammatik'})).toBeVisible();await page.locator('.grammar-card').first().click();await expect(page.getByRole('button',{name:'Jetzt anwenden'})).toHaveCount(0);await page.getByRole('button',{name:'Schließen',exact:true}).click();await noOverflow(page);page.on('dialog',d=>d.accept());await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();await page.getByRole('dialog').getByRole('button',{name:'Einstellungen',exact:true}).click();await page.getByRole('group',{name:'Darstellung',exact:true}).getByRole('button',{name:'Dunkel',exact:true}).click();await expect(page.locator('html')).toHaveAttribute('data-theme','dark');await page.getByLabel('Sicherung importieren',{exact:true}).setInputFiles({name:'kaputt.json',mimeType:'application/json',buffer:Buffer.from('{"broken":true}')});await expect(page.getByText(/Die Sicherung ist ungültig/)).toBeVisible();await page.setViewportSize({width:320,height:740});await noOverflow(page);await route(page,'today');await noOverflow(page);await page.getByRole('button',{name:'Meldung schließen'}).click();await page.screenshot({path:`work/screens/mobile-dark-${test.info().project.name}.png`,fullPage:true});
 });
 
 test('globales Audiotempo auf Wortschatz, Hanzi, Grammatik, Training und Lektionen',async({page})=>{
@@ -79,7 +79,7 @@ test('globales Audiotempo auf Wortschatz, Hanzi, Grammatik, Training und Lektion
 
 });
 
-test('Einstellungsbuttons, linkes Menü und Gedächtnis-Overlay',async({page})=>{
+test('Einstellungsbuttons und linkes Menü',async({page})=>{
  await appReady(page);await expect(page.locator('.bottom-nav')).toHaveCount(0);
  await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();
  await expect(page.getByRole('dialog')).toHaveCSS('left','0px');
@@ -91,9 +91,33 @@ test('Einstellungsbuttons, linkes Menü und Gedächtnis-Overlay',async({page})=>
  await page.getByRole('button',{name:'Menü öffnen',exact:true}).click();
  await page.screenshot({path:`work/screens/drawer-${test.info().project.name}.png`});
  await page.getByRole('dialog').getByRole('button',{name:'Fortschritt',exact:true}).click();
- await expect(page.getByText('FSRS-Stabilität ≥ 14 Tage und Abruf in mindestens zwei Richtungen.',{exact:true})).toHaveCount(0);
- await page.getByRole('button',{name:'Info zur Gedächtnisstabilität',exact:true}).click();
- await expect(page.getByRole('dialog').getByText('FSRS-Stabilität ≥ 14 Tage und Abruf in mindestens zwei Richtungen.',{exact:true})).toBeVisible();
- await page.getByRole('dialog').getByRole('button',{name:'Schließen',exact:true}).click();await expect(page.getByRole('dialog')).toHaveCount(0);
  await expect(page.locator('.curriculum-progress')).toHaveCSS('margin-top','28px');
+});
+
+test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten',async({page})=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+ await appReady(page);
+ await page.getByRole('button',{name:'Wiederholen öffnen',exact:true}).click();await expect(page.getByRole('heading',{name:'Wiederholen',exact:true})).toBeVisible();
+ await route(page,'today');await page.getByRole('button',{name:'Lernpfad öffnen',exact:true}).click();await expect(page.getByRole('heading',{name:'Lernpfad',exact:true})).toBeVisible();
+ await expect(page.locator('.lesson-row.recommended')).toHaveCSS('background-color','rgb(185, 35, 40)');
+ await route(page,'grammar');const ordered=[...grammar].sort((a,b)=>Number(a.lessonId.slice(1))-Number(b.lessonId.slice(1)));await expect(page.locator('.grammar-card h2').first()).toHaveText(ordered[0].title);
+ for(const [name,selector] of [['hanzi','.hanzi-tile'],['grammar','.grammar-card']]){await route(page,name);await page.locator(selector).first().click();await expect(page.getByRole('dialog').getByRole('button',{name:/üben|anwenden/})).toHaveCount(0);await expect(page.getByRole('dialog')).not.toContainText('Lehrplan:');await noOverflow(page);await page.getByRole('button',{name:'Schließen',exact:true}).click();}
+ for(const theme of ['Hell','Dunkel']){
+  await route(page,'settings');await page.getByRole('group',{name:'Darstellung',exact:true}).getByRole('button',{name:theme,exact:true}).click();
+  for(const width of [390,320,1280]){await page.setViewportSize({width,height:844});for(const name of ['today','learn','review','words','hanzi','grammar','training','progress','settings']){await route(page,name);await expect(page.locator('main h1').first()).toBeVisible();await noOverflow(page);}}
+  await page.setViewportSize({width:390,height:844});await route(page,'today');await page.screenshot({path:`work/screens/revised-today-${theme}-${test.info().project.name}.png`,fullPage:true});
+ }
+ expect(errors).toEqual([]);
+});
+
+test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen',async({page})=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('dialog',async d=>{errors.push(`Unerwarteter Dialog: ${d.message()}`);await d.dismiss();});
+ await appReady(page);await route(page,'training');await page.getByRole('button',{name:/Pinyin & Aussprache/}).click();await page.setViewportSize({width:320,height:740});
+ await expect(page.locator('.pinyin-group')).toHaveCount(6);await noOverflow(page);
+ const input=page.getByLabel('Pinyin mit Tonzeichen oder Tonziffern');await input.fill('ni');await input.selectText();await page.getByRole('button',{name:'ǖ: Ton 1',exact:true}).click();await expect(input).toHaveValue('ǖ');
+ const prompt=await page.locator('.exercise-zh').innerText();const word=vocabulary.find(w=>w.hanzi===prompt)!;await input.fill(word.pinyin);await page.getByRole('button',{name:'Antwort prüfen',exact:true}).click();await expect(page.getByRole('heading',{name:'Richtig erinnert.'})).toBeVisible();await noOverflow(page);
+ const known=await page.getByRole('button',{name:'Gewusst',exact:true}).boundingBox();const hard=await page.getByRole('button',{name:'Mit Mühe',exact:true}).boundingBox();const easy=await page.getByRole('button',{name:'Leicht',exact:true}).boundingBox();expect(known!.x).toBeGreaterThan(hard!.x);expect(known!.height).toBeGreaterThanOrEqual(104);expect(easy!.y).toBeGreaterThan(hard!.y);await page.screenshot({path:`work/screens/revised-ratings-${test.info().project.name}.png`,fullPage:true});
+ await page.getByRole('button',{name:'Gewusst',exact:true}).click();await page.getByRole('button',{name:'Lerneinheit verlassen',exact:true}).click();await expect(page.getByRole('heading',{name:'Training',exact:true})).toBeVisible();await route(page,'words');await expect(page.locator('.word-begun')).toHaveCount(1);
+ await route(page,'learn/l01');await page.getByRole('button',{name:'Lektion starten',exact:true}).click();for(let i=0;i<lessons[0].wordIds.length+grammar.filter(g=>g.lessonId==='l01').length;i++)await page.getByRole('button',{name:i===lessons[0].wordIds.length+grammar.filter(g=>g.lessonId==='l01').length-1?'Jetzt aktiv erinnern':'Weiter',exact:true}).click();
+ await page.getByLabel('Deine Antwort auf Deutsch').fill('falsche Antwort');await page.getByRole('button',{name:'Antwort prüfen',exact:true}).click();await expect(page.getByRole('button',{name:'Meine Antwort stimmt sinngemäß'})).toHaveCount(0);await expect(page.getByRole('heading',{name:'Hier ist die Lösung.'})).toBeVisible();expect(errors).toEqual([]);
 });
