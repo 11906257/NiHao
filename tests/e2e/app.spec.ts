@@ -37,7 +37,7 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung',async({page
  // WebKit's emulated offline flag can reject before service-worker dispatch.
  // Stop a dedicated no-store server instead: the cache is the only remaining source.
  const mime:Record<string,string>={html:'text/html',js:'text/javascript',css:'text/css',webmanifest:'application/manifest+json',png:'image/png',svg:'image/svg+xml'};
- const server=createServer(async(req,res)=>{try{const path=(req.url??'').split('?')[0].replace(/^\/chinese\//,'')||'index.html';if(path.includes('..'))throw new Error('bad path');const data=await readFile(resolve('dist',path));res.writeHead(200,{'Content-Type':mime[path.split('.').pop()!]??'application/octet-stream','Cache-Control':'no-store'});res.end(data);}catch{res.writeHead(404);res.end('not found');}});
+ const server=createServer(async(req,res)=>{try{const path=(req.url??'').split('?')[0].replace(/^\/NiHao\//,'')||'index.html';if(path.includes('..'))throw new Error('bad path');const data=await readFile(resolve('dist',path));res.writeHead(200,{'Content-Type':mime[path.split('.').pop()!]??'application/octet-stream','Cache-Control':'no-store'});res.end(data);}catch{res.writeHead(404);res.end('not found');}});
  await new Promise<void>(resolve=>server.listen(0,'127.0.0.1',resolve));
  const origin=`http://127.0.0.1:${(server.address() as AddressInfo).port}/NiHao/`;
  try{
