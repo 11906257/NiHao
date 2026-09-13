@@ -39,10 +39,10 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung',async({page
  const mime:Record<string,string>={html:'text/html',js:'text/javascript',css:'text/css',webmanifest:'application/manifest+json',png:'image/png',svg:'image/svg+xml'};
  const server=createServer(async(req,res)=>{try{const path=(req.url??'').split('?')[0].replace(/^\/chinese\//,'')||'index.html';if(path.includes('..'))throw new Error('bad path');const data=await readFile(resolve('dist',path));res.writeHead(200,{'Content-Type':mime[path.split('.').pop()!]??'application/octet-stream','Cache-Control':'no-store'});res.end(data);}catch{res.writeHead(404);res.end('not found');}});
  await new Promise<void>(resolve=>server.listen(0,'127.0.0.1',resolve));
- const origin=`http://127.0.0.1:${(server.address() as AddressInfo).port}/chinese/`;
+ const origin=`http://127.0.0.1:${(server.address() as AddressInfo).port}/NiHao/`;
  try{
  await page.goto(origin);await expect(page.getByRole('heading',{name:'Heute'})).toBeVisible();await page.evaluate(async()=>{await navigator.serviceWorker.ready;});await page.reload();await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
- const manifest=await page.request.get(new URL('manifest.webmanifest',origin).href);expect(manifest.ok()).toBe(true);const data=await manifest.json();expect(data.scope).toBe('/chinese/');expect(data.start_url).toBe('/chinese/');expect(data.display).toBe('standalone');
+ const manifest=await page.request.get(new URL('manifest.webmanifest',origin).href);expect(manifest.ok()).toBe(true);const data=await manifest.json();expect(data.scope).toBe('/NiHao/');expect(data.start_url).toBe('/NiHao/');expect(data.display).toBe('standalone');
  server.closeAllConnections();await new Promise<void>(resolve=>server.close(()=>resolve()));
  if(browserName==='chromium')await context.setOffline(true);
  expect(await page.evaluate(async()=>{try{await fetch('/network-check-never-cached');return false;}catch{return true;}})).toBe(true);
