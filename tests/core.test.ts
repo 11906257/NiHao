@@ -83,10 +83,10 @@ describe('FSRS and retrieval selection', () => {
 })
 
 describe('complete backup boundary', () => {
-  it('preserves settings, lessons, Hanzi/grammar practice', () => {
+  it('preserves settings, lessons, grammar/task practice', () => {
     let profile = completeLesson(reviewed(), 'lesson-01', now)
     profile = recordPractice(profile, 'g001', true, now)
-    profile = recordPractice(profile, 'h-4eba', false, now)
+    profile = recordPractice(profile, 't001', false, now)
     profile.settings = { theme: 'dark', audioRate: 0.8 }
     const restored = parseBackup(exportBackup(profile, now), validIds, ['lesson-01'])
     expect(restored).toEqual(profile)

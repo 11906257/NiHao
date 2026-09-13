@@ -39,4 +39,8 @@ Die jüngste [CTI-Ankündigung zum weltweiten Start](https://admin.chinesetest.c
 
 [GitHub Pages: eigene Workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [Vite: statisches Deployment](https://vite.dev/guide/static-deploy), [Vite PWA](https://vite-pwa-org.netlify.app/guide/). Die App liefert alle Kernressourcen lokal aus. Audio verwendet ausschließlich vom Browser als lokal ausgewiesene Mandarin-Systemstimmen; keine externen TTS-Aufnahmen oder kommerziellen Lehrbuchinhalte werden mitgeliefert.
 
-Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Satzmustern und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.
+Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Grammatik und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.
+
+
+### Pinyin-Eingabezeichen
+Die ü-Tonzeichen ǖ, ǘ, ǚ, ǜ sind in der [Unicode-Zeichenliste Latin Extended-B](https://www.unicode.org/charts/nameslist/n_0180.html) unter U+01D6, U+01D8, U+01DA und U+01DC dokumentiert. Die Tastatur gruppiert gültige Vokalzeichen; sie behauptet nicht, dass jede Kombination aus beliebiger Silbe und Ton ein Mandarin-Wort bildet. Unmarkierte Vokale bleiben für Neutralton und normale Eingabe verfügbar.

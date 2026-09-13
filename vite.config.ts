@@ -5,6 +5,8 @@ const base = process.env.BASE_PATH || '/';
 if (!base.startsWith('/') || !base.endsWith('/')) throw new Error('BASE_PATH muss mit / beginnen und enden.');
 export default defineConfig({
   base,
+  // Keep emitted syntax compatible with Safari 15.4+, which supplies our required web APIs.
+  build: { target: ['safari15.4', 'chrome100'], sourcemap: true },
   plugins: [react(), VitePWA({
     // App activates waiting updates automatically when no learning or save is in progress.
     registerType: 'prompt',

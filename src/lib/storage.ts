@@ -67,18 +67,6 @@ export async function restoreBackup(json: string, validIds: Iterable<string>, va
   return profile
 }
 
-export async function resetProfile(): Promise<Profile> {
-  const profile = createProfile()
-  await saveProfile(profile)
-  return profile
-}
-
-export async function requestPersistentStorage(): Promise<boolean> {
-  if (typeof navigator === 'undefined' || !navigator.storage?.persist) return false
-  if (await navigator.storage.persisted()) return true
-  return navigator.storage.persist()
-}
-
 /** Closes the connection, for clean app/test lifecycles; does not erase data. */
 export async function closeStorage(): Promise<void> {
   await pendingWrite

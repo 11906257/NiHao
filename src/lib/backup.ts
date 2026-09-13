@@ -122,7 +122,13 @@ export function validateProfile(
   keys(settings, ['theme', 'audioRate'])
   if (!['light', 'dark', 'system'].includes(settings.theme as string)) fail('Unbekanntes Farbschema.')
   number(settings.audioRate, 'Sprechtempo', 0.1, 1.2)
-  const practice = object(profile.practice, 'Weitere Übungen')
+  const practice = { ...object(profile.practice, 'Weitere Übungen') }
+  // Migration only: retired lookup/tone exercises must not block existing profiles.
+  for (const key of Object.keys(practice)) {
+    const hanziId = /^h(\d{3})$/.exec(key)
+    if ((hanziId && Number(hanziId[1]) >= 1 && Number(hanziId[1]) <= 246) || /^tone-[1-5]$/.test(key)) delete practice[key]
+  }
+  profile.practice = practice
   if (Object.keys(practice).length > 10000) fail('Zu viele Übungen.')
   for (const [exerciseId, rawStats] of Object.entries(practice)) {
     id(exerciseId)

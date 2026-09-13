@@ -1,6 +1,8 @@
+import topics from '../src/data/topics.json';
+import official from '../src/data/official.json';
 import assert from 'node:assert/strict';
-import { vocabulary, hanzi, grammar, lessons, topics, tasks, official } from '../src/data/curriculum';
-import { grammarExercise, hanziExercise, taskExercise, wordExercise } from '../src/lib/exercises';
+import { vocabulary, hanzi, grammar, lessons, tasks } from '../src/data/curriculum';
+import { grammarExercise, taskExercise, wordExercise } from '../src/lib/exercises';
 const ids=new Set<string>();
 function unique(id:string){assert(id&&typeof id==='string', 'Fehlende ID');assert(!ids.has(id),`Doppelte ID: ${id}`);ids.add(id);}
 function fields(item:object,names:string[]){for(const key of names)assert(typeof (item as Record<string,unknown>)[key]==='string'&&String((item as Record<string,unknown>)[key]).trim(),`Leeres Feld ${key} in ${JSON.stringify(item).slice(0,100)}`);}
@@ -14,7 +16,7 @@ exact(topics,official.topics,t=>`${t.id}|${t.sourceLabel}`,t=>`${t.id}|${t.sourc
 exact(tasks,official.tasks,t=>`${t.id}|${t.sourceLabel}`,t=>`${t.id}|${t.sourceLabel}`,'Teilkompetenzen');
 const words=new Map(vocabulary.map(w=>[w.id,w])),lessonSet=new Set(lessons.map(l=>l.id));
 for(const w of vocabulary){unique(w.id);fields(w,['hanzi','pinyin','meaning','lessonId']);assert.equal(w.id,`v${String(w.sourceIndex).padStart(3,'0')}`);assert(lessonSet.has(w.lessonId));example(w.example);assert(w.example.zh.includes(w.hanzi),`${w.id}: Zielwort fehlt im Kontext`);for(const skill of ['meaning','production','pinyin','listening','context'] as const){const e=wordExercise(w,skill,vocabulary);unique(e.id);assert(e.answer&&e.explanation);assert.equal(e.vocabularyId,w.id);if(e.options){assert(e.options.length>=2,`${w.id} zu wenige sinnvolle Optionen`);assert.equal(new Set(e.options).size,e.options.length);assert(e.options.includes(e.answer));}}}
-for(const h of hanzi){unique(h.id);fields(h,['char','pinyin','meaning']);assert(h.wordIds.length);for(const id of h.wordIds)assert(words.get(id)?.hanzi.includes(h.char),`${h.id}: kaputter Wortbezug ${id}`);unique(hanziExercise(h).id);}
+for(const h of hanzi){unique(h.id);fields(h,['char','pinyin','meaning']);assert(h.wordIds.length);for(const id of h.wordIds)assert(words.get(id)?.hanzi.includes(h.char),`${h.id}: kaputter Wortbezug ${id}`);}
 for(const g of grammar){unique(g.id);fields(g,['sourceLabel','title','explanation','pattern','lessonId']);assert(lessonSet.has(g.lessonId));example(g.example);unique(g.exercise.id);assert(g.exercise.options.includes(g.exercise.answer));assert(new Set(g.exercise.options).size===g.exercise.options.length);assert.equal(grammarExercise(g).practiceId,g.id);}
 for(const t of topics){unique(t.id);fields(t,['sourceLabel','title','description']);}
 for(const t of tasks){unique(t.id);fields(t,['sourceLabel','title','description']);example(t.example);unique(taskExercise(t).id);}
