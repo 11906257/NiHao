@@ -17,3 +17,7 @@ export function Empty({title,children,icon}:{title:string;children:ReactNode;ico
 export function ToggleGroup<T extends string|number>({label,value,options,onChange}:{label:string;value:T;options:{value:T;label:string}[];onChange:(value:T)=>void}){
  return <div className="toggle-group" role="group" aria-label={label}>{options.map(option=><button type="button" key={option.value} aria-pressed={value===option.value} onClick={()=>onChange(option.value)}>{option.label}</button>)}</div>;
 }
+
+export function ExampleTranslation({example}:{example:{zh:string;pinyin:string;de:string}}){
+ return <div className="translation-box"><section className="translation-chinese" aria-label="Chinesischer Beispielsatz"><div className="translation-heading"><span>Chinesisch</span><AudioButton text={example.zh}/></div><p className="chinese" lang="zh-CN">{example.zh}</p><p className="pinyin" lang="zh-Latn">{example.pinyin}</p></section><section className="translation-german" aria-label="Deutsche Übersetzung"><div className="translation-heading"><span>Deutsch</span></div><p lang="de">{example.de}</p></section></div>;
+}

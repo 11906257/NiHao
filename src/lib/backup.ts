@@ -115,9 +115,11 @@ export function validateProfile(
     if (attempts !== fsrs.reps) fail('Wiederholungszahl und Fähigkeitsstatistik stimmen nicht überein.')
     if (fsrs.reps > 0 && latestPractice !== fsrs.last_review) fail('Das letzte Übungsdatum stimmt nicht mit dem Wiederholungszustand überein.')
   }
-  const settings = object(profile.settings, 'Einstellungen')
-  keys(settings, ['dailyNew', 'theme', 'audioRate'])
-  count(settings.dailyNew, 'Neue Wörter pro Tag', 50)
+  const settings = { ...object(profile.settings, 'Einstellungen') }
+  // Compatibility with profiles created before lesson-only learning.
+  delete settings.dailyNew
+  profile.settings = settings
+  keys(settings, ['theme', 'audioRate'])
   if (!['light', 'dark', 'system'].includes(settings.theme as string)) fail('Unbekanntes Farbschema.')
   number(settings.audioRate, 'Sprechtempo', 0.1, 1.2)
   const practice = object(profile.practice, 'Weitere Übungen')

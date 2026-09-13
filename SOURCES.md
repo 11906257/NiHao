@@ -28,13 +28,15 @@ Die jüngste [CTI-Ankündigung zum weltweiten Start](https://admin.chinesetest.c
 | Prinzip | Evidenz | Konkrete Umsetzung |
 | --- | --- | --- |
 | Aktives Erinnern | [Roediger & Karpicke 2006](https://doi.org/10.1111/j.1467-9280.2006.01693.x), [McDermott 2021, Review](https://www.annualreviews.org/content/journals/10.1146/annurev-psych-010419-051019) | Erst Antwort erzeugen, dann Feedback. Freie Bedeutung, Form, Pinyin, Hörabruf und Kontext. |
-| Verteilte Wiederholung | [Cepeda et al. 2006, Meta-Analyse](https://digitalcommons.usf.edu/psy_facpub/1771/), [Pavlik & Anderson 2005, Wortschatzexperiment](https://pubmed.ncbi.nlm.nih.gov/21702785/) | Adaptive Fälligkeiten; Reviews vor Neuwörtern. |
+| Verteilte Wiederholung | [Cepeda et al. 2006, Meta-Analyse](https://digitalcommons.usf.edu/psy_facpub/1771/), [Pavlik & Anderson 2005, Wortschatzexperiment](https://pubmed.ncbi.nlm.nih.gov/21702785/) | Adaptive Fälligkeiten; Wiederholungen vor neuen Lektionen. |
 | Korrektives Feedback | [Butler & Roediger 2008](https://pubmed.ncbi.nlm.nih.gov/18491500/) | Richtige Antwort mit Erklärung; Fehler später in der Einheit und früher im Zeitplan erneut abrufen. |
 | Gezieltes Mischen | [Brunmair & Richter 2019, Meta-Analyse](https://pubmed.ncbi.nlm.nih.gov/31556629/) | Nutzen hängt vom Material ab, bei Wortmaterial Vorteil geblockter Einführung. Daher thematische Erstlektionen und spätere gezielte Abrufwechsel. |
 | Hilfen und kognitive Belastung | [IES Practice Guide, Pashler et al. 2007](https://ies.ed.gov/ncee/wwc/PracticeGuide/1) | Kleine Portionen, Beispiele, Pinyin beim Kennenlernen und später auf Wunsch; kein ablenkendes Belohnungssystem. |
 
-[ts-fsrs-Dokumentation](https://open-spaced-repetition.github.io/ts-fsrs/) und [Quellcode](https://github.com/open-spaced-repetition/ts-fsrs): Zielretention 0,90, keine selbst erfundenen festen Intervalle. Ein Zustand pro Wort plus getrennte Fähigkeitszählwerte vermeidet fünf parallele Kartenstapel. Der Standard von 20 neuen Wörtern täglich und die Rückstandsgrenzen sind anpassbare Produktentscheidungen, kein wissenschaftlich bestimmtes Optimum. Die Forschung stützt die Prinzipien, nicht einen Wirksamkeitsnachweis dieser konkreten App.
+[ts-fsrs-Dokumentation](https://open-spaced-repetition.github.io/ts-fsrs/) und [Quellcode](https://github.com/open-spaced-repetition/ts-fsrs): Zielretention 0,90, keine selbst erfundenen festen Intervalle. Ein Zustand pro Wort plus getrennte Fähigkeitszählwerte vermeidet fünf parallele Kartenstapel. Die Forschung stützt die Prinzipien, nicht einen Wirksamkeitsnachweis dieser konkreten App.
 
 ## Technische Primärquellen
 
 [GitHub Pages: eigene Workflows](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages), [Vite: statisches Deployment](https://vite.dev/guide/static-deploy), [Vite PWA](https://vite-pwa-org.netlify.app/guide/). Die App liefert alle Kernressourcen lokal aus. Audio verwendet ausschließlich vom Browser als lokal ausgewiesene Mandarin-Systemstimmen; keine externen TTS-Aufnahmen oder kommerziellen Lehrbuchinhalte werden mitgeliefert.
+
+Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Satzmustern und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lernpfad. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.

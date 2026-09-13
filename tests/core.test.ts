@@ -3,7 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { deleteDB, openDB } from 'idb'
 import {
   chooseSkill, completeLesson, createProfile, deserializeCard, getDueCards, getSkillSummary,
-  getTodayPlan, HISTORY_LIMIT, recordPractice, reviewVocabulary, serializeCard, type Profile,
+  HISTORY_LIMIT, recordPractice, reviewVocabulary, serializeCard, type Profile,
 } from '../src/lib/scheduler'
 import { exportBackup, MAX_BACKUP_BYTES, parseBackup, validateProfile } from '../src/lib/backup'
 import { closeStorage, DATABASE_NAME, loadProfile, restoreBackup, saveProfile } from '../src/lib/storage'
@@ -60,29 +60,6 @@ describe('FSRS and retrieval selection', () => {
     expect(() => reviewVocabulary(profile, '__proto__', 'meaning', 'good', now)).toThrow(/ID/)
   })
 
-  it('counts newly introduced words per local calendar day, not review count', () => {
-    const localEvening = new Date(2026, 8, 12, 23, 55)
-    const morning = new Date(2026, 8, 13, 0, 5)
-    let profile = createProfile(localEvening)
-    profile.settings.dailyNew = 2
-    profile = reviewVocabulary(profile, 'v001', 'meaning', 'easy', localEvening)
-    expect(getTodayPlan(profile, validIds, localEvening).newIds).toEqual(['v002'])
-    expect(getTodayPlan(profile, validIds, morning).newIds).toEqual(['v002', 'v003'])
-    profile.settings.dailyNew = 0
-    expect(getTodayPlan(profile, validIds, morning).newAllowance).toBe(0)
-  })
-
-  it('reduces new content when reviews accumulate and preserves pedagogical order', () => {
-    let profile = createProfile(now)
-    for (let index = 0; index < 30; index++) {
-      profile = reviewVocabulary(profile, `v${index}`, 'meaning', 'again', now)
-    }
-    const plan = getTodayPlan(profile, ['next-b', 'next-a'], new Date('2026-09-13T10:00:00.000Z'))
-    expect(plan.dueIds).toHaveLength(30)
-    expect(plan.newIds).toEqual([])
-    expect(plan.newAllowance).toBe(0)
-  })
-
   it('bounds raw history while preserving cumulative retrieval counts', () => {
     let profile = reviewed()
     const card = profile.cards.v001!
@@ -110,7 +87,7 @@ describe('complete backup boundary', () => {
     let profile = completeLesson(reviewed(), 'lesson-01', now)
     profile = recordPractice(profile, 'g001', true, now)
     profile = recordPractice(profile, 'h-4eba', false, now)
-    profile.settings = { dailyNew: 4, theme: 'dark', audioRate: 0.8 }
+    profile.settings = { theme: 'dark', audioRate: 0.8 }
     const restored = parseBackup(exportBackup(profile, now), validIds, ['lesson-01'])
     expect(restored).toEqual(profile)
     expect(restored.cards.v001!.fsrs.reps).toBe(1)
@@ -126,7 +103,7 @@ describe('complete backup boundary', () => {
     ['missing skill', (p: Profile) => { delete (p.cards.v001!.skills as Partial<typeof p.cards.v001.skills>).meaning }],
     ['unknown review reference', (p: Profile) => { p.history[0]!.vocabularyId = 'v002' }],
     ['inconsistent history date', (p: Profile) => { p.history[0]!.at = '2026-09-20T10:00:00.000Z' }],
-    ['unsupported settings', (p: Profile) => { p.settings.dailyNew = 100 }],
+    ['unsupported settings', (p: Profile) => { p.settings.audioRate = 100 }],
     ['unknown lesson', (p: Profile) => { p.completedLessons = ['unknown-lesson'] }],
   ])('rejects %s without treating malformed data as a partial restore', (_name, mutate) => {
     const backup = JSON.parse(exportBackup(reviewed(), now))
@@ -195,7 +172,7 @@ describe('IndexedDB persistence', () => {
 
 it('migrates previous profiles without losing learning progress', () => {
   const profile = reviewed()
-  const legacy = { ...profile, exams: [{id: 'old-exam'}] }
+  const legacy = { ...profile, settings: {...profile.settings,dailyNew:20}, exams: [{id: 'old-exam'}] }
   expect(validateProfile(legacy, validIds)).toEqual(profile)
   expect(validateProfile(legacy, validIds)).not.toHaveProperty('exams')
 })
