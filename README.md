@@ -15,8 +15,8 @@ Die ausgegebene lokale Adresse öffnen. Die Entwicklungsansicht registriert kein
 
 ```sh
 npm run check
-BASE_PATH=/chinese/ npm run build
-npm run preview -- --base /chinese/ --port 4173
+BASE_PATH=/NiHao/ npm run build
+npm run preview -- --base /NiHao/ --port 4173
 ```
 
 `check` führt Typecheck, Curriculum-Validierung, Production Build und die Unit-Tests aus. Ohne `BASE_PATH` wird für `/` gebaut. Unterpfade müssen mit `/` beginnen und enden. Hash-Navigation (`#/learn/l01`) vermeidet GitHub-Pages-404s beim Neuladen.
@@ -44,7 +44,7 @@ Safari und die installierte PWA können getrennte Datenbereiche besitzen. Lernst
 ```sh
 npm test
 npm run validate
-BASE_PATH=/chinese/ npm run build
+BASE_PATH=/NiHao/ npm run build
 npx playwright install chromium webkit
 npm run test:e2e
 ```
