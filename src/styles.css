@@ -236,9 +236,6 @@ button.card {
   padding: 8px 0;
   text-decoration: none;
 }
-.full {
-  width: 100%;
-}
 .actions {
   display: flex;
   align-items: center;
@@ -557,10 +554,6 @@ select {
   margin: 24px 0;
   background: var(--surface);
 }
-.empty > svg {
-  color: var(--interactive);
-  margin-bottom: var(--space-4);
-}
 .empty p {
   color: var(--muted);
   max-width: 480px;
@@ -617,11 +610,6 @@ select {
   color: var(--muted);
   margin-bottom: var(--space-2);
 }
-.grammar-card .text-button {
-  margin-top: auto;
-  justify-content: flex-start;
-  font-size: var(--text-sm);
-}
 .pattern {
   border-left: 3px solid var(--primary);
   padding: 16px 16px;
@@ -647,10 +635,6 @@ select {
   width: 28px;
   margin-bottom: 24px;
 }
-.training-card p {
-  font-size: var(--text-base);
-  color: var(--muted);
-}
 .training-card .text-button {
   justify-content: flex-start;
 }
@@ -672,8 +656,7 @@ select {
   flex-direction: column;
   align-items: flex-start;
   gap: var(--space-4);
-  border-top: 1px solid var(--border);
-  padding: 24px 0;
+  padding: 0 0 24px;
 }
 .setting-row .toggle-group {
   display: grid;
@@ -695,10 +678,6 @@ select {
 }
 .setting-row strong {
   font-size: var(--text-base);
-}
-.setting-row .muted {
-  font-size: var(--text-sm);
-  line-height: 1.6;
 }
 .file-button {
   position: relative;
@@ -908,9 +887,6 @@ select {
   font-weight: 400;
   margin: 24px 0 0;
   letter-spacing: 0.04em;
-}
-.intro-card > .button {
-  margin-top: 8px;
 }
 .intro-card > h1:not(.intro-hanzi) {
   margin-top: 24px;
@@ -1200,7 +1176,7 @@ select {
   .word-card .pinyin {
     font-size: var(--text-xs);
   }
-  .word-begun {
+  .word-known {
     padding: 8px;
   }
   .lesson-row {
@@ -1328,11 +1304,6 @@ select {
   .training-card h3 {
     overflow-wrap: anywhere;
   }
-  .training-card p {
-    font-size: var(--text-base);
-    line-height: 1.7;
-    margin-bottom: var(--space-2);
-  }
   .training-card .text-button {
     font-size: var(--text-xs);
     margin-top: auto;
@@ -1349,16 +1320,12 @@ select {
   .setting-row {
     flex-wrap: wrap;
     gap: 16px;
-    padding: 16px 0;
   }
   .setting-row > span {
     width: 100%;
   }
   .setting-row strong {
     font-size: var(--text-sm);
-  }
-  .setting-row .muted {
-    font-size: var(--text-xs);
   }
   .settings-section .actions {
     display: flex;
@@ -1497,9 +1464,6 @@ select {
   }
   .training-grid {
     grid-template-columns: 1fr;
-  }
-  .training-card p {
-    font-size: var(--text-base);
   }
   .intro-card,
   .exercise-card {
@@ -1673,19 +1637,20 @@ select {
   background: var(--surface-alt);
 }
 .lesson-row.recommended {
-  background: var(--surface);
-  border-color: var(--accent);
+  background: color-mix(in srgb, var(--primary) 9%, var(--surface));
 }
-.lesson-row.recommended .lesson-number,
+.lesson-row.recommended:hover {
+  background: color-mix(in srgb, var(--primary) 15%, var(--surface));
+}
 .lesson-row.recommended .pill {
   background: var(--primary-soft);
-  color: var(--nav);
+  color: var(--primary);
   border-color: transparent;
 }
 .lesson-row.recommended:focus-visible {
   outline-color: var(--interactive);
 }
-.word-begun {
+.word-known {
   padding: 0;
   background: none;
   border-radius: 0;
@@ -2148,7 +2113,7 @@ label,
   stroke-width: 7;
 }
 .ring-track {
-  stroke: var(--surface-alt);
+  stroke: color-mix(in srgb, var(--muted) 45%, var(--surface));
 }
 .ring-value {
   stroke: var(--primary);
@@ -2254,11 +2219,7 @@ label,
 }
 .focus-footer {
   display: grid;
-  gap: 8px;
-  max-width: 240px;
-}
-.focus-footer > span {
-  font-size: var(--text-xs);
+  align-self: stretch;
 }
 .today-focus .button.primary {
   background: var(--on-primary);
@@ -2275,10 +2236,6 @@ label,
 .home-tile:hover {
   background: color-mix(in srgb, var(--accent) 23%, var(--surface));
 }
-.settings-link {
-  justify-self: start;
-  color: var(--muted);
-}
 @media (max-width: 600px) {
   .today-focus {
     gap: 16px;
@@ -2287,14 +2244,60 @@ label,
   .focus-body h3 {
     font-size: 18px;
   }
-  .focus-footer {
-    max-width: 136px;
-  }
 }
 
 .focus-footer .button {
   width: 64px;
-  height: 48px;
+  height: auto;
+  min-height: 0;
   padding: 0;
   justify-content: center;
+}
+
+.settings-tile {
+  background: var(--surface);
+  border-color: var(--border);
+}
+.settings-tile:hover {
+  background: var(--surface-alt);
+}
+.text-button,
+.character-words button {
+  border-radius: var(--radius-control);
+}
+.word-preview > span {
+  font-family: var(--font-calligraphy);
+  font-size: 24px;
+}
+.settings-section > h2 {
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+.intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+.grammar-card {
+  position: relative;
+  padding-right: 56px;
+}
+.grammar-card > .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.grammar-chevron {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+}
+.empty h3 {
+  margin: 0;
 }

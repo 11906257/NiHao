@@ -32,6 +32,7 @@ import {
 import type { Vocabulary, Hanzi, Grammar } from './data/types'
 import {
   chooseSkill,
+  isKnownWord,
   completeLesson,
   getReviewPlan,
   recordPractice,
@@ -443,30 +444,21 @@ export default function App() {
                   plan.dueIds.length
                     ? beginReview(plan.dueIds.slice(0, 20))
                     : profile.completedLessons.length < lessons.length
-                      ? beginLesson(nextLesson.id)
+                      ? navigate(`learn/${nextLesson.id}`)
                       : navigate('learn')
                 }
               >
                 <ArrowRight size={24} />
               </button>
-              <span>
-                {plan.dueIds.length ? `${Math.min(plan.dueIds.length, 20)} Wörter in dieser Einheit` : null}
-              </span>
             </div>
           </section>
         </div>
         <div className="home-progress">
           <ProgressCard
             label="Bekannte Wörter"
-            value={
-              Object.values(profile.cards).filter(
-                (card) =>
-                  card.fsrs.stability >= 14 &&
-                  Object.values(card.skills).filter((skill) => skill.correct > 0).length >= 2,
-              ).length
-            }
+            value={Object.values(profile.cards).filter(isKnownWord).length}
             max={vocabulary.length}
-            onOpen={() => navigate('review')}
+            onOpen={() => navigate('words')}
           />
           <ProgressCard
             label="Lektionen"
@@ -509,7 +501,7 @@ export default function App() {
               key={id}
               word={wordById[id]}
               onClick={() => setSelectedWord(wordById[id])}
-              begun={!!profile.cards[id]}
+              known={isKnownWord(profile.cards[id])}
             />
           ))}
         </div>
@@ -604,13 +596,12 @@ export default function App() {
             </div>
           </div>
         ) : (
-          <Empty
-            title={learned ? 'Keine Wörter fällig' : 'Noch keine Wörter gelernt'}
-            icon={<CircleCheck size={36} />}
-          >
-            <button className="button primary" onClick={() => navigate(learned ? 'training' : 'learn')}>
-              {learned ? 'Zum Training' : 'Zu den Lektionen'} <ArrowRight size={18} />
-            </button>
+          <Empty title={learned ? 'Keine Wörter fällig.' : 'Noch keine Wörter gelernt.'}>
+            {!learned && (
+              <button className="button primary" onClick={() => navigate('learn')}>
+                Zu den Lektionen <ArrowRight size={18} />
+              </button>
+            )}
           </Empty>
         )}
         {learned > 0 && (
@@ -649,7 +640,7 @@ export default function App() {
     const filtered = vocabulary.filter(
       (w) =>
         searchText(`${w.hanzi} ${w.pinyin} ${w.meaning}`).includes(searchText(search)) &&
-        (filter === 'all' || (filter === 'begun' ? !!profile.cards[w.id] : !profile.cards[w.id])),
+        (filter === 'all' || (filter === 'known' ? isKnownWord(profile.cards[w.id]) : !profile.cards[w.id])),
     )
     content = (
       <>
@@ -661,7 +652,7 @@ export default function App() {
             value={filter}
             options={[
               { value: 'all', label: 'Alle' },
-              { value: 'begun', label: 'Begonnen' },
+              { value: 'known', label: 'Bekannt' },
               { value: 'new', label: 'Neu' },
             ]}
             onChange={setFilter}
@@ -670,7 +661,12 @@ export default function App() {
         <p className="small muted">{filtered.length} Wörter</p>
         <div className="word-card-grid">
           {filtered.map((w) => (
-            <WordCard key={w.id} word={w} onClick={() => setSelectedWord(w)} begun={!!profile.cards[w.id]} />
+            <WordCard
+              key={w.id}
+              word={w}
+              onClick={() => setSelectedWord(w)}
+              known={isKnownWord(profile.cards[w.id])}
+            />
           ))}
         </div>
         {!filtered.length && <Empty title="Keine Wörter gefunden." />}
@@ -712,14 +708,13 @@ export default function App() {
           {filtered.map((g) => (
             <button className="card grammar-card" key={g.id} onClick={() => setSelectedGrammar(g)}>
               <span className="eyebrow">
-                Lektion {Number(g.lessonId.slice(1))} {profile.practice[g.id]?.attempts > 0 && '· Geübt'}
+                Lektion {Number(g.lessonId.slice(1))}{' '}
+                {profile.practice[g.id]?.attempts > 0 && <CircleCheck size={18} aria-label="Geübt" />}
               </span>
               <h3>{g.title}</h3>
               <p className="pattern small-pattern">{g.pattern}</p>
               <p>{g.explanation}</p>
-              <span className="text-button">
-                Ansehen <ArrowRight size={16} />
-              </span>
+              <ChevronRight className="grammar-chevron" size={20} />
             </button>
           ))}
         </div>
@@ -762,20 +757,9 @@ export default function App() {
                 <Headphones />
               )}
               <h3>{skillLabels[skill]}</h3>
-              <p>
-                {skill === 'listening'
-                  ? 'Hören → Bedeutung'
-                  : skill === 'context'
-                    ? 'Bedeutung im Satz erkennen'
-                    : skill === 'production'
-                      ? 'Deutsch → Chinesisch'
-                      : 'Zeichen → Pinyin'}
-              </p>
+
               <span className="text-button">
-                {skill === 'listening' && !audio.available
-                  ? 'Lokale Mandarin-Stimme benötigt'
-                  : 'Training starten'}{' '}
-                <ArrowRight size={16} />
+                Training starten <ArrowRight size={16} />
               </span>
             </button>
           ))}
@@ -934,7 +918,6 @@ export default function App() {
           title="Zeichen"
           hanzi={selectedHanzi.char}
           pinyin={selectedHanzi.pinyin}
-          meaning={selectedHanzi.meaning}
           onClose={() => setSelectedHanzi(null)}
         >
           <section className="lookup-related">

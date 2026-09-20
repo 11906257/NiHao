@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { deleteDB, openDB } from 'idb'
 import {
   chooseSkill,
+  isKnownWord,
   completeLesson,
   createProfile,
   deserializeCard,
@@ -251,4 +252,16 @@ it('migrates previous profiles without losing learning progress', () => {
   const legacy = { ...profile, settings: { ...profile.settings, dailyNew: 20 }, exams: [{ id: 'old-exam' }] }
   expect(validateProfile(legacy, validIds)).toEqual(profile)
   expect(validateProfile(legacy, validIds)).not.toHaveProperty('exams')
+})
+
+it('counts known words only after stable recall in two directions', () => {
+  expect(isKnownWord()).toBe(false)
+  const profile = reviewVocabulary(createProfile(now), 'v001', 'meaning', 'good', now)
+  const card = profile.cards.v001
+  card.fsrs.stability = 14
+  expect(isKnownWord(card)).toBe(false)
+  card.skills.production = { attempts: 1, correct: 1, lastPracticed: now.toISOString() }
+  expect(isKnownWord(card)).toBe(true)
+  card.fsrs.stability = 13.9
+  expect(isKnownWord(card)).toBe(false)
 })

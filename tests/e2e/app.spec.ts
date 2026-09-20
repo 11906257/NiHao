@@ -92,6 +92,8 @@ test('mobile Lektionen, Abruf, Speicherung und Backup', async ({ page }) => {
   await noOverflow(page)
   await page.screenshot({ path: `work/screens/today-${test.info().project.name}.png`, fullPage: true })
   await page.getByRole('button', { name: 'Nächste Lektion starten', exact: true }).click()
+  await expect(page).toHaveURL(/#\/learn\/l01$/)
+  await page.getByRole('button', { name: 'Lektion starten', exact: true }).click()
   const lesson = lessons[0]
   const gs = grammar.filter((g) => g.lessonId === lesson.id)
   for (let i = 0; i < lesson.wordIds.length + gs.length; i++)
@@ -325,10 +327,10 @@ test('globales Audiotempo auf Wortschatz, Zeichen, Grammatik, Training und Lekti
 
 test('Startseiten-Kacheln, Kreisfortschritt und Zurücknavigation', async ({ page }) => {
   await appReady(page)
-  await expect(page.locator('.home-tile-grid button')).toHaveCount(4)
+  await expect(page.locator('.home-tile-grid button')).toHaveCount(6)
   await expect(page.locator('.progress-ring')).toHaveCount(2)
   await expect(page.getByRole('heading', { name: 'Heute', exact: true })).toBeVisible()
-  for (const title of ['Wortschatz', 'Zeichen', 'Grammatik', 'Training', 'Einstellungen']) {
+  for (const title of ['Wortschatz', 'Zeichen', 'Grammatik', 'Training', 'Wiederholen', 'Einstellungen']) {
     await page.getByRole('button', { name: title, exact: true }).click()
     await expect(page.getByRole('heading', { name: title, exact: true })).toBeVisible()
     await page.getByRole('button', { name: 'Nǐ Hǎo', exact: true }).click()
@@ -347,11 +349,14 @@ test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ pag
   })
   await appReady(page)
   await page.getByRole('button', { name: 'Bekannte Wörter öffnen', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'Wiederholen', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Wortschatz', exact: true })).toBeVisible()
   await route(page, 'today')
   await page.getByRole('button', { name: 'Lektionen öffnen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Lektionen', exact: true })).toBeVisible()
-  await expect(page.locator('.lesson-row.recommended')).toHaveCSS('border-top-color', 'rgb(255, 107, 107)')
+  await expect(page.locator('.lesson-row.recommended')).not.toHaveCSS(
+    'background-color',
+    'rgb(255, 255, 255)',
+  )
   await route(page, 'grammar')
   const ordered = [...grammar].sort((a, b) => Number(a.lessonId.slice(1)) - Number(b.lessonId.slice(1)))
   await expect(page.locator('.grammar-card h3').first()).toHaveText(ordered[0].title)
@@ -378,7 +383,10 @@ test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ pag
         await route(page, name)
         await expect(page.locator('main h1').first()).toBeVisible()
         await page.evaluate(() => document.fonts.ready)
-        await expect(page.locator('main h1').first()).toHaveCSS('font-family', /Manrope/)
+        await expect(page.locator('main h1').first()).toHaveCSS(
+          'font-family',
+          name === 'today' ? /Ma Shan Zheng/ : /Manrope/,
+        )
         await expect(page.locator('body')).toHaveCSS('font-family', /Inter/)
         await noOverflow(page)
       }
@@ -431,7 +439,7 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   await page.getByRole('button', { name: 'Lerneinheit verlassen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Training', exact: true })).toBeVisible()
   await route(page, 'words')
-  await expect(page.locator('.word-begun')).toHaveCount(1)
+  await expect(page.locator('.word-known')).toHaveCount(0)
   await route(page, 'learn/l01')
   await page.getByRole('button', { name: 'Lektion starten', exact: true }).click()
   for (let i = 0; i < lessons[0].wordIds.length + grammar.filter((g) => g.lessonId === 'l01').length; i++)
@@ -468,4 +476,30 @@ test('einheitliche Kartenbreite und Abstand nach dem Lektionen-Fortschritt', asy
       expect(Math.abs((await card.boundingBox())!.width - summaryBox.width)).toBeLessThan(1)
     }
   }
+})
+
+test('Bekannt-Filter, Zeichen-Detail und Hero-Höhe', async ({ page }) => {
+  await appReady(page)
+  for (const width of [320, 390, 1280]) {
+    await page.setViewportSize({ width, height: 900 })
+    const info = await page.locator('.focus-body').boundingBox()
+    const action = await page.locator('.focus-footer .button').boundingBox()
+    expect(Math.abs(info!.height - action!.height)).toBeLessThan(1)
+    await noOverflow(page)
+  }
+  for (const card of await page.locator('.progress-card').all()) {
+    await card.hover()
+    const colors = await card.evaluate((el) => ({
+      track: getComputedStyle(el.querySelector('.ring-track')!).stroke,
+      background: getComputedStyle(el).backgroundColor,
+    }))
+    expect(colors.track).not.toBe(colors.background)
+  }
+  await page.getByRole('button', { name: 'Bekannte Wörter öffnen', exact: true }).click()
+  await page.getByRole('button', { name: 'Bekannt', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'Keine Wörter gefunden.', exact: true })).toBeVisible()
+  await route(page, 'hanzi')
+  await page.locator('.hanzi-tile').first().click()
+  await expect(page.locator('.lookup-heading h3')).toHaveCount(0)
+  await expect(page.getByText('In diesen Wörtern', { exact: true })).toBeVisible()
 })

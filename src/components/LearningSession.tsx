@@ -50,6 +50,12 @@ export function LearningSession({
     )
   const word = step < ids.length ? wordById[ids[step]] : undefined
   const point = points[step - ids.length]
+  const nextAction = (
+    <button className="button primary" onClick={() => setStep(step + 1)}>
+      {step === total - 1 ? 'Jetzt aktiv erinnern' : 'Weiter'}{' '}
+      {step === total - 1 ? <Brain size={22} /> : <ArrowRight size={18} />}
+    </button>
+  )
   return (
     <div className="study-shell">
       <div className="study-top">
@@ -67,24 +73,22 @@ export function LearningSession({
             </h1>
             <p className="intro-pinyin">{word.pinyin}</p>
             <h3>{word.meaning}</h3>
-            <div className="listen-area">
+            <div className="intro-actions">
               <AudioButton text={word.hanzi} label="Anhören" />
+              {nextAction}
             </div>
-            {word.note && <p className="note">{word.note}</p>}
             <ExampleTranslation example={word.example} />
+            {word.note && <p className="note">{word.note}</p>}
           </>
         ) : (
           <>
             <h1>{point.title}</h1>
             <p>{point.explanation}</p>
             <div className="pattern">{point.pattern}</div>
+            <div className="intro-actions">{nextAction}</div>
             <ExampleTranslation example={point.example} />
           </>
         )}
-        <button className="button full primary" onClick={() => setStep(step + 1)}>
-          {step === total - 1 ? 'Jetzt aktiv erinnern' : 'Weiter'}{' '}
-          {step === total - 1 ? <Brain size={22} /> : <ArrowRight size={18} />}
-        </button>
       </article>
     </div>
   )

@@ -252,3 +252,11 @@ export function recordPractice(
     updatedAt: at,
   }
 }
+
+export function isKnownWord(card?: LearningCard): boolean {
+  return (
+    !!card &&
+    card.fsrs.stability >= 14 &&
+    Object.values(card.skills).filter((skill) => skill.correct > 0).length >= 2
+  )
+}
