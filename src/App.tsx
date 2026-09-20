@@ -56,8 +56,8 @@ import {
   useAudio,
 } from './components/ui'
 import { ExerciseRunner } from './components/ExerciseRunner'
-import { PageHeading, MainNavigation } from './components/Navigation'
-import { WordCard, LessonCard, LessonProgress } from './components/CurriculumCards'
+import { PageHeading, HomeTiles, ProgressCard } from './components/Navigation'
+import { WordCard, LessonCard } from './components/CurriculumCards'
 import { LearningSession } from './components/LearningSession'
 import { AUDIO_RATES, normalizeAudioRate, setAudioRate, stopAudio } from './lib/audio'
 const skillLabels: Record<Skill, string> = {
@@ -87,7 +87,6 @@ export default function App() {
     [saving, setSaving] = useState(false),
     [route, setRoute] = useState(hashRoute),
     [session, setSession] = useState<Session | null>(null),
-    [more, setMore] = useState(false),
     [search, setSearch] = useState(''),
     [filter, setFilter] = useState('all'),
     [selectedWord, setSelectedWord] = useState<Vocabulary | null>(null),
@@ -155,7 +154,6 @@ export default function App() {
       setSelectedGrammar(null)
       setSearch('')
       setFilter('all')
-      setMore(false)
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', hash)
@@ -206,7 +204,6 @@ export default function App() {
   const navigate = (id: string) => {
     setSession(null)
     stopAudio()
-    setMore(false)
     window.location.hash = `/${id}`
     if (hashRoute() === id) setRoute(id)
   }
@@ -398,7 +395,11 @@ export default function App() {
   else if (page === 'today')
     content = (
       <>
-        <PageHeading page="today" onMenu={() => setMore(true)} menuOpen={more} />
+        <header className="home-brand">
+          <h1 lang="zh-CN" aria-label="Nǐ Hǎo">
+            你好
+          </h1>
+        </header>
         {(learned > 0 || Object.keys(profile.practice).length > 0) && backupIsOverdue(lastExport) && (
           <div className="note row-between" role="status">
             <span>
@@ -413,31 +414,31 @@ export default function App() {
         )}
         <div className="today-grid">
           <section className="today-focus">
+            <h2>Heute</h2>
             <div className="focus-body">
               <div>
-                <h2>
-                  {plan.dueIds.length
-                    ? 'Wiederholen'
-                    : profile.completedLessons.length < lessons.length
-                      ? 'Nächste Lektion'
-                      : 'Alle Lektionen bearbeitet.'}
-                </h2>
-                <p>
-                  {plan.dueIds.length
-                    ? `${plan.dueIds.length} Wörter sind fällig.`
-                    : profile.completedLessons.length < lessons.length
-                      ? nextLesson.title
-                      : 'Wiederhole gelernte Inhalte oder vertiefe einzelne Fähigkeiten im Training.'}
-                </p>
-              </div>
-              <div className="focus-hanzi" lang="zh-CN" aria-hidden="true">
-                {plan.dueIds.length ? '温习' : '你好'}
-                <span>{plan.dueIds.length ? 'wēnxí' : 'nǐ hǎo'}</span>
+                {plan.dueIds.length ? (
+                  <p>{plan.dueIds.length} Wörter sind fällig.</p>
+                ) : profile.completedLessons.length < lessons.length ? (
+                  <div className="next-lesson-summary">
+                    <span className="eyebrow">Lektion {lessons.indexOf(nextLesson) + 1}</span>
+                    <h3>{nextLesson.title}</h3>
+                  </div>
+                ) : (
+                  <p>Wiederhole gelernte Inhalte oder vertiefe einzelne Fähigkeiten im Training.</p>
+                )}
               </div>
             </div>
             <div className="focus-footer">
               <button
                 className="button primary"
+                aria-label={
+                  plan.dueIds.length
+                    ? 'Wiederholung starten'
+                    : profile.completedLessons.length < lessons.length
+                      ? 'Nächste Lektion starten'
+                      : 'Lektionen öffnen'
+                }
                 onClick={() =>
                   plan.dueIds.length
                     ? beginReview(plan.dueIds.slice(0, 20))
@@ -446,12 +447,7 @@ export default function App() {
                       : navigate('learn')
                 }
               >
-                {plan.dueIds.length
-                  ? 'Wiederholung starten'
-                  : profile.completedLessons.length < lessons.length
-                    ? 'Nächste Lektion starten'
-                    : 'Lernpfad öffnen'}{' '}
-                <ArrowRight size={18} />
+                <ArrowRight size={24} />
               </button>
               <span>
                 {plan.dueIds.length ? `${Math.min(plan.dueIds.length, 20)} Wörter in dieser Einheit` : null}
@@ -459,21 +455,27 @@ export default function App() {
             </div>
           </section>
         </div>
-        <div className="today-stats">
-          <button
-            className="card lesson-progress status-link"
-            onClick={() => navigate('review')}
-            aria-label="Wiederholen öffnen"
-          >
-            <span className="status-title">
-              <span className="eyebrow">Wiederholen</span>
-              <ChevronRight size={20} />
-            </span>
-            <strong className="metric">{plan.dueIds.length}</strong>
-            <p>Wörter jetzt fällig</p>
-          </button>
-          <LessonProgress completed={profile.completedLessons.length} onOpen={() => navigate('learn')} />
+        <div className="home-progress">
+          <ProgressCard
+            label="Bekannte Wörter"
+            value={
+              Object.values(profile.cards).filter(
+                (card) =>
+                  card.fsrs.stability >= 14 &&
+                  Object.values(card.skills).filter((skill) => skill.correct > 0).length >= 2,
+              ).length
+            }
+            max={vocabulary.length}
+            onOpen={() => navigate('review')}
+          />
+          <ProgressCard
+            label="Lektionen"
+            value={profile.completedLessons.length}
+            max={lessons.length}
+            onOpen={() => navigate('learn')}
+          />
         </div>
+        <HomeTiles onNavigate={navigate} />
         {plan.weakIds.length > 0 && (
           <div className="note row-between">
             <span>{plan.weakIds.length} Wörter zum Nachüben.</span>
@@ -488,10 +490,7 @@ export default function App() {
     const lesson = lessonById[route.split('/')[1]]
     content = lesson ? (
       <>
-        <button className="text-button back-link" onClick={() => navigate('learn')}>
-          ← Zum Lernpfad
-        </button>
-        <PageHeading page="learn" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="learn" onBack={() => navigate('today')} />
         <div className="lesson-heading">
           <h2>{lesson.title}</h2>
           <p>{lesson.description}</p>
@@ -565,7 +564,7 @@ export default function App() {
       </>
     ) : (
       <>
-        <PageHeading page="learn" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="learn" onBack={() => navigate('today')} />
         <div className="path-summary card">
           <CircleCheck size={25} />
           <span>
@@ -593,7 +592,7 @@ export default function App() {
     const due = plan.dueIds.map((id) => profile.cards[id])
     content = (
       <>
-        <PageHeading page="review" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="review" onBack={() => navigate('today')} />
         {due.length ? (
           <div className="card review-start">
             <div className="review-count">{due.length}</div>
@@ -610,7 +609,7 @@ export default function App() {
             icon={<CircleCheck size={36} />}
           >
             <button className="button primary" onClick={() => navigate(learned ? 'training' : 'learn')}>
-              {learned ? 'Zum Training' : 'Zum Lernpfad'} <ArrowRight size={18} />
+              {learned ? 'Zum Training' : 'Zu den Lektionen'} <ArrowRight size={18} />
             </button>
           </Empty>
         )}
@@ -654,7 +653,7 @@ export default function App() {
     )
     content = (
       <>
-        <PageHeading page="words" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="words" onBack={() => navigate('today')} />
         <div className="filter-bar">
           {searchInput('Wort, Pinyin oder Bedeutung suchen')}
           <ToggleGroup
@@ -683,7 +682,7 @@ export default function App() {
     )
     content = (
       <>
-        <PageHeading page="hanzi" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="hanzi" onBack={() => navigate('today')} />
         <div className="filter-bar">{searchInput('Zeichen, Pinyin oder Bedeutung suchen')}</div>
         <p className="small muted">{filtered.length} Zeichen</p>
         <div className="hanzi-grid">
@@ -706,7 +705,7 @@ export default function App() {
     const filtered = grammar.filter((g) => searchText(`${g.title} ${g.pattern}`).includes(searchText(search)))
     content = (
       <>
-        <PageHeading page="grammar" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="grammar" onBack={() => navigate('today')} />
         <div className="filter-bar">{searchInput('Grammatik suchen')}</div>
         <p className="small muted">{filtered.length} Grammatikthemen</p>
         <div className="grammar-grid">
@@ -732,7 +731,7 @@ export default function App() {
     const pool = baseWords.length ? baseWords : lessons[0].wordIds.map((id) => wordById[id])
     content = (
       <>
-        <PageHeading page="training" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="training" onBack={() => navigate('today')} />
         <div className="training-grid">
           {(['listening', 'context', 'production', 'pinyin'] as Skill[]).map((skill) => (
             <button
@@ -770,7 +769,7 @@ export default function App() {
                     ? 'Bedeutung im Satz erkennen'
                     : skill === 'production'
                       ? 'Deutsch → Chinesisch'
-                      : 'Hanzi → Pinyin'}
+                      : 'Zeichen → Pinyin'}
               </p>
               <span className="text-button">
                 {skill === 'listening' && !audio.available
@@ -810,7 +809,7 @@ export default function App() {
   } else if (page === 'settings')
     content = (
       <>
-        <PageHeading page="settings" onMenu={() => setMore(true)} menuOpen={more} />
+        <PageHeading page="settings" onBack={() => navigate('today')} />
         <div className="settings-stack">
           <section className="card settings-section">
             <h2>Darstellung</h2>
@@ -880,15 +879,6 @@ export default function App() {
     )
   return (
     <div className="app-shell">
-      <aside className="sidebar">
-        <button className="brand" onClick={() => navigate('today')} aria-label="Nǐ Hǎo Startseite">
-          <img className="brand-mark" src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" />
-          <span>
-            <strong>Nǐ Hǎo</strong>
-          </span>
-        </button>
-        <MainNavigation page={page} dueCount={plan.dueIds.length} onNavigate={navigate} />
-      </aside>
       <div className="main-layout">
         <main id="main" className={session ? 'session-main' : ''}>
           {saveError && (
@@ -902,19 +892,10 @@ export default function App() {
               </button>
             </div>
           )}
-          {session && (
-            <div className="session-navigation">
-              <PageHeading page={page} onMenu={() => setMore(true)} menuOpen={more} />
-            </div>
-          )}
+          {session && <PageHeading page={page} onBack={() => navigate('today')} />}
           {content}
         </main>
       </div>
-      {more && (
-        <Modal title="Nǐ Hǎo" className="navigation-drawer" onClose={() => setMore(false)}>
-          <MainNavigation page={page} dueCount={plan.dueIds.length} onNavigate={navigate} mobile />
-        </Modal>
-      )}
       {selectedWord && (
         <LookupDetail
           title="Wortschatz"
@@ -950,7 +931,7 @@ export default function App() {
       )}
       {selectedHanzi && (
         <LookupDetail
-          title="Hanzi"
+          title="Zeichen"
           hanzi={selectedHanzi.char}
           pinyin={selectedHanzi.pinyin}
           meaning={selectedHanzi.meaning}

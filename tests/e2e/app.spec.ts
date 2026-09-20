@@ -14,7 +14,7 @@ import { exportBackup } from '../../src/lib/backup'
 import { wordExercise, grammarExercise } from '../../src/lib/exercises'
 async function appReady(page: Page) {
   await page.goto('./')
-  await expect(page.getByRole('heading', { name: 'Heute' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Nǐ Hǎo', exact: true })).toBeVisible()
 }
 async function route(page: Page, hash: string) {
   await page.evaluate((h) => {
@@ -85,7 +85,7 @@ async function fakeLocalVoice(page: Page) {
     })
   })
 }
-test('mobiler Lernpfad, Abruf, Speicherung und Backup', async ({ page }) => {
+test('mobile Lektionen, Abruf, Speicherung und Backup', async ({ page }) => {
   const errors: string[] = []
   page.on('pageerror', (e) => errors.push(e.message))
   await appReady(page)
@@ -126,7 +126,7 @@ test('mobiler Lernpfad, Abruf, Speicherung und Backup', async ({ page }) => {
   await route(page, 'today')
   await expect(page.getByText('1 / 49', { exact: false })).toBeVisible()
   await page.reload()
-  await expect(page.getByRole('heading', { name: 'Heute' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Nǐ Hǎo', exact: true })).toBeVisible()
   await route(page, 'settings')
   const downloadPromise = page.waitForEvent('download')
   await page.getByRole('button', { name: 'Lernstand exportieren', exact: true }).click()
@@ -175,7 +175,7 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung', async ({
   const origin = `http://127.0.0.1:${(server.address() as AddressInfo).port}/NiHao/`
   try {
     await page.goto(origin)
-    await expect(page.getByRole('heading', { name: 'Heute' })).toBeVisible()
+    await expect(page.getByRole('heading', { name: 'Nǐ Hǎo', exact: true })).toBeVisible()
     await page.evaluate(async () => {
       await navigator.serviceWorker.ready
     })
@@ -230,16 +230,15 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung', async ({
 })
 test('Navigation, kleine Breite, Dark Mode und fehlerhafter Import', async ({ page }) => {
   await appReady(page)
-  await page.getByRole('button', { name: 'Menü öffnen', exact: true }).click()
-  await page.getByRole('dialog').getByRole('button', { name: 'Grammatik', exact: true }).click()
+  await page.getByRole('button', { name: 'Grammatik', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Grammatik' })).toBeVisible()
   await page.locator('.grammar-card').first().click()
   await expect(page.getByRole('button', { name: 'Jetzt anwenden' })).toHaveCount(0)
   await page.getByRole('button', { name: 'Schließen', exact: true }).click()
   await noOverflow(page)
   page.on('dialog', (d) => d.accept())
-  await page.getByRole('button', { name: 'Menü öffnen', exact: true }).click()
-  await page.getByRole('dialog').getByRole('button', { name: 'Einstellungen', exact: true }).click()
+  await route(page, 'today')
+  await page.getByRole('button', { name: 'Einstellungen', exact: true }).click()
   await page
     .getByRole('group', { name: 'Darstellung', exact: true })
     .getByRole('button', { name: 'Dunkel', exact: true })
@@ -259,7 +258,7 @@ test('Navigation, kleine Breite, Dark Mode und fehlerhafter Import', async ({ pa
   await page.screenshot({ path: `work/screens/mobile-dark-${test.info().project.name}.png`, fullPage: true })
 })
 
-test('globales Audiotempo auf Wortschatz, Hanzi, Grammatik, Training und Lektionen', async ({ page }) => {
+test('globales Audiotempo auf Wortschatz, Zeichen, Grammatik, Training und Lektionen', async ({ page }) => {
   await fakeLocalVoice(page)
   await appReady(page)
   page.on('dialog', (d) => d.accept())
@@ -288,8 +287,8 @@ test('globales Audiotempo auf Wortschatz, Hanzi, Grammatik, Training und Lektion
   await route(page, 'training')
   await page.locator('.training-card').first().click()
   await play()
-  await page.getByRole('button', { name: 'Menü öffnen', exact: true }).click()
-  await page.getByRole('dialog').getByRole('button', { name: 'Einstellungen', exact: true }).click()
+  await route(page, 'today')
+  await page.getByRole('button', { name: 'Einstellungen', exact: true }).click()
   await route(page, 'learn/l01')
   await page.getByRole('button', { name: 'Lektion starten', exact: true }).click()
   await play()
@@ -324,26 +323,20 @@ test('globales Audiotempo auf Wortschatz, Hanzi, Grammatik, Training und Lektion
   await play()
 })
 
-test('Einstellungsbuttons und linkes Menü', async ({ page }) => {
+test('Startseiten-Kacheln, Kreisfortschritt und Zurücknavigation', async ({ page }) => {
   await appReady(page)
-  await expect(page.locator('.bottom-nav')).toHaveCount(0)
-  await page.getByRole('button', { name: 'Menü öffnen', exact: true }).click()
-  await expect(page.getByRole('dialog')).toHaveCSS('left', '0px')
-  await page.getByRole('dialog').getByRole('button', { name: 'Einstellungen', exact: true }).click()
-  await expect(page.getByRole('group', { name: 'Neue Wörter pro Tag', exact: true })).toHaveCount(0)
-  await expect(page.locator('.settings-stack select')).toHaveCount(0)
-  await noOverflow(page)
+  await expect(page.locator('.home-tile-grid button')).toHaveCount(4)
+  await expect(page.locator('.progress-ring')).toHaveCount(2)
+  await expect(page.getByRole('heading', { name: 'Heute', exact: true })).toBeVisible()
+  for (const title of ['Wortschatz', 'Zeichen', 'Grammatik', 'Training', 'Einstellungen']) {
+    await page.getByRole('button', { name: title, exact: true }).click()
+    await expect(page.getByRole('heading', { name: title, exact: true })).toBeVisible()
+    await page.getByRole('button', { name: 'Nǐ Hǎo', exact: true }).click()
+  }
   await page.setViewportSize({ width: 320, height: 740 })
   await noOverflow(page)
-  await page.screenshot({
-    path: `work/screens/settings-toggles-${test.info().project.name}.png`,
-    fullPage: true,
-  })
-  await page.getByRole('button', { name: 'Menü öffnen', exact: true }).click()
-  await page.screenshot({ path: `work/screens/drawer-${test.info().project.name}.png` })
-  await expect(
-    page.getByRole('dialog').getByRole('button', { name: 'Fortschritt', exact: true }),
-  ).toHaveCount(0)
+  await page.getByRole('button', { name: 'Einstellungen', exact: true }).click()
+  await noOverflow(page)
 })
 
 test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ page }) => {
@@ -353,11 +346,11 @@ test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ pag
     if (m.type() === 'error') errors.push(m.text())
   })
   await appReady(page)
-  await page.getByRole('button', { name: 'Wiederholen öffnen', exact: true }).click()
+  await page.getByRole('button', { name: 'Bekannte Wörter öffnen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Wiederholen', exact: true })).toBeVisible()
   await route(page, 'today')
-  await page.getByRole('button', { name: 'Lernpfad öffnen', exact: true }).click()
-  await expect(page.getByRole('heading', { name: 'Lernpfad', exact: true })).toBeVisible()
+  await page.getByRole('button', { name: 'Lektionen öffnen', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'Lektionen', exact: true })).toBeVisible()
   await expect(page.locator('.lesson-row.recommended')).toHaveCSS('border-top-color', 'rgb(255, 107, 107)')
   await route(page, 'grammar')
   const ordered = [...grammar].sort((a, b) => Number(a.lessonId.slice(1)) - Number(b.lessonId.slice(1)))
@@ -458,7 +451,7 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   expect(errors).toEqual([])
 })
 
-test('einheitliche Kartenbreite und Abstand nach dem Lernpfad-Fortschritt', async ({ page }) => {
+test('einheitliche Kartenbreite und Abstand nach dem Lektionen-Fortschritt', async ({ page }) => {
   await appReady(page)
   for (const width of [390, 1280]) {
     await page.setViewportSize({ width, height: 900 })
