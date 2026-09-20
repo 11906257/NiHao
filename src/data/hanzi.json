@@ -104,7 +104,7 @@
   {
     "id": "h012",
     "char": "边",
-    "pinyin": "biān; bian",
+    "pinyin": "biān | bian",
     "meaning": "Seite | Rand | Ortsnachsilbe, teils unbetont",
     "wordIds": [
       "v011",
@@ -136,7 +136,7 @@
   {
     "id": "h015",
     "char": "不",
-    "pinyin": "bù; bú",
+    "pinyin": "bù | bú",
     "meaning": "nicht | vor einem vierten Ton bú gesprochen",
     "wordIds": [
       "v013",
@@ -400,7 +400,7 @@
   {
     "id": "h042",
     "char": "儿",
-    "pinyin": "ér; r",
+    "pinyin": "ér | r",
     "meaning": "Kind | Sohn | als Erhua-Nachsilbe r-Auslaut",
     "wordIds": [
       "v048",
@@ -478,7 +478,7 @@
   {
     "id": "h049",
     "char": "服",
-    "pinyin": "fú; fu",
+    "pinyin": "fú | fu",
     "meaning": "Kleidung | in 衣服 unbetontes fu",
     "wordIds": [
       "v255"
@@ -514,7 +514,7 @@
   {
     "id": "h053",
     "char": "个",
-    "pinyin": "gè; ge",
+    "pinyin": "gè | ge",
     "meaning": "allgemeines Zählwort | im Satz oft unbetont",
     "wordIds": [
       "v060",
@@ -687,7 +687,7 @@
   {
     "id": "h071",
     "char": "候",
-    "pinyin": "hòu; hou",
+    "pinyin": "hòu | hou",
     "meaning": "warten | Zeitpunkt | in 时候 unbetontes hou",
     "wordIds": [
       "v185"
@@ -707,7 +707,7 @@
   {
     "id": "h073",
     "char": "欢",
-    "pinyin": "huān; huan",
+    "pinyin": "huān | huan",
     "meaning": "Freude | in 喜欢 unbetontes huan",
     "wordIds": [
       "v225"
@@ -850,7 +850,7 @@
   {
     "id": "h088",
     "char": "觉",
-    "pinyin": "jué; jiào",
+    "pinyin": "jué | jiào",
     "meaning": "jué in 觉得 „finden/empfinden“ | jiào in 睡觉 „schlafen“",
     "wordIds": [
       "v096",
@@ -986,7 +986,7 @@
   {
     "id": "h102",
     "char": "亮",
-    "pinyin": "liàng; liang",
+    "pinyin": "liàng | liang",
     "meaning": "hell | leuchten | in 漂亮 unbetontes liang",
     "wordIds": [
       "v158"
@@ -1336,7 +1336,7 @@
   {
     "id": "h137",
     "char": "气",
-    "pinyin": "qì; qi",
+    "pinyin": "qì | qi",
     "meaning": "Luft | Atem | in 天气 „Wetter“ und 不客气",
     "wordIds": [
       "v014",
@@ -1464,7 +1464,7 @@
   {
     "id": "h150",
     "char": "少",
-    "pinyin": "shǎo; shao",
+    "pinyin": "shǎo | shao",
     "meaning": "wenig | in 多少 unbetontes shao",
     "wordIds": [
       "v047",
@@ -1474,7 +1474,7 @@
   {
     "id": "h151",
     "char": "谁",
-    "pinyin": "shéi; shuí",
+    "pinyin": "shéi | shuí",
     "meaning": "wer | beide Lesungen sind gebräuchlich",
     "wordIds": [
       "v181"
@@ -1536,7 +1536,7 @@
   {
     "id": "h157",
     "char": "识",
-    "pinyin": "shí; shi",
+    "pinyin": "shí | shi",
     "meaning": "erkennen | in 认识 unbetontes shi",
     "wordIds": [
       "v171"
@@ -1851,7 +1851,7 @@
   {
     "id": "h189",
     "char": "西",
-    "pinyin": "xī; xi",
+    "pinyin": "xī | xi",
     "meaning": "Westen | in 东西 „Sachen“ unbetontes xi",
     "wordIds": [
       "v040"
@@ -1860,7 +1860,7 @@
   {
     "id": "h190",
     "char": "息",
-    "pinyin": "xī; xi",
+    "pinyin": "xī | xi",
     "meaning": "Atem | ruhen | in 休息 unbetontes xi",
     "wordIds": [
       "v246"
@@ -1887,7 +1887,7 @@
   {
     "id": "h193",
     "char": "系",
-    "pinyin": "xì; xi",
+    "pinyin": "xì | xi",
     "meaning": "Verbindung | Beziehung | in 没关系 unbetontes xi",
     "wordIds": [
       "v120"
@@ -1982,7 +1982,7 @@
   {
     "id": "h202",
     "char": "谢",
-    "pinyin": "xiè; xie",
+    "pinyin": "xiè | xie",
     "meaning": "danken | in 谢谢 zweite Silbe unbetont",
     "wordIds": [
       "v241"
@@ -2086,7 +2086,7 @@
   {
     "id": "h212",
     "char": "一",
-    "pinyin": "yī; yí; yì",
+    "pinyin": "yī | yí | yì",
     "meaning": "eins | Tonwechsel im Wort/Satz zu yí oder yì",
     "wordIds": [
       "v254",
@@ -2118,7 +2118,7 @@
   {
     "id": "h215",
     "char": "宜",
-    "pinyin": "yí; yi",
+    "pinyin": "yí | yi",
     "meaning": "angemessen | passend | in 便宜 unbetontes yi",
     "wordIds": [
       "v157"
@@ -2155,7 +2155,7 @@
   {
     "id": "h219",
     "char": "友",
-    "pinyin": "yǒu; you",
+    "pinyin": "yǒu | you",
     "meaning": "Freund | in 朋友 oft unbetontes you",
     "wordIds": [
       "v143",
@@ -2368,7 +2368,7 @@
   {
     "id": "h240",
     "char": "子",
-    "pinyin": "zǐ; zi",
+    "pinyin": "zǐ | zi",
     "meaning": "Kind | Sohn | häufig unbetonte Nomennachsilbe zi",
     "wordIds": [
       "v008",

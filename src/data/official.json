@@ -4,7 +4,7 @@
   "verifiedAt": "2026-09-12",
   "language": "zh-Hans",
   "level": 1,
-  "scope": "Exam-Syllabus 2025, Level 1; Lernbeschreibungen und Übungen sind eigene Bearbeitung.",
+  "scope": "Exam-Syllabus 2025, Level 1. Lernbeschreibungen und Übungen sind eigene Bearbeitung.",
   "counts": {
     "vocabulary": 300,
     "recognitionHanzi": 246,
@@ -16,7 +16,7 @@
     "taskCompetences": 59
   },
   "countMethod": {
-    "vocabulary": "Offizielle laufende Eintragsnummern 1–300; mehrstufige Wortartenannotation bleibt erhalten.",
+    "vocabulary": "Offizielle laufende Eintragsnummern 1–300. Mehrstufige Wortartenannotation bleibt erhalten.",
     "recognitionHanzi": "Offizielle Erkennungszeichen 1–246.",
     "grammarRows": "Eigene Zählung der sichtbar getrennten Tabellenzeilen: 27 + 31 + 12. Keine im PDF behauptete offizielle Gesamtzahl und nicht 70 getrennte Einzelwörter.",
     "taskCompetences": "Eigene Zählung der 59 Aufzählungspunkte innerhalb 15 offizieller Aufgabenbereiche."
@@ -36,7 +36,7 @@
     },
     {
       "id": "sample",
-      "title": "HSK 3.0 offizielle Musterprüfungen; HSK（一级）样卷",
+      "title": "HSK 3.0 offizielle Musterprüfungen. HSK（一级）样卷",
       "publisher": "CTI / CLEC",
       "url": "https://hsk-sample-1409982902.cos.ap-beijing.myqcloud.com/HSK3.0.zip",
       "verifiedVia": "https://www.chinesetest.cn/syllabus",
@@ -57,7 +57,7 @@
       "publisher": "Chinese Testing International",
       "url": "https://admin.chinesetest.cn/gonewcontent.do?id=51236758",
       "accessed": "2026-09-12",
-      "scope": "Zweite globale Erprobung am 20. September 2026; ca. 40 Minuten für HSK1"
+      "scope": "Zweite globale Erprobung am 20. September 2026. Ca. 40 Minuten für HSK1"
     },
     {
       "id": "ability",
@@ -76,7 +76,7 @@
       "published": "2021-03-31",
       "printedEffective": "2021-07-01",
       "accessed": "2026-09-12",
-      "scope": "Übergeordneter Referenzrahmen; andere Level-1-Abgrenzung als Exam-Syllabus 2025"
+      "scope": "Übergeordneter Referenzrahmen. Andere Level-1-Abgrenzung als Exam-Syllabus 2025"
     },
     {
       "id": "framework-explanation",
@@ -84,7 +84,7 @@
       "publisher": "Center for Language Education and Cooperation",
       "url": "https://www.chinese.cn/zhuanti/202107/",
       "accessed": "2026-09-12",
-      "scope": "Rahmenstandard dient als Referenz; Prüfungsanpassungen werden separat vorgenommen"
+      "scope": "Rahmenstandard dient als Referenz. Prüfungsanpassungen werden separat vorgenommen"
     },
     {
       "id": "legacy-hsk1",
@@ -92,7 +92,7 @@
       "publisher": "Chinese Testing International",
       "url": "https://www.chinesetest.cn/HSK/1",
       "accessed": "2026-09-12",
-      "scope": "Legacy-Format 15 Minuten Hören/17 Lesen und 120/200; kein Nachweis der neuen 3.0-Bewertung"
+      "scope": "Legacy-Format 15 Minuten Hören/17 Lesen und 120/200. Kein Nachweis der neuen 3.0-Bewertung"
     }
   ],
   "vocabulary": [
@@ -6827,7 +6827,7 @@
     },
     {
       "issue": "Schreiben im Level1",
-      "resolution": "Die gemeinsame HSK1–2-Liste enthält 100 Schreibzeichen. Das neue Level1-Sample prüft aber nur Hören und Lesen; Handschrifttraining ist unterstützende Vertiefung."
+      "resolution": "Die gemeinsame HSK1–2-Liste enthält 100 Schreibzeichen. Das neue Level1-Sample prüft aber nur Hören und Lesen. Handschrifttraining ist unterstützende Vertiefung."
     },
     {
       "issue": "Generische CTI-Seiten",

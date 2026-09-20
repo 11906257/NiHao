@@ -4,7 +4,9 @@ export function readLastExport(): string | null {
   try {
     const value = localStorage.getItem(LAST_EXPORT_KEY)
     return value && Number.isFinite(Date.parse(value)) ? value : null
-  } catch { return null }
+  } catch {
+    return null
+  }
 }
 
 export function rememberExport(at: string): void {

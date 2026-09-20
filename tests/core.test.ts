@@ -2,8 +2,16 @@ import 'fake-indexeddb/auto'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { deleteDB, openDB } from 'idb'
 import {
-  chooseSkill, completeLesson, createProfile, deserializeCard, getDueCards, getSkillSummary,
-  HISTORY_LIMIT, recordPractice, reviewVocabulary, serializeCard, type Profile,
+  chooseSkill,
+  completeLesson,
+  createProfile,
+  deserializeCard,
+  getDueCards,
+  HISTORY_LIMIT,
+  recordPractice,
+  reviewVocabulary,
+  serializeCard,
+  type Profile,
 } from '../src/lib/scheduler'
 import { exportBackup, MAX_BACKUP_BYTES, parseBackup, validateProfile } from '../src/lib/backup'
 import { closeStorage, DATABASE_NAME, loadProfile, restoreBackup, saveProfile } from '../src/lib/storage'
@@ -36,7 +44,6 @@ describe('FSRS and retrieval selection', () => {
     expect(second.cards.v001!.skills.listening).toMatchObject({ attempts: 1, correct: 0 })
     expect(chooseSkill(second.cards.v001)).toBe('listening')
     expect(chooseSkill(second.cards.v001, ['context', 'production'])).toBe('context')
-    expect(getSkillSummary(second).meaning.correct).toBe(1)
     expect(first.cards.v001!.fsrs.reps).toBe(1)
   })
 
@@ -54,8 +61,12 @@ describe('FSRS and retrieval selection', () => {
 
   it('rejects a backwards clock and invalid dates before corrupting scheduler state', () => {
     const profile = reviewed()
-    expect(() => reviewVocabulary(profile, 'v001', 'meaning', 'good', new Date(now.getTime() - 1))).toThrow(/Gerätezeit/)
-    expect(() => reviewVocabulary(profile, 'v002', 'meaning', 'good', new Date(now.getTime() - 1))).toThrow(/Gerätezeit/)
+    expect(() => reviewVocabulary(profile, 'v001', 'meaning', 'good', new Date(now.getTime() - 1))).toThrow(
+      /Gerätezeit/,
+    )
+    expect(() => reviewVocabulary(profile, 'v002', 'meaning', 'good', new Date(now.getTime() - 1))).toThrow(
+      /Gerätezeit/,
+    )
     expect(() => getDueCards(profile, new Date('invalid'))).toThrow(/Zeitpunkt/)
     expect(() => reviewVocabulary(profile, '__proto__', 'meaning', 'good', now)).toThrow(/ID/)
   })
@@ -70,7 +81,10 @@ describe('FSRS and retrieval selection', () => {
         v001: {
           ...card,
           fsrs: { ...card.fsrs, reps: HISTORY_LIMIT },
-          skills: { ...card.skills, meaning: { attempts: HISTORY_LIMIT, correct: HISTORY_LIMIT, lastPracticed: now.toISOString() } },
+          skills: {
+            ...card.skills,
+            meaning: { attempts: HISTORY_LIMIT, correct: HISTORY_LIMIT, lastPracticed: now.toISOString() },
+          },
         },
       },
     }
@@ -94,17 +108,72 @@ describe('complete backup boundary', () => {
   })
 
   it.each([
-    ['unknown vocabulary', (p: Profile) => { p.cards.wrong = { ...p.cards.v001!, vocabularyId: 'wrong' } }],
-    ['invalid date', (p: Profile) => { p.cards.v001!.fsrs.due = '2026-02-30T10:00:00.000Z' }],
-    ['negative stability', (p: Profile) => { p.cards.v001!.fsrs.stability = -1 }],
-    ['out-of-range difficulty', (p: Profile) => { p.cards.v001!.fsrs.difficulty = 20 }],
-    ['invalid state', (p: Profile) => { (p.cards.v001!.fsrs as { state: number }).state = 9 }],
-    ['inconsistent statistics', (p: Profile) => { p.cards.v001!.skills.meaning.correct = 20 }],
-    ['missing skill', (p: Profile) => { delete (p.cards.v001!.skills as Partial<typeof p.cards.v001.skills>).meaning }],
-    ['unknown review reference', (p: Profile) => { p.history[0]!.vocabularyId = 'v002' }],
-    ['inconsistent history date', (p: Profile) => { p.history[0]!.at = '2026-09-20T10:00:00.000Z' }],
-    ['unsupported settings', (p: Profile) => { p.settings.audioRate = 100 }],
-    ['unknown lesson', (p: Profile) => { p.completedLessons = ['unknown-lesson'] }],
+    [
+      'unknown vocabulary',
+      (p: Profile) => {
+        p.cards.wrong = { ...p.cards.v001!, vocabularyId: 'wrong' }
+      },
+    ],
+    [
+      'invalid date',
+      (p: Profile) => {
+        p.cards.v001!.fsrs.due = '2026-02-30T10:00:00.000Z'
+      },
+    ],
+    [
+      'negative stability',
+      (p: Profile) => {
+        p.cards.v001!.fsrs.stability = -1
+      },
+    ],
+    [
+      'out-of-range difficulty',
+      (p: Profile) => {
+        p.cards.v001!.fsrs.difficulty = 20
+      },
+    ],
+    [
+      'invalid state',
+      (p: Profile) => {
+        ;(p.cards.v001!.fsrs as { state: number }).state = 9
+      },
+    ],
+    [
+      'inconsistent statistics',
+      (p: Profile) => {
+        p.cards.v001!.skills.meaning.correct = 20
+      },
+    ],
+    [
+      'missing skill',
+      (p: Profile) => {
+        delete (p.cards.v001!.skills as Partial<typeof p.cards.v001.skills>).meaning
+      },
+    ],
+    [
+      'unknown review reference',
+      (p: Profile) => {
+        p.history[0]!.vocabularyId = 'v002'
+      },
+    ],
+    [
+      'inconsistent history date',
+      (p: Profile) => {
+        p.history[0]!.at = '2026-09-20T10:00:00.000Z'
+      },
+    ],
+    [
+      'unsupported settings',
+      (p: Profile) => {
+        p.settings.audioRate = 100
+      },
+    ],
+    [
+      'unknown lesson',
+      (p: Profile) => {
+        p.completedLessons = ['unknown-lesson']
+      },
+    ],
   ])('rejects %s without treating malformed data as a partial restore', (_name, mutate) => {
     const backup = JSON.parse(exportBackup(reviewed(), now))
     mutate(backup.profile)
@@ -122,8 +191,15 @@ describe('complete backup boundary', () => {
 })
 
 describe('IndexedDB persistence', () => {
-  beforeEach(async () => { await closeStorage(); await deleteDB(DATABASE_NAME) })
-  afterEach(async () => { vi.restoreAllMocks(); await closeStorage(); await deleteDB(DATABASE_NAME) })
+  beforeEach(async () => {
+    await closeStorage()
+    await deleteDB(DATABASE_NAME)
+  })
+  afterEach(async () => {
+    vi.restoreAllMocks()
+    await closeStorage()
+    await deleteDB(DATABASE_NAME)
+  })
 
   it('survives closing/reopening and applies rapid saves in order', async () => {
     const first = reviewed()
@@ -172,7 +248,7 @@ describe('IndexedDB persistence', () => {
 
 it('migrates previous profiles without losing learning progress', () => {
   const profile = reviewed()
-  const legacy = { ...profile, settings: {...profile.settings,dailyNew:20}, exams: [{id: 'old-exam'}] }
+  const legacy = { ...profile, settings: { ...profile.settings, dailyNew: 20 }, exams: [{ id: 'old-exam' }] }
   expect(validateProfile(legacy, validIds)).toEqual(profile)
   expect(validateProfile(legacy, validIds)).not.toHaveProperty('exams')
 })

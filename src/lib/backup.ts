@@ -1,6 +1,6 @@
 import { HISTORY_LIMIT, REVIEW_RATINGS, SKILLS, type Profile, type Skill } from './scheduler'
 
-export const BACKUP_SCHEMA_VERSION = 1
+const BACKUP_SCHEMA_VERSION = 1
 export const MAX_BACKUP_BYTES = 10 * 1024 * 1024
 type Dict = Record<string, unknown>
 
@@ -10,20 +10,35 @@ function fail(message: string): never {
 
 function object(value: unknown, name: string): Dict {
   if (!value || typeof value !== 'object' || Array.isArray(value)) fail(`${name} fehlt oder ist beschädigt.`)
-  if (Object.keys(value).some(key => ['__proto__', 'constructor', 'prototype'].includes(key))) {
+  if (Object.keys(value).some((key) => ['__proto__', 'constructor', 'prototype'].includes(key))) {
     fail(`${name} enthält einen unzulässigen Schlüssel.`)
   }
   return value as Dict
 }
 
 function keys(value: Dict, allowed: readonly string[], required = allowed) {
-  if (Object.keys(value).some(key => !allowed.includes(key)) || required.some(key => !Object.hasOwn(value, key))) {
+  if (
+    Object.keys(value).some((key) => !allowed.includes(key)) ||
+    required.some((key) => !Object.hasOwn(value, key))
+  ) {
     fail('Das Datenschema ist unvollständig oder wird von dieser App nicht unterstützt.')
   }
 }
 
-function number(value: unknown, name: string, minimum = 0, maximum = 1_000_000, integer = false): asserts value is number {
-  if (typeof value !== 'number' || !Number.isFinite(value) || value < minimum || value > maximum || (integer && !Number.isInteger(value))) {
+function number(
+  value: unknown,
+  name: string,
+  minimum = 0,
+  maximum = 1_000_000,
+  integer = false,
+): asserts value is number {
+  if (
+    typeof value !== 'number' ||
+    !Number.isFinite(value) ||
+    value < minimum ||
+    value > maximum ||
+    (integer && !Number.isInteger(value))
+  ) {
     fail(`${name} liegt außerhalb des gültigen Bereichs.`)
   }
 }
@@ -33,15 +48,23 @@ function count(value: unknown, name: string, maximum = 1_000_000): asserts value
 }
 
 function date(value: unknown, name: string): asserts value is string {
-  if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value)
-    || !Number.isFinite(Date.parse(value)) || new Date(value).toISOString() !== value) {
+  if (
+    typeof value !== 'string' ||
+    !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}\.\d{3}Z$/.test(value) ||
+    !Number.isFinite(Date.parse(value)) ||
+    new Date(value).toISOString() !== value
+  ) {
     fail(`${name} ist kein gültiger UTC-Zeitpunkt.`)
   }
 }
 
 function id(value: unknown): asserts value is string {
-  if (typeof value !== 'string' || !/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(value)
-      || ['__proto__', 'constructor', 'prototype'].includes(value)) fail('Eine Inhalts-ID ist ungültig.')
+  if (
+    typeof value !== 'string' ||
+    !/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(value) ||
+    ['__proto__', 'constructor', 'prototype'].includes(value)
+  )
+    fail('Eine Inhalts-ID ist ungültig.')
 }
 
 function array(value: unknown, name: string, maximum: number): asserts value is unknown[] {
@@ -58,7 +81,15 @@ export function validateProfile(
   const profile = { ...object(input, 'Lernprofil') }
   // Read old local profiles/backups without retaining the retired exam history.
   if (profile.schemaVersion === 1) delete profile.exams
-  keys(profile, ['schemaVersion', 'cards', 'settings', 'history', 'practice', 'completedLessons', 'updatedAt'])
+  keys(profile, [
+    'schemaVersion',
+    'cards',
+    'settings',
+    'history',
+    'practice',
+    'completedLessons',
+    'updatedAt',
+  ])
   if (profile.schemaVersion !== 1) fail('Diese Schema-Version wird nicht unterstützt.')
   date(profile.updatedAt, 'Änderungsdatum')
   const known = validIds ? new Set(validIds) : undefined
@@ -74,7 +105,17 @@ export function validateProfile(
     if (card.vocabularyId !== key) fail('Karten-ID und Vokabel-ID stimmen nicht überein.')
     date(card.introducedAt, 'Einführungsdatum')
     const fsrs = object(card.fsrs, 'Wiederholungszustand')
-    const fsrsKeys = ['due', 'stability', 'difficulty', 'elapsed_days', 'scheduled_days', 'learning_steps', 'reps', 'lapses', 'state']
+    const fsrsKeys = [
+      'due',
+      'stability',
+      'difficulty',
+      'elapsed_days',
+      'scheduled_days',
+      'learning_steps',
+      'reps',
+      'lapses',
+      'state',
+    ]
     keys(fsrs, [...fsrsKeys, 'last_review'], fsrsKeys)
     date(fsrs.due, 'Fälligkeit')
     number(fsrs.stability, 'Stabilität', 0, 1_000_000)
@@ -87,9 +128,13 @@ export function validateProfile(
     count(fsrs.state, 'Kartenstatus', 3)
     if (fsrs.last_review !== undefined) {
       date(fsrs.last_review, 'Letzte Wiederholung')
-      if (fsrs.last_review < card.introducedAt || fsrs.due < fsrs.last_review) fail('Die Kartenzeitpunkte widersprechen sich.')
+      if (fsrs.last_review < card.introducedAt || fsrs.due < fsrs.last_review)
+        fail('Die Kartenzeitpunkte widersprechen sich.')
     }
-    if (fsrs.reps > 0 && (fsrs.last_review === undefined || fsrs.stability <= 0 || fsrs.difficulty < 1 || fsrs.state === 0)) {
+    if (
+      fsrs.reps > 0 &&
+      (fsrs.last_review === undefined || fsrs.stability <= 0 || fsrs.difficulty < 1 || fsrs.state === 0)
+    ) {
       fail('Der Wiederholungszustand ist widersprüchlich.')
     }
     if (fsrs.reps === 0 && fsrs.state !== 0) fail('Eine ungeübte Karte besitzt bereits einen Lernstatus.')
@@ -106,14 +151,18 @@ export function validateProfile(
       if (stats.attempts === 0 && stats.lastPracticed !== null) fail('Ungeübte Fähigkeit mit Übungsdatum.')
       if (stats.attempts > 0) {
         date(stats.lastPracticed, 'Letzte Übung')
-        if (stats.lastPracticed < card.introducedAt || (fsrs.last_review && stats.lastPracticed > fsrs.last_review)) {
+        if (
+          stats.lastPracticed < card.introducedAt ||
+          (fsrs.last_review && stats.lastPracticed > fsrs.last_review)
+        ) {
           fail('Die Übungszeitpunkte widersprechen sich.')
         }
         if (stats.lastPracticed > latestPractice) latestPractice = stats.lastPracticed
       }
     }
     if (attempts !== fsrs.reps) fail('Wiederholungszahl und Fähigkeitsstatistik stimmen nicht überein.')
-    if (fsrs.reps > 0 && latestPractice !== fsrs.last_review) fail('Das letzte Übungsdatum stimmt nicht mit dem Wiederholungszustand überein.')
+    if (fsrs.reps > 0 && latestPractice !== fsrs.last_review)
+      fail('Das letzte Übungsdatum stimmt nicht mit dem Wiederholungszustand überein.')
   }
   const settings = { ...object(profile.settings, 'Einstellungen') }
   // Compatibility with profiles created before lesson-only learning.
@@ -126,7 +175,8 @@ export function validateProfile(
   // Migration only: retired lookup/tone exercises must not block existing profiles.
   for (const key of Object.keys(practice)) {
     const hanziId = /^h(\d{3})$/.exec(key)
-    if ((hanziId && Number(hanziId[1]) >= 1 && Number(hanziId[1]) <= 246) || /^tone-[1-5]$/.test(key)) delete practice[key]
+    if ((hanziId && Number(hanziId[1]) >= 1 && Number(hanziId[1]) <= 246) || /^tone-[1-5]$/.test(key))
+      delete practice[key]
   }
   profile.practice = practice
   if (Object.keys(practice).length > 10000) fail('Zu viele Übungen.')
@@ -147,8 +197,12 @@ export function validateProfile(
     const event = object(rawEvent, 'Wiederholung')
     keys(event, ['vocabularyId', 'skill', 'rating', 'at'])
     id(event.vocabularyId)
-    if (!Object.hasOwn(cards, event.vocabularyId)) fail('Eine Wiederholung verweist auf eine unbekannte Karte.')
-    if (!SKILLS.includes(event.skill as Skill) || !REVIEW_RATINGS.includes(event.rating as (typeof REVIEW_RATINGS)[number])) {
+    if (!Object.hasOwn(cards, event.vocabularyId))
+      fail('Eine Wiederholung verweist auf eine unbekannte Karte.')
+    if (
+      !SKILLS.includes(event.skill as Skill) ||
+      !REVIEW_RATINGS.includes(event.rating as (typeof REVIEW_RATINGS)[number])
+    ) {
       fail('Unbekannte Fähigkeit oder Bewertung.')
     }
     date(event.at, 'Übungsdatum')
@@ -162,8 +216,11 @@ export function validateProfile(
     counts.attempts += 1
     counts.correct += event.rating === 'again' ? 0 : 1
     const stats = card.skills[event.skill as Skill]
-    if (counts.attempts > stats.attempts || counts.correct > stats.correct
-      || counts.attempts - counts.correct > stats.attempts - stats.correct) {
+    if (
+      counts.attempts > stats.attempts ||
+      counts.correct > stats.correct ||
+      counts.attempts - counts.correct > stats.attempts - stats.correct
+    ) {
       fail('Die Wiederholungshistorie widerspricht der Fähigkeitsstatistik.')
     }
     historyCounts.set(key, counts)
@@ -173,7 +230,8 @@ export function validateProfile(
   const lessonSet = new Set<string>()
   for (const lesson of profile.completedLessons) {
     id(lesson)
-    if (lessonSet.has(lesson) || (knownLessons && !knownLessons.has(lesson))) fail('Unbekannte oder doppelte Lektion.')
+    if (lessonSet.has(lesson) || (knownLessons && !knownLessons.has(lesson)))
+      fail('Unbekannte oder doppelte Lektion.')
     lessonSet.add(lesson)
   }
   return structuredClone(profile) as unknown as Profile
@@ -181,18 +239,31 @@ export function validateProfile(
 
 export function exportBackup(profile: Profile, now = new Date()): string {
   const valid = validateProfile(profile)
-  return JSON.stringify({
-    application: 'hsk-level-one',
-    backupSchemaVersion: BACKUP_SCHEMA_VERSION,
-    exportedAt: now.toISOString(),
-    profile: valid,
-  }, null, 2)
+  return JSON.stringify(
+    {
+      application: 'hsk-level-one',
+      backupSchemaVersion: BACKUP_SCHEMA_VERSION,
+      exportedAt: now.toISOString(),
+      profile: valid,
+    },
+    null,
+    2,
+  )
 }
 
-export function parseBackup(json: string, validIds: Iterable<string>, validLessonIds?: Iterable<string>, validPracticeIds?: Iterable<string>): Profile {
+export function parseBackup(
+  json: string,
+  validIds: Iterable<string>,
+  validLessonIds?: Iterable<string>,
+  validPracticeIds?: Iterable<string>,
+): Profile {
   if (new TextEncoder().encode(json).byteLength > MAX_BACKUP_BYTES) fail('Die Datei ist größer als 10 MB.')
   let value: unknown
-  try { value = JSON.parse(json) } catch { fail('Die Datei enthält kein lesbares JSON.') }
+  try {
+    value = JSON.parse(json)
+  } catch {
+    fail('Die Datei enthält kein lesbares JSON.')
+  }
   const backup = object(value, 'Sicherungsdatei')
   keys(backup, ['application', 'backupSchemaVersion', 'exportedAt', 'profile'])
   if (backup.application !== 'hsk-level-one' || backup.backupSchemaVersion !== BACKUP_SCHEMA_VERSION) {
