@@ -121,7 +121,7 @@ export function ExerciseRunner({
         {e.pinyin && !checked && (
           <div className="hint">
             <button className="text-button" onClick={() => setHint(true)}>
-              <Lightbulb size={16} /> {hint ? e.pinyin : 'Pinyin als Hilfe'}
+              {!hint && <Lightbulb size={16} />} {hint ? e.pinyin : 'Pinyin als Hilfe'}
             </button>
           </div>
         )}

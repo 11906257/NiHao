@@ -41,20 +41,20 @@ export function HomeTiles({ onNavigate }: { onNavigate: (page: string) => void }
     <section className="home-links">
       <h2>Lernen &amp; Nachschlagen</h2>
       <div className="home-tile-grid">
-        {(['words', 'hanzi', 'grammar', 'training'] as const).map((id) => {
+        {(['words', 'hanzi', 'grammar', 'training', 'review', 'settings'] as const).map((id) => {
           const entry = pages[id]
           return (
-            <button key={id} className="card home-tile" onClick={() => onNavigate(id)}>
+            <button
+              key={id}
+              className={`card home-tile ${id === 'settings' ? 'settings-tile' : ''}`}
+              onClick={() => onNavigate(id)}
+            >
               <entry.icon size={28} />
               <span>{entry.label}</span>
             </button>
           )
         })}
       </div>
-      <button className="text-button settings-link" onClick={() => onNavigate('settings')}>
-        <Settings size={24} />
-        <span>Einstellungen</span>
-      </button>
     </section>
   )
 }

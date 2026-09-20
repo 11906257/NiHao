@@ -5,11 +5,11 @@ import type { Profile } from '../lib/scheduler'
 export function WordCard({
   word,
   onClick,
-  begun,
+  known,
 }: {
   word: Vocabulary
   onClick: () => void
-  begun: boolean
+  known: boolean
 }) {
   return (
     <button className="card word-card" onClick={onClick}>
@@ -17,7 +17,7 @@ export function WordCard({
         <span className="chinese" lang="zh-CN">
           {word.hanzi}
         </span>
-        {begun && <CircleCheck className="word-begun" size={20} aria-label="Begonnen" />}
+        {known && <CircleCheck className="word-known" size={20} aria-label="Bekannt" />}
       </div>
       <span className="pinyin">{word.pinyin}</span>
       <strong>{word.meaning}</strong>
@@ -48,10 +48,17 @@ export function LessonCard({
           {recommended && <span className="pill">Als Nächstes</span>}
         </h3>
         <p>{lesson.description}</p>
-        <span className="small muted">
-          {lesson.wordIds.length} Wörter · {lesson.grammarIds.length}{' '}
-          {lesson.grammarIds.length === 1 ? 'Grammatikthema' : 'Grammatikthemen'}
-        </span>
+        {(lesson.wordIds.length > 0 || lesson.grammarIds.length > 0) && (
+          <span className="small muted">
+            {[
+              lesson.wordIds.length > 0 && `${lesson.wordIds.length} Wörter`,
+              lesson.grammarIds.length > 0 &&
+                `${lesson.grammarIds.length} ${lesson.grammarIds.length === 1 ? 'Grammatikthema' : 'Grammatikthemen'}`,
+            ]
+              .filter(Boolean)
+              .join(' · ')}
+          </span>
+        )}
         <div className="word-preview" lang="zh-CN">
           {lesson.wordIds.map((id) => (
             <span key={id}>{wordById[id].hanzi}</span>

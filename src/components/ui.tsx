@@ -109,11 +109,10 @@ export function ProgressBar({ value, max, label }: { value: number; max: number;
     </div>
   )
 }
-export function Empty({ title, children, icon }: { title: string; children?: ReactNode; icon?: ReactNode }) {
+export function Empty({ title, children }: { title: string; children?: ReactNode }) {
   return (
     <div className="empty">
-      {icon}
-      <h2>{title}</h2>
+      <h3>{title}</h3>
       {children}
     </div>
   )
@@ -184,7 +183,7 @@ export function LookupDetail({
   title: string
   hanzi: string
   pinyin: string
-  meaning: string
+  meaning?: string
   note?: string
   onClose: () => void
   action?: ReactNode
@@ -201,7 +200,7 @@ export function LookupDetail({
             {hanzi}
           </span>
           <span className="intro-pinyin">{pinyin}</span>
-          <h3>{meaning}</h3>
+          {meaning && <h3>{meaning}</h3>}
         </>
       }
       actions={

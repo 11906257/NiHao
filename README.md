@@ -69,7 +69,7 @@ Beim WebKit-Offlinetest wird ein eigener HTTP-Server mit `Cache-Control: no-stor
 
 Ein globales Sprechtempo (Langsam, Normal, Schnell) steuert sämtliche TTS-Ausgaben. `src/lib/audio.ts` ist die einzige Quelle der Tempostufen. Einstellungen, Reload und Backup-Import aktualisieren denselben Wert.
 
-Die Startseite Nǐ Hǎo zeigt die nächste Aktion unter Today, Kreisfortschritt für Langzeitgedächtnis und Lektionen sowie vier Nachschlage-/Trainingskacheln und Einstellungen. Unterseiten führen direkt zur Startseite zurück. Das Langzeitgedächtnis zählt Wörter mit mindestens 14 Tagen FSRS-Stabilität und erfolgreichem Abruf in mindestens zwei Richtungen. Das 你好-Icon, Blau-/Korall-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
+Die Startseite Nǐ Hǎo zeigt die nächste Aktion unter Heute, Kreisfortschritt für Bekannte Wörter und Lektionen sowie sechs Kacheln für Wortschatz, Zeichen, Grammatik, Training, Wiederholen und Einstellungen. Unterseiten führen direkt zur Startseite zurück. Bekannte Wörter sind Wörter mit mindestens 14 Tagen FSRS-Stabilität und erfolgreichem Abruf in mindestens zwei Richtungen. Das 你好-Icon, Blau-/Korall-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
 
 Alte lokale Profile und Sicherungen bleiben lesbar. Die entfernte Prüfungshistorie wird bei der Validierung ausgelassen. Lernkarten, FSRS-Zustände, Übungen und Lektionen bleiben erhalten. Neue Sicherungen enthalten kein Prüfungsfeld. Der letzte Exportklick wird lokal gespeichert. Nach einem Monat erinnert die Übersicht an eine Sicherung.
 
