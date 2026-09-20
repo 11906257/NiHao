@@ -6,6 +6,7 @@
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   --primary: #3b5bdb;
+  --primary-hover: #304bc0;
   --primary-soft: #edf2ff;
   --bg: #faf9f6;
   --surface: #ffffff;
@@ -204,12 +205,15 @@ button.card {
   color: var(--text);
   border-color: var(--border);
 }
-.light {
-  background: var(--on-primary);
-  color: var(--nav);
-}
 .button:not(:disabled):hover {
-  filter: brightness(0.96);
+  background: var(--surface-alt);
+}
+.button.primary:not(:disabled):hover {
+  background: var(--primary-hover);
+}
+.toggle-group button:not([aria-pressed='true']):hover,
+.text-button:hover {
+  background: var(--surface-alt);
 }
 .icon-button {
   display: inline-flex;
@@ -319,7 +323,10 @@ button.card {
   font-weight: 400;
 }
 .nav-link:hover {
-  outline: 1px solid var(--nav-muted);
+  background: #ffffff14;
+}
+.nav-link.active:hover {
+  background: var(--primary-hover);
 }
 .nav-divider {
   margin-top: var(--space-4);
@@ -563,7 +570,7 @@ select {
 .hanzi-tile:hover,
 .grammar-card:hover,
 .content-row:hover {
-  border-color: var(--interactive);
+  background: var(--surface-alt);
 }
 .word-card > div {
   display: flex;
@@ -1845,10 +1852,6 @@ select {
 .focus-hanzi {
   opacity: 1;
 }
-.focus-footer .light {
-  background: var(--primary);
-  color: var(--on-primary);
-}
 .lesson-number {
   border-color: var(--border);
 }
@@ -2145,17 +2148,17 @@ select {
     transform 0.15s;
 }
 .status-link:hover {
-  border-color: var(--interactive);
+  background: var(--surface-alt);
 }
 .status-link:active {
   background: var(--surface-alt);
   transform: translateY(1px);
 }
-.lesson-row:hover {
+.lesson-row:hover,
+.lesson-row.recommended:hover {
   background: var(--surface-alt);
 }
-.lesson-row.recommended,
-.lesson-row.recommended:hover {
+.lesson-row.recommended {
   background: var(--surface);
   border-color: var(--accent);
 }
@@ -2174,13 +2177,6 @@ select {
   background: none;
   border-radius: 0;
   color: var(--interactive);
-}
-.phase-transition {
-  background: var(--primary);
-  color: var(--on-primary);
-  min-height: 58px;
-  font-weight: 700;
-  gap: 16px;
 }
 .pinyin-keyboard {
   margin-top: 16px;
@@ -2207,7 +2203,6 @@ select {
   background: var(--surface);
 }
 .pinyin-group button:hover {
-  border-color: var(--interactive);
   background: var(--surface-alt);
 }
 .pinyin-keyboard > p {
@@ -2238,10 +2233,9 @@ select {
   flex: 1;
 }
 .rating-choice .rating-known {
-  flex-direction: column;
   min-height: 48px;
-  height: 48px;
-  align-self: center;
+  height: 100%;
+  align-self: stretch;
   flex-direction: row;
   font-size: var(--text-sm);
 }
@@ -2531,12 +2525,6 @@ select {
   font-size: var(--heading-3);
   font-weight: 600;
 }
-.primary,
-.focus-footer .light,
-.phase-transition {
-  background: var(--primary);
-  color: var(--on-primary);
-}
 .brand-mark {
   background: var(--primary);
 }
@@ -2594,4 +2582,10 @@ label,
   .training-card {
     padding: var(--space-6);
   }
+}
+
+.choice:not(:disabled):hover,
+.training-card:not(:disabled):hover,
+.character-words button:hover {
+  background: var(--surface-alt);
 }

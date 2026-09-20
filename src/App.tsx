@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
   ArrowRight,
-  ArrowUpRight,
   BookOpen,
   CircleCheck,
   ChevronRight,
@@ -230,13 +229,13 @@ export default function App() {
     setSession({ kind: 'practice', exercises, title })
     window.scrollTo(0, 0)
   }
+  const reviewSkills: Skill[] = audio.available
+    ? ['meaning', 'pinyin', 'listening', 'context', 'production']
+    : ['meaning', 'pinyin', 'context', 'production']
   const beginReview = (ids: string[]) => {
     if (!profile) return
-    const skills: Skill[] = audio.available
-      ? ['meaning', 'pinyin', 'listening', 'context', 'production']
-      : ['meaning', 'pinyin', 'context', 'production']
     startPractice(
-      ids.map((id) => wordExercise(wordById[id], chooseSkill(profile.cards[id], skills), vocabulary)),
+      ids.map((id) => wordExercise(wordById[id], chooseSkill(profile.cards[id], reviewSkills), vocabulary)),
       'Wiederholen',
     )
   }
@@ -405,7 +404,7 @@ export default function App() {
             <span>
               {lastExport
                 ? 'Dein letzter Export ist über einen Monat her. Sichere deinen Lernstand.'
-                : 'Sichere deinen Lernstand – du hast noch kein Backup exportiert.'}
+                : 'Sichere deinen Lernstand. Du hast noch kein Backup exportiert.'}
             </span>
             <button className="button secondary" onClick={exportLearningBackup}>
               <Upload size={18} /> Jetzt sichern
@@ -438,7 +437,7 @@ export default function App() {
             </div>
             <div className="focus-footer">
               <button
-                className="button light"
+                className="button primary"
                 onClick={() =>
                   plan.dueIds.length
                     ? beginReview(plan.dueIds.slice(0, 20))
@@ -475,20 +474,6 @@ export default function App() {
           </button>
           <LessonProgress completed={profile.completedLessons.length} onOpen={() => navigate('learn')} />
         </div>
-        <div className="section-heading">
-          <h2>Lernpfad</h2>
-          <button className="text-button" onClick={() => navigate('learn')}>
-            Alle Lektionen <ArrowUpRight size={17} />
-          </button>
-        </div>
-        {profile.completedLessons.length < lessons.length && (
-          <LessonCard
-            lesson={nextLesson}
-            profile={profile}
-            recommended
-            onOpen={() => navigate(`learn/${nextLesson.id}`)}
-          />
-        )}
         {plan.weakIds.length > 0 && (
           <div className="note row-between">
             <span>{plan.weakIds.length} Wörter zum Nachüben.</span>
@@ -651,7 +636,7 @@ export default function App() {
                 </span>
                 <span>
                   <strong>{wordById[card.vocabularyId].meaning}</strong>
-                  <span className="muted">{skillLabels[chooseSkill(card)]}</span>
+                  <span className="muted">{skillLabels[chooseSkill(card, reviewSkills)]}</span>
                 </span>
                 <span className="small muted">
                   {Date.parse(card.fsrs.due) <= Date.now() ? 'Jetzt fällig' : formatDate(card.fsrs.due)}
@@ -689,7 +674,7 @@ export default function App() {
             <WordCard key={w.id} word={w} onClick={() => setSelectedWord(w)} begun={!!profile.cards[w.id]} />
           ))}
         </div>
-        {!filtered.length && <Empty title="Kein passendes Wort gefunden." />}
+        {!filtered.length && <Empty title="Keine Wörter gefunden." />}
       </>
     )
   } else if (page === 'hanzi') {
@@ -700,6 +685,7 @@ export default function App() {
       <>
         <PageHeading page="hanzi" onMenu={() => setMore(true)} menuOpen={more} />
         <div className="filter-bar">{searchInput('Zeichen, Pinyin oder Bedeutung suchen')}</div>
+        <p className="small muted">{filtered.length} Zeichen</p>
         <div className="hanzi-grid">
           {filtered.map((h) => (
             <button key={h.id} className="hanzi-tile" onClick={() => setSelectedHanzi(h)}>
@@ -722,6 +708,7 @@ export default function App() {
       <>
         <PageHeading page="grammar" onMenu={() => setMore(true)} menuOpen={more} />
         <div className="filter-bar">{searchInput('Grammatik suchen')}</div>
+        <p className="small muted">{filtered.length} Grammatikthemen</p>
         <div className="grammar-grid">
           {filtered.map((g) => (
             <button className="card grammar-card" key={g.id} onClick={() => setSelectedGrammar(g)}>
@@ -737,6 +724,7 @@ export default function App() {
             </button>
           ))}
         </div>
+        {!filtered.length && <Empty title="Keine Grammatikthemen gefunden." />}
       </>
     )
   } else if (page === 'training') {
@@ -779,7 +767,7 @@ export default function App() {
                 {skill === 'listening'
                   ? 'Hören → Bedeutung'
                   : skill === 'context'
-                    ? 'Wörter im Satz ergänzen'
+                    ? 'Bedeutung im Satz erkennen'
                     : skill === 'production'
                       ? 'Deutsch → Chinesisch'
                       : 'Hanzi → Pinyin'}

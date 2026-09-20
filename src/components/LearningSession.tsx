@@ -81,10 +81,7 @@ export function LearningSession({
             <ExampleTranslation example={point.example} />
           </>
         )}
-        <button
-          className={`button full ${step === total - 1 ? 'phase-transition' : 'primary'}`}
-          onClick={() => setStep(step + 1)}
-        >
+        <button className="button full primary" onClick={() => setStep(step + 1)}>
           {step === total - 1 ? 'Jetzt aktiv erinnern' : 'Weiter'}{' '}
           {step === total - 1 ? <Brain size={22} /> : <ArrowRight size={18} />}
         </button>

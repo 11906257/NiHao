@@ -428,7 +428,7 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   const hard = await page.getByRole('button', { name: 'Mit Mühe', exact: true }).boundingBox()
   const easy = await page.getByRole('button', { name: 'Leicht', exact: true }).boundingBox()
   expect(known!.x).toBeGreaterThan(hard!.x)
-  expect(known!.height).toBe(48)
+  expect(known!.height).toBe(104)
   expect(easy!.y).toBeGreaterThan(hard!.y)
   await page.screenshot({
     path: `work/screens/revised-ratings-${test.info().project.name}.png`,
