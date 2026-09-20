@@ -1,75 +1,95 @@
-import { BookOpen, Dumbbell, TextCursorInput, Library, Menu, RefreshCw, Settings2, Sun } from 'lucide-react'
-const routes = [
-  { id: 'today', label: 'Heute', icon: Sun },
-  { id: 'learn', label: 'Lernpfad', icon: BookOpen },
-  { id: 'review', label: 'Wiederholen', icon: RefreshCw },
-  { id: 'words', label: 'Wortschatz', icon: Library },
-  { id: 'hanzi', label: 'Hanzi', icon: HanziIcon },
-  { id: 'grammar', label: 'Grammatik', icon: TextCursorInput },
-  { id: 'training', label: 'Training', icon: Dumbbell },
-  { id: 'settings', label: 'Einstellungen', icon: Settings2 },
-]
-function HanziIcon({ size = 20 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
-      <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M12 3v3M4 9V6h16v3M8 10h8l-4 4v6l-3-1M4 15h16" />
-      </g>
-    </svg>
-  )
+import {
+  ArrowLeft,
+  BookOpen,
+  Dumbbell,
+  TextCursorInput,
+  Library,
+  RefreshCw,
+  Settings,
+  Languages,
+} from 'lucide-react'
+
+const pages = {
+  learn: { label: 'Lektionen', icon: BookOpen },
+  review: { label: 'Wiederholen', icon: RefreshCw },
+  words: { label: 'Wortschatz', icon: Library },
+  hanzi: { label: 'Zeichen', icon: Languages },
+  grammar: { label: 'Grammatik', icon: TextCursorInput },
+  training: { label: 'Training', icon: Dumbbell },
+  settings: { label: 'Einstellungen', icon: Settings },
 }
 
-export function PageHeading({
-  page,
-  onMenu,
-  menuOpen,
-}: {
-  page: string
-  onMenu: () => void
-  menuOpen: boolean
-}) {
-  const route = routes.find((route) => route.id === page) ?? routes[0]
+export function PageHeading({ page, onBack }: { page: string; onBack: () => void }) {
+  const entry = pages[page as keyof typeof pages]
   return (
-    <div className="page-heading simple-heading">
-      <button
-        className="icon-button heading-menu"
-        aria-label="Menü öffnen"
-        aria-expanded={menuOpen}
-        onClick={onMenu}
-      >
-        <Menu size={24} />
+    <header className="subpage-heading">
+      <button className="icon-button page-back" onClick={onBack} aria-label="Nǐ Hǎo">
+        <ArrowLeft size={24} />
       </button>
-      <route.icon size={38} />
-      <h1>{route.label}</h1>
-    </div>
+      {entry && (
+        <div className="page-heading simple-heading">
+          <entry.icon size={32} />
+          <h1>{entry.label}</h1>
+        </div>
+      )}
+    </header>
   )
 }
 
-export function MainNavigation({
-  page,
-  dueCount,
-  onNavigate,
-  mobile = false,
-}: {
-  page: string
-  dueCount: number
-  onNavigate: (id: string) => void
-  mobile?: boolean
-}) {
+export function HomeTiles({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
-    <nav aria-label={mobile ? 'Mobile Navigation' : 'Hauptnavigation'}>
-      {routes.map((route, index) => (
-        <button
-          className={`nav-link ${page === route.id ? 'active' : ''} ${index === 3 || index === 7 ? 'nav-divider' : ''}`}
-          key={route.id}
-          onClick={() => onNavigate(route.id)}
-          aria-current={page === route.id ? 'page' : undefined}
-        >
-          <route.icon size={20} />
-          <span>{route.label}</span>
-          {route.id === 'review' && dueCount > 0 && <span className="nav-count">{dueCount}</span>}
-        </button>
-      ))}
-    </nav>
+    <section className="home-links">
+      <h2>Lernen &amp; Nachschlagen</h2>
+      <div className="home-tile-grid">
+        {(['words', 'hanzi', 'grammar', 'training'] as const).map((id) => {
+          const entry = pages[id]
+          return (
+            <button key={id} className="card home-tile" onClick={() => onNavigate(id)}>
+              <entry.icon size={28} />
+              <span>{entry.label}</span>
+            </button>
+          )
+        })}
+      </div>
+      <button className="text-button settings-link" onClick={() => onNavigate('settings')}>
+        <Settings size={24} />
+        <span>Einstellungen</span>
+      </button>
+    </section>
+  )
+}
+
+export function ProgressCard({
+  label,
+  value,
+  max,
+  onOpen,
+}: {
+  label: string
+  value: number
+  max: number
+  onOpen: () => void
+}) {
+  const circumference = 2 * Math.PI * 42
+  return (
+    <button className="card progress-card" onClick={onOpen} aria-label={`${label} öffnen`}>
+      <div className="progress-ring">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle className="ring-track" cx="50" cy="50" r="42" />
+          <circle
+            className="ring-value"
+            cx="50"
+            cy="50"
+            r="42"
+            strokeDasharray={circumference}
+            strokeDashoffset={circumference * (1 - Math.min(1, value / max))}
+          />
+        </svg>
+        <span>
+          <strong>{value}</strong> / {max}
+        </span>
+      </div>
+      <span>{label}</span>
+    </button>
   )
 }

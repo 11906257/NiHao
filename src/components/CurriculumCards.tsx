@@ -1,8 +1,7 @@
 import { ChevronRight, CircleCheck } from 'lucide-react'
-import { lessons, wordById } from '../data/curriculum'
+import { wordById } from '../data/curriculum'
 import type { Vocabulary, Lesson } from '../data/types'
 import type { Profile } from '../lib/scheduler'
-import { ProgressBar } from './ui'
 export function WordCard({
   word,
   onClick,
@@ -22,28 +21,6 @@ export function WordCard({
       </div>
       <span className="pinyin">{word.pinyin}</span>
       <strong>{word.meaning}</strong>
-    </button>
-  )
-}
-
-export function LessonProgress({ completed, onOpen }: { completed: number; onOpen: () => void }) {
-  const content = (
-    <>
-      <span className="status-title">
-        <span className="eyebrow">Lernpfad</span>
-        <ChevronRight size={20} />
-      </span>
-      <strong className="metric">
-        {completed}
-        <small> / {lessons.length}</small>
-      </strong>
-      <p>Lektionen bearbeitet</p>
-      <ProgressBar value={completed} max={lessons.length} />
-    </>
-  )
-  return (
-    <button className="card lesson-progress status-link" onClick={onOpen} aria-label="Lernpfad öffnen">
-      {content}
     </button>
   )
 }
