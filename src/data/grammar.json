@@ -220,7 +220,7 @@
         "它",
         "我"
       ],
-      "explanation": "您 spricht eine Person höflich an; die Aussprache ist nín."
+      "explanation": "您 spricht eine Person höflich an. Die Aussprache ist nín."
     },
     "lessonId": "l08"
   },
@@ -253,7 +253,7 @@
     "id": "g011",
     "sourceLabel": "数词：一、二/两、三、四、五、六、七、八、九、零、十、百、半、千",
     "title": "Zahlen und 二 / 两",
-    "explanation": "Zahlen werden systematisch zusammengesetzt: 十二 ist zwölf, 二十 ist zwanzig. Vor einem Zählwort steht für zwei meist 两; in Zahlenfolgen und Ordnungszahlen steht 二.",
+    "explanation": "Zahlen werden systematisch zusammengesetzt: 十二 ist zwölf, 二十 ist zwanzig. Vor einem Zählwort steht für zwei meist 两. In Zahlenfolgen und Ordnungszahlen steht 二.",
     "pattern": "Zahl + Zählwort + Nomen",
     "example": {
       "id": "ex-g011",
@@ -303,7 +303,7 @@
     "id": "g013",
     "sourceLabel": "名量词（2）：借用名量词 杯",
     "title": "Gefäße als Mengenangaben",
-    "explanation": "Ein Gefäßwort kann eine Portion zählen. 杯 bedeutet als Mengenwort einen Becher oder eine Tasse voll; das Gefäß selbst heißt häufig 杯子.",
+    "explanation": "Ein Gefäßwort kann eine Portion zählen. 杯 bedeutet als Mengenwort einen Becher oder eine Tasse voll. Das Gefäß selbst heißt häufig 杯子.",
     "pattern": "Zahl + 杯 + Getränk",
     "example": {
       "id": "ex-g013",
@@ -328,7 +328,7 @@
     "id": "g014",
     "sourceLabel": "时量词：日、号、岁、点、分、年、天",
     "title": "Zeit- und Altersangaben",
-    "explanation": "Zeitwörter verbinden sich direkt mit Zahlen: 三天, 两年, 十岁. 日 und 号 bezeichnen ein Kalenderdatum; 点 und 分 dienen zur Uhrzeit.",
+    "explanation": "Zeitwörter verbinden sich direkt mit Zahlen: 三天, 两年, 十岁. 日 und 号 bezeichnen ein Kalenderdatum. 点 und 分 dienen zur Uhrzeit.",
     "pattern": "Zahl + Zeitwort",
     "example": {
       "id": "ex-g014",
@@ -370,7 +370,7 @@
         "这个贵太了。",
         "这个了太贵。"
       ],
-      "explanation": "太 steht vor 贵; 太…了 betont hier ein zu hohes Maß."
+      "explanation": "太 steht vor 贵. 太…了 betont hier ein zu hohes Maß."
     },
     "lessonId": "l38"
   },
@@ -903,7 +903,7 @@
     "id": "g037",
     "sourceLabel": "谓语：动词或动词性短语、形容词或形容词性短语作谓语",
     "title": "Verbales und adjektivisches Prädikat",
-    "explanation": "Ein Prädikat kann eine Handlung oder eine Eigenschaft ausdrücken. Vor einem einfachen Adjektiv steht normalerweise kein 是; häufig verbindet 很 es mit dem Subjekt.",
+    "explanation": "Ein Prädikat kann eine Handlung oder eine Eigenschaft ausdrücken. Vor einem einfachen Adjektiv steht normalerweise kein 是. Häufig verbindet 很 es mit dem Subjekt.",
     "pattern": "Subjekt + Verb / Subjekt + 很 + Adjektiv",
     "example": {
       "id": "ex-g037",
@@ -920,7 +920,7 @@
         "房间是大很。",
         "房间大是。"
       ],
-      "explanation": "很大 bildet direkt das Prädikat; 是 ist hier nicht nötig."
+      "explanation": "很大 bildet direkt das Prädikat. 是 ist hier nicht nötig."
     },
     "lessonId": "l38"
   },
@@ -953,7 +953,7 @@
     "id": "g039",
     "sourceLabel": "定语：名词性词语、形容词性短语、数量短语作定语",
     "title": "Ein Nomen genauer bestimmen",
-    "explanation": "Vor einem Nomen können Angaben zu Besitzer, Eigenschaft oder Anzahl stehen. 的 verbindet viele beschreibende und besitzanzeigende Attribute mit dem Nomen; Zahl-Zählwort-Gruppen stehen direkt davor.",
+    "explanation": "Vor einem Nomen können Angaben zu Besitzer, Eigenschaft oder Anzahl stehen. 的 verbindet viele beschreibende und besitzanzeigende Attribute mit dem Nomen. Zahl-Zählwort-Gruppen stehen direkt davor.",
     "pattern": "Attribut + Nomen",
     "example": {
       "id": "ex-g039",
@@ -1053,7 +1053,7 @@
     "id": "g043",
     "sourceLabel": "主谓句2：形容词谓语句",
     "title": "Sätze mit einer Eigenschaft",
-    "explanation": "Ein Adjektiv kann im Chinesischen direkt Prädikat sein. 很 dient in neutralen Aussagen häufig als Verbindung; es muss dabei nicht stark „sehr“ betonen.",
+    "explanation": "Ein Adjektiv kann im Chinesischen direkt Prädikat sein. 很 dient in neutralen Aussagen häufig als Verbindung. Es muss dabei nicht stark „sehr“ betonen.",
     "pattern": "Subjekt + 很 + Adjektiv",
     "example": {
       "id": "ex-g043",
@@ -1120,7 +1120,7 @@
         "的坐！",
         "坐的们！"
       ],
-      "explanation": "请坐 ist eine vollständige höfliche Aufforderung; die angesprochene Person ist klar."
+      "explanation": "请坐 ist eine vollständige höfliche Aufforderung. Die angesprochene Person ist klar."
     },
     "lessonId": "l04"
   },
@@ -1545,7 +1545,7 @@
         "Jedes chinesische Verb steht in der Vergangenheit.",
         "Die Handlung läuft gerade."
       ],
-      "explanation": "Das dynamische 了 markiert den vollzogenen Aspekt; eine Zeitangabe entsteht daraus allein nicht."
+      "explanation": "Das dynamische 了 markiert den vollzogenen Aspekt. Eine Zeitangabe entsteht daraus allein nicht."
     },
     "lessonId": "l40"
   },
@@ -1670,7 +1670,7 @@
         "十二元",
         "二元十"
       ],
-      "explanation": "二十 ist zwanzig; 十二 ist zwölf."
+      "explanation": "二十 ist zwanzig. 十二 ist zwölf."
     },
     "lessonId": "l36"
   },
@@ -1695,7 +1695,7 @@
         "个",
         "们"
       ],
-      "explanation": "第 vor 一 bildet die Ordnungszahl; 本 bleibt das Zählwort für 书."
+      "explanation": "第 vor 一 bildet die Ordnungszahl. 本 bleibt das Zählwort für 书."
     },
     "lessonId": "l25"
   },
@@ -1703,7 +1703,7 @@
     "id": "g069",
     "sourceLabel": "时间表示法（1）：年、月、日、星期",
     "title": "Datum und Wochentag",
-    "explanation": "Ein Datum wird von der größeren zur kleineren Einheit genannt: Jahr, Monat, Tag. Wochentage zählen ab Montag mit 星期一; Sonntag heißt 星期日 oder 星期天.",
+    "explanation": "Ein Datum wird von der größeren zur kleineren Einheit genannt: Jahr, Monat, Tag. Wochentage zählen ab Montag mit 星期一. Sonntag heißt 星期日 oder 星期天.",
     "pattern": "Jahr + 年 + Monat + 月 + Tag + 日/号",
     "example": {
       "id": "ex-g069",
@@ -1720,7 +1720,7 @@
         "一星期",
         "星期日"
       ],
-      "explanation": "星期一 ist Montag; 一星期 bezeichnet eine Woche."
+      "explanation": "星期一 ist Montag. 一星期 bezeichnet eine Woche."
     },
     "lessonId": "l24"
   },

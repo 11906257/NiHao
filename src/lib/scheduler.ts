@@ -61,7 +61,7 @@ const grades = {
   easy: Rating.Easy,
 } as const
 
-export function toISO(date: Date): string {
+function toISO(date: Date): string {
   if (!Number.isFinite(date.getTime())) throw new Error('Ungültiger Zeitpunkt.')
   return date.toISOString()
 }
@@ -96,18 +96,27 @@ export function createProfile(now = new Date()): Profile {
   }
 }
 
-export function createLearningCard(vocabularyId: string, now = new Date()): LearningCard {
-  if (!/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(vocabularyId) ||
-      ['__proto__', 'constructor', 'prototype'].includes(vocabularyId)) {
+function createLearningCard(vocabularyId: string, now = new Date()): LearningCard {
+  if (
+    !/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(vocabularyId) ||
+    ['__proto__', 'constructor', 'prototype'].includes(vocabularyId)
+  ) {
     throw new Error('Ungültige Vokabel-ID.')
   }
   return {
     vocabularyId,
     introducedAt: toISO(now),
     fsrs: serializeCard(createEmptyCard(now)),
-    skills: Object.fromEntries(SKILLS.map(skill => [skill, {
-      attempts: 0, correct: 0, lastPracticed: null,
-    }])) as Record<Skill, SkillStats>,
+    skills: Object.fromEntries(
+      SKILLS.map((skill) => [
+        skill,
+        {
+          attempts: 0,
+          correct: 0,
+          lastPracticed: null,
+        },
+      ]),
+    ) as Record<Skill, SkillStats>,
   }
 }
 
@@ -125,8 +134,10 @@ export function reviewVocabulary(
   const current = Object.hasOwn(profile.cards, vocabularyId)
     ? profile.cards[vocabularyId]!
     : createLearningCard(vocabularyId, now)
-  if ((current.fsrs.last_review && now.getTime() < Date.parse(current.fsrs.last_review))
-    || (profile.history.at(-1)?.at ?? '') > at) {
+  if (
+    (current.fsrs.last_review && now.getTime() < Date.parse(current.fsrs.last_review)) ||
+    (profile.history.at(-1)?.at ?? '') > at
+  ) {
     throw new Error('Die Gerätezeit liegt vor der letzten Wiederholung. Bitte Datum und Uhrzeit prüfen.')
   }
   const { card } = scheduler.next(deserializeCard(current.fsrs), now, grades[rating])
@@ -156,8 +167,11 @@ export function reviewVocabulary(
 export function getDueCards(profile: Profile, now = new Date()): LearningCard[] {
   toISO(now)
   return Object.values(profile.cards)
-    .filter(card => Date.parse(card.fsrs.due) <= now.getTime())
-    .sort((a, b) => Date.parse(a.fsrs.due) - Date.parse(b.fsrs.due) || a.vocabularyId.localeCompare(b.vocabularyId))
+    .filter((card) => Date.parse(card.fsrs.due) <= now.getTime())
+    .sort(
+      (a, b) =>
+        Date.parse(a.fsrs.due) - Date.parse(b.fsrs.due) || a.vocabularyId.localeCompare(b.vocabularyId),
+    )
 }
 
 /** Smoothed recall rate is only a task-selection heuristic, not a proficiency score. */
@@ -166,15 +180,17 @@ function skillPriority(stats: SkillStats): number {
 }
 
 export function chooseSkill(card?: LearningCard, availableSkills: readonly Skill[] = SKILLS): Skill {
-  const available = SKILLS.filter(skill => availableSkills.includes(skill))
+  const available = SKILLS.filter((skill) => availableSkills.includes(skill))
   if (!available.length) throw new Error('Für diese Vokabel ist keine Übung verfügbar.')
   if (!card) return available[0]!
   return available.sort((a, b) => {
     const left = card.skills[a]
     const right = card.skills[b]
-    return skillPriority(left) - skillPriority(right)
-      || left.attempts - right.attempts
-      || (left.lastPracticed ?? '').localeCompare(right.lastPracticed ?? '')
+    return (
+      skillPriority(left) - skillPriority(right) ||
+      left.attempts - right.attempts ||
+      (left.lastPracticed ?? '').localeCompare(right.lastPracticed ?? '')
+    )
   })[0]!
 }
 
@@ -183,27 +199,21 @@ function localDay(date: Date): string {
 }
 
 export function getReviewPlan(profile: Profile, now = new Date()) {
-  const dueIds = getDueCards(profile, now).map(card => card.vocabularyId)
+  const dueIds = getDueCards(profile, now).map((card) => card.vocabularyId)
   const today = localDay(now)
   const dueSet = new Set(dueIds)
   const weakIds = Object.values(profile.cards)
-    .filter(card => !dueSet.has(card.vocabularyId)
-      && card.fsrs.last_review && localDay(new Date(card.fsrs.last_review)) !== today
-      && SKILLS.some(skill => card.skills[skill].attempts > card.skills[skill].correct))
+    .filter(
+      (card) =>
+        !dueSet.has(card.vocabularyId) &&
+        card.fsrs.last_review &&
+        localDay(new Date(card.fsrs.last_review)) !== today &&
+        SKILLS.some((skill) => card.skills[skill].attempts > card.skills[skill].correct),
+    )
     .sort((a, b) => skillPriority(a.skills[chooseSkill(a)]) - skillPriority(b.skills[chooseSkill(b)]))
-    .slice(0, 5).map(card => card.vocabularyId)
+    .slice(0, 5)
+    .map((card) => card.vocabularyId)
   return { dueIds, weakIds }
-}
-
-export function getSkillSummary(profile: Profile): Record<Skill, SkillStats> {
-  return Object.fromEntries(SKILLS.map(skill => {
-    const stats = Object.values(profile.cards).map(card => card.skills[skill])
-    return [skill, {
-      attempts: stats.reduce((sum, item) => sum + item.attempts, 0),
-      correct: stats.reduce((sum, item) => sum + item.correct, 0),
-      lastPracticed: stats.map(item => item.lastPracticed).filter((date): date is string => date !== null).sort().at(-1) ?? null,
-    }]
-  })) as Record<Skill, SkillStats>
 }
 
 export function completeLesson(profile: Profile, lessonId: string, now = new Date()): Profile {
@@ -214,18 +224,30 @@ export function completeLesson(profile: Profile, lessonId: string, now = new Dat
   }
 }
 
-
-export function recordPractice(profile: Profile, exerciseId: string, correct: boolean, now = new Date()): Profile {
-  if (!/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(exerciseId)
-    || ['__proto__', 'constructor', 'prototype'].includes(exerciseId)) throw new Error('Ungültige Übungs-ID.')
+export function recordPractice(
+  profile: Profile,
+  exerciseId: string,
+  correct: boolean,
+  now = new Date(),
+): Profile {
+  if (
+    !/^[a-zA-Z0-9][a-zA-Z0-9._:-]{0,127}$/.test(exerciseId) ||
+    ['__proto__', 'constructor', 'prototype'].includes(exerciseId)
+  )
+    throw new Error('Ungültige Übungs-ID.')
   const at = toISO(now)
   const previous = profile.practice[exerciseId] ?? { attempts: 0, correct: 0, lastPracticed: null }
-  if (previous.lastPracticed && previous.lastPracticed > at) throw new Error('Bitte Datum und Uhrzeit des Geräts prüfen.')
+  if (previous.lastPracticed && previous.lastPracticed > at)
+    throw new Error('Bitte Datum und Uhrzeit des Geräts prüfen.')
   return {
     ...profile,
     practice: {
       ...profile.practice,
-      [exerciseId]: { attempts: previous.attempts + 1, correct: previous.correct + (correct ? 1 : 0), lastPracticed: at },
+      [exerciseId]: {
+        attempts: previous.attempts + 1,
+        correct: previous.correct + (correct ? 1 : 0),
+        lastPracticed: at,
+      },
     },
     updatedAt: at,
   }
