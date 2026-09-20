@@ -38,6 +38,7 @@ export function ExerciseRunner({
     setChecked(false)
     setCorrect(false)
     setHint(false)
+    setError('')
     advancing.current = false
   }, [index])
   const submit = () => {
@@ -48,6 +49,7 @@ export function ExerciseRunner({
   const finish = (rating: ReviewRating) => {
     if (advancing.current) return
     advancing.current = true
+    setError('')
     try {
       onResult(e, rating)
     } catch (err) {
@@ -92,7 +94,7 @@ export function ExerciseRunner({
           <X />
         </button>
       </div>
-      <ProgressBar value={index} max={queue.length} label={`Aufgabe ${index + 1} von ${queue.length}`} />
+      <ProgressBar value={index + 1} max={queue.length} label="Aufgabe" />
       <div className="exercise-card" key={`${index}-${e.id}`}>
         <span className="eyebrow">
           {e.skill === 'listening'
@@ -217,7 +219,9 @@ export function ExerciseRunner({
             <p className="feedback-solution">{e.explanation}</p>
             {!correct && e.kind !== 'self' && (
               <p className="small">
-                Dieser Inhalt kommt in dieser Einheit noch einmal vor und wird früher wiederholt.
+                {repeated.current.has(e.id)
+                  ? 'Dieser Inhalt wird früher wiederholt.'
+                  : 'Dieser Inhalt kommt in dieser Einheit noch einmal vor und wird früher wiederholt.'}
               </p>
             )}
             <div className={`rating-buttons ${correct ? 'rating-choice' : ''}`}>
