@@ -1,6 +1,6 @@
 # Nǐ Hǎo — HSK 3.0 Level 1
 
-Eine private, statische Lern-PWA auf Deutsch: 300 Wörter, 246 Erkennungszeichen, 49 thematische Lektionen, 70 Grammatik-Lernpunkte, 30 Themen und 59 kommunikative Teilkompetenzen. Grundlage ist der **neue Prüfungslehrplan von 2025**, nicht die 500-Wörter-Abgrenzung des Kompetenzstandards von 2021. Quellen und offene Abgrenzungen stehen in [SOURCES.md](SOURCES.md).
+Eine private, statische Lern-PWA auf Deutsch: 300 Wörter, 246 Erkennungszeichen, 49 thematische Lektionen, 70 Grammatik-Lernpunkte, 30 Themen. Grundlage ist der **neue Prüfungslehrplan von 2025**, nicht die 500-Wörter-Abgrenzung des Kompetenzstandards von 2021. Quellen und offene Abgrenzungen stehen in [SOURCES.md](SOURCES.md).
 
 ## Lokal starten
 

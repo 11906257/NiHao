@@ -1,16 +1,19 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
   ArrowRight,
-  BookOpen,
   CircleCheck,
   ChevronRight,
   Upload,
   TextCursorInput,
   Headphones,
   LoaderCircle,
+  AudioLines,
+  Brain,
+  BookOpen,
   MessageCircle,
   Search,
   HardDriveDownload,
+  TextQuote,
   X,
 } from 'lucide-react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
@@ -19,11 +22,9 @@ import {
   lessons,
   grammar,
   hanzi,
-  tasks,
   wordById,
   grammarById,
   lessonById,
-  taskById,
   orderedWordIds,
   validIds,
   validLessonIds,
@@ -42,9 +43,8 @@ import {
   type Skill,
 } from './lib/scheduler'
 import { loadProfile, restoreBackup, saveProfile } from './lib/storage'
-import { backupIsOverdue, readLastExport, rememberExport } from './lib/backupReminder'
 import { downloadBackup, MAX_BACKUP_BYTES, parseBackup } from './lib/backup'
-import { taskExercise, wordExercise, type Exercise } from './lib/exercises'
+import { wordExercise, type Exercise } from './lib/exercises'
 import {
   AudioButton,
   ExampleTranslation,
@@ -89,13 +89,14 @@ export default function App() {
     [route, setRoute] = useState(hashRoute),
     [session, setSession] = useState<Session | null>(null),
     [search, setSearch] = useState(''),
-    [filter, setFilter] = useState('all'),
+    [filter, setFilter] = useState(() =>
+      new URLSearchParams(window.location.hash.split('?')[1]).get('filter') === 'known' ? 'known' : 'all',
+    ),
     [selectedWord, setSelectedWord] = useState<Vocabulary | null>(null),
     [selectedHanzi, setSelectedHanzi] = useState<Hanzi | null>(null),
     [selectedGrammar, setSelectedGrammar] = useState<Grammar | null>(null),
     [pendingImport, setPendingImport] = useState<{ json: string; profile: Profile } | null>(null),
-    [notice, setNotice] = useState(''),
-    [lastExport, setLastExport] = useState<string | null>(readLastExport)
+    [notice, setNotice] = useState('')
   const pRef = useRef<Profile | null>(null)
   pRef.current = profile
   const writes = useRef(0)
@@ -154,7 +155,9 @@ export default function App() {
       setSelectedHanzi(null)
       setSelectedGrammar(null)
       setSearch('')
-      setFilter('all')
+      setFilter(
+        new URLSearchParams(window.location.hash.split('?')[1]).get('filter') === 'known' ? 'known' : 'all',
+      )
       window.scrollTo(0, 0)
     }
     window.addEventListener('hashchange', hash)
@@ -202,10 +205,10 @@ export default function App() {
         setSaving(writes.current > 0)
       })
   }
-  const navigate = (id: string) => {
+  const navigate = (id: string, initialFilter?: string) => {
     setSession(null)
     stopAudio()
-    window.location.hash = `/${id}`
+    window.location.hash = `/${id}${initialFilter === 'known' ? '?filter=known' : ''}`
     if (hashRoute() === id) setRoute(id)
   }
   const result = (e: Exercise, r: ReviewRating) => {
@@ -240,13 +243,6 @@ export default function App() {
   const exportLearningBackup = () => {
     if (!profile) return
     downloadBackup(profile)
-    const at = new Date().toISOString()
-    setLastExport(at)
-    try {
-      rememberExport(at)
-    } catch {
-      setNotice('Die Sicherung wurde exportiert, aber das Exportdatum konnte nicht gespeichert werden.')
-    }
   }
   const importFile = async (file?: File) => {
     if (!file) return
@@ -401,18 +397,6 @@ export default function App() {
             你好
           </h1>
         </header>
-        {(learned > 0 || Object.keys(profile.practice).length > 0) && backupIsOverdue(lastExport) && (
-          <div className="note row-between" role="status">
-            <span>
-              {lastExport
-                ? 'Dein letzter Export ist über einen Monat her. Sichere deinen Lernstand.'
-                : 'Sichere deinen Lernstand. Du hast noch kein Backup exportiert.'}
-            </span>
-            <button className="button secondary" onClick={exportLearningBackup}>
-              <Upload size={18} /> Jetzt sichern
-            </button>
-          </div>
-        )}
         <div className="today-grid">
           <section className="today-focus">
             <h2>Heute</h2>
@@ -458,13 +442,15 @@ export default function App() {
             label="Bekannte Wörter"
             value={Object.values(profile.cards).filter(isKnownWord).length}
             max={vocabulary.length}
-            onOpen={() => navigate('words')}
+            onOpen={() => navigate('words', 'known')}
+            icon={Brain}
           />
           <ProgressCard
             label="Lektionen"
             value={profile.completedLessons.length}
             max={lessons.length}
             onOpen={() => navigate('learn')}
+            icon={BookOpen}
           />
         </div>
         <HomeTiles onNavigate={navigate} />
@@ -485,7 +471,7 @@ export default function App() {
           </button>
         </div>
         <div className="section-heading">
-          <h2>Wörter</h2>
+          <h3>Wörter</h3>
         </div>
         <div className="word-card-grid">
           {lesson.wordIds.map((id) => (
@@ -500,7 +486,7 @@ export default function App() {
         {lesson.grammarIds.length > 0 && (
           <>
             <div className="section-heading">
-              <h2>Grammatik</h2>
+              <h3>Grammatik</h3>
             </div>
             <div className="stack">
               {lesson.grammarIds.map((id) => (
@@ -517,31 +503,6 @@ export default function App() {
                   <ChevronRight size={18} />
                 </button>
               ))}
-            </div>
-          </>
-        )}
-        {lesson.taskIds.length > 0 && (
-          <>
-            <div className="section-heading">
-              <h2>Im Alltag anwenden</h2>
-            </div>
-            <div className="stack">
-              {lesson.taskIds
-                .map((id) => taskById[id])
-                .map((t) => (
-                  <button
-                    className="card content-row"
-                    key={t.id}
-                    onClick={() => startPractice([taskExercise(t)], t.title)}
-                  >
-                    <MessageCircle size={21} />
-                    <span>
-                      <strong>{t.title}</strong>
-                      <span className="muted">{t.description}</span>
-                    </span>
-                    <ChevronRight size={18} />
-                  </button>
-                ))}
             </div>
           </>
         )}
@@ -588,13 +549,7 @@ export default function App() {
             </div>
           </div>
         ) : (
-          <Empty title={learned ? 'Keine Wörter fällig.' : 'Noch keine Wörter gelernt.'}>
-            {!learned && (
-              <button className="button primary" onClick={() => navigate('learn')}>
-                Zu den Lektionen <ArrowRight size={18} />
-              </button>
-            )}
-          </Empty>
+          <Empty title={learned ? 'Keine Wörter fällig.' : 'Keine Wörter gelernt.'} />
         )}
         {learned > 0 && (
           <div className="section-heading">
@@ -742,44 +697,19 @@ export default function App() {
               {skill === 'listening' ? (
                 <Headphones />
               ) : skill === 'context' ? (
-                <BookOpen />
+                <TextQuote />
               ) : skill === 'production' ? (
                 <MessageCircle />
               ) : (
-                <Headphones />
+                <AudioLines />
               )}
               <h3>{skillLabels[skill]}</h3>
 
-              <span className="text-button">
-                Training starten <ArrowRight size={16} />
-              </span>
+              <ChevronRight className="training-chevron" size={24} />
             </button>
           ))}
         </div>
         {!audio.available && <p className="note">{audio.message}</p>}
-        <div className="section-heading">
-          <h2>Kommunikative Aufgaben</h2>
-          <span>{tasks.length} Teilkompetenzen</span>
-        </div>
-        {searchInput('Situation oder Kompetenz suchen')}
-        <div className="task-list">
-          {tasks
-            .filter((t) => searchText(`${t.title} ${t.description}`).includes(searchText(search)))
-            .map((t) => (
-              <button
-                className="card content-row"
-                key={t.id}
-                onClick={() => startPractice([taskExercise(t)], t.title)}
-              >
-                <MessageCircle size={20} />
-                <span>
-                  <strong>{t.title}</strong>
-                  <span className="muted">{t.description}</span>
-                </span>
-                <ChevronRight size={18} />
-              </button>
-            ))}
-        </div>
       </>
     )
   } else if (page === 'settings')
@@ -833,9 +763,6 @@ export default function App() {
               </button>
               {backupImport}
             </div>
-            {lastExport && (
-              <p className="small muted last-export">Letzter Export: {formatDate(lastExport)}</p>
-            )}
           </section>
           <section className="card settings-section">
             <h2>Curriculum</h2>
@@ -868,7 +795,6 @@ export default function App() {
               </button>
             </div>
           )}
-          {session && <PageHeading page={page} onBack={() => navigate('today')} />}
           {content}
         </main>
       </div>
@@ -964,7 +890,11 @@ export default function App() {
       {notice && (
         <div className="toast" role="status">
           <span>{notice}</span>
-          <button className="icon-button close-button" onClick={() => setNotice('')} aria-label="Meldung schließen">
+          <button
+            className="icon-button close-button"
+            onClick={() => setNotice('')}
+            aria-label="Meldung schließen"
+          >
             <X size={18} />
           </button>
         </div>

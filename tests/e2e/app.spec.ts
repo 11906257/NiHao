@@ -99,7 +99,7 @@ test('mobile Lektionen, Abruf, Speicherung und Backup', async ({ page }) => {
   for (let i = 0; i < lesson.wordIds.length + gs.length; i++)
     await page
       .getByRole('button', {
-        name: i === lesson.wordIds.length + gs.length - 1 ? 'Jetzt aktiv erinnern' : 'Weiter',
+        name: 'Weiter',
         exact: true,
       })
       .click()
@@ -118,7 +118,7 @@ test('mobile Lektionen, Abruf, Speicherung und Backup', async ({ page }) => {
         .getByRole('button', { name: new RegExp(e.answer.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')) })
         .first()
         .click()
-    else await page.getByLabel('Deine Antwort auf').fill(e.answer)
+    else await page.getByRole('textbox', { name: 'Antwort', exact: true }).fill(e.answer)
     await page.getByRole('button', { name: 'Antwort prüfen', exact: true }).click()
     await expect(page.getByRole('heading', { name: 'Richtig erinnert.' })).toBeVisible()
     await page.getByRole('button', { name: 'Gewusst', exact: false }).click()
@@ -412,11 +412,13 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   await route(page, 'training')
   await page.getByRole('button', { name: /Pinyin & Aussprache/ }).click()
   await page.setViewportSize({ width: 320, height: 740 })
-  await expect(page.locator('.pinyin-group')).toHaveCount(6)
+  await expect(page.locator('.pinyin-vowel')).toHaveCount(5)
   await noOverflow(page)
-  const input = page.getByLabel('Pinyin mit Tonzeichen oder Tonziffern')
+  const input = page.getByRole('textbox', { name: 'Antwort', exact: true })
   await input.fill('ni')
   await input.selectText()
+  await page.getByRole('button', { name: 'u', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Selbstlaute anzeigen' })).toHaveCount(1)
   await page.getByRole('button', { name: 'ǖ: Ton 1', exact: true }).click()
   await expect(input).toHaveValue('ǖ')
   const prompt = await page.locator('.exercise-zh').innerText()
@@ -445,14 +447,11 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   for (let i = 0; i < lessons[0].wordIds.length + grammar.filter((g) => g.lessonId === 'l01').length; i++)
     await page
       .getByRole('button', {
-        name:
-          i === lessons[0].wordIds.length + grammar.filter((g) => g.lessonId === 'l01').length - 1
-            ? 'Jetzt aktiv erinnern'
-            : 'Weiter',
+        name: 'Weiter',
         exact: true,
       })
       .click()
-  await page.getByLabel('Deine Antwort auf Deutsch').fill('falsche Antwort')
+  await page.getByRole('textbox', { name: 'Antwort', exact: true }).fill('falsche Antwort')
   await page.getByRole('button', { name: 'Antwort prüfen', exact: true }).click()
   await expect(page.getByRole('button', { name: 'Meine Antwort stimmt sinngemäß' })).toHaveCount(0)
   await expect(page.getByRole('heading', { name: 'Hier ist die Lösung.' })).toBeVisible()
@@ -495,7 +494,15 @@ test('Bekannt-Filter, Zeichen-Detail und Hero-Höhe', async ({ page }) => {
     expect(colors.track).not.toBe(colors.background)
   }
   await page.getByRole('button', { name: 'Bekannte Wörter öffnen', exact: true }).click()
-  await page.getByRole('button', { name: 'Bekannt', exact: true }).click()
+  await expect(page.getByRole('button', { name: 'Bekannt', exact: true })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  )
+  await page.reload()
+  await expect(page.getByRole('button', { name: 'Bekannt', exact: true })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  )
   await expect(page.getByRole('heading', { name: 'Keine Wörter gefunden.', exact: true })).toBeVisible()
   await route(page, 'hanzi')
   await page.locator('.hanzi-tile').first().click()

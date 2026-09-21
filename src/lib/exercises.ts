@@ -1,8 +1,8 @@
-import type { Vocabulary, Grammar, Task } from '../data/types'
+import type { Vocabulary, Grammar } from '../data/types'
 import type { Skill } from './scheduler'
 export interface Exercise {
   id: string
-  kind: 'text' | 'choice' | 'self'
+  kind: 'text' | 'choice'
   skill: Skill
   prompt: string
   zh?: string
@@ -163,26 +163,6 @@ export function grammarExercise(g: Grammar): Exercise {
     options: mix(g.exercise.options, Number(g.id.replace(/\D/g, '')) * 137),
     explanation: g.exercise.explanation,
     practiceId: g.id,
-  }
-}
-export function taskExercise(task: Task): Exercise {
-  const listening = task.title.includes('Verstehen')
-  const reading = task.title.includes('Lesen')
-  return {
-    id: `e-${task.id}`,
-    kind: 'self',
-    skill: listening ? 'listening' : reading ? 'context' : 'production',
-    prompt: listening
-      ? 'Höre zu und notiere die wichtigsten Informationen auf Deutsch.'
-      : reading
-        ? 'Lies den Satz. Was erfährst du? Antworte auf Deutsch.'
-        : `Formuliere auf Chinesisch: ${task.example.de}`,
-    zh: reading ? task.example.zh : undefined,
-    audio: listening ? task.example.zh : undefined,
-    pinyin: reading ? task.example.pinyin : undefined,
-    answer: reading || listening ? task.example.de : task.example.zh,
-    explanation: `Ein mögliches Beispiel:\n${task.example.zh}\n${task.example.pinyin}\n${task.example.de}`,
-    practiceId: task.id,
   }
 }
 function mix<T>(values: T[], seed: number): T[] {

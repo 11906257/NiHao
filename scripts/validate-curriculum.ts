@@ -1,8 +1,8 @@
 import topics from '../src/data/topics.json'
 import official from '../src/data/official.json'
 import assert from 'node:assert/strict'
-import { vocabulary, hanzi, grammar, lessons, tasks } from '../src/data/curriculum'
-import { grammarExercise, taskExercise, wordExercise } from '../src/lib/exercises'
+import { vocabulary, hanzi, grammar, lessons } from '../src/data/curriculum'
+import { grammarExercise, wordExercise } from '../src/lib/exercises'
 const ids = new Set<string>()
 function unique(id: string) {
   assert(id && typeof id === 'string', 'Fehlende ID')
@@ -39,7 +39,6 @@ assert.equal(vocabulary.length, official.counts.vocabulary)
 assert.equal(hanzi.length, official.counts.recognitionHanzi)
 assert.equal(grammar.length, official.counts.grammarRows)
 assert.equal(topics.length, official.counts.topicLeaves)
-assert.equal(tasks.length, official.counts.taskCompetences)
 exact(
   vocabulary,
   official.vocabulary,
@@ -67,13 +66,6 @@ exact(
   (t) => `${t.id}|${t.sourceLabel}`,
   (t) => `${t.id}|${t.sourceLabel}`,
   'Themen',
-)
-exact(
-  tasks,
-  official.tasks,
-  (t) => `${t.id}|${t.sourceLabel}`,
-  (t) => `${t.id}|${t.sourceLabel}`,
-  'Teilkompetenzen',
 )
 const words = new Map(vocabulary.map((w) => [w.id, w])),
   lessonSet = new Set(lessons.map((l) => l.id))
@@ -117,12 +109,6 @@ for (const t of topics) {
   unique(t.id)
   fields(t, ['sourceLabel', 'title', 'description'])
 }
-for (const t of tasks) {
-  unique(t.id)
-  fields(t, ['sourceLabel', 'title', 'description'])
-  example(t.example)
-  unique(taskExercise(t).id)
-}
 for (const l of lessons) {
   unique(l.id)
   fields(l, ['title', 'description'])
@@ -131,7 +117,6 @@ for (const l of lessons) {
   for (const [refs, items] of [
     [l.grammarIds, grammar],
     [l.topicIds, topics],
-    [l.taskIds, tasks],
   ] as const)
     for (const id of refs)
       assert(
@@ -149,10 +134,9 @@ exact(
 for (const [refs, items, name] of [
   [lessons.flatMap((l) => l.grammarIds), grammar, 'Grammatik'],
   [lessons.flatMap((l) => l.topicIds), topics, 'Themen'],
-  [lessons.flatMap((l) => l.taskIds), tasks, 'Aufgaben'],
 ] as const) {
   for (const item of items) assert(refs.includes(item.id), `${name}: ${item.id} keiner Lektion zugeordnet`)
 }
 console.log(
-  `Curriculum gültig: ${vocabulary.length} Wörter, ${hanzi.length} Hanzi, ${grammar.length} Grammatikpunkte, ${topics.length} Themen, ${tasks.length} Kompetenzen, ${lessons.length} Lektionen, ${ids.size} eindeutige IDs.`,
+  `Curriculum gültig: ${vocabulary.length} Wörter, ${hanzi.length} Hanzi, ${grammar.length} Grammatikpunkte, ${topics.length} Themen, ${lessons.length} Lektionen, ${ids.size} eindeutige IDs.`,
 )

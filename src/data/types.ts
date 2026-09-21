@@ -22,7 +22,6 @@ export interface Lesson {
   wordIds: string[]
   grammarIds: string[]
   topicIds: string[]
-  taskIds: string[]
 }
 export interface Grammar {
   id: string
@@ -40,11 +39,4 @@ export interface Hanzi {
   pinyin: string
   meaning: string
   wordIds: string[]
-}
-export interface Task {
-  id: string
-  sourceLabel: string
-  title: string
-  description: string
-  example: Example
 }

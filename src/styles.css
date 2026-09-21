@@ -95,7 +95,9 @@ button {
 }
 button:not(:disabled),
 .file-button {
-  transition: transform 80ms ease, filter 80ms ease;
+  transition:
+    transform 80ms ease,
+    filter 80ms ease;
   touch-action: manipulation;
 }
 button:not(:disabled):active,
@@ -280,7 +282,8 @@ main {
   align-items: center;
   margin: 24px 0 var(--space-4);
 }
-.section-heading h2 {
+.section-heading h2,
+.section-heading h3 {
   margin: 0;
 }
 .lesson-number {
@@ -418,8 +421,7 @@ input::placeholder {
   font-size: var(--text-sm);
 }
 .lesson-list,
-.stack,
-.task-list {
+.stack {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -518,7 +520,7 @@ input::placeholder {
   text-align: center;
   border-radius: var(--radius-panel);
   max-width: 100%;
-  margin: 24px 0;
+  margin: 0;
   background: var(--surface);
 }
 .empty p {
@@ -594,17 +596,21 @@ input::placeholder {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-6);
 }
-.training-card > svg {
+.training-card {
+  position: relative;
+}
+.training-card > svg:first-child {
   color: var(--interactive);
   height: 28px;
   width: 28px;
   margin-bottom: 24px;
 }
-.training-card .text-button {
-  justify-content: flex-start;
-}
-.task-list {
-  margin-top: 16px;
+.training-chevron {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
 }
 .settings-stack {
   display: flex;
@@ -650,7 +656,8 @@ input::placeholder {
 }
 .modal {
   position: fixed;
-  inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
   max-height: calc(100dvh - 48px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   width: min(560px, calc(100% - 36px));
   max-width: 760px;
@@ -827,6 +834,7 @@ input::placeholder {
   color: var(--muted);
   font-size: var(--text-sm);
   margin-bottom: 16px;
+  margin-right: calc(-1 * var(--space-4));
 }
 .study-top + .progress-block {
   margin-bottom: 24px;
@@ -873,14 +881,6 @@ input::placeholder {
 }
 .exercise-zh.sentence {
   font-size: var(--text-3xl);
-}
-.input-label {
-  display: block;
-  font-size: var(--text-sm);
-  color: var(--muted);
-  text-align: left;
-  margin-bottom: 8px;
-  line-height: 1.6;
 }
 .exercise-card input {
   width: 100%;
@@ -1188,7 +1188,7 @@ input::placeholder {
     gap: 8px;
   }
   .hanzi-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
   }
   .hanzi-tile {
@@ -1216,7 +1216,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
   }
-  .training-card > svg {
+  .training-card > svg:first-child {
     width: 25px;
     height: 25px;
     margin-bottom: 16px;
@@ -1224,12 +1224,8 @@ input::placeholder {
   .training-card h3 {
     overflow-wrap: anywhere;
   }
-  .training-card .text-button {
-    font-size: var(--text-xs);
-    margin-top: auto;
-  }
-  .training-card .text-button svg {
-    width: 14px;
+  .training-chevron {
+    right: 16px;
   }
   .settings-section {
     padding: 24px;
@@ -1295,9 +1291,6 @@ input::placeholder {
   }
   .exercise-zh.sentence {
     font-size: var(--text-2xl);
-  }
-  .input-label {
-    font-size: var(--text-xs);
   }
   .choices {
     gap: 8px;
@@ -1438,9 +1431,6 @@ input::placeholder {
   background: var(--primary);
   color: var(--on-primary);
 }
-.last-export {
-  margin-top: var(--space-4);
-}
 @media (max-width: 700px) {
   .toggle-group {
     width: 100%;
@@ -1546,27 +1536,44 @@ input::placeholder {
 }
 .pinyin-keyboard {
   margin-top: 16px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: var(--space-2) var(--space-4);
-}
-.pinyin-group {
-  display: grid;
-  grid-template-columns: 20px repeat(5, minmax(44px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: var(--space-2);
-  align-items: center;
 }
-.pinyin-group > span {
-  font-weight: 600;
-  color: var(--muted);
+.pinyin-row {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-2);
 }
-.pinyin-group button {
-  min-height: 44px;
-  min-width: 44px;
+.pinyin-tone-rows {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+.pinyin-tone-rows > .close-button {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  justify-self: center;
+  min-width: 0;
+  max-width: 100%;
+}
+.pinyin-tone-rows > .pinyin-row {
+  grid-column: 2 / -1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.pinyin-row button {
+  height: 48px;
+  min-height: 48px;
+  min-width: 0;
   padding: 8px;
   border: 1px solid var(--border);
   border-radius: var(--radius-control);
   background: var(--surface);
+}
+.pinyin-row .pinyin-vowel {
+  font-weight: 600;
+  color: var(--muted);
 }
 .rating-buttons.rating-choice {
   display: grid;
@@ -1597,17 +1604,11 @@ input::placeholder {
   flex-direction: row;
   font-size: var(--text-sm);
 }
-@media (max-width: 1000px) {
-  .pinyin-keyboard {
-    grid-template-columns: 1fr;
-  }
-}
 @media (max-width: 360px) {
-  .pinyin-group {
-    grid-template-columns: 14px repeat(5, minmax(0, 1fr));
+  .pinyin-row {
     gap: 8px;
   }
-  .pinyin-group button {
+  .pinyin-row button {
     min-width: 0;
   }
   .pinyin-keyboard {
@@ -1883,7 +1884,8 @@ label,
 /* Compact home navigation and shared full-width subpages. */
 .app-shell {
   min-height: 100dvh;
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
+    env(safe-area-inset-left);
 }
 .main-layout {
   width: 100%;
@@ -1952,6 +1954,14 @@ label,
   align-items: center;
   gap: 16px;
   text-align: center !important;
+}
+.progress-card-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.progress-card-label svg {
+  color: var(--primary);
 }
 .progress-ring {
   position: relative;
