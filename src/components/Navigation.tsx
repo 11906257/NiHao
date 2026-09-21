@@ -8,6 +8,7 @@ import {
   Settings,
   Languages,
 } from 'lucide-react'
+import type { LucideIcon } from 'lucide-react'
 
 const pages = {
   learn: { label: 'Lektionen', icon: BookOpen },
@@ -64,11 +65,13 @@ export function ProgressCard({
   value,
   max,
   onOpen,
+  icon: Icon,
 }: {
   label: string
   value: number
   max: number
   onOpen: () => void
+  icon: LucideIcon
 }) {
   const circumference = 2 * Math.PI * 42
   return (
@@ -89,7 +92,10 @@ export function ProgressCard({
           <strong>{value}</strong> / {max}
         </span>
       </div>
-      <span>{label}</span>
+      <span className="progress-card-label">
+        <Icon size={16} aria-hidden="true" />
+        {label}
+      </span>
     </button>
   )
 }

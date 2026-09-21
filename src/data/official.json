@@ -12,8 +12,7 @@
     "topicTopLevel": 5,
     "topicSecondLevel": 15,
     "topicLeaves": 30,
-    "taskAreas": 15,
-    "taskCompetences": 59
+    "taskAreas": 15
   },
   "countMethod": {
     "vocabulary": "Offizielle laufende Eintragsnummern 1–300. Mehrstufige Wortartenannotation bleibt erhalten.",
@@ -6290,418 +6289,91 @@
       "id": "ta01",
       "sourceLabel": "一、问答个人基本信息",
       "title": "Persönliche Angaben",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk001",
-        "tk002",
-        "tk003",
-        "tk004"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta02",
       "sourceLabel": "二、问答事件信息",
       "title": "Ereignisinformationen",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk005",
-        "tk006",
-        "tk007",
-        "tk008"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta03",
       "sourceLabel": "三、问答物品信息",
       "title": "Gegenstände",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk009",
-        "tk010",
-        "tk011",
-        "tk012"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta04",
       "sourceLabel": "四、问答天气",
       "title": "Wetter",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk013",
-        "tk014",
-        "tk015",
-        "tk016"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta05",
       "sourceLabel": "五、问答环境信息",
       "title": "Orte und Umgebung",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk017",
-        "tk018",
-        "tk019",
-        "tk020"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta06",
       "sourceLabel": "六、日常言语交往",
       "title": "Höfliche Alltagsgespräche",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk021",
-        "tk022",
-        "tk023",
-        "tk024"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta07",
       "sourceLabel": "七、问答饮食喜好",
       "title": "Essen und Vorlieben",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk025",
-        "tk026",
-        "tk027",
-        "tk028"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta08",
       "sourceLabel": "八、问答出行信息",
       "title": "Unterwegs",
-      "competenceCount": 5,
-      "taskIds": [
-        "tk029",
-        "tk030",
-        "tk031",
-        "tk032",
-        "tk033"
-      ]
+      "competenceCount": 5
     },
     {
       "id": "ta09",
       "sourceLabel": "九、问答商品信息",
       "title": "Einkaufen",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk034",
-        "tk035",
-        "tk036",
-        "tk037"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta10",
       "sourceLabel": "十、告知生病、探病",
       "title": "Krankheit und Besuch",
-      "competenceCount": 3,
-      "taskIds": [
-        "tk038",
-        "tk039",
-        "tk040"
-      ]
+      "competenceCount": 3
     },
     {
       "id": "ta11",
       "sourceLabel": "十一、交流休闲活动",
       "title": "Freizeitaktivitäten",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk041",
-        "tk042",
-        "tk043",
-        "tk044"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta12",
       "sourceLabel": "十二、介绍学习情况",
       "title": "Lernen und Unterricht",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk045",
-        "tk046",
-        "tk047",
-        "tk048"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta13",
       "sourceLabel": "十三、交流学校情况、课后活动",
       "title": "Schule und Freizeit danach",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk049",
-        "tk050",
-        "tk051",
-        "tk052"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta14",
       "sourceLabel": "十四、交流工作信息",
       "title": "Arbeit",
-      "competenceCount": 4,
-      "taskIds": [
-        "tk053",
-        "tk054",
-        "tk055",
-        "tk056"
-      ]
+      "competenceCount": 4
     },
     {
       "id": "ta15",
       "sourceLabel": "十五、问答中国传统饮食",
       "title": "Chinesische Esskultur",
-      "competenceCount": 3,
-      "taskIds": [
-        "tk057",
-        "tk058",
-        "tk059"
-      ]
-    }
-  ],
-  "tasks": [
-    {
-      "id": "tk001",
-      "sourceLabel": "一、问答个人基本信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk002",
-      "sourceLabel": "一、问答个人基本信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk003",
-      "sourceLabel": "一、问答个人基本信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk004",
-      "sourceLabel": "一、问答个人基本信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk005",
-      "sourceLabel": "二、问答事件信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk006",
-      "sourceLabel": "二、问答事件信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk007",
-      "sourceLabel": "二、问答事件信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk008",
-      "sourceLabel": "二、问答事件信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk009",
-      "sourceLabel": "三、问答物品信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk010",
-      "sourceLabel": "三、问答物品信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk011",
-      "sourceLabel": "三、问答物品信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk012",
-      "sourceLabel": "三、问答物品信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk013",
-      "sourceLabel": "四、问答天气 / Kompetenz 1"
-    },
-    {
-      "id": "tk014",
-      "sourceLabel": "四、问答天气 / Kompetenz 2"
-    },
-    {
-      "id": "tk015",
-      "sourceLabel": "四、问答天气 / Kompetenz 3"
-    },
-    {
-      "id": "tk016",
-      "sourceLabel": "四、问答天气 / Kompetenz 4"
-    },
-    {
-      "id": "tk017",
-      "sourceLabel": "五、问答环境信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk018",
-      "sourceLabel": "五、问答环境信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk019",
-      "sourceLabel": "五、问答环境信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk020",
-      "sourceLabel": "五、问答环境信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk021",
-      "sourceLabel": "六、日常言语交往 / Kompetenz 1"
-    },
-    {
-      "id": "tk022",
-      "sourceLabel": "六、日常言语交往 / Kompetenz 2"
-    },
-    {
-      "id": "tk023",
-      "sourceLabel": "六、日常言语交往 / Kompetenz 3"
-    },
-    {
-      "id": "tk024",
-      "sourceLabel": "六、日常言语交往 / Kompetenz 4"
-    },
-    {
-      "id": "tk025",
-      "sourceLabel": "七、问答饮食喜好 / Kompetenz 1"
-    },
-    {
-      "id": "tk026",
-      "sourceLabel": "七、问答饮食喜好 / Kompetenz 2"
-    },
-    {
-      "id": "tk027",
-      "sourceLabel": "七、问答饮食喜好 / Kompetenz 3"
-    },
-    {
-      "id": "tk028",
-      "sourceLabel": "七、问答饮食喜好 / Kompetenz 4"
-    },
-    {
-      "id": "tk029",
-      "sourceLabel": "八、问答出行信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk030",
-      "sourceLabel": "八、问答出行信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk031",
-      "sourceLabel": "八、问答出行信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk032",
-      "sourceLabel": "八、问答出行信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk033",
-      "sourceLabel": "八、问答出行信息 / Kompetenz 5"
-    },
-    {
-      "id": "tk034",
-      "sourceLabel": "九、问答商品信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk035",
-      "sourceLabel": "九、问答商品信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk036",
-      "sourceLabel": "九、问答商品信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk037",
-      "sourceLabel": "九、问答商品信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk038",
-      "sourceLabel": "十、告知生病、探病 / Kompetenz 1"
-    },
-    {
-      "id": "tk039",
-      "sourceLabel": "十、告知生病、探病 / Kompetenz 2"
-    },
-    {
-      "id": "tk040",
-      "sourceLabel": "十、告知生病、探病 / Kompetenz 3"
-    },
-    {
-      "id": "tk041",
-      "sourceLabel": "十一、交流休闲活动 / Kompetenz 1"
-    },
-    {
-      "id": "tk042",
-      "sourceLabel": "十一、交流休闲活动 / Kompetenz 2"
-    },
-    {
-      "id": "tk043",
-      "sourceLabel": "十一、交流休闲活动 / Kompetenz 3"
-    },
-    {
-      "id": "tk044",
-      "sourceLabel": "十一、交流休闲活动 / Kompetenz 4"
-    },
-    {
-      "id": "tk045",
-      "sourceLabel": "十二、介绍学习情况 / Kompetenz 1"
-    },
-    {
-      "id": "tk046",
-      "sourceLabel": "十二、介绍学习情况 / Kompetenz 2"
-    },
-    {
-      "id": "tk047",
-      "sourceLabel": "十二、介绍学习情况 / Kompetenz 3"
-    },
-    {
-      "id": "tk048",
-      "sourceLabel": "十二、介绍学习情况 / Kompetenz 4"
-    },
-    {
-      "id": "tk049",
-      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 1"
-    },
-    {
-      "id": "tk050",
-      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 2"
-    },
-    {
-      "id": "tk051",
-      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 3"
-    },
-    {
-      "id": "tk052",
-      "sourceLabel": "十三、交流学校情况、课后活动 / Kompetenz 4"
-    },
-    {
-      "id": "tk053",
-      "sourceLabel": "十四、交流工作信息 / Kompetenz 1"
-    },
-    {
-      "id": "tk054",
-      "sourceLabel": "十四、交流工作信息 / Kompetenz 2"
-    },
-    {
-      "id": "tk055",
-      "sourceLabel": "十四、交流工作信息 / Kompetenz 3"
-    },
-    {
-      "id": "tk056",
-      "sourceLabel": "十四、交流工作信息 / Kompetenz 4"
-    },
-    {
-      "id": "tk057",
-      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 1"
-    },
-    {
-      "id": "tk058",
-      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 2"
-    },
-    {
-      "id": "tk059",
-      "sourceLabel": "十五、问答中国传统饮食 / Kompetenz 3"
+      "competenceCount": 3
     }
   ],
   "writing": {

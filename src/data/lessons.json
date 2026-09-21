@@ -14,8 +14,7 @@
     "grammarIds": [
       "g047"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l02",
@@ -37,12 +36,6 @@
     ],
     "topicIds": [
       "tp001"
-    ],
-    "taskIds": [
-      "tk001",
-      "tk002",
-      "tk003",
-      "tk004"
     ]
   },
   {
@@ -61,8 +54,7 @@
       "g008",
       "g048"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l04",
@@ -83,12 +75,6 @@
     ],
     "topicIds": [
       "tp008"
-    ],
-    "taskIds": [
-      "tk021",
-      "tk022",
-      "tk023",
-      "tk024"
     ]
   },
   {
@@ -106,8 +92,7 @@
     "grammarIds": [
       "g020"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l06",
@@ -124,8 +109,7 @@
     "grammarIds": [
       "g024"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l07",
@@ -142,8 +126,7 @@
     "grammarIds": [],
     "topicIds": [
       "tp002"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l08",
@@ -162,8 +145,7 @@
       "g009",
       "g028"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l09",
@@ -178,8 +160,7 @@
       "v060"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l10",
@@ -194,8 +175,7 @@
       "v112"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l11",
@@ -213,8 +193,7 @@
       "g011",
       "g032"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l12",
@@ -237,8 +216,7 @@
       "g053",
       "g060"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l13",
@@ -256,8 +234,7 @@
       "g010",
       "g039"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l14",
@@ -272,8 +249,7 @@
       "v266"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l15",
@@ -290,8 +266,7 @@
     "grammarIds": [],
     "topicIds": [
       "tp022"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l16",
@@ -310,12 +285,6 @@
     "topicIds": [
       "tp021",
       "tp024"
-    ],
-    "taskIds": [
-      "tk045",
-      "tk046",
-      "tk047",
-      "tk048"
     ]
   },
   {
@@ -334,12 +303,6 @@
     "grammarIds": [],
     "topicIds": [
       "tp023"
-    ],
-    "taskIds": [
-      "tk049",
-      "tk050",
-      "tk051",
-      "tk052"
     ]
   },
   {
@@ -359,8 +322,7 @@
     "grammarIds": [
       "g012"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l19",
@@ -377,8 +339,7 @@
     "grammarIds": [],
     "topicIds": [
       "tp025"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l20",
@@ -402,8 +363,7 @@
     ],
     "topicIds": [
       "tp010"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l21",
@@ -423,12 +383,6 @@
     ],
     "topicIds": [
       "tp003"
-    ],
-    "taskIds": [
-      "tk005",
-      "tk006",
-      "tk007",
-      "tk008"
     ]
   },
   {
@@ -446,8 +400,7 @@
       "v005"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l23",
@@ -467,12 +420,6 @@
     ],
     "topicIds": [
       "tp012"
-    ],
-    "taskIds": [
-      "tk025",
-      "tk026",
-      "tk027",
-      "tk028"
     ]
   },
   {
@@ -491,8 +438,7 @@
       "g044",
       "g069"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l25",
@@ -510,8 +456,7 @@
       "g001",
       "g068"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l26",
@@ -529,8 +474,7 @@
       "g014",
       "g070"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l27",
@@ -549,8 +493,7 @@
     ],
     "topicIds": [
       "tp030"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l28",
@@ -568,11 +511,6 @@
     "topicIds": [
       "tp011",
       "tp029"
-    ],
-    "taskIds": [
-      "tk057",
-      "tk058",
-      "tk059"
     ]
   },
   {
@@ -588,8 +526,7 @@
       "v252"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l30",
@@ -608,12 +545,6 @@
     ],
     "topicIds": [
       "tp004"
-    ],
-    "taskIds": [
-      "tk009",
-      "tk010",
-      "tk011",
-      "tk012"
     ]
   },
   {
@@ -634,12 +565,6 @@
     ],
     "topicIds": [
       "tp007"
-    ],
-    "taskIds": [
-      "tk017",
-      "tk018",
-      "tk019",
-      "tk020"
     ]
   },
   {
@@ -657,8 +582,7 @@
     "grammarIds": [
       "g054"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l33",
@@ -678,8 +602,7 @@
     ],
     "topicIds": [
       "tp013"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l34",
@@ -698,8 +621,7 @@
     ],
     "topicIds": [
       "tp015"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l35",
@@ -718,12 +640,6 @@
     ],
     "topicIds": [
       "tp016"
-    ],
-    "taskIds": [
-      "tk034",
-      "tk035",
-      "tk036",
-      "tk037"
     ]
   },
   {
@@ -743,8 +659,7 @@
     ],
     "topicIds": [
       "tp017"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l37",
@@ -764,8 +679,7 @@
     "topicIds": [
       "tp005",
       "tp018"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l38",
@@ -785,8 +699,7 @@
       "g037",
       "g043"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l39",
@@ -804,12 +717,6 @@
     "topicIds": [
       "tp026",
       "tp027"
-    ],
-    "taskIds": [
-      "tk053",
-      "tk054",
-      "tk055",
-      "tk056"
     ]
   },
   {
@@ -834,8 +741,7 @@
       "g065",
       "g066"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l41",
@@ -855,13 +761,6 @@
     ],
     "topicIds": [
       "tp014"
-    ],
-    "taskIds": [
-      "tk029",
-      "tk030",
-      "tk031",
-      "tk032",
-      "tk033"
     ]
   },
   {
@@ -881,8 +780,7 @@
     ],
     "topicIds": [
       "tp009"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l43",
@@ -901,12 +799,6 @@
     ],
     "topicIds": [
       "tp020"
-    ],
-    "taskIds": [
-      "tk041",
-      "tk042",
-      "tk043",
-      "tk044"
     ]
   },
   {
@@ -924,8 +816,7 @@
     "grammarIds": [],
     "topicIds": [
       "tp028"
-    ],
-    "taskIds": []
+    ]
   },
   {
     "id": "l45",
@@ -942,8 +833,7 @@
     "grammarIds": [
       "g051"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l46",
@@ -957,8 +847,7 @@
       "v287"
     ],
     "grammarIds": [],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   },
   {
     "id": "l47",
@@ -975,11 +864,6 @@
     "grammarIds": [],
     "topicIds": [
       "tp019"
-    ],
-    "taskIds": [
-      "tk038",
-      "tk039",
-      "tk040"
     ]
   },
   {
@@ -997,12 +881,6 @@
     "grammarIds": [],
     "topicIds": [
       "tp006"
-    ],
-    "taskIds": [
-      "tk013",
-      "tk014",
-      "tk015",
-      "tk016"
     ]
   },
   {
@@ -1019,7 +897,6 @@
       "g041",
       "g061"
     ],
-    "topicIds": [],
-    "taskIds": []
+    "topicIds": []
   }
 ]

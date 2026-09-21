@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowRight, Brain, X } from 'lucide-react'
+import { ArrowRight, X } from 'lucide-react'
 import { wordById, vocabulary, grammarById } from '../data/curriculum'
 import type { Grammar } from '../data/types'
 import { grammarExercise, wordExercise, type Exercise } from '../lib/exercises'
@@ -52,8 +52,7 @@ export function LearningSession({
   const point = points[step - ids.length]
   const nextAction = (
     <button className="button primary" onClick={() => setStep(step + 1)}>
-      {step === total - 1 ? 'Jetzt aktiv erinnern' : 'Weiter'}{' '}
-      {step === total - 1 ? <Brain size={22} /> : <ArrowRight size={18} />}
+      Weiter <ArrowRight size={18} />
     </button>
   )
   return (

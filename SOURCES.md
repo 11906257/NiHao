@@ -15,7 +15,7 @@ Die [CTI-Seite „Examination Syllabus“](https://www.chinesetest.cn/syllabus) 
 | Kommunikation  | 15 Bereiche, 59 Kompetenz-Aufzählungspunkte    | 2–5 / 5–8                     |
 | Schreiben      | Gemeinsame Liste mit 100 Zeichen für Level 1–2 | 374 / 377                     |
 
-**70 und 59 sind dokumentierte Zählungen der Quellenstruktur**, keine dort gedruckten pauschalen Kompetenzzahlen. Einzelne Grammatikzeilen bündeln Formen. Jede Zeile hat eine Lernkarte und Übung. Aufgabenkompetenzen und Themen sind einzeln erfasst und Lektionen zugeordnet. Die gemeinsame Schreibzeichenliste ist nicht gleichbedeutend mit einer Level-1-Schreibprüfung. Level 1 prüft Hören und Lesen. Das [offizielle Competency Profile](https://hsk.cn-bj.ufileos.com/3.0/HSK3.0%E8%80%83%E8%AF%95%E8%83%BD%E5%8A%9B%E6%8F%8F%E8%BF%B0.pdf) beschreibt einfache Kommunikation in Alltagssituationen.
+**70 und 59 sind dokumentierte Zählungen der Quellenstruktur**, keine dort gedruckten pauschalen Kompetenzzahlen. Einzelne Grammatikzeilen bündeln Formen. Jede Zeile hat eine Lernkarte und Übung. Themen sind einzeln erfasst und Lektionen zugeordnet. Kommunikative Aufgaben sind nicht Bestandteil der App. Die gemeinsame Schreibzeichenliste ist nicht gleichbedeutend mit einer Level-1-Schreibprüfung. Level 1 prüft Hören und Lesen. Das [offizielle Competency Profile](https://hsk.cn-bj.ufileos.com/3.0/HSK3.0%E8%80%83%E8%AF%95%E8%83%BD%E5%8A%9B%E6%8F%8F%E8%BF%B0.pdf) beschreibt einfache Kommunikation in Alltagssituationen.
 
 ### Auflösung widersprüchlicher Angaben
 

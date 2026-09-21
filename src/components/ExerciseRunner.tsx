@@ -24,6 +24,7 @@ export function ExerciseRunner({
     [checked, setChecked] = useState(false),
     [correct, setCorrect] = useState(false),
     [hint, setHint] = useState(false),
+    [selectedVowel, setSelectedVowel] = useState<string | null>(null),
     [done, setDone] = useState(false),
     [score, setScore] = useState(0),
     [error, setError] = useState('')
@@ -38,12 +39,13 @@ export function ExerciseRunner({
     setChecked(false)
     setCorrect(false)
     setHint(false)
+    setSelectedVowel(null)
     setError('')
     advancing.current = false
   }, [index])
   const submit = () => {
     if (checked || !answer.trim()) return
-    setCorrect(e.kind === 'self' ? false : checkAnswer(e, answer))
+    setCorrect(checkAnswer(e, answer))
     setChecked(true)
   }
   const finish = (rating: ReviewRating) => {
@@ -98,13 +100,13 @@ export function ExerciseRunner({
       <div className="exercise-card" key={`${index}-${e.id}`}>
         <span className="eyebrow">
           {e.skill === 'listening'
-            ? 'Hören'
+            ? 'Hörverständnis'
             : e.skill === 'production'
               ? 'Aktiv formulieren'
               : e.skill === 'pinyin'
-                ? 'Aussprache'
+                ? 'Pinyin & Aussprache'
                 : e.skill === 'context'
-                  ? 'Im Zusammenhang'
+                  ? 'Im Satz verstehen'
                   : 'Bedeutung abrufen'}
         </span>
         <h1 className="exercise-prompt">{e.prompt}</h1>
@@ -147,47 +149,72 @@ export function ExerciseRunner({
               submit()
             }}
           >
-            <label htmlFor="answer-input" className="input-label">
-              {e.skill === 'pinyin'
-                ? 'Pinyin mit Tonzeichen oder Tonziffern'
-                : e.skill === 'production'
-                  ? 'Deine Antwort auf Chinesisch oder in Pinyin'
-                  : 'Deine Antwort auf Deutsch'}
-            </label>
             <input
               id="answer-input"
               ref={input}
+              aria-label="Antwort"
               autoComplete="off"
               autoCapitalize="off"
               spellCheck={false}
               value={answer}
               onChange={(ev) => setAnswer(ev.target.value)}
               disabled={checked}
-              placeholder={e.skill === 'pinyin' ? 'z. B. nǐ hǎo oder ni3 hao3' : 'Erinnere dich zuerst …'}
+              placeholder={
+                e.skill === 'pinyin'
+                  ? 'Pinyin mit Tonzeichen oder Tonziffern'
+                  : e.skill === 'production'
+                    ? 'Deine Antwort auf Chinesisch oder in Pinyin'
+                    : 'Deine Antwort auf Deutsch'
+              }
             />
             {(e.skill === 'pinyin' || e.skill === 'production') && !checked && (
               <div className="pinyin-keyboard" aria-label="Pinyin-Zeichen">
-                {Object.entries(PINYIN_VOWELS).map(([vowel, marks]) => (
-                  <div className="pinyin-group" role="group" aria-label={`Vokal ${vowel}`} key={vowel}>
-                    <span>{vowel}</span>
-                    {[vowel, ...marks].map((c, tone) => (
+                {selectedVowel === null ? (
+                  <div className="pinyin-row" role="group" aria-label="Selbstlaute">
+                    {(['a', 'e', 'i', 'o', 'u'] as const).map((vowel) => (
                       <button
-                        key={c}
+                        key={vowel}
                         type="button"
-                        aria-label={`${c}: ${tone ? `Ton ${tone}` : 'ohne Tonzeichen'}`}
-                        onClick={() => {
-                          const start = input.current?.selectionStart ?? answer.length
-                          const end = input.current?.selectionEnd ?? start
-                          flushSync(() => setAnswer(answer.slice(0, start) + c + answer.slice(end)))
-                          input.current?.focus()
-                          input.current?.setSelectionRange(start + 1, start + 1)
-                        }}
+                        className="pinyin-vowel"
+                        onClick={() => setSelectedVowel(vowel)}
                       >
-                        {c}
+                        {vowel}
                       </button>
                     ))}
                   </div>
-                ))}
+                ) : (
+                  <div className="pinyin-tone-rows" role="group" aria-label={`Töne für ${selectedVowel}`}>
+                    <button
+                      type="button"
+                      className="icon-button close-button"
+                      aria-label="Selbstlaute anzeigen"
+                      onClick={() => setSelectedVowel(null)}
+                    >
+                      <X size={20} />
+                    </button>
+                    {(selectedVowel === 'u' ? ['u', 'ü'] : [selectedVowel]).map((base) => (
+                      <div className="pinyin-row" key={base}>
+                        {PINYIN_VOWELS[base as keyof typeof PINYIN_VOWELS].map((c, tone) => (
+                          <button
+                            key={c}
+                            type="button"
+                            aria-label={`${c}: Ton ${tone + 1}`}
+                            onClick={() => {
+                              const start = input.current?.selectionStart ?? answer.length
+                              const end = input.current?.selectionEnd ?? start
+                              flushSync(() => setAnswer(answer.slice(0, start) + c + answer.slice(end)))
+                              setSelectedVowel(null)
+                              input.current?.focus()
+                              input.current?.setSelectionRange(start + 1, start + 1)
+                            }}
+                          >
+                            {c}
+                          </button>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
           </form>
@@ -195,7 +222,7 @@ export function ExerciseRunner({
         {!checked ? (
           <div className="exercise-actions">
             <button className="button primary" disabled={!answer.trim()} onClick={submit}>
-              {e.kind === 'self' ? 'Mit Beispiel vergleichen' : 'Antwort prüfen'} <ArrowRight size={18} />
+              Antwort prüfen <ArrowRight size={18} />
             </button>
             <button
               className="text-button"
@@ -209,21 +236,8 @@ export function ExerciseRunner({
           </div>
         ) : (
           <div className={`feedback ${correct ? 'success' : 'learning'}`} role="status">
-            <h2>
-              {e.kind === 'self'
-                ? 'Vergleiche deine Formulierung.'
-                : correct
-                  ? 'Richtig erinnert.'
-                  : 'Hier ist die Lösung.'}
-            </h2>
+            <h2>{correct ? 'Richtig erinnert.' : 'Hier ist die Lösung.'}</h2>
             <p className="feedback-solution">{e.explanation}</p>
-            {!correct && e.kind !== 'self' && (
-              <p className="small">
-                {repeated.current.has(e.id)
-                  ? 'Dieser Inhalt wird früher wiederholt.'
-                  : 'Dieser Inhalt kommt in dieser Einheit noch einmal vor und wird früher wiederholt.'}
-              </p>
-            )}
             <div className={`rating-buttons ${correct ? 'rating-choice' : ''}`}>
               {correct ? (
                 <>
@@ -246,14 +260,12 @@ export function ExerciseRunner({
                 </>
               ) : (
                 <>
+                  <button className="button secondary" onClick={() => finish('good')}>
+                    Gewusst
+                  </button>
                   <button className="button primary" onClick={() => finish('again')}>
                     Weiter üben <ArrowRight size={18} />
                   </button>
-                  {answer.trim() && e.kind === 'self' && (
-                    <button className="button secondary" onClick={() => finish('hard')}>
-                      Sinngemäß richtig
-                    </button>
-                  )}
                 </>
               )}
             </div>
