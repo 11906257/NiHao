@@ -247,13 +247,6 @@ describe('IndexedDB persistence', () => {
   })
 })
 
-it('migrates previous profiles without losing learning progress', () => {
-  const profile = reviewed()
-  const legacy = { ...profile, settings: { ...profile.settings, dailyNew: 20 }, exams: [{ id: 'old-exam' }] }
-  expect(validateProfile(legacy, validIds)).toEqual(profile)
-  expect(validateProfile(legacy, validIds)).not.toHaveProperty('exams')
-})
-
 it('counts known words only after stable recall in two directions', () => {
   expect(isKnownWord()).toBe(false)
   const profile = reviewVocabulary(createProfile(now), 'v001', 'meaning', 'good', now)

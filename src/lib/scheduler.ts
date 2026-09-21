@@ -25,7 +25,7 @@ export interface LearningCard {
   introducedAt: string
 }
 
-export interface ReviewEvent {
+interface ReviewEvent {
   vocabularyId: string
   skill: Skill
   rating: ReviewRating
@@ -194,26 +194,9 @@ export function chooseSkill(card?: LearningCard, availableSkills: readonly Skill
   })[0]!
 }
 
-function localDay(date: Date): string {
-  return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
-}
-
 export function getReviewPlan(profile: Profile, now = new Date()) {
   const dueIds = getDueCards(profile, now).map((card) => card.vocabularyId)
-  const today = localDay(now)
-  const dueSet = new Set(dueIds)
-  const weakIds = Object.values(profile.cards)
-    .filter(
-      (card) =>
-        !dueSet.has(card.vocabularyId) &&
-        card.fsrs.last_review &&
-        localDay(new Date(card.fsrs.last_review)) !== today &&
-        SKILLS.some((skill) => card.skills[skill].attempts > card.skills[skill].correct),
-    )
-    .sort((a, b) => skillPriority(a.skills[chooseSkill(a)]) - skillPriority(b.skills[chooseSkill(b)]))
-    .slice(0, 5)
-    .map((card) => card.vocabularyId)
-  return { dueIds, weakIds }
+  return { dueIds }
 }
 
 export function completeLesson(profile: Profile, lessonId: string, now = new Date()): Profile {

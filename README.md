@@ -71,9 +71,9 @@ Ein globales Sprechtempo (Langsam, Normal, Schnell) steuert sämtliche TTS-Ausga
 
 Die Startseite Nǐ Hǎo zeigt die nächste Aktion unter Heute, Kreisfortschritt für Bekannte Wörter und Lektionen sowie sechs Kacheln für Wortschatz, Zeichen, Grammatik, Training, Wiederholen und Einstellungen. Unterseiten führen direkt zur Startseite zurück. Bekannte Wörter sind Wörter mit mindestens 14 Tagen FSRS-Stabilität und erfolgreichem Abruf in mindestens zwei Richtungen. Das 你好-Icon, Blau-/Korall-Tokens und Light/Dark Mode verwenden eine gemeinsame Farbwelt.
 
-Alte lokale Profile und Sicherungen bleiben lesbar. Die entfernte Prüfungshistorie wird bei der Validierung ausgelassen. Lernkarten, FSRS-Zustände, Übungen und Lektionen bleiben erhalten. Neue Sicherungen enthalten kein Prüfungsfeld. Der letzte Exportklick wird lokal gespeichert. Nach einem Monat erinnert die Übersicht an eine Sicherung.
+Profile und Sicherungen werden gegen das aktuelle Datenschema geprüft. Es gibt keine Migration älterer Formate. Der letzte Exportklick wird lokal gespeichert. Nach einem Monat erinnert die Übersicht an eine Sicherung.
 
-Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Grammatik und Abrufübungen gelernt. Der Start auf „Heute“ verwendet denselben Ablauf wie der Lektionen. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden. Alte Tageslimit-Felder werden beim Laden und Import entfernt.
+Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Grammatik und Abrufübungen gelernt. Der Start auf „Heute“ führt zur nächsten Lektion. Es gibt kein Neuwörter-Tageslimit. Die nächste Lektion ist die erste noch nicht abgeschlossene Lektion, unabhängig davon, wie viele Wörter bereits begonnen wurden.
 
 Wortschatz, Zeichen und Grammatik sind Nachschlagebereiche mit Beispielen, Audio und Lektionenbezug. Grammatik folgt der Lektionenreihenfolge. Aktive Grammatikaufgaben bleiben Teil der Lektionen. Das separate Tontraining und die isolierten Zeichenübungen sind entfernt. Deren alte Statistiken werden beim Laden/Import verworfen. Bei Zeichen zeigt das CircleCheck-Icon, dass bereits ein zugehöriges Wort begonnen wurde.
 

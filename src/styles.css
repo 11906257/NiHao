@@ -6,21 +6,19 @@
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   --primary: #3b5bdb;
-  --primary-hover: #304bc0;
-  --primary-soft: #edf2ff;
   --bg: #faf9f6;
   --surface: #ffffff;
-  --surface-alt: #f3f4f6;
-  --text: #111827;
+  --text: #000000;
   --muted: #6b7280;
-  --border: #e5e7eb;
-  --nav: #111827;
+  --surface-alt: color-mix(in srgb, var(--text) 5%, var(--surface));
+  --border: color-mix(in srgb, var(--text) 12%, var(--surface));
+  --primary-soft: color-mix(in srgb, var(--primary) 10%, var(--surface));
   --on-primary: #ffffff;
   --interactive: #3b5bdb;
-  --shadow: 0 4px 24px #00000005;
+  --shadow-color: #00000014;
+  --shadow: 0 4px 24px var(--shadow-color);
   --overlay: #00000080;
-  --shadow-soft: #00000033;
-  --shadow-strong: #00000044;
+  --press-filter: brightness(0.9);
   color: var(--text);
   background: var(--bg);
   --font-ui: 'Inter', 'Noto Sans SC', sans-serif;
@@ -41,12 +39,9 @@
   --text-3xl: 1.75rem;
   --text-4xl: 2rem;
   --text-5xl: 2.5rem;
-  --text-6xl: 3rem;
   --text-7xl: 3.5rem;
   --text-8xl: 4rem;
-  --text-9xl: 4.5rem;
   --text-10xl: 5rem;
-  --text-11xl: 6rem;
   --radius-control: 10px;
   --radius-panel: 24px;
   --space-2: 8px;
@@ -55,25 +50,23 @@
   --space-8: 40px;
 }
 :root[data-theme='dark'] {
-  --bg: #0d111a;
-  --surface: #111827;
-  --surface-alt: #1f2937;
-  --text: #faf9f6;
+  --bg: #000000;
+  --surface: #0d111a;
+  --text: #ffffff;
   --muted: #cbd5e1;
-  --border: #374151;
   --interactive: #a5b4fc;
   --shadow: none;
+  --press-filter: brightness(1.1);
 }
 @media (prefers-color-scheme: dark) {
   :root[data-theme='system'] {
-    --bg: #0d111a;
-    --surface: #111827;
-    --surface-alt: #1f2937;
-    --text: #faf9f6;
+    --bg: #000000;
+    --surface: #0d111a;
+    --text: #ffffff;
     --muted: #cbd5e1;
-    --border: #374151;
     --interactive: #a5b4fc;
     --shadow: none;
+    --press-filter: brightness(1.1);
   }
 }
 * {
@@ -100,6 +93,16 @@ select {
 button {
   cursor: pointer;
 }
+button:not(:disabled),
+.file-button {
+  transition: transform 80ms ease, filter 80ms ease;
+  touch-action: manipulation;
+}
+button:not(:disabled):active,
+.file-button:active {
+  transform: scale(0.985);
+  filter: var(--press-filter);
+}
 button:disabled {
   cursor: default;
   opacity: 0.48;
@@ -117,6 +120,11 @@ input:focus-visible,
 select:focus-visible {
   outline: 3px solid var(--interactive);
   outline-offset: 4px;
+}
+.close-button:focus-visible {
+  outline: none;
+  background: var(--surface-alt);
+  box-shadow: inset 0 0 0 1px var(--border);
 }
 h1,
 h2,
@@ -170,9 +178,7 @@ small,
   display: block;
 }
 .eyebrow {
-  font-size: var(--text-xs);
   line-height: 1.6;
-  font-weight: 600;
   letter-spacing: 0.085em;
   text-transform: uppercase;
   color: var(--muted);
@@ -181,8 +187,6 @@ small,
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-panel);
-  padding: var(--space-6);
   box-shadow: var(--shadow);
 }
 button.card {
@@ -193,7 +197,6 @@ button.card {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  font-weight: 600;
   border: 1px solid transparent;
   line-height: 1.45;
   text-decoration: none;
@@ -203,16 +206,6 @@ button.card {
   color: var(--text);
   border-color: var(--border);
 }
-.button:not(:disabled):hover {
-  background: var(--surface-alt);
-}
-.button.primary:not(:disabled):hover {
-  background: var(--primary-hover);
-}
-.toggle-group button:not([aria-pressed='true']):hover,
-.text-button:hover {
-  background: var(--surface-alt);
-}
 .icon-button {
   display: inline-flex;
   align-items: center;
@@ -220,9 +213,6 @@ button.card {
   padding: var(--space-2);
   color: var(--muted);
   border: 1px solid transparent;
-}
-.icon-button:hover {
-  background: var(--surface-alt);
 }
 .text-button {
   display: inline-flex;
@@ -232,7 +222,6 @@ button.card {
   min-height: 44px;
   color: var(--interactive);
   font-size: var(--text-sm);
-  font-weight: 600;
   padding: 8px 0;
   text-decoration: none;
 }
@@ -279,14 +268,6 @@ main {
 .page-heading {
   margin-bottom: 24px;
 }
-.page-heading .eyebrow {
-  margin-bottom: 8px;
-}
-.page-heading p {
-  color: var(--muted);
-  font-size: var(--text-base);
-  max-width: 740px;
-}
 .today-grid {
   display: grid;
   gap: 24px;
@@ -301,10 +282,6 @@ main {
 }
 .section-heading h2 {
   margin: 0;
-}
-.section-heading > span {
-  font-size: var(--text-xs);
-  color: var(--muted);
 }
 .lesson-number {
   height: 57px;
@@ -326,12 +303,10 @@ main {
   flex-wrap: wrap;
 }
 .word-preview > span {
-  font-family: var(--font-chinese);
   color: var(--muted);
   border: 1px solid var(--border);
   padding: 8px 8px;
   border-radius: var(--radius-control);
-  font-size: var(--text-sm);
   background: var(--bg);
 }
 .note {
@@ -342,9 +317,6 @@ main {
   font-size: var(--text-sm);
   color: var(--muted);
   margin: var(--space-6) 0;
-}
-.note strong {
-  color: var(--text);
 }
 .progress-track {
   height: 6px;
@@ -369,9 +341,6 @@ main {
   color: var(--muted);
   margin: 0 0 8px;
 }
-.progress-block + .progress-block {
-  margin-top: var(--space-6);
-}
 .search-field {
   display: flex;
   align-items: center;
@@ -394,6 +363,10 @@ select {
   border-color: var(--interactive);
   outline: 2px solid var(--interactive);
   outline-offset: 2px;
+}
+input::placeholder {
+  color: var(--muted);
+  opacity: 1;
 }
 .search-field input:not([type='file']) {
   flex: 1;
@@ -423,13 +396,6 @@ select {
   gap: var(--space-2);
   padding: 24px 24px;
   min-height: 150px;
-  transition: border-color 0.15s;
-}
-.word-card:hover,
-.hanzi-tile:hover,
-.grammar-card:hover,
-.content-row:hover {
-  background: var(--surface-alt);
 }
 .word-card > div {
   display: flex;
@@ -470,6 +436,7 @@ select {
   align-items: center;
   gap: var(--space-4);
   flex-wrap: wrap;
+  overflow-wrap: anywhere;
   margin-bottom: 8px;
 }
 .lesson-row p {
@@ -570,8 +537,6 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-panel);
-  padding: 16px var(--space-2);
   background: var(--surface);
   border: 1px solid var(--border);
   min-height: 120px;
@@ -658,15 +623,6 @@ select {
   gap: var(--space-4);
   padding: 0 0 24px;
 }
-.setting-row .toggle-group {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  width: min(100%, 360px);
-}
-.setting-row .toggle-group button {
-  min-width: 0;
-  padding-inline: 8px;
-}
 .setting-row:last-child {
   padding-bottom: 0;
 }
@@ -694,14 +650,14 @@ select {
 }
 .modal {
   position: fixed;
-  inset: 0;
-  max-height: calc(100dvh - 48px);
+  inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  max-height: calc(100dvh - 48px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   width: min(560px, calc(100% - 36px));
   max-width: 760px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
-  box-shadow: 0 20px 90px var(--shadow-strong);
+  box-shadow: 0 20px 90px var(--shadow-color);
   overscroll-behavior: contain;
 }
 .modal::backdrop {
@@ -808,7 +764,7 @@ select {
   background: var(--text);
   color: var(--surface);
   border-radius: var(--radius-panel);
-  box-shadow: 0 5px 30px var(--shadow-soft);
+  box-shadow: 0 5px 30px var(--shadow-color);
   font-size: var(--text-sm);
   line-height: 1.6;
 }
@@ -879,12 +835,9 @@ select {
 .exercise-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius-panel);
-  padding: 40px;
   text-align: center;
 }
 .intro-hanzi {
-  font-weight: 400;
   margin: 24px 0 0;
   letter-spacing: 0.04em;
 }
@@ -931,8 +884,6 @@ select {
 }
 .exercise-card input {
   width: 100%;
-  min-height: 53px !important;
-  font-size: var(--text-lg) !important;
 }
 .exercise-card form {
   text-align: left;
@@ -1054,9 +1005,6 @@ select {
   main {
     padding-top: 50px;
   }
-  .today-grid {
-    grid-template-columns: minmax(0, 2.2fr) minmax(265px, 1fr);
-  }
   .word-card-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1066,7 +1014,6 @@ select {
     padding: 24px;
   }
   .today-grid {
-    grid-template-columns: minmax(0, 1fr) 215px;
     gap: var(--space-4);
   }
   .hanzi-grid {
@@ -1076,9 +1023,6 @@ select {
 @media (max-width: 900px) {
   main {
     padding: 24px var(--space-6);
-  }
-  .today-grid {
-    grid-template-columns: 1fr;
   }
   .word-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1114,42 +1058,23 @@ select {
   .page-heading {
     margin-bottom: 24px;
   }
-  .page-heading .eyebrow {
-    font-size: var(--text-xs);
-    margin-bottom: 8px;
-  }
-  .page-heading p {
-    font-size: var(--text-base);
-    line-height: 1.7;
-    margin-bottom: 0;
-  }
   .section-heading {
     margin-top: 24px;
     margin-bottom: 16px;
     gap: 8px;
   }
-  .section-heading .text-button {
-    font-size: var(--text-xs);
-  }
   .word-preview {
     gap: 8px;
   }
   .word-preview > span {
-    font-size: var(--text-sm);
     padding: 8px 8px;
-  }
-  .card {
-    padding: var(--space-6);
-    border-radius: var(--radius-panel);
   }
   .filter-bar {
     flex-wrap: wrap;
     margin-top: 24px;
-    gap: 8px;
   }
   .filter-bar .search-field {
     flex-basis: 100%;
-    min-height: 48px;
   }
   .filter-bar > .toggle-group {
     width: 100%;
@@ -1175,9 +1100,6 @@ select {
   }
   .word-card .pinyin {
     font-size: var(--text-xs);
-  }
-  .word-known {
-    padding: 8px;
   }
   .lesson-row {
     padding: 16px 16px;
@@ -1270,9 +1192,7 @@ select {
     gap: 8px;
   }
   .hanzi-tile {
-    padding: 16px 8px;
     min-height: 103px;
-    border-radius: var(--radius-control);
   }
   .hanzi-tile .chinese {
     font-size: var(--text-4xl);
@@ -1333,10 +1253,8 @@ select {
     align-items: stretch;
   }
   .modal {
-    padding: 24px;
-    width: calc(100% - 26px);
-    max-height: calc(100dvh - 35px);
-    border-radius: var(--radius-panel);
+    width: calc(100% - 26px - env(safe-area-inset-left) - env(safe-area-inset-right));
+    max-height: calc(100dvh - 35px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
   .modal-top {
     margin: -6px -7px 16px 0;
@@ -1356,20 +1274,11 @@ select {
     font-size: var(--text-sm);
     margin-bottom: var(--space-4);
   }
-  .intro-card,
-  .exercise-card {
-    padding: 24px 24px;
-    border-radius: var(--radius-panel);
-  }
   .intro-hanzi {
-    font-size: var(--text-9xl);
     margin-top: var(--space-6);
   }
   .intro-pinyin {
     font-size: var(--text-lg);
-  }
-  .intro-card .listen-area {
-    gap: var(--space-2);
   }
   .listen-area .button {
     font-size: var(--text-sm);
@@ -1389,9 +1298,6 @@ select {
   }
   .input-label {
     font-size: var(--text-xs);
-  }
-  .exercise-card input {
-    font-size: var(--text-base) !important;
   }
   .choices {
     gap: 8px;
@@ -1465,10 +1371,6 @@ select {
   .training-grid {
     grid-template-columns: 1fr;
   }
-  .intro-card,
-  .exercise-card {
-    padding: 24px 16px;
-  }
   .hanzi-grid {
     gap: 8px;
   }
@@ -1515,21 +1417,21 @@ select {
 
 .toggle-group {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  flex-wrap: nowrap;
+  gap: 0;
   flex-shrink: 0;
-  padding: 8px;
+  height: 48px;
+  min-height: 48px;
+  padding: 3px;
   border: 1px solid var(--border);
-  border-radius: var(--radius-panel);
-  background: var(--surface-alt);
+  border-radius: var(--radius-input);
+  background: var(--surface);
 }
 .toggle-group button {
-  min-height: 44px;
+  min-height: 40px;
   min-width: 48px;
-  padding: 8px 16px;
+  padding: 0 var(--space-2);
   border-radius: var(--radius-control);
-  font-size: var(--text-sm);
-  font-weight: 600;
   color: var(--text);
 }
 .toggle-group button[aria-pressed='true'] {
@@ -1542,12 +1444,10 @@ select {
 @media (max-width: 700px) {
   .toggle-group {
     width: 100%;
-    flex-wrap: nowrap;
   }
   .toggle-group button {
     flex: 1;
     min-width: 0;
-    padding: 8px 8px;
   }
   .toast {
     bottom: calc(16px + env(safe-area-inset-bottom));
@@ -1558,11 +1458,6 @@ select {
 }
 .lesson-heading p {
   color: var(--muted);
-}
-@media (max-width: 700px) {
-  main {
-    padding-top: calc(24px + env(safe-area-inset-top));
-  }
 }
 
 /* Let the lesson copy fill the card instead of retaining narrow phone widths. */
@@ -1632,15 +1527,8 @@ select {
 }
 
 /* Shared navigation cards and the recommended next lesson. */
-.lesson-row:hover,
-.lesson-row.recommended:hover {
-  background: var(--surface-alt);
-}
 .lesson-row.recommended {
-  background: color-mix(in srgb, var(--primary) 9%, var(--surface));
-}
-.lesson-row.recommended:hover {
-  background: color-mix(in srgb, var(--primary) 15%, var(--surface));
+  background: var(--primary-soft);
 }
 .lesson-row.recommended .pill {
   background: var(--primary-soft);
@@ -1679,14 +1567,6 @@ select {
   border: 1px solid var(--border);
   border-radius: var(--radius-control);
   background: var(--surface);
-}
-.pinyin-group button:hover {
-  background: var(--surface-alt);
-}
-.pinyin-keyboard > p {
-  grid-column: 1/-1;
-  text-align: left;
-  margin: var(--space-2) 0 0;
 }
 .rating-buttons.rating-choice {
   display: grid;
@@ -1841,14 +1721,6 @@ select {
   }
 }
 
-.filter-bar .toggle-group {
-  background: var(--surface);
-  flex-wrap: nowrap;
-}
-.filter-bar .toggle-group button {
-  border-radius: var(--radius-control);
-}
-
 /* The app-wide design contract. Component layout rules above do not override this scale. */
 h1 {
   font-family: var(--font-heading);
@@ -1888,7 +1760,6 @@ label,
   height: 48px;
   min-height: 48px;
   border-radius: var(--radius-input);
-  font-size: var(--text-sm);
   padding: 0 var(--space-4);
 }
 .icon-button {
@@ -1930,18 +1801,6 @@ select {
 }
 .filter-bar .search-field {
   min-height: 48px;
-}
-.filter-bar .toggle-group {
-  height: 48px;
-  min-height: 48px;
-  border-radius: var(--radius-input);
-  gap: 0;
-  padding: 3px;
-}
-.filter-bar .toggle-group button {
-  min-height: 40px;
-  padding: 0 var(--space-2);
-  font-size: var(--text-sm);
 }
 .exercise-card input {
   height: 48px;
@@ -2021,15 +1880,10 @@ label,
   }
 }
 
-.choice:not(:disabled):hover,
-.training-card:not(:disabled):hover,
-.character-words button:hover {
-  background: var(--surface-alt);
-}
-
 /* Compact home navigation and shared full-width subpages. */
 .app-shell {
   min-height: 100dvh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
 }
 .main-layout {
   width: 100%;
@@ -2113,7 +1967,7 @@ label,
   stroke-width: 7;
 }
 .ring-track {
-  stroke: color-mix(in srgb, var(--muted) 45%, var(--surface));
+  stroke: color-mix(in srgb, var(--muted) 25%, var(--surface));
 }
 .ring-value {
   stroke: var(--primary);
@@ -2157,9 +2011,6 @@ label,
 .home-tile svg {
   flex-shrink: 0;
   color: var(--accent);
-}
-.progress-card:hover {
-  background: var(--surface-alt);
 }
 @media (max-width: 600px) {
   .main-layout {
@@ -2225,16 +2076,10 @@ label,
   background: var(--on-primary);
   color: var(--primary);
 }
-.today-focus .button.primary:hover {
-  background: var(--primary-soft);
-}
 .home-tile {
-  background: color-mix(in srgb, var(--accent) 14%, var(--surface));
+  background: color-mix(in srgb, var(--accent) 50%, var(--surface));
   border-color: transparent;
   box-shadow: none;
-}
-.home-tile:hover {
-  background: color-mix(in srgb, var(--accent) 23%, var(--surface));
 }
 @media (max-width: 600px) {
   .today-focus {
@@ -2257,9 +2102,6 @@ label,
 .settings-tile {
   background: var(--surface);
   border-color: var(--border);
-}
-.settings-tile:hover {
-  background: var(--surface-alt);
 }
 .text-button,
 .character-words button {

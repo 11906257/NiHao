@@ -72,14 +72,6 @@ it('prüft deutsche Bedeutungen mit begrenzten Schreibvarianten statt Selbstkorr
   for (const answer of ['Abendessen', 'kein Frühstück', 'Mittagessen'])
     expect(checkAnswer(e, answer)).toBe(false)
 })
-it('entfernt alte Zeichen- und Tonübungen ohne andere Fortschritte zu verlieren', () => {
-  let p = recordPractice(createProfile(), 'h001', true)
-  p = recordPractice(p, 'tone-2', true)
-  p = recordPractice(p, grammar[0].id, true)
-  const restored = parseBackup(exportBackup(p), validIds, validLessonIds, validPracticeIds)
-  expect(Object.keys(restored.practice)).toEqual([grammar[0].id])
-  expect(p.practice).toHaveProperty('h001')
-})
 it('ordnet Grammatik stabil nach den Lektionen', () => {
   const numbers = grammar.map((g) => Number(g.lessonId.slice(1)))
   expect(numbers).toEqual([...numbers].sort((a, b) => a - b))

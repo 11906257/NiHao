@@ -369,7 +369,7 @@ export default function App() {
         onChange={(e) => setSearch(e.target.value)}
       />
       {search && (
-        <button className="icon-button" aria-label="Suche löschen" onClick={() => setSearch('')}>
+        <button className="icon-button close-button" aria-label="Suche löschen" onClick={() => setSearch('')}>
           <X size={17} />
         </button>
       )}
@@ -468,14 +468,6 @@ export default function App() {
           />
         </div>
         <HomeTiles onNavigate={navigate} />
-        {plan.weakIds.length > 0 && (
-          <div className="note row-between">
-            <span>{plan.weakIds.length} Wörter zum Nachüben.</span>
-            <button className="text-button" onClick={() => beginReview(plan.weakIds)}>
-              Gezielt üben <ArrowRight size={16} />
-            </button>
-          </div>
-        )}
       </>
     )
   else if (page === 'learn') {
@@ -972,7 +964,7 @@ export default function App() {
       {notice && (
         <div className="toast" role="status">
           <span>{notice}</span>
-          <button className="icon-button" onClick={() => setNotice('')} aria-label="Meldung schließen">
+          <button className="icon-button close-button" onClick={() => setNotice('')} aria-label="Meldung schließen">
             <X size={18} />
           </button>
         </div>
