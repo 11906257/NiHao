@@ -488,7 +488,6 @@ test('Bekannt-Filter, Zeichen-Detail und Hero-Höhe', async ({ page }) => {
     await noOverflow(page)
   }
   for (const card of await page.locator('.progress-card').all()) {
-    await card.hover()
     const colors = await card.evaluate((el) => ({
       track: getComputedStyle(el.querySelector('.ring-track')!).stroke,
       background: getComputedStyle(el).backgroundColor,

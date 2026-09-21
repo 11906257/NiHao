@@ -90,7 +90,7 @@ export function ExerciseRunner({
     <div className="study-shell">
       <div className="study-top">
         <span>{title}</span>
-        <button className="icon-button" onClick={onClose} aria-label="Lerneinheit verlassen">
+        <button className="icon-button close-button" onClick={onClose} aria-label="Lerneinheit verlassen">
           <X />
         </button>
       </div>

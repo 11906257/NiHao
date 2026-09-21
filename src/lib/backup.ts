@@ -78,9 +78,7 @@ export function validateProfile(
   validLessonIds?: Iterable<string>,
   validPracticeIds?: Iterable<string>,
 ): Profile {
-  const profile = { ...object(input, 'Lernprofil') }
-  // Read old local profiles/backups without retaining the retired exam history.
-  if (profile.schemaVersion === 1) delete profile.exams
+  const profile = object(input, 'Lernprofil')
   keys(profile, [
     'schemaVersion',
     'cards',
@@ -164,21 +162,11 @@ export function validateProfile(
     if (fsrs.reps > 0 && latestPractice !== fsrs.last_review)
       fail('Das letzte Übungsdatum stimmt nicht mit dem Wiederholungszustand überein.')
   }
-  const settings = { ...object(profile.settings, 'Einstellungen') }
-  // Compatibility with profiles created before lesson-only learning.
-  delete settings.dailyNew
-  profile.settings = settings
+  const settings = object(profile.settings, 'Einstellungen')
   keys(settings, ['theme', 'audioRate'])
   if (!['light', 'dark', 'system'].includes(settings.theme as string)) fail('Unbekanntes Farbschema.')
   number(settings.audioRate, 'Sprechtempo', 0.1, 1.2)
-  const practice = { ...object(profile.practice, 'Weitere Übungen') }
-  // Migration only: retired lookup/tone exercises must not block existing profiles.
-  for (const key of Object.keys(practice)) {
-    const hanziId = /^h(\d{3})$/.exec(key)
-    if ((hanziId && Number(hanziId[1]) >= 1 && Number(hanziId[1]) <= 246) || /^tone-[1-5]$/.test(key))
-      delete practice[key]
-  }
-  profile.practice = practice
+  const practice = object(profile.practice, 'Weitere Übungen')
   if (Object.keys(practice).length > 10000) fail('Zu viele Übungen.')
   for (const [exerciseId, rawStats] of Object.entries(practice)) {
     id(exerciseId)
