@@ -46,6 +46,14 @@ export function normalizePinyin(text: string): string {
     })
   return expanded.normalize('NFC').replace(/[\s'’.,!?，。！？·]/g, '')
 }
+export function normalizePinyinBase(text: string): string {
+  return normalizePinyin(text)
+    .replace(/ü/g, '\uE000')
+    .normalize('NFD')
+    .replace(/\p{M}/gu, '')
+    .replace(/\uE000/g, 'ü')
+    .replace(/[^a-zü]/g, '')
+}
 const normalizeText = (s: string) =>
   s
     .toLocaleLowerCase('de')
@@ -73,7 +81,7 @@ export function checkAnswer(exercise: Exercise, answer: string): boolean {
       : normalizeText(x) === normalizeText(answer),
   )
 }
-export function wordExercise(word: Vocabulary, skill: Skill, all: Vocabulary[]): Exercise {
+export function wordExercise(word: Vocabulary, skill: Skill, all: Vocabulary[], exampleIndex = 0): Exercise {
   const base = {
     id: `e-${word.id}-${skill}`,
     skill,
@@ -123,6 +131,8 @@ export function wordExercise(word: Vocabulary, skill: Skill, all: Vocabulary[]):
     }
   }
   if (skill === 'context') {
+    const examples = [word.example, ...(word.examples ?? [])]
+    const example = examples[exampleIndex % examples.length]!
     const options = [
       word.meaning,
       ...Array.from(
@@ -145,10 +155,10 @@ export function wordExercise(word: Vocabulary, skill: Skill, all: Vocabulary[]):
       ...base,
       kind: 'choice',
       prompt: `Was bedeutet „${word.hanzi}“ in diesem Satz?`,
-      zh: word.example.zh,
-      pinyin: word.example.pinyin,
+      zh: example.zh,
+      pinyin: example.pinyin,
       options: mix(options, word.sourceIndex),
-      explanation: `${word.example.de}\n${word.hanzi} heißt hier „${word.meaning}“.`,
+      explanation: `${example.de}\n${word.hanzi} heißt hier „${word.meaning}“.`,
     }
   }
   return { ...base, kind: 'text', prompt: 'Was bedeutet dieses Wort?', zh: word.hanzi }

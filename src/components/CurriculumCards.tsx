@@ -17,7 +17,7 @@ export function WordCard({
         <span className="chinese" lang="zh-CN">
           {word.hanzi}
         </span>
-        {known && <CircleCheck className="word-known" size={20} aria-label="Bekannt" />}
+        {known && <CircleCheck className="status-check" size={18} aria-label="Bekannt" />}
       </div>
       <span className="pinyin">{word.pinyin}</span>
       <strong>{word.meaning}</strong>
@@ -39,13 +39,11 @@ export function LessonCard({
   const completed = profile.completedLessons.includes(lesson.id)
   return (
     <button className={`lesson-row card ${recommended ? 'recommended' : ''}`} onClick={onOpen}>
-      <div className={`lesson-number ${completed ? 'completed' : ''}`}>
-        {completed ? <CircleCheck size={24} /> : lesson.id.replace('l', '')}
-      </div>
+      <div className={`lesson-number ${completed ? 'completed' : ''}`}>{lesson.id.replace('l', '')}</div>
       <div className="lesson-card-body">
         <h3>
           {lesson.title}
-          {recommended && <span className="pill">Als Nächstes</span>}
+          {completed && <CircleCheck className="status-check" size={18} aria-label="Abgeschlossen" />}
         </h3>
         <p>{lesson.description}</p>
         {(lesson.wordIds.length > 0 || lesson.grammarIds.length > 0) && (
@@ -65,7 +63,7 @@ export function LessonCard({
           ))}
         </div>
       </div>
-      <ChevronRight size={20} />
+      <ChevronRight className="disclosure-chevron" size={20} aria-hidden="true" />
     </button>
   )
 }

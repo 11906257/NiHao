@@ -1,4 +1,4 @@
-import { AUDIO_RATES } from './audio'
+import { AUDIO_RATES, type AudioRate } from './audio'
 import { createEmptyCard, fsrs, Rating, type Card } from 'ts-fsrs'
 
 export const SKILLS = ['meaning', 'pinyin', 'listening', 'context', 'production'] as const
@@ -37,7 +37,7 @@ export interface Profile {
   cards: Record<string, LearningCard>
   settings: {
     theme: 'light' | 'dark' | 'system'
-    audioRate: number
+    audioRate: AudioRate
   }
   history: ReviewEvent[]
   practice: Record<string, SkillStats>

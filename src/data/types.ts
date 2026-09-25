@@ -11,6 +11,7 @@ export interface Vocabulary {
   pinyin: string
   meaning: string
   accepted?: string[]
+  examples?: Array<Pick<Example, 'zh' | 'pinyin' | 'de'>>
   note?: string
   lessonId: string
   example: Example

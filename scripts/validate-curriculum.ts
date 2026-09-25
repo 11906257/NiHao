@@ -2,7 +2,7 @@ import topics from '../src/data/topics.json'
 import official from '../src/data/official.json'
 import assert from 'node:assert/strict'
 import { vocabulary, hanzi, grammar, lessons } from '../src/data/curriculum'
-import { grammarExercise, wordExercise } from '../src/lib/exercises'
+import { grammarExercise, normalizePinyinBase, wordExercise } from '../src/lib/exercises'
 const ids = new Set<string>()
 function unique(id: string) {
   assert(id && typeof id === 'string', 'Fehlende ID')
@@ -76,6 +76,17 @@ for (const w of vocabulary) {
   assert(lessonSet.has(w.lessonId))
   example(w.example)
   assert(w.example.zh.includes(w.hanzi), `${w.id}: Zielwort fehlt im Kontext`)
+  for (const e of w.examples ?? []) {
+    fields(e, ['zh', 'pinyin', 'de'])
+    assert(e.zh.includes(w.hanzi), `${w.id}: zusätzliches Beispiel enthält das Zielwort nicht`)
+    assert(
+      w.pinyin
+        .split('/')
+        .some((reading) => normalizePinyinBase(e.pinyin).includes(normalizePinyinBase(reading))),
+      `${w.id}: Aussprache passt nicht zum zusätzlichen Beispiel`,
+    )
+  }
+  assert((w.examples ?? []).length <= 2, `${w.id}: höchstens zwei zusätzliche Beispiele anzeigen`)
   for (const skill of ['meaning', 'production', 'pinyin', 'listening', 'context'] as const) {
     const e = wordExercise(w, skill, vocabulary)
     unique(e.id)
@@ -88,6 +99,8 @@ for (const w of vocabulary) {
     }
   }
 }
+const wordsWithVariedExamples = vocabulary.filter((word) => (word.examples?.length ?? 0) > 0).length
+assert(wordsWithVariedExamples >= 200, 'Zu wenige Wörter haben einen zusätzlichen Satzkontext')
 for (const h of hanzi) {
   unique(h.id)
   fields(h, ['char', 'pinyin', 'meaning'])
@@ -138,5 +151,5 @@ for (const [refs, items, name] of [
   for (const item of items) assert(refs.includes(item.id), `${name}: ${item.id} keiner Lektion zugeordnet`)
 }
 console.log(
-  `Curriculum gültig: ${vocabulary.length} Wörter, ${hanzi.length} Hanzi, ${grammar.length} Grammatikpunkte, ${topics.length} Themen, ${lessons.length} Lektionen, ${ids.size} eindeutige IDs.`,
+  `Curriculum gültig: ${vocabulary.length} Wörter, ${wordsWithVariedExamples} mit zusätzlichen Beispielsätzen, ${hanzi.length} Hanzi, ${grammar.length} Grammatikpunkte, ${topics.length} Themen, ${lessons.length} Lektionen, ${ids.size} eindeutige IDs.`,
 )

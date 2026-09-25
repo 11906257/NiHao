@@ -1,4 +1,5 @@
 import { HISTORY_LIMIT, REVIEW_RATINGS, SKILLS, type Profile, type Skill } from './scheduler'
+import { AUDIO_RATES } from './audio'
 
 const BACKUP_SCHEMA_VERSION = 1
 export const MAX_BACKUP_BYTES = 10 * 1024 * 1024
@@ -165,7 +166,10 @@ export function validateProfile(
   const settings = object(profile.settings, 'Einstellungen')
   keys(settings, ['theme', 'audioRate'])
   if (!['light', 'dark', 'system'].includes(settings.theme as string)) fail('Unbekanntes Farbschema.')
-  number(settings.audioRate, 'Sprechtempo', 0.1, 1.2)
+  if (
+    !Object.values(AUDIO_RATES).includes(settings.audioRate as (typeof AUDIO_RATES)[keyof typeof AUDIO_RATES])
+  )
+    fail('Unbekanntes Sprechtempo.')
   const practice = object(profile.practice, 'Weitere Übungen')
   if (Object.keys(practice).length > 10000) fail('Zu viele Übungen.')
   for (const [exerciseId, rawStats] of Object.entries(practice)) {

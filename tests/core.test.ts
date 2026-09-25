@@ -102,7 +102,7 @@ describe('complete backup boundary', () => {
     let profile = completeLesson(reviewed(), 'lesson-01', now)
     profile = recordPractice(profile, 'g001', true, now)
     profile = recordPractice(profile, 't001', false, now)
-    profile.settings = { theme: 'dark', audioRate: 0.8 }
+    profile.settings = { theme: 'dark', audioRate: 0.9 }
     const restored = parseBackup(exportBackup(profile, now), validIds, ['lesson-01'])
     expect(restored).toEqual(profile)
     expect(restored.cards.v001!.fsrs.reps).toBe(1)
@@ -166,7 +166,13 @@ describe('complete backup boundary', () => {
     [
       'unsupported settings',
       (p: Profile) => {
-        p.settings.audioRate = 100
+        p.settings.audioRate = 100 as Profile['settings']['audioRate']
+      },
+    ],
+    [
+      'unsupported intermediate audio rate',
+      (p: Profile) => {
+        p.settings.audioRate = 0.8 as Profile['settings']['audioRate']
       },
     ],
     [

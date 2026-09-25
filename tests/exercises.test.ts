@@ -19,6 +19,14 @@ describe('Aktives Erinnern', () => {
     expect(checkAnswer(e, 'sie')).toBe(true)
     expect(checkAnswer(e, 'es')).toBe(true)
   })
+  it('wechselt beim Satzverständnis den Kontext, ohne das Lernwort zu wechseln', () => {
+    const word = vocabulary.find((w) => w.examples?.length)!
+    const first = wordExercise(word, 'context', vocabulary, 0)
+    const next = wordExercise(word, 'context', vocabulary, 1)
+    expect(first.zh).not.toBe(next.zh)
+    expect(next.zh).toContain(word.hanzi)
+    expect(next.explanation).toContain(word.meaning)
+  })
   it('erzeugt keine doppelten Optionen und nicht immer A als Grammatiklösung', () => {
     for (const w of vocabulary) {
       const e = wordExercise(w, 'context', vocabulary)
@@ -33,7 +41,6 @@ describe('Aktives Erinnern', () => {
       ).size,
     ).toBeGreaterThan(1)
   })
-  it('macht jede kommunikative Teilkompetenz übbar', () => {})
 })
 import { createProfile, recordPractice } from '../src/lib/scheduler'
 import { exportBackup, parseBackup } from '../src/lib/backup'
