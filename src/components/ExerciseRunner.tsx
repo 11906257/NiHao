@@ -161,10 +161,10 @@ export function ExerciseRunner({
               disabled={checked}
               placeholder={
                 e.skill === 'pinyin'
-                  ? 'Pinyin mit Tonzeichen oder Tonziffern'
+                  ? 'Pinyin mit Tönen'
                   : e.skill === 'production'
-                    ? 'Deine Antwort auf Chinesisch oder in Pinyin'
-                    : 'Deine Antwort auf Deutsch'
+                    ? 'Chinesisch oder Pinyin'
+                    : 'Antwort auf Deutsch'
               }
             />
             {(e.skill === 'pinyin' || e.skill === 'production') && !checked && (
@@ -184,16 +184,21 @@ export function ExerciseRunner({
                   </div>
                 ) : (
                   <div className="pinyin-tone-rows" role="group" aria-label={`Töne für ${selectedVowel}`}>
-                    <button
-                      type="button"
-                      className="icon-button close-button"
-                      aria-label="Selbstlaute anzeigen"
-                      onClick={() => setSelectedVowel(null)}
-                    >
-                      <X size={20} />
-                    </button>
                     {(selectedVowel === 'u' ? ['u', 'ü'] : [selectedVowel]).map((base) => (
                       <div className="pinyin-row" key={base}>
+                        {base === (selectedVowel === 'u' ? 'u' : selectedVowel) && (
+                          <button
+                            type="button"
+                            className="icon-button close-button"
+                            aria-label="Selbstlaute anzeigen"
+                            onClick={() => setSelectedVowel(null)}
+                          >
+                            <X size={20} />
+                          </button>
+                        )}
+                        {selectedVowel === 'u' && base === 'ü' && (
+                          <span className="pinyin-spacer" aria-hidden="true" />
+                        )}
                         {PINYIN_VOWELS[base as keyof typeof PINYIN_VOWELS].map((c, tone) => (
                           <button
                             key={c}

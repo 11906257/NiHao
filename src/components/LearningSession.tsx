@@ -34,7 +34,7 @@ export function LearningSession({
     () => [
       ...ids.map((id) => wordExercise(wordById[id], 'meaning', vocabulary)),
       ...points.map(grammarExercise),
-      ...ids.map((id, i) => wordExercise(wordById[id], i % 2 ? 'context' : 'production', vocabulary)),
+      ...ids.map((id, i) => wordExercise(wordById[id], i % 2 ? 'context' : 'production', vocabulary, 1)),
     ],
     [ids, points],
   )

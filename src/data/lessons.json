@@ -12,6 +12,7 @@
       "v079"
     ],
     "grammarIds": [
+      "g043",
       "g047"
     ],
     "topicIds": []
@@ -30,6 +31,7 @@
       "v289"
     ],
     "grammarIds": [
+      "g031",
       "g035",
       "g046",
       "g052"
@@ -141,9 +143,7 @@
       "v026"
     ],
     "grammarIds": [
-      "g002",
-      "g009",
-      "g028"
+      "g009"
     ],
     "topicIds": []
   },
@@ -209,10 +209,8 @@
     ],
     "grammarIds": [
       "g016",
-      "g019",
       "g022",
       "g023",
-      "g036",
       "g053",
       "g060"
     ],
@@ -319,9 +317,7 @@
       "v220",
       "v191"
     ],
-    "grammarIds": [
-      "g012"
-    ],
+    "grammarIds": [],
     "topicIds": []
   },
   {
@@ -336,7 +332,9 @@
       "v099",
       "v101"
     ],
-    "grammarIds": [],
+    "grammarIds": [
+      "g038"
+    ],
     "topicIds": [
       "tp025"
     ]
@@ -358,7 +356,6 @@
       "g004",
       "g005",
       "g006",
-      "g038",
       "g049"
     ],
     "topicIds": [
@@ -368,18 +365,20 @@
   {
     "id": "l21",
     "title": "Heute und morgen",
-    "description": "Ordne Erlebnisse und Pläne gestern, heute und morgen zu und frage nach dem Zeitpunkt.",
+    "description": "Ordne gestern, heute und morgen ein, frage nach Zeitpunkten und beschreibe abgeschlossene oder gerade laufende Handlungen.",
     "wordIds": [
       "v129",
       "v297",
       "v094",
       "v232",
-      "v185",
-      "v186"
+      "v286",
+      "v108"
     ],
     "grammarIds": [
+      "g017",
       "g040",
-      "g059"
+      "g062",
+      "g063"
     ],
     "topicIds": [
       "tp003"
@@ -453,7 +452,7 @@
       "v031"
     ],
     "grammarIds": [
-      "g001",
+      "g036",
       "g068"
     ],
     "topicIds": []
@@ -560,6 +559,7 @@
       "v213"
     ],
     "grammarIds": [
+      "g002",
       "g003",
       "g034"
     ],
@@ -664,7 +664,7 @@
   {
     "id": "l37",
     "title": "Kleidung auswählen",
-    "description": "Beschreibe Kleidung mit Größe und Zustand und verwende ihr Zählwort 件.",
+    "description": "Unterscheide Größen, beschreibe Kleidung und verwende 小 und 件 passend.",
     "wordIds": [
       "v255",
       "v023",
@@ -674,6 +674,7 @@
       "v242"
     ],
     "grammarIds": [
+      "g001",
       "g029"
     ],
     "topicIds": [
@@ -695,16 +696,14 @@
     ],
     "grammarIds": [
       "g015",
-      "g031",
-      "g037",
-      "g043"
+      "g037"
     ],
     "topicIds": []
   },
   {
     "id": "l39",
     "title": "Arbeit und Pause",
-    "description": "Sprich über Arbeitsort, Arbeitsbeginn, Feierabend und eine verdiente Pause.",
+    "description": "Sprich über Arbeitsort, Arbeitsbeginn, Feierabend und Pausen. Beschreibe auch, was gerade passiert.",
     "wordIds": [
       "v062",
       "v063",
@@ -713,7 +712,11 @@
       "v118",
       "v246"
     ],
-    "grammarIds": [],
+    "grammarIds": [
+      "g064",
+      "g065",
+      "g066"
+    ],
     "topicIds": [
       "tp026",
       "tp027"
@@ -722,24 +725,18 @@
   {
     "id": "l40",
     "title": "Mein Tagesablauf",
-    "description": "Erzähle vom Aufstehen bis zum Schlafengehen und benenne laufende oder abgeschlossene Handlungen.",
+    "description": "Erzähle vom Aufstehen bis zum Schlafengehen und übe trennbare Verben sowie abgeschlossene Handlungen.",
     "wordIds": [
       "v161",
       "v194",
       "v195",
       "v299",
-      "v286",
-      "v108"
+      "v185",
+      "v186"
     ],
     "grammarIds": [
       "g007",
-      "g017",
-      "g025",
-      "g062",
-      "g063",
-      "g064",
-      "g065",
-      "g066"
+      "g025"
     ],
     "topicIds": []
   },
@@ -813,7 +810,9 @@
       "v231",
       "v155"
     ],
-    "grammarIds": [],
+    "grammarIds": [
+      "g028"
+    ],
     "topicIds": [
       "tp028"
     ]
@@ -838,7 +837,7 @@
   {
     "id": "l46",
     "title": "Tiere um uns",
-    "description": "Benenne Haustiere, zähle sie mit 只 und verwende die passenden schriftlichen Pronomen.",
+    "description": "Benenne Haustiere, zähle sie mit 只 und unterscheide die passenden Pronomen.",
     "wordIds": [
       "v064",
       "v119",
@@ -846,7 +845,9 @@
       "v204",
       "v287"
     ],
-    "grammarIds": [],
+    "grammarIds": [
+      "g012"
+    ],
     "topicIds": []
   },
   {
@@ -894,7 +895,9 @@
       "v067"
     ],
     "grammarIds": [
+      "g019",
       "g041",
+      "g059",
       "g061"
     ],
     "topicIds": []

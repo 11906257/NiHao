@@ -1,6 +1,7 @@
 export const AUDIO_RATES = { slow: 0.1, normal: 0.9, fast: 1.2 } as const
+export type AudioRate = (typeof AUDIO_RATES)[keyof typeof AUDIO_RATES]
 
-export function normalizeAudioRate(rate: number): number {
+export function normalizeAudioRate(rate: number): AudioRate {
   return rate < AUDIO_RATES.normal
     ? AUDIO_RATES.slow
     : rate > AUDIO_RATES.normal

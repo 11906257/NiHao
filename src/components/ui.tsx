@@ -33,7 +33,7 @@ export function AudioButton({ text, label }: { text: string; label?: string }) {
           }
         }}
       >
-        {busy ? <LoaderCircle size={20} className="spin" /> : <Volume2 size={20} />} {label}
+        {busy ? <LoaderCircle size={18} className="spin" /> : <Volume2 size={18} />} {label}
       </button>
       {error && (
         <span className="audio-error" role="alert">

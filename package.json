@@ -4,6 +4,7 @@
   "description": "Private Offline-Lernapp für HSK 3.0 Level 1",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "icons": "node scripts/icons.mjs",
     "typecheck": "tsc --noEmit",
     "validate": "node --import tsx scripts/validate-curriculum.ts",
     "test": "vitest run",

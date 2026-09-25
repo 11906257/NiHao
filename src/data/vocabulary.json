@@ -39,7 +39,7 @@
     "sourceIndex": 3,
     "hanzi": "爸爸",
     "pinyin": "bàba",
-    "meaning": "Papa | Vater",
+    "meaning": "Papa, Vater",
     "accepted": [
       "Papa",
       "Vater"
@@ -77,7 +77,7 @@
     "sourceIndex": 5,
     "hanzi": "白天",
     "pinyin": "báitiān",
-    "meaning": "tagsüber | am Tag",
+    "meaning": "tagsüber, am Tag",
     "accepted": [
       "tagsüber",
       "am Tag",
@@ -116,7 +116,7 @@
     "sourceIndex": 7,
     "hanzi": "半",
     "pinyin": "bàn",
-    "meaning": "halb | eine Hälfte",
+    "meaning": "halb, eine Hälfte",
     "accepted": [
       "halb",
       "Hälfte"
@@ -155,7 +155,7 @@
     "sourceIndex": 9,
     "hanzi": "杯子",
     "pinyin": "bēizi",
-    "meaning": "Tasse | Becher | Trinkglas",
+    "meaning": "Tasse, Becher, Trinkglas",
     "accepted": [
       "Tasse",
       "Becher",
@@ -194,7 +194,7 @@
     "sourceIndex": 11,
     "hanzi": "边",
     "pinyin": "biān",
-    "meaning": "Seite | Ortsnachsilbe",
+    "meaning": "Seite, Ortsnachsilbe",
     "accepted": [
       "Seite",
       "Rand",
@@ -214,7 +214,7 @@
     "sourceIndex": 12,
     "hanzi": "病",
     "pinyin": "bìng",
-    "meaning": "Krankheit | krank sein",
+    "meaning": "Krankheit, krank sein",
     "accepted": [
       "Krankheit",
       "krank sein"
@@ -272,7 +272,7 @@
     "sourceIndex": 15,
     "hanzi": "不要",
     "pinyin": "búyào",
-    "meaning": "nicht tun | nicht wollen",
+    "meaning": "nicht tun, nicht wollen",
     "accepted": [
       "nicht tun",
       "nicht wollen",
@@ -292,7 +292,7 @@
     "sourceIndex": 16,
     "hanzi": "菜",
     "pinyin": "cài",
-    "meaning": "Gericht | Gemüse",
+    "meaning": "Gericht, Gemüse",
     "accepted": [
       "Gericht",
       "Gemüse",
@@ -362,7 +362,7 @@
     "sourceIndex": 20,
     "hanzi": "车",
     "pinyin": "chē",
-    "meaning": "Fahrzeug | Auto",
+    "meaning": "Fahrzeug, Auto",
     "accepted": [
       "Auto",
       "Wagen",
@@ -416,7 +416,7 @@
     "sourceIndex": 23,
     "hanzi": "穿",
     "pinyin": "chuān",
-    "meaning": "anziehen | tragen",
+    "meaning": "anziehen, tragen",
     "accepted": [
       "anziehen",
       "tragen",
@@ -436,7 +436,7 @@
     "sourceIndex": 24,
     "hanzi": "打电话",
     "pinyin": "dǎ diànhuà",
-    "meaning": "telefonieren | anrufen",
+    "meaning": "telefonieren, anrufen",
     "accepted": [
       "anrufen",
       "telefonieren"
@@ -472,7 +472,7 @@
     "sourceIndex": 26,
     "hanzi": "大家",
     "pinyin": "dàjiā",
-    "meaning": "alle | ihr alle",
+    "meaning": "alle, ihr alle",
     "accepted": [
       "alle",
       "alle zusammen",
@@ -511,7 +511,7 @@
     "sourceIndex": 28,
     "hanzi": "大学生",
     "pinyin": "dàxuéshēng",
-    "meaning": "Student | Studentin",
+    "meaning": "Student, Studentin",
     "accepted": [
       "Student",
       "Studentin",
@@ -531,7 +531,7 @@
     "sourceIndex": 29,
     "hanzi": "到",
     "pinyin": "dào",
-    "meaning": "ankommen | erreichen",
+    "meaning": "ankommen, erreichen",
     "accepted": [
       "ankommen",
       "erreichen"
@@ -607,7 +607,7 @@
     "sourceIndex": 33,
     "hanzi": "点",
     "pinyin": "diǎn",
-    "meaning": "Uhr | Zähleinheit für die Uhrzeit",
+    "meaning": "Uhr, Zähleinheit für die Uhrzeit",
     "accepted": [
       "Uhr",
       "Uhrzeit"
@@ -626,7 +626,7 @@
     "sourceIndex": 34,
     "hanzi": "店",
     "pinyin": "diàn",
-    "meaning": "Laden | Geschäft",
+    "meaning": "Laden, Geschäft",
     "accepted": [
       "Laden",
       "Geschäft"
@@ -645,7 +645,7 @@
     "sourceIndex": 35,
     "hanzi": "电话",
     "pinyin": "diànhuà",
-    "meaning": "Telefon | Telefonanruf",
+    "meaning": "Telefon, Telefonanruf",
     "accepted": [
       "Telefon",
       "Telefonanruf",
@@ -655,7 +655,7 @@
       "id": "ex-v035",
       "zh": "这是学校的电话。",
       "pinyin": "Zhè shì xuéxiào de diànhuà.",
-      "de": "Das ist die Telefonnummer der Schule."
+      "de": "Das ist das Telefon der Schule."
     },
     "note": "Je nach Kontext bezeichnet 电话 auch die Telefonnummer.",
     "lessonId": "l42"
@@ -683,7 +683,7 @@
     "sourceIndex": 37,
     "hanzi": "电视",
     "pinyin": "diànshì",
-    "meaning": "Fernsehen | Fernseher",
+    "meaning": "Fernsehen, Fernseher",
     "accepted": [
       "Fernsehen",
       "Fernseher",
@@ -709,9 +709,9 @@
     ],
     "example": {
       "id": "ex-v038",
-      "zh": "我想看这个电影。",
-      "pinyin": "Wǒ xiǎng kàn zhège diànyǐng.",
-      "de": "Ich möchte diesen Film sehen."
+      "zh": "我想看电影。",
+      "pinyin": "Wǒ xiǎng kàn diànyǐng.",
+      "de": "Ich möchte einen Film ansehen."
     },
     "lessonId": "l43"
   },
@@ -737,7 +737,7 @@
     "sourceIndex": 40,
     "hanzi": "东西",
     "pinyin": "dōngxi",
-    "meaning": "Ding | Sachen",
+    "meaning": "Ding, Sachen",
     "accepted": [
       "Ding",
       "Dinge",
@@ -758,7 +758,7 @@
     "sourceIndex": 41,
     "hanzi": "都",
     "pinyin": "dōu",
-    "meaning": "alle | beide",
+    "meaning": "alle, beide",
     "accepted": [
       "alle",
       "beide"
@@ -777,7 +777,7 @@
     "sourceIndex": 42,
     "hanzi": "读",
     "pinyin": "dú",
-    "meaning": "lesen | laut lesen",
+    "meaning": "lesen, laut lesen",
     "accepted": [
       "lesen",
       "vorlesen",
@@ -796,7 +796,7 @@
     "sourceIndex": 43,
     "hanzi": "读书",
     "pinyin": "dúshū",
-    "meaning": "lesen | zur Schule gehen",
+    "meaning": "lesen, zur Schule gehen",
     "accepted": [
       "lesen",
       "Bücher lesen",
@@ -816,7 +816,7 @@
     "sourceIndex": 44,
     "hanzi": "对",
     "pinyin": "duì",
-    "meaning": "richtig | gegenüber",
+    "meaning": "richtig, gegenüber",
     "accepted": [
       "richtig",
       "korrekt",
@@ -836,7 +836,7 @@
     "sourceIndex": 45,
     "hanzi": "对不起",
     "pinyin": "duìbuqǐ",
-    "meaning": "Entschuldigung | es tut mir leid",
+    "meaning": "Entschuldigung, es tut mir leid",
     "accepted": [
       "Entschuldigung",
       "es tut mir leid",
@@ -855,7 +855,7 @@
     "sourceIndex": 46,
     "hanzi": "多",
     "pinyin": "duō",
-    "meaning": "viel | viele | wie …?",
+    "meaning": "viel, viele, wie …?",
     "accepted": [
       "viel",
       "viele",
@@ -875,7 +875,7 @@
     "sourceIndex": 47,
     "hanzi": "多少",
     "pinyin": "duōshao",
-    "meaning": "wie viel | wie viele",
+    "meaning": "wie viel, wie viele",
     "accepted": [
       "wie viel",
       "wie viele"
@@ -930,7 +930,7 @@
     "sourceIndex": 50,
     "hanzi": "饭",
     "pinyin": "fàn",
-    "meaning": "Essen | Mahlzeit | gekochter Reis",
+    "meaning": "Essen, Mahlzeit, gekochter Reis",
     "accepted": [
       "Essen",
       "Mahlzeit",
@@ -950,7 +950,7 @@
     "sourceIndex": 51,
     "hanzi": "饭店",
     "pinyin": "fàndiàn",
-    "meaning": "Restaurant | Hotel",
+    "meaning": "Restaurant, Hotel",
     "accepted": [
       "Restaurant",
       "Gasthaus",
@@ -988,7 +988,7 @@
     "sourceIndex": 53,
     "hanzi": "非常",
     "pinyin": "fēicháng",
-    "meaning": "sehr | äußerst",
+    "meaning": "sehr, äußerst",
     "accepted": [
       "sehr",
       "äußerst",
@@ -1024,7 +1024,7 @@
     "sourceIndex": 55,
     "hanzi": "分",
     "pinyin": "fēn",
-    "meaning": "Minute | Fen",
+    "meaning": "Minute, Fen",
     "accepted": [
       "Minute",
       "Minuten",
@@ -1044,7 +1044,7 @@
     "sourceIndex": 56,
     "hanzi": "分钟",
     "pinyin": "fēnzhōng",
-    "meaning": "Minute | Minuten",
+    "meaning": "Minute, Minuten",
     "accepted": [
       "Minute",
       "Minuten"
@@ -1063,7 +1063,7 @@
     "sourceIndex": 57,
     "hanzi": "高兴",
     "pinyin": "gāoxìng",
-    "meaning": "froh | erfreut",
+    "meaning": "froh, erfreut",
     "accepted": [
       "froh",
       "glücklich",
@@ -1139,7 +1139,7 @@
     "sourceIndex": 61,
     "hanzi": "给",
     "pinyin": "gěi",
-    "meaning": "geben | für | an",
+    "meaning": "geben, für, an",
     "accepted": [
       "geben",
       "für",
@@ -1159,7 +1159,7 @@
     "sourceIndex": 62,
     "hanzi": "公司",
     "pinyin": "gōngsī",
-    "meaning": "Firma | Unternehmen",
+    "meaning": "Firma, Unternehmen",
     "accepted": [
       "Firma",
       "Unternehmen"
@@ -1177,7 +1177,7 @@
     "sourceIndex": 63,
     "hanzi": "工作",
     "pinyin": "gōngzuò",
-    "meaning": "arbeiten | Arbeit",
+    "meaning": "arbeiten, Arbeit",
     "accepted": [
       "arbeiten",
       "Arbeit",
@@ -1185,9 +1185,9 @@
     ],
     "example": {
       "id": "ex-v063",
-      "zh": "你在哪里工作？",
-      "pinyin": "Nǐ zài nǎlǐ gōngzuò?",
-      "de": "Wo arbeitest du?"
+      "zh": "我今天工作。",
+      "pinyin": "Wǒ jīntiān gōngzuò.",
+      "de": "Ich arbeite heute."
     },
     "lessonId": "l39"
   },
@@ -1230,7 +1230,7 @@
     "sourceIndex": 66,
     "hanzi": "国",
     "pinyin": "guó",
-    "meaning": "Land | Staat",
+    "meaning": "Land, Staat",
     "accepted": [
       "Land",
       "Staat"
@@ -1249,7 +1249,7 @@
     "sourceIndex": 67,
     "hanzi": "还",
     "pinyin": "hái",
-    "meaning": "noch | auch noch",
+    "meaning": "noch, auch noch",
     "accepted": [
       "noch",
       "auch noch",
@@ -1287,7 +1287,7 @@
     "sourceIndex": 69,
     "hanzi": "汉语",
     "pinyin": "Hànyǔ",
-    "meaning": "Chinesisch | chinesische Sprache",
+    "meaning": "Chinesisch, chinesische Sprache",
     "accepted": [
       "Chinesisch",
       "chinesische Sprache"
@@ -1344,7 +1344,7 @@
     "sourceIndex": 72,
     "hanzi": "好吃",
     "pinyin": "hǎochī",
-    "meaning": "lecker | gut schmeckend",
+    "meaning": "lecker, gut schmeckend",
     "accepted": [
       "lecker",
       "köstlich",
@@ -1364,7 +1364,7 @@
     "sourceIndex": 73,
     "hanzi": "好看",
     "pinyin": "hǎokàn",
-    "meaning": "schön anzusehen | sehenswert",
+    "meaning": "schön anzusehen, sehenswert",
     "accepted": [
       "schön anzusehen",
       "sehenswert",
@@ -1403,7 +1403,7 @@
     "sourceIndex": 75,
     "hanzi": "好玩儿",
     "pinyin": "hǎowánr",
-    "meaning": "Spaß machen | unterhaltsam",
+    "meaning": "Spaß machen, unterhaltsam",
     "accepted": [
       "Spaß machen",
       "unterhaltsam",
@@ -1424,7 +1424,7 @@
     "sourceIndex": 76,
     "hanzi": "号",
     "pinyin": "hào",
-    "meaning": "Nummer | Tag eines Datums",
+    "meaning": "Nummer, Tag eines Datums",
     "accepted": [
       "Nummer",
       "Datumstag",
@@ -1461,7 +1461,7 @@
     "sourceIndex": 78,
     "hanzi": "和",
     "pinyin": "hé",
-    "meaning": "und | mit",
+    "meaning": "und, mit",
     "accepted": [
       "und",
       "mit"
@@ -1498,7 +1498,7 @@
     "sourceIndex": 80,
     "hanzi": "后",
     "pinyin": "hòu",
-    "meaning": "hinter | nach | später",
+    "meaning": "hinter, nach, später",
     "accepted": [
       "hinter",
       "nach",
@@ -1519,7 +1519,7 @@
     "sourceIndex": 81,
     "hanzi": "回",
     "pinyin": "huí",
-    "meaning": "zurückkehren | zurück",
+    "meaning": "zurückkehren, zurück",
     "accepted": [
       "zurückkehren",
       "zurückgehen",
@@ -1539,7 +1539,7 @@
     "sourceIndex": 82,
     "hanzi": "会",
     "pinyin": "huì",
-    "meaning": "können | beherrschen",
+    "meaning": "können, beherrschen",
     "accepted": [
       "können",
       "beherrschen"
@@ -1558,7 +1558,7 @@
     "sourceIndex": 83,
     "hanzi": "火车",
     "pinyin": "huǒchē",
-    "meaning": "Zug | Eisenbahn",
+    "meaning": "Zug, Eisenbahn",
     "accepted": [
       "Zug",
       "Eisenbahn"
@@ -1576,7 +1576,7 @@
     "sourceIndex": 84,
     "hanzi": "鸡蛋",
     "pinyin": "jīdàn",
-    "meaning": "Hühnerei | Ei",
+    "meaning": "Hühnerei, Ei",
     "accepted": [
       "Ei",
       "Hühnerei"
@@ -1594,7 +1594,7 @@
     "sourceIndex": 85,
     "hanzi": "几",
     "pinyin": "jǐ",
-    "meaning": "wie viele | einige",
+    "meaning": "wie viele, einige",
     "accepted": [
       "wie viele",
       "einige"
@@ -1613,7 +1613,7 @@
     "sourceIndex": 86,
     "hanzi": "家",
     "pinyin": "jiā",
-    "meaning": "Zuhause | Familie",
+    "meaning": "Zuhause, Familie",
     "accepted": [
       "Zuhause",
       "Familie",
@@ -1633,7 +1633,7 @@
     "sourceIndex": 87,
     "hanzi": "家人",
     "pinyin": "jiārén",
-    "meaning": "Familienangehörige | Familie",
+    "meaning": "Familienangehörige, Familie",
     "accepted": [
       "Familie",
       "Familienmitglieder",
@@ -1652,7 +1652,7 @@
     "sourceIndex": 88,
     "hanzi": "见",
     "pinyin": "jiàn",
-    "meaning": "sehen | treffen",
+    "meaning": "sehen, treffen",
     "accepted": [
       "sehen",
       "treffen"
@@ -1711,7 +1711,7 @@
     "sourceIndex": 91,
     "hanzi": "叫",
     "pinyin": "jiào",
-    "meaning": "heißen | rufen",
+    "meaning": "heißen, rufen",
     "accepted": [
       "heißen",
       "rufen"
@@ -1801,7 +1801,7 @@
     "sourceIndex": 96,
     "hanzi": "觉得",
     "pinyin": "juéde",
-    "meaning": "finden | meinen | empfinden",
+    "meaning": "finden, meinen, empfinden",
     "accepted": [
       "finden",
       "meinen",
@@ -1822,7 +1822,7 @@
     "sourceIndex": 97,
     "hanzi": "开",
     "pinyin": "kāi",
-    "meaning": "öffnen | fahren | einschalten",
+    "meaning": "öffnen, fahren, einschalten",
     "accepted": [
       "öffnen",
       "fahren",
@@ -1861,7 +1861,7 @@
     "sourceIndex": 99,
     "hanzi": "看",
     "pinyin": "kàn",
-    "meaning": "sehen | anschauen | lesen",
+    "meaning": "sehen, anschauen, lesen",
     "accepted": [
       "sehen",
       "anschauen",
@@ -1882,7 +1882,7 @@
     "sourceIndex": 100,
     "hanzi": "看病",
     "pinyin": "kànbìng",
-    "meaning": "zum Arzt gehen | behandeln",
+    "meaning": "zum Arzt gehen, behandeln",
     "accepted": [
       "zum Arzt gehen",
       "sich untersuchen lassen",
@@ -1902,7 +1902,7 @@
     "sourceIndex": 101,
     "hanzi": "看见",
     "pinyin": "kànjiàn",
-    "meaning": "sehen | erblicken",
+    "meaning": "sehen, erblicken",
     "accepted": [
       "sehen",
       "erblicken",
@@ -1922,7 +1922,7 @@
     "sourceIndex": 102,
     "hanzi": "可以",
     "pinyin": "kěyǐ",
-    "meaning": "dürfen | können",
+    "meaning": "dürfen, können",
     "accepted": [
       "dürfen",
       "können",
@@ -1942,7 +1942,7 @@
     "sourceIndex": 103,
     "hanzi": "课",
     "pinyin": "kè",
-    "meaning": "Unterricht | Unterrichtsstunde",
+    "meaning": "Unterricht, Unterrichtsstunde",
     "accepted": [
       "Unterricht",
       "Unterrichtsstunde",
@@ -1962,7 +1962,7 @@
     "sourceIndex": 104,
     "hanzi": "口",
     "pinyin": "kǒu",
-    "meaning": "Mund | Zählwort für Familienmitglieder",
+    "meaning": "Mund, Zählwort für Familienmitglieder",
     "accepted": [
       "Mund",
       "Zählwort für Familienmitglieder"
@@ -1981,7 +1981,7 @@
     "sourceIndex": 105,
     "hanzi": "块",
     "pinyin": "kuài",
-    "meaning": "Yuan | Stück | Zählwort",
+    "meaning": "Yuan, Stück, Zählwort",
     "accepted": [
       "Yuan",
       "Stück",
@@ -2019,7 +2019,7 @@
     "sourceIndex": 107,
     "hanzi": "老师",
     "pinyin": "lǎoshī",
-    "meaning": "Lehrer | Lehrerin",
+    "meaning": "Lehrer, Lehrerin",
     "accepted": [
       "Lehrer",
       "Lehrerin",
@@ -2052,7 +2052,14 @@
       "de": "Ich habe einen Apfel gekauft."
     },
     "note": "了 ist kein allgemeines Vergangenheitszeichen. Nach dem Verb markiert es hier eine abgeschlossene Handlung.",
-    "lessonId": "l40"
+    "lessonId": "l21",
+    "examples": [
+      {
+        "zh": "我昨天看了一本书。",
+        "pinyin": "Wǒ zuótiān kàn le yì běn shū.",
+        "de": "Ich habe gestern ein Buch gelesen."
+      }
+    ]
   },
   {
     "id": "v109",
@@ -2076,7 +2083,7 @@
     "sourceIndex": 110,
     "hanzi": "里",
     "pinyin": "lǐ",
-    "meaning": "in | innen",
+    "meaning": "in, innen",
     "accepted": [
       "in",
       "innen",
@@ -2151,7 +2158,7 @@
     "sourceIndex": 114,
     "hanzi": "妈妈",
     "pinyin": "māma",
-    "meaning": "Mama | Mutter",
+    "meaning": "Mama, Mutter",
     "accepted": [
       "Mama",
       "Mutter"
@@ -2225,7 +2232,7 @@
     "sourceIndex": 118,
     "hanzi": "忙",
     "pinyin": "máng",
-    "meaning": "beschäftigt | viel zu tun haben",
+    "meaning": "beschäftigt, viel zu tun haben",
     "accepted": [
       "beschäftigt",
       "viel zu tun haben",
@@ -2261,7 +2268,7 @@
     "sourceIndex": 120,
     "hanzi": "没关系",
     "pinyin": "méi guānxi",
-    "meaning": "macht nichts | kein Problem",
+    "meaning": "macht nichts, kein Problem",
     "accepted": [
       "macht nichts",
       "kein Problem",
@@ -2281,7 +2288,7 @@
     "sourceIndex": 121,
     "hanzi": "没事",
     "pinyin": "méishì",
-    "meaning": "nichts los | alles in Ordnung",
+    "meaning": "nichts los, alles in Ordnung",
     "accepted": [
       "alles in Ordnung",
       "nichts los",
@@ -2302,7 +2309,7 @@
     "sourceIndex": 122,
     "hanzi": "没有",
     "pinyin": "méiyǒu",
-    "meaning": "nicht haben | es gibt nicht",
+    "meaning": "nicht haben, es gibt nicht",
     "accepted": [
       "nicht haben",
       "es gibt nicht",
@@ -2456,9 +2463,9 @@
     ],
     "example": {
       "id": "ex-v130",
-      "zh": "你的名字很好听。",
-      "pinyin": "Nǐ de míngzi hěn hǎotīng.",
-      "de": "Dein Name klingt schön."
+      "zh": "你的名字是什么？",
+      "pinyin": "Nǐ de míngzi shì shénme?",
+      "de": "Wie heißt du?"
     },
     "lessonId": "l02"
   },
@@ -2467,7 +2474,7 @@
     "sourceIndex": 131,
     "hanzi": "哪",
     "pinyin": "nǎ",
-    "meaning": "welcher | welche | welches",
+    "meaning": "welcher, welche, welches",
     "accepted": [
       "welcher",
       "welche",
@@ -2487,7 +2494,7 @@
     "sourceIndex": 132,
     "hanzi": "哪个",
     "pinyin": "nǎge",
-    "meaning": "welcher | welches davon",
+    "meaning": "welcher, welches davon",
     "accepted": [
       "welcher",
       "welches",
@@ -2515,9 +2522,9 @@
     ],
     "example": {
       "id": "ex-v133",
-      "zh": "你在哪里工作？",
-      "pinyin": "Nǐ zài nǎlǐ gōngzuò?",
-      "de": "Wo arbeitest du?"
+      "zh": "你在哪里？",
+      "pinyin": "Nǐ zài nǎlǐ?",
+      "de": "Wo bist du?"
     },
     "note": "哪里 und 哪儿 fragen beide nach einem Ort.",
     "lessonId": "l33"
@@ -2546,7 +2553,7 @@
     "sourceIndex": 135,
     "hanzi": "哪些",
     "pinyin": "nǎxiē",
-    "meaning": "welche | welche mehreren",
+    "meaning": "welche, welche mehreren",
     "accepted": [
       "welche",
       "welche mehreren"
@@ -2565,7 +2572,7 @@
     "sourceIndex": 136,
     "hanzi": "那",
     "pinyin": "nà",
-    "meaning": "jener | jene | jenes | das dort",
+    "meaning": "jener, jene, jenes, das dort",
     "accepted": [
       "jener",
       "jene",
@@ -2585,7 +2592,7 @@
     "sourceIndex": 137,
     "hanzi": "那边",
     "pinyin": "nàbiān",
-    "meaning": "dort drüben | jene Seite",
+    "meaning": "dort drüben, jene Seite",
     "accepted": [
       "dort drüben",
       "da drüben",
@@ -2604,7 +2611,7 @@
     "sourceIndex": 138,
     "hanzi": "那个",
     "pinyin": "nàge",
-    "meaning": "jener | das dort",
+    "meaning": "jener, das dort",
     "accepted": [
       "jener",
       "jene",
@@ -2663,7 +2670,7 @@
     "sourceIndex": 141,
     "hanzi": "那些",
     "pinyin": "nàxiē",
-    "meaning": "jene | die dort",
+    "meaning": "jene, die dort",
     "accepted": [
       "jene",
       "die dort",
@@ -2683,7 +2690,7 @@
     "sourceIndex": 142,
     "hanzi": "男",
     "pinyin": "nán",
-    "meaning": "männlich | Mann",
+    "meaning": "männlich, Mann",
     "accepted": [
       "männlich",
       "Mann"
@@ -2702,7 +2709,7 @@
     "sourceIndex": 143,
     "hanzi": "男朋友",
     "pinyin": "nánpéngyou",
-    "meaning": "Freund | fester Freund",
+    "meaning": "Freund, fester Freund",
     "accepted": [
       "fester Freund",
       "Partner",
@@ -2741,7 +2748,7 @@
     "sourceIndex": 145,
     "hanzi": "能",
     "pinyin": "néng",
-    "meaning": "können | imstande sein",
+    "meaning": "können, imstande sein",
     "accepted": [
       "können",
       "imstande sein"
@@ -2768,9 +2775,9 @@
     ],
     "example": {
       "id": "ex-v146",
-      "zh": "你好！",
-      "pinyin": "Nǐ hǎo!",
-      "de": "Hallo!"
+      "zh": "你很好。",
+      "pinyin": "Nǐ hěn hǎo.",
+      "de": "Du bist sehr nett."
     },
     "lessonId": "l01"
   },
@@ -2779,7 +2786,7 @@
     "sourceIndex": 147,
     "hanzi": "你好",
     "pinyin": "nǐ hǎo",
-    "meaning": "hallo | guten Tag",
+    "meaning": "hallo, guten Tag",
     "accepted": [
       "hallo",
       "guten Tag"
@@ -2835,7 +2842,7 @@
     "sourceIndex": 150,
     "hanzi": "您",
     "pinyin": "nín",
-    "meaning": "Sie | höfliches Du",
+    "meaning": "Sie, höfliches Du",
     "accepted": [
       "Sie",
       "Ihnen",
@@ -2855,7 +2862,7 @@
     "sourceIndex": 151,
     "hanzi": "牛奶",
     "pinyin": "niúnǎi",
-    "meaning": "Milch | Kuhmilch",
+    "meaning": "Milch, Kuhmilch",
     "accepted": [
       "Milch",
       "Kuhmilch"
@@ -2873,7 +2880,7 @@
     "sourceIndex": 152,
     "hanzi": "女",
     "pinyin": "nǚ",
-    "meaning": "weiblich | Frau",
+    "meaning": "weiblich, Frau",
     "accepted": [
       "weiblich",
       "Frau"
@@ -2910,7 +2917,7 @@
     "sourceIndex": 154,
     "hanzi": "女朋友",
     "pinyin": "nǚpéngyou",
-    "meaning": "Freundin | feste Freundin",
+    "meaning": "Freundin, feste Freundin",
     "accepted": [
       "feste Freundin",
       "Partnerin",
@@ -2930,7 +2937,7 @@
     "sourceIndex": 155,
     "hanzi": "女士",
     "pinyin": "nǚshì",
-    "meaning": "Frau | Dame",
+    "meaning": "Frau, Dame",
     "accepted": [
       "Frau",
       "Dame"
@@ -2949,7 +2956,7 @@
     "sourceIndex": 156,
     "hanzi": "朋友",
     "pinyin": "péngyou",
-    "meaning": "Freund | Freundin",
+    "meaning": "Freund, Freundin",
     "accepted": [
       "Freund",
       "Freundin",
@@ -2969,7 +2976,7 @@
     "sourceIndex": 157,
     "hanzi": "便宜",
     "pinyin": "piányi",
-    "meaning": "billig | preiswert",
+    "meaning": "billig, preiswert",
     "accepted": [
       "billig",
       "preiswert",
@@ -2989,7 +2996,7 @@
     "sourceIndex": 158,
     "hanzi": "漂亮",
     "pinyin": "piàoliang",
-    "meaning": "schön | hübsch",
+    "meaning": "schön, hübsch",
     "accepted": [
       "schön",
       "hübsch"
@@ -3079,7 +3086,7 @@
     "sourceIndex": 163,
     "hanzi": "前",
     "pinyin": "qián",
-    "meaning": "vor | vorne | früher",
+    "meaning": "vor, vorne, früher",
     "accepted": [
       "vor",
       "vorne",
@@ -3116,7 +3123,7 @@
     "sourceIndex": 165,
     "hanzi": "请",
     "pinyin": "qǐng",
-    "meaning": "bitte | bitten | einladen",
+    "meaning": "bitte, bitten, einladen",
     "accepted": [
       "bitte",
       "bitten",
@@ -3136,7 +3143,7 @@
     "sourceIndex": 166,
     "hanzi": "请问",
     "pinyin": "qǐngwèn",
-    "meaning": "entschuldigen Sie | darf ich fragen",
+    "meaning": "entschuldigen Sie, darf ich fragen",
     "accepted": [
       "entschuldigen Sie",
       "darf ich fragen",
@@ -3156,7 +3163,7 @@
     "sourceIndex": 167,
     "hanzi": "去",
     "pinyin": "qù",
-    "meaning": "gehen | hinfahren",
+    "meaning": "gehen, hinfahren",
     "accepted": [
       "gehen",
       "hingehen",
@@ -3196,7 +3203,7 @@
     "sourceIndex": 169,
     "hanzi": "热",
     "pinyin": "rè",
-    "meaning": "heiß | warm",
+    "meaning": "heiß, warm",
     "accepted": [
       "heiß",
       "warm"
@@ -3214,7 +3221,7 @@
     "sourceIndex": 170,
     "hanzi": "人",
     "pinyin": "rén",
-    "meaning": "Mensch | Person",
+    "meaning": "Mensch, Person",
     "accepted": [
       "Mensch",
       "Person",
@@ -3233,7 +3240,7 @@
     "sourceIndex": 171,
     "hanzi": "认识",
     "pinyin": "rènshi",
-    "meaning": "kennen | kennenlernen",
+    "meaning": "kennen, kennenlernen",
     "accepted": [
       "kennen",
       "kennenlernen"
@@ -3252,7 +3259,7 @@
     "sourceIndex": 172,
     "hanzi": "日",
     "pinyin": "rì",
-    "meaning": "Tag | Datumstag",
+    "meaning": "Tag, Datumstag",
     "accepted": [
       "Tag",
       "Datumstag"
@@ -3289,7 +3296,7 @@
     "sourceIndex": 174,
     "hanzi": "商店",
     "pinyin": "shāngdiàn",
-    "meaning": "Geschäft | Laden",
+    "meaning": "Geschäft, Laden",
     "accepted": [
       "Geschäft",
       "Laden"
@@ -3307,7 +3314,7 @@
     "sourceIndex": 175,
     "hanzi": "上",
     "pinyin": "shàng",
-    "meaning": "oben | auf | hinauf",
+    "meaning": "oben, auf, hinauf",
     "accepted": [
       "auf",
       "oben",
@@ -3327,7 +3334,7 @@
     "sourceIndex": 176,
     "hanzi": "上班",
     "pinyin": "shàngbān",
-    "meaning": "zur Arbeit gehen | arbeiten",
+    "meaning": "zur Arbeit gehen, arbeiten",
     "accepted": [
       "zur Arbeit gehen",
       "arbeiten",
@@ -3346,7 +3353,7 @@
     "sourceIndex": 177,
     "hanzi": "上课",
     "pinyin": "shàngkè",
-    "meaning": "Unterricht haben | Unterricht geben",
+    "meaning": "Unterricht haben, Unterricht geben",
     "accepted": [
       "Unterricht haben",
       "Unterricht geben",
@@ -3402,7 +3409,7 @@
     "sourceIndex": 180,
     "hanzi": "少",
     "pinyin": "shǎo",
-    "meaning": "wenig | wenige",
+    "meaning": "wenig, wenige",
     "accepted": [
       "wenig",
       "wenige"
@@ -3421,7 +3428,7 @@
     "sourceIndex": 181,
     "hanzi": "谁",
     "pinyin": "shéi/shuí",
-    "meaning": "wer | wen | wem",
+    "meaning": "wer, wen, wem",
     "accepted": [
       "wer",
       "wen",
@@ -3441,7 +3448,7 @@
     "sourceIndex": 182,
     "hanzi": "什么",
     "pinyin": "shénme",
-    "meaning": "was | welcher Art",
+    "meaning": "was, welcher Art",
     "accepted": [
       "was",
       "welcher Art"
@@ -3460,7 +3467,7 @@
     "sourceIndex": 183,
     "hanzi": "生病",
     "pinyin": "shēngbìng",
-    "meaning": "krank werden | krank sein",
+    "meaning": "krank werden, krank sein",
     "accepted": [
       "krank werden",
       "krank sein",
@@ -3497,7 +3504,7 @@
     "sourceIndex": 185,
     "hanzi": "时候",
     "pinyin": "shíhou",
-    "meaning": "Zeit | Zeitpunkt",
+    "meaning": "Zeit, Zeitpunkt",
     "accepted": [
       "Zeit",
       "Zeitpunkt"
@@ -3509,14 +3516,14 @@
       "de": "Wann kommst du nach Hause?"
     },
     "note": "什么时候 ist eine gebräuchliche Wendung für „wann“.",
-    "lessonId": "l21"
+    "lessonId": "l40"
   },
   {
     "id": "v186",
     "sourceIndex": 186,
     "hanzi": "时间",
     "pinyin": "shíjiān",
-    "meaning": "Zeit | Zeitdauer",
+    "meaning": "Zeit, Zeitdauer",
     "accepted": [
       "Zeit",
       "Zeitdauer"
@@ -3527,14 +3534,14 @@
       "pinyin": "Nǐ xiànzài yǒu shíjiān ma?",
       "de": "Hast du jetzt Zeit?"
     },
-    "lessonId": "l21"
+    "lessonId": "l40"
   },
   {
     "id": "v187",
     "sourceIndex": 187,
     "hanzi": "事",
     "pinyin": "shì",
-    "meaning": "Sache | Angelegenheit",
+    "meaning": "Sache, Angelegenheit",
     "accepted": [
       "Sache",
       "Angelegenheit",
@@ -3574,7 +3581,7 @@
     "sourceIndex": 189,
     "hanzi": "手机",
     "pinyin": "shǒujī",
-    "meaning": "Handy | Mobiltelefon",
+    "meaning": "Handy, Mobiltelefon",
     "accepted": [
       "Handy",
       "Mobiltelefon",
@@ -3645,7 +3652,7 @@
     "sourceIndex": 193,
     "hanzi": "水果",
     "pinyin": "shuǐguǒ",
-    "meaning": "Obst | Früchte",
+    "meaning": "Obst, Früchte",
     "accepted": [
       "Obst",
       "Früchte",
@@ -3682,7 +3689,7 @@
     "sourceIndex": 195,
     "hanzi": "睡觉",
     "pinyin": "shuìjiào",
-    "meaning": "schlafen | schlafen gehen",
+    "meaning": "schlafen, schlafen gehen",
     "accepted": [
       "schlafen",
       "schlafen gehen"
@@ -3700,7 +3707,7 @@
     "sourceIndex": 196,
     "hanzi": "说",
     "pinyin": "shuō",
-    "meaning": "sagen | sprechen",
+    "meaning": "sagen, sprechen",
     "accepted": [
       "sagen",
       "sprechen"
@@ -3718,7 +3725,7 @@
     "sourceIndex": 197,
     "hanzi": "说话",
     "pinyin": "shuōhuà",
-    "meaning": "sprechen | reden",
+    "meaning": "sprechen, reden",
     "accepted": [
       "sprechen",
       "reden"
@@ -3794,7 +3801,7 @@
     "sourceIndex": 201,
     "hanzi": "它",
     "pinyin": "tā",
-    "meaning": "es | für Dinge und Tiere",
+    "meaning": "es, für Dinge und Tiere",
     "accepted": [
       "es",
       "es für Dinge und Tiere"
@@ -3813,7 +3820,7 @@
     "sourceIndex": 202,
     "hanzi": "她",
     "pinyin": "tā",
-    "meaning": "sie | weibliche Person",
+    "meaning": "sie, weibliche Person",
     "accepted": [
       "sie"
     ],
@@ -3831,7 +3838,7 @@
     "sourceIndex": 203,
     "hanzi": "他们",
     "pinyin": "tāmen",
-    "meaning": "sie | mehrere Personen",
+    "meaning": "sie, mehrere Personen",
     "accepted": [
       "sie",
       "die anderen",
@@ -3851,7 +3858,7 @@
     "sourceIndex": 204,
     "hanzi": "它们",
     "pinyin": "tāmen",
-    "meaning": "sie | Dinge oder Tiere",
+    "meaning": "sie, Dinge oder Tiere",
     "accepted": [
       "sie",
       "die Tiere",
@@ -3871,7 +3878,7 @@
     "sourceIndex": 205,
     "hanzi": "她们",
     "pinyin": "tāmen",
-    "meaning": "sie | mehrere Frauen",
+    "meaning": "sie, mehrere Frauen",
     "accepted": [
       "sie",
       "die Frauen",
@@ -3891,7 +3898,7 @@
     "sourceIndex": 206,
     "hanzi": "太",
     "pinyin": "tài",
-    "meaning": "zu | äußerst | sehr",
+    "meaning": "zu, äußerst, sehr",
     "accepted": [
       "zu",
       "sehr",
@@ -3911,7 +3918,7 @@
     "sourceIndex": 207,
     "hanzi": "天",
     "pinyin": "tiān",
-    "meaning": "Tag | Himmel",
+    "meaning": "Tag, Himmel",
     "accepted": [
       "Tag",
       "Himmel"
@@ -3947,7 +3954,7 @@
     "sourceIndex": 209,
     "hanzi": "听",
     "pinyin": "tīng",
-    "meaning": "hören | zuhören",
+    "meaning": "hören, zuhören",
     "accepted": [
       "hören",
       "zuhören",
@@ -3967,7 +3974,7 @@
     "sourceIndex": 210,
     "hanzi": "听见",
     "pinyin": "tīngjiàn",
-    "meaning": "hören | wahrnehmen",
+    "meaning": "hören, wahrnehmen",
     "accepted": [
       "hören",
       "wahrnehmen",
@@ -3987,7 +3994,7 @@
     "sourceIndex": 211,
     "hanzi": "同学",
     "pinyin": "tóngxué",
-    "meaning": "Mitschüler | Kommilitone",
+    "meaning": "Mitschüler, Kommilitone",
     "accepted": [
       "Mitschüler",
       "Mitschülerin",
@@ -4009,7 +4016,7 @@
     "sourceIndex": 212,
     "hanzi": "外",
     "pinyin": "wài",
-    "meaning": "außen | außerhalb",
+    "meaning": "außen, außerhalb",
     "accepted": [
       "außen",
       "außerhalb",
@@ -4029,7 +4036,7 @@
     "sourceIndex": 213,
     "hanzi": "外边",
     "pinyin": "wàibian",
-    "meaning": "draußen | außerhalb",
+    "meaning": "draußen, außerhalb",
     "accepted": [
       "draußen",
       "außerhalb",
@@ -4049,7 +4056,7 @@
     "sourceIndex": 214,
     "hanzi": "玩",
     "pinyin": "wán",
-    "meaning": "spielen | sich vergnügen",
+    "meaning": "spielen, sich vergnügen",
     "accepted": [
       "spielen",
       "sich vergnügen",
@@ -4068,7 +4075,7 @@
     "sourceIndex": 215,
     "hanzi": "晚",
     "pinyin": "wǎn",
-    "meaning": "spät | Abend",
+    "meaning": "spät, Abend",
     "accepted": [
       "spät",
       "Abend"
@@ -4105,7 +4112,7 @@
     "sourceIndex": 217,
     "hanzi": "晚上",
     "pinyin": "wǎnshang",
-    "meaning": "Abend | abends",
+    "meaning": "Abend, abends",
     "accepted": [
       "Abend",
       "abends",
@@ -4124,7 +4131,7 @@
     "sourceIndex": 218,
     "hanzi": "喂",
     "pinyin": "wèi",
-    "meaning": "hallo | Anrufbegrüßung",
+    "meaning": "hallo, Anrufbegrüßung",
     "accepted": [
       "hallo",
       "hallo am Telefon"
@@ -4160,7 +4167,7 @@
     "sourceIndex": 220,
     "hanzi": "问题",
     "pinyin": "wèntí",
-    "meaning": "Frage | Problem",
+    "meaning": "Frage, Problem",
     "accepted": [
       "Frage",
       "Problem"
@@ -4187,9 +4194,9 @@
     ],
     "example": {
       "id": "ex-v221",
-      "zh": "我很好。",
-      "pinyin": "Wǒ hěn hǎo.",
-      "de": "Mir geht es gut."
+      "zh": "我很忙。",
+      "pinyin": "Wǒ hěn máng.",
+      "de": "Ich bin sehr beschäftigt."
     },
     "note": "小明 Xiǎomíng ist hier ein Personenname.",
     "lessonId": "l01"
@@ -4206,9 +4213,9 @@
     ],
     "example": {
       "id": "ex-v222",
-      "zh": "我们都是学生。",
-      "pinyin": "Wǒmen dōu shì xuéshēng.",
-      "de": "Wir sind alle Schüler."
+      "zh": "我们在家。",
+      "pinyin": "Wǒmen zài jiā.",
+      "de": "Wir sind zu Hause."
     },
     "lessonId": "l08"
   },
@@ -4252,7 +4259,7 @@
     "sourceIndex": 225,
     "hanzi": "喜欢",
     "pinyin": "xǐhuan",
-    "meaning": "mögen | gernhaben",
+    "meaning": "mögen, gernhaben",
     "accepted": [
       "mögen",
       "gernhaben",
@@ -4273,7 +4280,7 @@
     "sourceIndex": 226,
     "hanzi": "下",
     "pinyin": "xià",
-    "meaning": "unten | unter | hinunter",
+    "meaning": "unten, unter, hinunter",
     "accepted": [
       "unten",
       "unter",
@@ -4331,7 +4338,7 @@
     "sourceIndex": 229,
     "hanzi": "下课",
     "pinyin": "xiàkè",
-    "meaning": "Unterricht beenden | Unterrichtsende haben",
+    "meaning": "Unterricht beenden, Unterrichtsende haben",
     "accepted": [
       "Unterricht beenden",
       "Unterrichtsende",
@@ -4370,7 +4377,7 @@
     "sourceIndex": 231,
     "hanzi": "先生",
     "pinyin": "xiānsheng",
-    "meaning": "Herr | Mann",
+    "meaning": "Herr, Mann",
     "accepted": [
       "Herr",
       "Mann",
@@ -4390,7 +4397,7 @@
     "sourceIndex": 232,
     "hanzi": "现在",
     "pinyin": "xiànzài",
-    "meaning": "jetzt | gerade",
+    "meaning": "jetzt, gerade",
     "accepted": [
       "jetzt",
       "gerade",
@@ -4409,7 +4416,7 @@
     "sourceIndex": 233,
     "hanzi": "想",
     "pinyin": "xiǎng",
-    "meaning": "möchten | denken | vermissen",
+    "meaning": "möchten, denken, vermissen",
     "accepted": [
       "möchten",
       "wollen",
@@ -4447,7 +4454,7 @@
     "sourceIndex": 235,
     "hanzi": "小朋友",
     "pinyin": "xiǎopéngyǒu",
-    "meaning": "Kind | kleiner Freund",
+    "meaning": "Kind, kleiner Freund",
     "accepted": [
       "Kind",
       "kleiner Freund",
@@ -4467,7 +4474,7 @@
     "sourceIndex": 236,
     "hanzi": "小时",
     "pinyin": "xiǎoshí",
-    "meaning": "Stunde | Zeitdauer",
+    "meaning": "Stunde, Zeitdauer",
     "accepted": [
       "Stunde",
       "Stunden"
@@ -4504,7 +4511,7 @@
     "sourceIndex": 238,
     "hanzi": "小学生",
     "pinyin": "xiǎoxuéshēng",
-    "meaning": "Grundschüler | Grundschülerin",
+    "meaning": "Grundschüler, Grundschülerin",
     "accepted": [
       "Grundschüler",
       "Grundschülerin",
@@ -4524,7 +4531,7 @@
     "sourceIndex": 239,
     "hanzi": "些",
     "pinyin": "xiē",
-    "meaning": "einige | etwas | Mehrzahl-Zählwort",
+    "meaning": "einige, etwas, Mehrzahl-Zählwort",
     "accepted": [
       "einige",
       "etwas",
@@ -4561,7 +4568,7 @@
     "sourceIndex": 241,
     "hanzi": "谢谢",
     "pinyin": "xièxie",
-    "meaning": "danke | danken",
+    "meaning": "danke, danken",
     "accepted": [
       "danke",
       "danken",
@@ -4597,7 +4604,7 @@
     "sourceIndex": 243,
     "hanzi": "星期",
     "pinyin": "xīngqī",
-    "meaning": "Woche | Wochentag",
+    "meaning": "Woche, Wochentag",
     "accepted": [
       "Woche",
       "Wochentag"
@@ -4652,7 +4659,7 @@
     "sourceIndex": 246,
     "hanzi": "休息",
     "pinyin": "xiūxi",
-    "meaning": "sich ausruhen | Pause machen",
+    "meaning": "sich ausruhen, Pause machen",
     "accepted": [
       "sich ausruhen",
       "Pause machen",
@@ -4671,7 +4678,7 @@
     "sourceIndex": 247,
     "hanzi": "学",
     "pinyin": "xué",
-    "meaning": "lernen | studieren",
+    "meaning": "lernen, studieren",
     "accepted": [
       "lernen",
       "studieren"
@@ -4690,7 +4697,7 @@
     "sourceIndex": 248,
     "hanzi": "学生",
     "pinyin": "xuéshēng",
-    "meaning": "Schüler | Student",
+    "meaning": "Schüler, Student",
     "accepted": [
       "Schüler",
       "Schülerin",
@@ -4712,7 +4719,7 @@
     "sourceIndex": 249,
     "hanzi": "学习",
     "pinyin": "xuéxí",
-    "meaning": "lernen | studieren",
+    "meaning": "lernen, studieren",
     "accepted": [
       "lernen",
       "studieren"
@@ -4766,7 +4773,7 @@
     "sourceIndex": 252,
     "hanzi": "要",
     "pinyin": "yào",
-    "meaning": "wollen | brauchen | werden",
+    "meaning": "wollen, brauchen, werden",
     "accepted": [
       "wollen",
       "brauchen",
@@ -4805,7 +4812,7 @@
     "sourceIndex": 254,
     "hanzi": "一",
     "pinyin": "yī",
-    "meaning": "eins | ein",
+    "meaning": "eins, ein",
     "accepted": [
       "eins",
       "ein",
@@ -4826,7 +4833,7 @@
     "sourceIndex": 255,
     "hanzi": "衣服",
     "pinyin": "yīfu",
-    "meaning": "Kleidung | Kleidungsstück",
+    "meaning": "Kleidung, Kleidungsstück",
     "accepted": [
       "Kleidung",
       "Kleidungsstück",
@@ -4845,7 +4852,7 @@
     "sourceIndex": 256,
     "hanzi": "医生",
     "pinyin": "yīshēng",
-    "meaning": "Arzt | Ärztin",
+    "meaning": "Arzt, Ärztin",
     "accepted": [
       "Arzt",
       "Ärztin",
@@ -4882,7 +4889,7 @@
     "sourceIndex": 258,
     "hanzi": "一半",
     "pinyin": "yíbàn",
-    "meaning": "eine Hälfte | die Hälfte",
+    "meaning": "eine Hälfte, die Hälfte",
     "accepted": [
       "eine Hälfte",
       "die Hälfte",
@@ -4903,7 +4910,7 @@
     "sourceIndex": 259,
     "hanzi": "一下",
     "pinyin": "yíxià",
-    "meaning": "kurz | einmal",
+    "meaning": "kurz, einmal",
     "accepted": [
       "kurz",
       "einmal",
@@ -4940,7 +4947,7 @@
     "sourceIndex": 261,
     "hanzi": "一点儿",
     "pinyin": "yìdiǎnr",
-    "meaning": "ein wenig | etwas",
+    "meaning": "ein wenig, etwas",
     "accepted": [
       "ein wenig",
       "etwas",
@@ -4960,7 +4967,7 @@
     "sourceIndex": 262,
     "hanzi": "一些",
     "pinyin": "yìxiē",
-    "meaning": "einige | etwas",
+    "meaning": "einige, etwas",
     "accepted": [
       "einige",
       "etwas",
@@ -4979,7 +4986,7 @@
     "sourceIndex": 263,
     "hanzi": "有",
     "pinyin": "yǒu",
-    "meaning": "haben | es gibt",
+    "meaning": "haben, es gibt",
     "accepted": [
       "haben",
       "es gibt"
@@ -4998,7 +5005,7 @@
     "sourceIndex": 264,
     "hanzi": "有的",
     "pinyin": "yǒude",
-    "meaning": "manche | einige von",
+    "meaning": "manche, einige von",
     "accepted": [
       "manche",
       "einige",
@@ -5018,7 +5025,7 @@
     "sourceIndex": 265,
     "hanzi": "有点儿",
     "pinyin": "yǒudiǎnr",
-    "meaning": "ein bisschen | etwas",
+    "meaning": "ein bisschen, etwas",
     "accepted": [
       "ein bisschen",
       "etwas",
@@ -5038,7 +5045,7 @@
     "sourceIndex": 266,
     "hanzi": "有些",
     "pinyin": "yǒuxiē",
-    "meaning": "manche | einige | etwas",
+    "meaning": "manche, einige, etwas",
     "accepted": [
       "manche",
       "einige",
@@ -5076,7 +5083,7 @@
     "sourceIndex": 268,
     "hanzi": "元",
     "pinyin": "yuán",
-    "meaning": "Yuan | chinesische Geldeinheit",
+    "meaning": "Yuan, chinesische Geldeinheit",
     "accepted": [
       "Yuan",
       "Renminbi"
@@ -5095,7 +5102,7 @@
     "sourceIndex": 269,
     "hanzi": "月",
     "pinyin": "yuè",
-    "meaning": "Monat | Mond",
+    "meaning": "Monat, Mond",
     "accepted": [
       "Monat",
       "Mond"
@@ -5114,7 +5121,7 @@
     "sourceIndex": 270,
     "hanzi": "再",
     "pinyin": "zài",
-    "meaning": "wieder | noch einmal | dann",
+    "meaning": "wieder, noch einmal, dann",
     "accepted": [
       "wieder",
       "noch einmal",
@@ -5134,7 +5141,7 @@
     "sourceIndex": 271,
     "hanzi": "在",
     "pinyin": "zài",
-    "meaning": "sich befinden | in | gerade",
+    "meaning": "sich befinden, in, gerade",
     "accepted": [
       "sich befinden",
       "in",
@@ -5155,7 +5162,7 @@
     "sourceIndex": 272,
     "hanzi": "再见",
     "pinyin": "zàijiàn",
-    "meaning": "auf Wiedersehen | tschüss",
+    "meaning": "auf Wiedersehen, tschüss",
     "accepted": [
       "auf Wiedersehen",
       "tschüss",
@@ -5174,7 +5181,7 @@
     "sourceIndex": 273,
     "hanzi": "早",
     "pinyin": "zǎo",
-    "meaning": "früh | guten Morgen",
+    "meaning": "früh, guten Morgen",
     "accepted": [
       "früh",
       "guten Morgen",
@@ -5211,7 +5218,7 @@
     "sourceIndex": 275,
     "hanzi": "早上",
     "pinyin": "zǎoshang",
-    "meaning": "Morgen | morgens",
+    "meaning": "Morgen, morgens",
     "accepted": [
       "Morgen",
       "morgens",
@@ -5231,7 +5238,7 @@
     "sourceIndex": 276,
     "hanzi": "怎么",
     "pinyin": "zěnme",
-    "meaning": "wie | auf welche Weise",
+    "meaning": "wie, auf welche Weise",
     "accepted": [
       "wie",
       "auf welche Weise"
@@ -5250,7 +5257,7 @@
     "sourceIndex": 277,
     "hanzi": "怎么样",
     "pinyin": "zěnmeyàng",
-    "meaning": "wie | wie ist es",
+    "meaning": "wie, wie ist es",
     "accepted": [
       "wie",
       "wie ist es",
@@ -5288,7 +5295,7 @@
     "sourceIndex": 279,
     "hanzi": "这",
     "pinyin": "zhè",
-    "meaning": "dieser | diese | dieses | das hier",
+    "meaning": "dieser, diese, dieses, das hier",
     "accepted": [
       "dieser",
       "diese",
@@ -5308,7 +5315,7 @@
     "sourceIndex": 280,
     "hanzi": "这边",
     "pinyin": "zhèbiān",
-    "meaning": "hier drüben | diese Seite",
+    "meaning": "hier drüben, diese Seite",
     "accepted": [
       "hier drüben",
       "hierher",
@@ -5328,7 +5335,7 @@
     "sourceIndex": 281,
     "hanzi": "这个",
     "pinyin": "zhège",
-    "meaning": "dieser | dieses hier",
+    "meaning": "dieser, dieses hier",
     "accepted": [
       "dieser",
       "diese",
@@ -5384,7 +5391,7 @@
     "sourceIndex": 284,
     "hanzi": "这些",
     "pinyin": "zhèxiē",
-    "meaning": "diese | diese mehreren",
+    "meaning": "diese, diese mehreren",
     "accepted": [
       "diese",
       "diese hier",
@@ -5404,7 +5411,7 @@
     "sourceIndex": 285,
     "hanzi": "真",
     "pinyin": "zhēn",
-    "meaning": "wirklich | echt",
+    "meaning": "wirklich, echt",
     "accepted": [
       "wirklich",
       "echt",
@@ -5423,7 +5430,7 @@
     "sourceIndex": 286,
     "hanzi": "正在",
     "pinyin": "zhèngzài",
-    "meaning": "gerade | dabei sein",
+    "meaning": "gerade, dabei sein",
     "accepted": [
       "gerade",
       "dabei sein"
@@ -5435,7 +5442,14 @@
       "de": "Ich koche gerade."
     },
     "note": "正在 steht vor dem Verb und betont, dass die Handlung im Moment abläuft.",
-    "lessonId": "l40"
+    "lessonId": "l21",
+    "examples": [
+      {
+        "zh": "我正在看书。",
+        "pinyin": "Wǒ zhèngzài kàn shū.",
+        "de": "Ich lese gerade ein Buch."
+      }
+    ]
   },
   {
     "id": "v287",
@@ -5498,7 +5512,7 @@
     "sourceIndex": 290,
     "hanzi": "中文",
     "pinyin": "Zhōngwén",
-    "meaning": "Chinesisch | chinesische Sprache",
+    "meaning": "Chinesisch, chinesische Sprache",
     "accepted": [
       "Chinesisch",
       "chinesische Sprache"
@@ -5517,7 +5531,7 @@
     "sourceIndex": 291,
     "hanzi": "中午",
     "pinyin": "zhōngwǔ",
-    "meaning": "Mittag | mittags",
+    "meaning": "Mittag, mittags",
     "accepted": [
       "Mittag",
       "mittags",
@@ -5536,7 +5550,7 @@
     "sourceIndex": 292,
     "hanzi": "中学",
     "pinyin": "zhōngxué",
-    "meaning": "weiterführende Schule | Sekundarschule",
+    "meaning": "weiterführende Schule, Sekundarschule",
     "accepted": [
       "weiterführende Schule",
       "Sekundarschule",
@@ -5577,7 +5591,7 @@
     "sourceIndex": 294,
     "hanzi": "住",
     "pinyin": "zhù",
-    "meaning": "wohnen | bleiben",
+    "meaning": "wohnen, bleiben",
     "accepted": [
       "wohnen",
       "bleiben",
@@ -5613,7 +5627,7 @@
     "sourceIndex": 296,
     "hanzi": "字",
     "pinyin": "zì",
-    "meaning": "Schriftzeichen | geschriebene Zeichen",
+    "meaning": "Schriftzeichen, geschriebene Zeichen",
     "accepted": [
       "Schriftzeichen",
       "Zeichen",
@@ -5650,7 +5664,7 @@
     "sourceIndex": 298,
     "hanzi": "坐",
     "pinyin": "zuò",
-    "meaning": "sitzen | mit einem Verkehrsmittel fahren",
+    "meaning": "sitzen, mit einem Verkehrsmittel fahren",
     "accepted": [
       "sitzen",
       "sich setzen",
@@ -5671,7 +5685,7 @@
     "sourceIndex": 299,
     "hanzi": "做",
     "pinyin": "zuò",
-    "meaning": "machen | tun",
+    "meaning": "machen, tun",
     "accepted": [
       "machen",
       "tun"
@@ -5690,7 +5704,7 @@
     "sourceIndex": 300,
     "hanzi": "做饭",
     "pinyin": "zuò fàn",
-    "meaning": "kochen | Essen zubereiten",
+    "meaning": "kochen, Essen zubereiten",
     "accepted": [
       "kochen",
       "Essen zubereiten"

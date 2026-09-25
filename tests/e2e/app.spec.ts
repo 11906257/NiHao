@@ -216,7 +216,7 @@ test('GitHub-Pages-Unterpfad, PWA, Reload und echte Offline-Nutzung', async ({
         return fonts.every((faces) => faces.length > 0 && faces.every((face) => face.status === 'loaded'))
       }),
     ).toBe(true)
-    await page.getByPlaceholder('Wort, Pinyin oder Bedeutung suchen').fill('你好')
+    await page.getByPlaceholder('Wort, Pinyin oder Bedeutung').fill('你好')
     await page.locator('.word-card').click()
     await expect(page.locator('dialog').getByText('nǐ hǎo', { exact: true })).toBeVisible()
     await page.getByRole('button', { name: 'Zur Lektion', exact: true }).click()
@@ -287,7 +287,7 @@ test('globales Audiotempo auf Wortschatz, Zeichen, Grammatik, Training und Lekti
     await page.getByRole('button', { name: 'Schließen', exact: true }).click()
   }
   await route(page, 'training')
-  await page.locator('.training-card').first().click()
+  await page.getByRole('button', { name: 'Hörverständnis', exact: true }).click()
   await play()
   await route(page, 'today')
   await page.getByRole('button', { name: 'Einstellungen', exact: true }).click()
@@ -321,7 +321,10 @@ test('globales Audiotempo auf Wortschatz, Zeichen, Grammatik, Training und Lekti
   })
   await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
   await route(page, 'review')
-  await page.getByRole('button', { name: 'Bis zu 20 Wörter wiederholen', exact: false }).click()
+  await expect(page.locator('.stack .content-row').first()).not.toContainText(
+    /Bedeutung abrufen|Pinyin & Aussprache|Hörverständnis|Im Satz verstehen|Aktiv formulieren/,
+  )
+  await page.getByRole('button', { name: /Bis zu \d+ (?:Wort|Wörter) wiederholen/ }).click()
   await play()
 })
 
@@ -353,9 +356,13 @@ test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ pag
   await route(page, 'today')
   await page.getByRole('button', { name: 'Lektionen öffnen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Lektionen', exact: true })).toBeVisible()
+  await expect(page.locator('.lesson-row.recommended')).toHaveCSS('border-style', 'solid')
   await expect(page.locator('.lesson-row.recommended')).not.toHaveCSS(
-    'background-color',
-    'rgb(255, 255, 255)',
+    'border-color',
+    await page
+      .locator('.lesson-row:not(.recommended)')
+      .first()
+      .evaluate((el) => getComputedStyle(el).borderColor),
   )
   await route(page, 'grammar')
   const ordered = [...grammar].sort((a, b) => Number(a.lessonId.slice(1)) - Number(b.lessonId.slice(1)))
@@ -410,6 +417,12 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   })
   await appReady(page)
   await route(page, 'training')
+  await expect(page.locator('.training-card h3')).toHaveText([
+    'Pinyin & Aussprache',
+    'Hörverständnis',
+    'Im Satz verstehen',
+    'Aktiv formulieren',
+  ])
   await page.getByRole('button', { name: /Pinyin & Aussprache/ }).click()
   await page.setViewportSize({ width: 320, height: 740 })
   await expect(page.locator('.pinyin-vowel')).toHaveCount(5)
@@ -462,6 +475,9 @@ test('einheitliche Kartenbreite und Abstand nach dem Lektionen-Fortschritt', asy
   await appReady(page)
   for (const width of [390, 1280]) {
     await page.setViewportSize({ width, height: 900 })
+    expect(await page.locator('.app-shell').evaluate((el) => el.getBoundingClientRect().width)).toBe(
+      Math.min(width, 430),
+    )
     await route(page, 'learn')
     const summary = page.locator('.path-summary')
     await expect(summary).toBeVisible()

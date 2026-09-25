@@ -81,6 +81,7 @@ const searchText = (s: string) =>
     .replace(/\p{Diacritic}/gu, '')
 const formatDate = (s: string) =>
   new Date(s).toLocaleDateString('de-AT', { day: 'numeric', month: 'short', year: 'numeric' })
+type Notice = { message: string; tone: 'success' | 'warning' | 'error' }
 export default function App() {
   const [profile, setProfile] = useState<Profile | null>(null),
     [loadError, setLoadError] = useState(''),
@@ -96,7 +97,8 @@ export default function App() {
     [selectedHanzi, setSelectedHanzi] = useState<Hanzi | null>(null),
     [selectedGrammar, setSelectedGrammar] = useState<Grammar | null>(null),
     [pendingImport, setPendingImport] = useState<{ json: string; profile: Profile } | null>(null),
-    [notice, setNotice] = useState('')
+    [notice, setNotice] = useState<Notice | null>(null)
+  const notify = (message: string, tone: Notice['tone'] = 'error') => setNotice({ message, tone })
   const pRef = useRef<Profile | null>(null)
   pRef.current = profile
   const writes = useRef(0)
@@ -111,7 +113,7 @@ export default function App() {
       setSwRegistration(registration)
     },
     onRegisterError(error) {
-      setNotice(`Offline-Speicherung konnte noch nicht vorbereitet werden: ${error.message}`)
+      notify(`Offline-Speicherung konnte noch nicht vorbereitet werden: ${error.message}`, 'warning')
     },
   })
   // Activate updates automatically only after learning and pending saves are finished.
@@ -181,8 +183,8 @@ export default function App() {
     return () => window.removeEventListener('beforeunload', warn)
   }, [saving, saveError])
   useEffect(() => {
-    if (!notice) return
-    const timer = setTimeout(() => setNotice(''), 8000)
+    if (!notice || notice.tone === 'error') return
+    const timer = setTimeout(() => setNotice(null), notice.tone === 'success' ? 3000 : 6000)
     return () => clearTimeout(timer)
   }, [notice])
   const commit = (next: Profile) => {
@@ -221,7 +223,7 @@ export default function App() {
   }
   const startPractice = (exercises: Exercise[], title: string) => {
     if (exercises.some((e) => e.audio) && !audio.available) {
-      setNotice(audio.message)
+      notify(audio.message, 'warning')
       return
     }
     setSelectedWord(null)
@@ -236,7 +238,11 @@ export default function App() {
   const beginReview = (ids: string[]) => {
     if (!profile) return
     startPractice(
-      ids.map((id) => wordExercise(wordById[id], chooseSkill(profile.cards[id], reviewSkills), vocabulary)),
+      ids.map((id) => {
+        const skill = chooseSkill(profile.cards[id], reviewSkills)
+        const nextExample = (profile.cards[id]?.skills.context.attempts ?? 0) + 1
+        return wordExercise(wordById[id], skill, vocabulary, skill === 'context' ? nextExample : 0)
+      }),
       'Wiederholen',
     )
   }
@@ -252,7 +258,7 @@ export default function App() {
       const parsed = parseBackup(json, validIds, validLessonIds, validPracticeIds)
       setPendingImport({ json, profile: parsed })
     } catch (e) {
-      setNotice((e as Error).message)
+      notify((e as Error).message)
     }
   }
   const backupImport = (
@@ -298,9 +304,9 @@ export default function App() {
               setSaveError('')
               setSession(null)
               setPendingImport(null)
-              setNotice('Sicherung wurde vollständig wiederhergestellt.')
+              notify('Sicherung wurde vollständig wiederhergestellt.', 'success')
             } catch (e) {
-              setNotice((e as Error).message)
+              notify((e as Error).message)
             }
           }}
         >
@@ -333,7 +339,14 @@ export default function App() {
           </>
         )}
         {confirmImport}
-        {notice && <p role="alert">{notice}</p>}
+        {notice && (
+          <div className="boot-notice" role={notice.tone === 'error' ? 'alert' : 'status'}>
+            <span>{notice.message}</span>
+            <button className="text-button" onClick={() => setNotice(null)}>
+              Schließen
+            </button>
+          </div>
+        )}
       </div>
     )
   const page = route.split('/')[0]
@@ -495,12 +508,12 @@ export default function App() {
                   className="card content-row"
                   onClick={() => setSelectedGrammar(grammarById[id])}
                 >
-                  <TextCursorInput size={21} />
+                  <TextCursorInput size={20} />
                   <span>
                     <strong>{grammarById[id].title}</strong>
                     <span className="muted">{grammarById[id].pattern}</span>
                   </span>
-                  <ChevronRight size={18} />
+                  <ChevronRight className="disclosure-chevron" size={20} aria-hidden="true" />
                 </button>
               ))}
             </div>
@@ -511,7 +524,7 @@ export default function App() {
       <>
         <PageHeading page="learn" onBack={() => navigate('today')} />
         <div className="path-summary card">
-          <CircleCheck size={25} />
+          <CircleCheck size={24} />
           <span>
             <strong>
               {profile.completedLessons.length} von {lessons.length}
@@ -541,10 +554,14 @@ export default function App() {
         {due.length ? (
           <div className="card review-start">
             <div className="review-count">{due.length}</div>
-            <div>
-              <h2>Wörter fällig</h2>
-              <button className="button primary" onClick={() => beginReview(plan.dueIds.slice(0, 20))}>
-                Bis zu 20 Wörter wiederholen <ArrowRight size={18} />
+            <div className="review-start-content">
+              <h3>Fällige Wörter</h3>
+              <button
+                className="button primary focus-footer"
+                aria-label={`Bis zu ${Math.min(due.length, 20)} ${due.length === 1 ? 'Wort' : 'Wörter'} wiederholen`}
+                onClick={() => beginReview(plan.dueIds.slice(0, 20))}
+              >
+                <ArrowRight size={24} />
               </button>
             </div>
           </div>
@@ -573,7 +590,6 @@ export default function App() {
                 </span>
                 <span>
                   <strong>{wordById[card.vocabularyId].meaning}</strong>
-                  <span className="muted">{skillLabels[chooseSkill(card, reviewSkills)]}</span>
                 </span>
                 <span className="small muted">
                   {Date.parse(card.fsrs.due) <= Date.now() ? 'Jetzt fällig' : formatDate(card.fsrs.due)}
@@ -593,7 +609,7 @@ export default function App() {
       <>
         <PageHeading page="words" onBack={() => navigate('today')} />
         <div className="filter-bar">
-          {searchInput('Wort, Pinyin oder Bedeutung suchen')}
+          {searchInput('Wort, Pinyin oder Bedeutung')}
           <ToggleGroup
             label="Wortschatz filtern"
             value={filter}
@@ -626,7 +642,7 @@ export default function App() {
     content = (
       <>
         <PageHeading page="hanzi" onBack={() => navigate('today')} />
-        <div className="filter-bar">{searchInput('Zeichen, Pinyin oder Bedeutung suchen')}</div>
+        <div className="filter-bar">{searchInput('Zeichen, Pinyin oder Bedeutung')}</div>
         <p className="small muted">{filtered.length} Zeichen</p>
         <div className="hanzi-grid">
           {filtered.map((h) => (
@@ -635,9 +651,6 @@ export default function App() {
                 {h.char}
               </span>
               <span className="pinyin">{h.pinyin}</span>
-              {h.wordIds.some((id) => !!profile.cards[id]) && (
-                <CircleCheck className="hanzi-check" size={18} aria-label="Zugehöriges Wort begonnen" />
-              )}
             </button>
           ))}
         </div>
@@ -656,12 +669,18 @@ export default function App() {
             <button className="card grammar-card" key={g.id} onClick={() => setSelectedGrammar(g)}>
               <span className="eyebrow">
                 Lektion {Number(g.lessonId.slice(1))}{' '}
-                {profile.practice[g.id]?.attempts > 0 && <CircleCheck size={18} aria-label="Geübt" />}
+                {profile.practice[g.id]?.attempts > 0 && (
+                  <CircleCheck className="status-check" size={18} aria-label="Geübt" />
+                )}
               </span>
               <h3>{g.title}</h3>
               <p className="pattern small-pattern">{g.pattern}</p>
               <p>{g.explanation}</p>
-              <ChevronRight className="grammar-chevron" size={20} />
+              <ChevronRight
+                className="disclosure-chevron disclosure-chevron-overlay"
+                size={20}
+                aria-hidden="true"
+              />
             </button>
           ))}
         </div>
@@ -675,7 +694,7 @@ export default function App() {
       <>
         <PageHeading page="training" onBack={() => navigate('today')} />
         <div className="training-grid">
-          {(['listening', 'context', 'production', 'pinyin'] as Skill[]).map((skill) => (
+          {(['pinyin', 'listening', 'context', 'production'] as Skill[]).map((skill) => (
             <button
               className="card training-card"
               key={skill}
@@ -689,7 +708,14 @@ export default function App() {
                         (profile.cards[b.id]?.skills[skill].attempts ?? 0),
                     )
                     .slice(0, 10)
-                    .map((w) => wordExercise(w, skill, vocabulary)),
+                    .map((w) =>
+                      wordExercise(
+                        w,
+                        skill,
+                        vocabulary,
+                        skill === 'context' ? (profile.cards[w.id]?.skills.context.attempts ?? 0) + 1 : 0,
+                      ),
+                    ),
                   skillLabels[skill],
                 )
               }
@@ -705,7 +731,11 @@ export default function App() {
               )}
               <h3>{skillLabels[skill]}</h3>
 
-              <ChevronRight className="training-chevron" size={24} />
+              <ChevronRight
+                className="disclosure-chevron disclosure-chevron-overlay"
+                size={20}
+                aria-hidden="true"
+              />
             </button>
           ))}
         </div>
@@ -753,7 +783,9 @@ export default function App() {
                 onChange={(audioRate) => commit({ ...profile, settings: { ...profile.settings, audioRate } })}
               />
             </div>
-            <AudioButton text="你好！我在学习汉语。" label="Stimme ausprobieren" />
+            <div className="actions">
+              <AudioButton text="你好！我在学习汉语。" label="Stimme ausprobieren" />
+            </div>
           </section>
           <section className="card settings-section">
             <h2>Sicherung</h2>
@@ -818,7 +850,12 @@ export default function App() {
             </button>
           }
         >
-          <ExampleTranslation example={selectedWord.example} />
+          <div className="vocabulary-examples">
+            <ExampleTranslation example={selectedWord.example} />
+            {(selectedWord.examples ?? []).map((example) => (
+              <ExampleTranslation key={example.zh} example={example} />
+            ))}
+          </div>
           {profile.cards[selectedWord.id] && (
             <div className="word-skills">
               {Object.entries(profile.cards[selectedWord.id].skills).map(([skill, s]) => (
@@ -853,7 +890,7 @@ export default function App() {
                     {wordById[id].hanzi}
                   </span>
                   <span>{wordById[id].meaning}</span>
-                  <ChevronRight size={18} />
+                  <ChevronRight className="disclosure-chevron" size={20} aria-hidden="true" />
                 </button>
               ))}
             </div>
@@ -888,11 +925,11 @@ export default function App() {
       )}
       {confirmImport}
       {notice && (
-        <div className="toast" role="status">
-          <span>{notice}</span>
+        <div className={`toast toast-${notice.tone}`} role={notice.tone === 'error' ? 'alert' : 'status'}>
+          <span>{notice.message}</span>
           <button
             className="icon-button close-button"
-            onClick={() => setNotice('')}
+            onClick={() => setNotice(null)}
             aria-label="Meldung schließen"
           >
             <X size={18} />

@@ -2,34 +2,34 @@
   {
     "id": "g001",
     "sourceLabel": "前缀：小—、第—",
-    "title": "Vorsilben 小 und 第",
-    "explanation": "小 vor einer Personenbezeichnung wirkt vertraut oder bezeichnet etwas Kleines. 第 vor einer Zahl bildet eine Ordnungszahl.",
-    "pattern": "小 + Bezeichnung / 第 + Zahl",
+    "title": "Vertraute Namen mit 小 und Ordnungszahlen mit 第",
+    "explanation": "小 vor einem Namen kann eine vertraute Anrede bilden. 第 vor einer Zahl bildet eine Ordnungszahl; vor einem zählbaren Nomen steht meist zusätzlich ein Zählwort.",
+    "pattern": "小 + Name / 第 + Zahl + Zählwort + Nomen",
     "example": {
       "id": "ex-g001",
-      "zh": "这是我的第一个老师。",
-      "pinyin": "Zhè shì wǒ de dì-yī ge lǎoshī.",
-      "de": "Das ist mein erster Lehrer."
+      "zh": "小明是我的朋友。",
+      "pinyin": "Xiǎomíng shì wǒ de péngyou.",
+      "de": "Xiaoming ist mein Freund."
     },
     "exercise": {
       "id": "eg001",
-      "prompt": "Wie heißt „der dritte Tag“?",
-      "answer": "第三天",
+      "prompt": "Wie sprichst du Xiaoming vertraut an?",
+      "answer": "小明",
       "options": [
-        "第三天",
-        "三第天",
-        "三天第"
+        "小明",
+        "明小",
+        "第明"
       ],
-      "explanation": "第 steht vor der Zahl: 第三天 bezeichnet den dritten Tag."
+      "explanation": "小 vor dem Namen bildet eine vertraute Anrede."
     },
-    "lessonId": "l25"
+    "lessonId": "l37"
   },
   {
     "id": "g002",
     "sourceLabel": "后缀：—们、—边",
-    "title": "Nachsilben 们 und 边",
-    "explanation": "们 bildet bei Personalpronomen und Personenbezeichnungen einen Plural. 边 ergänzt Ortsangaben. Bei konkreten Zahlen verwendet man normalerweise kein 们.",
-    "pattern": "Person + 们 / Ort + 边",
+    "title": "Plural mit 们 und Ortsangaben mit 边",
+    "explanation": "们 bildet den Plural von Personalpronomen und Personenbezeichnungen. 边 folgt auf einen Ortsbezug und bildet Angaben wie 外边 oder 前边.",
+    "pattern": "Person/Pronomen + 们 / Ortsbezug + 边",
     "example": {
       "id": "ex-g002",
       "zh": "同学们在外边。",
@@ -38,16 +38,16 @@
     },
     "exercise": {
       "id": "eg002",
-      "prompt": "Ergänze „wir“: 我___",
-      "answer": "们",
+      "prompt": "Welcher Satz verbindet den Plural und eine Ortsangabe richtig?",
+      "answer": "同学们在外边。",
       "options": [
-        "们",
-        "边",
-        "的"
+        "同学们在外边。",
+        "同学在外。",
+        "们同学在边外。"
       ],
-      "explanation": "我们 besteht aus 我 und der Pluralnachsilbe 们."
+      "explanation": "们 markiert den Plural; 外边 bezeichnet den Ort „draußen“."
     },
-    "lessonId": "l08"
+    "lessonId": "l31"
   },
   {
     "id": "g003",
@@ -203,13 +203,13 @@
     "id": "g009",
     "sourceLabel": "人称代词：我、你、您、他、她、我们、你们、他们、她们、它、它们、大家",
     "title": "Personalpronomen",
-    "explanation": "我, 你 und 他/她/它 bedeuten ich, du und er/sie/es. 您 ist höflich. 他, 她 und 它 klingen alle tā, werden aber unterschiedlich geschrieben.",
+    "explanation": "我、你、您 sowie 他、她、它 sind Personalpronomen. 们 bildet bei Personenpronomen den Plural. 他、她 und 它 klingen gleich, werden aber unterschiedlich geschrieben.",
     "pattern": "Pronomen + Prädikat",
     "example": {
       "id": "ex-g009",
-      "zh": "我们都是学生。",
-      "pinyin": "Wǒmen dōu shì xuéshēng.",
-      "de": "Wir sind alle Schüler."
+      "zh": "我们是朋友。",
+      "pinyin": "Wǒmen shì péngyou.",
+      "de": "Wir sind Freunde."
     },
     "exercise": {
       "id": "eg009",
@@ -277,27 +277,27 @@
   {
     "id": "g012",
     "sourceLabel": "名量词（1）：本、个、家、口、块、件、只、元",
-    "title": "Zählwörter für Dinge",
-    "explanation": "Zwischen Zahl und Nomen steht ein passendes Zählwort. 本 zählt Bücher, 件 etwa Kleidung, 只 Tiere, 口 Familienmitglieder. 个 ist häufig, passt aber nicht automatisch überall.",
+    "title": "Das passende Zählwort",
+    "explanation": "Im Chinesischen steht zwischen Zahl und Nomen meist ein Zählwort. Häufige Beispiele sind 本 für Bücher, 件 für Kleidungsstücke, 只 für viele Tiere und 口 für Familienmitglieder.",
     "pattern": "Zahl + Zählwort + Nomen",
     "example": {
       "id": "ex-g012",
-      "zh": "他有三本汉语书。",
-      "pinyin": "Tā yǒu sān běn Hànyǔ shū.",
-      "de": "Er hat drei Chinesischbücher."
+      "zh": "我看见一只猫。",
+      "pinyin": "Wǒ kànjiàn yì zhī māo.",
+      "de": "Ich sehe eine Katze."
     },
     "exercise": {
       "id": "eg012",
-      "prompt": "Ergänze: 两___衣服",
-      "answer": "件",
+      "prompt": "Ergänze das Zählwort für „zwei Katzen“: 两___猫",
+      "answer": "只",
       "options": [
-        "件",
+        "只",
         "本",
-        "只"
+        "口"
       ],
-      "explanation": "件 ist ein übliches Zählwort für Kleidungsstücke."
+      "explanation": "只 ist das passende Zählwort für Katzen."
     },
-    "lessonId": "l18"
+    "lessonId": "l46"
   },
   {
     "id": "g013",
@@ -402,27 +402,27 @@
   {
     "id": "g017",
     "sourceLabel": "时间副词：在、正在",
-    "title": "Eine Handlung läuft gerade",
-    "explanation": "在 und 正在 vor dem Verb markieren eine gerade ablaufende Handlung. 正在 hebt „gerade jetzt“ besonders hervor. Es geht um den Verlauf, nicht bloß um die Gegenwart.",
+    "title": "Gerade ablaufende Handlungen",
+    "explanation": "在 oder 正在 steht vor dem Verb und zeigt eine laufende Handlung an. 正在 hebt besonders hervor, dass etwas gerade passiert. Hier steht 在 nicht als Ortsangabe.",
     "pattern": "Subjekt + 在/正在 + Verb",
     "example": {
       "id": "ex-g017",
-      "zh": "妈妈正在做饭。",
-      "pinyin": "Māma zhèngzài zuò fàn.",
-      "de": "Mama kocht gerade."
+      "zh": "妈妈正在看书。",
+      "pinyin": "Māma zhèngzài kàn shū.",
+      "de": "Mama liest gerade ein Buch."
     },
     "exercise": {
       "id": "eg017",
-      "prompt": "Ergänze „gerade“: 他___打电话。",
+      "prompt": "Setze die stärker betonte Form für „gerade“ ein: 他___看书。",
       "answer": "正在",
       "options": [
         "正在",
-        "再见",
+        "在",
         "了"
       ],
-      "explanation": "正在 steht vor der laufenden Handlung 打电话."
+      "explanation": "正在 betont stärker als 在, dass die Handlung gerade abläuft."
     },
-    "lessonId": "l40"
+    "lessonId": "l21"
   },
   {
     "id": "g018",
@@ -452,14 +452,14 @@
   {
     "id": "g019",
     "sourceLabel": "关联副词：还1、也",
-    "title": "Auch und zusätzlich",
-    "explanation": "也 und 还 stehen vor dem Prädikat. 也 stellt eine Gemeinsamkeit her, 还 fügt häufig einen weiteren Punkt hinzu. Beide können in einfachen Aussagen vorkommen.",
-    "pattern": "Subjekt + 也/还 + Prädikat",
+    "title": "Auch und zusätzlich mit 也 und 还",
+    "explanation": "也 bedeutet „auch“ und stellt eine Gemeinsamkeit her. 还 bedeutet je nach Zusammenhang „noch“ oder „zusätzlich“. Beide stehen vor dem Verb oder der Beschreibung.",
+    "pattern": "Subjekt + 也/还 + Verb",
     "example": {
       "id": "ex-g019",
-      "zh": "我喜欢茶，也喜欢牛奶。",
-      "pinyin": "Wǒ xǐhuan chá, yě xǐhuan niúnǎi.",
-      "de": "Ich mag Tee und auch Milch."
+      "zh": "我还想喝一点儿茶。",
+      "pinyin": "Wǒ hái xiǎng hē yìdiǎnr chá.",
+      "de": "Ich möchte noch etwas Tee trinken."
     },
     "exercise": {
       "id": "eg019",
@@ -472,7 +472,7 @@
       ],
       "explanation": "也 steht vor 是 und nach dem Subjekt 她."
     },
-    "lessonId": "l12"
+    "lessonId": "l49"
   },
   {
     "id": "g020",
@@ -682,22 +682,22 @@
     "pattern": "A + 和 + B",
     "example": {
       "id": "ex-g028",
-      "zh": "爸爸和妈妈都在家。",
-      "pinyin": "Bàba hé māma dōu zài jiā.",
-      "de": "Papa und Mama sind beide zu Hause."
+      "zh": "王先生和王女士都是老师。",
+      "pinyin": "Wáng xiānsheng hé Wáng nǚshì dōu shì lǎoshī.",
+      "de": "Herr und Frau Wang sind beide Lehrkräfte."
     },
     "exercise": {
       "id": "eg028",
-      "prompt": "Welche Wortgruppe ist gleichrangig verbunden?",
-      "answer": "老师和学生",
+      "prompt": "Welche Wörter verbinden zwei gleichrangige Nomen?",
+      "answer": "先生和女士",
       "options": [
-        "老师和学生",
-        "老师的书",
-        "三本书"
+        "先生和女士",
+        "先生的女士",
+        "先生在女士"
       ],
-      "explanation": "老师和学生 verbindet zwei gleichrangige Personenbezeichnungen."
+      "explanation": "和 verbindet gleichrangige Nomen mit „und“."
     },
-    "lessonId": "l08"
+    "lessonId": "l44"
   },
   {
     "id": "g029",
@@ -757,22 +757,22 @@
     "pattern": "Subjekt + Prädikat",
     "example": {
       "id": "ex-g031",
-      "zh": "天气很好。",
-      "pinyin": "Tiānqì hěn hǎo.",
-      "de": "Das Wetter ist gut."
+      "zh": "我叫小明。",
+      "pinyin": "Wǒ jiào Xiǎomíng.",
+      "de": "Ich heiße Xiaoming."
     },
     "exercise": {
       "id": "eg031",
-      "prompt": "Welche Gruppe enthält Subjekt und Prädikat?",
-      "answer": "他很忙",
+      "prompt": "Welches Wort ist das Subjekt in 我叫小明？",
+      "answer": "我",
       "options": [
-        "他很忙",
-        "他的书",
-        "三个人"
+        "我",
+        "叫",
+        "小明"
       ],
-      "explanation": "In 他很忙 ist 他 das Subjekt und 很忙 das Prädikat."
+      "explanation": "我 ist das Subjekt und bezeichnet die sprechende Person."
     },
-    "lessonId": "l38"
+    "lessonId": "l02"
   },
   {
     "id": "g032",
@@ -882,22 +882,22 @@
     "pattern": "Subjekt + nominale Angabe",
     "example": {
       "id": "ex-g036",
-      "zh": "今天星期六。",
-      "pinyin": "Jīntiān xīngqīliù.",
-      "de": "Heute ist Samstag."
+      "zh": "我今年二十岁。",
+      "pinyin": "Wǒ jīnnián èrshí suì.",
+      "de": "Ich bin dieses Jahr zwanzig Jahre alt."
     },
     "exercise": {
       "id": "eg036",
-      "prompt": "Welcher Satz ist eine übliche Altersangabe?",
+      "prompt": "Welche Aussage nennt das Alter ohne 是?",
       "answer": "我今年二十岁。",
       "options": [
         "我今年二十岁。",
-        "我今年是很二十岁。",
-        "我今年岁二十。"
+        "我是今年二十岁。",
+        "我在今年二十岁。"
       ],
-      "explanation": "Die Altersangabe 二十岁 kann ohne 是 direkt das Prädikat bilden."
+      "explanation": "Bei einer Altersangabe bildet die Altersphrase das Prädikat; 是 ist nicht nötig."
     },
-    "lessonId": "l12"
+    "lessonId": "l25"
   },
   {
     "id": "g037",
@@ -938,16 +938,16 @@
     },
     "exercise": {
       "id": "eg038",
-      "prompt": "Was ist das Objekt in 我喜欢中国菜？",
-      "answer": "中国菜",
+      "prompt": "Welches Wort ist das Objekt in 请说汉语。？",
+      "answer": "汉语",
       "options": [
-        "中国菜",
-        "我",
-        "喜欢"
+        "请",
+        "说",
+        "汉语"
       ],
-      "explanation": "中国菜 folgt auf 喜欢 und bezeichnet das, was die Person mag."
+      "explanation": "Das Objekt 汉语 folgt auf das Verb 说."
     },
-    "lessonId": "l20"
+    "lessonId": "l19"
   },
   {
     "id": "g039",
@@ -1052,27 +1052,27 @@
   {
     "id": "g043",
     "sourceLabel": "主谓句2：形容词谓语句",
-    "title": "Sätze mit einer Eigenschaft",
-    "explanation": "Ein Adjektiv kann im Chinesischen direkt Prädikat sein. 很 dient in neutralen Aussagen häufig als Verbindung. Es muss dabei nicht stark „sehr“ betonen.",
+    "title": "Eigenschaften mit 很 ausdrücken",
+    "explanation": "Bei einer einfachen Aussage mit einem Adjektiv steht häufig 很 davor. Es kann den Satz natürlich verbinden, ohne immer „sehr“ zu betonen.",
     "pattern": "Subjekt + 很 + Adjektiv",
     "example": {
       "id": "ex-g043",
-      "zh": "这个苹果很好吃。",
-      "pinyin": "Zhège píngguǒ hěn hǎochī.",
-      "de": "Dieser Apfel schmeckt gut."
+      "zh": "我很好。",
+      "pinyin": "Wǒ hěn hǎo.",
+      "de": "Mir geht es gut."
     },
     "exercise": {
       "id": "eg043",
-      "prompt": "Welche Aussage ist neutral korrekt?",
-      "answer": "她很漂亮。",
+      "prompt": "Welcher Satz drückt „Mir geht es gut“ natürlich aus?",
+      "answer": "我很好。",
       "options": [
-        "她很漂亮。",
-        "她是很漂亮的谁。",
-        "她漂亮是。"
+        "我很好。",
+        "我是很好。",
+        "我很是好。"
       ],
-      "explanation": "很漂亮 ist ein adjektivisches Prädikat ohne notwendiges 是."
+      "explanation": "很 steht vor dem Adjektiv; 是 ist in dieser einfachen Aussage nicht nötig."
     },
-    "lessonId": "l38"
+    "lessonId": "l01"
   },
   {
     "id": "g044",
@@ -1457,22 +1457,22 @@
     "pattern": "Teilsatz，Teilsatz",
     "example": {
       "id": "ex-g059",
-      "zh": "我去学校，妈妈去公司。",
-      "pinyin": "Wǒ qù xuéxiào, māma qù gōngsī.",
-      "de": "Ich gehe zur Schule, Mama geht zur Firma."
+      "zh": "我喝茶，他喝水。",
+      "pinyin": "Wǒ hē chá, tā hē shuǐ.",
+      "de": "Ich trinke Tee, er trinkt Wasser."
     },
     "exercise": {
       "id": "eg059",
-      "prompt": "Welche Verbindung besteht aus zwei vollständigen Teilsätzen?",
+      "prompt": "Welche Variante enthält zwei vollständige Aussagen?",
       "answer": "我喝茶，他喝水。",
       "options": [
         "我喝茶，他喝水。",
-        "我茶，他水喝的。",
-        "我喝，他水的。"
+        "我茶，他水。",
+        "我喝，他喝。"
       ],
-      "explanation": "Beide Teile enthalten eine klare Person und eine vollständige Handlung."
+      "explanation": "Beide Teilsätze enthalten ein Subjekt und ein Verb mit Objekt."
     },
-    "lessonId": "l21"
+    "lessonId": "l49"
   },
   {
     "id": "g060",
@@ -1538,16 +1538,16 @@
     },
     "exercise": {
       "id": "eg062",
-      "prompt": "Was zeigt 了 in 我买了两本书 an?",
-      "answer": "Der Kauf wird als vollzogen betrachtet.",
+      "prompt": "Was zeigt 了 in 昨天我看了书？",
+      "answer": "Die Handlung wird als abgeschlossen betrachtet.",
       "options": [
-        "Der Kauf wird als vollzogen betrachtet.",
-        "Jedes chinesische Verb steht in der Vergangenheit.",
+        "Die Handlung wird als abgeschlossen betrachtet.",
+        "Das Verb steht automatisch in der Vergangenheit.",
         "Die Handlung läuft gerade."
       ],
-      "explanation": "Das dynamische 了 markiert den vollzogenen Aspekt. Eine Zeitangabe entsteht daraus allein nicht."
+      "explanation": "了 markiert hier den abgeschlossenen Vorgang; es ist keine allgemeine Vergangenheitsform."
     },
-    "lessonId": "l40"
+    "lessonId": "l21"
   },
   {
     "id": "g063",
@@ -1557,22 +1557,22 @@
     "pattern": "Neue Situation + 了",
     "example": {
       "id": "ex-g063",
-      "zh": "现在下雨了。",
-      "pinyin": "Xiànzài xià yǔ le.",
-      "de": "Jetzt regnet es."
+      "zh": "我现在有时间了。",
+      "pinyin": "Wǒ xiànzài yǒu shíjiān le.",
+      "de": "Jetzt habe ich Zeit."
     },
     "exercise": {
       "id": "eg063",
-      "prompt": "Was betont 了 in 她现在是老师了？",
-      "answer": "Eine neue Situation: Sie ist nun Lehrerin.",
+      "prompt": "Was zeigt 了 in 我现在有时间了？",
+      "answer": "Eine neue Situation: Jetzt habe ich Zeit.",
       "options": [
-        "Eine neue Situation: Sie ist nun Lehrerin.",
-        "Die Zahl der Lehrerinnen.",
-        "Eine Frage nach ihrem Beruf."
+        "Eine neue Situation: Jetzt habe ich Zeit.",
+        "Eine vergangene Handlung.",
+        "Eine Frage nach der Uhrzeit."
       ],
-      "explanation": "Das satzfinale 了 markiert, dass diese Situation jetzt neu gilt."
+      "explanation": "Am Satzende markiert 了 hier einen neuen Zustand."
     },
-    "lessonId": "l40"
+    "lessonId": "l21"
   },
   {
     "id": "g064",
@@ -1582,9 +1582,9 @@
     "pattern": "Subjekt + 在/正在 + Verb",
     "example": {
       "id": "ex-g064",
-      "zh": "他在看电视。",
-      "pinyin": "Tā zài kàn diànshì.",
-      "de": "Er sieht gerade fern."
+      "zh": "他们在工作。",
+      "pinyin": "Tāmen zài gōngzuò.",
+      "de": "Sie arbeiten gerade."
     },
     "exercise": {
       "id": "eg064",
@@ -1597,7 +1597,7 @@
       ],
       "explanation": "正在 vor 学习 markiert ausdrücklich den aktuellen Verlauf."
     },
-    "lessonId": "l40"
+    "lessonId": "l39"
   },
   {
     "id": "g065",
@@ -1607,22 +1607,22 @@
     "pattern": "在/正在 + Verb（+ Objekt）+ 呢",
     "example": {
       "id": "ex-g065",
-      "zh": "妈妈正在打电话呢。",
-      "pinyin": "Māma zhèngzài dǎ diànhuà ne.",
-      "de": "Mama telefoniert gerade."
+      "zh": "我正在休息呢。",
+      "pinyin": "Wǒ zhèngzài xiūxi ne.",
+      "de": "Ich ruhe mich gerade aus."
     },
     "exercise": {
       "id": "eg065",
-      "prompt": "Ergänze die laufende Handlung: 我正在做饭___。",
+      "prompt": "Ergänze die Partikel: 我正在休息___。",
       "answer": "呢",
       "options": [
         "呢",
         "吗",
         "们"
       ],
-      "explanation": "呢 kann den laufenden Zustand am Satzende unterstreichen."
+      "explanation": "呢 kann eine gerade laufende Handlung unterstreichen."
     },
-    "lessonId": "l40"
+    "lessonId": "l39"
   },
   {
     "id": "g066",
@@ -1632,9 +1632,9 @@
     "pattern": "Subjekt + Verb（+ Objekt）+ 呢",
     "example": {
       "id": "ex-g066",
-      "zh": "他睡觉呢。",
-      "pinyin": "Tā shuìjiào ne.",
-      "de": "Er schläft gerade."
+      "zh": "他们工作呢。",
+      "pinyin": "Tāmen gōngzuò ne.",
+      "de": "Sie arbeiten gerade."
     },
     "exercise": {
       "id": "eg066",
@@ -1647,7 +1647,7 @@
       ],
       "explanation": "In diesem Kontext markiert 呢 die laufende Tätigkeit 看书."
     },
-    "lessonId": "l40"
+    "lessonId": "l39"
   },
   {
     "id": "g067",
