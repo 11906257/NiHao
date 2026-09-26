@@ -10,7 +10,7 @@
     "test": "vitest run",
     "build": "npm run typecheck && npm run validate && vite build && node scripts/verify-build.mjs",
     "preview": "vite preview --host 127.0.0.1",
-    "test:e2e": "playwright test",
+    "test:e2e": "BASE_PATH=/NiHao/ npm run build && playwright test",
     "check": "npm run build && npm test",
     "format": "prettier --write .",
     "format:check": "prettier --check ."

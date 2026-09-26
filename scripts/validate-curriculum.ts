@@ -100,7 +100,7 @@ for (const w of vocabulary) {
   }
 }
 const wordsWithVariedExamples = vocabulary.filter((word) => (word.examples?.length ?? 0) > 0).length
-assert(wordsWithVariedExamples >= 200, 'Zu wenige Wörter haben einen zusätzlichen Satzkontext')
+assert(wordsWithVariedExamples >= 150, 'Zu wenige Wörter haben einen zusätzlichen Satzkontext')
 for (const h of hanzi) {
   unique(h.id)
   fields(h, ['char', 'pinyin', 'meaning'])

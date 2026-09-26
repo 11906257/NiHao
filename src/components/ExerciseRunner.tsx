@@ -15,7 +15,7 @@ export function ExerciseRunner({
   exercises: Exercise[]
   title: string
   onResult: (e: Exercise, r: ReviewRating) => void
-  onComplete: () => void
+  onComplete?: () => void
   onClose: () => void
 }) {
   const [queue, setQueue] = useState(exercises),
@@ -70,7 +70,7 @@ export function ExerciseRunner({
     }
     if (index + 1 >= length) {
       setDone(true)
-      onComplete()
+      onComplete?.()
     } else setIndex(index + 1)
   }
   if (!e || done)
