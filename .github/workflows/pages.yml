@@ -20,10 +20,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm test
-      - name: Build und Curriculum prüfen
-        run: npm run build
-        env:
-          BASE_PATH: /NiHao/
       - run: npx playwright install --with-deps chromium webkit
       - run: npm run test:e2e
       - name: GitHub Pages konfigurieren

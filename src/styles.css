@@ -247,24 +247,6 @@ button.card {
   gap: var(--space-4);
   flex-wrap: wrap;
 }
-.row-between {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-4);
-  align-items: center;
-}
-.pill {
-  display: inline-flex;
-  align-items: center;
-  background: var(--surface-alt);
-  color: var(--primary);
-  font-weight: 600;
-  font-size: var(--text-xs);
-  letter-spacing: 0.01em;
-  padding: var(--space-2) 8px;
-  border-radius: var(--radius-control);
-  white-space: nowrap;
-}
 .brand-mark {
   border-radius: var(--radius-control);
   width: 45px;
@@ -889,9 +871,6 @@ input::placeholder {
   margin: 24px 0 0;
   letter-spacing: 0.04em;
 }
-.intro-card > h1:not(.intro-hanzi) {
-  margin-top: 24px;
-}
 .intro-card > p:not(.intro-pinyin) {
   font-size: var(--text-base);
   line-height: 1.8;
@@ -1109,10 +1088,6 @@ input::placeholder {
   .lesson-row .small {
     font-size: var(--text-xs);
   }
-  .lesson-row .pill {
-    font-size: var(--text-xs);
-    padding: 8px 8px;
-  }
   .lesson-start {
     gap: 16px;
     padding: 24px;
@@ -1154,11 +1129,6 @@ input::placeholder {
     font-size: var(--text-sm);
     padding: 16px;
     margin-top: 16px;
-  }
-  .row-between.note {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
   }
   .hanzi-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1364,12 +1334,6 @@ input::placeholder {
 .brand-mark {
   color: var(--on-primary);
 }
-@container app (max-width: 700px) {
-  .row-between {
-    flex-wrap: wrap;
-  }
-}
-
 /* Shared primary controls. */
 
 .primary {
@@ -1992,7 +1956,7 @@ label,
   display: flex;
   align-items: center;
   gap: 16px;
-  font-size: 14px;
+  font-size: var(--text-sm);
   font-weight: 600;
   min-width: 0;
 }
@@ -2089,6 +2053,9 @@ label,
 .settings-tile {
   background: var(--surface);
   border-color: var(--border);
+}
+.settings-tile svg {
+  color: var(--muted);
 }
 .text-button,
 .character-words button {

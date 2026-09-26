@@ -2,9 +2,9 @@
   {
     "id": "g001",
     "sourceLabel": "前缀：小—、第—",
-    "title": "Vertraute Namen mit 小 und Ordnungszahlen mit 第",
-    "explanation": "小 vor einem Namen kann eine vertraute Anrede bilden. 第 vor einer Zahl bildet eine Ordnungszahl; vor einem zählbaren Nomen steht meist zusätzlich ein Zählwort.",
-    "pattern": "小 + Name / 第 + Zahl + Zählwort + Nomen",
+    "title": "Vertraute Namen mit 小",
+    "explanation": "小 vor einem Namen kann eine vertraute Anrede bilden. Ordnungszahlen mit 第 hast du bereits kennengelernt.",
+    "pattern": "小 + Name",
     "example": {
       "id": "ex-g001",
       "zh": "小明是我的朋友。",
@@ -182,20 +182,20 @@
     "pattern": "Subjekt + Verb + Fragewort",
     "example": {
       "id": "ex-g008",
-      "zh": "你想买什么？",
-      "pinyin": "Nǐ xiǎng mǎi shénme?",
-      "de": "Was möchtest du kaufen?"
+      "zh": "他是谁？",
+      "pinyin": "Tā shì shéi?",
+      "de": "Wer ist er?"
     },
     "exercise": {
       "id": "eg008",
-      "prompt": "Ergänze „Wo wohnst du?“: 你住___？",
-      "answer": "哪里",
+      "prompt": "Ergänze die Frage nach einer Person: 他是___？",
+      "answer": "谁",
       "options": [
-        "哪里",
+        "谁",
         "什么",
-        "谁"
+        "吗"
       ],
-      "explanation": "哪里 fragt nach dem Ort und bleibt hinter 住."
+      "explanation": "Wer, was oder wo steht an der Stelle der erfragten Information."
     },
     "lessonId": "l03"
   },
@@ -382,20 +382,20 @@
     "pattern": "Mehrzahl-Subjekt + 都 + Prädikat",
     "example": {
       "id": "ex-g016",
-      "zh": "他们都喜欢喝茶。",
-      "pinyin": "Tāmen dōu xǐhuan hē chá.",
-      "de": "Sie trinken alle gern Tee."
+      "zh": "他们都很好。",
+      "pinyin": "Tāmen dōu hěn hǎo.",
+      "de": "Allen geht es gut."
     },
     "exercise": {
       "id": "eg016",
-      "prompt": "Wo steht 都 richtig?",
-      "answer": "我们都是老师。",
+      "prompt": "Ergänze „Uns allen geht es gut“: 我们___很好。",
+      "answer": "都",
       "options": [
-        "我们都是老师。",
-        "都我们是老师。",
-        "我们是老师都。"
+        "都",
+        "和",
+        "吗"
       ],
-      "explanation": "都 folgt auf die Gruppe 我们 und steht vor 是."
+      "explanation": "都 folgt auf die Gruppe 我们 und steht vor dem Prädikat 很好."
     },
     "lessonId": "l12"
   },
@@ -852,25 +852,25 @@
   {
     "id": "g035",
     "sourceLabel": "主语：名词、代词或名词性短语作主语",
-    "title": "Wer oder was ist das Thema?",
+    "title": "Wer oder was ist das Subjekt?",
     "explanation": "Ein Nomen, Pronomen oder eine nominale Wortgruppe kann das Subjekt bilden. In einfachen Aussagen steht es gewöhnlich vor dem Prädikat.",
     "pattern": "Subjekt + Prädikat",
     "example": {
       "id": "ex-g035",
-      "zh": "我的朋友喜欢唱歌。",
-      "pinyin": "Wǒ de péngyou xǐhuan chàng gē.",
-      "de": "Mein Freund singt gern."
+      "zh": "名字叫小明。",
+      "pinyin": "Míngzi jiào Xiǎomíng.",
+      "de": "Der Name lautet Xiaoming."
     },
     "exercise": {
       "id": "eg035",
-      "prompt": "Was ist das Subjekt in 我的老师很忙？",
-      "answer": "我的老师",
+      "prompt": "Was ist das Subjekt in 名字叫小明？",
+      "answer": "名字",
       "options": [
-        "我的老师",
-        "很忙",
-        "很"
+        "名字",
+        "叫小明",
+        "小明"
       ],
-      "explanation": "我的老师 bezeichnet die Person, über die 很忙 eine Aussage macht."
+      "explanation": "名字 ist das Subjekt, über das die Aussage 叫小明 gemacht wird."
     },
     "lessonId": "l02"
   },
@@ -1132,20 +1132,20 @@
     "pattern": "Subjekt + Prädikat。",
     "example": {
       "id": "ex-g046",
-      "zh": "他在医院工作。",
-      "pinyin": "Tā zài yīyuàn gōngzuò.",
-      "de": "Er arbeitet im Krankenhaus."
+      "zh": "你是中国人。",
+      "pinyin": "Nǐ shì Zhōngguó rén.",
+      "de": "Du bist Chinese."
     },
     "exercise": {
       "id": "eg046",
       "prompt": "Welche Äußerung ist eine Aussage?",
-      "answer": "我喜欢这本书。",
+      "answer": "我是中国人。",
       "options": [
-        "我喜欢这本书。",
-        "你喜欢吗？",
-        "你喜欢什么？"
+        "我是中国人。",
+        "你是中国人吗？",
+        "你叫什么名字？"
       ],
-      "explanation": "我喜欢这本书 teilt eine Information mit und stellt keine Frage."
+      "explanation": "我是中国人 teilt eine Information mit und stellt keine Frage."
     },
     "lessonId": "l02"
   },
@@ -1327,8 +1327,8 @@
   {
     "id": "g054",
     "sourceLabel": "存现句1（1）：所处+是+名词",
-    "title": "Was sich an einem Ort befindet",
-    "explanation": "Ein Ort kann am Satzanfang stehen. Mit 是 nennt man, was an diesem Ort ist. Die Konstruktion identifiziert den dort vorhandenen Gegenstand oder Bereich.",
+    "title": "Einen Ort mit 是 einordnen",
+    "explanation": "Ein Ort kann am Satzanfang stehen. Ort + 是 + Nomen ordnet ein, was der Ort ist. 有 führt dagegen etwas ein, das sich an einem Ort befindet.",
     "pattern": "Ort + 是 + Nomen",
     "example": {
       "id": "ex-g054",
@@ -1345,7 +1345,7 @@
         "很",
         "吗"
       ],
-      "explanation": "是 sagt hier, was dieser Ort ist: eine Schule."
+      "explanation": "是 ordnet den Ort ein: 这里是学校 bedeutet „Dieser Ort ist eine Schule“."
     },
     "lessonId": "l32"
   },
@@ -1482,20 +1482,20 @@
     "pattern": "Teilsatz，Subjekt + 也 + Prädikat",
     "example": {
       "id": "ex-g060",
-      "zh": "我喜欢电影，她也喜欢电影。",
-      "pinyin": "Wǒ xǐhuan diànyǐng, tā yě xǐhuan diànyǐng.",
-      "de": "Ich mag Filme, sie mag Filme auch."
+      "zh": "我有一个弟弟，他也有一个妹妹。",
+      "pinyin": "Wǒ yǒu yí ge dìdi, tā yě yǒu yí ge mèimei.",
+      "de": "Ich habe einen jüngeren Bruder, und er hat auch eine jüngere Schwester."
     },
     "exercise": {
       "id": "eg060",
-      "prompt": "Ergänze: 我是学生，他___是学生。",
+      "prompt": "Ergänze: 我有一个弟弟，他___有一个妹妹。",
       "answer": "也",
       "options": [
         "也",
         "的",
         "谁"
       ],
-      "explanation": "也 zeigt, dass dieselbe Aussage auch für 他 gilt."
+      "explanation": "也 steht nach dem Subjekt 他 und ergänzt die Aussage „hat eine jüngere Schwester“."
     },
     "lessonId": "l12"
   },

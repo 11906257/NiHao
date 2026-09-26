@@ -1,24 +1,15 @@
 export const AUDIO_RATES = { slow: 0.1, normal: 0.9, fast: 1.2 } as const
 export type AudioRate = (typeof AUDIO_RATES)[keyof typeof AUDIO_RATES]
 
-export function normalizeAudioRate(rate: number): AudioRate {
-  return rate < AUDIO_RATES.normal
-    ? AUDIO_RATES.slow
-    : rate > AUDIO_RATES.normal
-      ? AUDIO_RATES.fast
-      : AUDIO_RATES.normal
-}
-
 interface AudioCapability {
   available: boolean
   message: string
 }
 
-let currentRate: number = AUDIO_RATES.normal
-export function setAudioRate(rate: number): void {
-  const nextRate = normalizeAudioRate(rate)
-  if (nextRate === currentRate) return
-  currentRate = nextRate
+let currentRate: AudioRate = AUDIO_RATES.normal
+export function setAudioRate(rate: AudioRate): void {
+  if (rate === currentRate) return
+  currentRate = rate
   stopAudio()
 }
 

@@ -22,8 +22,9 @@ export const vocabulary: Vocabulary[] = sourceVocabulary.map((word) => {
   const knownSentences = new Set([word.example.zh, ...examples.map((example) => example.zh)])
   const candidates = sourceExamples
     .filter(
-      ({ example, ownerId }) =>
+      ({ example, lessonId, ownerId }) =>
         ownerId !== word.id &&
+        lessonOrder.get(lessonId)! <= lessonOrder.get(word.lessonId)! &&
         !knownSentences.has(example.zh) &&
         example.zh.includes(word.hanzi) &&
         word.pinyin

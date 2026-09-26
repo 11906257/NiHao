@@ -60,7 +60,7 @@ import { ExerciseRunner } from './components/ExerciseRunner'
 import { PageHeading, HomeTiles, ProgressCard } from './components/Navigation'
 import { WordCard, LessonCard } from './components/CurriculumCards'
 import { LearningSession } from './components/LearningSession'
-import { AUDIO_RATES, normalizeAudioRate, setAudioRate, stopAudio } from './lib/audio'
+import { AUDIO_RATES, setAudioRate, stopAudio } from './lib/audio'
 const skillLabels: Record<Skill, string> = {
   meaning: 'Bedeutung abrufen',
   production: 'Aktiv formulieren',
@@ -90,7 +90,7 @@ export default function App() {
     [route, setRoute] = useState(hashRoute),
     [session, setSession] = useState<Session | null>(null),
     [search, setSearch] = useState(''),
-    [filter, setFilter] = useState(() =>
+    [filter, setFilter] = useState<'all' | 'known' | 'new'>(() =>
       new URLSearchParams(window.location.hash.split('?')[1]).get('filter') === 'known' ? 'known' : 'all',
     ),
     [selectedWord, setSelectedWord] = useState<Vocabulary | null>(null),
@@ -398,7 +398,6 @@ export default function App() {
           exercises={session.exercises}
           title={session.title}
           onResult={result}
-          onComplete={() => {}}
           onClose={closeSession}
         />
       )
@@ -774,7 +773,7 @@ export default function App() {
               </span>
               <ToggleGroup
                 label="Sprechtempo"
-                value={normalizeAudioRate(profile.settings.audioRate)}
+                value={profile.settings.audioRate}
                 options={[
                   { value: AUDIO_RATES.slow, label: 'Langsam' },
                   { value: AUDIO_RATES.normal, label: 'Normal' },
