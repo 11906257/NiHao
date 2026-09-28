@@ -2,7 +2,7 @@ import { openDB, type DBSchema, type IDBPDatabase } from 'idb'
 import { createProfile, type Profile } from './scheduler'
 import { parseBackup, validateProfile } from './backup'
 
-export const DATABASE_NAME = 'hsk-level-one-learning'
+export const DATABASE_NAME = 'hsk-level-one-learning-v2'
 
 interface LearningDatabase extends DBSchema {
   profile: { key: string; value: Profile }

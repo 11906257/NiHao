@@ -6,7 +6,7 @@ Eine private, deutschsprachige Lern-App für **HSK 3.0 Level 1**. Sie führt in 
 
 - 300 Wörter, 246 Schriftzeichen, 70 Grammatikpunkte und 49 Lektionen
 - Wortschatz, Zeichen und Grammatik zum Nachschlagen
-- Übungen mit Pinyin, Hörverständnis, Satzverständnis und aktiver Formulierung
+- Übungen mit Pinyin, Hörverständnis, Satzverständnis, aktiver Formulierung und Schreiben
 - Wiederholung mit FSRS-Lernplan und Fortschritt pro Wort
 - Einstellungen für Darstellung und Sprechtempo
 

@@ -44,3 +44,7 @@ Neue Inhalte werden ausschließlich als vollständige Lektion mit Wörtern, Gram
 ### Pinyin-Eingabezeichen
 
 Die ü-Tonzeichen ǖ, ǘ, ǚ, ǜ sind in der [Unicode-Zeichenliste Latin Extended-B](https://www.unicode.org/charts/nameslist/n_0180.html) unter U+01D6, U+01D8, U+01DA und U+01DC dokumentiert. Die Tastatur gruppiert gültige Vokalzeichen. Sie behauptet nicht, dass jede Kombination aus beliebiger Silbe und Ton ein Mandarin-Wort bildet. Unmarkierte Vokale bleiben für Neutralton und normale Eingabe verfügbar.
+
+### Strichfolgen
+
+Die offline mitgelieferten Strichdaten stammen aus [Hanzi Writer Data](https://github.com/chanind/hanzi-writer-data), abgeleitet von Make Me a Hanzi. Lizenz: `src/data/ARPHICPL.TXT`. `npm run generate:stroke-data` erzeugt nur Daten für Zeichen in den Lektionswörtern.

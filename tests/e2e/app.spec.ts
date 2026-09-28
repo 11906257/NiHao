@@ -9,8 +9,9 @@ const vocabulary = JSON.parse(readFileSync('src/data/vocabulary.json', 'utf8')) 
 const lessons = JSON.parse(readFileSync('src/data/lessons.json', 'utf8')) as Lesson[]
 const grammar = JSON.parse(readFileSync('src/data/grammar.json', 'utf8')) as Grammar[]
 const wordById = Object.fromEntries(vocabulary.map((w) => [w.id, w]))
-import { createProfile, reviewVocabulary } from '../../src/lib/scheduler'
+import { completeLesson, createProfile, reviewVocabulary } from '../../src/lib/scheduler'
 import { exportBackup } from '../../src/lib/backup'
+import { DATABASE_NAME } from '../../src/lib/storage'
 import { wordExercise, grammarExercise } from '../../src/lib/exercises'
 async function appReady(page: Page) {
   await page.goto('./')
@@ -25,9 +26,9 @@ async function savedSetting(page: Page, key: string, value: number) {
   await expect
     .poll(() =>
       page.evaluate(
-        (key) =>
+        ({ key, databaseName }) =>
           new Promise<unknown>((resolve, reject) => {
-            const request = indexedDB.open('hsk-level-one-learning')
+            const request = indexedDB.open(databaseName)
             request.onerror = () => reject(request.error)
             request.onsuccess = () => {
               const db = request.result
@@ -42,7 +43,7 @@ async function savedSetting(page: Page, key: string, value: number) {
               }
             }
           }),
-        key,
+        { key, databaseName: DATABASE_NAME },
       ),
     )
     .toBe(value)
@@ -110,8 +111,18 @@ test('mobile Lektionen, Abruf, Speicherung und Backup', async ({ page }) => {
     ...lesson.wordIds.map((id, i) =>
       wordExercise(wordById[id], i % 2 ? 'context' : 'production', vocabulary),
     ),
+    ...lesson.wordIds.map((id) => wordExercise(wordById[id], 'writing', vocabulary)),
   ]
   for (const e of exercises) {
+    if (e.kind === 'writing') {
+      await expect(page.getByText(wordById[e.vocabularyId!]!.pinyin, { exact: true })).toBeVisible()
+      await expect(page.locator('.writing-answer')).toHaveCount(0)
+      await expect(page.locator('.writing-card')).not.toContainText(e.answer)
+      await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
+      await expect(page.locator('.writing-answer')).toHaveText(e.answer)
+      await page.getByRole('button', { name: 'Gewusst', exact: true }).click()
+      continue
+    }
     await expect(page.getByRole('heading', { name: e.prompt, exact: true })).toBeVisible()
     if (e.kind === 'choice')
       await page
@@ -422,6 +433,7 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
     'Hörverständnis',
     'Im Satz verstehen',
     'Aktiv formulieren',
+    'Schreiben',
   ])
   await page.getByRole('button', { name: /Pinyin & Aussprache/ }).click()
   await page.setViewportSize({ width: 320, height: 740 })
@@ -441,11 +453,9 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   await expect(page.getByRole('heading', { name: 'Richtig erinnert.' })).toBeVisible()
   await noOverflow(page)
   const known = await page.getByRole('button', { name: 'Gewusst', exact: true }).boundingBox()
-  const hard = await page.getByRole('button', { name: 'Mit Mühe', exact: true }).boundingBox()
-  const easy = await page.getByRole('button', { name: 'Leicht', exact: true }).boundingBox()
-  expect(known!.x).toBeGreaterThan(hard!.x)
-  expect(known!.height).toBe(104)
-  expect(easy!.y).toBeGreaterThan(hard!.y)
+  const again = await page.getByRole('button', { name: 'Weiter üben', exact: true }).boundingBox()
+  expect(known!.x).toBeGreaterThan(again!.x)
+  expect(known!.y).toBe(again!.y)
   await page.screenshot({
     path: `work/screens/revised-ratings-${test.info().project.name}.png`,
     fullPage: true,
@@ -568,4 +578,120 @@ test('Fälligkeit aktualisiert sich ohne Navigation; mobile Bedienflächen bleib
   await page.setViewportSize({ width: 1280, height: 900 })
   expect((await page.getByRole('dialog').boundingBox())!.width).toBeLessThanOrEqual(430)
   await noOverflow(page)
+})
+
+test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', async ({
+  page,
+  context,
+  browserName,
+}) => {
+  await appReady(page)
+  await route(page, 'training')
+  await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
+  await expect(page.getByText('Schließe eine Lektion ab, um mit dem Schreiben zu beginnen.')).toBeVisible()
+  await expect(page.locator('.writing-canvas')).toHaveCount(0)
+  await page.getByRole('button', { name: 'Lerneinheit verlassen', exact: true }).click()
+
+  const profile = completeLesson(createProfile(), lessons[0]!.id)
+  await route(page, 'settings')
+  await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
+    name: 'completed-lesson.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(exportBackup(profile)),
+  })
+  await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
+  await route(page, 'training')
+  await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
+  const first = wordById[lessons[0]!.wordIds[0]!]!
+  await expect(page.getByText(first.pinyin, { exact: true })).toBeVisible()
+  await expect(page.getByText(first.meaning, { exact: true })).toBeVisible()
+  await expect(page.getByText(first.hanzi, { exact: true })).toHaveCount(0)
+  await page.setViewportSize({ width: 320, height: 740 })
+  await noOverflow(page)
+
+  const canvas = page.locator('.writing-canvas')
+  const box = (await canvas.boundingBox())!
+  await page.mouse.move(box.x + 40, box.y + 50)
+  await page.mouse.down()
+  await page.mouse.move(box.x + 100, box.y + 120, { steps: 8 })
+  await page.mouse.up()
+  const hasInk = () =>
+    canvas.evaluate((element) => {
+      const context = (element as HTMLCanvasElement).getContext('2d')!
+      return context
+        .getImageData(0, 0, context.canvas.width, context.canvas.height)
+        .data.some((value, index) => index % 4 === 3 && value > 0)
+    })
+  expect(await hasInk()).toBe(true)
+  await page.getByRole('button', { name: 'Zurücksetzen', exact: true }).click()
+  expect(await hasInk()).toBe(false)
+  await page.mouse.move(box.x + 40, box.y + 50)
+  await page.mouse.down()
+  await page.mouse.move(box.x + 100, box.y + 120, { steps: 8 })
+  await page.mouse.up()
+  await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
+  await expect(page.locator('.writing-answer')).toHaveText(first.hanzi)
+  await noOverflow(page)
+  expect(await hasInk()).toBe(true)
+
+  await page.evaluate(() => navigator.serviceWorker.ready)
+  await page.reload()
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller)
+  await expect(page.getByRole('heading', { name: 'Training', exact: true })).toBeVisible()
+  await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
+  await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
+  if (browserName === 'chromium') await context.setOffline(true)
+  await page.getByRole('button', { name: 'Strichreihenfolge anzeigen', exact: true }).click()
+  await expect(page.locator('.writing-strokes svg')).toBeVisible({ timeout: 10000 })
+  await page.getByRole('button', { name: 'Weiter üben', exact: true }).click()
+  await expect(page.getByText(first.pinyin, { exact: true })).not.toBeVisible()
+  await expect(page.locator('.writing-canvas')).toBeVisible()
+  expect(await hasInk()).toBe(false)
+  if (browserName === 'chromium') await context.setOffline(false)
+  for (let i = 0; i < lessons[0]!.wordIds.length; i++) {
+    await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
+    await page.getByRole('button', { name: 'Gewusst', exact: true }).click()
+  }
+  await expect(page.getByRole('heading', { name: 'Lerneinheit beendet' })).toBeVisible()
+  await page.getByRole('button', { name: 'Zur Übersicht', exact: true }).click()
+  await expect(page.getByRole('heading', { name: 'Training', exact: true })).toBeVisible()
+
+  const twoLessons = completeLesson(completeLesson(createProfile(), lessons[0]!.id), lessons[1]!.id)
+  await route(page, 'settings')
+  await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
+    name: 'two-lessons.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(exportBackup(twoLessons)),
+  })
+  await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
+  await route(page, 'training')
+  await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
+  for (let i = 0; i < 10; i++) {
+    await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
+    await page.getByRole('button', { name: 'Gewusst', exact: true }).click()
+  }
+  await expect(page.getByRole('heading', { name: 'Lerneinheit beendet' })).toBeVisible()
+
+  const old = new Date(Date.now() - 90 * 86400000)
+  let reviewProfile = completeLesson(createProfile(old), lessons[0]!.id, old)
+  for (const [i, skill] of (['meaning', 'pinyin', 'listening', 'context', 'production'] as const).entries()) {
+    reviewProfile = reviewVocabulary(
+      reviewProfile,
+      lessons[0]!.wordIds[0]!,
+      skill,
+      'good',
+      new Date(old.getTime() + i * 60000),
+    )
+  }
+  reviewProfile.cards[lessons[0]!.wordIds[0]!]!.fsrs.due = new Date(old.getTime() + 3600000).toISOString()
+  await route(page, 'settings')
+  await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
+    name: 'writing-review.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(exportBackup(reviewProfile)),
+  })
+  await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
+  await route(page, 'review')
+  await page.getByRole('button', { name: /Bis zu \d+ Wort wiederholen/ }).click()
+  await expect(page.locator('.writing-canvas')).toBeVisible()
 })

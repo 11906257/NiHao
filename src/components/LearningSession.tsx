@@ -4,7 +4,7 @@ import { wordById, vocabulary, grammarById } from '../data/curriculum'
 import type { Grammar } from '../data/types'
 import { grammarExercise, wordExercise, type Exercise } from '../lib/exercises'
 import type { ReviewRating } from '../lib/scheduler'
-import { AudioButton, ExampleTranslation, ProgressBar } from './ui'
+import { AnimatedHanzi, AudioButton, ExampleTranslation, ProgressBar } from './ui'
 import { ExerciseRunner } from './ExerciseRunner'
 import { stopAudio } from '../lib/audio'
 export function LearningSession({
@@ -37,6 +37,7 @@ export function LearningSession({
       ...ids.map((id) => wordExercise(wordById[id], 'meaning', vocabulary)),
       ...points.map(grammarExercise),
       ...ids.map((id, i) => wordExercise(wordById[id], i % 2 ? 'context' : 'production', vocabulary, 1)),
+      ...ids.map((id) => wordExercise(wordById[id], 'writing', vocabulary)),
     ],
     [ids, points],
   )
@@ -70,7 +71,7 @@ export function LearningSession({
         {word ? (
           <>
             <h1 lang="zh-CN" className="chinese intro-hanzi">
-              {word.hanzi}
+              <AnimatedHanzi text={word.hanzi} />
             </h1>
             <p className="intro-pinyin">{word.pinyin}</p>
             <h3>{word.meaning}</h3>

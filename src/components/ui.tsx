@@ -170,6 +170,65 @@ export function ExampleTranslation({ example }: { example: { zh: string; pinyin:
   )
 }
 
+export function AnimatedHanzi({ text }: { text: string }) {
+  const wrapper = useRef<HTMLSpanElement>(null)
+  const target = useRef<HTMLSpanElement>(null)
+  const [animated, setAnimated] = useState(false)
+
+  useEffect(() => {
+    const element = wrapper.current
+    const destination = target.current
+    if (!element || !destination) return
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let player: { play: () => Promise<void>; stop: () => void } | undefined
+    let generation = 0
+    let disposed = false
+    const stop = () => {
+      generation++
+      player?.stop()
+      player = undefined
+      if (!disposed) setAnimated(false)
+    }
+    const start = async () => {
+      if (document.hidden || reducedMotion.matches) return
+      const current = ++generation
+      try {
+        const { createLoopingStrokeOrder } = await import('../lib/stroke-order')
+        if (disposed || current !== generation) return
+        player = createLoopingStrokeOrder(destination, text, parseFloat(getComputedStyle(element).fontSize))
+        setAnimated(true)
+        void player.play().catch(() => {
+          if (current === generation) stop()
+        })
+      } catch {
+        if (current === generation) stop()
+      }
+    }
+    const refresh = () => {
+      stop()
+      void start()
+    }
+    void start()
+    document.addEventListener('visibilitychange', refresh)
+    reducedMotion.addEventListener('change', refresh)
+    return () => {
+      disposed = true
+      stop()
+      document.removeEventListener('visibilitychange', refresh)
+      reducedMotion.removeEventListener('change', refresh)
+    }
+  }, [text])
+
+  return (
+    <span className="animated-hanzi" ref={wrapper} role="img" aria-label={text} lang="zh-CN">
+      <span className={animated ? 'animated-hanzi-text is-hidden' : 'animated-hanzi-text'} aria-hidden="true">
+        {text}
+      </span>
+      <span className="animated-hanzi-ink" ref={target} aria-hidden="true" />
+    </span>
+  )
+}
+
 export function LookupDetail({
   title,
   hanzi,
@@ -197,7 +256,7 @@ export function LookupDetail({
       heading={
         <>
           <span className="chinese detail-hanzi" lang="zh-CN">
-            {hanzi}
+            <AnimatedHanzi text={hanzi} />
           </span>
           <span className="intro-pinyin">{pinyin}</span>
           {meaning && <h3>{meaning}</h3>}

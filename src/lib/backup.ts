@@ -1,7 +1,7 @@
 import { HISTORY_LIMIT, REVIEW_RATINGS, SKILLS, type Profile, type Skill } from './scheduler'
 import { AUDIO_RATES } from './audio'
 
-const BACKUP_SCHEMA_VERSION = 1
+const BACKUP_SCHEMA_VERSION = 2
 export const MAX_BACKUP_BYTES = 10 * 1024 * 1024
 type Dict = Record<string, unknown>
 
@@ -89,7 +89,7 @@ export function validateProfile(
     'completedLessons',
     'updatedAt',
   ])
-  if (profile.schemaVersion !== 1) fail('Diese Schema-Version wird nicht unterstützt.')
+  if (profile.schemaVersion !== 2) fail('Diese Schema-Version wird nicht unterstützt.')
   date(profile.updatedAt, 'Änderungsdatum')
   const known = validIds ? new Set(validIds) : undefined
   const knownLessons = validLessonIds ? new Set(validLessonIds) : undefined

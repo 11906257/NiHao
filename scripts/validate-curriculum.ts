@@ -1,8 +1,10 @@
 import topics from '../src/data/topics.json'
 import official from '../src/data/official.json'
+import strokeData from '../src/data/stroke-order.json'
 import assert from 'node:assert/strict'
 import { vocabulary, hanzi, grammar, lessons } from '../src/data/curriculum'
 import { grammarExercise, normalizePinyinBase, wordExercise } from '../src/lib/exercises'
+import { SKILLS } from '../src/lib/scheduler'
 const ids = new Set<string>()
 function unique(id: string) {
   assert(id && typeof id === 'string', 'Fehlende ID')
@@ -87,7 +89,7 @@ for (const w of vocabulary) {
     )
   }
   assert((w.examples ?? []).length <= 2, `${w.id}: höchstens zwei zusätzliche Beispiele anzeigen`)
-  for (const skill of ['meaning', 'production', 'pinyin', 'listening', 'context'] as const) {
+  for (const skill of SKILLS) {
     const e = wordExercise(w, skill, vocabulary)
     unique(e.id)
     assert(e.answer && e.explanation)
@@ -151,6 +153,19 @@ for (const [refs, items, name] of [
 ] as const) {
   for (const item of items) assert(refs.includes(item.id), `${name}: ${item.id} keiner Lektion zugeordnet`)
 }
+const writingCharacters = new Set(
+  lessons.flatMap((lesson) => lesson.wordIds.flatMap((id) => [...words.get(id)!.hanzi])),
+)
+assert.deepEqual(
+  Object.keys(strokeData).sort(),
+  [...writingCharacters].sort(),
+  'Strichfolgen decken nur Schreibwörter ab',
+)
+for (const [character, data] of Object.entries(strokeData))
+  assert(
+    data.strokes.length > 0 && data.medians.length === data.strokes.length,
+    `Fehlende Strichfolge: ${character}`,
+  )
 console.log(
   `Curriculum gültig: ${vocabulary.length} Wörter, ${wordsWithVariedExamples} mit zusätzlichen Beispielsätzen, ${hanzi.length} Hanzi, ${grammar.length} Grammatikpunkte, ${topics.length} Themen, ${lessons.length} Lektionen, ${ids.size} eindeutige IDs.`,
 )

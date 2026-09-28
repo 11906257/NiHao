@@ -1,9 +1,9 @@
 import { AUDIO_RATES, type AudioRate } from './audio'
 import { createEmptyCard, fsrs, Rating, type Card } from 'ts-fsrs'
 
-export const SKILLS = ['meaning', 'pinyin', 'listening', 'context', 'production'] as const
+export const SKILLS = ['meaning', 'pinyin', 'listening', 'context', 'production', 'writing'] as const
 export type Skill = (typeof SKILLS)[number]
-export const REVIEW_RATINGS = ['again', 'hard', 'good', 'easy'] as const
+export const REVIEW_RATINGS = ['again', 'hard', 'good'] as const
 export type ReviewRating = (typeof REVIEW_RATINGS)[number]
 export const HISTORY_LIMIT = 5000
 
@@ -33,7 +33,7 @@ interface ReviewEvent {
 }
 
 export interface Profile {
-  schemaVersion: 1
+  schemaVersion: 2
   cards: Record<string, LearningCard>
   settings: {
     theme: 'light' | 'dark' | 'system'
@@ -46,7 +46,7 @@ export interface Profile {
 }
 
 // FSRS owns the intervals, including short-term scheduling. Skill statistics
-// determine the next retrieval direction, not five independent due queues.
+// determine the next retrieval direction, not independent due queues.
 const scheduler = fsrs({
   request_retention: 0.9,
   enable_fuzz: false,
@@ -58,7 +58,6 @@ const grades = {
   again: Rating.Again,
   hard: Rating.Hard,
   good: Rating.Good,
-  easy: Rating.Easy,
 } as const
 
 function toISO(date: Date): string {
@@ -86,7 +85,7 @@ export function deserializeCard(card: SerializedCard): Card {
 
 export function createProfile(now = new Date()): Profile {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     cards: {},
     settings: { theme: 'system', audioRate: AUDIO_RATES.normal },
     history: [],

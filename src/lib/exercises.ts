@@ -6,10 +6,11 @@ export const SKILL_LABELS: Record<Skill, string> = {
   listening: 'Hörverständnis',
   context: 'Im Satz verstehen',
   production: 'Aktiv formulieren',
+  writing: 'Schreiben',
 }
 export interface Exercise {
   id: string
-  kind: 'text' | 'choice'
+  kind: 'text' | 'choice' | 'writing'
   skill: Skill
   prompt: string
   zh?: string
@@ -97,6 +98,8 @@ export function wordExercise(word: Vocabulary, skill: Skill, all: Vocabulary[], 
     explanation: `${word.hanzi} (${word.pinyin}) bedeutet „${word.meaning}“. ${word.note ?? ''}`,
     accepted: [...(word.accepted ?? []), ...word.meaning.split(/[;|,]/).map((x) => x.trim())],
   }
+  if (skill === 'writing')
+    return { ...base, kind: 'writing', prompt: 'Schreibe das chinesische Wort.', answer: word.hanzi }
   if (skill === 'production')
     return {
       ...base,

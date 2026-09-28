@@ -14,6 +14,7 @@ import {
   Search,
   HardDriveDownload,
   TextQuote,
+  PenLine,
   X,
 } from 'lucide-react'
 import { useRegisterSW } from 'virtual:pwa-register/react'
@@ -64,7 +65,8 @@ import { LearningSession } from './components/LearningSession'
 import { AUDIO_RATES, setAudioRate, stopAudio } from './lib/audio'
 type Session =
   | { kind: 'learn'; ids: string[]; grammarIds: string[]; title: string; lessonId: string }
-  | { kind: 'practice'; exercises: Exercise[]; title: string }
+  | { kind: 'practice'; exercises: Exercise[]; title: string; emptyTitle?: string }
+const TRAINING_BATCH_SIZE = 10
 function hashRoute() {
   return window.location.hash.replace(/^#\/?/, '').split('?')[0] || 'today'
 }
@@ -227,7 +229,7 @@ export default function App() {
       : recordPractice(current, e.practiceId ?? e.id, r !== 'again')
     commit(next)
   }
-  const startPractice = (exercises: Exercise[], title: string) => {
+  const startPractice = (exercises: Exercise[], title: string, emptyTitle?: string) => {
     if (exercises.some((e) => e.audio) && !audio.available) {
       notify(audio.message, 'warning')
       return
@@ -235,7 +237,7 @@ export default function App() {
     setSelectedWord(null)
     setSelectedHanzi(null)
     setSelectedGrammar(null)
-    setSession({ kind: 'practice', exercises, title })
+    setSession({ kind: 'practice', exercises, title, emptyTitle })
     window.scrollTo(0, 0)
   }
   const reviewSkills = SKILLS.filter((skill) => skill !== 'listening' || audio.available)
@@ -243,7 +245,10 @@ export default function App() {
     if (!profile) return
     startPractice(
       ids.map((id) => {
-        const skill = chooseSkill(profile.cards[id], reviewSkills)
+        const available = profile.completedLessons.includes(wordById[id].lessonId)
+          ? reviewSkills
+          : reviewSkills.filter((skill) => skill !== 'writing')
+        const skill = chooseSkill(profile.cards[id], available)
         const nextExample = (profile.cards[id]?.skills.context.attempts ?? 0) + 1
         return wordExercise(wordById[id], skill, vocabulary, skill === 'context' ? nextExample : 0)
       }),
@@ -403,6 +408,7 @@ export default function App() {
           title={session.title}
           onResult={result}
           onClose={closeSession}
+          emptyTitle={session.emptyTitle}
         />
       )
   else if (page === 'today')
@@ -693,6 +699,12 @@ export default function App() {
   } else if (page === 'training') {
     const baseWords = orderedWordIds.filter((id) => !!profile.cards[id]).map((id) => wordById[id])
     const pool = baseWords.length ? baseWords : lessons[0].wordIds.map((id) => wordById[id])
+    const writingIds = new Set(
+      lessons
+        .filter((lesson) => profile.completedLessons.includes(lesson.id))
+        .flatMap((lesson) => lesson.wordIds),
+    )
+    const writingWords = orderedWordIds.filter((id) => writingIds.has(id)).map((id) => wordById[id])
     content = (
       <>
         <PageHeading page="training" onBack={() => navigate('today')} />
@@ -704,13 +716,13 @@ export default function App() {
               disabled={skill === 'listening' && !audio.available}
               onClick={() =>
                 startPractice(
-                  [...pool]
+                  [...(skill === 'writing' ? writingWords : pool)]
                     .sort(
                       (a, b) =>
                         (profile.cards[a.id]?.skills[skill].attempts ?? 0) -
                         (profile.cards[b.id]?.skills[skill].attempts ?? 0),
                     )
-                    .slice(0, 10)
+                    .slice(0, TRAINING_BATCH_SIZE)
                     .map((w) =>
                       wordExercise(
                         w,
@@ -720,6 +732,9 @@ export default function App() {
                       ),
                     ),
                   SKILL_LABELS[skill],
+                  skill === 'writing'
+                    ? 'Schließe eine Lektion ab, um mit dem Schreiben zu beginnen.'
+                    : undefined,
                 )
               }
             >
@@ -729,6 +744,8 @@ export default function App() {
                 <TextQuote />
               ) : skill === 'production' ? (
                 <MessageCircle />
+              ) : skill === 'writing' ? (
+                <PenLine />
               ) : (
                 <AudioLines />
               )}

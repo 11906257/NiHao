@@ -20,17 +20,29 @@ import { closeStorage, DATABASE_NAME, loadProfile, restoreBackup, saveProfile } 
 const now = new Date('2026-09-12T10:00:00.000Z')
 const validIds = ['v001', 'v002', 'v003']
 
-function reviewed(rating: 'again' | 'hard' | 'good' | 'easy' = 'good'): Profile {
+function reviewed(rating: 'again' | 'hard' | 'good' = 'good'): Profile {
   return reviewVocabulary(createProfile(now), 'v001', 'meaning', rating, now)
 }
 
 describe('FSRS and retrieval selection', () => {
+  it('uses the same word card and review history for handwriting', () => {
+    const lesson = completeLesson(createProfile(now), 'l01', now)
+    const written = reviewVocabulary(lesson, 'v001', 'writing', 'again', now)
+    expect(written.cards.v001!.skills.writing).toMatchObject({ attempts: 1, correct: 0 })
+    expect(written.history[0]).toMatchObject({ vocabularyId: 'v001', skill: 'writing', rating: 'again' })
+    expect(chooseSkill(written.cards.v001)).toBe('writing')
+    const restored = parseBackup(exportBackup(written, now), validIds, ['l01'])
+    expect(restored).toEqual(written)
+    const next = reviewVocabulary(restored, 'v001', 'meaning', 'good', new Date(written.cards.v001!.fsrs.due))
+    expect(next.cards.v001!.fsrs.reps).toBe(2)
+  })
+
   it('schedules real FSRS outcomes with an earlier correction after a forgotten answer', () => {
     const again = reviewed('again').cards.v001!
-    const easy = reviewed('easy').cards.v001!
+    const good = reviewed('good').cards.v001!
     expect(Date.parse(again.fsrs.due)).toBeGreaterThan(now.getTime())
-    expect(Date.parse(again.fsrs.due)).toBeLessThan(Date.parse(easy.fsrs.due))
-    expect(easy.fsrs.stability).toBeGreaterThan(again.fsrs.stability)
+    expect(Date.parse(again.fsrs.due)).toBeLessThan(Date.parse(good.fsrs.due))
+    expect(good.fsrs.stability).toBeGreaterThan(again.fsrs.stability)
     expect(getDueCards(reviewed('again'), new Date(again.fsrs.due))).toHaveLength(1)
     expect(getDueCards(reviewed('again'), new Date(Date.parse(again.fsrs.due) - 1))).toHaveLength(0)
   })

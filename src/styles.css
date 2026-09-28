@@ -425,11 +425,6 @@ input::placeholder {
 }
 .lesson-start {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.lesson-start .button {
-  flex-shrink: 0;
 }
 .content-row {
   display: flex;
@@ -624,6 +619,24 @@ input::placeholder {
 .detail-hanzi {
   display: block;
   margin: 0 0 8px;
+}
+.animated-hanzi {
+  display: inline-block;
+  position: relative;
+}
+.animated-hanzi-text.is-hidden {
+  visibility: hidden;
+}
+.animated-hanzi-ink {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.animated-hanzi-ink > span {
+  flex: none;
 }
 .intro-pinyin {
   line-height: 1.8;
@@ -832,6 +845,81 @@ input::placeholder {
 .exercise-card form {
   text-align: left;
 }
+.writing-card {
+  display: grid;
+  gap: 16px;
+  text-align: left;
+}
+.writing-prompt {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.writing-prompt p {
+  color: var(--muted);
+}
+.writing-prompt .writing-pinyin {
+  color: var(--text);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.writing-work {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 8px;
+}
+.writing-work.revealed {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.writing-canvas,
+.writing-answer {
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-panel);
+  background: var(--surface-alt);
+}
+.writing-canvas {
+  display: block;
+  touch-action: none;
+}
+.writing-answer {
+  display: grid;
+  place-items: center;
+  overflow-wrap: anywhere;
+  text-align: center;
+  padding: 8px;
+}
+.writing-answer .chinese {
+  font-family: var(--font-calligraphy);
+  font-size: clamp(32px, 10cqi, 48px);
+  line-height: 1.3;
+}
+.writing-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.writing-actions .button {
+  flex: 1;
+}
+.writing-stroke-button {
+  justify-self: center;
+}
+.writing-strokes {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.writing-strokes.is-hidden {
+  display: none;
+}
+.writing-strokes svg {
+  max-width: min(100%, 240px);
+  max-height: 240px;
+}
 .exercise-actions {
   margin-top: 24px;
   display: flex;
@@ -993,8 +1081,7 @@ input::placeholder {
   font-size: var(--text-xs);
 }
 .lesson-start {
-  gap: 16px;
-  padding: 24px;
+  margin-bottom: var(--space-6);
 }
 .lesson-start .button {
   width: 100%;
@@ -1276,7 +1363,10 @@ input::placeholder {
   min-width: 0;
 }
 .lesson-heading {
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+.lesson-start + .section-heading {
+  margin-top: 0;
 }
 .lesson-heading p {
   color: var(--muted);
@@ -1392,35 +1482,6 @@ input::placeholder {
 .pinyin-row .pinyin-vowel {
   font-weight: 600;
   color: var(--muted);
-}
-.rating-buttons.rating-choice {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 8px;
-  max-width: 380px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.rating-alternatives {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-}
-.rating-choice .button {
-  min-width: 0;
-  width: 100%;
-  min-height: 48px;
-  padding: 0 var(--space-4);
-}
-.rating-alternatives .button {
-  flex: 1;
-}
-.rating-choice .rating-known {
-  min-height: 48px;
-  height: 100%;
-  align-self: stretch;
-  flex-direction: row;
-  font-size: var(--text-sm);
 }
 @container app (max-width: 360px) {
   .pinyin-row {
