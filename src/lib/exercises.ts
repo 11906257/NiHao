@@ -1,5 +1,12 @@
 import type { Vocabulary, Grammar } from '../data/types'
 import type { Skill } from './scheduler'
+export const SKILL_LABELS: Record<Skill, string> = {
+  meaning: 'Bedeutung abrufen',
+  pinyin: 'Pinyin & Aussprache',
+  listening: 'Hörverständnis',
+  context: 'Im Satz verstehen',
+  production: 'Aktiv formulieren',
+}
 export interface Exercise {
   id: string
   kind: 'text' | 'choice'
@@ -48,8 +55,8 @@ export function normalizePinyin(text: string): string {
 }
 export function normalizePinyinBase(text: string): string {
   return normalizePinyin(text)
-    .replace(/ü/g, '\uE000')
     .normalize('NFD')
+    .replace(/u\u0308/g, '\uE000')
     .replace(/\p{M}/gu, '')
     .replace(/\uE000/g, 'ü')
     .replace(/[^a-zü]/g, '')

@@ -454,7 +454,7 @@ test('Pinyin-Tasten, automatische Prüfung, Bewertung und direktes Verlassen', a
   await page.getByRole('button', { name: 'Lerneinheit verlassen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Training', exact: true })).toBeVisible()
   await route(page, 'words')
-  await expect(page.locator('.word-known')).toHaveCount(0)
+  await expect(page.locator('.status-check[aria-label="Bekannt"]')).toHaveCount(0)
   await route(page, 'learn/l01')
   await page.getByRole('button', { name: 'Lektion starten', exact: true }).click()
   for (let i = 0; i < lessons[0].wordIds.length + grammar.filter((g) => g.lessonId === 'l01').length; i++)
@@ -497,9 +497,17 @@ test('Bekannt-Filter, Zeichen-Detail und Hero-Höhe', async ({ page }) => {
   await appReady(page)
   for (const width of [320, 390, 1280]) {
     await page.setViewportSize({ width, height: 900 })
-    const info = await page.locator('.focus-body').boundingBox()
-    const action = await page.locator('.focus-footer .button').boundingBox()
-    expect(Math.abs(info!.height - action!.height)).toBeLessThan(1)
+    await page.evaluate(() => document.fonts.ready)
+    await expect
+      .poll(() =>
+        page.evaluate(() =>
+          Math.abs(
+            document.querySelector('.focus-body')!.getBoundingClientRect().height -
+              document.querySelector('.focus-footer .button')!.getBoundingClientRect().height,
+          ),
+        ),
+      )
+      .toBeLessThan(1)
     await noOverflow(page)
   }
   for (const card of await page.locator('.progress-card').all()) {
@@ -524,4 +532,40 @@ test('Bekannt-Filter, Zeichen-Detail und Hero-Höhe', async ({ page }) => {
   await page.locator('.hanzi-tile').first().click()
   await expect(page.locator('.lookup-heading h3')).toHaveCount(0)
   await expect(page.getByText('In diesen Wörtern', { exact: true })).toBeVisible()
+})
+
+test('Fälligkeit aktualisiert sich ohne Navigation; mobile Bedienflächen bleiben konsistent', async ({
+  page,
+}) => {
+  const now = new Date()
+  await page.clock.install({ time: now })
+  await appReady(page)
+  await route(page, 'settings')
+  for (const button of await page.locator('.toggle-group button').all()) {
+    const box = (await button.boundingBox())!
+    expect(box.height).toBeGreaterThanOrEqual(44)
+    expect(box.width).toBeGreaterThanOrEqual(44)
+  }
+  const profile = reviewVocabulary(createProfile(now), 'v001', 'meaning', 'again', now)
+  profile.cards.v001!.fsrs.due = new Date(now.getTime() + 120000).toISOString()
+  await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
+    name: 'due.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(exportBackup(profile, now)),
+  })
+  await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
+  await expect(page.getByRole('dialog')).toHaveCount(0)
+  await route(page, 'today')
+  await expect(page.locator('.focus-body')).not.toContainText('fällig')
+  await page.clock.fastForward(180000)
+  await expect(page.locator('.focus-body')).toContainText('fällig')
+  expect((await page.locator('.focus-footer .button').boundingBox())!.height).toBeGreaterThanOrEqual(48)
+  await route(page, 'words')
+  const search = page.locator('.search-field input')
+  await search.fill('你好')
+  expect((await page.locator('.search-field .icon-button').boundingBox())!.height).toBeGreaterThanOrEqual(44)
+  await page.locator('.word-card').first().click()
+  await page.setViewportSize({ width: 1280, height: 900 })
+  expect((await page.getByRole('dialog').boundingBox())!.width).toBeLessThanOrEqual(430)
+  await noOverflow(page)
 })

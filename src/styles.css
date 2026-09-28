@@ -10,13 +10,13 @@
   --primary: var(--brand-plum);
   --accent: var(--brand-butter-yellow);
   --on-accent: #000000;
+  --on-primary: #ffffff;
   --bg: #faf9f6;
   --surface: #ffffff;
   --text: #000000;
   --muted: #6b7280;
   --surface-alt: color-mix(in srgb, var(--text) 5%, var(--surface));
   --border: color-mix(in srgb, var(--text) 10%, var(--surface));
-  --on-primary: #ffffff;
   --shadow-color: #0000001a;
   --shadow: 0 4px 24px var(--shadow-color);
   --shadow-raised: 0 12px 40px var(--shadow-color);
@@ -57,7 +57,6 @@
   --surface: #0d111a;
   --text: #ffffff;
   --muted: #cbd5e1;
-  --on-primary: #ffffff;
   --shadow: none;
   --press-filter: brightness(1.1);
 }
@@ -67,7 +66,6 @@
     --surface: #0d111a;
     --text: #ffffff;
     --muted: #cbd5e1;
-    --on-primary: #ffffff;
     --shadow: none;
     --press-filter: brightness(1.1);
   }
@@ -203,7 +201,6 @@ small,
 .disclosure-chevron-overlay {
   position: absolute;
   top: 50%;
-  right: 24px;
   transform: translateY(-50%);
 }
 button.card {
@@ -263,9 +260,6 @@ main {
   margin: 0 auto;
   flex: 1;
 }
-.page-heading {
-  margin-bottom: 24px;
-}
 .today-grid {
   display: grid;
   gap: var(--space-4);
@@ -274,7 +268,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: var(--space-4);
   align-items: center;
   margin: 24px 0 var(--space-4);
 }
@@ -298,22 +291,18 @@ main {
 }
 .word-preview {
   display: flex;
-  gap: var(--space-2);
   flex-wrap: wrap;
 }
 .word-preview > span {
   color: var(--muted);
   border: 1px solid var(--border);
-  padding: 8px 8px;
   border-radius: var(--radius-control);
   background: var(--bg);
 }
 .note {
   background: var(--surface-alt);
   border-radius: var(--radius-control);
-  padding: var(--space-4) 16px;
   line-height: 1.7;
-  font-size: var(--text-sm);
   color: var(--muted);
   margin: var(--space-6) 0;
 }
@@ -332,7 +321,6 @@ main {
   transition: width 0.25s;
 }
 .progress-label {
-  font-size: var(--text-xs);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -386,15 +374,12 @@ input::placeholder {
 .word-card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
 }
 .word-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--space-2);
-  padding: 24px 24px;
-  min-height: 150px;
 }
 .word-card > div {
   display: flex;
@@ -404,17 +389,10 @@ input::placeholder {
   gap: 8px;
 }
 .word-card .chinese {
-  font-size: var(--text-4xl);
   line-height: 1.5;
 }
 .word-card strong {
-  font-size: var(--text-sm);
   font-weight: 500;
-  margin-top: 8px;
-  line-height: 1.5;
-}
-.word-card .pinyin {
-  font-size: var(--text-sm);
 }
 .lesson-list,
 .stack {
@@ -425,20 +403,15 @@ input::placeholder {
 .lesson-row {
   width: 100%;
   display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 24px var(--space-6);
 }
 .lesson-row h3 {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
   flex-wrap: wrap;
   overflow-wrap: anywhere;
   margin-bottom: 8px;
 }
 .lesson-row p {
-  font-size: var(--text-base);
   color: var(--muted);
   margin-bottom: var(--space-2);
 }
@@ -446,20 +419,12 @@ input::placeholder {
   margin-left: auto;
   align-self: center;
 }
-.lesson-row .small {
-  font-size: var(--text-xs);
-}
-.completed {
-  background: var(--primary);
-  color: var(--on-primary);
-}
 .lesson-number.completed {
   background: var(--surface-alt);
   color: var(--muted);
 }
 .lesson-start {
   display: flex;
-  gap: var(--space-6);
   align-items: flex-start;
   flex-direction: column;
 }
@@ -470,8 +435,6 @@ input::placeholder {
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 16px;
-  padding: var(--space-6) 24px;
 }
 .content-row > svg:first-child {
   color: var(--primary);
@@ -483,11 +446,9 @@ input::placeholder {
   flex: 1;
 }
 .content-row strong {
-  font-size: var(--text-base);
   line-height: 1.5;
 }
 .content-row .muted {
-  font-size: var(--text-sm);
   line-height: 1.55;
 }
 .content-row > .disclosure-chevron {
@@ -499,8 +460,6 @@ input::placeholder {
 }
 .review-start {
   display: flex;
-  gap: 24px;
-  align-items: center;
 }
 .review-start-content {
   display: flex;
@@ -521,11 +480,9 @@ input::placeholder {
   padding: 0;
 }
 .review-count {
-  font-size: var(--text-8xl);
   line-height: 1;
   letter-spacing: -0.07em;
   color: var(--primary);
-  padding: 24px;
 }
 .empty {
   border: 1px dashed var(--border);
@@ -543,8 +500,6 @@ input::placeholder {
 }
 .hanzi-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-4);
 }
 .hanzi-tile {
   position: relative;
@@ -555,14 +510,11 @@ input::placeholder {
   background: var(--surface);
   border: 1px solid var(--border);
   box-shadow: var(--shadow);
-  min-height: 120px;
 }
 .hanzi-tile .chinese {
-  font-size: var(--text-5xl);
   margin-bottom: var(--space-2);
 }
 .hanzi-tile .pinyin {
-  font-size: var(--text-xs);
   text-align: center;
   overflow-wrap: anywhere;
 }
@@ -574,14 +526,11 @@ input::placeholder {
 .grammar-card {
   display: flex;
   flex-direction: column;
-  gap: var(--space-2);
-  padding: var(--space-6);
 }
 .grammar-card h3 {
   margin: 0;
 }
 .grammar-card p:not(.pattern) {
-  font-size: var(--text-base);
   color: var(--muted);
   margin-bottom: var(--space-2);
 }
@@ -601,17 +550,12 @@ input::placeholder {
 }
 .training-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-6);
 }
 .training-card {
   position: relative;
 }
 .training-card > svg:first-child {
   color: var(--primary);
-  height: 28px;
-  width: 28px;
-  margin-bottom: 24px;
 }
 .settings-stack {
   display: flex;
@@ -621,13 +565,11 @@ input::placeholder {
 }
 .settings-section p {
   color: var(--muted);
-  font-size: var(--text-base);
 }
 .setting-row {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-4);
   padding: 0 0 var(--space-4);
 }
 .setting-row:last-child {
@@ -638,9 +580,6 @@ input::placeholder {
   flex-direction: column;
   gap: 8px;
   max-width: 500px;
-}
-.setting-row strong {
-  font-size: var(--text-base);
 }
 .file-button {
   position: relative;
@@ -659,9 +598,7 @@ input::placeholder {
   position: fixed;
   inset: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom)
     env(safe-area-inset-left);
-  max-height: calc(100dvh - 48px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-  width: min(560px, calc(100% - 36px));
-  max-width: 760px;
+  max-width: calc(var(--app-max-width) - 32px);
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
@@ -677,7 +614,6 @@ input::placeholder {
   align-items: center;
   gap: var(--space-4);
   justify-content: space-between;
-  margin: -9px -7px 16px 0;
 }
 .modal-top h3 {
   margin: 0;
@@ -686,12 +622,10 @@ input::placeholder {
   font-size: var(--text-base);
 }
 .detail-hanzi {
-  font-size: var(--text-8xl);
   display: block;
   margin: 0 0 8px;
 }
 .intro-pinyin {
-  font-size: var(--text-xl);
   line-height: 1.8;
   color: var(--primary);
   display: block;
@@ -774,7 +708,6 @@ input::placeholder {
   color: var(--surface);
   border-radius: var(--radius-panel);
   box-shadow: var(--shadow-raised);
-  font-size: var(--text-sm);
   line-height: 1.6;
 }
 .toast-success {
@@ -855,8 +788,6 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   color: var(--muted);
-  font-size: var(--text-sm);
-  margin-bottom: 16px;
   margin-right: calc(-1 * var(--space-4));
 }
 .study-top + .progress-block {
@@ -888,19 +819,12 @@ input::placeholder {
   margin: 16px 0;
 }
 .exercise-prompt {
-  font-size: var(--text-xl);
   letter-spacing: -0.02em;
-  line-height: 1.6;
   margin: var(--space-4) 0 var(--space-6);
   font-weight: 500;
 }
 .exercise-zh {
-  font-size: var(--text-8xl);
   line-height: 1.5;
-  margin: var(--space-6) 0 24px;
-}
-.exercise-zh.sentence {
-  font-size: var(--text-3xl);
 }
 .exercise-card input {
   width: 100%;
@@ -915,28 +839,20 @@ input::placeholder {
   align-items: center;
   gap: 8px;
 }
-.exercise-actions .button {
-  min-width: 240px;
-}
 .choices {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   text-align: left;
 }
 .choice {
   display: flex;
   align-items: center;
-  gap: 16px;
   width: 100%;
   min-height: 58px;
   border: 1px solid var(--border);
   background: var(--surface);
-  padding: 16px var(--space-4);
   border-radius: var(--radius-control);
   text-align: left;
-  font-size: var(--text-base);
-  line-height: 1.6;
 }
 .choice.selected {
   background: var(--surface-alt);
@@ -951,11 +867,8 @@ input::placeholder {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 27px;
-  height: 28px;
   border: 1px solid var(--border);
   border-radius: var(--radius-control);
-  font-size: var(--text-xs);
   color: var(--muted);
   background: var(--surface);
   flex-shrink: 0;
@@ -973,8 +886,6 @@ input::placeholder {
   background: var(--surface-alt);
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
-  padding: var(--space-6);
-  margin-top: 24px;
   text-align: left;
 }
 .feedback.learning {
@@ -982,24 +893,17 @@ input::placeholder {
 }
 .feedback-solution {
   white-space: pre-line;
-  line-height: 1.85;
-  font-size: var(--text-base);
 }
 .feedback .small {
   color: var(--muted);
 }
 .rating-buttons {
   display: flex;
-  gap: 8px;
   flex-wrap: wrap;
   margin-top: 16px;
 }
-.rating-buttons .button {
-  font-size: var(--text-sm);
-}
 .session-done {
   max-width: 570px;
-  margin: 55px auto;
   text-align: center;
 }
 .session-done h1 {
@@ -1021,278 +925,275 @@ input::placeholder {
 .session-done .button {
   margin-top: 16px;
 }
-@container app (max-width: 700px) {
-  .page-heading {
-    margin-bottom: 24px;
-  }
-  .section-heading {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    gap: 8px;
-  }
-  .word-preview {
-    gap: 8px;
-  }
-  .word-preview > span {
-    padding: 8px 8px;
-  }
-  .filter-bar {
-    flex-wrap: wrap;
-    margin-top: 24px;
-  }
-  .filter-bar .search-field {
-    flex-basis: 100%;
-  }
-  .filter-bar > .toggle-group {
-    width: 100%;
-  }
-  .filter-bar > .toggle-group button {
-    flex: 1;
-    font-size: var(--text-sm);
-  }
-  .word-card-grid {
-    gap: 8px;
-  }
-  .word-card {
-    padding: 16px;
-    min-height: 141px;
-  }
-  .word-card .chinese {
-    font-size: var(--text-3xl);
-  }
-  .word-card strong {
-    font-size: var(--text-sm);
-    line-height: 1.6;
-    margin-top: 8px;
-  }
-  .word-card .pinyin {
-    font-size: var(--text-xs);
-  }
-  .lesson-row {
-    padding: 16px 16px;
-    gap: var(--space-4);
-    align-items: flex-start;
-  }
-  .lesson-row .lesson-number {
-    height: 40px;
-    width: 40px;
-    font-size: var(--text-sm);
-    border-radius: var(--radius-control);
-  }
-  .lesson-row h3 {
-    gap: var(--space-2);
-  }
-  .lesson-row p {
-    font-size: var(--text-base);
-    line-height: 1.65;
-  }
-  .lesson-row .small {
-    font-size: var(--text-xs);
-  }
-  .lesson-start {
-    gap: 16px;
-    padding: 24px;
-  }
-  .lesson-start .button {
-    width: 100%;
-  }
-  .content-row {
-    gap: var(--space-4);
-    padding: 16px 16px;
-  }
-  .content-row strong {
-    font-size: var(--text-sm);
-  }
-  .content-row .muted {
-    font-size: var(--text-xs);
-  }
-  .content-row > svg:first-child {
-    width: 19px;
-  }
-  .content-row .list-hanzi {
-    font-size: var(--text-2xl);
-    min-width: 55px;
-  }
-  .content-row > span.small {
-    font-size: var(--text-xs);
-    text-align: right;
-    max-width: 85px;
-  }
-  .review-start {
-    gap: 16px;
-    align-items: center;
-  }
-  .review-count {
-    font-size: var(--text-7xl);
-    padding: 8px 0;
-  }
-  .note {
-    font-size: var(--text-sm);
-    padding: 16px;
-    margin-top: 16px;
-  }
-  .hanzi-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 8px;
-  }
-  .hanzi-tile {
-    min-height: 103px;
-  }
-  .hanzi-tile .chinese {
-    font-size: var(--text-4xl);
-  }
-  .hanzi-tile .pinyin {
-    font-size: var(--text-xs);
-  }
-  .grammar-card {
-    padding: 24px;
-    gap: 8px;
-  }
-  .grammar-card p:not(.pattern) {
-    font-size: var(--text-base);
-  }
-  .training-grid {
-    gap: 16px;
-  }
-  .training-card {
-    padding: 16px;
-    min-width: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .training-card > svg:first-child {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 16px;
-  }
-  .training-card h3 {
-    overflow-wrap: anywhere;
-  }
-  .disclosure-chevron-overlay {
-    right: 16px;
-  }
-  .settings-section {
-    padding: 24px;
-  }
-  .settings-section p {
-    font-size: var(--text-base);
-  }
-  .setting-row {
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .setting-row > span {
-    width: 100%;
-  }
-  .setting-row strong {
-    font-size: var(--text-sm);
-  }
-  .settings-section .actions {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .settings-section .actions .audio-wrap,
-  .settings-section .actions .audio-wrap > .button {
-    display: block;
-    width: 100%;
-  }
-  .modal {
-    width: calc(100% - 26px - env(safe-area-inset-left) - env(safe-area-inset-right));
-    max-height: calc(100dvh - 35px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
-  }
-  .modal-top {
-    margin: -6px -7px 16px 0;
-  }
-  .detail-hanzi {
-    font-size: var(--text-7xl);
-  }
-  .toast {
-    font-size: var(--text-sm);
-  }
-  .session-main {
-    padding: 16px 16px 24px;
-  }
-  .study-top {
-    font-size: var(--text-sm);
-    margin-bottom: var(--space-4);
-  }
-  .intro-hanzi {
-    margin-top: var(--space-6);
-  }
-  .intro-pinyin {
-    font-size: var(--text-lg);
-  }
-  .listen-area .button {
-    font-size: var(--text-sm);
-    padding: 0 var(--space-4);
-    gap: 8px;
-  }
-  .exercise-prompt {
-    font-size: var(--text-lg);
-    line-height: 1.55;
-  }
-  .exercise-zh {
-    font-size: var(--text-7xl);
-    margin: 24px 0;
-  }
-  .exercise-zh.sentence {
-    font-size: var(--text-2xl);
-  }
-  .choices {
-    gap: 8px;
-  }
-  .choice {
-    padding: var(--space-4);
-    gap: 8px;
-    font-size: var(--text-sm);
-    line-height: 1.6;
-  }
-  .choice-letter {
-    min-width: 24px;
-    height: 26px;
-    font-size: var(--text-xs);
-  }
-  .exercise-actions .button {
-    width: 100%;
-    min-width: 0;
-    font-size: var(--text-sm);
-  }
-  .exercise-actions .text-button {
-    font-size: var(--text-xs);
-  }
-  .feedback {
-    padding: var(--space-6) var(--space-4);
-    margin-top: 24px;
-  }
-  .feedback-solution {
-    font-size: var(--text-base);
-    line-height: 1.85;
-  }
-  .feedback .small {
-    font-size: var(--text-xs);
-  }
-  .rating-buttons {
-    gap: var(--space-2);
-  }
-  .rating-buttons .button {
-    font-size: var(--text-sm);
-    padding: 0 var(--space-4);
-    flex: 1;
-    min-width: 90px;
-  }
-  .session-done {
-    margin: 40px auto;
-  }
-  .session-done p {
-    font-size: var(--text-base);
-  }
-  .progress-label {
-    font-size: var(--text-xs);
-  }
-  .training-card:disabled {
-    opacity: 0.66;
-  }
+.page-heading {
+  margin-bottom: 24px;
+}
+.section-heading {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  gap: 8px;
+}
+.word-preview {
+  gap: 8px;
+}
+.word-preview > span {
+  padding: 8px 8px;
+}
+.filter-bar {
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.filter-bar .search-field {
+  flex-basis: 100%;
+}
+.filter-bar > .toggle-group {
+  width: 100%;
+}
+.filter-bar > .toggle-group button {
+  flex: 1;
+  font-size: var(--text-sm);
+}
+.word-card-grid {
+  gap: 8px;
+}
+.word-card {
+  padding: 16px;
+  min-height: 141px;
+}
+.word-card .chinese {
+  font-size: var(--text-3xl);
+}
+.word-card strong {
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.word-card .pinyin {
+  font-size: var(--text-xs);
+}
+.lesson-row {
+  padding: 16px 16px;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+.lesson-row .lesson-number {
+  height: 40px;
+  width: 40px;
+  font-size: var(--text-sm);
+  border-radius: var(--radius-control);
+}
+.lesson-row h3 {
+  gap: var(--space-2);
+}
+.lesson-row p {
+  font-size: var(--text-base);
+  line-height: 1.65;
+}
+.lesson-row .small {
+  font-size: var(--text-xs);
+}
+.lesson-start {
+  gap: 16px;
+  padding: 24px;
+}
+.lesson-start .button {
+  width: 100%;
+}
+.content-row {
+  gap: var(--space-4);
+  padding: 16px 16px;
+}
+.content-row strong {
+  font-size: var(--text-sm);
+}
+.content-row .muted {
+  font-size: var(--text-xs);
+}
+.content-row > svg:first-child {
+  width: 19px;
+}
+.content-row .list-hanzi {
+  font-size: var(--text-2xl);
+  min-width: 55px;
+}
+.content-row > span.small {
+  font-size: var(--text-xs);
+  text-align: right;
+  max-width: 85px;
+}
+.review-start {
+  gap: 16px;
+  align-items: center;
+}
+.review-count {
+  font-size: var(--text-7xl);
+  padding: 8px 0;
+}
+.note {
+  font-size: var(--text-sm);
+  padding: 16px;
+  margin-top: 16px;
+}
+.hanzi-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.hanzi-tile {
+  min-height: 103px;
+}
+.hanzi-tile .chinese {
+  font-size: var(--text-4xl);
+}
+.hanzi-tile .pinyin {
+  font-size: var(--text-xs);
+}
+.grammar-card {
+  padding: 24px;
+  gap: 8px;
+}
+.grammar-card p:not(.pattern) {
+  font-size: var(--text-base);
+}
+.training-grid {
+  gap: 16px;
+}
+.training-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.training-card > svg:first-child {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 16px;
+}
+.training-card h3 {
+  overflow-wrap: anywhere;
+}
+.disclosure-chevron-overlay {
+  right: 16px;
+}
+.settings-section {
+  padding: 24px;
+}
+.settings-section p {
+  font-size: var(--text-base);
+}
+.setting-row {
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.setting-row > span {
+  width: 100%;
+}
+.setting-row strong {
+  font-size: var(--text-sm);
+}
+.settings-section .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.settings-section .actions .audio-wrap,
+.settings-section .actions .audio-wrap > .button {
+  display: block;
+  width: 100%;
+}
+.modal {
+  width: calc(100% - 26px - env(safe-area-inset-left) - env(safe-area-inset-right));
+  max-height: calc(100dvh - 35px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+}
+.modal-top {
+  margin: -6px -7px 16px 0;
+}
+.detail-hanzi {
+  font-size: var(--text-7xl);
+}
+.toast {
+  font-size: var(--text-sm);
+}
+.session-main {
+  padding: 16px 16px 24px;
+}
+.study-top {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+.intro-hanzi {
+  margin-top: var(--space-6);
+}
+.intro-pinyin {
+  font-size: var(--text-lg);
+}
+.listen-area .button {
+  font-size: var(--text-sm);
+  padding: 0 var(--space-4);
+  gap: 8px;
+}
+.exercise-prompt {
+  font-size: var(--text-lg);
+  line-height: 1.55;
+}
+.exercise-zh {
+  font-size: var(--text-7xl);
+  margin: 24px 0;
+}
+.exercise-zh.sentence {
+  font-size: var(--text-2xl);
+}
+.choices {
+  gap: 8px;
+}
+.choice {
+  padding: var(--space-4);
+  gap: 8px;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+.choice-letter {
+  min-width: 24px;
+  height: 26px;
+  font-size: var(--text-xs);
+}
+.exercise-actions .button {
+  width: 100%;
+  min-width: 0;
+  font-size: var(--text-sm);
+}
+.exercise-actions .text-button {
+  font-size: var(--text-xs);
+}
+.feedback {
+  padding: var(--space-6) var(--space-4);
+  margin-top: 24px;
+}
+.feedback-solution {
+  font-size: var(--text-base);
+  line-height: 1.85;
+}
+.feedback .small {
+  font-size: var(--text-xs);
+}
+.rating-buttons {
+  gap: var(--space-2);
+}
+.rating-buttons .button {
+  font-size: var(--text-sm);
+  padding: 0 var(--space-4);
+  flex: 1;
+  min-width: 90px;
+}
+.session-done {
+  margin: 40px auto;
+}
+.session-done p {
+  font-size: var(--text-base);
+}
+.progress-label {
+  font-size: var(--text-xs);
+}
+.training-card:disabled {
+  opacity: 0.66;
 }
 @container app (max-width: 360px) {
   .word-card {
@@ -1350,16 +1251,15 @@ input::placeholder {
   flex-wrap: nowrap;
   gap: 0;
   flex-shrink: 0;
-  height: 48px;
-  min-height: 48px;
+  height: 52px;
+  min-height: 52px;
   padding: 3px;
   border: 1px solid var(--border);
   border-radius: var(--radius-input);
   background: var(--surface);
 }
 .toggle-group button {
-  min-height: 40px;
-  min-width: 48px;
+  min-height: 44px;
   padding: 0 var(--space-2);
   border-radius: var(--radius-control);
   color: var(--text);
@@ -1368,14 +1268,12 @@ input::placeholder {
   background: var(--primary);
   color: var(--on-primary);
 }
-@container app (max-width: 700px) {
-  .toggle-group {
-    width: 100%;
-  }
-  .toggle-group button {
-    flex: 1;
-    min-width: 0;
-  }
+.toggle-group {
+  width: 100%;
+}
+.toggle-group button {
+  flex: 1;
+  min-width: 0;
 }
 .lesson-heading {
   margin-bottom: var(--space-6);
@@ -1405,9 +1303,6 @@ input::placeholder {
   text-align: left;
   background: var(--surface);
 }
-.translation-box > section {
-  padding: var(--space-4) var(--space-6);
-}
 .translation-german {
   background: var(--surface-alt);
   border-top: 1px solid var(--border);
@@ -1427,9 +1322,6 @@ input::placeholder {
   margin: 0;
   line-height: 1.7;
 }
-.translation-box .chinese {
-  font-size: var(--text-xl);
-}
 .translation-box .pinyin {
   margin-top: var(--space-2);
   font-size: var(--text-sm);
@@ -1441,13 +1333,11 @@ input::placeholder {
 .translation-german .translation-heading {
   min-height: 24px;
 }
-@container app (max-width: 700px) {
-  .translation-box > section {
-    padding: 16px var(--space-4);
-  }
-  .translation-box .chinese {
-    font-size: var(--text-xl);
-  }
+.translation-box > section {
+  padding: 16px var(--space-4);
+}
+.translation-box .chinese {
+  font-size: var(--text-xl);
 }
 
 /* Shared navigation cards and the recommended next lesson. */
@@ -1458,7 +1348,6 @@ input::placeholder {
   padding: 0;
   background: none;
   border-radius: 0;
-  color: var(--primary);
   flex: 0 0 18px;
 }
 .pinyin-keyboard {
@@ -1535,14 +1424,11 @@ input::placeholder {
 }
 @container app (max-width: 360px) {
   .pinyin-row {
-    gap: 8px;
-  }
-  .pinyin-row button {
-    min-width: 0;
+    gap: 4px;
   }
   .pinyin-keyboard {
-    margin-left: -7px;
-    margin-right: -7px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
 
@@ -1559,7 +1445,6 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
 }
 .lookup-actions > .button,
 .lookup-actions > .audio-wrap {
@@ -1593,7 +1478,6 @@ input::placeholder {
 .lookup-related {
   border: 1px solid var(--border);
   border-radius: var(--radius-panel);
-  padding: var(--space-4) var(--space-6);
 }
 .lookup-related > .eyebrow {
   font-size: var(--text-xs);
@@ -1610,26 +1494,23 @@ input::placeholder {
 .lookup-content .word-skills {
   padding: 0;
 }
-@container app (max-width: 700px) {
-  .lookup-detail,
-  .lookup-content {
-    gap: 16px;
-  }
-  .lookup-related {
-    padding: 16px var(--space-4);
-  }
-  .lookup-actions {
-    gap: var(--space-2);
-  }
-  .lookup-actions .button {
-    font-size: var(--text-sm);
-  }
+.lookup-detail,
+.lookup-content {
+  gap: 16px;
+}
+.lookup-related {
+  padding: 16px var(--space-4);
+}
+.lookup-actions {
+  gap: var(--space-2);
+}
+.lookup-actions .button {
+  font-size: var(--text-sm);
 }
 
 .path-summary {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
   margin-bottom: var(--space-6);
 }
 .path-summary > svg {
@@ -1644,19 +1525,15 @@ input::placeholder {
 }
 .path-summary .progress-block {
   margin-left: auto;
-  width: 30%;
-  max-width: 250px;
 }
-@container app (max-width: 700px) {
-  .path-summary {
-    flex-wrap: wrap;
-    gap: var(--space-4);
-  }
-  .path-summary .progress-block {
-    width: 100%;
-    max-width: none;
-    flex-basis: 100%;
-  }
+.path-summary {
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.path-summary .progress-block {
+  width: 100%;
+  max-width: none;
+  flex-basis: 100%;
 }
 
 /* The app-wide design contract. Component layout rules above do not override this scale. */
@@ -1729,10 +1606,11 @@ select {
   padding: 0;
 }
 .search-field .icon-button {
-  width: 32px;
-  min-width: 32px;
-  height: 40px;
-  min-height: 40px;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  min-height: 44px;
+  margin-right: -12px;
 }
 .filter-bar {
   gap: var(--space-2);
@@ -1791,13 +1669,11 @@ select {
   font-size: var(--text-10xl);
   line-height: 1.4;
 }
-@container app (max-width: 700px) {
-  .lookup-actions {
-    flex-wrap: wrap;
-  }
-  .lookup-actions .button {
-    padding: 0 var(--space-2);
-  }
+.lookup-actions {
+  flex-wrap: wrap;
+}
+.lookup-actions .button {
+  padding: 0 var(--space-2);
 }
 
 body {
@@ -1813,13 +1689,12 @@ label,
   font-size: var(--text-sm);
 }
 
-@container app (max-width: 700px) {
-  .training-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-  .training-card {
-    padding: var(--space-6);
-  }
+.training-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.training-card {
+  padding: var(--space-6);
 }
 
 /* Compact home navigation and shared full-width subpages. */
@@ -1834,7 +1709,6 @@ label,
 .main-layout {
   width: 100%;
   margin: 0 auto;
-  padding: 40px 24px;
 }
 .main-layout main {
   max-width: none;
@@ -1844,7 +1718,6 @@ label,
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 40px;
 }
 .home-brand > h1 {
   font-family: var(--font-calligraphy);
@@ -1866,6 +1739,9 @@ label,
 }
 :root svg.lucide {
   color: inherit;
+}
+:root svg.status-check.lucide {
+  color: var(--primary);
 }
 :root .page-back svg.lucide {
   color: var(--primary);
@@ -1956,7 +1832,6 @@ label,
 }
 .home-tile {
   display: flex;
-  align-items: center;
   gap: 16px;
   font-size: var(--text-sm);
   font-weight: 600;
@@ -1967,41 +1842,37 @@ label,
   flex-shrink: 0;
   color: var(--on-accent);
 }
-@container app (max-width: 600px) {
-  .main-layout {
-    padding: 24px 16px;
-  }
-  .home-brand {
-    margin-bottom: 24px;
-  }
-  .subpage-heading,
-  .page-heading.simple-heading {
-    gap: 8px;
-  }
-  .page-heading.simple-heading h1 {
-    font-size: clamp(24px, 6vw, 32px);
-  }
-  .progress-card,
-  .home-tile {
-    padding: 16px;
-    gap: 8px;
-  }
-  .progress-card > span {
-    font-size: var(--text-sm);
-    overflow-wrap: anywhere;
-  }
-  .home-tile {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.main-layout {
+  padding: 24px 16px;
+}
+.home-brand {
+  margin-bottom: 24px;
+}
+.subpage-heading,
+.page-heading.simple-heading {
+  gap: 8px;
+}
+.page-heading.simple-heading h1 {
+  font-size: clamp(24px, 6cqi, 32px);
+}
+.progress-card,
+.home-tile {
+  padding: 16px;
+  gap: 8px;
+}
+.progress-card > span {
+  font-size: var(--text-sm);
+  overflow-wrap: anywhere;
+}
+.home-tile {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .today-focus {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 16px 24px;
-  padding: 24px;
+  align-items: stretch;
   border-radius: var(--radius-panel);
   background: var(--primary);
   color: var(--bg);
@@ -2023,6 +1894,11 @@ label,
   display: grid;
   gap: 8px;
 }
+.focus-body {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
 .focus-footer {
   display: grid;
   align-self: stretch;
@@ -2035,20 +1911,18 @@ label,
   background: var(--accent);
   border-color: transparent;
 }
-@container app (max-width: 600px) {
-  .today-focus {
-    gap: 16px;
-    padding: 24px 16px;
-  }
-  .focus-body h3 {
-    font-size: var(--text-lg);
-  }
+.today-focus {
+  gap: 16px;
+  padding: 24px 16px;
+}
+.focus-body h3 {
+  font-size: var(--text-lg);
 }
 
 .focus-footer .button {
   width: 64px;
-  height: auto;
-  min-height: 0;
+  height: 100%;
+  min-height: 48px;
   padding: 0;
   justify-content: center;
 }
@@ -2090,7 +1964,8 @@ label,
   gap: 8px;
   margin: 16px 0 24px;
 }
-.grammar-card {
+.grammar-card,
+.training-card {
   position: relative;
   padding-right: 56px;
 }

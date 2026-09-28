@@ -6,6 +6,7 @@ import { grammarExercise, wordExercise, type Exercise } from '../lib/exercises'
 import type { ReviewRating } from '../lib/scheduler'
 import { AudioButton, ExampleTranslation, ProgressBar } from './ui'
 import { ExerciseRunner } from './ExerciseRunner'
+import { stopAudio } from '../lib/audio'
 export function LearningSession({
   ids,
   grammarIds,
@@ -23,6 +24,7 @@ export function LearningSession({
 }) {
   const [step, setStep] = useState(0)
   useEffect(() => {
+    stopAudio()
     window.scrollTo(0, 0)
   }, [step])
   const points = useMemo(

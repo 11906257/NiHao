@@ -98,12 +98,12 @@ describe('FSRS and retrieval selection', () => {
 })
 
 describe('complete backup boundary', () => {
-  it('preserves settings, lessons, grammar/task practice', () => {
-    let profile = completeLesson(reviewed(), 'lesson-01', now)
+  it('preserves settings, lessons, grammar practice', () => {
+    let profile = completeLesson(reviewed(), 'l01', now)
     profile = recordPractice(profile, 'g001', true, now)
-    profile = recordPractice(profile, 't001', false, now)
+    profile = recordPractice(profile, 'g002', false, now)
     profile.settings = { theme: 'dark', audioRate: 0.9 }
-    const restored = parseBackup(exportBackup(profile, now), validIds, ['lesson-01'])
+    const restored = parseBackup(exportBackup(profile, now), validIds, ['l01'], ['g001', 'g002'])
     expect(restored).toEqual(profile)
     expect(restored.cards.v001!.fsrs.reps).toBe(1)
   })
@@ -184,7 +184,7 @@ describe('complete backup boundary', () => {
   ])('rejects %s without treating malformed data as a partial restore', (_name, mutate) => {
     const backup = JSON.parse(exportBackup(reviewed(), now))
     mutate(backup.profile)
-    expect(() => parseBackup(JSON.stringify(backup), validIds, ['lesson-01'])).toThrow(/ungültig/)
+    expect(() => parseBackup(JSON.stringify(backup), validIds, ['l01'])).toThrow(/ungültig/)
   })
 
   it('rejects oversized, foreign and prototype-bearing JSON', () => {

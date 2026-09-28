@@ -50,10 +50,7 @@ export const vocabulary: Vocabulary[] = sourceVocabulary.map((word) => {
   }
   return examples.length ? { ...word, examples } : word
 })
-export const lessons: Lesson[] = (lessonsData as Lesson[]).map((lesson) => ({
-  ...lesson,
-  grammarIds: grammar.filter((g) => g.lessonId === lesson.id).map((g) => g.id),
-}))
+export const lessons = lessonsData as Lesson[]
 export const wordById = Object.fromEntries(vocabulary.map((w) => [w.id, w]))
 export const lessonById = Object.fromEntries(lessons.map((lesson) => [lesson.id, lesson]))
 export const grammarById = Object.fromEntries(grammar.map((g) => [g.id, g]))

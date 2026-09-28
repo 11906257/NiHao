@@ -1,5 +1,11 @@
 import { describe, it, expect } from 'vitest'
-import { normalizePinyin, checkAnswer, wordExercise, grammarExercise } from '../src/lib/exercises'
+import {
+  normalizePinyin,
+  normalizePinyinBase,
+  checkAnswer,
+  wordExercise,
+  grammarExercise,
+} from '../src/lib/exercises'
 import { vocabulary, grammar } from '../src/data/curriculum'
 describe('Aktives Erinnern', () => {
   it('akzeptiert Tonziffern, aber nicht falsche Töne', () => {
@@ -74,4 +80,13 @@ it('prüft deutsche Bedeutungen mit begrenzten Schreibvarianten statt Selbstkorr
 it('ordnet Grammatik stabil nach den Lektionen', () => {
   const numbers = grammar.map((g) => Number(g.lessonId.slice(1)))
   expect(numbers).toEqual([...numbers].sort((a, b) => a - b))
+})
+
+it('erhält ü beim tonunabhängigen Vergleich von Beispielsätzen', () => {
+  for (const vowel of [...'üǖǘǚǜ']) {
+    expect(normalizePinyinBase(`l${vowel}`)).toBe('lü')
+    expect(normalizePinyinBase(`l${vowel}`.normalize('NFD'))).toBe('lü')
+  }
+  expect(normalizePinyinBase('lù')).toBe('lu')
+  expect(normalizePinyinBase('nǐ hǎo')).toBe('nihao')
 })

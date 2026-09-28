@@ -1,7 +1,7 @@
 import { flushSync } from 'react-dom'
 import { useEffect, useRef, useState } from 'react'
 import { ArrowRight, Lightbulb, Feather, Mountain, CircleCheck, X } from 'lucide-react'
-import { PINYIN_VOWELS, checkAnswer, type Exercise } from '../lib/exercises'
+import { PINYIN_VOWELS, SKILL_LABELS, checkAnswer, type Exercise } from '../lib/exercises'
 import type { ReviewRating } from '../lib/scheduler'
 import { AudioButton, ProgressBar } from './ui'
 import { stopAudio } from '../lib/audio'
@@ -34,6 +34,7 @@ export function ExerciseRunner({
   const e = queue[index]
   useEffect(() => () => stopAudio(), [])
   useEffect(() => {
+    stopAudio()
     window.scrollTo(0, 0)
     setAnswer('')
     setChecked(false)
@@ -98,17 +99,7 @@ export function ExerciseRunner({
       </div>
       <ProgressBar value={index + 1} max={queue.length} label="Aufgabe" />
       <div className="exercise-card" key={`${index}-${e.id}`}>
-        <span className="eyebrow">
-          {e.skill === 'listening'
-            ? 'Hörverständnis'
-            : e.skill === 'production'
-              ? 'Aktiv formulieren'
-              : e.skill === 'pinyin'
-                ? 'Pinyin & Aussprache'
-                : e.skill === 'context'
-                  ? 'Im Satz verstehen'
-                  : 'Bedeutung abrufen'}
-        </span>
+        <span className="eyebrow">{SKILL_LABELS[e.skill]}</span>
         <h1 className="exercise-prompt">{e.prompt}</h1>
         {e.zh && (
           <p className={`chinese exercise-zh ${e.zh.length > 12 ? 'sentence' : ''}`} lang="zh-CN">
@@ -186,7 +177,7 @@ export function ExerciseRunner({
                   <div className="pinyin-tone-rows" role="group" aria-label={`Töne für ${selectedVowel}`}>
                     {(selectedVowel === 'u' ? ['u', 'ü'] : [selectedVowel]).map((base) => (
                       <div className="pinyin-row" key={base}>
-                        {base === (selectedVowel === 'u' ? 'u' : selectedVowel) && (
+                        {base === selectedVowel && (
                           <button
                             type="button"
                             className="icon-button close-button"
@@ -265,7 +256,7 @@ export function ExerciseRunner({
                 </>
               ) : (
                 <>
-                  <button className="button secondary" onClick={() => finish('good')}>
+                  <button className="button secondary" onClick={() => finish(hint ? 'hard' : 'good')}>
                     Gewusst
                   </button>
                   <button className="button primary" onClick={() => finish('again')}>

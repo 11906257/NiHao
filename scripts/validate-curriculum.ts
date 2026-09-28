@@ -127,6 +127,7 @@ for (const l of lessons) {
   fields(l, ['title', 'description'])
   assert(l.wordIds.length > 0)
   for (const id of l.wordIds) assert.equal(words.get(id)?.lessonId, l.id)
+  for (const id of l.grammarIds) assert.equal(grammar.find((g) => g.id === id)?.lessonId, l.id)
   for (const [refs, items] of [
     [l.grammarIds, grammar],
     [l.topicIds, topics],

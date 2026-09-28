@@ -33,6 +33,7 @@ import {
 import type { Vocabulary, Hanzi, Grammar } from './data/types'
 import {
   chooseSkill,
+  SKILLS,
   isKnownWord,
   completeLesson,
   getReviewPlan,
@@ -44,7 +45,7 @@ import {
 } from './lib/scheduler'
 import { loadProfile, restoreBackup, saveProfile } from './lib/storage'
 import { downloadBackup, MAX_BACKUP_BYTES, parseBackup } from './lib/backup'
-import { wordExercise, type Exercise } from './lib/exercises'
+import { SKILL_LABELS, wordExercise, type Exercise } from './lib/exercises'
 import {
   AudioButton,
   ExampleTranslation,
@@ -61,13 +62,6 @@ import { PageHeading, HomeTiles, ProgressCard } from './components/Navigation'
 import { WordCard, LessonCard } from './components/CurriculumCards'
 import { LearningSession } from './components/LearningSession'
 import { AUDIO_RATES, setAudioRate, stopAudio } from './lib/audio'
-const skillLabels: Record<Skill, string> = {
-  meaning: 'Bedeutung abrufen',
-  production: 'Aktiv formulieren',
-  pinyin: 'Pinyin & Aussprache',
-  listening: 'Hörverständnis',
-  context: 'Im Satz verstehen',
-}
 type Session =
   | { kind: 'learn'; ids: string[]; grammarIds: string[]; title: string; lessonId: string }
   | { kind: 'practice'; exercises: Exercise[]; title: string }
@@ -87,6 +81,7 @@ export default function App() {
     [loadError, setLoadError] = useState(''),
     [saveError, setSaveError] = useState(''),
     [saving, setSaving] = useState(false),
+    [now, setNow] = useState(() => new Date()),
     [route, setRoute] = useState(hashRoute),
     [session, setSession] = useState<Session | null>(null),
     [search, setSearch] = useState(''),
@@ -137,6 +132,17 @@ export default function App() {
       document.removeEventListener('visibilitychange', check)
     }
   }, [swRegistration])
+  useEffect(() => {
+    const refresh = () => {
+      if (document.visibilityState === 'visible') setNow(new Date())
+    }
+    const timer = window.setInterval(refresh, 60000)
+    document.addEventListener('visibilitychange', refresh)
+    return () => {
+      window.clearInterval(timer)
+      document.removeEventListener('visibilitychange', refresh)
+    }
+  }, [])
   const load = useCallback(async () => {
     setLoadError('')
     try {
@@ -232,9 +238,7 @@ export default function App() {
     setSession({ kind: 'practice', exercises, title })
     window.scrollTo(0, 0)
   }
-  const reviewSkills: Skill[] = audio.available
-    ? ['meaning', 'pinyin', 'listening', 'context', 'production']
-    : ['meaning', 'pinyin', 'context', 'production']
+  const reviewSkills = SKILLS.filter((skill) => skill !== 'listening' || audio.available)
   const beginReview = (ids: string[]) => {
     if (!profile) return
     startPractice(
@@ -350,7 +354,7 @@ export default function App() {
       </div>
     )
   const page = route.split('/')[0]
-  const plan = getReviewPlan(profile)
+  const plan = getReviewPlan(profile, now)
   const learned = Object.keys(profile.cards).length
   const nextLesson = lessons.find((l) => !profile.completedLessons.includes(l.id)) ?? lessons[0]
   const doneSession = () => {
@@ -693,7 +697,7 @@ export default function App() {
       <>
         <PageHeading page="training" onBack={() => navigate('today')} />
         <div className="training-grid">
-          {(['pinyin', 'listening', 'context', 'production'] as Skill[]).map((skill) => (
+          {SKILLS.filter((skill) => skill !== 'meaning').map((skill) => (
             <button
               className="card training-card"
               key={skill}
@@ -715,7 +719,7 @@ export default function App() {
                         skill === 'context' ? (profile.cards[w.id]?.skills.context.attempts ?? 0) + 1 : 0,
                       ),
                     ),
-                  skillLabels[skill],
+                  SKILL_LABELS[skill],
                 )
               }
             >
@@ -728,7 +732,7 @@ export default function App() {
               ) : (
                 <AudioLines />
               )}
-              <h3>{skillLabels[skill]}</h3>
+              <h3>{SKILL_LABELS[skill]}</h3>
 
               <ChevronRight
                 className="disclosure-chevron disclosure-chevron-overlay"
@@ -859,7 +863,7 @@ export default function App() {
             <div className="word-skills">
               {Object.entries(profile.cards[selectedWord.id].skills).map(([skill, s]) => (
                 <span key={skill}>
-                  {skillLabels[skill as Skill]}
+                  {SKILL_LABELS[skill as Skill]}
                   <strong>{s.attempts ? `${s.correct}/${s.attempts}` : 'noch offen'}</strong>
                 </span>
               ))}
