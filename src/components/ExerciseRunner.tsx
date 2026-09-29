@@ -13,14 +13,12 @@ export function ExerciseRunner({
   onResult,
   onComplete,
   onClose,
-  emptyTitle,
 }: {
   exercises: Exercise[]
   title: string
   onResult: (e: Exercise, r: ReviewRating) => void
   onComplete?: () => void
   onClose: () => void
-  emptyTitle?: string
 }) {
   const [queue, setQueue] = useState(exercises),
     [index, setIndex] = useState(0),
@@ -87,7 +85,7 @@ export function ExerciseRunner({
             <X />
           </button>
         </div>
-        <Empty title={emptyTitle ?? 'Keine Aufgaben verfügbar.'} />
+        <Empty title="Keine Aufgaben verfügbar." />
       </div>
     )
   if (!e || done)

@@ -588,8 +588,22 @@ test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', a
   await appReady(page)
   await route(page, 'training')
   await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
-  await expect(page.getByText('Schließe eine Lektion ab, um mit dem Schreiben zu beginnen.')).toBeVisible()
-  await expect(page.locator('.writing-canvas')).toHaveCount(0)
+  await expect(page.locator('.writing-canvas')).toBeVisible()
+  await expect(page.getByText(wordById[lessons[0]!.wordIds[0]!]!.pinyin, { exact: true })).toBeVisible()
+  await page.getByRole('button', { name: 'Lerneinheit verlassen', exact: true }).click()
+
+  const startedWord = wordById[lessons[1]!.wordIds[0]!]!
+  const startedProfile = reviewVocabulary(createProfile(), startedWord.id, 'meaning', 'good')
+  await route(page, 'settings')
+  await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
+    name: 'started-lesson.json',
+    mimeType: 'application/json',
+    buffer: Buffer.from(exportBackup(startedProfile)),
+  })
+  await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
+  await route(page, 'training')
+  await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
+  await expect(page.getByText(startedWord.pinyin, { exact: true })).toBeVisible()
   await page.getByRole('button', { name: 'Lerneinheit verlassen', exact: true }).click()
 
   const profile = completeLesson(createProfile(), lessons[0]!.id)
@@ -656,7 +670,20 @@ test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', a
   await page.getByRole('button', { name: 'Zur Übersicht', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Training', exact: true })).toBeVisible()
 
-  const twoLessons = completeLesson(completeLesson(createProfile(), lessons[0]!.id), lessons[1]!.id)
+  const startedAt = new Date(Date.now() - 86400000)
+  let twoLessons = completeLesson(
+    completeLesson(createProfile(startedAt), lessons[0]!.id, startedAt),
+    lessons[1]!.id,
+    startedAt,
+  )
+  for (const [i, id] of [...lessons[0]!.wordIds, ...lessons[1]!.wordIds].slice(0, 10).entries())
+    twoLessons = reviewVocabulary(
+      twoLessons,
+      id,
+      'meaning',
+      'good',
+      new Date(startedAt.getTime() + i * 60000),
+    )
   await route(page, 'settings')
   await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
     name: 'two-lessons.json',

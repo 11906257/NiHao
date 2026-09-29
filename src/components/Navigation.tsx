@@ -39,24 +39,17 @@ export function PageHeading({ page, onBack }: { page: string; onBack: () => void
 
 export function HomeTiles({ onNavigate }: { onNavigate: (page: string) => void }) {
   return (
-    <section className="home-links">
-      <h2>Lernen &amp; Nachschlagen</h2>
-      <div className="home-tile-grid">
-        {(['words', 'hanzi', 'grammar', 'training', 'review', 'settings'] as const).map((id) => {
-          const entry = pages[id]
-          return (
-            <button
-              key={id}
-              className={`card home-tile ${id === 'settings' ? 'settings-tile' : ''}`}
-              onClick={() => onNavigate(id)}
-            >
-              <entry.icon size={28} />
-              <span>{entry.label}</span>
-            </button>
-          )
-        })}
-      </div>
-    </section>
+    <div className="home-tile-grid">
+      {(['words', 'hanzi', 'grammar', 'training', 'review', 'settings'] as const).map((id) => {
+        const entry = pages[id]
+        return (
+          <button key={id} className="card home-tile" onClick={() => onNavigate(id)}>
+            <entry.icon size={28} />
+            <span>{entry.label}</span>
+          </button>
+        )
+      })}
+    </div>
   )
 }
 

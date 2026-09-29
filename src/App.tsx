@@ -65,7 +65,7 @@ import { LearningSession } from './components/LearningSession'
 import { AUDIO_RATES, setAudioRate, stopAudio } from './lib/audio'
 type Session =
   | { kind: 'learn'; ids: string[]; grammarIds: string[]; title: string; lessonId: string }
-  | { kind: 'practice'; exercises: Exercise[]; title: string; emptyTitle?: string }
+  | { kind: 'practice'; exercises: Exercise[]; title: string }
 const TRAINING_BATCH_SIZE = 10
 function hashRoute() {
   return window.location.hash.replace(/^#\/?/, '').split('?')[0] || 'today'
@@ -229,7 +229,7 @@ export default function App() {
       : recordPractice(current, e.practiceId ?? e.id, r !== 'again')
     commit(next)
   }
-  const startPractice = (exercises: Exercise[], title: string, emptyTitle?: string) => {
+  const startPractice = (exercises: Exercise[], title: string) => {
     if (exercises.some((e) => e.audio) && !audio.available) {
       notify(audio.message, 'warning')
       return
@@ -237,7 +237,7 @@ export default function App() {
     setSelectedWord(null)
     setSelectedHanzi(null)
     setSelectedGrammar(null)
-    setSession({ kind: 'practice', exercises, title, emptyTitle })
+    setSession({ kind: 'practice', exercises, title })
     window.scrollTo(0, 0)
   }
   const reviewSkills = SKILLS.filter((skill) => skill !== 'listening' || audio.available)
@@ -245,10 +245,7 @@ export default function App() {
     if (!profile) return
     startPractice(
       ids.map((id) => {
-        const available = profile.completedLessons.includes(wordById[id].lessonId)
-          ? reviewSkills
-          : reviewSkills.filter((skill) => skill !== 'writing')
-        const skill = chooseSkill(profile.cards[id], available)
+        const skill = chooseSkill(profile.cards[id], reviewSkills)
         const nextExample = (profile.cards[id]?.skills.context.attempts ?? 0) + 1
         return wordExercise(wordById[id], skill, vocabulary, skill === 'context' ? nextExample : 0)
       }),
@@ -408,7 +405,6 @@ export default function App() {
           title={session.title}
           onResult={result}
           onClose={closeSession}
-          emptyTitle={session.emptyTitle}
         />
       )
   else if (page === 'today')
@@ -562,17 +558,17 @@ export default function App() {
         <PageHeading page="review" onBack={() => navigate('today')} />
         {due.length ? (
           <div className="card review-start">
-            <div className="review-count">{due.length}</div>
-            <div className="review-start-content">
+            <div className="review-start-copy">
+              <div className="review-count">{due.length}</div>
               <h3>Fällige Wörter</h3>
-              <button
-                className="button primary focus-footer"
-                aria-label={`Bis zu ${Math.min(due.length, 20)} ${due.length === 1 ? 'Wort' : 'Wörter'} wiederholen`}
-                onClick={() => beginReview(plan.dueIds.slice(0, 20))}
-              >
-                <ArrowRight size={24} />
-              </button>
             </div>
+            <button
+              className="button primary"
+              aria-label={`Bis zu ${Math.min(due.length, 20)} ${due.length === 1 ? 'Wort' : 'Wörter'} wiederholen`}
+              onClick={() => beginReview(plan.dueIds.slice(0, 20))}
+            >
+              <ArrowRight size={24} />
+            </button>
           </div>
         ) : (
           <Empty title={learned ? 'Keine Wörter fällig.' : 'Keine Wörter gelernt.'} />
@@ -699,12 +695,6 @@ export default function App() {
   } else if (page === 'training') {
     const baseWords = orderedWordIds.filter((id) => !!profile.cards[id]).map((id) => wordById[id])
     const pool = baseWords.length ? baseWords : lessons[0].wordIds.map((id) => wordById[id])
-    const writingIds = new Set(
-      lessons
-        .filter((lesson) => profile.completedLessons.includes(lesson.id))
-        .flatMap((lesson) => lesson.wordIds),
-    )
-    const writingWords = orderedWordIds.filter((id) => writingIds.has(id)).map((id) => wordById[id])
     content = (
       <>
         <PageHeading page="training" onBack={() => navigate('today')} />
@@ -716,7 +706,7 @@ export default function App() {
               disabled={skill === 'listening' && !audio.available}
               onClick={() =>
                 startPractice(
-                  [...(skill === 'writing' ? writingWords : pool)]
+                  [...pool]
                     .sort(
                       (a, b) =>
                         (profile.cards[a.id]?.skills[skill].attempts ?? 0) -
@@ -732,9 +722,6 @@ export default function App() {
                       ),
                     ),
                   SKILL_LABELS[skill],
-                  skill === 'writing'
-                    ? 'Schließe eine Lektion ab, um mit dem Schreiben zu beginnen.'
-                    : undefined,
                 )
               }
             >

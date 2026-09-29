@@ -11,14 +11,12 @@
     "grammarRows": 70,
     "topicTopLevel": 5,
     "topicSecondLevel": 15,
-    "topicLeaves": 30,
-    "taskAreas": 15
+    "topicLeaves": 30
   },
   "countMethod": {
     "vocabulary": "Offizielle laufende Eintragsnummern 1–300. Mehrstufige Wortartenannotation bleibt erhalten.",
     "recognitionHanzi": "Offizielle Erkennungszeichen 1–246.",
-    "grammarRows": "Eigene Zählung der sichtbar getrennten Tabellenzeilen: 27 + 31 + 12. Keine im PDF behauptete offizielle Gesamtzahl und nicht 70 getrennte Einzelwörter.",
-    "taskCompetences": "Eigene Zählung der 59 Aufzählungspunkte innerhalb 15 offizieller Aufgabenbereiche."
+    "grammarRows": "Eigene Zählung der sichtbar getrennten Tabellenzeilen: 27 + 31 + 12. Keine im PDF behauptete offizielle Gesamtzahl und nicht 70 getrennte Einzelwörter."
   },
   "sources": [
     {
@@ -6282,98 +6280,6 @@
       "sourceLabel": "文化与传统 > 饮食文化 > 传统饮品",
       "printedPage": 57,
       "pdfPage": 60
-    }
-  ],
-  "taskAreas": [
-    {
-      "id": "ta01",
-      "sourceLabel": "一、问答个人基本信息",
-      "title": "Persönliche Angaben",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta02",
-      "sourceLabel": "二、问答事件信息",
-      "title": "Ereignisinformationen",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta03",
-      "sourceLabel": "三、问答物品信息",
-      "title": "Gegenstände",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta04",
-      "sourceLabel": "四、问答天气",
-      "title": "Wetter",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta05",
-      "sourceLabel": "五、问答环境信息",
-      "title": "Orte und Umgebung",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta06",
-      "sourceLabel": "六、日常言语交往",
-      "title": "Höfliche Alltagsgespräche",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta07",
-      "sourceLabel": "七、问答饮食喜好",
-      "title": "Essen und Vorlieben",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta08",
-      "sourceLabel": "八、问答出行信息",
-      "title": "Unterwegs",
-      "competenceCount": 5
-    },
-    {
-      "id": "ta09",
-      "sourceLabel": "九、问答商品信息",
-      "title": "Einkaufen",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta10",
-      "sourceLabel": "十、告知生病、探病",
-      "title": "Krankheit und Besuch",
-      "competenceCount": 3
-    },
-    {
-      "id": "ta11",
-      "sourceLabel": "十一、交流休闲活动",
-      "title": "Freizeitaktivitäten",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta12",
-      "sourceLabel": "十二、介绍学习情况",
-      "title": "Lernen und Unterricht",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta13",
-      "sourceLabel": "十三、交流学校情况、课后活动",
-      "title": "Schule und Freizeit danach",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta14",
-      "sourceLabel": "十四、交流工作信息",
-      "title": "Arbeit",
-      "competenceCount": 4
-    },
-    {
-      "id": "ta15",
-      "sourceLabel": "十五、问答中国传统饮食",
-      "title": "Chinesische Esskultur",
-      "competenceCount": 3
     }
   ],
   "writing": {

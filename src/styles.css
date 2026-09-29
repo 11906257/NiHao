@@ -41,7 +41,6 @@
   --text-3xl: 1.75rem;
   --text-4xl: 2rem;
   --text-5xl: 2.5rem;
-  --text-7xl: 3.5rem;
   --text-8xl: 4rem;
   --text-10xl: 5rem;
   --radius-control: 10px;
@@ -272,8 +271,13 @@ main {
   margin: 24px 0 var(--space-4);
 }
 .section-heading h2,
-.section-heading h3 {
+.section-heading h3,
+.settings-section > h2 {
   margin: 0;
+  font-size: var(--heading-3);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
 }
 .lesson-number {
   height: 57px;
@@ -454,24 +458,21 @@ input::placeholder {
   min-width: 80px;
 }
 .review-start {
-  display: flex;
-}
-.review-start-content {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  justify-content: space-between;
-  flex: 1;
-  min-width: 0;
   gap: 16px;
 }
-.review-start-content h3 {
+.review-start-copy {
+  min-width: 0;
+}
+.review-start-copy h3 {
   margin: 0;
 }
-.review-start-content > .button {
-  width: 64px;
-  height: 64px;
-  min-height: 64px;
-  flex: 0 0 64px;
+.review-start > .button {
+  width: 80px;
+  height: 80px;
+  min-height: 80px;
   padding: 0;
 }
 .review-count {
@@ -1108,13 +1109,8 @@ input::placeholder {
   text-align: right;
   max-width: 85px;
 }
-.review-start {
-  gap: 16px;
-  align-items: center;
-}
 .review-count {
-  font-size: var(--text-7xl);
-  padding: 8px 0;
+  font-size: var(--text-10xl);
 }
 .note {
   font-size: var(--text-sm);
@@ -1194,7 +1190,7 @@ input::placeholder {
   margin: -6px -7px 16px 0;
 }
 .detail-hanzi {
-  font-size: var(--text-7xl);
+  font-size: var(--text-10xl);
 }
 .toast {
   font-size: var(--text-sm);
@@ -1222,7 +1218,7 @@ input::placeholder {
   line-height: 1.55;
 }
 .exercise-zh {
-  font-size: var(--text-7xl);
+  font-size: var(--text-10xl);
   margin: 24px 0;
 }
 .exercise-zh.sentence {
@@ -1283,23 +1279,8 @@ input::placeholder {
   opacity: 0.66;
 }
 @container app (max-width: 360px) {
-  .word-card {
-    padding: 16px;
-  }
   .word-card strong {
     font-size: var(--text-xs);
-  }
-  .word-card .chinese {
-    font-size: var(--text-3xl);
-  }
-  .training-grid {
-    grid-template-columns: 1fr;
-  }
-  .hanzi-grid {
-    gap: 8px;
-  }
-  .hanzi-tile .chinese {
-    font-size: var(--text-4xl);
   }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -1798,9 +1779,6 @@ label,
 .page-back {
   flex-shrink: 0;
 }
-:root svg.lucide {
-  color: inherit;
-}
 :root svg.status-check.lucide {
   color: var(--primary);
 }
@@ -1877,14 +1855,6 @@ label,
 .progress-ring strong {
   font-size: var(--text-2xl);
   color: var(--text);
-}
-.home-links {
-  display: grid;
-  gap: 16px;
-}
-.home-links h2 {
-  margin: 0;
-  font-size: var(--heading-3);
 }
 .home-tile-grid {
   display: grid;
@@ -1988,22 +1958,6 @@ label,
   justify-content: center;
 }
 
-.settings-tile {
-  background: var(--surface);
-  border-color: var(--border);
-  color: var(--text);
-}
-.settings-tile svg {
-  color: var(--accent);
-}
-:root[data-theme='dark'] .settings-tile {
-  color: var(--accent);
-}
-@media (prefers-color-scheme: dark) {
-  :root[data-theme='system'] .settings-tile {
-    color: var(--accent);
-  }
-}
 .text-button,
 .character-words button {
   border-radius: var(--radius-control);
