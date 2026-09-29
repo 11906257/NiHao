@@ -67,6 +67,7 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
     }
   }
   const startStroke = (event: PointerEvent<HTMLCanvasElement>) => {
+    if (revealed) return
     pointer.current = event.pointerId
     event.currentTarget.setPointerCapture(event.pointerId)
     const next = [...pathsRef.current, [point(event)]]
@@ -74,6 +75,7 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
     redraw()
   }
   const continueStroke = (event: PointerEvent<HTMLCanvasElement>) => {
+    if (revealed) return
     if (pointer.current !== event.pointerId) return
     const next = pathsRef.current.map((path, index) =>
       index === pathsRef.current.length - 1 ? [...path, point(event)] : path,
