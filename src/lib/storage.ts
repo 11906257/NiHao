@@ -1,6 +1,6 @@
 import { openDB, type DBSchema, type IDBPDatabase } from 'idb'
 import { createProfile, type Profile } from './scheduler'
-import { parseBackup, validateProfile } from './backup'
+import { validateProfile } from './backup'
 
 export const DATABASE_NAME = 'hsk-level-one-learning-v2'
 
@@ -78,18 +78,6 @@ export function saveProfile(profile: Profile): Promise<void> {
   // Preserve call order and permit retries, but return the rejection to the UI.
   pendingWrite = write.catch(() => undefined)
   return write
-}
-
-/** Call only after the UI has warned that the current profile will be replaced. */
-export async function restoreBackup(
-  json: string,
-  validIds: Iterable<string>,
-  validLessonIds?: Iterable<string>,
-  validPracticeIds?: Iterable<string>,
-): Promise<Profile> {
-  const profile = parseBackup(json, validIds, validLessonIds, validPracticeIds)
-  await saveProfile(profile)
-  return profile
 }
 
 /** Closes the connection, for clean app/test lifecycles. Does not erase data. */

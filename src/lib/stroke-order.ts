@@ -3,42 +3,6 @@ import strokeData from '../data/stroke-order.json'
 
 const data = strokeData as Record<string, { strokes: string[]; medians: number[][][] }>
 
-export function createStrokeOrderPlayer(target: HTMLElement) {
-  let writer: HanziWriter | undefined
-  let run = 0
-
-  return {
-    async play(word: string) {
-      const currentRun = ++run
-      target.replaceChildren()
-      writer = undefined
-      for (const [index, character] of Array.from(word).entries()) {
-        if (currentRun !== run) return
-        if (!data[character]) throw new Error(`Keine Strichfolge für ${character}.`)
-        if (index === 0) {
-          const styles = getComputedStyle(document.documentElement)
-          writer = HanziWriter.create(target, character, {
-            width: 240,
-            height: 240,
-            padding: 12,
-            strokeAnimationSpeed: 2,
-            delayBetweenStrokes: 220,
-            strokeColor: styles.color,
-            outlineColor: styles.getPropertyValue('--muted').trim(),
-            charDataLoader: (char) => data[char]!,
-          })
-        } else await writer!.setCharacter(character)
-        await writer!.animateCharacter()
-      }
-    },
-    stop() {
-      run++
-      writer?.pauseAnimation()
-      writer = undefined
-    },
-  }
-}
-
 export function createLoopingStrokeOrder(target: HTMLElement, word: string, size: number) {
   const styles = getComputedStyle(document.documentElement)
   target.replaceChildren()

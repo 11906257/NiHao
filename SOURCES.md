@@ -32,7 +32,7 @@ Die jüngste [CTI-Ankündigung zum weltweiten Start](https://admin.chinesetest.c
 | Gezieltes Mischen              | [Brunmair & Richter 2019, Meta-Analyse](https://pubmed.ncbi.nlm.nih.gov/31556629/)                                                                                                         | Nutzen hängt vom Material ab, bei Wortmaterial Vorteil geblockter Einführung. Daher thematische Erstlektionen und spätere gezielte Abrufwechsel. |
 | Hilfen und kognitive Belastung | [IES Practice Guide, Pashler et al. 2007](https://ies.ed.gov/ncee/wwc/PracticeGuide/1)                                                                                                     | Kleine Portionen, Beispiele, Pinyin beim Kennenlernen und später auf Wunsch. Kein ablenkendes Belohnungssystem.                                  |
 
-[ts-fsrs-Dokumentation](https://open-spaced-repetition.github.io/ts-fsrs/) und [Quellcode](https://github.com/open-spaced-repetition/ts-fsrs): Zielretention 0,90, keine selbst erfundenen festen Intervalle. Ein Zustand pro Wort plus getrennte Fähigkeitszählwerte vermeidet fünf parallele Kartenstapel. Die Forschung stützt die Prinzipien, nicht einen Wirksamkeitsnachweis dieser konkreten App.
+[ts-fsrs-Dokumentation](https://open-spaced-repetition.github.io/ts-fsrs/) und [Quellcode](https://github.com/open-spaced-repetition/ts-fsrs): Zielretention 0,90, keine selbst erfundenen festen Intervalle. Ein Zustand pro Wort plus getrennte Fähigkeitszählwerte vermeidet parallele Kartenstapel für jede Fähigkeit. Die Forschung stützt die Prinzipien, nicht einen Wirksamkeitsnachweis dieser konkreten App.
 
 ## Technische Primärquellen
 

@@ -193,11 +193,6 @@ export function chooseSkill(card?: LearningCard, availableSkills: readonly Skill
   })[0]!
 }
 
-export function getReviewPlan(profile: Profile, now = new Date()) {
-  const dueIds = getDueCards(profile, now).map((card) => card.vocabularyId)
-  return { dueIds }
-}
-
 export function completeLesson(profile: Profile, lessonId: string, now = new Date()): Profile {
   return {
     ...profile,

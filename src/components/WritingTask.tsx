@@ -1,20 +1,15 @@
 import { useCallback, useEffect, useRef, useState, type PointerEvent } from 'react'
 import { ArrowRight } from 'lucide-react'
 import type { Vocabulary } from '../data/types'
+import { AnimatedHanzi } from './ui'
 
 type Point = { x: number; y: number }
 
 export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (correct: boolean) => void }) {
   const [revealed, setRevealed] = useState(false)
-  const [showStrokes, setShowStrokes] = useState(false)
-  const [playingStrokes, setPlayingStrokes] = useState(false)
-  const [strokeError, setStrokeError] = useState('')
   const pathsRef = useRef<Point[][]>([])
   const canvas = useRef<HTMLCanvasElement>(null)
   const pointer = useRef<number | null>(null)
-  const strokeTarget = useRef<HTMLDivElement>(null)
-  const strokePlayer = useRef<{ stop: () => void } | null>(null)
-  const animationRun = useRef(0)
 
   const redraw = useCallback(() => {
     const element = canvas.current
@@ -22,8 +17,10 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
     const { width, height } = element.getBoundingClientRect()
     if (!width || !height) return
     const scale = window.devicePixelRatio || 1
-    element.width = Math.round(width * scale)
-    element.height = Math.round(height * scale)
+    const pixelWidth = Math.round(width * scale)
+    const pixelHeight = Math.round(height * scale)
+    if (element.width !== pixelWidth) element.width = pixelWidth
+    if (element.height !== pixelHeight) element.height = pixelHeight
     const context = element.getContext('2d')
     if (!context) return
     context.setTransform(scale, 0, 0, scale, 0, 0)
@@ -51,14 +48,6 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
     return () => observer.disconnect()
   }, [revealed, redraw])
 
-  useEffect(
-    () => () => {
-      animationRun.current++
-      strokePlayer.current?.stop()
-    },
-    [],
-  )
-
   const point = (event: PointerEvent<HTMLCanvasElement>): Point => {
     const bounds = event.currentTarget.getBoundingClientRect()
     return {
@@ -67,53 +56,24 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
     }
   }
   const startStroke = (event: PointerEvent<HTMLCanvasElement>) => {
-    if (revealed) return
+    if (revealed || pointer.current !== null || event.button !== 0) return
     pointer.current = event.pointerId
     event.currentTarget.setPointerCapture(event.pointerId)
-    const next = [...pathsRef.current, [point(event)]]
-    pathsRef.current = next
+    pathsRef.current.push([point(event)])
     redraw()
   }
   const continueStroke = (event: PointerEvent<HTMLCanvasElement>) => {
-    if (revealed) return
-    if (pointer.current !== event.pointerId) return
-    const next = pathsRef.current.map((path, index) =>
-      index === pathsRef.current.length - 1 ? [...path, point(event)] : path,
-    )
-    pathsRef.current = next
+    if (revealed || pointer.current !== event.pointerId) return
+    pathsRef.current.at(-1)!.push(point(event))
     redraw()
+  }
+  const endStroke = (event: PointerEvent<HTMLCanvasElement>) => {
+    if (pointer.current === event.pointerId) pointer.current = null
   }
   const clear = () => {
+    pointer.current = null
     pathsRef.current = []
     redraw()
-  }
-  const rate = (correct: boolean) => {
-    animationRun.current++
-    strokePlayer.current?.stop()
-    strokePlayer.current = null
-    setPlayingStrokes(false)
-    onRate(correct)
-  }
-  const animateStrokes = async () => {
-    if (!strokeTarget.current || playingStrokes) return
-    const run = ++animationRun.current
-    let player: { stop: () => void; play: (word: string) => Promise<void> } | null = null
-    setShowStrokes(true)
-    setStrokeError('')
-    setPlayingStrokes(true)
-    try {
-      const { createStrokeOrderPlayer } = await import('../lib/stroke-order')
-      if (run !== animationRun.current || !strokeTarget.current) return
-      player = createStrokeOrderPlayer(strokeTarget.current)
-      strokePlayer.current = player
-      await player.play(word.hanzi)
-    } catch {
-      if (run === animationRun.current) setStrokeError('Die Strichfolge konnte nicht angezeigt werden.')
-    } finally {
-      player?.stop()
-      if (strokePlayer.current === player) strokePlayer.current = null
-      if (run === animationRun.current) setPlayingStrokes(false)
-    }
   }
 
   return (
@@ -130,13 +90,14 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
           aria-label="Deine Zeichnung des chinesischen Wortes"
           onPointerDown={startStroke}
           onPointerMove={continueStroke}
-          onPointerUp={() => (pointer.current = null)}
-          onPointerCancel={() => (pointer.current = null)}
+          onPointerUp={endStroke}
+          onPointerCancel={endStroke}
+          onLostPointerCapture={endStroke}
         />
         {revealed && (
           <div className="writing-answer" aria-label="Lösung">
-            <span className="chinese" lang="zh-CN">
-              {word.hanzi}
+            <span className="chinese" style={{ fontSize: `calc(84cqi / ${Array.from(word.hanzi).length})` }}>
+              <AnimatedHanzi text={word.hanzi} />
             </span>
           </div>
         )}
@@ -151,33 +112,14 @@ export function WritingTask({ word, onRate }: { word: Vocabulary; onRate: (corre
           </button>
         </div>
       ) : (
-        <>
-          <div className="rating-buttons">
-            <button className="button secondary" onClick={() => rate(false)}>
-              Weiter üben
-            </button>
-            <button className="button primary" onClick={() => rate(true)}>
-              Gewusst <ArrowRight size={18} />
-            </button>
-          </div>
-          <button
-            className="text-button writing-stroke-button"
-            disabled={playingStrokes}
-            onClick={() => void animateStrokes()}
-          >
-            Strichreihenfolge anzeigen
+        <div className="rating-buttons">
+          <button className="button secondary" onClick={() => onRate(false)}>
+            Weiter üben
           </button>
-          <div
-            ref={strokeTarget}
-            className={`writing-strokes ${showStrokes ? '' : 'is-hidden'}`}
-            aria-label="Strichreihenfolge"
-          />
-          {strokeError && (
-            <p className="small muted" role="status">
-              {strokeError}
-            </p>
-          )}
-        </>
+          <button className="button primary" onClick={() => onRate(true)}>
+            Gewusst <ArrowRight size={18} />
+          </button>
+        </div>
       )}
     </section>
   )

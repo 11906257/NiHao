@@ -37,14 +37,14 @@ import {
   SKILLS,
   isKnownWord,
   completeLesson,
-  getReviewPlan,
+  getDueCards,
   recordPractice,
   reviewVocabulary,
   type Profile,
   type ReviewRating,
   type Skill,
 } from './lib/scheduler'
-import { loadProfile, restoreBackup, saveProfile } from './lib/storage'
+import { loadProfile, saveProfile } from './lib/storage'
 import { downloadBackup, MAX_BACKUP_BYTES, parseBackup } from './lib/backup'
 import { SKILL_LABELS, wordExercise, type Exercise } from './lib/exercises'
 import {
@@ -66,7 +66,7 @@ import { AUDIO_RATES, setAudioRate, stopAudio } from './lib/audio'
 type Session =
   | { kind: 'learn'; ids: string[]; grammarIds: string[]; title: string; lessonId: string }
   | { kind: 'practice'; exercises: Exercise[]; title: string }
-const TRAINING_BATCH_SIZE = 10
+const PRACTICE_BATCH_SIZE = 10
 function hashRoute() {
   return window.location.hash.replace(/^#\/?/, '').split('?')[0] || 'today'
 }
@@ -93,7 +93,8 @@ export default function App() {
     [selectedWord, setSelectedWord] = useState<Vocabulary | null>(null),
     [selectedHanzi, setSelectedHanzi] = useState<Hanzi | null>(null),
     [selectedGrammar, setSelectedGrammar] = useState<Grammar | null>(null),
-    [pendingImport, setPendingImport] = useState<{ json: string; profile: Profile } | null>(null),
+    [pendingImport, setPendingImport] = useState<Profile | null>(null),
+    [importing, setImporting] = useState(false),
     [notice, setNotice] = useState<Notice | null>(null)
   const notify = (message: string, tone: Notice['tone'] = 'error') => setNotice({ message, tone })
   const pRef = useRef<Profile | null>(null)
@@ -261,8 +262,7 @@ export default function App() {
     try {
       if (file.size > MAX_BACKUP_BYTES) throw new Error('Die Datei ist größer als 10 MB.')
       const json = await file.text()
-      const parsed = parseBackup(json, validIds, validLessonIds, validPracticeIds)
-      setPendingImport({ json, profile: parsed })
+      setPendingImport(parseBackup(json, validIds, validLessonIds, validPracticeIds))
     } catch (e) {
       notify((e as Error).message)
     }
@@ -282,29 +282,26 @@ export default function App() {
     </label>
   )
   const confirmImport = pendingImport && (
-    <Modal title="Lernstand ersetzen?" onClose={() => setPendingImport(null)}>
-      <p>
-        Die geprüfte Sicherung enthält {Object.keys(pendingImport.profile.cards).length} begonnene Wörter.
-      </p>
+    <Modal title="Lernstand ersetzen?" onClose={() => !importing && setPendingImport(null)}>
+      <p>Die geprüfte Sicherung enthält {Object.keys(pendingImport.cards).length} begonnene Wörter.</p>
       <p>
         <strong>Dein vorhandener Lernstand wird vollständig überschrieben.</strong> Exportiere ihn vorher,
         wenn du ihn behalten möchtest.
       </p>
       <div className="actions">
-        <button className="button secondary" onClick={() => setPendingImport(null)}>
+        <button className="button secondary" disabled={importing} onClick={() => setPendingImport(null)}>
           Abbrechen
         </button>
         <button
           className="button primary"
+          disabled={importing}
           onClick={async () => {
+            setImporting(true)
             try {
-              const restored = await restoreBackup(
-                pendingImport.json,
-                validIds,
-                validLessonIds,
-                validPracticeIds,
-              )
+              const restored = pendingImport
+              await saveProfile(restored)
               setAudioRate(restored.settings.audioRate)
+              pRef.current = restored
               setProfile(restored)
               setLoadError('')
               setSaveError('')
@@ -313,6 +310,8 @@ export default function App() {
               notify('Sicherung wurde vollständig wiederhergestellt.', 'success')
             } catch (e) {
               notify((e as Error).message)
+            } finally {
+              setImporting(false)
             }
           }}
         >
@@ -356,7 +355,8 @@ export default function App() {
       </div>
     )
   const page = route.split('/')[0]
-  const plan = getReviewPlan(profile, now)
+  const dueCards = getDueCards(profile, now)
+  const dueIds = dueCards.map((card) => card.vocabularyId)
   const learned = Object.keys(profile.cards).length
   const nextLesson = lessons.find((l) => !profile.completedLessons.includes(l.id)) ?? lessons[0]
   const doneSession = () => {
@@ -420,8 +420,8 @@ export default function App() {
             <h2>Heute</h2>
             <div className="focus-body">
               <div>
-                {plan.dueIds.length ? (
-                  <p>{plan.dueIds.length} Wörter sind fällig.</p>
+                {dueIds.length ? (
+                  <p>{dueIds.length} Wörter sind fällig.</p>
                 ) : profile.completedLessons.length < lessons.length ? (
                   <div className="next-lesson-summary">
                     <span className="eyebrow">Lektion {lessons.indexOf(nextLesson) + 1}</span>
@@ -436,15 +436,15 @@ export default function App() {
               <button
                 className="button primary"
                 aria-label={
-                  plan.dueIds.length
+                  dueIds.length
                     ? 'Wiederholung starten'
                     : profile.completedLessons.length < lessons.length
                       ? 'Nächste Lektion starten'
                       : 'Lektionen öffnen'
                 }
                 onClick={() =>
-                  plan.dueIds.length
-                    ? beginReview(plan.dueIds.slice(0, 20))
+                  dueIds.length
+                    ? beginReview(dueIds.slice(0, PRACTICE_BATCH_SIZE))
                     : profile.completedLessons.length < lessons.length
                       ? navigate(`learn/${nextLesson.id}`)
                       : navigate('learn')
@@ -483,7 +483,7 @@ export default function App() {
           <h2>{lesson.title}</h2>
           <p>{lesson.description}</p>
         </div>
-        <div className="lesson-start">
+        <div className="practice-start">
           <button className="button primary" onClick={() => beginLesson(lesson.id)}>
             Lektion starten <ArrowRight size={18} />
           </button>
@@ -544,7 +544,6 @@ export default function App() {
               key={lesson.id}
               lesson={lesson}
               profile={profile}
-              recommended={!profile.completedLessons.includes(lesson.id) && lesson.id === nextLesson.id}
               onOpen={() => navigate(`learn/${lesson.id}`)}
             />
           ))}
@@ -552,56 +551,59 @@ export default function App() {
       </>
     )
   } else if (page === 'review') {
-    const due = plan.dueIds.map((id) => profile.cards[id])
+    const due = dueCards
+    const upcoming = Object.values(profile.cards)
+      .filter((card) => Date.parse(card.fsrs.due) > now.getTime())
+      .sort((a, b) => a.fsrs.due.localeCompare(b.fsrs.due))
     content = (
       <>
         <PageHeading page="review" onBack={() => navigate('today')} />
         {due.length ? (
-          <div className="card review-start">
-            <div className="review-start-copy">
-              <div className="review-count">{due.length}</div>
-              <h3>Fällige Wörter</h3>
-            </div>
+          <div className="practice-start">
             <button
               className="button primary"
-              aria-label={`Bis zu ${Math.min(due.length, 20)} ${due.length === 1 ? 'Wort' : 'Wörter'} wiederholen`}
-              onClick={() => beginReview(plan.dueIds.slice(0, 20))}
+              aria-label={`${due.length} ${due.length === 1 ? 'Wort fällig' : 'Wörter fällig'}: bis zu ${Math.min(due.length, PRACTICE_BATCH_SIZE)} wiederholen`}
+              onClick={() => beginReview(dueIds.slice(0, PRACTICE_BATCH_SIZE))}
             >
-              <ArrowRight size={24} />
+              {due.length} {due.length === 1 ? 'Wort fällig' : 'Wörter fällig'} <ArrowRight size={18} />
             </button>
           </div>
         ) : (
           <Empty title={learned ? 'Keine Wörter fällig.' : 'Keine Wörter gelernt.'} />
         )}
-        {learned > 0 && (
-          <div className="section-heading">
-            <h2>{due.length ? 'Fällige Wörter' : 'Kommende Wiederholungen'}</h2>
-          </div>
-        )}
-        <div className="stack">
-          {(due.length
-            ? due
-            : Object.values(profile.cards).sort((a, b) => a.fsrs.due.localeCompare(b.fsrs.due))
-          )
-            .slice(0, 20)
-            .map((card) => (
-              <button
-                className="card content-row"
-                key={card.vocabularyId}
-                onClick={() => setSelectedWord(wordById[card.vocabularyId])}
-              >
-                <span className="chinese list-hanzi" lang="zh-CN">
-                  {wordById[card.vocabularyId].hanzi}
-                </span>
-                <span>
-                  <strong>{wordById[card.vocabularyId].meaning}</strong>
-                </span>
-                <span className="small muted">
-                  {Date.parse(card.fsrs.due) <= Date.now() ? 'Jetzt fällig' : formatDate(card.fsrs.due)}
-                </span>
-              </button>
-            ))}
-        </div>
+        {[
+          { title: 'Fällige Wörter', cards: due },
+          { title: 'Kommende Wiederholungen', cards: upcoming },
+        ]
+          .filter(({ cards }) => cards.length > 0)
+          .map(({ title, cards }) => (
+            <section key={title}>
+              <div className="section-heading">
+                <h2>{title}</h2>
+              </div>
+              <div className="stack">
+                {cards.slice(0, PRACTICE_BATCH_SIZE).map((card) => (
+                  <button
+                    className="card content-row"
+                    key={card.vocabularyId}
+                    onClick={() => setSelectedWord(wordById[card.vocabularyId])}
+                  >
+                    <span className="chinese list-hanzi" lang="zh-CN">
+                      {wordById[card.vocabularyId].hanzi}
+                    </span>
+                    <span>
+                      <strong>{wordById[card.vocabularyId].meaning}</strong>
+                    </span>
+                    <span className="small muted">
+                      {Date.parse(card.fsrs.due) <= now.getTime()
+                        ? 'Jetzt fällig'
+                        : formatDate(card.fsrs.due)}
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </section>
+          ))}
       </>
     )
   } else if (page === 'words') {
@@ -712,7 +714,7 @@ export default function App() {
                         (profile.cards[a.id]?.skills[skill].attempts ?? 0) -
                         (profile.cards[b.id]?.skills[skill].attempts ?? 0),
                     )
-                    .slice(0, TRAINING_BATCH_SIZE)
+                    .slice(0, PRACTICE_BATCH_SIZE)
                     .map((w) =>
                       wordExercise(
                         w,

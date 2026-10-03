@@ -15,7 +15,7 @@ import {
   type Profile,
 } from '../src/lib/scheduler'
 import { exportBackup, MAX_BACKUP_BYTES, parseBackup, validateProfile } from '../src/lib/backup'
-import { closeStorage, DATABASE_NAME, loadProfile, restoreBackup, saveProfile } from '../src/lib/storage'
+import { closeStorage, DATABASE_NAME, loadProfile, saveProfile } from '../src/lib/storage'
 
 const now = new Date('2026-09-12T10:00:00.000Z')
 const validIds = ['v001', 'v002', 'v003']
@@ -233,10 +233,10 @@ describe('IndexedDB persistence', () => {
     await saveProfile(original)
     const broken = JSON.parse(exportBackup(original, now))
     broken.profile.cards.v001.fsrs.due = 'broken'
-    await expect(restoreBackup(JSON.stringify(broken), validIds)).rejects.toThrow(/ungültig/)
+    expect(() => parseBackup(JSON.stringify(broken), validIds)).toThrow(/ungültig/)
     expect(await loadProfile(validIds)).toEqual(original)
     const next = recordPractice(original, 'g001', true, now)
-    await restoreBackup(exportBackup(next, now), validIds)
+    await saveProfile(parseBackup(exportBackup(next, now), validIds))
     expect(await loadProfile(validIds)).toEqual(next)
   })
 

@@ -183,6 +183,7 @@ export function AnimatedHanzi({ text }: { text: string }) {
     let player: { play: () => Promise<void>; stop: () => void } | undefined
     let generation = 0
     let disposed = false
+    let size = parseFloat(getComputedStyle(element).fontSize)
     const stop = () => {
       generation++
       player?.stop()
@@ -195,7 +196,7 @@ export function AnimatedHanzi({ text }: { text: string }) {
       try {
         const { createLoopingStrokeOrder } = await import('../lib/stroke-order')
         if (disposed || current !== generation) return
-        player = createLoopingStrokeOrder(destination, text, parseFloat(getComputedStyle(element).fontSize))
+        player = createLoopingStrokeOrder(destination, text, size)
         setAnimated(true)
         void player.play().catch(() => {
           if (current === generation) stop()
@@ -208,11 +209,20 @@ export function AnimatedHanzi({ text }: { text: string }) {
       stop()
       void start()
     }
+    const observer = new ResizeObserver(() => {
+      const nextSize = parseFloat(getComputedStyle(element).fontSize)
+      if (nextSize !== size) {
+        size = nextSize
+        refresh()
+      }
+    })
+    observer.observe(element)
     void start()
     document.addEventListener('visibilitychange', refresh)
     reducedMotion.addEventListener('change', refresh)
     return () => {
       disposed = true
+      observer.disconnect()
       stop()
       document.removeEventListener('visibilitychange', refresh)
       reducedMotion.removeEventListener('change', refresh)

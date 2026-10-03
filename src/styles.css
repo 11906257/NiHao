@@ -40,7 +40,6 @@
   --text-2xl: 1.5rem;
   --text-3xl: 1.75rem;
   --text-4xl: 2rem;
-  --text-5xl: 2.5rem;
   --text-8xl: 4rem;
   --text-10xl: 5rem;
   --radius-control: 10px;
@@ -423,11 +422,15 @@ input::placeholder {
   margin-left: auto;
   align-self: center;
 }
-.lesson-number.completed {
+.lesson-row.completed {
   background: var(--surface-alt);
   color: var(--muted);
 }
-.lesson-start {
+.lesson-row.completed h3,
+.lesson-row.completed .lesson-number {
+  color: var(--muted);
+}
+.practice-start {
   display: flex;
 }
 .content-row {
@@ -456,29 +459,6 @@ input::placeholder {
 .list-hanzi {
   font-size: var(--text-3xl);
   min-width: 80px;
-}
-.review-start {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  align-items: center;
-  gap: 16px;
-}
-.review-start-copy {
-  min-width: 0;
-}
-.review-start-copy h3 {
-  margin: 0;
-}
-.review-start > .button {
-  width: 80px;
-  height: 80px;
-  min-height: 80px;
-  padding: 0;
-}
-.review-count {
-  line-height: 1;
-  letter-spacing: -0.07em;
-  color: var(--primary);
 }
 .empty {
   border: 1px dashed var(--border);
@@ -885,6 +865,9 @@ input::placeholder {
   touch-action: none;
 }
 .writing-answer {
+  min-height: 0;
+  overflow: hidden;
+  container-type: inline-size;
   display: grid;
   place-items: center;
   overflow-wrap: anywhere;
@@ -893,8 +876,7 @@ input::placeholder {
 }
 .writing-answer .chinese {
   font-family: var(--font-calligraphy);
-  font-size: clamp(32px, 10cqi, 48px);
-  line-height: 1.3;
+  line-height: 1;
 }
 .writing-actions {
   display: flex;
@@ -904,22 +886,6 @@ input::placeholder {
 }
 .writing-actions .button {
   flex: 1;
-}
-.writing-stroke-button {
-  justify-self: center;
-}
-.writing-strokes {
-  min-height: 180px;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-.writing-strokes.is-hidden {
-  display: none;
-}
-.writing-strokes svg {
-  max-width: min(100%, 240px);
-  max-height: 240px;
 }
 .exercise-actions {
   margin-top: 24px;
@@ -1081,10 +1047,10 @@ input::placeholder {
 .lesson-row .small {
   font-size: var(--text-xs);
 }
-.lesson-start {
+.practice-start {
   margin-bottom: var(--space-6);
 }
-.lesson-start .button {
+.practice-start .button {
   width: 100%;
 }
 .content-row {
@@ -1108,9 +1074,6 @@ input::placeholder {
   font-size: var(--text-xs);
   text-align: right;
   max-width: 85px;
-}
-.review-count {
-  font-size: var(--text-10xl);
 }
 .note {
   font-size: var(--text-sm);
@@ -1346,7 +1309,8 @@ input::placeholder {
 .lesson-heading {
   margin-bottom: var(--space-4);
 }
-.lesson-start + .section-heading {
+.practice-start + .section-heading,
+.practice-start + section > .section-heading {
   margin-top: 0;
 }
 .lesson-heading p {
@@ -1411,10 +1375,6 @@ input::placeholder {
   font-size: var(--text-xl);
 }
 
-/* Shared navigation cards and the recommended next lesson. */
-.lesson-row.recommended {
-  border-color: color-mix(in srgb, var(--primary) 45%, var(--border));
-}
 .status-check {
   padding: 0;
   background: none;
@@ -1778,6 +1738,9 @@ label,
 }
 .page-back {
   flex-shrink: 0;
+  justify-content: flex-start;
+  padding: 0;
+  border: 0;
 }
 :root svg.status-check.lucide {
   color: var(--primary);

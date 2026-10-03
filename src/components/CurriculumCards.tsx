@@ -28,18 +28,16 @@ export function WordCard({
 export function LessonCard({
   lesson,
   profile,
-  recommended = false,
   onOpen,
 }: {
   lesson: Lesson
   profile: Profile
-  recommended?: boolean
   onOpen: () => void
 }) {
   const completed = profile.completedLessons.includes(lesson.id)
   return (
-    <button className={`lesson-row card ${recommended ? 'recommended' : ''}`} onClick={onOpen}>
-      <div className={`lesson-number ${completed ? 'completed' : ''}`}>{lesson.id.replace('l', '')}</div>
+    <button className={`lesson-row card ${completed ? 'completed' : ''}`} onClick={onOpen}>
+      <div className="lesson-number">{lesson.id.replace('l', '')}</div>
       <div className="lesson-card-body">
         <h3>
           {lesson.title}

@@ -5,6 +5,9 @@ import hanziData from './hanzi.json'
 import type { Vocabulary, Lesson, Grammar, Hanzi } from './types'
 import { normalizePinyinBase } from '../lib/exercises'
 const sourceVocabulary = vocabularyData as Vocabulary[]
+const readings = new Map(
+  sourceVocabulary.map((word) => [word.id, word.pinyin.split('/').map(normalizePinyinBase)]),
+)
 const lessonOrder = new Map(lessonsData.map((lesson, index) => [lesson.id, index]))
 export const grammar = [...(grammarData as Grammar[])].sort(
   (a, b) => (lessonOrder.get(a.lessonId) ?? Infinity) - (lessonOrder.get(b.lessonId) ?? Infinity),
@@ -16,29 +19,25 @@ const sourceExamples = [
     ...(word.examples ?? []).map((example) => ({ example, lessonId: word.lessonId, ownerId: word.id })),
   ]),
   ...grammar.map((point) => ({ example: point.example, lessonId: point.lessonId, ownerId: point.id })),
-]
+].map((entry) => ({ ...entry, pinyinBase: normalizePinyinBase(entry.example.pinyin) }))
 export const vocabulary: Vocabulary[] = sourceVocabulary.map((word) => {
+  const compounds = sourceVocabulary.filter(
+    (other) => other.hanzi.length > word.hanzi.length && other.hanzi.includes(word.hanzi),
+  )
   const examples = [...(word.examples ?? [])]
   const knownSentences = new Set([word.example.zh, ...examples.map((example) => example.zh)])
   const candidates = sourceExamples
     .filter(
-      ({ example, lessonId, ownerId }) =>
+      ({ example, lessonId, ownerId, pinyinBase }) =>
         ownerId !== word.id &&
         lessonOrder.get(lessonId)! <= lessonOrder.get(word.lessonId)! &&
         !knownSentences.has(example.zh) &&
         example.zh.includes(word.hanzi) &&
-        word.pinyin
-          .split('/')
-          .some((reading) => normalizePinyinBase(example.pinyin).includes(normalizePinyinBase(reading))) &&
-        !sourceVocabulary.some(
+        readings.get(word.id)!.some((reading) => pinyinBase.includes(reading)) &&
+        !compounds.some(
           (other) =>
-            other.id !== word.id &&
-            other.hanzi.length > word.hanzi.length &&
-            other.hanzi.includes(word.hanzi) &&
             example.zh.includes(other.hanzi) &&
-            other.pinyin
-              .split('/')
-              .some((reading) => normalizePinyinBase(example.pinyin).includes(normalizePinyinBase(reading))),
+            readings.get(other.id)!.some((reading) => pinyinBase.includes(reading)),
         ),
     )
     .sort((a, b) => Number(a.lessonId === word.lessonId) - Number(b.lessonId === word.lessonId))

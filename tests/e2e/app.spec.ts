@@ -335,7 +335,7 @@ test('globales Audiotempo auf Wortschatz, Zeichen, Grammatik, Training und Lekti
   await expect(page.locator('.stack .content-row').first()).not.toContainText(
     /Bedeutung abrufen|Pinyin & Aussprache|Hörverständnis|Im Satz verstehen|Aktiv formulieren/,
   )
-  await page.getByRole('button', { name: /Bis zu \d+ (?:Wort|Wörter) wiederholen/ }).click()
+  await page.getByRole('button', { name: /(?:Wort|Wörter) fällig: bis zu \d+ wiederholen/ }).click()
   await play()
 })
 
@@ -367,14 +367,6 @@ test('Nachschlagen, Karten-Navigation und Layout auf allen Seiten', async ({ pag
   await route(page, 'today')
   await page.getByRole('button', { name: 'Lektionen öffnen', exact: true }).click()
   await expect(page.getByRole('heading', { name: 'Lektionen', exact: true })).toBeVisible()
-  await expect(page.locator('.lesson-row.recommended')).toHaveCSS('border-style', 'solid')
-  await expect(page.locator('.lesson-row.recommended')).not.toHaveCSS(
-    'border-color',
-    await page
-      .locator('.lesson-row:not(.recommended)')
-      .first()
-      .evaluate((el) => getComputedStyle(el).borderColor),
-  )
   await route(page, 'grammar')
   const ordered = [...grammar].sort((a, b) => Number(a.lessonId.slice(1)) - Number(b.lessonId.slice(1)))
   await expect(page.locator('.grammar-card h3').first()).toHaveText(ordered[0].title)
@@ -556,7 +548,14 @@ test('Fälligkeit aktualisiert sich ohne Navigation; mobile Bedienflächen bleib
     expect(box.height).toBeGreaterThanOrEqual(44)
     expect(box.width).toBeGreaterThanOrEqual(44)
   }
-  const profile = reviewVocabulary(createProfile(now), 'v001', 'meaning', 'again', now)
+  const profile = reviewVocabulary(
+    reviewVocabulary(createProfile(now), 'v001', 'meaning', 'again', now),
+    'v002',
+    'meaning',
+    'good',
+    now,
+  )
+  profile.cards.v002!.fsrs.due = new Date(now.getTime() + 86400000).toISOString()
   profile.cards.v001!.fsrs.due = new Date(now.getTime() + 120000).toISOString()
   await page.getByLabel('Sicherung importieren', { exact: true }).setInputFiles({
     name: 'due.json',
@@ -570,6 +569,10 @@ test('Fälligkeit aktualisiert sich ohne Navigation; mobile Bedienflächen bleib
   await page.clock.fastForward(180000)
   await expect(page.locator('.focus-body')).toContainText('fällig')
   expect((await page.locator('.focus-footer .button').boundingBox())!.height).toBeGreaterThanOrEqual(48)
+  await route(page, 'review')
+  await expect(page.getByRole('heading', { name: 'Fällige Wörter', exact: true })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Kommende Wiederholungen', exact: true })).toBeVisible()
+  await expect(page.locator('.content-row')).toHaveCount(2)
   await route(page, 'words')
   const search = page.locator('.search-field input')
   await search.fill('你好')
@@ -645,6 +648,25 @@ test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', a
   await page.mouse.up()
   await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
   await expect(page.locator('.writing-answer')).toHaveText(first.hanzi)
+  const drawingSize = await canvas.boundingBox()
+  const answerSize = await page.locator('.writing-answer').boundingBox()
+  expect(answerSize!.width).toBeCloseTo(drawingSize!.width, 0)
+  expect(answerSize!.height).toBeCloseTo(drawingSize!.height, 0)
+  expect(answerSize!.height).toBeCloseTo(answerSize!.width, 0)
+  const originalViewport = page.viewportSize()!
+  await page.setViewportSize({ width: 390, height: originalViewport.height })
+  await expect
+    .poll(() =>
+      page.locator('.writing-answer').evaluate((el) => {
+        const svg = el.querySelector('svg')
+        const text = el.querySelector('.animated-hanzi')!
+        return svg
+          ? Math.abs(svg.getBoundingClientRect().width - parseFloat(getComputedStyle(text).fontSize))
+          : Infinity
+      }),
+    )
+    .toBeLessThan(1)
+  await page.setViewportSize(originalViewport)
   await noOverflow(page)
   expect(await hasInk()).toBe(true)
 
@@ -655,8 +677,7 @@ test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', a
   await page.getByRole('button', { name: 'Schreiben', exact: true }).click()
   await page.getByRole('button', { name: 'Lösung anzeigen', exact: true }).click()
   if (browserName === 'chromium') await context.setOffline(true)
-  await page.getByRole('button', { name: 'Strichreihenfolge anzeigen', exact: true }).click()
-  await expect(page.locator('.writing-strokes svg')).toBeVisible({ timeout: 10000 })
+  await expect(page.locator('.writing-answer svg')).toBeVisible({ timeout: 10000 })
   await page.getByRole('button', { name: 'Weiter üben', exact: true }).click()
   await expect(page.getByText(first.pinyin, { exact: true })).not.toBeVisible()
   await expect(page.locator('.writing-canvas')).toBeVisible()
@@ -719,6 +740,6 @@ test('Schreiben: Lektion, Zeichnung, Selbstbewertung und Offline-Strichfolge', a
   })
   await page.getByRole('button', { name: 'Lernstand ersetzen', exact: true }).click()
   await route(page, 'review')
-  await page.getByRole('button', { name: /Bis zu \d+ Wort wiederholen/ }).click()
+  await page.getByRole('button', { name: /Wort fällig: bis zu \d+ wiederholen/ }).click()
   await expect(page.locator('.writing-canvas')).toBeVisible()
 })
